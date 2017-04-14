@@ -1,13 +1,10 @@
 package domain.gatherer
 
-import domain.Id
 import domain.Model._
 import spray.json.{JsonFormat, _}
 import spray.json.DefaultJsonProtocol._
 
-import scala.util.parsing.json.JSONFormat
-
-class Model {
+object Model {
 
   implicit val pickUpStateJF : JsonFormat[PickUpState] = new  JsonFormat[PickUpState]{
     override def write(obj: PickUpState): JsValue = JsString(obj.toString)
