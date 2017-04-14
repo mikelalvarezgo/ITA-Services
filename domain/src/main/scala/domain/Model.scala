@@ -6,6 +6,30 @@ import spray.json.DefaultJsonProtocol._
 
 
 object Model {
+  private[domain] val anyJF = new JsonFormat[Any]{ any =>
+
+    override def write(obj: Any): JsValue = obj match {
+      case v: Int => JsNumber(v)
+      case v: Long => JsNumber(v)
+      case v: Float => JsNumber(v)
+      case v: Double => JsNumber(v)
+      case v: BigDecimal => JsNumber(v)
+      case v: BigInt => JsNumber(v)
+      case v: Boolean => JsBoolean(v)
+      case v: List[Any@unchecked] => JsArray(v.map(any.write).toVector)
+      case v: Map[String@unchecked,Any@unchecked] => JsObject(v.mapValues(any.write))
+      case v => Option(v).map(s => JsString(s.toString)).getOrElse(JsNull)
+    }
+    override def read(json: JsValue): Any = json match {
+      case JsNumber(n) => n
+      case JsBoolean(b) => b
+      case JsString(s) => s
+      case JsArray(elements) => elements.toList.map(any.read)
+      case JsObject(elements) => elements.mapValues(any.read)
+      case _ => None.orNull
+    }
+  }
+
   implicit val JFid = new JsonFormat[Id] {
     override def write(obj: Id): JsValue =
       JsObject("$oid" -> JsString(obj.value))
