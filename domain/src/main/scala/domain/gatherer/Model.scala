@@ -19,6 +19,6 @@ object Model {
     }
   }
 
- implicit val pickUpJF : JsonFormat[TweetPickUp] = jsonFormat5(TweetPickUp.apply)
+ implicit val pickUpJF : JsonFormat[TweetPickUp] = jsonFormat6(TweetPickUp.apply)
 
 }

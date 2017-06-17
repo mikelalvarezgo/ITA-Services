@@ -5,6 +5,7 @@ import akka.util.Timeout
 import spray.http.StatusCodes
 import spray.httpx.SprayJsonSupport._
 import spray.routing._
+import utils.Logger
 
 import scala.concurrent.duration._
 import scala.language.postfixOps
@@ -15,7 +16,7 @@ class RestInterface extends HttpServiceActor
   def receive = runRoute(routes)
 }
 
-trait RestApi extends HttpService with ActorLogging { actor: Actor =>
+trait RestApi extends HttpService with Logger { actor: Actor =>
 
   implicit val timeout = Timeout(10 seconds)
 

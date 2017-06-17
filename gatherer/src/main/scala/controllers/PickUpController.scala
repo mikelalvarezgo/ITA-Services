@@ -1,5 +1,6 @@
 package controllers
 
+import actors.PickUpManager
 import domain.Id
 import domain.gatherer.TweetPickUp
 import domain.gatherer.exception.GathererException
@@ -20,7 +21,7 @@ trait PickUpController extends DAOHelpers
 
   implicit val pickUpDao: PickUpDAO
   //declare actors and timeout
-
+  val manager:PickUpManager
   def createPickUp(tweetPickUp: TweetPickUp): Future[Id] = {
     (for {
       _ <- Future(tweetPickUp._id.foreach(aId =>
@@ -67,7 +68,9 @@ trait PickUpController extends DAOHelpers
       s"Pickup with id $idPickUp does not exist"))
   }
 
-  def getPickUps(): Future[List[TweetPickUp]] = ???
+  def getPickUps(): Future[List[TweetPickUp]] = Future {
+    pickUpDao.getAll
+  }
 
   def startPickUp(idPickUp: Id): Future[Any] = ???
 
