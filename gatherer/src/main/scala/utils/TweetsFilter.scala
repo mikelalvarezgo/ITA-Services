@@ -9,7 +9,6 @@ case class TweetsFilter(
   def isTweetLenguage(tweet: String): Boolean ={
     if(lenguage.isDefined) {
       val lg: LanguageIdentifier = new LanguageIdentifier(tweet)
-      println(s"LENGUAGE ${lg.getLanguage} ¿==? ${lenguage.get}")
       lg.getLanguage == lenguage.get
     }
     else false

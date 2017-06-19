@@ -15,6 +15,7 @@ object Config {
   val WindowSeconds = "spark-twitter.window-seconds"
   val CassandraHost = "cassandra.host"
   val CassandraKeySpace = "cassandra.keyspace"
+  val maxPickUpWorkers = "actor.pickupWorkers.limit"
 
 
 }

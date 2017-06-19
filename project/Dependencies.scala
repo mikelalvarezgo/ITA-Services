@@ -6,8 +6,9 @@ object Dependencies {
   val slf4jVersion = "1.6.4"
   val slf4jNop = "org.slf4j" % "slf4j-nop" % slf4jVersion
   val casbahV = "3.1.1"
-  val sprayVersion = "1.2.2"
+  val sprayVersion = "1.3.2"
   val sparkVersion = "1.2.1"
+  val AkkaHttpVersion = "10.0.6"
 
   val commonDependencies: Seq[ModuleID] = Seq(
     "org.spire-math" %% "cats" % "0.3.0",
@@ -25,7 +26,10 @@ object Dependencies {
     "org.mongodb" %% "casbah-commons" % casbahV,
     "org.mongodb" %% "casbah-core" % casbahV,
     "org.mongodb" %% "casbah-query" % casbahV,
-    "io.spray" % "spray-json_2.11" % "1.3.2",
+    "io.spray" %% "spray-can" % sprayVersion,
+    "io.spray" %% "spray-routing" % sprayVersion,
+    "io.spray" %% "spray-json" % sprayVersion,
+    "com.typesafe.akka" %%"akka-http" % AkkaHttpVersion,
     // https://mvnrepository.com/artifact/org.apache.tika/tika-core
     "org.apache.tika" % "tika-core" % "1.10",
     "com.optimaize.languagedetector" % "language-detector" % "0.5")
