@@ -1,12 +1,24 @@
 package domain
 
+import com.fasterxml.jackson.annotation.JsonValue
 import spray.json.DefaultJsonProtocol.{jsonFormat2, jsonFormat9}
 import spray.json._
 import spray.json.DefaultJsonProtocol._
+import spray.httpx.SprayJsonSupport
+import spray.json._
 
 
 object Model {
-  private[domain] val anyJF = new JsonFormat[Any]{ any =>
+
+    implicit  val BooleanJF = new RootJsonFormat[Boolean] {
+      override def write(obj:Boolean):JsValue = JsBoolean(obj)
+      override def read(json: JsValue):Boolean =  json match  {
+        case JsBoolean(v) => v
+        case _ => ???
+      }
+
+    }
+   implicit val anyJF = new RootJsonFormat[Any]{ any =>
 
     override def write(obj: Any): JsValue = obj match {
       case v: Int => JsNumber(v)
@@ -30,7 +42,7 @@ object Model {
     }
   }
 
-  implicit val JFid = new JsonFormat[Id] {
+  implicit val JFid = new RootJsonFormat[Id] {
     override def write(obj: Id): JsValue =
       JsObject("$oid" -> JsString(obj.value))
 
@@ -40,9 +52,9 @@ object Model {
     }
   }
 
-  implicit val JFLocation:JsonFormat[Location] = jsonFormat2(Location.apply)
+  implicit val JFLocation:RootJsonFormat[Location] = jsonFormat2(Location.apply)
 
-  implicit val JFTweetInfo:JsonFormat[TweetInfo]  =jsonFormat9(TweetInfo.apply)
+  implicit val JFTweetInfo:RootJsonFormat[TweetInfo]  =jsonFormat9(TweetInfo.apply)
 
 
 }

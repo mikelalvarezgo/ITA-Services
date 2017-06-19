@@ -11,7 +11,7 @@ import com.mongodb.casbah.Imports._
 
 import scala.util.Try
 
-class PickUpDAO(mongo_Host: String, mongo_Port: Int, db_name: String) extends AbsPickUpDAO
+case class PickUpDAO(mongo_Host: String, mongo_Port: Int, db_name: String) extends AbsPickUpDAO
   with MongoDbComponent
   with DAOHelpers {
 

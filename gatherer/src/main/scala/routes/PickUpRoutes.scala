@@ -1,6 +1,0 @@
-package routes
-
-class PickUpRoutes {
-
-
-}

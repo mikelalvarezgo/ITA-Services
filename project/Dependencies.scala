@@ -8,6 +8,7 @@ object Dependencies {
   val casbahV = "3.1.1"
   val sprayVersion = "1.3.2"
   val sparkVersion = "1.2.1"
+  val AkkaHttpVersion = "10.0.6"
 
   val commonDependencies: Seq[ModuleID] = Seq(
     "org.spire-math" %% "cats" % "0.3.0",
@@ -28,8 +29,7 @@ object Dependencies {
     "io.spray" %% "spray-can" % sprayVersion,
     "io.spray" %% "spray-routing" % sprayVersion,
     "io.spray" %% "spray-json" % sprayVersion,
-
-    "com.typesafe.akka" %% "akka-http-experimental" % "2.0.1",
+    "com.typesafe.akka" %%"akka-http" % AkkaHttpVersion,
     // https://mvnrepository.com/artifact/org.apache.tika/tika-core
     "org.apache.tika" % "tika-core" % "1.10",
     "com.optimaize.languagedetector" % "language-detector" % "0.5")

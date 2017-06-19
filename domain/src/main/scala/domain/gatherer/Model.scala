@@ -6,7 +6,8 @@ import spray.json.DefaultJsonProtocol._
 
 object Model {
 
-  implicit val pickUpStateJF : JsonFormat[PickUpState] = new  JsonFormat[PickUpState]{
+  implicit val pickUpStateJF : RootJsonFormat[PickUpState] =
+    new  RootJsonFormat[PickUpState]{
     override def write(obj: PickUpState): JsValue = JsString(obj.toString)
     override def read(json: JsValue): PickUpState = {
       val JsString(value) = json
@@ -19,6 +20,6 @@ object Model {
     }
   }
 
- implicit val pickUpJF : JsonFormat[TweetPickUp] = jsonFormat6(TweetPickUp.apply)
+ implicit val pickUpJF : RootJsonFormat[TweetPickUp] = jsonFormat6(TweetPickUp.apply)
 
 }
