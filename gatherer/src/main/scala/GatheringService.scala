@@ -10,22 +10,21 @@ import akka.util.Timeout
 import spray.can.Http
 import scala.concurrent.duration._
 
-class GatheringService  extends App
+object GatheringService  extends App
 with Logger
 with Config{
 
-  val hostApi = config.getString("http.host")
-  val portApi = config.getInt("http.port")
+  val hostApi = config.getString("service.host")
+  val portApi = config.getInt("service.port")
 
   //timeout needs to be set as an implicit val for the ask method (?)
 
   //start a new HTTP server on port 8080 with apiActor as the handler
   implicit val system = ActorSystem("quiz-management-service")
-  implicit val manager = ActorMaterializer()
   implicit val dataContext:GathererDataContext =GathererDataContext.chargeFromConfig()
   implicit val executionContext = system.dispatcher
   implicit val timeout = Timeout(10.seconds)
   val pickUpController =  PickUpController()
   val apiActor = system.actorOf(Props(new ApiActor("api-gathering",pickUpController)),"api-actor")
-  IO(Http) ? Http.Bind(apiActor, interface = "localhost", port = 8080)
+  IO(Http) ? Http.Bind(apiActor, interface = hostApi, port = portApi)
 }

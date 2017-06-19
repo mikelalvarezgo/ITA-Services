@@ -1,6 +1,8 @@
 import sbt._
 import Keys._
 
+import scala.util.Try
+
 object Common {
   val appVersion = "0.0.1"
 
@@ -36,4 +38,7 @@ object Common {
       "Eclipse repositories" at "https://repo.eclipse.org/service/local/repositories/egit-releases/content/",
       "Sonatype OSS Snapshots" at "https://oss.sonatype.org/content/repositories/snapshots")
   )
+
+
+
 }

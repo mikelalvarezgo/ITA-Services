@@ -1,9 +1,6 @@
 package mongo
 import com.mongodb.DBObject
 import com.mongodb.util.JSON
-import mongo.{DAO, MongoDbComponent}
-import domain.Model
-import mongo.Converters._
 import spray.json._
 import spray.json.DefaultJsonProtocol._
 object Converters {

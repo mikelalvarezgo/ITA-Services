@@ -5,7 +5,7 @@ import actors.PickUpManager
 import akka.actor.{ActorRef, ActorSystem, Props}
 import akka.util.Timeout
 import domain.Id
-import domain.gatherer.TweetPickUp
+import domain.gatherer.{Ready, TweetPickUp}
 import domain.gatherer.exception.GathererException
 import domain.gatherer.exception.GathererException._
 import mongo.daos.{DAOHelpers, PickUpDAO}
@@ -15,6 +15,7 @@ import rest.RestInterface
 import utils.{GathererDataContext, Logger}
 import akka.pattern.ask
 import domain.Model._
+
 import scala.concurrent.Future
 import scala.util.Try
 
@@ -31,6 +32,7 @@ trait PickUpController extends DAOHelpers
   val actorSystem: ActorSystem
   implicit val timeout: Timeout
   lazy val manager:ActorRef = actorSystem.actorOf(Props(PickUpManager()),"PickupManager")
+
 
   def createPickUp(tweetPickUp: TweetPickUp): Future[Id] = {
     (for {

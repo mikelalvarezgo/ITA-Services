@@ -12,6 +12,7 @@ object Dependencies {
 
   val commonDependencies: Seq[ModuleID] = Seq(
     "org.spire-math" %% "cats" % "0.3.0",
+    "com.typesafe" % "config" % "1.3.1",
     "org.scalaz" %% "scalaz-core" % "7.2.0",
     "org.scalaz" %% "scalaz-scalacheck-binding" % "7.2.0",
     "com.typesafe.akka" %% "akka-actor" % "2.3.2",

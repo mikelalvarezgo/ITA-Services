@@ -17,12 +17,12 @@ object GathererDataContext extends Config{
      val tweetInfoDao: TweetInfoDAO = TweetInfoDAO(
       config.getString("mongodb.host"),
       config.getInt("mongodb.port"),
-      config.getString("mongodb.database"))
+      config.getString("mongodb.name"))
 
      val pickupDAO: PickUpDAO = PickUpDAO(
       config.getString("mongodb.host"),
       config.getInt("mongodb.port"),
-      config.getString("mongodb.database"))
+      config.getString("mongodb.name"))
 
     new GathererDataContext(pickupDAO,tweetInfoDao)
   }
