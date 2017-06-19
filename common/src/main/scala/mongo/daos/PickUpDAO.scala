@@ -8,6 +8,8 @@ import mongo.{DAO, MongoDbComponent}
 import mongo.Converters._
 import domain.gatherer.Model._
 import com.mongodb.casbah.Imports._
+import com.mongodb.casbah.query.dsl.BSONType.BSONObjectId
+import org.bson.types.ObjectId
 
 import scala.util.Try
 
@@ -43,7 +45,7 @@ case class PickUpDAO(mongo_Host: String, mongo_Port: Int, db_name: String) exten
 
   override def get(id: Id): Try[TweetPickUp] = Try {
     pickups.findOne(MongoDBObject(
-      idPickUp -> id.value)).toStream.map(to[TweetPickUp].apply).head
+      idPickUp -> new ObjectId(id.value))).toStream.map(to[TweetPickUp].apply).head
   }
 
   def find(query: MongoDBObject): Try[TweetPickUp] = Try {
@@ -56,7 +58,7 @@ case class PickUpDAO(mongo_Host: String, mongo_Port: Int, db_name: String) exten
 
   override def remove(id: Id): Try[Unit] = Try {
     val bulk = pickups.initializeOrderedBulkOperation
-    bulk.find(MongoDBObject(idPickUp -> id)).remove()
+    bulk.find(MongoDBObject(idPickUp -> new ObjectId(id.value))).remove()
     require(bulk.execute().isAcknowledged)
   }
 

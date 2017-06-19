@@ -1,4 +1,4 @@
-[info] Updating {file:/Users/mikelwyred/tfm/ITA-Services/project/}ita-services-build...
+[info] Updating {file:/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/}ita-services-build...
 [debug] :: resolving dependencies :: default#ita-services-build;0.1-SNAPSHOT
 [debug] 	confs: [compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool]
 [debug] 	validate = true
@@ -16,7 +16,7 @@
 [debug] == resolving dependencies for default#ita-services-build;0.1-SNAPSHOT [provided]
 [debug] == resolving dependencies default#ita-services-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.4 [provided->default(compile)]
 [info] Resolving org.scala-lang#scala-library;2.10.4 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@5b64cd45
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3d3f9f9a
 [debug] sbt-chain: module revision found in cache: org.scala-lang#scala-library;2.10.4
 [debug] 	found org.scala-lang#scala-library;2.10.4 in sbt-chain
 [debug] 	[2.10.4] org.scala-lang#scala-library;2.10.4
@@ -1766,19 +1766,19 @@
 [debug] 	[NOT REQUIRED] org.scala-sbt#apply-macro;0.13.8!apply-macro.jar
 [debug] 	[NOT REQUIRED] org.scala-lang#jline;2.10.4!jline.jar
 [debug] 	[NOT REQUIRED] org.fusesource.jansi#jansi;1.4!jansi.jar
-[debug] :: resolution report :: resolve 1556ms :: artifacts dl 57ms
-[debug] 	report for default#ita-services-build;0.1-SNAPSHOT compile produced in /Users/mikelwyred/tfm/ITA-Services/project/target/resolution-cache/reports/default-ita-services-build-compile.xml
-[debug] 	report for default#ita-services-build;0.1-SNAPSHOT runtime produced in /Users/mikelwyred/tfm/ITA-Services/project/target/resolution-cache/reports/default-ita-services-build-runtime.xml
-[debug] 	report for default#ita-services-build;0.1-SNAPSHOT test produced in /Users/mikelwyred/tfm/ITA-Services/project/target/resolution-cache/reports/default-ita-services-build-test.xml
-[debug] 	report for default#ita-services-build;0.1-SNAPSHOT provided produced in /Users/mikelwyred/tfm/ITA-Services/project/target/resolution-cache/reports/default-ita-services-build-provided.xml
-[debug] 	report for default#ita-services-build;0.1-SNAPSHOT optional produced in /Users/mikelwyred/tfm/ITA-Services/project/target/resolution-cache/reports/default-ita-services-build-optional.xml
-[debug] 	report for default#ita-services-build;0.1-SNAPSHOT compile-internal produced in /Users/mikelwyred/tfm/ITA-Services/project/target/resolution-cache/reports/default-ita-services-build-compile-internal.xml
-[debug] 	report for default#ita-services-build;0.1-SNAPSHOT runtime-internal produced in /Users/mikelwyred/tfm/ITA-Services/project/target/resolution-cache/reports/default-ita-services-build-runtime-internal.xml
-[debug] 	report for default#ita-services-build;0.1-SNAPSHOT test-internal produced in /Users/mikelwyred/tfm/ITA-Services/project/target/resolution-cache/reports/default-ita-services-build-test-internal.xml
-[debug] 	report for default#ita-services-build;0.1-SNAPSHOT plugin produced in /Users/mikelwyred/tfm/ITA-Services/project/target/resolution-cache/reports/default-ita-services-build-plugin.xml
-[debug] 	report for default#ita-services-build;0.1-SNAPSHOT sources produced in /Users/mikelwyred/tfm/ITA-Services/project/target/resolution-cache/reports/default-ita-services-build-sources.xml
-[debug] 	report for default#ita-services-build;0.1-SNAPSHOT docs produced in /Users/mikelwyred/tfm/ITA-Services/project/target/resolution-cache/reports/default-ita-services-build-docs.xml
-[debug] 	report for default#ita-services-build;0.1-SNAPSHOT pom produced in /Users/mikelwyred/tfm/ITA-Services/project/target/resolution-cache/reports/default-ita-services-build-pom.xml
-[debug] 	report for default#ita-services-build;0.1-SNAPSHOT scala-tool produced in /Users/mikelwyred/tfm/ITA-Services/project/target/resolution-cache/reports/default-ita-services-build-scala-tool.xml
-[debug] 	resolve done (1556ms resolve - 57ms download)
+[debug] :: resolution report :: resolve 2489ms :: artifacts dl 72ms
+[debug] 	report for default#ita-services-build;0.1-SNAPSHOT compile produced in /Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/target/resolution-cache/reports/default-ita-services-build-compile.xml
+[debug] 	report for default#ita-services-build;0.1-SNAPSHOT runtime produced in /Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/target/resolution-cache/reports/default-ita-services-build-runtime.xml
+[debug] 	report for default#ita-services-build;0.1-SNAPSHOT test produced in /Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/target/resolution-cache/reports/default-ita-services-build-test.xml
+[debug] 	report for default#ita-services-build;0.1-SNAPSHOT provided produced in /Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/target/resolution-cache/reports/default-ita-services-build-provided.xml
+[debug] 	report for default#ita-services-build;0.1-SNAPSHOT optional produced in /Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/target/resolution-cache/reports/default-ita-services-build-optional.xml
+[debug] 	report for default#ita-services-build;0.1-SNAPSHOT compile-internal produced in /Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/target/resolution-cache/reports/default-ita-services-build-compile-internal.xml
+[debug] 	report for default#ita-services-build;0.1-SNAPSHOT runtime-internal produced in /Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/target/resolution-cache/reports/default-ita-services-build-runtime-internal.xml
+[debug] 	report for default#ita-services-build;0.1-SNAPSHOT test-internal produced in /Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/target/resolution-cache/reports/default-ita-services-build-test-internal.xml
+[debug] 	report for default#ita-services-build;0.1-SNAPSHOT plugin produced in /Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/target/resolution-cache/reports/default-ita-services-build-plugin.xml
+[debug] 	report for default#ita-services-build;0.1-SNAPSHOT sources produced in /Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/target/resolution-cache/reports/default-ita-services-build-sources.xml
+[debug] 	report for default#ita-services-build;0.1-SNAPSHOT docs produced in /Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/target/resolution-cache/reports/default-ita-services-build-docs.xml
+[debug] 	report for default#ita-services-build;0.1-SNAPSHOT pom produced in /Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/target/resolution-cache/reports/default-ita-services-build-pom.xml
+[debug] 	report for default#ita-services-build;0.1-SNAPSHOT scala-tool produced in /Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/target/resolution-cache/reports/default-ita-services-build-scala-tool.xml
+[debug] 	resolve done (2489ms resolve - 72ms download)
 [info] Done updating.

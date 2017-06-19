@@ -4,7 +4,7 @@
 		module="ita-client$sources_2.11"
 		revision="0.0.1"
 		status="integration"
-		publication="20170619181156"
+		publication="20170619200412"
 	/>
 	<configurations>
 		<conf name="compile" visibility="public" description=""/>

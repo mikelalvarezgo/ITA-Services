@@ -10,7 +10,9 @@ case class TweetPickUp(
   state: PickUpState,
   nTweets: Int) {
 
-  def canBeInit:Boolean = ! List(Finished,InProcess).contains(state)
+  def canBeCreated:Boolean = ! List(Finished,InProcess,Ready).contains(state)
+
+  def canBeCollected:Boolean =  List(Ready).contains(state)
 
   def canBeFinished:Boolean =  List(Finished).contains(state)
 

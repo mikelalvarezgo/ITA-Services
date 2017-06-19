@@ -7,6 +7,8 @@ abstract class PickUpState {
   override def toString = getClass.getName.split("$").last.toUpperCase
 }
 
+case object Created extends PickUpState
+
 case object Ready extends PickUpState
 
 case object InProcess extends PickUpState

@@ -13,7 +13,15 @@ class PickUpManager(implicit dataContext:GathererDataContext) extends Actor
   var workers: Map[Id, ActorRef] = Map.empty
   var limitWorkers: Int = config.getInt(Config.maxPickUpWorkers)
   override def receive: Receive = {
+    case CollectPickUp(pickUp) =>
+      logger.info(s"${~>} CURRENT WORKERS -> ${workers.toString()}")
+      logger.info(s"${~>} Received message for collect pickup ${pickUp._id.get}")
+      val worker = workers.find(elem => elem._1 == pickUp._id.get).get._2
+      workers(pickUp._id.get) ! StartPickUp(pickUp)
+      logger.info(s"${~>} Forwarded message for collect pickup" )
+      sender() ! WorkerStarted
     case StartPickUp(pickUp) =>
+      logger.info(s"${~>} Received message for start worker pickup ${pickUp._id.get}")
       if(limitWorkers <= workers.size){
         logger.info(s"${~>}Cannot start worker for topic $pickUp , limit of workers reached")
         sender() ! AllWorkersBusy
@@ -22,10 +30,10 @@ class PickUpManager(implicit dataContext:GathererDataContext) extends Actor
           logger.info(s"${~>}There is a worker already for this topic ${pickUp._id.get}")
           sender() ! WorkerExists
         } else{
-          val newWorker:ActorRef = context.actorOf(Props(PickUpWorker()), "PushActor")
+          val newWorker:ActorRef = context.actorOf(Props(PickUpWorker()), s"Worker-${pickUp._id.get}")
           workers = workers.+( pickUp._id.get -> newWorker)
-          newWorker forward StartPickUp(pickUp)
           sender() ! WorkerStarted
+          logger.info(s"${~>}Added worker for  $pickUp ")
         }
       }
     case StopPickUp(pickUp) =>

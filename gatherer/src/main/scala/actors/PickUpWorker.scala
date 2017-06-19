@@ -20,11 +20,10 @@ class PickUpWorker(implicit dataContext:GathererDataContext) extends  Actor
   override def receive: Receive ={
 
     case StartPickUp(topic) =>{
+      logger.info(s"${~>} STARTING RECOLECTION FOR $topic")
       //  Add filters ..
       val filtersConf =  topic.topics
-      filter(
-        filtersConf
-      )
+      filter(filtersConf)
       val idiomsFilter = config.getStringList("twitter.lenguages").asInstanceOf[List[String]]
           .map{ leng => TweetsFilter(s"filter_$leng",Some(leng))}
 
@@ -54,12 +53,13 @@ class PickUpWorker(implicit dataContext:GathererDataContext) extends  Actor
       listen()
 
     }
+    case _ => logger.info(s"${~>} RECEIVED SOMETHING")
 }
 }
 object  PickUpWorker {
   val ~> = "[PICK-UP WORKER] "
 
   def apply()(implicit ndataContext: GathererDataContext): PickUpWorker =
-    new PickUpWorker
+     PickUpWorker()
 
 }

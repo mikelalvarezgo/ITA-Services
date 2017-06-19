@@ -5,7 +5,7 @@ import actors.PickUpManager
 import akka.actor.{ActorRef, ActorSystem, Props}
 import akka.util.Timeout
 import domain.Id
-import domain.gatherer.{Ready, TweetPickUp}
+import domain.gatherer.{InProcess, Ready, TweetPickUp}
 import domain.gatherer.exception.GathererException
 import domain.gatherer.exception.GathererException._
 import mongo.daos.{DAOHelpers, PickUpDAO}
@@ -35,6 +35,7 @@ trait PickUpController extends DAOHelpers
 
 
   def createPickUp(tweetPickUp: TweetPickUp): Future[Id] = {
+    logger.info(s"Request for $tweetPickUp arrived to controller")
     (for {
       _ <- Future(tweetPickUp._id.foreach(aId =>
         throw GathererException(
@@ -87,7 +88,8 @@ trait PickUpController extends DAOHelpers
   def startPickUp(idPickUp: Id): Future[Boolean] =  {
     (for {
       pickUp <- dataContext.pickupDAO.get(idPickUp)
-      isReady <- Try(pickUp.canBeInit)
+      isReady <- Try(pickUp.canBeCreated)
+      updateResult <- dataContext.pickupDAO.update(pickUp.copy(state= Ready))
     }yield{
       if (isReady) {
         logger.info("Starting recolection for pickup ")
@@ -103,12 +105,41 @@ trait PickUpController extends DAOHelpers
           }
       }else{
         logger.info(s"Pickup $pickUp cant not be inited")
+        Future.successful(false)
+      }
+    }).recover {
+      case e:Exception =>
+        logger.error(s"Unexpected exception when starting pickup $idPickUp",e)
+        Future.successful(false)
+    }.get
+  }
+
+  def collectPickUp(idPickUp: Id): Future[Boolean] =  {
+    (for {
+      pickUp <- dataContext.pickupDAO.get(idPickUp)
+      isReady <- Try(pickUp.canBeCollected)
+      update <- dataContext.pickupDAO.update(pickUp.copy(state = InProcess))
+    }yield{
+      if (isReady) {
+        logger.info(s"${~>}Collecting  for pickup ")
+        val fActResp = (manager ? CollectPickUp(pickUp))
+        fActResp.map {
+          case WorkerStarted =>
+            logger.info(s"${~>}Pickup $pickUp assigned correctly to worker")
+            true
+          case AllWorkersBusy =>
+            logger.info(s"${~>}Pickup $pickUp assigned correctly to worker")
+            false
+          case _ => false
+        }
+      }else{
+        logger.info(s"Pickup $pickUp cant not be collected")
         Future.successful(false
         )
       }
     }).recover {
       case e:Exception =>
-        logger.error(s"Unexpected exception when starting pickup $idPickUp",e)
+        logger.error(s"${~>}Unexpected exception when starting pickup $idPickUp",e)
         Future.successful(false)
     }.get
   }
