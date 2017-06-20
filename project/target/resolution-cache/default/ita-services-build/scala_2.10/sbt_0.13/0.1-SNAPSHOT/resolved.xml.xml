@@ -4,7 +4,7 @@
 		module="ita-services-build"
 		revision="0.1-SNAPSHOT"
 		status="integration"
-		publication="20170619200130"
+		publication="20170620183504"
 		e:sbtVersion="0.13" e:scalaVersion="2.10"
 	>
 		<description>

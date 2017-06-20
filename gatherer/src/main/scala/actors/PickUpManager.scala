@@ -1,12 +1,12 @@
 package actors
 
-import akka.actor.{Actor, ActorRef, PoisonPill, Props}
+import akka.actor.{Actor, ActorRef, ActorSystem, PoisonPill, Props}
 import domain.Id
 import mongo.daos.PickUpDAO
 import ActorMessages._
 import utils.{Config, GathererDataContext, Logger}
 
-class PickUpManager(implicit dataContext:GathererDataContext) extends Actor
+class PickUpManager(implicit dataContext:GathererDataContext ,system: ActorSystem) extends Actor
   with Config
   with Logger{
   import PickUpManager._
@@ -53,6 +53,6 @@ class PickUpManager(implicit dataContext:GathererDataContext) extends Actor
 
 object PickUpManager {
   val ~> = "[PICK-UP MANAGER] "
-  def apply()(implicit ndataContext: GathererDataContext): PickUpManager =
+  def apply()(implicit ndataContext: GathererDataContext,system: ActorSystem): PickUpManager =
     new PickUpManager()
 }

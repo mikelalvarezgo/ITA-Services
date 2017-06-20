@@ -4,7 +4,7 @@ output mode:
 0 -> single
 output directories:
 1 items
-output dir -> /Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/target/scala-2.10/sbt-0.13/classes
+output dir -> /Users/mikelwyred/tfm/ITA-Services/project/target/scala-2.10/sbt-0.13/classes
 compile options:
 0 items
 javac options:
@@ -20,48 +20,48 @@ name hashing:
 0 -> true
 products:
 18 items
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Build.scala -> /Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/target/scala-2.10/sbt-0.13/classes/MyBuild$$anonfun$ITAService$1.class
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Build.scala -> /Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/target/scala-2.10/sbt-0.13/classes/MyBuild$$anonfun$ITAService$2.class
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Build.scala -> /Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/target/scala-2.10/sbt-0.13/classes/MyBuild$$anonfun$ITAService$3.class
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Build.scala -> /Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/target/scala-2.10/sbt-0.13/classes/MyBuild$$anonfun$ITAService$4.class
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Build.scala -> /Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/target/scala-2.10/sbt-0.13/classes/MyBuild$.class
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Build.scala -> /Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/target/scala-2.10/sbt-0.13/classes/MyBuild.class
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Common.scala -> /Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/target/scala-2.10/sbt-0.13/classes/Common$$anonfun$1.class
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Common.scala -> /Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/target/scala-2.10/sbt-0.13/classes/Common$$anonfun$2.class
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Common.scala -> /Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/target/scala-2.10/sbt-0.13/classes/Common$$anonfun$3.class
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Common.scala -> /Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/target/scala-2.10/sbt-0.13/classes/Common$$anonfun$4.class
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Common.scala -> /Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/target/scala-2.10/sbt-0.13/classes/Common$$anonfun$5.class
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Common.scala -> /Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/target/scala-2.10/sbt-0.13/classes/Common$$anonfun$6.class
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Common.scala -> /Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/target/scala-2.10/sbt-0.13/classes/Common$$anonfun$copyDepTask$1$$anonfun$apply$1.class
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Common.scala -> /Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/target/scala-2.10/sbt-0.13/classes/Common$$anonfun$copyDepTask$1.class
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Common.scala -> /Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/target/scala-2.10/sbt-0.13/classes/Common$.class
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Common.scala -> /Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/target/scala-2.10/sbt-0.13/classes/Common.class
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Dependencies.scala -> /Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/target/scala-2.10/sbt-0.13/classes/Dependencies$.class
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Dependencies.scala -> /Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/target/scala-2.10/sbt-0.13/classes/Dependencies.class
+/Users/mikelwyred/tfm/ITA-Services/project/Build.scala -> /Users/mikelwyred/tfm/ITA-Services/project/target/scala-2.10/sbt-0.13/classes/MyBuild$$anonfun$ITAService$1.class
+/Users/mikelwyred/tfm/ITA-Services/project/Build.scala -> /Users/mikelwyred/tfm/ITA-Services/project/target/scala-2.10/sbt-0.13/classes/MyBuild$$anonfun$ITAService$2.class
+/Users/mikelwyred/tfm/ITA-Services/project/Build.scala -> /Users/mikelwyred/tfm/ITA-Services/project/target/scala-2.10/sbt-0.13/classes/MyBuild$$anonfun$ITAService$3.class
+/Users/mikelwyred/tfm/ITA-Services/project/Build.scala -> /Users/mikelwyred/tfm/ITA-Services/project/target/scala-2.10/sbt-0.13/classes/MyBuild$$anonfun$ITAService$4.class
+/Users/mikelwyred/tfm/ITA-Services/project/Build.scala -> /Users/mikelwyred/tfm/ITA-Services/project/target/scala-2.10/sbt-0.13/classes/MyBuild$.class
+/Users/mikelwyred/tfm/ITA-Services/project/Build.scala -> /Users/mikelwyred/tfm/ITA-Services/project/target/scala-2.10/sbt-0.13/classes/MyBuild.class
+/Users/mikelwyred/tfm/ITA-Services/project/Common.scala -> /Users/mikelwyred/tfm/ITA-Services/project/target/scala-2.10/sbt-0.13/classes/Common$$anonfun$1.class
+/Users/mikelwyred/tfm/ITA-Services/project/Common.scala -> /Users/mikelwyred/tfm/ITA-Services/project/target/scala-2.10/sbt-0.13/classes/Common$$anonfun$2.class
+/Users/mikelwyred/tfm/ITA-Services/project/Common.scala -> /Users/mikelwyred/tfm/ITA-Services/project/target/scala-2.10/sbt-0.13/classes/Common$$anonfun$3.class
+/Users/mikelwyred/tfm/ITA-Services/project/Common.scala -> /Users/mikelwyred/tfm/ITA-Services/project/target/scala-2.10/sbt-0.13/classes/Common$$anonfun$4.class
+/Users/mikelwyred/tfm/ITA-Services/project/Common.scala -> /Users/mikelwyred/tfm/ITA-Services/project/target/scala-2.10/sbt-0.13/classes/Common$$anonfun$5.class
+/Users/mikelwyred/tfm/ITA-Services/project/Common.scala -> /Users/mikelwyred/tfm/ITA-Services/project/target/scala-2.10/sbt-0.13/classes/Common$$anonfun$6.class
+/Users/mikelwyred/tfm/ITA-Services/project/Common.scala -> /Users/mikelwyred/tfm/ITA-Services/project/target/scala-2.10/sbt-0.13/classes/Common$$anonfun$copyDepTask$1$$anonfun$apply$1.class
+/Users/mikelwyred/tfm/ITA-Services/project/Common.scala -> /Users/mikelwyred/tfm/ITA-Services/project/target/scala-2.10/sbt-0.13/classes/Common$$anonfun$copyDepTask$1.class
+/Users/mikelwyred/tfm/ITA-Services/project/Common.scala -> /Users/mikelwyred/tfm/ITA-Services/project/target/scala-2.10/sbt-0.13/classes/Common$.class
+/Users/mikelwyred/tfm/ITA-Services/project/Common.scala -> /Users/mikelwyred/tfm/ITA-Services/project/target/scala-2.10/sbt-0.13/classes/Common.class
+/Users/mikelwyred/tfm/ITA-Services/project/Dependencies.scala -> /Users/mikelwyred/tfm/ITA-Services/project/target/scala-2.10/sbt-0.13/classes/Dependencies$.class
+/Users/mikelwyred/tfm/ITA-Services/project/Dependencies.scala -> /Users/mikelwyred/tfm/ITA-Services/project/target/scala-2.10/sbt-0.13/classes/Dependencies.class
 binary dependencies:
 22 items
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Build.scala -> /Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/rt.jar
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Build.scala -> /Users/mikelalvarezgo/.ivy2/cache/org.scala-sbt/collections/jars/collections-0.13.8.jar
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Build.scala -> /Users/mikelalvarezgo/.ivy2/cache/org.scala-sbt/ivy/jars/ivy-0.13.8.jar
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Build.scala -> /Users/mikelalvarezgo/.ivy2/cache/org.scala-sbt/main-settings/jars/main-settings-0.13.8.jar
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Build.scala -> /Users/mikelalvarezgo/.ivy2/cache/org.scala-sbt/main/jars/main-0.13.8.jar
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Build.scala -> /Users/mikelalvarezgo/.ivy2/cache/org.scala-sbt/sbt/jars/sbt-0.13.8.jar
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Build.scala -> /Users/mikelalvarezgo/.sbt/boot/scala-2.10.4/lib/scala-library.jar
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Common.scala -> /Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/rt.jar
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Common.scala -> /Users/mikelalvarezgo/.ivy2/cache/org.scala-sbt/apply-macro/jars/apply-macro-0.13.8.jar
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Common.scala -> /Users/mikelalvarezgo/.ivy2/cache/org.scala-sbt/collections/jars/collections-0.13.8.jar
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Common.scala -> /Users/mikelalvarezgo/.ivy2/cache/org.scala-sbt/io/jars/io-0.13.8.jar
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Common.scala -> /Users/mikelalvarezgo/.ivy2/cache/org.scala-sbt/ivy/jars/ivy-0.13.8.jar
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Common.scala -> /Users/mikelalvarezgo/.ivy2/cache/org.scala-sbt/main-settings/jars/main-settings-0.13.8.jar
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Common.scala -> /Users/mikelalvarezgo/.ivy2/cache/org.scala-sbt/main/jars/main-0.13.8.jar
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Common.scala -> /Users/mikelalvarezgo/.ivy2/cache/org.scala-sbt/sbt/jars/sbt-0.13.8.jar
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Common.scala -> /Users/mikelalvarezgo/.ivy2/cache/org.scala-sbt/task-system/jars/task-system-0.13.8.jar
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Common.scala -> /Users/mikelalvarezgo/.sbt/boot/scala-2.10.4/lib/scala-library.jar
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Dependencies.scala -> /Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/rt.jar
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Dependencies.scala -> /Users/mikelalvarezgo/.ivy2/cache/org.scala-sbt/ivy/jars/ivy-0.13.8.jar
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Dependencies.scala -> /Users/mikelalvarezgo/.ivy2/cache/org.scala-sbt/main/jars/main-0.13.8.jar
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Dependencies.scala -> /Users/mikelalvarezgo/.ivy2/cache/org.scala-sbt/sbt/jars/sbt-0.13.8.jar
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Dependencies.scala -> /Users/mikelalvarezgo/.sbt/boot/scala-2.10.4/lib/scala-library.jar
+/Users/mikelwyred/tfm/ITA-Services/project/Build.scala -> /Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/rt.jar
+/Users/mikelwyred/tfm/ITA-Services/project/Build.scala -> /Users/mikelwyred/.ivy2/cache/org.scala-sbt/collections/jars/collections-0.13.8.jar
+/Users/mikelwyred/tfm/ITA-Services/project/Build.scala -> /Users/mikelwyred/.ivy2/cache/org.scala-sbt/ivy/jars/ivy-0.13.8.jar
+/Users/mikelwyred/tfm/ITA-Services/project/Build.scala -> /Users/mikelwyred/.ivy2/cache/org.scala-sbt/main-settings/jars/main-settings-0.13.8.jar
+/Users/mikelwyred/tfm/ITA-Services/project/Build.scala -> /Users/mikelwyred/.ivy2/cache/org.scala-sbt/main/jars/main-0.13.8.jar
+/Users/mikelwyred/tfm/ITA-Services/project/Build.scala -> /Users/mikelwyred/.ivy2/cache/org.scala-sbt/sbt/jars/sbt-0.13.8.jar
+/Users/mikelwyred/tfm/ITA-Services/project/Build.scala -> /Users/mikelwyred/.sbt/boot/scala-2.10.4/lib/scala-library.jar
+/Users/mikelwyred/tfm/ITA-Services/project/Common.scala -> /Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/rt.jar
+/Users/mikelwyred/tfm/ITA-Services/project/Common.scala -> /Users/mikelwyred/.ivy2/cache/org.scala-sbt/apply-macro/jars/apply-macro-0.13.8.jar
+/Users/mikelwyred/tfm/ITA-Services/project/Common.scala -> /Users/mikelwyred/.ivy2/cache/org.scala-sbt/collections/jars/collections-0.13.8.jar
+/Users/mikelwyred/tfm/ITA-Services/project/Common.scala -> /Users/mikelwyred/.ivy2/cache/org.scala-sbt/io/jars/io-0.13.8.jar
+/Users/mikelwyred/tfm/ITA-Services/project/Common.scala -> /Users/mikelwyred/.ivy2/cache/org.scala-sbt/ivy/jars/ivy-0.13.8.jar
+/Users/mikelwyred/tfm/ITA-Services/project/Common.scala -> /Users/mikelwyred/.ivy2/cache/org.scala-sbt/main-settings/jars/main-settings-0.13.8.jar
+/Users/mikelwyred/tfm/ITA-Services/project/Common.scala -> /Users/mikelwyred/.ivy2/cache/org.scala-sbt/main/jars/main-0.13.8.jar
+/Users/mikelwyred/tfm/ITA-Services/project/Common.scala -> /Users/mikelwyred/.ivy2/cache/org.scala-sbt/sbt/jars/sbt-0.13.8.jar
+/Users/mikelwyred/tfm/ITA-Services/project/Common.scala -> /Users/mikelwyred/.ivy2/cache/org.scala-sbt/task-system/jars/task-system-0.13.8.jar
+/Users/mikelwyred/tfm/ITA-Services/project/Common.scala -> /Users/mikelwyred/.sbt/boot/scala-2.10.4/lib/scala-library.jar
+/Users/mikelwyred/tfm/ITA-Services/project/Dependencies.scala -> /Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/rt.jar
+/Users/mikelwyred/tfm/ITA-Services/project/Dependencies.scala -> /Users/mikelwyred/.ivy2/cache/org.scala-sbt/ivy/jars/ivy-0.13.8.jar
+/Users/mikelwyred/tfm/ITA-Services/project/Dependencies.scala -> /Users/mikelwyred/.ivy2/cache/org.scala-sbt/main/jars/main-0.13.8.jar
+/Users/mikelwyred/tfm/ITA-Services/project/Dependencies.scala -> /Users/mikelwyred/.ivy2/cache/org.scala-sbt/sbt/jars/sbt-0.13.8.jar
+/Users/mikelwyred/tfm/ITA-Services/project/Dependencies.scala -> /Users/mikelwyred/.sbt/boot/scala-2.10.4/lib/scala-library.jar
 direct source dependencies:
 0 items
 direct external dependencies:
@@ -72,8 +72,8 @@ public inherited external dependencies:
 0 items
 member reference internal dependencies:
 2 items
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Build.scala -> /Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Common.scala
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Build.scala -> /Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Dependencies.scala
+/Users/mikelwyred/tfm/ITA-Services/project/Build.scala -> /Users/mikelwyred/tfm/ITA-Services/project/Common.scala
+/Users/mikelwyred/tfm/ITA-Services/project/Build.scala -> /Users/mikelwyred/tfm/ITA-Services/project/Dependencies.scala
 member reference external dependencies:
 0 items
 inheritance internal dependencies:
@@ -82,243 +82,244 @@ inheritance external dependencies:
 0 items
 class names:
 18 items
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Build.scala -> MyBuild
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Build.scala -> MyBuild$
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Build.scala -> MyBuild$$anonfun$ITAService$1
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Build.scala -> MyBuild$$anonfun$ITAService$2
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Build.scala -> MyBuild$$anonfun$ITAService$3
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Build.scala -> MyBuild$$anonfun$ITAService$4
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Common.scala -> Common
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Common.scala -> Common$
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Common.scala -> Common$$anonfun$1
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Common.scala -> Common$$anonfun$2
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Common.scala -> Common$$anonfun$3
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Common.scala -> Common$$anonfun$4
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Common.scala -> Common$$anonfun$5
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Common.scala -> Common$$anonfun$6
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Common.scala -> Common$$anonfun$copyDepTask$1
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Common.scala -> Common$$anonfun$copyDepTask$1$$anonfun$apply$1
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Dependencies.scala -> Dependencies
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Dependencies.scala -> Dependencies$
+/Users/mikelwyred/tfm/ITA-Services/project/Build.scala -> MyBuild
+/Users/mikelwyred/tfm/ITA-Services/project/Build.scala -> MyBuild$
+/Users/mikelwyred/tfm/ITA-Services/project/Build.scala -> MyBuild$$anonfun$ITAService$1
+/Users/mikelwyred/tfm/ITA-Services/project/Build.scala -> MyBuild$$anonfun$ITAService$2
+/Users/mikelwyred/tfm/ITA-Services/project/Build.scala -> MyBuild$$anonfun$ITAService$3
+/Users/mikelwyred/tfm/ITA-Services/project/Build.scala -> MyBuild$$anonfun$ITAService$4
+/Users/mikelwyred/tfm/ITA-Services/project/Common.scala -> Common
+/Users/mikelwyred/tfm/ITA-Services/project/Common.scala -> Common$
+/Users/mikelwyred/tfm/ITA-Services/project/Common.scala -> Common$$anonfun$1
+/Users/mikelwyred/tfm/ITA-Services/project/Common.scala -> Common$$anonfun$2
+/Users/mikelwyred/tfm/ITA-Services/project/Common.scala -> Common$$anonfun$3
+/Users/mikelwyred/tfm/ITA-Services/project/Common.scala -> Common$$anonfun$4
+/Users/mikelwyred/tfm/ITA-Services/project/Common.scala -> Common$$anonfun$5
+/Users/mikelwyred/tfm/ITA-Services/project/Common.scala -> Common$$anonfun$6
+/Users/mikelwyred/tfm/ITA-Services/project/Common.scala -> Common$$anonfun$copyDepTask$1
+/Users/mikelwyred/tfm/ITA-Services/project/Common.scala -> Common$$anonfun$copyDepTask$1$$anonfun$apply$1
+/Users/mikelwyred/tfm/ITA-Services/project/Dependencies.scala -> Dependencies
+/Users/mikelwyred/tfm/ITA-Services/project/Dependencies.scala -> Dependencies$
 used names:
 140 items
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Build.scala -> <init>
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Build.scala -> Build
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Build.scala -> ClasspathDep
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Build.scala -> Common
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Build.scala -> Def
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Build.scala -> Dependencies
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Build.scala -> Keys
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Build.scala -> MyBuild
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Build.scala -> NamePrefix
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Build.scala -> Predef
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Build.scala -> Project
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Build.scala -> ProjectReference
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Build.scala -> Seq
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Build.scala -> SettingsDefinition
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Build.scala -> String
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Build.scala -> apply
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Build.scala -> dependsOn
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Build.scala -> file
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Build.scala -> name
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Build.scala -> package
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Build.scala -> resolvers
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Build.scala -> sbt
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Build.scala -> scala
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Build.scala -> settings
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Build.scala -> wrapSettingsDefinition
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Build.scala -> x$1
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Build.scala -> x$2
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Build.scala -> x$3
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Build.scala -> x$4
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Build.scala -> x$5
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Build.scala -> x$6
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Build.scala -> x$7
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Build.scala -> x$8
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Common.scala -> +
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Common.scala -> ++=
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Common.scala -> +=
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Common.scala -> /
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Common.scala -> :=
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Common.scala -> <<=
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Common.scala -> <init>
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Common.scala -> Any
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Common.scala -> AnyRef
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Common.scala -> Append
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Common.scala -> Classpaths
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Common.scala -> Common
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Common.scala -> Def
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Common.scala -> DefaultMavenRepository
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Common.scala -> FullInstance
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Common.scala -> IO
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Common.scala -> InitializeInstance
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Common.scala -> Keys
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Common.scala -> ManifestFactory
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Common.scala -> Nothing
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Common.scala -> Opts
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Common.scala -> Path
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Common.scala -> Resolver
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Common.scala -> Scoped
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Common.scala -> Seq
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Common.scala -> Setting
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Common.scala -> TaskKey
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Common.scala -> Try
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Common.scala -> Unit
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Common.scala -> UpdateReport
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Common.scala -> _root_
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Common.scala -> absolutePath
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Common.scala -> allFiles
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Common.scala -> appVersion
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Common.scala -> append1
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Common.scala -> appendN
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Common.scala -> appendSeq
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Common.scala -> apply
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Common.scala -> at
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Common.scala -> collection
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Common.scala -> copyDepTask
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Common.scala -> copyDependencies
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Common.scala -> copyFile
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Common.scala -> crossTarget
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Common.scala -> defaultLocal
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Common.scala -> destPath
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Common.scala -> foreach
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Common.scala -> getName
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Common.scala -> javacOptions
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Common.scala -> map
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Common.scala -> mavenLocal
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Common.scala -> mavenLocalFile
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Common.scala -> out
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Common.scala -> package
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Common.scala -> pure
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Common.scala -> reflect
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Common.scala -> resolver
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Common.scala -> resolvers
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Common.scala -> richFile
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Common.scala -> richUpdateReport
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Common.scala -> sbt
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Common.scala -> sbtPluginReleases
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Common.scala -> scala
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Common.scala -> scalaVersion
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Common.scala -> scalacOptions
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Common.scala -> set
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Common.scala -> settings
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Common.scala -> srcPath
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Common.scala -> t3ToTable3
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Common.scala -> toRepositoryName
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Common.scala -> typesafeReleases
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Common.scala -> update
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Common.scala -> updateReport
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Common.scala -> userHome
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Common.scala -> util
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Common.scala -> version
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Dependencies.scala -> %
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Dependencies.scala -> %%
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Dependencies.scala -> ++
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Dependencies.scala -> <init>
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Dependencies.scala -> AkkaHttpVersion
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Dependencies.scala -> AnyRef
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Dependencies.scala -> Dependencies
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Dependencies.scala -> Keys
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Dependencies.scala -> ModuleID
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Dependencies.scala -> Seq
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Dependencies.scala -> apiDependencies
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Dependencies.scala -> apply
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Dependencies.scala -> canBuildFrom
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Dependencies.scala -> casbahV
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Dependencies.scala -> clientDependencies
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Dependencies.scala -> collection
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Dependencies.scala -> commonDependencies
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Dependencies.scala -> domainDependencies
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Dependencies.scala -> gathererDependencies
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Dependencies.scala -> json
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Dependencies.scala -> moduleIDConfigurable
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Dependencies.scala -> package
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Dependencies.scala -> sbt
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Dependencies.scala -> scala
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Dependencies.scala -> slf4jNop
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Dependencies.scala -> slf4jVersion
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Dependencies.scala -> sparkDependencies
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Dependencies.scala -> sparkVersion
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Dependencies.scala -> sprayVersion
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Dependencies.scala -> toGroupID
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Dependencies.scala -> webDependencies
+/Users/mikelwyred/tfm/ITA-Services/project/Build.scala -> <init>
+/Users/mikelwyred/tfm/ITA-Services/project/Build.scala -> Build
+/Users/mikelwyred/tfm/ITA-Services/project/Build.scala -> ClasspathDep
+/Users/mikelwyred/tfm/ITA-Services/project/Build.scala -> Common
+/Users/mikelwyred/tfm/ITA-Services/project/Build.scala -> Def
+/Users/mikelwyred/tfm/ITA-Services/project/Build.scala -> Dependencies
+/Users/mikelwyred/tfm/ITA-Services/project/Build.scala -> Keys
+/Users/mikelwyred/tfm/ITA-Services/project/Build.scala -> MyBuild
+/Users/mikelwyred/tfm/ITA-Services/project/Build.scala -> NamePrefix
+/Users/mikelwyred/tfm/ITA-Services/project/Build.scala -> Predef
+/Users/mikelwyred/tfm/ITA-Services/project/Build.scala -> Project
+/Users/mikelwyred/tfm/ITA-Services/project/Build.scala -> ProjectReference
+/Users/mikelwyred/tfm/ITA-Services/project/Build.scala -> Seq
+/Users/mikelwyred/tfm/ITA-Services/project/Build.scala -> SettingsDefinition
+/Users/mikelwyred/tfm/ITA-Services/project/Build.scala -> String
+/Users/mikelwyred/tfm/ITA-Services/project/Build.scala -> apply
+/Users/mikelwyred/tfm/ITA-Services/project/Build.scala -> dependsOn
+/Users/mikelwyred/tfm/ITA-Services/project/Build.scala -> file
+/Users/mikelwyred/tfm/ITA-Services/project/Build.scala -> name
+/Users/mikelwyred/tfm/ITA-Services/project/Build.scala -> package
+/Users/mikelwyred/tfm/ITA-Services/project/Build.scala -> resolvers
+/Users/mikelwyred/tfm/ITA-Services/project/Build.scala -> sbt
+/Users/mikelwyred/tfm/ITA-Services/project/Build.scala -> scala
+/Users/mikelwyred/tfm/ITA-Services/project/Build.scala -> settings
+/Users/mikelwyred/tfm/ITA-Services/project/Build.scala -> wrapSettingsDefinition
+/Users/mikelwyred/tfm/ITA-Services/project/Build.scala -> x$1
+/Users/mikelwyred/tfm/ITA-Services/project/Build.scala -> x$2
+/Users/mikelwyred/tfm/ITA-Services/project/Build.scala -> x$3
+/Users/mikelwyred/tfm/ITA-Services/project/Build.scala -> x$4
+/Users/mikelwyred/tfm/ITA-Services/project/Build.scala -> x$5
+/Users/mikelwyred/tfm/ITA-Services/project/Build.scala -> x$6
+/Users/mikelwyred/tfm/ITA-Services/project/Build.scala -> x$7
+/Users/mikelwyred/tfm/ITA-Services/project/Build.scala -> x$8
+/Users/mikelwyred/tfm/ITA-Services/project/Common.scala -> +
+/Users/mikelwyred/tfm/ITA-Services/project/Common.scala -> ++=
+/Users/mikelwyred/tfm/ITA-Services/project/Common.scala -> +=
+/Users/mikelwyred/tfm/ITA-Services/project/Common.scala -> /
+/Users/mikelwyred/tfm/ITA-Services/project/Common.scala -> :=
+/Users/mikelwyred/tfm/ITA-Services/project/Common.scala -> <<=
+/Users/mikelwyred/tfm/ITA-Services/project/Common.scala -> <init>
+/Users/mikelwyred/tfm/ITA-Services/project/Common.scala -> Any
+/Users/mikelwyred/tfm/ITA-Services/project/Common.scala -> AnyRef
+/Users/mikelwyred/tfm/ITA-Services/project/Common.scala -> Append
+/Users/mikelwyred/tfm/ITA-Services/project/Common.scala -> Classpaths
+/Users/mikelwyred/tfm/ITA-Services/project/Common.scala -> Common
+/Users/mikelwyred/tfm/ITA-Services/project/Common.scala -> Def
+/Users/mikelwyred/tfm/ITA-Services/project/Common.scala -> DefaultMavenRepository
+/Users/mikelwyred/tfm/ITA-Services/project/Common.scala -> FullInstance
+/Users/mikelwyred/tfm/ITA-Services/project/Common.scala -> IO
+/Users/mikelwyred/tfm/ITA-Services/project/Common.scala -> InitializeInstance
+/Users/mikelwyred/tfm/ITA-Services/project/Common.scala -> Keys
+/Users/mikelwyred/tfm/ITA-Services/project/Common.scala -> ManifestFactory
+/Users/mikelwyred/tfm/ITA-Services/project/Common.scala -> Nothing
+/Users/mikelwyred/tfm/ITA-Services/project/Common.scala -> Opts
+/Users/mikelwyred/tfm/ITA-Services/project/Common.scala -> Path
+/Users/mikelwyred/tfm/ITA-Services/project/Common.scala -> Resolver
+/Users/mikelwyred/tfm/ITA-Services/project/Common.scala -> Scoped
+/Users/mikelwyred/tfm/ITA-Services/project/Common.scala -> Seq
+/Users/mikelwyred/tfm/ITA-Services/project/Common.scala -> Setting
+/Users/mikelwyred/tfm/ITA-Services/project/Common.scala -> TaskKey
+/Users/mikelwyred/tfm/ITA-Services/project/Common.scala -> Try
+/Users/mikelwyred/tfm/ITA-Services/project/Common.scala -> Unit
+/Users/mikelwyred/tfm/ITA-Services/project/Common.scala -> UpdateReport
+/Users/mikelwyred/tfm/ITA-Services/project/Common.scala -> _root_
+/Users/mikelwyred/tfm/ITA-Services/project/Common.scala -> absolutePath
+/Users/mikelwyred/tfm/ITA-Services/project/Common.scala -> allFiles
+/Users/mikelwyred/tfm/ITA-Services/project/Common.scala -> appVersion
+/Users/mikelwyred/tfm/ITA-Services/project/Common.scala -> append1
+/Users/mikelwyred/tfm/ITA-Services/project/Common.scala -> appendN
+/Users/mikelwyred/tfm/ITA-Services/project/Common.scala -> appendSeq
+/Users/mikelwyred/tfm/ITA-Services/project/Common.scala -> apply
+/Users/mikelwyred/tfm/ITA-Services/project/Common.scala -> at
+/Users/mikelwyred/tfm/ITA-Services/project/Common.scala -> collection
+/Users/mikelwyred/tfm/ITA-Services/project/Common.scala -> copyDepTask
+/Users/mikelwyred/tfm/ITA-Services/project/Common.scala -> copyDependencies
+/Users/mikelwyred/tfm/ITA-Services/project/Common.scala -> copyFile
+/Users/mikelwyred/tfm/ITA-Services/project/Common.scala -> crossTarget
+/Users/mikelwyred/tfm/ITA-Services/project/Common.scala -> defaultLocal
+/Users/mikelwyred/tfm/ITA-Services/project/Common.scala -> destPath
+/Users/mikelwyred/tfm/ITA-Services/project/Common.scala -> foreach
+/Users/mikelwyred/tfm/ITA-Services/project/Common.scala -> getName
+/Users/mikelwyred/tfm/ITA-Services/project/Common.scala -> javacOptions
+/Users/mikelwyred/tfm/ITA-Services/project/Common.scala -> map
+/Users/mikelwyred/tfm/ITA-Services/project/Common.scala -> mavenLocal
+/Users/mikelwyred/tfm/ITA-Services/project/Common.scala -> mavenLocalFile
+/Users/mikelwyred/tfm/ITA-Services/project/Common.scala -> out
+/Users/mikelwyred/tfm/ITA-Services/project/Common.scala -> package
+/Users/mikelwyred/tfm/ITA-Services/project/Common.scala -> pure
+/Users/mikelwyred/tfm/ITA-Services/project/Common.scala -> reflect
+/Users/mikelwyred/tfm/ITA-Services/project/Common.scala -> resolver
+/Users/mikelwyred/tfm/ITA-Services/project/Common.scala -> resolvers
+/Users/mikelwyred/tfm/ITA-Services/project/Common.scala -> richFile
+/Users/mikelwyred/tfm/ITA-Services/project/Common.scala -> richUpdateReport
+/Users/mikelwyred/tfm/ITA-Services/project/Common.scala -> sbt
+/Users/mikelwyred/tfm/ITA-Services/project/Common.scala -> sbtPluginReleases
+/Users/mikelwyred/tfm/ITA-Services/project/Common.scala -> scala
+/Users/mikelwyred/tfm/ITA-Services/project/Common.scala -> scalaVersion
+/Users/mikelwyred/tfm/ITA-Services/project/Common.scala -> scalacOptions
+/Users/mikelwyred/tfm/ITA-Services/project/Common.scala -> set
+/Users/mikelwyred/tfm/ITA-Services/project/Common.scala -> settings
+/Users/mikelwyred/tfm/ITA-Services/project/Common.scala -> srcPath
+/Users/mikelwyred/tfm/ITA-Services/project/Common.scala -> t3ToTable3
+/Users/mikelwyred/tfm/ITA-Services/project/Common.scala -> toRepositoryName
+/Users/mikelwyred/tfm/ITA-Services/project/Common.scala -> typesafeReleases
+/Users/mikelwyred/tfm/ITA-Services/project/Common.scala -> update
+/Users/mikelwyred/tfm/ITA-Services/project/Common.scala -> updateReport
+/Users/mikelwyred/tfm/ITA-Services/project/Common.scala -> userHome
+/Users/mikelwyred/tfm/ITA-Services/project/Common.scala -> util
+/Users/mikelwyred/tfm/ITA-Services/project/Common.scala -> version
+/Users/mikelwyred/tfm/ITA-Services/project/Dependencies.scala -> %
+/Users/mikelwyred/tfm/ITA-Services/project/Dependencies.scala -> %%
+/Users/mikelwyred/tfm/ITA-Services/project/Dependencies.scala -> ++
+/Users/mikelwyred/tfm/ITA-Services/project/Dependencies.scala -> <init>
+/Users/mikelwyred/tfm/ITA-Services/project/Dependencies.scala -> AkkaHttpVersion
+/Users/mikelwyred/tfm/ITA-Services/project/Dependencies.scala -> AnyRef
+/Users/mikelwyred/tfm/ITA-Services/project/Dependencies.scala -> Dependencies
+/Users/mikelwyred/tfm/ITA-Services/project/Dependencies.scala -> Keys
+/Users/mikelwyred/tfm/ITA-Services/project/Dependencies.scala -> ModuleID
+/Users/mikelwyred/tfm/ITA-Services/project/Dependencies.scala -> Seq
+/Users/mikelwyred/tfm/ITA-Services/project/Dependencies.scala -> apiDependencies
+/Users/mikelwyred/tfm/ITA-Services/project/Dependencies.scala -> apply
+/Users/mikelwyred/tfm/ITA-Services/project/Dependencies.scala -> canBuildFrom
+/Users/mikelwyred/tfm/ITA-Services/project/Dependencies.scala -> casbahV
+/Users/mikelwyred/tfm/ITA-Services/project/Dependencies.scala -> clientDependencies
+/Users/mikelwyred/tfm/ITA-Services/project/Dependencies.scala -> collection
+/Users/mikelwyred/tfm/ITA-Services/project/Dependencies.scala -> commonDependencies
+/Users/mikelwyred/tfm/ITA-Services/project/Dependencies.scala -> domainDependencies
+/Users/mikelwyred/tfm/ITA-Services/project/Dependencies.scala -> gathererDependencies
+/Users/mikelwyred/tfm/ITA-Services/project/Dependencies.scala -> json
+/Users/mikelwyred/tfm/ITA-Services/project/Dependencies.scala -> moduleIDConfigurable
+/Users/mikelwyred/tfm/ITA-Services/project/Dependencies.scala -> package
+/Users/mikelwyred/tfm/ITA-Services/project/Dependencies.scala -> sbt
+/Users/mikelwyred/tfm/ITA-Services/project/Dependencies.scala -> scala
+/Users/mikelwyred/tfm/ITA-Services/project/Dependencies.scala -> slf4jNop
+/Users/mikelwyred/tfm/ITA-Services/project/Dependencies.scala -> slf4jVersion
+/Users/mikelwyred/tfm/ITA-Services/project/Dependencies.scala -> sparkDependencies
+/Users/mikelwyred/tfm/ITA-Services/project/Dependencies.scala -> sparkVersion
+/Users/mikelwyred/tfm/ITA-Services/project/Dependencies.scala -> sprayVersion
+/Users/mikelwyred/tfm/ITA-Services/project/Dependencies.scala -> toGroupID
+/Users/mikelwyred/tfm/ITA-Services/project/Dependencies.scala -> webDependencies
 product stamps:
 18 items
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/target/scala-2.10/sbt-0.13/classes/Common$$anonfun$1.class -> lastModified(1497895308000)
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/target/scala-2.10/sbt-0.13/classes/Common$$anonfun$2.class -> lastModified(1497895308000)
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/target/scala-2.10/sbt-0.13/classes/Common$$anonfun$3.class -> lastModified(1497895308000)
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/target/scala-2.10/sbt-0.13/classes/Common$$anonfun$4.class -> lastModified(1497895308000)
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/target/scala-2.10/sbt-0.13/classes/Common$$anonfun$5.class -> lastModified(1497895308000)
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/target/scala-2.10/sbt-0.13/classes/Common$$anonfun$6.class -> lastModified(1497895308000)
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/target/scala-2.10/sbt-0.13/classes/Common$$anonfun$copyDepTask$1$$anonfun$apply$1.class -> lastModified(1497895308000)
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/target/scala-2.10/sbt-0.13/classes/Common$$anonfun$copyDepTask$1.class -> lastModified(1497895308000)
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/target/scala-2.10/sbt-0.13/classes/Common$.class -> lastModified(1497895308000)
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/target/scala-2.10/sbt-0.13/classes/Common.class -> lastModified(1497895308000)
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/target/scala-2.10/sbt-0.13/classes/Dependencies$.class -> lastModified(1497895308000)
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/target/scala-2.10/sbt-0.13/classes/Dependencies.class -> lastModified(1497895308000)
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/target/scala-2.10/sbt-0.13/classes/MyBuild$$anonfun$ITAService$1.class -> lastModified(1497895308000)
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/target/scala-2.10/sbt-0.13/classes/MyBuild$$anonfun$ITAService$2.class -> lastModified(1497895308000)
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/target/scala-2.10/sbt-0.13/classes/MyBuild$$anonfun$ITAService$3.class -> lastModified(1497895308000)
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/target/scala-2.10/sbt-0.13/classes/MyBuild$$anonfun$ITAService$4.class -> lastModified(1497895308000)
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/target/scala-2.10/sbt-0.13/classes/MyBuild$.class -> lastModified(1497895308000)
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/target/scala-2.10/sbt-0.13/classes/MyBuild.class -> lastModified(1497895308000)
+/Users/mikelwyred/tfm/ITA-Services/project/target/scala-2.10/sbt-0.13/classes/Common$$anonfun$1.class -> lastModified(1497976533000)
+/Users/mikelwyred/tfm/ITA-Services/project/target/scala-2.10/sbt-0.13/classes/Common$$anonfun$2.class -> lastModified(1497976533000)
+/Users/mikelwyred/tfm/ITA-Services/project/target/scala-2.10/sbt-0.13/classes/Common$$anonfun$3.class -> lastModified(1497976533000)
+/Users/mikelwyred/tfm/ITA-Services/project/target/scala-2.10/sbt-0.13/classes/Common$$anonfun$4.class -> lastModified(1497976533000)
+/Users/mikelwyred/tfm/ITA-Services/project/target/scala-2.10/sbt-0.13/classes/Common$$anonfun$5.class -> lastModified(1497976533000)
+/Users/mikelwyred/tfm/ITA-Services/project/target/scala-2.10/sbt-0.13/classes/Common$$anonfun$6.class -> lastModified(1497976533000)
+/Users/mikelwyred/tfm/ITA-Services/project/target/scala-2.10/sbt-0.13/classes/Common$$anonfun$copyDepTask$1$$anonfun$apply$1.class -> lastModified(1497976533000)
+/Users/mikelwyred/tfm/ITA-Services/project/target/scala-2.10/sbt-0.13/classes/Common$$anonfun$copyDepTask$1.class -> lastModified(1497976533000)
+/Users/mikelwyred/tfm/ITA-Services/project/target/scala-2.10/sbt-0.13/classes/Common$.class -> lastModified(1497976533000)
+/Users/mikelwyred/tfm/ITA-Services/project/target/scala-2.10/sbt-0.13/classes/Common.class -> lastModified(1497976533000)
+/Users/mikelwyred/tfm/ITA-Services/project/target/scala-2.10/sbt-0.13/classes/Dependencies$.class -> lastModified(1497976533000)
+/Users/mikelwyred/tfm/ITA-Services/project/target/scala-2.10/sbt-0.13/classes/Dependencies.class -> lastModified(1497976533000)
+/Users/mikelwyred/tfm/ITA-Services/project/target/scala-2.10/sbt-0.13/classes/MyBuild$$anonfun$ITAService$1.class -> lastModified(1497976534000)
+/Users/mikelwyred/tfm/ITA-Services/project/target/scala-2.10/sbt-0.13/classes/MyBuild$$anonfun$ITAService$2.class -> lastModified(1497976534000)
+/Users/mikelwyred/tfm/ITA-Services/project/target/scala-2.10/sbt-0.13/classes/MyBuild$$anonfun$ITAService$3.class -> lastModified(1497976534000)
+/Users/mikelwyred/tfm/ITA-Services/project/target/scala-2.10/sbt-0.13/classes/MyBuild$$anonfun$ITAService$4.class -> lastModified(1497976534000)
+/Users/mikelwyred/tfm/ITA-Services/project/target/scala-2.10/sbt-0.13/classes/MyBuild$.class -> lastModified(1497976534000)
+/Users/mikelwyred/tfm/ITA-Services/project/target/scala-2.10/sbt-0.13/classes/MyBuild.class -> lastModified(1497976534000)
 source stamps:
 4 items
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Build.scala -> hash(16fb965374a6afdd21c029d6ede17245e35e80c3)
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Common.scala -> hash(8970657f1a87055da490cde900507f6df38f303d)
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Dependencies.scala -> hash(226b1f91e8cebbe7c570cb86fb1d2582168d9d7a)
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Domain.scala -> hash(da39a3ee5e6b4b0d3255bfef95601890afd80709)
+/Users/mikelwyred/tfm/ITA-Services/project/Build.scala -> hash(16fb965374a6afdd21c029d6ede17245e35e80c3)
+/Users/mikelwyred/tfm/ITA-Services/project/Common.scala -> hash(8970657f1a87055da490cde900507f6df38f303d)
+/Users/mikelwyred/tfm/ITA-Services/project/Dependencies.scala -> hash(226b1f91e8cebbe7c570cb86fb1d2582168d9d7a)
+/Users/mikelwyred/tfm/ITA-Services/project/Domain.scala -> hash(da39a3ee5e6b4b0d3255bfef95601890afd80709)
 binary stamps:
 10 items
 /Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/rt.jar -> lastModified(1481605174000)
-/Users/mikelalvarezgo/.ivy2/cache/org.scala-sbt/apply-macro/jars/apply-macro-0.13.8.jar -> lastModified(1429631043000)
-/Users/mikelalvarezgo/.ivy2/cache/org.scala-sbt/collections/jars/collections-0.13.8.jar -> lastModified(1429633196000)
-/Users/mikelalvarezgo/.ivy2/cache/org.scala-sbt/io/jars/io-0.13.8.jar -> lastModified(1429632999000)
-/Users/mikelalvarezgo/.ivy2/cache/org.scala-sbt/ivy/jars/ivy-0.13.8.jar -> lastModified(1429633064000)
-/Users/mikelalvarezgo/.ivy2/cache/org.scala-sbt/main-settings/jars/main-settings-0.13.8.jar -> lastModified(1429630580000)
-/Users/mikelalvarezgo/.ivy2/cache/org.scala-sbt/main/jars/main-0.13.8.jar -> lastModified(1429630032000)
-/Users/mikelalvarezgo/.ivy2/cache/org.scala-sbt/sbt/jars/sbt-0.13.8.jar -> lastModified(1429631014000)
-/Users/mikelalvarezgo/.ivy2/cache/org.scala-sbt/task-system/jars/task-system-0.13.8.jar -> lastModified(1429630616000)
-/Users/mikelalvarezgo/.sbt/boot/scala-2.10.4/lib/scala-library.jar -> lastModified(1395179187000)
+/Users/mikelwyred/.ivy2/cache/org.scala-sbt/apply-macro/jars/apply-macro-0.13.8.jar -> lastModified(1429631043000)
+/Users/mikelwyred/.ivy2/cache/org.scala-sbt/collections/jars/collections-0.13.8.jar -> lastModified(1429633196000)
+/Users/mikelwyred/.ivy2/cache/org.scala-sbt/io/jars/io-0.13.8.jar -> lastModified(1429632999000)
+/Users/mikelwyred/.ivy2/cache/org.scala-sbt/ivy/jars/ivy-0.13.8.jar -> lastModified(1429633064000)
+/Users/mikelwyred/.ivy2/cache/org.scala-sbt/main-settings/jars/main-settings-0.13.8.jar -> lastModified(1429630580000)
+/Users/mikelwyred/.ivy2/cache/org.scala-sbt/main/jars/main-0.13.8.jar -> lastModified(1429630032000)
+/Users/mikelwyred/.ivy2/cache/org.scala-sbt/sbt/jars/sbt-0.13.8.jar -> lastModified(1429631014000)
+/Users/mikelwyred/.ivy2/cache/org.scala-sbt/task-system/jars/task-system-0.13.8.jar -> lastModified(1429630616000)
+/Users/mikelwyred/.sbt/boot/scala-2.10.4/lib/scala-library.jar -> lastModified(1395179187000)
 class names:
 10 items
 /Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/rt.jar -> java.lang.Object
-/Users/mikelalvarezgo/.ivy2/cache/org.scala-sbt/apply-macro/jars/apply-macro-0.13.8.jar -> sbt.appmacro.Instance$
-/Users/mikelalvarezgo/.ivy2/cache/org.scala-sbt/collections/jars/collections-0.13.8.jar -> sbt.LinePosition$
-/Users/mikelalvarezgo/.ivy2/cache/org.scala-sbt/io/jars/io-0.13.8.jar -> sbt.IO$
-/Users/mikelalvarezgo/.ivy2/cache/org.scala-sbt/ivy/jars/ivy-0.13.8.jar -> sbt.impl.ModuleIDConfigurable
-/Users/mikelalvarezgo/.ivy2/cache/org.scala-sbt/main-settings/jars/main-settings-0.13.8.jar -> sbt.Scoped$
-/Users/mikelalvarezgo/.ivy2/cache/org.scala-sbt/main/jars/main-0.13.8.jar -> sbt.Keys$
-/Users/mikelalvarezgo/.ivy2/cache/org.scala-sbt/sbt/jars/sbt-0.13.8.jar -> sbt.package$
-/Users/mikelalvarezgo/.ivy2/cache/org.scala-sbt/task-system/jars/task-system-0.13.8.jar -> sbt.Task
-/Users/mikelalvarezgo/.sbt/boot/scala-2.10.4/lib/scala-library.jar -> scala.package$
+/Users/mikelwyred/.ivy2/cache/org.scala-sbt/apply-macro/jars/apply-macro-0.13.8.jar -> sbt.appmacro.Instance$
+/Users/mikelwyred/.ivy2/cache/org.scala-sbt/collections/jars/collections-0.13.8.jar -> sbt.LinePosition$
+/Users/mikelwyred/.ivy2/cache/org.scala-sbt/io/jars/io-0.13.8.jar -> sbt.Path$
+/Users/mikelwyred/.ivy2/cache/org.scala-sbt/ivy/jars/ivy-0.13.8.jar -> sbt.impl.DependencyBuilders
+/Users/mikelwyred/.ivy2/cache/org.scala-sbt/main-settings/jars/main-settings-0.13.8.jar -> sbt.TaskKey
+/Users/mikelwyred/.ivy2/cache/org.scala-sbt/main/jars/main-0.13.8.jar -> sbt.Keys$
+/Users/mikelwyred/.ivy2/cache/org.scala-sbt/sbt/jars/sbt-0.13.8.jar -> sbt.package$
+/Users/mikelwyred/.ivy2/cache/org.scala-sbt/task-system/jars/task-system-0.13.8.jar -> sbt.Task
+/Users/mikelwyred/.sbt/boot/scala-2.10.4/lib/scala-library.jar -> scala.collection.Seq
 internal apis:
 4 items
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Build.scala -> 
-rO0ABXNyABB4c2J0aS5hcGkuU291cmNlFlpwRASfbtoCAAZJAAdhcGlIYXNoWgAIaGFzTWFjcm9MABhfaW50ZXJuYWxPbmx5X25hbWVIYXNoZXN0ACRMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2hlcztMAANhcGl0ABVMeHNidGkvYXBpL1NvdXJjZUFQSTtMAAtjb21waWxhdGlvbnQAF0x4c2J0aS9hcGkvQ29tcGlsYXRpb247WwAEaGFzaHQAAltCeHAAYcUxAHNyACJ4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaGVzVNq+mfrU7EwCAAJbAA9pbXBsaWNpdE1lbWJlcnN0ACNbTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoO1sADnJlZ3VsYXJNZW1iZXJzcQB+AAd4cHVyACNbTHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoO0lagLbdlov0AgAAeHAAAAAAdXEAfgAJAAAAG3NyACB4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaFsO9SJ2OFfPAgACSQAEaGFzaEwABG5hbWV0ABJMamF2YS9sYW5nL1N0cmluZzt4cAU/Dql0AApJVEFTZXJ2aWNlc3EAfgAMsYT8X3QABm5vdGlmeXNxAH4ADET96QV0AAR3YWl0c3EAfgAMASfWdnQADSRhc0luc3RhbmNlT2ZzcQB+AAw96ib0dAAMYnVpbGRMb2FkZXJzc3EAfgAMT1VIJ3QABmVxdWFsc3NxAH4ADJudWZp0AAxhc0luc3RhbmNlT2ZzcQB+AAx/3Ho5dAAScHJvamVjdERlZmluaXRpb25zc3EAfgAM9C1ix3QADHN5bmNocm9uaXplZHNxAH4ADFhGy990AA0kaXNJbnN0YW5jZU9mc3EAfgAMiSiEiHQACW5vdGlmeUFsbHNxAH4ADKBEEzZ0AAtyb290UHJvamVjdHNxAH4ADMjGdy50AAxpc0luc3RhbmNlT2ZzcQB+AAzj3pQidAAHTXlCdWlsZHNxAH4ADDCnfKV0AAI9PXNxAH4ADCKOiMV0AAVjbG9uZXNxAH4ADK8mYNJ0AAh0b1N0cmluZ3NxAH4ADMFKmzx0AAIhPXNxAH4ADLUvbhJ0AAhwcm9qZWN0c3NxAH4ADLn5M6t0AApOYW1lUHJlZml4c3EAfgAMhYFR/nQACGdldENsYXNzc3EAfgAM+xpMx3QAAm5lc3EAfgAMZQuvEnQAAmVxc3EAfgAMvO9hhnQACHNldHRpbmdzc3EAfgAM3WUdCXQAAiMjc3EAfgAMWu2CqXQACGZpbmFsaXplc3EAfgAMHCPYJXQACGhhc2hDb2Rlc3IAE3hzYnRpLmFwaS5Tb3VyY2VBUEm5Xqf5KSM4pAIAAlsAC2RlZmluaXRpb25zdAAXW0x4c2J0aS9hcGkvRGVmaW5pdGlvbjtbAAhwYWNrYWdlc3QAFFtMeHNidGkvYXBpL1BhY2thZ2U7eHB1cgAXW0x4c2J0aS5hcGkuRGVmaW5pdGlvbjuIyVzntONeDgIAAHhwAAAAAXNyABN4c2J0aS5hcGkuQ2xhc3NMaWtlgzQcod+wl2wCAARMAA5kZWZpbml0aW9uVHlwZXQAGkx4c2J0aS9hcGkvRGVmaW5pdGlvblR5cGU7WwAQc2F2ZWRBbm5vdGF0aW9uc3QAE1tMamF2YS9sYW5nL1N0cmluZztMAAhzZWxmVHlwZXQAEEx4c2J0aS9hcGkvTGF6eTtMAAlzdHJ1Y3R1cmVxAH4ATXhyACF4c2J0aS5hcGkuUGFyYW1ldGVyaXplZERlZmluaXRpb275EW6x1VA84gIAAVsADnR5cGVQYXJhbWV0ZXJzdAAaW0x4c2J0aS9hcGkvVHlwZVBhcmFtZXRlcjt4cgAUeHNidGkuYXBpLkRlZmluaXRpb26HKhvocULjRgIABEwABmFjY2Vzc3QAEkx4c2J0aS9hcGkvQWNjZXNzO1sAC2Fubm90YXRpb25zdAAXW0x4c2J0aS9hcGkvQW5ub3RhdGlvbjtMAAltb2RpZmllcnN0ABVMeHNidGkvYXBpL01vZGlmaWVycztMAARuYW1lcQB+AA14cHNyABB4c2J0aS5hcGkuUHVibGljulg9rmwtYEICAAB4cgAQeHNidGkuYXBpLkFjY2Vzc91imvgdYzFIAgAAeHB1cgAXW0x4c2J0aS5hcGkuQW5ub3RhdGlvbjvrl+sZEPaNSAIAAHhwAAAAAHNyABN4c2J0aS5hcGkuTW9kaWZpZXJzxxETIWmc3CQCAAFCAAVmbGFnc3hwAHEAfgApdXIAGltMeHNidGkuYXBpLlR5cGVQYXJhbWV0ZXI72W0mDyid8rYCAAB4cAAAAAB+cgAYeHNidGkuYXBpLkRlZmluaXRpb25UeXBlAAAAAAAAAAASAAB4cgAOamF2YS5sYW5nLkVudW0AAAAAAAAAABIAAHhwdAAGTW9kdWxldXIAE1tMamF2YS5sYW5nLlN0cmluZzut0lbn6R17RwIAAHhwAAAAAHNyABN4c2J0aS5TYWZlTGF6eSRJbXBsUAIuk5eXQD8CAANaAAhiaXRtYXAkMEwAAl90dAASTGphdmEvbGFuZy9PYmplY3Q7TAAEZXZhbHQAEUxzY2FsYS9GdW5jdGlvbjA7eHIAFnhzYnRpLmFwaS5BYnN0cmFjdExhennTd7UBX7vnoAIAAHhwAHBzcgAgeHNidGkuU2FmZUxhenkkJGFub25mdW4kc3RyaWN0JDEAAAAAAAAAAAIAAUwAB3ZhbHVlJDFxAH4AZXhwc3IAE3hzYnRpLmFwaS5FbXB0eVR5cGW8/Z5GSTuJJAIAAHhyABR4c2J0aS5hcGkuU2ltcGxlVHlwZXJ4YoghI79AAgAAeHIADnhzYnRpLmFwaS5UeXBlP2rZIRZJqsoCAAB4cHNxAH4AZABwc3EAfgBpc3IAE3hzYnRpLmFwaS5TdHJ1Y3R1cmWpqvmAk2/YAAIAA0wACGRlY2xhcmVkcQB+AE1MAAlpbmhlcml0ZWRxAH4ATUwAB3BhcmVudHNxAH4ATXhxAH4AbXNxAH4AZABwc3EAfgBpdXEAfgBIAAAAAHNxAH4AZABwc3EAfgBpdXEAfgBIAAAAAHNxAH4AZABwc3EAfgBpdXIAEVtMeHNidGkuYXBpLlR5cGU7dP+lWnv56UECAAB4cAAAAANzcgAUeHNidGkuYXBpLlByb2plY3Rpb27z0o1U6UWkLQIAAkwAAmlkcQB+AA1MAAZwcmVmaXh0ABZMeHNidGkvYXBpL1NpbXBsZVR5cGU7eHEAfgBsdAAFQnVpbGRzcgATeHNidGkuYXBpLlNpbmdsZXRvbvynX/jPVuRGAgABTAAEcGF0aHQAEEx4c2J0aS9hcGkvUGF0aDt4cQB+AGxzcgAOeHNidGkuYXBpLlBhdGibPVwIzqUnhAIAAVsACmNvbXBvbmVudHN0ABpbTHhzYnRpL2FwaS9QYXRoQ29tcG9uZW50O3hwdXIAGltMeHNidGkuYXBpLlBhdGhDb21wb25lbnQ7Q9oJdC1nFnQCAAB4cAAAAAJzcgAMeHNidGkuYXBpLklkmDJsizdTxEACAAFMAAJpZHEAfgANeHIAF3hzYnRpLmFwaS5QYXRoQ29tcG9uZW50X5oiWy6Gn7wCAAB4cHQAA3NidHNyAA54c2J0aS5hcGkuVGhpc9sJ7abMWkBcAgAAeHEAfgCKc3EAfgB9dAAGT2JqZWN0c3EAfgCBc3EAfgCEdXEAfgCHAAAAA3NxAH4AiXQABGphdmFzcQB+AIl0AARsYW5ncQB+AI5zcQB+AH10AANBbnlzcQB+AIFzcQB+AIR1cQB+AIcAAAACc3EAfgCJdAAFc2NhbGFxAH4AjnVyABRbTHhzYnRpLmFwaS5QYWNrYWdlO1sTGTdwpyehAgAAeHAAAAAAc3IAFXhzYnRpLmFwaS5Db21waWxhdGlvbu364MNq6KBCAgACSgAJc3RhcnRUaW1lWwAHb3V0cHV0c3QAGltMeHNidGkvYXBpL091dHB1dFNldHRpbmc7eHAAAAFcwYRXr3VyABpbTHhzYnRpLmFwaS5PdXRwdXRTZXR0aW5nO39qwvOnh6VCAgAAeHAAAAABc3IAF3hzYnRpLmFwaS5PdXRwdXRTZXR0aW5netmaR3T7HXsCAAJMAA9vdXRwdXREaXJlY3RvcnlxAH4ADUwAD3NvdXJjZURpcmVjdG9yeXEAfgANeHB0AF4vVXNlcnMvbWlrZWxhbHZhcmV6Z28vcmVwb3NpdG9yaWVzL1RGTS9JVEEtU2VydmljZXMvcHJvamVjdC90YXJnZXQvc2NhbGEtMi4xMC9zYnQtMC4xMy9jbGFzc2VzdAABL3VyAAJbQqzzF/gGCFTgAgAAeHAAAAAUFvuWU3Smr90hwCnW7eFyReNegMM=
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Common.scala -> 
-rO0ABXNyABB4c2J0aS5hcGkuU291cmNlFlpwRASfbtoCAAZJAAdhcGlIYXNoWgAIaGFzTWFjcm9MABhfaW50ZXJuYWxPbmx5X25hbWVIYXNoZXN0ACRMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2hlcztMAANhcGl0ABVMeHNidGkvYXBpL1NvdXJjZUFQSTtMAAtjb21waWxhdGlvbnQAF0x4c2J0aS9hcGkvQ29tcGlsYXRpb247WwAEaGFzaHQAAltCeHCphP1uAHNyACJ4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaGVzVNq+mfrU7EwCAAJbAA9pbXBsaWNpdE1lbWJlcnN0ACNbTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoO1sADnJlZ3VsYXJNZW1iZXJzcQB+AAd4cHVyACNbTHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoO0lagLbdlov0AgAAeHAAAAAAdXEAfgAJAAAAGHNyACB4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaFsO9SJ2OFfPAgACSQAEaGFzaEwABG5hbWV0ABJMamF2YS9sYW5nL1N0cmluZzt4cO5XQYt0AAZub3RpZnlzcQB+AAzYl1GPdAAEd2FpdHNxAH4ADJPtY3R0AA0kYXNJbnN0YW5jZU9mc3EAfgAMupIH2HQABmVxdWFsc3NxAH4ADA+Wfzh0AAxhc0luc3RhbmNlT2ZzcQB+AAwd+NNgdAAMc3luY2hyb25pemVkc3EAfgAMVpWC3nQACmFwcFZlcnNpb25zcQB+AAx8KjdydAANJGlzSW5zdGFuY2VPZnNxAH4ADKSxeFl0AAlub3RpZnlBbGxzcQB+AAxuCQbbdAAMaXNJbnN0YW5jZU9mc3EAfgAMtzupVHQABkNvbW1vbnNxAH4ADF2ulHl0AAI9PXNxAH4ADMiVNVN0AAVjbG9uZXNxAH4ADAaHzmF0AAh0b1N0cmluZ3NxAH4ADKH4B8N0AAIhPXNxAH4ADOJCSj10AAhnZXRDbGFzc3NxAH4ADHVQ+7V0AAJuZXNxAH4ADE9JQXZ0AAtjb3B5RGVwVGFza3NxAH4ADI6zvrt0AAJlcXNxAH4ADLQUmPF0AAhzZXR0aW5nc3NxAH4ADGLpxcx0AAIjI3NxAH4ADJqiCTp0AAhmaW5hbGl6ZXNxAH4ADMqeQhZ0ABBjb3B5RGVwZW5kZW5jaWVzc3EAfgAMAaWQTXQACGhhc2hDb2Rlc3IAE3hzYnRpLmFwaS5Tb3VyY2VBUEm5Xqf5KSM4pAIAAlsAC2RlZmluaXRpb25zdAAXW0x4c2J0aS9hcGkvRGVmaW5pdGlvbjtbAAhwYWNrYWdlc3QAFFtMeHNidGkvYXBpL1BhY2thZ2U7eHB1cgAXW0x4c2J0aS5hcGkuRGVmaW5pdGlvbjuIyVzntONeDgIAAHhwAAAAAXNyABN4c2J0aS5hcGkuQ2xhc3NMaWtlgzQcod+wl2wCAARMAA5kZWZpbml0aW9uVHlwZXQAGkx4c2J0aS9hcGkvRGVmaW5pdGlvblR5cGU7WwAQc2F2ZWRBbm5vdGF0aW9uc3QAE1tMamF2YS9sYW5nL1N0cmluZztMAAhzZWxmVHlwZXQAEEx4c2J0aS9hcGkvTGF6eTtMAAlzdHJ1Y3R1cmVxAH4AR3hyACF4c2J0aS5hcGkuUGFyYW1ldGVyaXplZERlZmluaXRpb275EW6x1VA84gIAAVsADnR5cGVQYXJhbWV0ZXJzdAAaW0x4c2J0aS9hcGkvVHlwZVBhcmFtZXRlcjt4cgAUeHNidGkuYXBpLkRlZmluaXRpb26HKhvocULjRgIABEwABmFjY2Vzc3QAEkx4c2J0aS9hcGkvQWNjZXNzO1sAC2Fubm90YXRpb25zdAAXW0x4c2J0aS9hcGkvQW5ub3RhdGlvbjtMAAltb2RpZmllcnN0ABVMeHNidGkvYXBpL01vZGlmaWVycztMAARuYW1lcQB+AA14cHNyABB4c2J0aS5hcGkuUHVibGljulg9rmwtYEICAAB4cgAQeHNidGkuYXBpLkFjY2Vzc91imvgdYzFIAgAAeHB1cgAXW0x4c2J0aS5hcGkuQW5ub3RhdGlvbjvrl+sZEPaNSAIAAHhwAAAAAHNyABN4c2J0aS5hcGkuTW9kaWZpZXJzxxETIWmc3CQCAAFCAAVmbGFnc3hwAHEAfgAjdXIAGltMeHNidGkuYXBpLlR5cGVQYXJhbWV0ZXI72W0mDyid8rYCAAB4cAAAAAB+cgAYeHNidGkuYXBpLkRlZmluaXRpb25UeXBlAAAAAAAAAAASAAB4cgAOamF2YS5sYW5nLkVudW0AAAAAAAAAABIAAHhwdAAGTW9kdWxldXIAE1tMamF2YS5sYW5nLlN0cmluZzut0lbn6R17RwIAAHhwAAAAAHNyABN4c2J0aS5TYWZlTGF6eSRJbXBsUAIuk5eXQD8CAANaAAhiaXRtYXAkMEwAAl90dAASTGphdmEvbGFuZy9PYmplY3Q7TAAEZXZhbHQAEUxzY2FsYS9GdW5jdGlvbjA7eHIAFnhzYnRpLmFwaS5BYnN0cmFjdExhennTd7UBX7vnoAIAAHhwAHBzcgAgeHNidGkuU2FmZUxhenkkJGFub25mdW4kc3RyaWN0JDEAAAAAAAAAAAIAAUwAB3ZhbHVlJDFxAH4AX3hwc3IAE3hzYnRpLmFwaS5FbXB0eVR5cGW8/Z5GSTuJJAIAAHhyABR4c2J0aS5hcGkuU2ltcGxlVHlwZXJ4YoghI79AAgAAeHIADnhzYnRpLmFwaS5UeXBlP2rZIRZJqsoCAAB4cHNxAH4AXgBwc3EAfgBjc3IAE3hzYnRpLmFwaS5TdHJ1Y3R1cmWpqvmAk2/YAAIAA0wACGRlY2xhcmVkcQB+AEdMAAlpbmhlcml0ZWRxAH4AR0wAB3BhcmVudHNxAH4AR3hxAH4AZ3NxAH4AXgBwc3EAfgBjdXEAfgBCAAAAAHNxAH4AXgBwc3EAfgBjdXEAfgBCAAAAAHNxAH4AXgBwc3EAfgBjdXIAEVtMeHNidGkuYXBpLlR5cGU7dP+lWnv56UECAAB4cAAAAAJzcgAUeHNidGkuYXBpLlByb2plY3Rpb27z0o1U6UWkLQIAAkwAAmlkcQB+AA1MAAZwcmVmaXh0ABZMeHNidGkvYXBpL1NpbXBsZVR5cGU7eHEAfgBmdAAGT2JqZWN0c3IAE3hzYnRpLmFwaS5TaW5nbGV0b278p1/4z1bkRgIAAUwABHBhdGh0ABBMeHNidGkvYXBpL1BhdGg7eHEAfgBmc3IADnhzYnRpLmFwaS5QYXRomz1cCM6lJ4QCAAFbAApjb21wb25lbnRzdAAaW0x4c2J0aS9hcGkvUGF0aENvbXBvbmVudDt4cHVyABpbTHhzYnRpLmFwaS5QYXRoQ29tcG9uZW50O0PaCXQtZxZ0AgAAeHAAAAADc3IADHhzYnRpLmFwaS5JZJgybIs3U8RAAgABTAACaWRxAH4ADXhyABd4c2J0aS5hcGkuUGF0aENvbXBvbmVudF+aIlsuhp+8AgAAeHB0AARqYXZhc3EAfgCDdAAEbGFuZ3NyAA54c2J0aS5hcGkuVGhpc9sJ7abMWkBcAgAAeHEAfgCEc3EAfgB3dAADQW55c3EAfgB7c3EAfgB+dXEAfgCBAAAAAnNxAH4Ag3QABXNjYWxhcQB+AIp1cgAUW0x4c2J0aS5hcGkuUGFja2FnZTtbExk3cKcnoQIAAHhwAAAAAHNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABXMGEV691cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5cQB+AA1MAA9zb3VyY2VEaXJlY3RvcnlxAH4ADXhwdABeL1VzZXJzL21pa2VsYWx2YXJlemdvL3JlcG9zaXRvcmllcy9URk0vSVRBLVNlcnZpY2VzL3Byb2plY3QvdGFyZ2V0L3NjYWxhLTIuMTAvc2J0LTAuMTMvY2xhc3Nlc3QAAS91cgACW0Ks8xf4BghU4AIAAHhwAAAAFIlwZX8ahwVdpJDN6QBQf23zjzA9
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Dependencies.scala -> 
-rO0ABXNyABB4c2J0aS5hcGkuU291cmNlFlpwRASfbtoCAAZJAAdhcGlIYXNoWgAIaGFzTWFjcm9MABhfaW50ZXJuYWxPbmx5X25hbWVIYXNoZXN0ACRMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2hlcztMAANhcGl0ABVMeHNidGkvYXBpL1NvdXJjZUFQSTtMAAtjb21waWxhdGlvbnQAF0x4c2J0aS9hcGkvQ29tcGlsYXRpb247WwAEaGFzaHQAAltCeHB3p590AHNyACJ4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaGVzVNq+mfrU7EwCAAJbAA9pbXBsaWNpdE1lbWJlcnN0ACNbTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoO1sADnJlZ3VsYXJNZW1iZXJzcQB+AAd4cHVyACNbTHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoO0lagLbdlov0AgAAeHAAAAAAdXEAfgAJAAAAInNyACB4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaFsO9SJ2OFfPAgACSQAEaGFzaEwABG5hbWV0ABJMamF2YS9sYW5nL1N0cmluZzt4cHnsYWR0AAZub3RpZnlzcQB+AAz/0Uf7dAAEd2FpdHNxAH4ADNbye3h0AA0kYXNJbnN0YW5jZU9mc3EAfgAMk7pWe3QAB2Nhc2JhaFZzcQB+AAwNPCEzdAARc3BhcmtEZXBlbmRlbmNpZXNzcQB+AAwPMUMYdAAPQWtrYUh0dHBWZXJzaW9uc3EAfgAM0AdTTHQADHNwcmF5VmVyc2lvbnNxAH4ADGG3V4B0AAZlcXVhbHNzcQB+AAxzCEhgdAAEanNvbnNxAH4ADCilMq90AA9hcGlEZXBlbmRlbmNpZXNzcQB+AAxI6u/jdAAMYXNJbnN0YW5jZU9mc3EAfgAMxp/lVXQADHN5bmNocm9uaXplZHNxAH4ADJ1tbVR0AAxEZXBlbmRlbmNpZXNzcQB+AAy3Ug9IdAANJGlzSW5zdGFuY2VPZnNxAH4ADMNF5at0ABJjb21tb25EZXBlbmRlbmNpZXNzcQB+AAwpQL7fdAAMc3BhcmtWZXJzaW9uc3EAfgAMLAsZtHQACW5vdGlmeUFsbHNxAH4ADEmU8kZ0AAxpc0luc3RhbmNlT2ZzcQB+AAxZQrVqdAAUZ2F0aGVyZXJEZXBlbmRlbmNpZXNzcQB+AAyuIRQXdAAIc2xmNGpOb3BzcQB+AAwLlx25dAACPT1zcQB+AAz9wVFWdAAFY2xvbmVzcQB+AAzqtxOWdAASY2xpZW50RGVwZW5kZW5jaWVzc3EAfgAMqg5b4nQADHNsZjRqVmVyc2lvbnNxAH4ADCinXEV0AAh0b1N0cmluZ3NxAH4ADKGmeOV0AAIhPXNxAH4ADE7llw10ABJkb21haW5EZXBlbmRlbmNpZXNzcQB+AAym5jltdAAIZ2V0Q2xhc3NzcQB+AAzFgsjFdAACbmVzcQB+AAyqt5ZndAACZXFzcQB+AAxiU+/FdAAPd2ViRGVwZW5kZW5jaWVzc3EAfgAMyvfHF3QAAiMjc3EAfgAMSAEb43QACGZpbmFsaXplc3EAfgAMKQSvNHQACGhhc2hDb2Rlc3IAE3hzYnRpLmFwaS5Tb3VyY2VBUEm5Xqf5KSM4pAIAAlsAC2RlZmluaXRpb25zdAAXW0x4c2J0aS9hcGkvRGVmaW5pdGlvbjtbAAhwYWNrYWdlc3QAFFtMeHNidGkvYXBpL1BhY2thZ2U7eHB1cgAXW0x4c2J0aS5hcGkuRGVmaW5pdGlvbjuIyVzntONeDgIAAHhwAAAAAXNyABN4c2J0aS5hcGkuQ2xhc3NMaWtlgzQcod+wl2wCAARMAA5kZWZpbml0aW9uVHlwZXQAGkx4c2J0aS9hcGkvRGVmaW5pdGlvblR5cGU7WwAQc2F2ZWRBbm5vdGF0aW9uc3QAE1tMamF2YS9sYW5nL1N0cmluZztMAAhzZWxmVHlwZXQAEEx4c2J0aS9hcGkvTGF6eTtMAAlzdHJ1Y3R1cmVxAH4AW3hyACF4c2J0aS5hcGkuUGFyYW1ldGVyaXplZERlZmluaXRpb275EW6x1VA84gIAAVsADnR5cGVQYXJhbWV0ZXJzdAAaW0x4c2J0aS9hcGkvVHlwZVBhcmFtZXRlcjt4cgAUeHNidGkuYXBpLkRlZmluaXRpb26HKhvocULjRgIABEwABmFjY2Vzc3QAEkx4c2J0aS9hcGkvQWNjZXNzO1sAC2Fubm90YXRpb25zdAAXW0x4c2J0aS9hcGkvQW5ub3RhdGlvbjtMAAltb2RpZmllcnN0ABVMeHNidGkvYXBpL01vZGlmaWVycztMAARuYW1lcQB+AA14cHNyABB4c2J0aS5hcGkuUHVibGljulg9rmwtYEICAAB4cgAQeHNidGkuYXBpLkFjY2Vzc91imvgdYzFIAgAAeHB1cgAXW0x4c2J0aS5hcGkuQW5ub3RhdGlvbjvrl+sZEPaNSAIAAHhwAAAAAHNyABN4c2J0aS5hcGkuTW9kaWZpZXJzxxETIWmc3CQCAAFCAAVmbGFnc3hwAHEAfgAndXIAGltMeHNidGkuYXBpLlR5cGVQYXJhbWV0ZXI72W0mDyid8rYCAAB4cAAAAAB+cgAYeHNidGkuYXBpLkRlZmluaXRpb25UeXBlAAAAAAAAAAASAAB4cgAOamF2YS5sYW5nLkVudW0AAAAAAAAAABIAAHhwdAAGTW9kdWxldXIAE1tMamF2YS5sYW5nLlN0cmluZzut0lbn6R17RwIAAHhwAAAAAHNyABN4c2J0aS5TYWZlTGF6eSRJbXBsUAIuk5eXQD8CAANaAAhiaXRtYXAkMEwAAl90dAASTGphdmEvbGFuZy9PYmplY3Q7TAAEZXZhbHQAEUxzY2FsYS9GdW5jdGlvbjA7eHIAFnhzYnRpLmFwaS5BYnN0cmFjdExhennTd7UBX7vnoAIAAHhwAHBzcgAgeHNidGkuU2FmZUxhenkkJGFub25mdW4kc3RyaWN0JDEAAAAAAAAAAAIAAUwAB3ZhbHVlJDFxAH4Ac3hwc3IAE3hzYnRpLmFwaS5FbXB0eVR5cGW8/Z5GSTuJJAIAAHhyABR4c2J0aS5hcGkuU2ltcGxlVHlwZXJ4YoghI79AAgAAeHIADnhzYnRpLmFwaS5UeXBlP2rZIRZJqsoCAAB4cHNxAH4AcgBwc3EAfgB3c3IAE3hzYnRpLmFwaS5TdHJ1Y3R1cmWpqvmAk2/YAAIAA0wACGRlY2xhcmVkcQB+AFtMAAlpbmhlcml0ZWRxAH4AW0wAB3BhcmVudHNxAH4AW3hxAH4Ae3NxAH4AcgBwc3EAfgB3dXEAfgBWAAAAAHNxAH4AcgBwc3EAfgB3dXEAfgBWAAAAAHNxAH4AcgBwc3EAfgB3dXIAEVtMeHNidGkuYXBpLlR5cGU7dP+lWnv56UECAAB4cAAAAAJzcgAUeHNidGkuYXBpLlByb2plY3Rpb27z0o1U6UWkLQIAAkwAAmlkcQB+AA1MAAZwcmVmaXh0ABZMeHNidGkvYXBpL1NpbXBsZVR5cGU7eHEAfgB6dAAGT2JqZWN0c3IAE3hzYnRpLmFwaS5TaW5nbGV0b278p1/4z1bkRgIAAUwABHBhdGh0ABBMeHNidGkvYXBpL1BhdGg7eHEAfgB6c3IADnhzYnRpLmFwaS5QYXRomz1cCM6lJ4QCAAFbAApjb21wb25lbnRzdAAaW0x4c2J0aS9hcGkvUGF0aENvbXBvbmVudDt4cHVyABpbTHhzYnRpLmFwaS5QYXRoQ29tcG9uZW50O0PaCXQtZxZ0AgAAeHAAAAADc3IADHhzYnRpLmFwaS5JZJgybIs3U8RAAgABTAACaWRxAH4ADXhyABd4c2J0aS5hcGkuUGF0aENvbXBvbmVudF+aIlsuhp+8AgAAeHB0AARqYXZhc3EAfgCXdAAEbGFuZ3NyAA54c2J0aS5hcGkuVGhpc9sJ7abMWkBcAgAAeHEAfgCYc3EAfgCLdAADQW55c3EAfgCPc3EAfgCSdXEAfgCVAAAAAnNxAH4Al3QABXNjYWxhcQB+AJ51cgAUW0x4c2J0aS5hcGkuUGFja2FnZTtbExk3cKcnoQIAAHhwAAAAAHNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABXMGEV691cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5cQB+AA1MAA9zb3VyY2VEaXJlY3RvcnlxAH4ADXhwdABeL1VzZXJzL21pa2VsYWx2YXJlemdvL3JlcG9zaXRvcmllcy9URk0vSVRBLVNlcnZpY2VzL3Byb2plY3QvdGFyZ2V0L3NjYWxhLTIuMTAvc2J0LTAuMTMvY2xhc3Nlc3QAAS91cgACW0Ks8xf4BghU4AIAAHhwAAAAFCJrH5HozrvnxXDLhvsdJYIWjZ16
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Domain.scala -> 
-rO0ABXNyABB4c2J0aS5hcGkuU291cmNlFlpwRASfbtoCAAZJAAdhcGlIYXNoWgAIaGFzTWFjcm9MABhfaW50ZXJuYWxPbmx5X25hbWVIYXNoZXN0ACRMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2hlcztMAANhcGl0ABVMeHNidGkvYXBpL1NvdXJjZUFQSTtMAAtjb21waWxhdGlvbnQAF0x4c2J0aS9hcGkvQ29tcGlsYXRpb247WwAEaGFzaHQAAltCeHC4IVHqAHNyACJ4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaGVzVNq+mfrU7EwCAAJbAA9pbXBsaWNpdE1lbWJlcnN0ACNbTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoO1sADnJlZ3VsYXJNZW1iZXJzcQB+AAd4cHVyACNbTHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoO0lagLbdlov0AgAAeHAAAAAAdXEAfgAJAAAAAHNyABN4c2J0aS5hcGkuU291cmNlQVBJuV6n+SkjOKQCAAJbAAtkZWZpbml0aW9uc3QAF1tMeHNidGkvYXBpL0RlZmluaXRpb247WwAIcGFja2FnZXN0ABRbTHhzYnRpL2FwaS9QYWNrYWdlO3hwdXIAF1tMeHNidGkuYXBpLkRlZmluaXRpb247iMlc57TjXg4CAAB4cAAAAAB1cgAUW0x4c2J0aS5hcGkuUGFja2FnZTtbExk3cKcnoQIAAHhwAAAAAHNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABXMGEV691cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+ABp4cHQAXi9Vc2Vycy9taWtlbGFsdmFyZXpnby9yZXBvc2l0b3JpZXMvVEZNL0lUQS1TZXJ2aWNlcy9wcm9qZWN0L3RhcmdldC9zY2FsYS0yLjEwL3NidC0wLjEzL2NsYXNzZXN0AAEvdXIAAltCrPMX+AYIVOACAAB4cAAAABTaOaPuXmtLDTJVv++VYBiQr9gHCQ==
+/Users/mikelwyred/tfm/ITA-Services/project/Build.scala -> 
+rO0ABXNyABB4c2J0aS5hcGkuU291cmNlFlpwRASfbtoCAAZJAAdhcGlIYXNoWgAIaGFzTWFjcm9MABhfaW50ZXJuYWxPbmx5X25hbWVIYXNoZXN0ACRMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2hlcztMAANhcGl0ABVMeHNidGkvYXBpL1NvdXJjZUFQSTtMAAtjb21waWxhdGlvbnQAF0x4c2J0aS9hcGkvQ29tcGlsYXRpb247WwAEaGFzaHQAAltCeHAAYcUxAHNyACJ4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaGVzVNq+mfrU7EwCAAJbAA9pbXBsaWNpdE1lbWJlcnN0ACNbTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoO1sADnJlZ3VsYXJNZW1iZXJzcQB+AAd4cHVyACNbTHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoO0lagLbdlov0AgAAeHAAAAAAdXEAfgAJAAAAG3NyACB4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaFsO9SJ2OFfPAgACSQAEaGFzaEwABG5hbWV0ABJMamF2YS9sYW5nL1N0cmluZzt4cAU/Dql0AApJVEFTZXJ2aWNlc3EAfgAMsYT8X3QABm5vdGlmeXNxAH4ADET96QV0AAR3YWl0c3EAfgAMASfWdnQADSRhc0luc3RhbmNlT2ZzcQB+AAw96ib0dAAMYnVpbGRMb2FkZXJzc3EAfgAMT1VIJ3QABmVxdWFsc3NxAH4ADJudWZp0AAxhc0luc3RhbmNlT2ZzcQB+AAx/3Ho5dAAScHJvamVjdERlZmluaXRpb25zc3EAfgAM9C1ix3QADHN5bmNocm9uaXplZHNxAH4ADFhGy990AA0kaXNJbnN0YW5jZU9mc3EAfgAMiSiEiHQACW5vdGlmeUFsbHNxAH4ADKBEEzZ0AAtyb290UHJvamVjdHNxAH4ADMjGdy50AAxpc0luc3RhbmNlT2ZzcQB+AAzj3pQidAAHTXlCdWlsZHNxAH4ADDCnfKV0AAI9PXNxAH4ADCKOiMV0AAVjbG9uZXNxAH4ADK8mYNJ0AAh0b1N0cmluZ3NxAH4ADMFKmzx0AAIhPXNxAH4ADLUvbhJ0AAhwcm9qZWN0c3NxAH4ADLn5M6t0AApOYW1lUHJlZml4c3EAfgAMhYFR/nQACGdldENsYXNzc3EAfgAM+xpMx3QAAm5lc3EAfgAMZQuvEnQAAmVxc3EAfgAMvO9hhnQACHNldHRpbmdzc3EAfgAM3WUdCXQAAiMjc3EAfgAMWu2CqXQACGZpbmFsaXplc3EAfgAMHCPYJXQACGhhc2hDb2Rlc3IAE3hzYnRpLmFwaS5Tb3VyY2VBUEm5Xqf5KSM4pAIAAlsAC2RlZmluaXRpb25zdAAXW0x4c2J0aS9hcGkvRGVmaW5pdGlvbjtbAAhwYWNrYWdlc3QAFFtMeHNidGkvYXBpL1BhY2thZ2U7eHB1cgAXW0x4c2J0aS5hcGkuRGVmaW5pdGlvbjuIyVzntONeDgIAAHhwAAAAAXNyABN4c2J0aS5hcGkuQ2xhc3NMaWtlgzQcod+wl2wCAARMAA5kZWZpbml0aW9uVHlwZXQAGkx4c2J0aS9hcGkvRGVmaW5pdGlvblR5cGU7WwAQc2F2ZWRBbm5vdGF0aW9uc3QAE1tMamF2YS9sYW5nL1N0cmluZztMAAhzZWxmVHlwZXQAEEx4c2J0aS9hcGkvTGF6eTtMAAlzdHJ1Y3R1cmVxAH4ATXhyACF4c2J0aS5hcGkuUGFyYW1ldGVyaXplZERlZmluaXRpb275EW6x1VA84gIAAVsADnR5cGVQYXJhbWV0ZXJzdAAaW0x4c2J0aS9hcGkvVHlwZVBhcmFtZXRlcjt4cgAUeHNidGkuYXBpLkRlZmluaXRpb26HKhvocULjRgIABEwABmFjY2Vzc3QAEkx4c2J0aS9hcGkvQWNjZXNzO1sAC2Fubm90YXRpb25zdAAXW0x4c2J0aS9hcGkvQW5ub3RhdGlvbjtMAAltb2RpZmllcnN0ABVMeHNidGkvYXBpL01vZGlmaWVycztMAARuYW1lcQB+AA14cHNyABB4c2J0aS5hcGkuUHVibGljulg9rmwtYEICAAB4cgAQeHNidGkuYXBpLkFjY2Vzc91imvgdYzFIAgAAeHB1cgAXW0x4c2J0aS5hcGkuQW5ub3RhdGlvbjvrl+sZEPaNSAIAAHhwAAAAAHNyABN4c2J0aS5hcGkuTW9kaWZpZXJzxxETIWmc3CQCAAFCAAVmbGFnc3hwAHEAfgApdXIAGltMeHNidGkuYXBpLlR5cGVQYXJhbWV0ZXI72W0mDyid8rYCAAB4cAAAAAB+cgAYeHNidGkuYXBpLkRlZmluaXRpb25UeXBlAAAAAAAAAAASAAB4cgAOamF2YS5sYW5nLkVudW0AAAAAAAAAABIAAHhwdAAGTW9kdWxldXIAE1tMamF2YS5sYW5nLlN0cmluZzut0lbn6R17RwIAAHhwAAAAAHNyABN4c2J0aS5TYWZlTGF6eSRJbXBsUAIuk5eXQD8CAANaAAhiaXRtYXAkMEwAAl90dAASTGphdmEvbGFuZy9PYmplY3Q7TAAEZXZhbHQAEUxzY2FsYS9GdW5jdGlvbjA7eHIAFnhzYnRpLmFwaS5BYnN0cmFjdExhennTd7UBX7vnoAIAAHhwAHBzcgAgeHNidGkuU2FmZUxhenkkJGFub25mdW4kc3RyaWN0JDEAAAAAAAAAAAIAAUwAB3ZhbHVlJDFxAH4AZXhwc3IAE3hzYnRpLmFwaS5FbXB0eVR5cGW8/Z5GSTuJJAIAAHhyABR4c2J0aS5hcGkuU2ltcGxlVHlwZXJ4YoghI79AAgAAeHIADnhzYnRpLmFwaS5UeXBlP2rZIRZJqsoCAAB4cHNxAH4AZABwc3EAfgBpc3IAE3hzYnRpLmFwaS5TdHJ1Y3R1cmWpqvmAk2/YAAIAA0wACGRlY2xhcmVkcQB+AE1MAAlpbmhlcml0ZWRxAH4ATUwAB3BhcmVudHNxAH4ATXhxAH4AbXNxAH4AZABwc3EAfgBpdXEAfgBIAAAAAHNxAH4AZABwc3EAfgBpdXEAfgBIAAAAAHNxAH4AZABwc3EAfgBpdXIAEVtMeHNidGkuYXBpLlR5cGU7dP+lWnv56UECAAB4cAAAAANzcgAUeHNidGkuYXBpLlByb2plY3Rpb27z0o1U6UWkLQIAAkwAAmlkcQB+AA1MAAZwcmVmaXh0ABZMeHNidGkvYXBpL1NpbXBsZVR5cGU7eHEAfgBsdAAFQnVpbGRzcgATeHNidGkuYXBpLlNpbmdsZXRvbvynX/jPVuRGAgABTAAEcGF0aHQAEEx4c2J0aS9hcGkvUGF0aDt4cQB+AGxzcgAOeHNidGkuYXBpLlBhdGibPVwIzqUnhAIAAVsACmNvbXBvbmVudHN0ABpbTHhzYnRpL2FwaS9QYXRoQ29tcG9uZW50O3hwdXIAGltMeHNidGkuYXBpLlBhdGhDb21wb25lbnQ7Q9oJdC1nFnQCAAB4cAAAAAJzcgAMeHNidGkuYXBpLklkmDJsizdTxEACAAFMAAJpZHEAfgANeHIAF3hzYnRpLmFwaS5QYXRoQ29tcG9uZW50X5oiWy6Gn7wCAAB4cHQAA3NidHNyAA54c2J0aS5hcGkuVGhpc9sJ7abMWkBcAgAAeHEAfgCKc3EAfgB9dAAGT2JqZWN0c3EAfgCBc3EAfgCEdXEAfgCHAAAAA3NxAH4AiXQABGphdmFzcQB+AIl0AARsYW5ncQB+AI5zcQB+AH10AANBbnlzcQB+AIFzcQB+AIR1cQB+AIcAAAACc3EAfgCJdAAFc2NhbGFxAH4AjnVyABRbTHhzYnRpLmFwaS5QYWNrYWdlO1sTGTdwpyehAgAAeHAAAAAAc3IAFXhzYnRpLmFwaS5Db21waWxhdGlvbu364MNq6KBCAgACSgAJc3RhcnRUaW1lWwAHb3V0cHV0c3QAGltMeHNidGkvYXBpL091dHB1dFNldHRpbmc7eHAAAAFcxluua3VyABpbTHhzYnRpLmFwaS5PdXRwdXRTZXR0aW5nO39qwvOnh6VCAgAAeHAAAAABc3IAF3hzYnRpLmFwaS5PdXRwdXRTZXR0aW5netmaR3T7HXsCAAJMAA9vdXRwdXREaXJlY3RvcnlxAH4ADUwAD3NvdXJjZURpcmVjdG9yeXEAfgANeHB0AE0vVXNlcnMvbWlrZWx3eXJlZC90Zm0vSVRBLVNlcnZpY2VzL3Byb2plY3QvdGFyZ2V0L3NjYWxhLTIuMTAvc2J0LTAuMTMvY2xhc3Nlc3QAAS91cgACW0Ks8xf4BghU4AIAAHhwAAAAFBb7llN0pq/dIcAp1u3hckXjXoDD
+/Users/mikelwyred/tfm/ITA-Services/project/Common.scala -> 
+rO0ABXNyABB4c2J0aS5hcGkuU291cmNlFlpwRASfbtoCAAZJAAdhcGlIYXNoWgAIaGFzTWFjcm9MABhfaW50ZXJuYWxPbmx5X25hbWVIYXNoZXN0ACRMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2hlcztMAANhcGl0ABVMeHNidGkvYXBpL1NvdXJjZUFQSTtMAAtjb21waWxhdGlvbnQAF0x4c2J0aS9hcGkvQ29tcGlsYXRpb247WwAEaGFzaHQAAltCeHCphP1uAHNyACJ4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaGVzVNq+mfrU7EwCAAJbAA9pbXBsaWNpdE1lbWJlcnN0ACNbTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoO1sADnJlZ3VsYXJNZW1iZXJzcQB+AAd4cHVyACNbTHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoO0lagLbdlov0AgAAeHAAAAAAdXEAfgAJAAAAGHNyACB4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaFsO9SJ2OFfPAgACSQAEaGFzaEwABG5hbWV0ABJMamF2YS9sYW5nL1N0cmluZzt4cO5XQYt0AAZub3RpZnlzcQB+AAzYl1GPdAAEd2FpdHNxAH4ADJPtY3R0AA0kYXNJbnN0YW5jZU9mc3EAfgAMupIH2HQABmVxdWFsc3NxAH4ADA+Wfzh0AAxhc0luc3RhbmNlT2ZzcQB+AAwd+NNgdAAMc3luY2hyb25pemVkc3EAfgAMVpWC3nQACmFwcFZlcnNpb25zcQB+AAx8KjdydAANJGlzSW5zdGFuY2VPZnNxAH4ADKSxeFl0AAlub3RpZnlBbGxzcQB+AAxuCQbbdAAMaXNJbnN0YW5jZU9mc3EAfgAMtzupVHQABkNvbW1vbnNxAH4ADF2ulHl0AAI9PXNxAH4ADMiVNVN0AAVjbG9uZXNxAH4ADAaHzmF0AAh0b1N0cmluZ3NxAH4ADKH4B8N0AAIhPXNxAH4ADOJCSj10AAhnZXRDbGFzc3NxAH4ADHVQ+7V0AAJuZXNxAH4ADE9JQXZ0AAtjb3B5RGVwVGFza3NxAH4ADI6zvrt0AAJlcXNxAH4ADLQUmPF0AAhzZXR0aW5nc3NxAH4ADGLpxcx0AAIjI3NxAH4ADJqiCTp0AAhmaW5hbGl6ZXNxAH4ADMqeQhZ0ABBjb3B5RGVwZW5kZW5jaWVzc3EAfgAMAaWQTXQACGhhc2hDb2Rlc3IAE3hzYnRpLmFwaS5Tb3VyY2VBUEm5Xqf5KSM4pAIAAlsAC2RlZmluaXRpb25zdAAXW0x4c2J0aS9hcGkvRGVmaW5pdGlvbjtbAAhwYWNrYWdlc3QAFFtMeHNidGkvYXBpL1BhY2thZ2U7eHB1cgAXW0x4c2J0aS5hcGkuRGVmaW5pdGlvbjuIyVzntONeDgIAAHhwAAAAAXNyABN4c2J0aS5hcGkuQ2xhc3NMaWtlgzQcod+wl2wCAARMAA5kZWZpbml0aW9uVHlwZXQAGkx4c2J0aS9hcGkvRGVmaW5pdGlvblR5cGU7WwAQc2F2ZWRBbm5vdGF0aW9uc3QAE1tMamF2YS9sYW5nL1N0cmluZztMAAhzZWxmVHlwZXQAEEx4c2J0aS9hcGkvTGF6eTtMAAlzdHJ1Y3R1cmVxAH4AR3hyACF4c2J0aS5hcGkuUGFyYW1ldGVyaXplZERlZmluaXRpb275EW6x1VA84gIAAVsADnR5cGVQYXJhbWV0ZXJzdAAaW0x4c2J0aS9hcGkvVHlwZVBhcmFtZXRlcjt4cgAUeHNidGkuYXBpLkRlZmluaXRpb26HKhvocULjRgIABEwABmFjY2Vzc3QAEkx4c2J0aS9hcGkvQWNjZXNzO1sAC2Fubm90YXRpb25zdAAXW0x4c2J0aS9hcGkvQW5ub3RhdGlvbjtMAAltb2RpZmllcnN0ABVMeHNidGkvYXBpL01vZGlmaWVycztMAARuYW1lcQB+AA14cHNyABB4c2J0aS5hcGkuUHVibGljulg9rmwtYEICAAB4cgAQeHNidGkuYXBpLkFjY2Vzc91imvgdYzFIAgAAeHB1cgAXW0x4c2J0aS5hcGkuQW5ub3RhdGlvbjvrl+sZEPaNSAIAAHhwAAAAAHNyABN4c2J0aS5hcGkuTW9kaWZpZXJzxxETIWmc3CQCAAFCAAVmbGFnc3hwAHEAfgAjdXIAGltMeHNidGkuYXBpLlR5cGVQYXJhbWV0ZXI72W0mDyid8rYCAAB4cAAAAAB+cgAYeHNidGkuYXBpLkRlZmluaXRpb25UeXBlAAAAAAAAAAASAAB4cgAOamF2YS5sYW5nLkVudW0AAAAAAAAAABIAAHhwdAAGTW9kdWxldXIAE1tMamF2YS5sYW5nLlN0cmluZzut0lbn6R17RwIAAHhwAAAAAHNyABN4c2J0aS5TYWZlTGF6eSRJbXBsUAIuk5eXQD8CAANaAAhiaXRtYXAkMEwAAl90dAASTGphdmEvbGFuZy9PYmplY3Q7TAAEZXZhbHQAEUxzY2FsYS9GdW5jdGlvbjA7eHIAFnhzYnRpLmFwaS5BYnN0cmFjdExhennTd7UBX7vnoAIAAHhwAHBzcgAgeHNidGkuU2FmZUxhenkkJGFub25mdW4kc3RyaWN0JDEAAAAAAAAAAAIAAUwAB3ZhbHVlJDFxAH4AX3hwc3IAE3hzYnRpLmFwaS5FbXB0eVR5cGW8/Z5GSTuJJAIAAHhyABR4c2J0aS5hcGkuU2ltcGxlVHlwZXJ4YoghI79AAgAAeHIADnhzYnRpLmFwaS5UeXBlP2rZIRZJqsoCAAB4cHNxAH4AXgBwc3EAfgBjc3IAE3hzYnRpLmFwaS5TdHJ1Y3R1cmWpqvmAk2/YAAIAA0wACGRlY2xhcmVkcQB+AEdMAAlpbmhlcml0ZWRxAH4AR0wAB3BhcmVudHNxAH4AR3hxAH4AZ3NxAH4AXgBwc3EAfgBjdXEAfgBCAAAAAHNxAH4AXgBwc3EAfgBjdXEAfgBCAAAAAHNxAH4AXgBwc3EAfgBjdXIAEVtMeHNidGkuYXBpLlR5cGU7dP+lWnv56UECAAB4cAAAAAJzcgAUeHNidGkuYXBpLlByb2plY3Rpb27z0o1U6UWkLQIAAkwAAmlkcQB+AA1MAAZwcmVmaXh0ABZMeHNidGkvYXBpL1NpbXBsZVR5cGU7eHEAfgBmdAAGT2JqZWN0c3IAE3hzYnRpLmFwaS5TaW5nbGV0b278p1/4z1bkRgIAAUwABHBhdGh0ABBMeHNidGkvYXBpL1BhdGg7eHEAfgBmc3IADnhzYnRpLmFwaS5QYXRomz1cCM6lJ4QCAAFbAApjb21wb25lbnRzdAAaW0x4c2J0aS9hcGkvUGF0aENvbXBvbmVudDt4cHVyABpbTHhzYnRpLmFwaS5QYXRoQ29tcG9uZW50O0PaCXQtZxZ0AgAAeHAAAAADc3IADHhzYnRpLmFwaS5JZJgybIs3U8RAAgABTAACaWRxAH4ADXhyABd4c2J0aS5hcGkuUGF0aENvbXBvbmVudF+aIlsuhp+8AgAAeHB0AARqYXZhc3EAfgCDdAAEbGFuZ3NyAA54c2J0aS5hcGkuVGhpc9sJ7abMWkBcAgAAeHEAfgCEc3EAfgB3dAADQW55c3EAfgB7c3EAfgB+dXEAfgCBAAAAAnNxAH4Ag3QABXNjYWxhcQB+AIp1cgAUW0x4c2J0aS5hcGkuUGFja2FnZTtbExk3cKcnoQIAAHhwAAAAAHNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABXMZbrmt1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5cQB+AA1MAA9zb3VyY2VEaXJlY3RvcnlxAH4ADXhwdABNL1VzZXJzL21pa2Vsd3lyZWQvdGZtL0lUQS1TZXJ2aWNlcy9wcm9qZWN0L3RhcmdldC9zY2FsYS0yLjEwL3NidC0wLjEzL2NsYXNzZXN0AAEvdXIAAltCrPMX+AYIVOACAAB4cAAAABSJcGV/GocFXaSQzekAUH9t848wPQ==
+/Users/mikelwyred/tfm/ITA-Services/project/Dependencies.scala -> 
+rO0ABXNyABB4c2J0aS5hcGkuU291cmNlFlpwRASfbtoCAAZJAAdhcGlIYXNoWgAIaGFzTWFjcm9MABhfaW50ZXJuYWxPbmx5X25hbWVIYXNoZXN0ACRMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2hlcztMAANhcGl0ABVMeHNidGkvYXBpL1NvdXJjZUFQSTtMAAtjb21waWxhdGlvbnQAF0x4c2J0aS9hcGkvQ29tcGlsYXRpb247WwAEaGFzaHQAAltCeHB3p590AHNyACJ4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaGVzVNq+mfrU7EwCAAJbAA9pbXBsaWNpdE1lbWJlcnN0ACNbTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoO1sADnJlZ3VsYXJNZW1iZXJzcQB+AAd4cHVyACNbTHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoO0lagLbdlov0AgAAeHAAAAAAdXEAfgAJAAAAInNyACB4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaFsO9SJ2OFfPAgACSQAEaGFzaEwABG5hbWV0ABJMamF2YS9sYW5nL1N0cmluZzt4cHnsYWR0AAZub3RpZnlzcQB+AAz/0Uf7dAAEd2FpdHNxAH4ADNbye3h0AA0kYXNJbnN0YW5jZU9mc3EAfgAMk7pWe3QAB2Nhc2JhaFZzcQB+AAwNPCEzdAARc3BhcmtEZXBlbmRlbmNpZXNzcQB+AAwPMUMYdAAPQWtrYUh0dHBWZXJzaW9uc3EAfgAM0AdTTHQADHNwcmF5VmVyc2lvbnNxAH4ADGG3V4B0AAZlcXVhbHNzcQB+AAxzCEhgdAAEanNvbnNxAH4ADCilMq90AA9hcGlEZXBlbmRlbmNpZXNzcQB+AAxI6u/jdAAMYXNJbnN0YW5jZU9mc3EAfgAMxp/lVXQADHN5bmNocm9uaXplZHNxAH4ADJ1tbVR0AAxEZXBlbmRlbmNpZXNzcQB+AAy3Ug9IdAANJGlzSW5zdGFuY2VPZnNxAH4ADMNF5at0ABJjb21tb25EZXBlbmRlbmNpZXNzcQB+AAwpQL7fdAAMc3BhcmtWZXJzaW9uc3EAfgAMLAsZtHQACW5vdGlmeUFsbHNxAH4ADEmU8kZ0AAxpc0luc3RhbmNlT2ZzcQB+AAxZQrVqdAAUZ2F0aGVyZXJEZXBlbmRlbmNpZXNzcQB+AAyuIRQXdAAIc2xmNGpOb3BzcQB+AAwLlx25dAACPT1zcQB+AAz9wVFWdAAFY2xvbmVzcQB+AAzqtxOWdAASY2xpZW50RGVwZW5kZW5jaWVzc3EAfgAMqg5b4nQADHNsZjRqVmVyc2lvbnNxAH4ADCinXEV0AAh0b1N0cmluZ3NxAH4ADKGmeOV0AAIhPXNxAH4ADE7llw10ABJkb21haW5EZXBlbmRlbmNpZXNzcQB+AAym5jltdAAIZ2V0Q2xhc3NzcQB+AAzFgsjFdAACbmVzcQB+AAyqt5ZndAACZXFzcQB+AAxiU+/FdAAPd2ViRGVwZW5kZW5jaWVzc3EAfgAMyvfHF3QAAiMjc3EAfgAMSAEb43QACGZpbmFsaXplc3EAfgAMKQSvNHQACGhhc2hDb2Rlc3IAE3hzYnRpLmFwaS5Tb3VyY2VBUEm5Xqf5KSM4pAIAAlsAC2RlZmluaXRpb25zdAAXW0x4c2J0aS9hcGkvRGVmaW5pdGlvbjtbAAhwYWNrYWdlc3QAFFtMeHNidGkvYXBpL1BhY2thZ2U7eHB1cgAXW0x4c2J0aS5hcGkuRGVmaW5pdGlvbjuIyVzntONeDgIAAHhwAAAAAXNyABN4c2J0aS5hcGkuQ2xhc3NMaWtlgzQcod+wl2wCAARMAA5kZWZpbml0aW9uVHlwZXQAGkx4c2J0aS9hcGkvRGVmaW5pdGlvblR5cGU7WwAQc2F2ZWRBbm5vdGF0aW9uc3QAE1tMamF2YS9sYW5nL1N0cmluZztMAAhzZWxmVHlwZXQAEEx4c2J0aS9hcGkvTGF6eTtMAAlzdHJ1Y3R1cmVxAH4AW3hyACF4c2J0aS5hcGkuUGFyYW1ldGVyaXplZERlZmluaXRpb275EW6x1VA84gIAAVsADnR5cGVQYXJhbWV0ZXJzdAAaW0x4c2J0aS9hcGkvVHlwZVBhcmFtZXRlcjt4cgAUeHNidGkuYXBpLkRlZmluaXRpb26HKhvocULjRgIABEwABmFjY2Vzc3QAEkx4c2J0aS9hcGkvQWNjZXNzO1sAC2Fubm90YXRpb25zdAAXW0x4c2J0aS9hcGkvQW5ub3RhdGlvbjtMAAltb2RpZmllcnN0ABVMeHNidGkvYXBpL01vZGlmaWVycztMAARuYW1lcQB+AA14cHNyABB4c2J0aS5hcGkuUHVibGljulg9rmwtYEICAAB4cgAQeHNidGkuYXBpLkFjY2Vzc91imvgdYzFIAgAAeHB1cgAXW0x4c2J0aS5hcGkuQW5ub3RhdGlvbjvrl+sZEPaNSAIAAHhwAAAAAHNyABN4c2J0aS5hcGkuTW9kaWZpZXJzxxETIWmc3CQCAAFCAAVmbGFnc3hwAHEAfgAndXIAGltMeHNidGkuYXBpLlR5cGVQYXJhbWV0ZXI72W0mDyid8rYCAAB4cAAAAAB+cgAYeHNidGkuYXBpLkRlZmluaXRpb25UeXBlAAAAAAAAAAASAAB4cgAOamF2YS5sYW5nLkVudW0AAAAAAAAAABIAAHhwdAAGTW9kdWxldXIAE1tMamF2YS5sYW5nLlN0cmluZzut0lbn6R17RwIAAHhwAAAAAHNyABN4c2J0aS5TYWZlTGF6eSRJbXBsUAIuk5eXQD8CAANaAAhiaXRtYXAkMEwAAl90dAASTGphdmEvbGFuZy9PYmplY3Q7TAAEZXZhbHQAEUxzY2FsYS9GdW5jdGlvbjA7eHIAFnhzYnRpLmFwaS5BYnN0cmFjdExhennTd7UBX7vnoAIAAHhwAHBzcgAgeHNidGkuU2FmZUxhenkkJGFub25mdW4kc3RyaWN0JDEAAAAAAAAAAAIAAUwAB3ZhbHVlJDFxAH4Ac3hwc3IAE3hzYnRpLmFwaS5FbXB0eVR5cGW8/Z5GSTuJJAIAAHhyABR4c2J0aS5hcGkuU2ltcGxlVHlwZXJ4YoghI79AAgAAeHIADnhzYnRpLmFwaS5UeXBlP2rZIRZJqsoCAAB4cHNxAH4AcgBwc3EAfgB3c3IAE3hzYnRpLmFwaS5TdHJ1Y3R1cmWpqvmAk2/YAAIAA0wACGRlY2xhcmVkcQB+AFtMAAlpbmhlcml0ZWRxAH4AW0wAB3BhcmVudHNxAH4AW3hxAH4Ae3NxAH4AcgBwc3EAfgB3dXEAfgBWAAAAAHNxAH4AcgBwc3EAfgB3dXEAfgBWAAAAAHNxAH4AcgBwc3EAfgB3dXIAEVtMeHNidGkuYXBpLlR5cGU7dP+lWnv56UECAAB4cAAAAAJzcgAUeHNidGkuYXBpLlByb2plY3Rpb27z0o1U6UWkLQIAAkwAAmlkcQB+AA1MAAZwcmVmaXh0ABZMeHNidGkvYXBpL1NpbXBsZVR5cGU7eHEAfgB6dAAGT2JqZWN0c3IAE3hzYnRpLmFwaS5TaW5nbGV0b278p1/4z1bkRgIAAUwABHBhdGh0ABBMeHNidGkvYXBpL1BhdGg7eHEAfgB6c3IADnhzYnRpLmFwaS5QYXRomz1cCM6lJ4QCAAFbAApjb21wb25lbnRzdAAaW0x4c2J0aS9hcGkvUGF0aENvbXBvbmVudDt4cHVyABpbTHhzYnRpLmFwaS5QYXRoQ29tcG9uZW50O0PaCXQtZxZ0AgAAeHAAAAADc3IADHhzYnRpLmFwaS5JZJgybIs3U8RAAgABTAACaWRxAH4ADXhyABd4c2J0aS5hcGkuUGF0aENvbXBvbmVudF+aIlsuhp+8AgAAeHB0AARqYXZhc3EAfgCXdAAEbGFuZ3NyAA54c2J0aS5hcGkuVGhpc9sJ7abMWkBcAgAAeHEAfgCYc3EAfgCLdAADQW55c3EAfgCPc3EAfgCSdXEAfgCVAAAAAnNxAH4Al3QABXNjYWxhcQB+AJ51cgAUW0x4c2J0aS5hcGkuUGFja2FnZTtbExk3cKcnoQIAAHhwAAAAAHNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABXMZbrmt1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5cQB+AA1MAA9zb3VyY2VEaXJlY3RvcnlxAH4ADXhwdABNL1VzZXJzL21pa2Vsd3lyZWQvdGZtL0lUQS1TZXJ2aWNlcy9wcm9qZWN0L3RhcmdldC9zY2FsYS0yLjEwL3NidC0wLjEzL2NsYXNzZXN0AAEvdXIAAltCrPMX+AYIVOACAAB4cAAAABQiax+R6M6758Vwy4b7HSWCFo2deg==
+/Users/mikelwyred/tfm/ITA-Services/project/Domain.scala -> 
+rO0ABXNyABB4c2J0aS5hcGkuU291cmNlFlpwRASfbtoCAAZJAAdhcGlIYXNoWgAIaGFzTWFjcm9MABhfaW50ZXJuYWxPbmx5X25hbWVIYXNoZXN0ACRMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2hlcztMAANhcGl0ABVMeHNidGkvYXBpL1NvdXJjZUFQSTtMAAtjb21waWxhdGlvbnQAF0x4c2J0aS9hcGkvQ29tcGlsYXRpb247WwAEaGFzaHQAAltCeHC4IVHqAHNyACJ4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaGVzVNq+mfrU7EwCAAJbAA9pbXBsaWNpdE1lbWJlcnN0ACNbTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoO1sADnJlZ3VsYXJNZW1iZXJzcQB+AAd4cHVyACNbTHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoO0lagLbdlov0AgAAeHAAAAAAdXEAfgAJAAAAAHNyABN4c2J0aS5hcGkuU291cmNlQVBJuV6n+SkjOKQCAAJbAAtkZWZpbml0aW9uc3QAF1tMeHNidGkvYXBpL0RlZmluaXRpb247WwAIcGFja2FnZXN0ABRbTHhzYnRpL2FwaS9QYWNrYWdlO3hwdXIAF1tMeHNidGkuYXBpLkRlZmluaXRpb247iMlc57TjXg4CAAB4cAAAAAB1cgAUW0x4c2J0aS5hcGkuUGFja2FnZTtbExk3cKcnoQIAAHhwAAAAAHNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABXMZbrmt1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+ABp4cHQATS9Vc2Vycy9taWtlbHd5cmVkL3RmbS9JVEEtU2VydmljZXMvcHJvamVjdC90YXJnZXQvc2NhbGEtMi4xMC9zYnQtMC4xMy9jbGFzc2VzdAABL3VyAAJbQqzzF/gGCFTgAgAAeHAAAAAU2jmj7l5rSw0yVb/vlWAYkK/YBwk=
 external apis:
 0 items
 source infos:
 4 items
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Build.scala -> 
-AAAAAQAAAQAAAA0ACyAgcmVzb2x2ZXJzAQAAAIYBAAAAAgEAAiAgAQBHL1VzZXJzL21pa2VsYWx2YXJlemdvL3JlcG9zaXRvcmllcy9URk0vSVRBLVNlcnZpY2VzL3Byb2plY3QvQnVpbGQuc2NhbGEBAEcvVXNlcnMvbWlrZWxhbHZhcmV6Z28vcmVwb3NpdG9yaWVzL1RGTS9JVEEtU2VydmljZXMvcHJvamVjdC9CdWlsZC5zY2FsYQBfYSBwdXJlIGV4cHJlc3Npb24gZG9lcyBub3RoaW5nIGluIHN0YXRlbWVudCBwb3NpdGlvbjsgeW91IG1heSBiZSBvbWl0dGluZyBuZWNlc3NhcnkgcGFyZW50aGVzZXMBAAAAAA==
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Common.scala -> 
+/Users/mikelwyred/tfm/ITA-Services/project/Build.scala -> 
+AAAAAQAAAQAAAA0ACyAgcmVzb2x2ZXJzAQAAAIYBAAAAAgEAAiAgAQA2L1VzZXJzL21pa2Vsd3lyZWQvdGZtL0lUQS1TZXJ2aWNlcy9wcm9qZWN0L0J1aWxkLnNjYWxhAQA2L1VzZXJzL21pa2Vsd3lyZWQvdGZtL0lUQS1TZXJ2aWNlcy9wcm9qZWN0L0J1aWxkLnNjYWxhAF9hIHB1cmUgZXhwcmVzc2lvbiBkb2VzIG5vdGhpbmcgaW4gc3RhdGVtZW50IHBvc2l0aW9uOyB5b3UgbWF5IGJlIG9taXR0aW5nIG5lY2Vzc2FyeSBwYXJlbnRoZXNlcwEAAAAA
+/Users/mikelwyred/tfm/ITA-Services/project/Common.scala -> 
 AAAAAAAAAAA=
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Dependencies.scala -> 
+/Users/mikelwyred/tfm/ITA-Services/project/Dependencies.scala -> 
 AAAAAAAAAAA=
-/Users/mikelalvarezgo/repositories/TFM/ITA-Services/project/Domain.scala -> 
+/Users/mikelwyred/tfm/ITA-Services/project/Domain.scala -> 
 AAAAAAAAAAA=
 compilations:
-6 items
+7 items
 0 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABXLYBENp1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQATS9Vc2Vycy9taWtlbHd5cmVkL3RmbS9JVEEtU2VydmljZXMvcHJvamVjdC90YXJnZXQvc2NhbGEtMi4xMC9zYnQtMC4xMy9jbGFzc2VzdAABLw==
 1 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABXL9YpNh1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQATS9Vc2Vycy9taWtlbHd5cmVkL3RmbS9JVEEtU2VydmljZXMvcHJvamVjdC90YXJnZXQvc2NhbGEtMi4xMC9zYnQtMC4xMy9jbGFzc2VzdAABLw==
 2 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABXMCSz3B1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQATS9Vc2Vycy9taWtlbHd5cmVkL3RmbS9JVEEtU2VydmljZXMvcHJvamVjdC90YXJnZXQvc2NhbGEtMi4xMC9zYnQtMC4xMy9jbGFzc2VzdAABLw==
 3 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABXMDyPj51cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQATS9Vc2Vycy9taWtlbHd5cmVkL3RmbS9JVEEtU2VydmljZXMvcHJvamVjdC90YXJnZXQvc2NhbGEtMi4xMC9zYnQtMC4xMy9jbGFzc2VzdAABLw==
 4 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABXMEeVyN1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQATS9Vc2Vycy9taWtlbHd5cmVkL3RmbS9JVEEtU2VydmljZXMvcHJvamVjdC90YXJnZXQvc2NhbGEtMi4xMC9zYnQtMC4xMy9jbGFzc2VzdAABLw==
 5 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABXMGEV691cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAXi9Vc2Vycy9taWtlbGFsdmFyZXpnby9yZXBvc2l0b3JpZXMvVEZNL0lUQS1TZXJ2aWNlcy9wcm9qZWN0L3RhcmdldC9zY2FsYS0yLjEwL3NidC0wLjEzL2NsYXNzZXN0AAEv
+6 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABXMZbrmt1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQATS9Vc2Vycy9taWtlbHd5cmVkL3RmbS9JVEEtU2VydmljZXMvcHJvamVjdC90YXJnZXQvc2NhbGEtMi4xMC9zYnQtMC4xMy9jbGFzc2VzdAABLw==

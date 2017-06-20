@@ -29,7 +29,7 @@ trait PickUpController extends DAOHelpers
   implicit val dataContext: GathererDataContext
   //declare actors and timeout
 
-  val actorSystem: ActorSystem
+  implicit val actorSystem: ActorSystem
   implicit val timeout: Timeout
   lazy val manager:ActorRef = actorSystem.actorOf(Props(PickUpManager()),"PickupManager")
 
