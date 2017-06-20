@@ -7,6 +7,7 @@ import twitter4j.auth.AccessToken
 import twitter4j.conf.ConfigurationBuilder
 import TwitterCredentials._
 import domain.TweetInfo
+import domain.gatherer.TweetPickUp
 import utils.DAOS.tweetInfoDao
 
 import scala.collection._
@@ -23,7 +24,7 @@ case class Tweet(author: Author, timestamp: Long, body: String) {
 final object EmptyTweet extends Tweet(Author(""), 0L, "")
 
 
-class TwitterStreamClient(val actorSystem: ActorSystem, filters: List[String]) extends Config
+class TwitterStreamClient(val actorSystem: ActorSystem, pickup: TweetPickUp) extends Config
 with Logger
 with TwitterCredentials{
   val twitterStream = new TwitterStreamFactory().getInstance()
@@ -39,7 +40,7 @@ with TwitterCredentials{
     twitterStream.setOAuthAccessToken(new AccessToken(token,tokenSecret))
     twitterStream.addListener(simpleUserListener)
     twitterStream.user()
-    val q : FilterQuery = new FilterQuery(0,null,filters.toArray);
+    val q : FilterQuery = new FilterQuery(0,null,pickup.topics.toArray);
     twitterStream.filter(q);
     twitterStream
   }
@@ -50,7 +51,10 @@ with TwitterCredentials{
     def onStatus(tweet: Status) {
         idiomsFilter foreach(filter =>
           if(filter.isTweetLenguage(tweet.getText)) {
-              val tweetInfo = TweetInfo.content2TwitterInfo(tweet, filter.lenguage.get).get
+              val tweetInfo = TweetInfo.content2TwitterInfo(
+                tweet,
+                filter.lenguage.get,
+                pickup._id.get).get
               logger.info(s"??????????????${tweetInfo.toString}")
               actorSystem.eventStream.publish(TweetInfo)
           }else {

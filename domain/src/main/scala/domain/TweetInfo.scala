@@ -13,7 +13,8 @@ case class TweetInfo(
   user_name: String,
   user_followers: Int,
   tweetText: String,
-  lenguage: String)
+  lenguage: String,
+  topic: Id)
 
 case class Location(
   latitude: Double,
@@ -25,7 +26,7 @@ object Location {
 }
 
 object TweetInfo extends {
-  def content2TwitterInfo(tw: Status,leng: String): Try[TweetInfo] = Try {
+  def content2TwitterInfo(tw: Status,leng: String, idTopic: Id): Try[TweetInfo] = Try {
     val location = Try{
       val tweetLoc = tw.getGeoLocation
       Location(tweetLoc.getLatitude, tweetLoc.getLongitude)
@@ -39,7 +40,8 @@ object TweetInfo extends {
       tw.getUser.getName,
       tw.getUser.getFollowersCount,
       tw.getText,
-      leng)
+      leng,
+      idTopic)
   }
 }
 

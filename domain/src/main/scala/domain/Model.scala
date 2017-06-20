@@ -54,7 +54,7 @@ object Model {
 
   implicit val JFLocation:RootJsonFormat[Location] = jsonFormat2(Location.apply)
 
-  implicit val JFTweetInfo:RootJsonFormat[TweetInfo]  =jsonFormat9(TweetInfo.apply)
+  implicit val JFTweetInfo:RootJsonFormat[TweetInfo]  =jsonFormat10(TweetInfo.apply)
 
 
 }

@@ -17,8 +17,8 @@ class PickUpManager(implicit dataContext:GathererDataContext ,system: ActorSyste
       logger.info(s"${~>} CURRENT WORKERS -> ${workers.toString()}")
       logger.info(s"${~>} Received message for collect pickup ${pickUp._id.get}")
       val worker = workers.find(elem => elem._1 == pickUp._id.get).get._2
-      workers(pickUp._id.get) ! StartPickUp(pickUp)
-      logger.info(s"${~>} Forwarded message for collect pickup" )
+      worker ! StartPickUp(pickUp)
+      logger.info(s"${~>} Forwarded message for collect pickup to worker $worker" )
       sender() ! WorkerStarted
     case StartPickUp(pickUp) =>
       logger.info(s"${~>} Received message for start worker pickup ${pickUp._id.get}")
@@ -30,8 +30,9 @@ class PickUpManager(implicit dataContext:GathererDataContext ,system: ActorSyste
           logger.info(s"${~>}There is a worker already for this topic ${pickUp._id.get}")
           sender() ! WorkerExists
         } else{
-          val newWorker:ActorRef = context.actorOf(Props(PickUpWorker()), s"Worker-${pickUp._id.get}")
+          val newWorker:ActorRef = system.actorOf(Props(PickUpWorker()), s"Worker-${pickUp._id.get.value}")
           workers = workers.+( pickUp._id.get -> newWorker)
+          newWorker forward  StartPickUp(pickUp)
           sender() ! WorkerStarted
           logger.info(s"${~>}Added worker for  $pickUp ")
         }

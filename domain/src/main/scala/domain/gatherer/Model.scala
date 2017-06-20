@@ -12,6 +12,7 @@ object Model {
     override def read(json: JsValue): PickUpState = {
       val JsString(value) = json
       value match {
+        case v if v == Created.toString => Created
         case v if v == Ready.toString => Ready
         case v if v == InProcess.toString => InProcess
         case v if v == Stopped.toString => Stopped

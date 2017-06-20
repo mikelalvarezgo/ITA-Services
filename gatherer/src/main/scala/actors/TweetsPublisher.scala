@@ -17,6 +17,7 @@ with Logger{
   override def receive: Receive = {
   case s: TweetInfo => {
   println(s"Trino recibido: ${s.tweetText}")
+    dataContext.tweetsDAO.create(s)
   if (isActive && totalDemand > 0) onNext(s)
 }
   case _ =>
@@ -29,5 +30,5 @@ with Logger{
 }
 object TweetsPublisher {
 
-  def apply(implicit dataContext: GathererDataContext): TweetsPublisher = new TweetsPublisher()(dataContext)
+  def apply()(implicit dataContext: GathererDataContext): TweetsPublisher = new TweetsPublisher()(dataContext)
 }

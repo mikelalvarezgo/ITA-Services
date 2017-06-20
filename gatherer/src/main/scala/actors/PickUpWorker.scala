@@ -17,7 +17,9 @@ class PickUpWorker(implicit dataContext:GathererDataContext, system:ActorSystem)
   import PickUpWorker.~>
   override def receive: Receive ={
     case StartPickUp(topic) =>{
-      val client = new TwitterStreamClient(system,topic.topics)
+      logger.info(s"${~>} RECEIVED START PICKUP")
+
+      val client = new TwitterStreamClient(system,topic)
       client.init
 
     }
