@@ -1,3 +1,5 @@
+import java.util.concurrent.{ExecutorService, Executors}
+
 import actors.{PickUpManager, TweetsPublisher}
 import akka.actor.{ActorSystem, Props}
 import akka.io.IO
@@ -24,11 +26,13 @@ with Config{
 
   //start a new HTTP server on port 8080 with apiActor as the handler
   implicit val system = ActorSystem("gathering-service")
+  val execService: ExecutorService = Executors.newCachedThreadPool()
+
   implicit val dataContext:GathererDataContext =GathererDataContext.chargeFromConfig()
   implicit val executionContext = system.dispatcher
   implicit val timeout = Timeout(10.seconds)
   val pickUpController =  PickUpController()
-  val sourceTweets  = Source.actorPublisher[TweetInfo](Props(TweetsPublisher()))
+  val sourceTweets  = Source.actorPublisher[TweetInfo](Props(new TweetsPublisher()))
   val apiActor = system.actorOf(Props(new ApiActor("api-gathering",pickUpController)),"api-actor")
   IO(Http) ? Http.Bind(apiActor, interface = hostApi, port = portApi)
 }

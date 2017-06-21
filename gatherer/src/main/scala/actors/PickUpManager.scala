@@ -12,6 +12,9 @@ class PickUpManager(implicit dataContext:GathererDataContext ,system: ActorSyste
   import PickUpManager._
   var workers: Map[Id, ActorRef] = Map.empty
   var limitWorkers: Int = config.getInt(Config.maxPickUpWorkers)
+  override def preStart() = {
+   // get pickups in process and create actors, send message to actor for start
+  }
   override def receive: Receive = {
     case CollectPickUp(pickUp) =>
       logger.info(s"${~>} CURRENT WORKERS -> ${workers.toString()}")
@@ -30,9 +33,9 @@ class PickUpManager(implicit dataContext:GathererDataContext ,system: ActorSyste
           logger.info(s"${~>}There is a worker already for this topic ${pickUp._id.get}")
           sender() ! WorkerExists
         } else{
-          val newWorker:ActorRef = system.actorOf(Props(PickUpWorker()), s"Worker-${pickUp._id.get.value}")
+          val newWorker:ActorRef = context.actorOf(Props(PickUpWorker()), s"Worker-${pickUp._id.get.value}")
           workers = workers.+( pickUp._id.get -> newWorker)
-          newWorker forward  StartPickUp(pickUp)
+          newWorker !  StartPickUp(pickUp)
           sender() ! WorkerStarted
           logger.info(s"${~>}Added worker for  $pickUp ")
         }

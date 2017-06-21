@@ -1,6 +1,6 @@
 package actors
 
-import actors.ActorMessages.StartPickUp
+import actors.ActorMessages.{StartPickUp, StopPickUp}
 import akka.actor.{Actor, ActorSystem}
 import akka.actor.Actor.Receive
 import domain.TweetInfo
@@ -15,21 +15,24 @@ class PickUpWorker(implicit dataContext:GathererDataContext, system:ActorSystem)
   with DAOS
 {
   import PickUpWorker.~>
+  var client:TwitterStreamClient = _
   override def receive: Receive ={
-    case StartPickUp(topic) =>{
+    case StartPickUp(topic) =>
       logger.info(s"${~>} RECEIVED START PICKUP")
 
-      val client = new TwitterStreamClient(system,topic)
+      client = new TwitterStreamClient(system,topic)
       client.init
 
-    }
+    case StopPickUp(pickUp) =>
+      client.stop
+
     case _ => logger.info(s"${~>} RECEIVED SOMETHING")
   }
 }
 object  PickUpWorker {
   val ~> = "[PICK-UP WORKER] "
 
-  def apply()(implicit ndataContext: GathererDataContext,system: ActorSystem): PickUpWorker =
-     PickUpWorker()
+  def apply()(implicit dataContext: GathererDataContext,system: ActorSystem): PickUpWorker =
+    new PickUpWorker
 
 }

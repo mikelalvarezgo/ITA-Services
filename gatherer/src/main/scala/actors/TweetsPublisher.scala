@@ -21,7 +21,9 @@ with Logger{
   if (isActive && totalDemand > 0) onNext(s)
 }
   case _ =>
-}
+    println(s"Nada recibido")
+
+  }
 
   override def postStop(): Unit = {
   context.system.eventStream.unsubscribe(self)
@@ -30,5 +32,6 @@ with Logger{
 }
 object TweetsPublisher {
 
-  def apply()(implicit dataContext: GathererDataContext): TweetsPublisher = new TweetsPublisher()(dataContext)
+  def apply()(implicit dataContext: GathererDataContext): TweetsPublisher =
+    new TweetsPublisher
 }

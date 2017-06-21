@@ -9,6 +9,7 @@ import TwitterCredentials._
 import domain.TweetInfo
 import domain.gatherer.TweetPickUp
 import utils.DAOS.tweetInfoDao
+import scala.collection.JavaConverters._
 
 import scala.collection._
 
@@ -27,7 +28,7 @@ final object EmptyTweet extends Tweet(Author(""), 0L, "")
 class TwitterStreamClient(val actorSystem: ActorSystem, pickup: TweetPickUp) extends Config
 with Logger
 with TwitterCredentials{
-  val twitterStream = new TwitterStreamFactory().getInstance()
+  var twitterStream:TwitterStream= _
   val appKey =  config.getString(ConsumerKey)
   val appSecret =  config.getString(ConsumerSecret)
   val token = config.getString("twitter4j.oauth.accessToken")
@@ -36,15 +37,16 @@ with TwitterCredentials{
 
 
   def init = {
-    twitterStream.setOAuthConsumer(appKey, appSecret)
-    twitterStream.setOAuthAccessToken(new AccessToken(token,tokenSecret))
+    val builder:ConfigurationBuilder  = new ConfigurationBuilder()
+    builder.setOAuthConsumerKey(appKey)
+    builder.setOAuthConsumerSecret(appSecret)
+    val q : FilterQuery = new FilterQuery(0,null,pickup.topics.toArray)
+    twitterStream =new TwitterStreamFactory(builder.build())
+      .getInstance()
     twitterStream.addListener(simpleUserListener)
-    twitterStream.user()
-    val q : FilterQuery = new FilterQuery(0,null,pickup.topics.toArray);
-    twitterStream.filter(q);
-    twitterStream
+    twitterStream.filter(q)
   }
-  val idiomsFilter = config.getStringList("twitter.lenguages").asInstanceOf[List[String]]
+  val idiomsFilter = config.getStringList("twitter.lenguages").asScala.toList
     .map{ leng => TweetsFilter(s"filter_$leng",Some(leng))}
 
   def simpleUserListener = new UserStreamListener {
@@ -57,8 +59,6 @@ with TwitterCredentials{
                 pickup._id.get).get
               logger.info(s"??????????????${tweetInfo.toString}")
               actorSystem.eventStream.publish(TweetInfo)
-          }else {
-              logger.info(s"?????????????? NOT CORRECT LENGUAGE")
           })
     }
     override def onFriendList(friendIds: Array[Long]) = {}
