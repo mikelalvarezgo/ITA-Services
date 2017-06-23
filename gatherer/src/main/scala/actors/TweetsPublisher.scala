@@ -12,11 +12,16 @@ class TweetsPublisher(implicit dataContext:GathererDataContext ) extends ActorPu
 with Config
 with Logger{
 
-  val sub = context.system.eventStream.subscribe(self, classOf[TweetInfo])
+  override def preStart(): Unit = {
+    super.preStart()
+    context.system.eventStream.subscribe(self, classOf[TweetInfo] )
+  }
+
+
 
   override def receive: Receive = {
   case s: TweetInfo => {
-  println(s"Trino recibido: ${s.tweetText}")
+  println(s"tweet recibido: ${s.tweetText}")
     dataContext.tweetsDAO.create(s)
   if (isActive && totalDemand > 0) onNext(s)
 }

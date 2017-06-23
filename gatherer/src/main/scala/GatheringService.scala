@@ -32,7 +32,10 @@ with Config{
   implicit val executionContext = system.dispatcher
   implicit val timeout = Timeout(10.seconds)
   val pickUpController =  PickUpController()
-  val sourceTweets  = Source.actorPublisher[TweetInfo](Props(new TweetsPublisher()))
+  val tweetsPublisher = system.actorOf(Props(new TweetsPublisher()),"tweetsPublisher")
+ // val sourceTweets  = Source.actorPublisher[TweetInfo](,TweetInfo))
+  system.eventStream.subscribe(tweetsPublisher, classOf[TweetInfo])
+
   val apiActor = system.actorOf(Props(new ApiActor("api-gathering",pickUpController)),"api-actor")
   IO(Http) ? Http.Bind(apiActor, interface = hostApi, port = portApi)
 }

@@ -20,7 +20,7 @@ class PickUpWorker(implicit dataContext:GathererDataContext, system:ActorSystem)
     case StartPickUp(topic) =>
       logger.info(s"${~>} RECEIVED START PICKUP")
 
-      client = new TwitterStreamClient(system,topic)
+      client = new TwitterStreamClient(context.system,topic)
       client.init
 
     case StopPickUp(pickUp) =>

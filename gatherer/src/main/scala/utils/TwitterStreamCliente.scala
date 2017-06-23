@@ -58,7 +58,7 @@ with TwitterCredentials{
                 filter.lenguage.get,
                 pickup._id.get).get
               logger.info(s"??????????????${tweetInfo.toString}")
-              actorSystem.eventStream.publish(TweetInfo)
+              actorSystem.eventStream.publish(tweetInfo)
           })
     }
     override def onFriendList(friendIds: Array[Long]) = {}
