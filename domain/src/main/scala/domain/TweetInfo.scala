@@ -1,7 +1,6 @@
 package domain
 
-import spray.json.{DefaultJsonProtocol, JsonFormat, RootJsonFormat}
-import spray.json.DefaultJsonProtocol._
+import com.vdurmont.emoji._
 import scala.util.Try
 import twitter4j.Status
 case class TweetInfo(
@@ -14,6 +13,7 @@ case class TweetInfo(
   user_followers: Int,
   tweetText: String,
   lenguage: String,
+  contain_emoji: Boolean,
   topic: Id)
 
 case class Location(
@@ -26,6 +26,9 @@ object Location {
 }
 
 object TweetInfo extends {
+  def containtTextEmojis(text: String): Boolean = {
+    (text != EmojiParser.parseToAliases(text))
+  }
   def content2TwitterInfo(tw: Status,leng: String, idTopic: Id): Try[TweetInfo] = Try {
     val location = Try{
       val tweetLoc = tw.getGeoLocation
@@ -41,6 +44,7 @@ object TweetInfo extends {
       tw.getUser.getFollowersCount,
       tw.getText,
       leng,
+      containtTextEmojis(tw.getText),
       idTopic)
   }
 }

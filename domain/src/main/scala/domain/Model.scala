@@ -10,14 +10,6 @@ import spray.json._
 
 object Model {
 
-    implicit  val BooleanJF = new RootJsonFormat[Boolean] {
-      override def write(obj:Boolean):JsValue = JsBoolean(obj)
-      override def read(json: JsValue):Boolean =  json match  {
-        case JsBoolean(v) => v
-        case _ => ???
-      }
-
-    }
    implicit val anyJF = new RootJsonFormat[Any]{ any =>
 
     override def write(obj: Any): JsValue = obj match {
@@ -54,7 +46,7 @@ object Model {
 
   implicit val JFLocation:RootJsonFormat[Location] = jsonFormat2(Location.apply)
 
-  implicit val JFTweetInfo:RootJsonFormat[TweetInfo]  =jsonFormat10(TweetInfo.apply)
+  implicit val JFTweetInfo:RootJsonFormat[TweetInfo]  =jsonFormat11(TweetInfo.apply)
 
 
 }

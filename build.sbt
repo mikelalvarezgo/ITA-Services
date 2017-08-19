@@ -28,5 +28,10 @@ lazy val gatherer = project.
   settings(Common.settings: _*).
   settings(libraryDependencies ++= Dependencies.gathererDependencies)
 
+lazy val classifier = project.
+  dependsOn(api, common, domain).
+  settings(Common.settings: _*).
+  settings(libraryDependencies ++= Dependencies.classifierDependencies)
+
 lazy val root = (project in file(".")).
   aggregate(common, domain,gatherer)

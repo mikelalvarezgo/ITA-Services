@@ -11,6 +11,8 @@ object Dependencies {
   val AkkaHttpVersion = "10.0.6"
 
   val commonDependencies: Seq[ModuleID] = Seq(
+    "com.lightbend" %% "emoji" % "1.1.1",
+    "com.vdurmont"   % "emoji-java" % "3.2.0",
     "org.spire-math" %% "cats" % "0.3.0",
     "com.typesafe" % "config" % "1.3.1",
     "org.scalaz" %% "scalaz-core" % "7.2.0",
@@ -45,6 +47,16 @@ object Dependencies {
   val domainDependencies: Seq[ModuleID] = commonDependencies
   val clientDependencies: Seq[ModuleID] = commonDependencies
   val gathererDependencies: Seq[ModuleID] = commonDependencies ++ Seq(
+    "org.apache.spark" %% "spark-core" % sparkVersion,
+    "org.apache.spark" %% "spark-streaming" % sparkVersion,
+    "org.apache.spark" %% "spark-streaming-twitter" % sparkVersion,
+    "com.sksamuel.elastic4s" %% "elastic4s-core" % "1.7.0",
+    "com.sksamuel.elastic4s" %% "elastic4s-testkit" % "1.7.0" % "test"
+  )
+  val classifierDependencies: Seq[ModuleID] = commonDependencies ++ Seq(
+    "org.mongodb.spark" % "mongo-spark-connector_2.11" % "2.2.0",
+    "org.apache.spark" % "spark-sql_2.11" % "2.2.0",
+    "org.apache.spark" % "spark-sql_2.11" % "2.2.0",
     "org.apache.spark" %% "spark-core" % sparkVersion,
     "org.apache.spark" %% "spark-streaming" % sparkVersion,
     "org.apache.spark" %% "spark-streaming-twitter" % sparkVersion,
