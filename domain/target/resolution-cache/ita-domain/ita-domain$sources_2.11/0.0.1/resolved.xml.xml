@@ -4,7 +4,7 @@
 		module="ita-domain$sources_2.11"
 		revision="0.0.1"
 		status="integration"
-		publication="20170819181902"
+		publication="20170822203054"
 	/>
 	<configurations>
 		<conf name="compile" visibility="public" description=""/>

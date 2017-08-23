@@ -9,7 +9,6 @@ case class TweetResult(
   _id:Id,
   idTweet:Id,
   idExecution:Id,
-  idTopic:Id,
   typeModel:String,
   result:Double)
 
