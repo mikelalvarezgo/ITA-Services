@@ -4,7 +4,7 @@
 		module="classifier$sources_2.11"
 		revision="0.0.1"
 		status="integration"
-		publication="20170822202809"
+		publication="20170825173154"
 	/>
 	<configurations>
 		<conf name="compile" visibility="public" description=""/>

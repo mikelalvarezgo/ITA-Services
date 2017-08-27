@@ -10,6 +10,7 @@ import spray.json._
 
 object Model {
 
+
    implicit val anyJF = new RootJsonFormat[Any]{ any =>
 
     override def write(obj: Any): JsValue = obj match {
@@ -19,7 +20,6 @@ object Model {
       case v: Double => JsNumber(v)
       case v: BigDecimal => JsNumber(v)
       case v: BigInt => JsNumber(v)
-      case v: Boolean => JsBoolean(v)
       case v: List[Any@unchecked] => JsArray(v.map(any.write).toVector)
       case v: Map[String@unchecked,Any@unchecked] => JsObject(v.mapValues(any.write))
       case v => Option(v).map(s => JsString(s.toString)).getOrElse(JsNull)

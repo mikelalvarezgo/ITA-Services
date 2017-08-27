@@ -2,7 +2,7 @@ package mongo.daos
 
 import com.mongodb.casbah.commons.MongoDBObject
 import domain.{Id, TweetInfo}
-import mongo.{DAO, MongoDbComponent}
+import mongo.{DAO, DAOHelpers, MongoDbComponent}
 import domain.Model._
 import mongo.Converters._
 

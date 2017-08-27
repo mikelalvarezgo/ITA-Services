@@ -8,13 +8,13 @@ import domain.Id
 import domain.gatherer.{InProcess, Ready, TweetPickUp}
 import domain.gatherer.exception.GathererException
 import domain.gatherer.exception.GathererException._
-import mongo.daos.{DAOHelpers, PickUpDAO}
+import mongo.daos.PickUpDAO
 
 import scala.concurrent.ExecutionContext.Implicits.global
-import rest.RestInterface
 import utils.{GathererDataContext, Logger}
 import akka.pattern.ask
 import domain.Model._
+import mongo.DAOHelpers
 
 import scala.concurrent.Future
 import scala.util.Try

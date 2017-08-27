@@ -34,4 +34,6 @@ lazy val classifier = project.
   settings(libraryDependencies ++= Dependencies.classifierDependencies)
 
 lazy val root = (project in file(".")).
-  aggregate(common, domain,gatherer)
+
+  aggregate(common, domain,gatherer, classifier)
+scalacOptions += "-Ydependent-method-types"

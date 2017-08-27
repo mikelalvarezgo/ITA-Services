@@ -1,49 +1,46 @@
 package classifier
 
 import com.fasterxml.jackson.annotation.JsonValue
+import models._
+import results.{ModelExecution, ModelResult, TweetResult}
 import spray.json.DefaultJsonProtocol.{jsonFormat2, jsonFormat9}
 import spray.json._
 import spray.json.DefaultJsonProtocol._
 import spray.httpx.SprayJsonSupport
 import spray.json._
+import client._
+import domain.Model._
 
-/**
-  * Created by mikelwyred on 19/08/2017.
-  */
 object Model {
 
-  implicit  val BooleanJF = new RootJsonFormat[Boolean] {
-    override def write(obj:Boolean):JsValue = JsBoolean(obj)
-    override def read(json: JsValue):Boolean =  json match  {
-      case JsBoolean(v) => v
-      case _ => ???
+  implicit val modelTypeJF: JsonFormat[ModelType] =
+    new JsonFormat[ModelType] {
+
+      def read(json: JsValue): ModelType = {
+        val JsString(value) = json
+        value match {
+          case v if v == API.toString => API
+          case v if v == BOOSTING.toString => BOOSTING
+          case v if v == NLP.toString => NLP
+        }
+      }
+
+      def write(obj: ModelType): JsValue = JsString(obj.toString)
     }
 
-  }
-  implicit val anyJF = new RootJsonFormat[Any]{ any =>
 
-    override def write(obj: Any): JsValue = obj match {
-      case v: Int => JsNumber(v)
-      case v: Long => JsNumber(v)
-      case v: Float => JsNumber(v)
-      case v: Double => JsNumber(v)
-      case v: BigDecimal => JsNumber(v)
-      case v: BigInt => JsNumber(v)
-      case v: Boolean => JsBoolean(v)
-      case v: List[Any@unchecked] => JsArray(v.map(any.write).toVector)
-      case v: Map[String@unchecked,Any@unchecked] => JsObject(v.mapValues(any.write))
-      case v => Option(v).map(s => JsString(s.toString)).getOrElse(JsNull)
-    }
-    override def read(json: JsValue): Any = json match {
-      case JsNumber(n) => n
-      case JsBoolean(b) => b
-      case JsString(s) => s
-      case JsArray(elements) => elements.toList.map(any.read)
-      case JsObject(elements) => elements.mapValues(any.read)
-      case _ => None.orNull
-    }
-  }
+  implicit  val probsJF :RootJsonFormat[Probs] = jsonFormat3(Probs.apply)
 
-  implicit val probsJF = jsonFormat3(Probs.apply)
+  implicit  val responseJF:RootJsonFormat[ClientResponse] = jsonFormat2(ClientResponse.apply)
+
+  implicit val tweetResultJF:RootJsonFormat[TweetResult] = jsonFormat5(TweetResult.apply)
+
+  implicit val partitionConfJF:RootJsonFormat[PartitionConf]= jsonFormat3(PartitionConf.apply)
+
+  implicit val modelResultJF:RootJsonFormat[ModelResult] = jsonFormat10(ModelResult.apply)
+
+  implicit val executionJF:RootJsonFormat[ModelExecution] = jsonFormat7(ModelExecution.apply)
+
+  implicit val modelJF:RootJsonFormat[ModelData] =  jsonFormat7(ModelData.apply)
 
 }

@@ -7,7 +7,7 @@
 		revision="0.0.1"
 		conf="compile"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
-		date="20170822202809"/>
+		date="20170825173154"/>
 	<dependencies>
 		<module organisation="com.sksamuel.elastic4s" name="elastic4s-core_2.11">
 			<revision name="1.7.0" status="release" pubdate="20150720153829" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/sksamuel/elastic4s" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="245">
@@ -27,7 +27,7 @@
 		<module organisation="org.elasticsearch" name="elasticsearch">
 			<revision name="1.7.0" status="release" pubdate="20150716162757" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="246">
 				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
-				<metadata-artifact status="successful" details="" size="67755" time="496" location="/Users/mikelwyred/.ivy2/cache/org.elasticsearch/elasticsearch/ivy-1.7.0.xml" searched="true" original-local-location="/Users/mikelwyred/.ivy2/cache/org.elasticsearch/elasticsearch/ivy-1.7.0.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/elasticsearch/elasticsearch/1.7.0/elasticsearch-1.7.0.pom"/>
+				<metadata-artifact status="successful" details="" size="67755" time="75" location="/Users/mikelwyred/.ivy2/cache/org.elasticsearch/elasticsearch/ivy-1.7.0.xml" searched="true" original-local-location="/Users/mikelwyred/.ivy2/cache/org.elasticsearch/elasticsearch/ivy-1.7.0.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/elasticsearch/elasticsearch/1.7.0/elasticsearch-1.7.0.pom"/>
 				<caller organisation="classifier" name="classifier$sources_2.11" conf="compile" rev="1.7.0" rev-constraint-default="1.7.0" rev-constraint-dynamic="1.7.0" callerrev="0.0.1"/>
 				<artifacts>
 					<artifact name="elasticsearch" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="5572054" time="0" location="/Users/mikelwyred/.ivy2/cache/org.elasticsearch/elasticsearch/srcs/elasticsearch-1.7.0-sources.jar">
@@ -56,7 +56,7 @@
 		</module>
 		<module organisation="org.ow2.asm" name="asm-commons">
 			<revision name="4.1" status="release" pubdate="20121014173823" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="262">
-				<metadata-artifact status="successful" details="" size="2092" time="318" location="/Users/mikelwyred/.ivy2/cache/org.ow2.asm/asm-commons/ivy-4.1.xml" searched="true" original-local-location="/Users/mikelwyred/.ivy2/cache/org.ow2.asm/asm-commons/ivy-4.1.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/ow2/asm/asm-commons/4.1/asm-commons-4.1.pom"/>
+				<metadata-artifact status="successful" details="" size="2092" time="35" location="/Users/mikelwyred/.ivy2/cache/org.ow2.asm/asm-commons/ivy-4.1.xml" searched="true" original-local-location="/Users/mikelwyred/.ivy2/cache/org.ow2.asm/asm-commons/ivy-4.1.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/ow2/asm/asm-commons/4.1/asm-commons-4.1.pom"/>
 				<caller organisation="classifier" name="classifier$sources_2.11" conf="compile" rev="4.1" rev-constraint-default="4.1" rev-constraint-dynamic="4.1" callerrev="0.0.1"/>
 				<artifacts>
 					<artifact name="asm-commons" type="jar" ext="jar" status="no" details="" size="38090" time="0" location="/Users/mikelwyred/.ivy2/cache/org.ow2.asm/asm-commons/jars/asm-commons-4.1.jar">
@@ -85,7 +85,7 @@
 		</module>
 		<module organisation="org.antlr" name="antlr-runtime">
 			<revision name="3.5" status="release" pubdate="20130105043525" resolver="public" artresolver="public" homepage="http://www.antlr.org" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="260">
-				<metadata-artifact status="successful" details="" size="2206" time="442" location="/Users/mikelwyred/.ivy2/cache/org.antlr/antlr-runtime/ivy-3.5.xml" searched="true" original-local-location="/Users/mikelwyred/.ivy2/cache/org.antlr/antlr-runtime/ivy-3.5.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/antlr/antlr-runtime/3.5/antlr-runtime-3.5.pom"/>
+				<metadata-artifact status="successful" details="" size="2206" time="95" location="/Users/mikelwyred/.ivy2/cache/org.antlr/antlr-runtime/ivy-3.5.xml" searched="true" original-local-location="/Users/mikelwyred/.ivy2/cache/org.antlr/antlr-runtime/ivy-3.5.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/antlr/antlr-runtime/3.5/antlr-runtime-3.5.pom"/>
 				<caller organisation="classifier" name="classifier$sources_2.11" conf="compile" rev="3.5" rev-constraint-default="3.5" rev-constraint-dynamic="3.5" callerrev="0.0.1"/>
 				<artifacts>
 					<artifact name="antlr-runtime" type="jar" ext="jar" status="no" details="" size="167735" time="0" location="/Users/mikelwyred/.ivy2/cache/org.antlr/antlr-runtime/jars/antlr-runtime-3.5.jar">
@@ -99,7 +99,7 @@
 		</module>
 		<module organisation="org.apache.lucene" name="lucene-spatial">
 			<revision name="4.10.4" status="release" pubdate="20150303091824" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="258">
-				<metadata-artifact status="successful" details="" size="2797" time="396" location="/Users/mikelwyred/.ivy2/cache/org.apache.lucene/lucene-spatial/ivy-4.10.4.xml" searched="true" original-local-location="/Users/mikelwyred/.ivy2/cache/org.apache.lucene/lucene-spatial/ivy-4.10.4.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/lucene/lucene-spatial/4.10.4/lucene-spatial-4.10.4.pom"/>
+				<metadata-artifact status="successful" details="" size="2797" time="30" location="/Users/mikelwyred/.ivy2/cache/org.apache.lucene/lucene-spatial/ivy-4.10.4.xml" searched="true" original-local-location="/Users/mikelwyred/.ivy2/cache/org.apache.lucene/lucene-spatial/ivy-4.10.4.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/lucene/lucene-spatial/4.10.4/lucene-spatial-4.10.4.pom"/>
 				<caller organisation="classifier" name="classifier$sources_2.11" conf="compile" rev="4.10.4" rev-constraint-default="4.10.4" rev-constraint-dynamic="4.10.4" callerrev="0.0.1"/>
 				<artifacts>
 					<artifact name="lucene-spatial" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="99129" time="0" location="/Users/mikelwyred/.ivy2/cache/org.apache.lucene/lucene-spatial/srcs/lucene-spatial-4.10.4-sources.jar">
@@ -114,7 +114,7 @@
 		<module organisation="com.spatial4j" name="spatial4j">
 			<revision name="0.4.1" status="release" pubdate="20140219071135" resolver="public" artresolver="public" homepage="https://github.com/spatial4j/spatial4j" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="259">
 				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
-				<metadata-artifact status="successful" details="" size="10106" time="338" location="/Users/mikelwyred/.ivy2/cache/com.spatial4j/spatial4j/ivy-0.4.1.xml" searched="true" original-local-location="/Users/mikelwyred/.ivy2/cache/com.spatial4j/spatial4j/ivy-0.4.1.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/spatial4j/spatial4j/0.4.1/spatial4j-0.4.1.pom"/>
+				<metadata-artifact status="successful" details="" size="10106" time="45" location="/Users/mikelwyred/.ivy2/cache/com.spatial4j/spatial4j/ivy-0.4.1.xml" searched="true" original-local-location="/Users/mikelwyred/.ivy2/cache/com.spatial4j/spatial4j/ivy-0.4.1.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/spatial4j/spatial4j/0.4.1/spatial4j-0.4.1.pom"/>
 				<caller organisation="classifier" name="classifier$sources_2.11" conf="compile" rev="0.4.1" rev-constraint-default="0.4.1" rev-constraint-dynamic="0.4.1" callerrev="0.0.1"/>
 				<artifacts>
 					<artifact name="spatial4j" type="jar" ext="jar" status="no" details="" size="102177" time="0" location="/Users/mikelwyred/.ivy2/cache/com.spatial4j/spatial4j/jars/spatial4j-0.4.1.jar">
@@ -128,7 +128,7 @@
 		</module>
 		<module organisation="org.apache.lucene" name="lucene-join">
 			<revision name="4.10.4" status="release" pubdate="20150303091952" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="256">
-				<metadata-artifact status="successful" details="" size="2973" time="323" location="/Users/mikelwyred/.ivy2/cache/org.apache.lucene/lucene-join/ivy-4.10.4.xml" searched="true" original-local-location="/Users/mikelwyred/.ivy2/cache/org.apache.lucene/lucene-join/ivy-4.10.4.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/lucene/lucene-join/4.10.4/lucene-join-4.10.4.pom"/>
+				<metadata-artifact status="successful" details="" size="2973" time="38" location="/Users/mikelwyred/.ivy2/cache/org.apache.lucene/lucene-join/ivy-4.10.4.xml" searched="true" original-local-location="/Users/mikelwyred/.ivy2/cache/org.apache.lucene/lucene-join/ivy-4.10.4.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/lucene/lucene-join/4.10.4/lucene-join-4.10.4.pom"/>
 				<caller organisation="classifier" name="classifier$sources_2.11" conf="compile" rev="4.10.4" rev-constraint-default="4.10.4" rev-constraint-dynamic="4.10.4" callerrev="0.0.1"/>
 				<artifacts>
 					<artifact name="lucene-join" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="45777" time="0" location="/Users/mikelwyred/.ivy2/cache/org.apache.lucene/lucene-join/srcs/lucene-join-4.10.4-sources.jar">
@@ -142,7 +142,7 @@
 		</module>
 		<module organisation="org.apache.lucene" name="lucene-grouping">
 			<revision name="4.10.4" status="release" pubdate="20150303092017" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="257">
-				<metadata-artifact status="successful" details="" size="2988" time="437" location="/Users/mikelwyred/.ivy2/cache/org.apache.lucene/lucene-grouping/ivy-4.10.4.xml" searched="true" original-local-location="/Users/mikelwyred/.ivy2/cache/org.apache.lucene/lucene-grouping/ivy-4.10.4.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/lucene/lucene-grouping/4.10.4/lucene-grouping-4.10.4.pom"/>
+				<metadata-artifact status="successful" details="" size="2988" time="83" location="/Users/mikelwyred/.ivy2/cache/org.apache.lucene/lucene-grouping/ivy-4.10.4.xml" searched="true" original-local-location="/Users/mikelwyred/.ivy2/cache/org.apache.lucene/lucene-grouping/ivy-4.10.4.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/lucene/lucene-grouping/4.10.4/lucene-grouping-4.10.4.pom"/>
 				<caller organisation="classifier" name="classifier$sources_2.11" conf="compile" rev="4.10.4" rev-constraint-default="4.10.4" rev-constraint-dynamic="4.10.4" callerrev="0.0.1"/>
 				<artifacts>
 					<artifact name="lucene-grouping" type="jar" ext="jar" status="no" details="" size="107784" time="0" location="/Users/mikelwyred/.ivy2/cache/org.apache.lucene/lucene-grouping/jars/lucene-grouping-4.10.4.jar">
@@ -156,7 +156,7 @@
 		</module>
 		<module organisation="org.apache.lucene" name="lucene-suggest">
 			<revision name="4.10.4" status="release" pubdate="20150303091814" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="254">
-				<metadata-artifact status="successful" details="" size="3238" time="319" location="/Users/mikelwyred/.ivy2/cache/org.apache.lucene/lucene-suggest/ivy-4.10.4.xml" searched="true" original-local-location="/Users/mikelwyred/.ivy2/cache/org.apache.lucene/lucene-suggest/ivy-4.10.4.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/lucene/lucene-suggest/4.10.4/lucene-suggest-4.10.4.pom"/>
+				<metadata-artifact status="successful" details="" size="3238" time="63" location="/Users/mikelwyred/.ivy2/cache/org.apache.lucene/lucene-suggest/ivy-4.10.4.xml" searched="true" original-local-location="/Users/mikelwyred/.ivy2/cache/org.apache.lucene/lucene-suggest/ivy-4.10.4.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/lucene/lucene-suggest/4.10.4/lucene-suggest-4.10.4.pom"/>
 				<caller organisation="classifier" name="classifier$sources_2.11" conf="compile" rev="4.10.4" rev-constraint-default="4.10.4" rev-constraint-dynamic="4.10.4" callerrev="0.0.1"/>
 				<artifacts>
 					<artifact name="lucene-suggest" type="jar" ext="jar" status="no" details="" size="179011" time="0" location="/Users/mikelwyred/.ivy2/cache/org.apache.lucene/lucene-suggest/jars/lucene-suggest-4.10.4.jar">
@@ -170,7 +170,7 @@
 		</module>
 		<module organisation="org.apache.lucene" name="lucene-misc">
 			<revision name="4.10.4" status="release" pubdate="20150303091929" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="255">
-				<metadata-artifact status="successful" details="" size="4904" time="323" location="/Users/mikelwyred/.ivy2/cache/org.apache.lucene/lucene-misc/ivy-4.10.4.xml" searched="true" original-local-location="/Users/mikelwyred/.ivy2/cache/org.apache.lucene/lucene-misc/ivy-4.10.4.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/lucene/lucene-misc/4.10.4/lucene-misc-4.10.4.pom"/>
+				<metadata-artifact status="successful" details="" size="4904" time="38" location="/Users/mikelwyred/.ivy2/cache/org.apache.lucene/lucene-misc/ivy-4.10.4.xml" searched="true" original-local-location="/Users/mikelwyred/.ivy2/cache/org.apache.lucene/lucene-misc/ivy-4.10.4.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/lucene/lucene-misc/4.10.4/lucene-misc-4.10.4.pom"/>
 				<caller organisation="classifier" name="classifier$sources_2.11" conf="compile" rev="4.10.4" rev-constraint-default="4.10.4" rev-constraint-dynamic="4.10.4" callerrev="0.0.1"/>
 				<artifacts>
 					<artifact name="lucene-misc" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="82520" time="0" location="/Users/mikelwyred/.ivy2/cache/org.apache.lucene/lucene-misc/srcs/lucene-misc-4.10.4-sources.jar">
@@ -184,7 +184,7 @@
 		</module>
 		<module organisation="org.apache.lucene" name="lucene-highlighter">
 			<revision name="4.10.4" status="release" pubdate="20150303092007" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="251">
-				<metadata-artifact status="successful" details="" size="3152" time="389" location="/Users/mikelwyred/.ivy2/cache/org.apache.lucene/lucene-highlighter/ivy-4.10.4.xml" searched="true" original-local-location="/Users/mikelwyred/.ivy2/cache/org.apache.lucene/lucene-highlighter/ivy-4.10.4.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/lucene/lucene-highlighter/4.10.4/lucene-highlighter-4.10.4.pom"/>
+				<metadata-artifact status="successful" details="" size="3152" time="31" location="/Users/mikelwyred/.ivy2/cache/org.apache.lucene/lucene-highlighter/ivy-4.10.4.xml" searched="true" original-local-location="/Users/mikelwyred/.ivy2/cache/org.apache.lucene/lucene-highlighter/ivy-4.10.4.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/lucene/lucene-highlighter/4.10.4/lucene-highlighter-4.10.4.pom"/>
 				<caller organisation="classifier" name="classifier$sources_2.11" conf="compile" rev="4.10.4" rev-constraint-default="4.10.4" rev-constraint-dynamic="4.10.4" callerrev="0.0.1"/>
 				<artifacts>
 					<artifact name="lucene-highlighter" type="jar" ext="jar" status="no" details="" size="138282" time="0" location="/Users/mikelwyred/.ivy2/cache/org.apache.lucene/lucene-highlighter/jars/lucene-highlighter-4.10.4.jar">
@@ -198,7 +198,7 @@
 		</module>
 		<module organisation="org.apache.lucene" name="lucene-memory">
 			<revision name="4.10.4" status="release" pubdate="20150303091941" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="250">
-				<metadata-artifact status="successful" details="" size="4223" time="319" location="/Users/mikelwyred/.ivy2/cache/org.apache.lucene/lucene-memory/ivy-4.10.4.xml" searched="true" original-local-location="/Users/mikelwyred/.ivy2/cache/org.apache.lucene/lucene-memory/ivy-4.10.4.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/lucene/lucene-memory/4.10.4/lucene-memory-4.10.4.pom"/>
+				<metadata-artifact status="successful" details="" size="4223" time="134" location="/Users/mikelwyred/.ivy2/cache/org.apache.lucene/lucene-memory/ivy-4.10.4.xml" searched="true" original-local-location="/Users/mikelwyred/.ivy2/cache/org.apache.lucene/lucene-memory/ivy-4.10.4.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/lucene/lucene-memory/4.10.4/lucene-memory-4.10.4.pom"/>
 				<caller organisation="classifier" name="classifier$sources_2.11" conf="compile" rev="4.10.4" rev-constraint-default="4.10.4" rev-constraint-dynamic="4.10.4" callerrev="0.0.1"/>
 				<artifacts>
 					<artifact name="lucene-memory" type="jar" ext="jar" status="no" details="" size="36078" time="0" location="/Users/mikelwyred/.ivy2/cache/org.apache.lucene/lucene-memory/jars/lucene-memory-4.10.4.jar">
@@ -212,7 +212,7 @@
 		</module>
 		<module organisation="org.apache.lucene" name="lucene-queryparser">
 			<revision name="4.10.4" status="release" pubdate="20150303091903" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="252">
-				<metadata-artifact status="successful" details="" size="5156" time="323" location="/Users/mikelwyred/.ivy2/cache/org.apache.lucene/lucene-queryparser/ivy-4.10.4.xml" searched="true" original-local-location="/Users/mikelwyred/.ivy2/cache/org.apache.lucene/lucene-queryparser/ivy-4.10.4.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/lucene/lucene-queryparser/4.10.4/lucene-queryparser-4.10.4.pom"/>
+				<metadata-artifact status="successful" details="" size="5156" time="130" location="/Users/mikelwyred/.ivy2/cache/org.apache.lucene/lucene-queryparser/ivy-4.10.4.xml" searched="true" original-local-location="/Users/mikelwyred/.ivy2/cache/org.apache.lucene/lucene-queryparser/ivy-4.10.4.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/lucene/lucene-queryparser/4.10.4/lucene-queryparser-4.10.4.pom"/>
 				<caller organisation="classifier" name="classifier$sources_2.11" conf="compile" rev="4.10.4" rev-constraint-default="4.10.4" rev-constraint-dynamic="4.10.4" callerrev="0.0.1"/>
 				<artifacts>
 					<artifact name="lucene-queryparser" type="jar" ext="jar" status="no" details="" size="391515" time="0" location="/Users/mikelwyred/.ivy2/cache/org.apache.lucene/lucene-queryparser/jars/lucene-queryparser-4.10.4.jar">
@@ -226,7 +226,7 @@
 		</module>
 		<module organisation="org.apache.lucene" name="lucene-sandbox">
 			<revision name="4.10.4" status="release" pubdate="20150303091838" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="253">
-				<metadata-artifact status="successful" details="" size="3101" time="322" location="/Users/mikelwyred/.ivy2/cache/org.apache.lucene/lucene-sandbox/ivy-4.10.4.xml" searched="true" original-local-location="/Users/mikelwyred/.ivy2/cache/org.apache.lucene/lucene-sandbox/ivy-4.10.4.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/lucene/lucene-sandbox/4.10.4/lucene-sandbox-4.10.4.pom"/>
+				<metadata-artifact status="successful" details="" size="3101" time="48" location="/Users/mikelwyred/.ivy2/cache/org.apache.lucene/lucene-sandbox/ivy-4.10.4.xml" searched="true" original-local-location="/Users/mikelwyred/.ivy2/cache/org.apache.lucene/lucene-sandbox/ivy-4.10.4.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/lucene/lucene-sandbox/4.10.4/lucene-sandbox-4.10.4.pom"/>
 				<caller organisation="classifier" name="classifier$sources_2.11" conf="compile" rev="4.10.4" rev-constraint-default="4.10.4" rev-constraint-dynamic="4.10.4" callerrev="0.0.1"/>
 				<artifacts>
 					<artifact name="lucene-sandbox" type="jar" ext="jar" status="no" details="" size="119449" time="0" location="/Users/mikelwyred/.ivy2/cache/org.apache.lucene/lucene-sandbox/jars/lucene-sandbox-4.10.4.jar">
@@ -240,7 +240,7 @@
 		</module>
 		<module organisation="org.apache.lucene" name="lucene-queries">
 			<revision name="4.10.4" status="release" pubdate="20150303091918" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="249">
-				<metadata-artifact status="successful" details="" size="2860" time="318" location="/Users/mikelwyred/.ivy2/cache/org.apache.lucene/lucene-queries/ivy-4.10.4.xml" searched="true" original-local-location="/Users/mikelwyred/.ivy2/cache/org.apache.lucene/lucene-queries/ivy-4.10.4.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/lucene/lucene-queries/4.10.4/lucene-queries-4.10.4.pom"/>
+				<metadata-artifact status="successful" details="" size="2860" time="46" location="/Users/mikelwyred/.ivy2/cache/org.apache.lucene/lucene-queries/ivy-4.10.4.xml" searched="true" original-local-location="/Users/mikelwyred/.ivy2/cache/org.apache.lucene/lucene-queries/ivy-4.10.4.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/lucene/lucene-queries/4.10.4/lucene-queries-4.10.4.pom"/>
 				<caller organisation="classifier" name="classifier$sources_2.11" conf="compile" rev="4.10.4" rev-constraint-default="4.10.4" rev-constraint-dynamic="4.10.4" callerrev="0.0.1"/>
 				<artifacts>
 					<artifact name="lucene-queries" type="jar" ext="jar" status="no" details="" size="213029" time="0" location="/Users/mikelwyred/.ivy2/cache/org.apache.lucene/lucene-queries/jars/lucene-queries-4.10.4.jar">
@@ -254,7 +254,7 @@
 		</module>
 		<module organisation="org.apache.lucene" name="lucene-analyzers-common">
 			<revision name="4.10.4" status="release" pubdate="20150303092333" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="248">
-				<metadata-artifact status="successful" details="" size="3027" time="325" location="/Users/mikelwyred/.ivy2/cache/org.apache.lucene/lucene-analyzers-common/ivy-4.10.4.xml" searched="true" original-local-location="/Users/mikelwyred/.ivy2/cache/org.apache.lucene/lucene-analyzers-common/ivy-4.10.4.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/lucene/lucene-analyzers-common/4.10.4/lucene-analyzers-common-4.10.4.pom"/>
+				<metadata-artifact status="successful" details="" size="3027" time="37" location="/Users/mikelwyred/.ivy2/cache/org.apache.lucene/lucene-analyzers-common/ivy-4.10.4.xml" searched="true" original-local-location="/Users/mikelwyred/.ivy2/cache/org.apache.lucene/lucene-analyzers-common/ivy-4.10.4.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/lucene/lucene-analyzers-common/4.10.4/lucene-analyzers-common-4.10.4.pom"/>
 				<caller organisation="classifier" name="classifier$sources_2.11" conf="compile" rev="4.10.4" rev-constraint-default="4.10.4" rev-constraint-dynamic="4.10.4" callerrev="0.0.1"/>
 				<artifacts>
 					<artifact name="lucene-analyzers-common" type="jar" ext="jar" status="no" details="" size="1699875" time="0" location="/Users/mikelwyred/.ivy2/cache/org.apache.lucene/lucene-analyzers-common/jars/lucene-analyzers-common-4.10.4.jar">
@@ -268,7 +268,7 @@
 		</module>
 		<module organisation="org.apache.lucene" name="lucene-core">
 			<revision name="4.10.4" status="release" pubdate="20150303092111" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="247">
-				<metadata-artifact status="successful" details="" size="4989" time="353" location="/Users/mikelwyred/.ivy2/cache/org.apache.lucene/lucene-core/ivy-4.10.4.xml" searched="true" original-local-location="/Users/mikelwyred/.ivy2/cache/org.apache.lucene/lucene-core/ivy-4.10.4.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/lucene/lucene-core/4.10.4/lucene-core-4.10.4.pom"/>
+				<metadata-artifact status="successful" details="" size="4989" time="185" location="/Users/mikelwyred/.ivy2/cache/org.apache.lucene/lucene-core/ivy-4.10.4.xml" searched="true" original-local-location="/Users/mikelwyred/.ivy2/cache/org.apache.lucene/lucene-core/ivy-4.10.4.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/lucene/lucene-core/4.10.4/lucene-core-4.10.4.pom"/>
 				<caller organisation="classifier" name="classifier$sources_2.11" conf="compile" rev="4.10.4" rev-constraint-default="4.10.4" rev-constraint-dynamic="4.10.4" callerrev="0.0.1"/>
 				<artifacts>
 					<artifact name="lucene-core" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="1969441" time="0" location="/Users/mikelwyred/.ivy2/cache/org.apache.lucene/lucene-core/srcs/lucene-core-4.10.4-sources.jar">
@@ -283,13 +283,13 @@
 		<module organisation="com.google.protobuf" name="protobuf-java">
 			<revision name="2.6.1" status="release" pubdate="20141023031025" resolver="public" artresolver="public" homepage="https://developers.google.com/protocol-buffers/" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="244">
 				<license name="New BSD license" url="http://www.opensource.org/licenses/bsd-license.php"/>
-				<metadata-artifact status="successful" details="" size="9261" time="439" location="/Users/mikelwyred/.ivy2/cache/com.google.protobuf/protobuf-java/ivy-2.6.1.xml" searched="true" original-local-location="/Users/mikelwyred/.ivy2/cache/com.google.protobuf/protobuf-java/ivy-2.6.1.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/google/protobuf/protobuf-java/2.6.1/protobuf-java-2.6.1.pom"/>
+				<metadata-artifact status="successful" details="" size="9261" time="109" location="/Users/mikelwyred/.ivy2/cache/com.google.protobuf/protobuf-java/ivy-2.6.1.xml" searched="true" original-local-location="/Users/mikelwyred/.ivy2/cache/com.google.protobuf/protobuf-java/ivy-2.6.1.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/google/protobuf/protobuf-java/2.6.1/protobuf-java-2.6.1.pom"/>
 				<caller organisation="classifier" name="classifier$sources_2.11" conf="compile" rev="2.6.1" rev-constraint-default="2.6.1" rev-constraint-dynamic="2.6.1" callerrev="0.0.1"/>
 				<artifacts>
-					<artifact name="protobuf-java" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="308705" time="689" location="/Users/mikelwyred/.ivy2/cache/com.google.protobuf/protobuf-java/srcs/protobuf-java-2.6.1-sources.jar">
+					<artifact name="protobuf-java" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="308705" time="0" location="/Users/mikelwyred/.ivy2/cache/com.google.protobuf/protobuf-java/srcs/protobuf-java-2.6.1-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/google/protobuf/protobuf-java/2.6.1/protobuf-java-2.6.1-sources.jar"/>
 					</artifact>
-					<artifact name="protobuf-java" type="jar" ext="jar" status="successful" details="" size="596642" time="381" location="/Users/mikelwyred/.ivy2/cache/com.google.protobuf/protobuf-java/jars/protobuf-java-2.6.1.jar">
+					<artifact name="protobuf-java" type="jar" ext="jar" status="no" details="" size="596642" time="0" location="/Users/mikelwyred/.ivy2/cache/com.google.protobuf/protobuf-java/jars/protobuf-java-2.6.1.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/google/protobuf/protobuf-java/2.6.1/protobuf-java-2.6.1.jar"/>
 					</artifact>
 				</artifacts>
@@ -297,13 +297,13 @@
 		</module>
 		<module organisation="org.apache.opennlp" name="opennlp-uima">
 			<revision name="1.6.0" status="release" pubdate="20150616153824" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="243">
-				<metadata-artifact status="successful" details="" size="3022" time="321" location="/Users/mikelwyred/.ivy2/cache/org.apache.opennlp/opennlp-uima/ivy-1.6.0.xml" searched="true" original-local-location="/Users/mikelwyred/.ivy2/cache/org.apache.opennlp/opennlp-uima/ivy-1.6.0.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/opennlp/opennlp-uima/1.6.0/opennlp-uima-1.6.0.pom"/>
+				<metadata-artifact status="successful" details="" size="3022" time="222" location="/Users/mikelwyred/.ivy2/cache/org.apache.opennlp/opennlp-uima/ivy-1.6.0.xml" searched="true" original-local-location="/Users/mikelwyred/.ivy2/cache/org.apache.opennlp/opennlp-uima/ivy-1.6.0.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/opennlp/opennlp-uima/1.6.0/opennlp-uima-1.6.0.pom"/>
 				<caller organisation="classifier" name="classifier$sources_2.11" conf="compile" rev="1.6.0" rev-constraint-default="1.6.0" rev-constraint-dynamic="1.6.0" callerrev="0.0.1"/>
 				<artifacts>
 					<artifact name="opennlp-uima" type="jar" ext="jar" status="no" details="" size="96412" time="0" location="/Users/mikelwyred/.ivy2/cache/org.apache.opennlp/opennlp-uima/jars/opennlp-uima-1.6.0.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/opennlp/opennlp-uima/1.6.0/opennlp-uima-1.6.0.jar"/>
 					</artifact>
-					<artifact name="opennlp-uima" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="86627" time="590" location="/Users/mikelwyred/.ivy2/cache/org.apache.opennlp/opennlp-uima/srcs/opennlp-uima-1.6.0-sources.jar">
+					<artifact name="opennlp-uima" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="86627" time="0" location="/Users/mikelwyred/.ivy2/cache/org.apache.opennlp/opennlp-uima/srcs/opennlp-uima-1.6.0-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/opennlp/opennlp-uima/1.6.0/opennlp-uima-1.6.0-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -311,13 +311,13 @@
 		</module>
 		<module organisation="org.apache.opennlp" name="opennlp-tools">
 			<revision name="1.6.0" status="release" pubdate="20150616153739" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="242">
-				<metadata-artifact status="successful" details="" size="7373" time="324" location="/Users/mikelwyred/.ivy2/cache/org.apache.opennlp/opennlp-tools/ivy-1.6.0.xml" searched="true" original-local-location="/Users/mikelwyred/.ivy2/cache/org.apache.opennlp/opennlp-tools/ivy-1.6.0.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/opennlp/opennlp-tools/1.6.0/opennlp-tools-1.6.0.pom"/>
+				<metadata-artifact status="successful" details="" size="7373" time="63" location="/Users/mikelwyred/.ivy2/cache/org.apache.opennlp/opennlp-tools/ivy-1.6.0.xml" searched="true" original-local-location="/Users/mikelwyred/.ivy2/cache/org.apache.opennlp/opennlp-tools/ivy-1.6.0.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/opennlp/opennlp-tools/1.6.0/opennlp-tools-1.6.0.pom"/>
 				<caller organisation="classifier" name="classifier$sources_2.11" conf="compile" rev="1.6.0" rev-constraint-default="1.6.0" rev-constraint-dynamic="1.6.0" callerrev="0.0.1"/>
 				<artifacts>
-					<artifact name="opennlp-tools" type="jar" ext="jar" status="successful" details="" size="1086375" time="446" location="/Users/mikelwyred/.ivy2/cache/org.apache.opennlp/opennlp-tools/jars/opennlp-tools-1.6.0.jar">
+					<artifact name="opennlp-tools" type="jar" ext="jar" status="no" details="" size="1086375" time="0" location="/Users/mikelwyred/.ivy2/cache/org.apache.opennlp/opennlp-tools/jars/opennlp-tools-1.6.0.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/opennlp/opennlp-tools/1.6.0/opennlp-tools-1.6.0.jar"/>
 					</artifact>
-					<artifact name="opennlp-tools" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="883966" time="630" location="/Users/mikelwyred/.ivy2/cache/org.apache.opennlp/opennlp-tools/srcs/opennlp-tools-1.6.0-sources.jar">
+					<artifact name="opennlp-tools" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="883966" time="0" location="/Users/mikelwyred/.ivy2/cache/org.apache.opennlp/opennlp-tools/srcs/opennlp-tools-1.6.0-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/opennlp/opennlp-tools/1.6.0/opennlp-tools-1.6.0-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -340,7 +340,7 @@
 		</module>
 		<module organisation="javax.json" name="javax.json-api">
 			<revision name="1.0" status="release" pubdate="20130424232157" resolver="public" artresolver="public" homepage="http://json-processing-spec.java.net" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="241">
-				<metadata-artifact status="successful" details="" size="6367" time="325" location="/Users/mikelwyred/.ivy2/cache/javax.json/javax.json-api/ivy-1.0.xml" searched="true" original-local-location="/Users/mikelwyred/.ivy2/cache/javax.json/javax.json-api/ivy-1.0.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/javax/json/javax.json-api/1.0/javax.json-api-1.0.pom"/>
+				<metadata-artifact status="successful" details="" size="6367" time="38" location="/Users/mikelwyred/.ivy2/cache/javax.json/javax.json-api/ivy-1.0.xml" searched="true" original-local-location="/Users/mikelwyred/.ivy2/cache/javax.json/javax.json-api/ivy-1.0.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/javax/json/javax.json-api/1.0/javax.json-api-1.0.pom"/>
 				<caller organisation="classifier" name="classifier$sources_2.11" conf="compile" rev="1.0" rev-constraint-default="1.0" rev-constraint-dynamic="1.0" callerrev="0.0.1"/>
 				<artifacts>
 					<artifact name="javax.json-api" type="jar" ext="jar" status="no" details="" size="19754" time="0" location="/Users/mikelwyred/.ivy2/cache/javax.json/javax.json-api/jars/javax.json-api-1.0.jar">
@@ -355,7 +355,7 @@
 		<module organisation="com.googlecode.efficient-java-matrix-library" name="ejml">
 			<revision name="0.23" status="release" pubdate="20130621181625" resolver="public" artresolver="public" homepage="http://code.google.com/p/efficient-java-matrix-library/" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="240">
 				<license name="LGPL" url="http://www.gnu.org/copyleft/lesser.html"/>
-				<metadata-artifact status="successful" details="" size="2358" time="316" location="/Users/mikelwyred/.ivy2/cache/com.googlecode.efficient-java-matrix-library/ejml/ivy-0.23.xml" searched="true" original-local-location="/Users/mikelwyred/.ivy2/cache/com.googlecode.efficient-java-matrix-library/ejml/ivy-0.23.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/googlecode/efficient-java-matrix-library/ejml/0.23/ejml-0.23.pom"/>
+				<metadata-artifact status="successful" details="" size="2358" time="28" location="/Users/mikelwyred/.ivy2/cache/com.googlecode.efficient-java-matrix-library/ejml/ivy-0.23.xml" searched="true" original-local-location="/Users/mikelwyred/.ivy2/cache/com.googlecode.efficient-java-matrix-library/ejml/ivy-0.23.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/googlecode/efficient-java-matrix-library/ejml/0.23/ejml-0.23.pom"/>
 				<caller organisation="classifier" name="classifier$sources_2.11" conf="compile" rev="0.23" rev-constraint-default="0.23" rev-constraint-dynamic="0.23" callerrev="0.0.1"/>
 				<artifacts>
 					<artifact name="ejml" type="jar" ext="jar" status="no" details="" size="301506" time="0" location="/Users/mikelwyred/.ivy2/cache/com.googlecode.efficient-java-matrix-library/ejml/jars/ejml-0.23.jar">
@@ -370,7 +370,7 @@
 		<module organisation="de.jollyday" name="jollyday">
 			<revision name="0.4.7" status="release" pubdate="20121105010012" resolver="public" artresolver="public" homepage="http://sourceforge.net/projects/jollyday" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="238">
 				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
-				<metadata-artifact status="successful" details="" size="6624" time="329" location="/Users/mikelwyred/.ivy2/cache/de.jollyday/jollyday/ivy-0.4.7.xml" searched="true" original-local-location="/Users/mikelwyred/.ivy2/cache/de.jollyday/jollyday/ivy-0.4.7.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/de/jollyday/jollyday/0.4.7/jollyday-0.4.7.pom"/>
+				<metadata-artifact status="successful" details="" size="6624" time="134" location="/Users/mikelwyred/.ivy2/cache/de.jollyday/jollyday/ivy-0.4.7.xml" searched="true" original-local-location="/Users/mikelwyred/.ivy2/cache/de.jollyday/jollyday/ivy-0.4.7.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/de/jollyday/jollyday/0.4.7/jollyday-0.4.7.pom"/>
 				<caller organisation="classifier" name="classifier$sources_2.11" conf="compile" rev="0.4.7" rev-constraint-default="0.4.7" rev-constraint-dynamic="0.4.7" callerrev="0.0.1"/>
 				<artifacts>
 					<artifact name="jollyday" type="jar" ext="jar" status="no" details="" size="200993" time="0" location="/Users/mikelwyred/.ivy2/cache/de.jollyday/jollyday/jars/jollyday-0.4.7.jar">
@@ -414,13 +414,13 @@
 		</module>
 		<module organisation="org.apache.spark" name="spark-mllib_2.11">
 			<revision name="2.2.0" status="release" pubdate="20170701024144" resolver="public" artresolver="public" homepage="http://spark.apache.org/" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="218">
-				<metadata-artifact status="successful" details="" size="8797" time="331" location="/Users/mikelwyred/.ivy2/cache/org.apache.spark/spark-mllib_2.11/ivy-2.2.0.xml" searched="true" original-local-location="/Users/mikelwyred/.ivy2/cache/org.apache.spark/spark-mllib_2.11/ivy-2.2.0.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/spark/spark-mllib_2.11/2.2.0/spark-mllib_2.11-2.2.0.pom"/>
+				<metadata-artifact status="successful" details="" size="8797" time="42" location="/Users/mikelwyred/.ivy2/cache/org.apache.spark/spark-mllib_2.11/ivy-2.2.0.xml" searched="true" original-local-location="/Users/mikelwyred/.ivy2/cache/org.apache.spark/spark-mllib_2.11/ivy-2.2.0.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/spark/spark-mllib_2.11/2.2.0/spark-mllib_2.11-2.2.0.pom"/>
 				<caller organisation="classifier" name="classifier$sources_2.11" conf="compile" rev="2.2.0" rev-constraint-default="2.2.0" rev-constraint-dynamic="2.2.0" callerrev="0.0.1"/>
 				<artifacts>
 					<artifact name="spark-mllib_2.11" type="jar" ext="jar" status="no" details="" size="6501498" time="0" location="/Users/mikelwyred/.ivy2/cache/org.apache.spark/spark-mllib_2.11/jars/spark-mllib_2.11-2.2.0.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/spark/spark-mllib_2.11/2.2.0/spark-mllib_2.11-2.2.0.jar"/>
 					</artifact>
-					<artifact name="spark-mllib_2.11" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="825101" time="1677" location="/Users/mikelwyred/.ivy2/cache/org.apache.spark/spark-mllib_2.11/srcs/spark-mllib_2.11-2.2.0-sources.jar">
+					<artifact name="spark-mllib_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="825101" time="0" location="/Users/mikelwyred/.ivy2/cache/org.apache.spark/spark-mllib_2.11/srcs/spark-mllib_2.11-2.2.0-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/spark/spark-mllib_2.11/2.2.0/spark-mllib_2.11-2.2.0-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -429,10 +429,10 @@
 		<module organisation="org.jpmml" name="pmml-model">
 			<revision name="1.2.15" status="release" pubdate="20160514112555" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="232">
 				<license name="BSD 3-Clause License" url="http://opensource.org/licenses/BSD-3-Clause"/>
-				<metadata-artifact status="successful" details="" size="5608" time="360" location="/Users/mikelwyred/.ivy2/cache/org.jpmml/pmml-model/ivy-1.2.15.xml" searched="true" original-local-location="/Users/mikelwyred/.ivy2/cache/org.jpmml/pmml-model/ivy-1.2.15.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/jpmml/pmml-model/1.2.15/pmml-model-1.2.15.pom"/>
+				<metadata-artifact status="successful" details="" size="5608" time="40" location="/Users/mikelwyred/.ivy2/cache/org.jpmml/pmml-model/ivy-1.2.15.xml" searched="true" original-local-location="/Users/mikelwyred/.ivy2/cache/org.jpmml/pmml-model/ivy-1.2.15.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/jpmml/pmml-model/1.2.15/pmml-model-1.2.15.pom"/>
 				<caller organisation="classifier" name="classifier$sources_2.11" conf="compile" rev="1.2.15" rev-constraint-default="1.2.15" rev-constraint-dynamic="1.2.15" callerrev="0.0.1"/>
 				<artifacts>
-					<artifact name="pmml-model" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="495260" time="4690" location="/Users/mikelwyred/.ivy2/cache/org.jpmml/pmml-model/srcs/pmml-model-1.2.15-sources.jar">
+					<artifact name="pmml-model" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="495260" time="0" location="/Users/mikelwyred/.ivy2/cache/org.jpmml/pmml-model/srcs/pmml-model-1.2.15-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/jpmml/pmml-model/1.2.15/pmml-model-1.2.15-sources.jar"/>
 					</artifact>
 					<artifact name="pmml-model" type="jar" ext="jar" status="no" details="" size="654216" time="0" location="/Users/mikelwyred/.ivy2/cache/org.jpmml/pmml-model/jars/pmml-model-1.2.15.jar">
@@ -444,10 +444,10 @@
 		<module organisation="org.jpmml" name="pmml-schema">
 			<revision name="1.2.15" status="release" pubdate="20160514112426" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="233">
 				<license name="BSD 3-Clause License" url="http://opensource.org/licenses/BSD-3-Clause"/>
-				<metadata-artifact status="successful" details="" size="771" time="320" location="/Users/mikelwyred/.ivy2/cache/org.jpmml/pmml-schema/ivy-1.2.15.xml" searched="true" original-local-location="/Users/mikelwyred/.ivy2/cache/org.jpmml/pmml-schema/ivy-1.2.15.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/jpmml/pmml-schema/1.2.15/pmml-schema-1.2.15.pom"/>
+				<metadata-artifact status="successful" details="" size="771" time="32" location="/Users/mikelwyred/.ivy2/cache/org.jpmml/pmml-schema/ivy-1.2.15.xml" searched="true" original-local-location="/Users/mikelwyred/.ivy2/cache/org.jpmml/pmml-schema/ivy-1.2.15.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/jpmml/pmml-schema/1.2.15/pmml-schema-1.2.15.pom"/>
 				<caller organisation="classifier" name="classifier$sources_2.11" conf="compile" rev="1.2.15" rev-constraint-default="1.2.15" rev-constraint-dynamic="1.2.15" callerrev="0.0.1"/>
 				<artifacts>
-					<artifact name="pmml-schema" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="4627" time="602" location="/Users/mikelwyred/.ivy2/cache/org.jpmml/pmml-schema/srcs/pmml-schema-1.2.15-sources.jar">
+					<artifact name="pmml-schema" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="4627" time="0" location="/Users/mikelwyred/.ivy2/cache/org.jpmml/pmml-schema/srcs/pmml-schema-1.2.15-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/jpmml/pmml-schema/1.2.15/pmml-schema-1.2.15-sources.jar"/>
 					</artifact>
 					<artifact name="pmml-schema" type="jar" ext="jar" status="no" details="" size="5310" time="0" location="/Users/mikelwyred/.ivy2/cache/org.jpmml/pmml-schema/jars/pmml-schema-1.2.15.jar">
@@ -458,10 +458,10 @@
 		</module>
 		<module organisation="org.apache.spark" name="spark-graphx_2.11">
 			<revision name="2.2.0" status="release" pubdate="20170701023931" resolver="public" artresolver="public" homepage="http://spark.apache.org/" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="220">
-				<metadata-artifact status="successful" details="" size="6790" time="526" location="/Users/mikelwyred/.ivy2/cache/org.apache.spark/spark-graphx_2.11/ivy-2.2.0.xml" searched="true" original-local-location="/Users/mikelwyred/.ivy2/cache/org.apache.spark/spark-graphx_2.11/ivy-2.2.0.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/spark/spark-graphx_2.11/2.2.0/spark-graphx_2.11-2.2.0.pom"/>
+				<metadata-artifact status="successful" details="" size="6790" time="32" location="/Users/mikelwyred/.ivy2/cache/org.apache.spark/spark-graphx_2.11/ivy-2.2.0.xml" searched="true" original-local-location="/Users/mikelwyred/.ivy2/cache/org.apache.spark/spark-graphx_2.11/ivy-2.2.0.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/spark/spark-graphx_2.11/2.2.0/spark-graphx_2.11-2.2.0.pom"/>
 				<caller organisation="classifier" name="classifier$sources_2.11" conf="compile" rev="2.2.0" rev-constraint-default="2.2.0" rev-constraint-dynamic="2.2.0" callerrev="0.0.1"/>
 				<artifacts>
-					<artifact name="spark-graphx_2.11" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="103452" time="540" location="/Users/mikelwyred/.ivy2/cache/org.apache.spark/spark-graphx_2.11/srcs/spark-graphx_2.11-2.2.0-sources.jar">
+					<artifact name="spark-graphx_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="103452" time="0" location="/Users/mikelwyred/.ivy2/cache/org.apache.spark/spark-graphx_2.11/srcs/spark-graphx_2.11-2.2.0-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/spark/spark-graphx_2.11/2.2.0/spark-graphx_2.11-2.2.0-sources.jar"/>
 					</artifact>
 					<artifact name="spark-graphx_2.11" type="jar" ext="jar" status="no" details="" size="708127" time="0" location="/Users/mikelwyred/.ivy2/cache/org.apache.spark/spark-graphx_2.11/jars/spark-graphx_2.11-2.2.0.jar">
@@ -472,13 +472,13 @@
 		</module>
 		<module organisation="org.apache.spark" name="spark-mllib-local_2.11">
 			<revision name="2.2.0" status="release" pubdate="20170701023014" resolver="public" artresolver="public" homepage="http://spark.apache.org/" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="221">
-				<metadata-artifact status="successful" details="" size="4273" time="320" location="/Users/mikelwyred/.ivy2/cache/org.apache.spark/spark-mllib-local_2.11/ivy-2.2.0.xml" searched="true" original-local-location="/Users/mikelwyred/.ivy2/cache/org.apache.spark/spark-mllib-local_2.11/ivy-2.2.0.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/spark/spark-mllib-local_2.11/2.2.0/spark-mllib-local_2.11-2.2.0.pom"/>
+				<metadata-artifact status="successful" details="" size="4273" time="44" location="/Users/mikelwyred/.ivy2/cache/org.apache.spark/spark-mllib-local_2.11/ivy-2.2.0.xml" searched="true" original-local-location="/Users/mikelwyred/.ivy2/cache/org.apache.spark/spark-mllib-local_2.11/ivy-2.2.0.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/spark/spark-mllib-local_2.11/2.2.0/spark-mllib-local_2.11-2.2.0.pom"/>
 				<caller organisation="classifier" name="classifier$sources_2.11" conf="compile" rev="2.2.0" rev-constraint-default="2.2.0" rev-constraint-dynamic="2.2.0" callerrev="0.0.1"/>
 				<artifacts>
 					<artifact name="spark-mllib-local_2.11" type="jar" ext="jar" status="no" details="" size="182887" time="0" location="/Users/mikelwyred/.ivy2/cache/org.apache.spark/spark-mllib-local_2.11/jars/spark-mllib-local_2.11-2.2.0.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/spark/spark-mllib-local_2.11/2.2.0/spark-mllib-local_2.11-2.2.0.jar"/>
 					</artifact>
-					<artifact name="spark-mllib-local_2.11" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="30836" time="631" location="/Users/mikelwyred/.ivy2/cache/org.apache.spark/spark-mllib-local_2.11/srcs/spark-mllib-local_2.11-2.2.0-sources.jar">
+					<artifact name="spark-mllib-local_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="30836" time="0" location="/Users/mikelwyred/.ivy2/cache/org.apache.spark/spark-mllib-local_2.11/srcs/spark-mllib-local_2.11-2.2.0-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/spark/spark-mllib-local_2.11/2.2.0/spark-mllib-local_2.11-2.2.0-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -490,7 +490,7 @@
 				<metadata-artifact status="no" details="" size="4704" time="0" location="/Users/mikelwyred/.ivy2/cache/org.scalanlp/breeze_2.11/ivy-0.13.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scalanlp/breeze_2.11/0.13.1/breeze_2.11-0.13.1.pom"/>
 				<caller organisation="classifier" name="classifier$sources_2.11" conf="compile" rev="0.13.1" rev-constraint-default="0.13.1" rev-constraint-dynamic="0.13.1" callerrev="0.0.1"/>
 				<artifacts>
-					<artifact name="breeze_2.11" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="529997" time="643" location="/Users/mikelwyred/.ivy2/cache/org.scalanlp/breeze_2.11/srcs/breeze_2.11-0.13.1-sources.jar">
+					<artifact name="breeze_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="529997" time="0" location="/Users/mikelwyred/.ivy2/cache/org.scalanlp/breeze_2.11/srcs/breeze_2.11-0.13.1-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scalanlp/breeze_2.11/0.13.1/breeze_2.11-0.13.1-sources.jar"/>
 					</artifact>
 					<artifact name="breeze_2.11" type="jar" ext="jar" status="no" details="" size="15113357" time="0" location="/Users/mikelwyred/.ivy2/cache/org.scalanlp/breeze_2.11/jars/breeze_2.11-0.13.1.jar">
@@ -505,7 +505,7 @@
 				<metadata-artifact status="no" details="" size="2933" time="0" location="/Users/mikelwyred/.ivy2/cache/org.spire-math/spire_2.11/ivy-0.13.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/spire-math/spire_2.11/0.13.0/spire_2.11-0.13.0.pom"/>
 				<caller organisation="classifier" name="classifier$sources_2.11" conf="compile" rev="0.13.0" rev-constraint-default="0.13.0" rev-constraint-dynamic="0.13.0" callerrev="0.0.1"/>
 				<artifacts>
-					<artifact name="spire_2.11" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="251335" time="546" location="/Users/mikelwyred/.ivy2/cache/org.spire-math/spire_2.11/srcs/spire_2.11-0.13.0-sources.jar">
+					<artifact name="spire_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="251335" time="0" location="/Users/mikelwyred/.ivy2/cache/org.spire-math/spire_2.11/srcs/spire_2.11-0.13.0-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/spire-math/spire_2.11/0.13.0/spire_2.11-0.13.0-sources.jar"/>
 					</artifact>
 					<artifact name="spire_2.11" type="jar" ext="jar" status="no" details="" size="10121868" time="0" location="/Users/mikelwyred/.ivy2/cache/org.spire-math/spire_2.11/jars/spire_2.11-0.13.0.jar">
@@ -523,7 +523,7 @@
 					<artifact name="spire-macros_2.11" type="jar" ext="jar" status="no" details="" size="87192" time="0" location="/Users/mikelwyred/.ivy2/cache/org.spire-math/spire-macros_2.11/jars/spire-macros_2.11-0.13.0.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/spire-math/spire-macros_2.11/0.13.0/spire-macros_2.11-0.13.0.jar"/>
 					</artifact>
-					<artifact name="spire-macros_2.11" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="5411" time="528" location="/Users/mikelwyred/.ivy2/cache/org.spire-math/spire-macros_2.11/srcs/spire-macros_2.11-0.13.0-sources.jar">
+					<artifact name="spire-macros_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="5411" time="0" location="/Users/mikelwyred/.ivy2/cache/org.spire-math/spire-macros_2.11/srcs/spire-macros_2.11-0.13.0-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/spire-math/spire-macros_2.11/0.13.0/spire-macros_2.11-0.13.0-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -535,10 +535,10 @@
 				<metadata-artifact status="no" details="" size="3100" time="0" location="/Users/mikelwyred/.ivy2/cache/com.chuusai/shapeless_2.11/ivy-2.3.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/chuusai/shapeless_2.11/2.3.2/shapeless_2.11-2.3.2.pom"/>
 				<caller organisation="classifier" name="classifier$sources_2.11" conf="compile" rev="2.3.2" rev-constraint-default="2.3.2" rev-constraint-dynamic="2.3.2" callerrev="0.0.1"/>
 				<artifacts>
-					<artifact name="shapeless_2.11" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="163659" time="547" location="/Users/mikelwyred/.ivy2/cache/com.chuusai/shapeless_2.11/srcs/shapeless_2.11-2.3.2-sources.jar">
+					<artifact name="shapeless_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="163659" time="0" location="/Users/mikelwyred/.ivy2/cache/com.chuusai/shapeless_2.11/srcs/shapeless_2.11-2.3.2-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/chuusai/shapeless_2.11/2.3.2/shapeless_2.11-2.3.2-sources.jar"/>
 					</artifact>
-					<artifact name="shapeless_2.11" type="jar" ext="jar" status="successful" details="" size="3522616" time="797" location="/Users/mikelwyred/.ivy2/cache/com.chuusai/shapeless_2.11/jars/shapeless_2.11-2.3.2.jar">
+					<artifact name="shapeless_2.11" type="jar" ext="jar" status="no" details="" size="3522616" time="0" location="/Users/mikelwyred/.ivy2/cache/com.chuusai/shapeless_2.11/jars/shapeless_2.11-2.3.2.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/chuusai/shapeless_2.11/2.3.2/shapeless_2.11-2.3.2.jar"/>
 					</artifact>
 				</artifacts>
@@ -550,7 +550,7 @@
 				<metadata-artifact status="no" details="" size="2838" time="0" location="/Users/mikelwyred/.ivy2/cache/org.typelevel/macro-compat_2.11/ivy-1.1.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/typelevel/macro-compat_2.11/1.1.1/macro-compat_2.11-1.1.1.pom"/>
 				<caller organisation="classifier" name="classifier$sources_2.11" conf="compile" rev="1.1.1" rev-constraint-default="1.1.1" rev-constraint-dynamic="1.1.1" callerrev="0.0.1"/>
 				<artifacts>
-					<artifact name="macro-compat_2.11" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="1052" time="531" location="/Users/mikelwyred/.ivy2/cache/org.typelevel/macro-compat_2.11/srcs/macro-compat_2.11-1.1.1-sources.jar">
+					<artifact name="macro-compat_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="1052" time="0" location="/Users/mikelwyred/.ivy2/cache/org.typelevel/macro-compat_2.11/srcs/macro-compat_2.11-1.1.1-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/typelevel/macro-compat_2.11/1.1.1/macro-compat_2.11-1.1.1-sources.jar"/>
 					</artifact>
 					<artifact name="macro-compat_2.11" type="jar" ext="jar" status="no" details="" size="3142" time="0" location="/Users/mikelwyred/.ivy2/cache/org.typelevel/macro-compat_2.11/jars/macro-compat_2.11-1.1.1.jar">
@@ -568,7 +568,7 @@
 					<artifact name="machinist_2.11" type="jar" ext="jar" status="no" details="" size="34603" time="0" location="/Users/mikelwyred/.ivy2/cache/org.typelevel/machinist_2.11/jars/machinist_2.11-0.6.1.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/typelevel/machinist_2.11/0.6.1/machinist_2.11-0.6.1.jar"/>
 					</artifact>
-					<artifact name="machinist_2.11" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="3546" time="531" location="/Users/mikelwyred/.ivy2/cache/org.typelevel/machinist_2.11/srcs/machinist_2.11-0.6.1-sources.jar">
+					<artifact name="machinist_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="3546" time="0" location="/Users/mikelwyred/.ivy2/cache/org.typelevel/machinist_2.11/srcs/machinist_2.11-0.6.1-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/typelevel/machinist_2.11/0.6.1/machinist_2.11-0.6.1-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -626,7 +626,7 @@
 				<metadata-artifact status="no" details="" size="3026" time="0" location="/Users/mikelwyred/.ivy2/cache/org.scalanlp/breeze-macros_2.11/ivy-0.13.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scalanlp/breeze-macros_2.11/0.13.1/breeze-macros_2.11-0.13.1.pom"/>
 				<caller organisation="classifier" name="classifier$sources_2.11" conf="compile" rev="0.13.1" rev-constraint-default="0.13.1" rev-constraint-dynamic="0.13.1" callerrev="0.0.1"/>
 				<artifacts>
-					<artifact name="breeze-macros_2.11" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="7975" time="548" location="/Users/mikelwyred/.ivy2/cache/org.scalanlp/breeze-macros_2.11/srcs/breeze-macros_2.11-0.13.1-sources.jar">
+					<artifact name="breeze-macros_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="7975" time="0" location="/Users/mikelwyred/.ivy2/cache/org.scalanlp/breeze-macros_2.11/srcs/breeze-macros_2.11-0.13.1-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scalanlp/breeze-macros_2.11/0.13.1/breeze-macros_2.11-0.13.1-sources.jar"/>
 					</artifact>
 					<artifact name="breeze-macros_2.11" type="jar" ext="jar" status="no" details="" size="187882" time="0" location="/Users/mikelwyred/.ivy2/cache/org.scalanlp/breeze-macros_2.11/jars/breeze-macros_2.11-0.13.1.jar">
@@ -666,10 +666,10 @@
 		</module>
 		<module organisation="org.apache.spark" name="spark-streaming_2.11">
 			<revision name="2.2.0" status="release" pubdate="20170701023448" resolver="public" artresolver="public" homepage="http://spark.apache.org/" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="219">
-				<metadata-artifact status="successful" details="" size="9548" time="447" location="/Users/mikelwyred/.ivy2/cache/org.apache.spark/spark-streaming_2.11/ivy-2.2.0.xml" searched="true" original-local-location="/Users/mikelwyred/.ivy2/cache/org.apache.spark/spark-streaming_2.11/ivy-2.2.0.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/spark/spark-streaming_2.11/2.2.0/spark-streaming_2.11-2.2.0.pom"/>
+				<metadata-artifact status="successful" details="" size="9548" time="71" location="/Users/mikelwyred/.ivy2/cache/org.apache.spark/spark-streaming_2.11/ivy-2.2.0.xml" searched="true" original-local-location="/Users/mikelwyred/.ivy2/cache/org.apache.spark/spark-streaming_2.11/ivy-2.2.0.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/spark/spark-streaming_2.11/2.2.0/spark-streaming_2.11-2.2.0.pom"/>
 				<caller organisation="classifier" name="classifier$sources_2.11" conf="compile" rev="2.2.0" rev-constraint-default="2.2.0" rev-constraint-dynamic="2.2.0" callerrev="0.0.1"/>
 				<artifacts>
-					<artifact name="spark-streaming_2.11" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="265033" time="558" location="/Users/mikelwyred/.ivy2/cache/org.apache.spark/spark-streaming_2.11/srcs/spark-streaming_2.11-2.2.0-sources.jar">
+					<artifact name="spark-streaming_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="265033" time="0" location="/Users/mikelwyred/.ivy2/cache/org.apache.spark/spark-streaming_2.11/srcs/spark-streaming_2.11-2.2.0-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/spark/spark-streaming_2.11/2.2.0/spark-streaming_2.11-2.2.0-sources.jar"/>
 					</artifact>
 					<artifact name="spark-streaming_2.11" type="jar" ext="jar" status="no" details="" size="2179378" time="0" location="/Users/mikelwyred/.ivy2/cache/org.apache.spark/spark-streaming_2.11/jars/spark-streaming_2.11-2.2.0.jar">
@@ -695,7 +695,7 @@
 		</module>
 		<module organisation="org.apache.spark" name="spark-sql_2.11">
 			<revision name="2.2.0" status="release" pubdate="20170701024049" resolver="public" artresolver="public" homepage="http://spark.apache.org/" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="98">
-				<metadata-artifact status="successful" details="" size="10225" time="343" location="/Users/mikelwyred/.ivy2/cache/org.apache.spark/spark-sql_2.11/ivy-2.2.0.xml" searched="true" original-local-location="/Users/mikelwyred/.ivy2/cache/org.apache.spark/spark-sql_2.11/ivy-2.2.0.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/spark/spark-sql_2.11/2.2.0/spark-sql_2.11-2.2.0.pom"/>
+				<metadata-artifact status="successful" details="" size="10225" time="98" location="/Users/mikelwyred/.ivy2/cache/org.apache.spark/spark-sql_2.11/ivy-2.2.0.xml" searched="true" original-local-location="/Users/mikelwyred/.ivy2/cache/org.apache.spark/spark-sql_2.11/ivy-2.2.0.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/spark/spark-sql_2.11/2.2.0/spark-sql_2.11-2.2.0.pom"/>
 				<caller organisation="classifier" name="classifier$sources_2.11" conf="compile" rev="2.2.0" rev-constraint-default="2.2.0" rev-constraint-dynamic="2.2.0" callerrev="0.0.1"/>
 				<artifacts>
 					<artifact name="spark-sql_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="882521" time="0" location="/Users/mikelwyred/.ivy2/cache/org.apache.spark/spark-sql_2.11/srcs/spark-sql_2.11-2.2.0-sources.jar">
@@ -709,7 +709,7 @@
 		</module>
 		<module organisation="org.apache.parquet" name="parquet-hadoop">
 			<revision name="1.8.2" status="release" pubdate="20170119023643" resolver="public" artresolver="public" homepage="https://parquet.apache.org" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="215">
-				<metadata-artifact status="successful" details="" size="3533" time="329" location="/Users/mikelwyred/.ivy2/cache/org.apache.parquet/parquet-hadoop/ivy-1.8.2.xml" searched="true" original-local-location="/Users/mikelwyred/.ivy2/cache/org.apache.parquet/parquet-hadoop/ivy-1.8.2.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/parquet/parquet-hadoop/1.8.2/parquet-hadoop-1.8.2.pom"/>
+				<metadata-artifact status="successful" details="" size="3533" time="32" location="/Users/mikelwyred/.ivy2/cache/org.apache.parquet/parquet-hadoop/ivy-1.8.2.xml" searched="true" original-local-location="/Users/mikelwyred/.ivy2/cache/org.apache.parquet/parquet-hadoop/ivy-1.8.2.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/parquet/parquet-hadoop/1.8.2/parquet-hadoop-1.8.2.pom"/>
 				<caller organisation="classifier" name="classifier$sources_2.11" conf="compile" rev="1.8.2" rev-constraint-default="1.8.2" rev-constraint-dynamic="1.8.2" callerrev="0.0.1"/>
 				<artifacts>
 					<artifact name="parquet-hadoop" type="jar" ext="jar" status="no" details="" size="250377" time="0" location="/Users/mikelwyred/.ivy2/cache/org.apache.parquet/parquet-hadoop/jars/parquet-hadoop-1.8.2.jar">
@@ -738,7 +738,7 @@
 		<module organisation="org.apache.parquet" name="parquet-format">
 			<revision name="2.3.1" status="release" pubdate="20151214183535" resolver="public" artresolver="public" homepage="http://parquet.apache.org/" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="216">
 				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
-				<metadata-artifact status="successful" details="" size="6922" time="331" location="/Users/mikelwyred/.ivy2/cache/org.apache.parquet/parquet-format/ivy-2.3.1.xml" searched="true" original-local-location="/Users/mikelwyred/.ivy2/cache/org.apache.parquet/parquet-format/ivy-2.3.1.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/parquet/parquet-format/2.3.1/parquet-format-2.3.1.pom"/>
+				<metadata-artifact status="successful" details="" size="6922" time="85" location="/Users/mikelwyred/.ivy2/cache/org.apache.parquet/parquet-format/ivy-2.3.1.xml" searched="true" original-local-location="/Users/mikelwyred/.ivy2/cache/org.apache.parquet/parquet-format/ivy-2.3.1.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/parquet/parquet-format/2.3.1/parquet-format-2.3.1.pom"/>
 				<caller organisation="classifier" name="classifier$sources_2.11" conf="compile" rev="2.3.1" rev-constraint-default="2.3.1" rev-constraint-dynamic="2.3.1" callerrev="0.0.1"/>
 				<artifacts>
 					<artifact name="parquet-format" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="92949" time="0" location="/Users/mikelwyred/.ivy2/cache/org.apache.parquet/parquet-format/srcs/parquet-format-2.3.1-sources.jar">
@@ -766,7 +766,7 @@
 		</module>
 		<module organisation="org.apache.parquet" name="parquet-encoding">
 			<revision name="1.8.2" status="release" pubdate="20170119022936" resolver="public" artresolver="public" homepage="https://parquet.apache.org" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="214">
-				<metadata-artifact status="successful" details="" size="3260" time="319" location="/Users/mikelwyred/.ivy2/cache/org.apache.parquet/parquet-encoding/ivy-1.8.2.xml" searched="true" original-local-location="/Users/mikelwyred/.ivy2/cache/org.apache.parquet/parquet-encoding/ivy-1.8.2.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/parquet/parquet-encoding/1.8.2/parquet-encoding-1.8.2.pom"/>
+				<metadata-artifact status="successful" details="" size="3260" time="37" location="/Users/mikelwyred/.ivy2/cache/org.apache.parquet/parquet-encoding/ivy-1.8.2.xml" searched="true" original-local-location="/Users/mikelwyred/.ivy2/cache/org.apache.parquet/parquet-encoding/ivy-1.8.2.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/parquet/parquet-encoding/1.8.2/parquet-encoding-1.8.2.pom"/>
 				<caller organisation="classifier" name="classifier$sources_2.11" conf="compile" rev="1.8.2" rev-constraint-default="1.8.2" rev-constraint-dynamic="1.8.2" callerrev="0.0.1"/>
 				<artifacts>
 					<artifact name="parquet-encoding" type="jar" ext="jar" status="no" details="" size="286071" time="0" location="/Users/mikelwyred/.ivy2/cache/org.apache.parquet/parquet-encoding/jars/parquet-encoding-1.8.2.jar">
@@ -780,7 +780,7 @@
 		</module>
 		<module organisation="org.apache.parquet" name="parquet-common">
 			<revision name="1.8.2" status="release" pubdate="20170119022917" resolver="public" artresolver="public" homepage="https://parquet.apache.org" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="213">
-				<metadata-artifact status="successful" details="" size="3241" time="326" location="/Users/mikelwyred/.ivy2/cache/org.apache.parquet/parquet-common/ivy-1.8.2.xml" searched="true" original-local-location="/Users/mikelwyred/.ivy2/cache/org.apache.parquet/parquet-common/ivy-1.8.2.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/parquet/parquet-common/1.8.2/parquet-common-1.8.2.pom"/>
+				<metadata-artifact status="successful" details="" size="3241" time="49" location="/Users/mikelwyred/.ivy2/cache/org.apache.parquet/parquet-common/ivy-1.8.2.xml" searched="true" original-local-location="/Users/mikelwyred/.ivy2/cache/org.apache.parquet/parquet-common/ivy-1.8.2.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/parquet/parquet-common/1.8.2/parquet-common-1.8.2.pom"/>
 				<caller organisation="classifier" name="classifier$sources_2.11" conf="compile" rev="1.8.2" rev-constraint-default="1.8.2" rev-constraint-dynamic="1.8.2" callerrev="0.0.1"/>
 				<artifacts>
 					<artifact name="parquet-common" type="jar" ext="jar" status="no" details="" size="42032" time="0" location="/Users/mikelwyred/.ivy2/cache/org.apache.parquet/parquet-common/jars/parquet-common-1.8.2.jar">
@@ -794,7 +794,7 @@
 		</module>
 		<module organisation="org.apache.spark" name="spark-catalyst_2.11">
 			<revision name="2.2.0" status="release" pubdate="20170701023800" resolver="public" artresolver="public" homepage="http://spark.apache.org/" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="207">
-				<metadata-artifact status="successful" details="" size="8165" time="381" location="/Users/mikelwyred/.ivy2/cache/org.apache.spark/spark-catalyst_2.11/ivy-2.2.0.xml" searched="true" original-local-location="/Users/mikelwyred/.ivy2/cache/org.apache.spark/spark-catalyst_2.11/ivy-2.2.0.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/spark/spark-catalyst_2.11/2.2.0/spark-catalyst_2.11-2.2.0.pom"/>
+				<metadata-artifact status="successful" details="" size="8165" time="57" location="/Users/mikelwyred/.ivy2/cache/org.apache.spark/spark-catalyst_2.11/ivy-2.2.0.xml" searched="true" original-local-location="/Users/mikelwyred/.ivy2/cache/org.apache.spark/spark-catalyst_2.11/ivy-2.2.0.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/spark/spark-catalyst_2.11/2.2.0/spark-catalyst_2.11-2.2.0.pom"/>
 				<caller organisation="classifier" name="classifier$sources_2.11" conf="compile" rev="2.2.0" rev-constraint-default="2.2.0" rev-constraint-dynamic="2.2.0" callerrev="0.0.1"/>
 				<artifacts>
 					<artifact name="spark-catalyst_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="871074" time="0" location="/Users/mikelwyred/.ivy2/cache/org.apache.spark/spark-catalyst_2.11/srcs/spark-catalyst_2.11-2.2.0-sources.jar">
@@ -865,7 +865,7 @@
 		</module>
 		<module organisation="org.apache.spark" name="spark-core_2.11">
 			<revision name="2.2.0" status="release" pubdate="20170701023432" resolver="public" artresolver="public" homepage="http://spark.apache.org/" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="102">
-				<metadata-artifact status="successful" details="" size="21322" time="382" location="/Users/mikelwyred/.ivy2/cache/org.apache.spark/spark-core_2.11/ivy-2.2.0.xml" searched="true" original-local-location="/Users/mikelwyred/.ivy2/cache/org.apache.spark/spark-core_2.11/ivy-2.2.0.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/spark/spark-core_2.11/2.2.0/spark-core_2.11-2.2.0.pom"/>
+				<metadata-artifact status="successful" details="" size="21322" time="38" location="/Users/mikelwyred/.ivy2/cache/org.apache.spark/spark-core_2.11/ivy-2.2.0.xml" searched="true" original-local-location="/Users/mikelwyred/.ivy2/cache/org.apache.spark/spark-core_2.11/ivy-2.2.0.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/spark/spark-core_2.11/2.2.0/spark-core_2.11-2.2.0.pom"/>
 				<caller organisation="classifier" name="classifier$sources_2.11" conf="compile" rev="2.2.0" rev-constraint-default="2.2.0" rev-constraint-dynamic="2.2.0" callerrev="0.0.1"/>
 				<artifacts>
 					<artifact name="spark-core_2.11" type="jar" ext="jar" status="no" details="" size="12465629" time="0" location="/Users/mikelwyred/.ivy2/cache/org.apache.spark/spark-core_2.11/jars/spark-core_2.11-2.2.0.jar">
@@ -1091,7 +1091,7 @@
 			<revision name="2.2.7" status="release" pubdate="20120524113721" resolver="public" artresolver="public" homepage="http://jaxb.java.net/" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="239">
 				<license name="CDDL 1.1" url="https://glassfish.java.net/public/CDDL+GPL_1_1.html"/>
 				<license name="GPL2 w/ CPE" url="https://glassfish.java.net/public/CDDL+GPL_1_1.html"/>
-				<metadata-artifact status="successful" details="" size="8101" time="348" location="/Users/mikelwyred/.ivy2/cache/javax.xml.bind/jaxb-api/ivy-2.2.7.xml" searched="true" original-local-location="/Users/mikelwyred/.ivy2/cache/javax.xml.bind/jaxb-api/ivy-2.2.7.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/javax/xml/bind/jaxb-api/2.2.7/jaxb-api-2.2.7.pom"/>
+				<metadata-artifact status="successful" details="" size="8101" time="36" location="/Users/mikelwyred/.ivy2/cache/javax.xml.bind/jaxb-api/ivy-2.2.7.xml" searched="true" original-local-location="/Users/mikelwyred/.ivy2/cache/javax.xml.bind/jaxb-api/ivy-2.2.7.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/javax/xml/bind/jaxb-api/2.2.7/jaxb-api-2.2.7.pom"/>
 				<caller organisation="classifier" name="classifier$sources_2.11" conf="compile" rev="2.2.7" rev-constraint-default="2.2.7" rev-constraint-dynamic="2.2.7" callerrev="0.0.1"/>
 				<artifacts>
 					<artifact name="jaxb-api" type="jar" ext="jar" status="no" details="" size="100146" time="0" location="/Users/mikelwyred/.ivy2/cache/javax.xml.bind/jaxb-api/jars/jaxb-api-2.2.7.jar">
@@ -1394,7 +1394,7 @@
 		<module organisation="net.java.dev.jets3t" name="jets3t">
 			<revision name="0.9.3" status="release" pubdate="20150131224344" resolver="public" artresolver="public" homepage="https://bitbucket.org/jmurty/jets3t/overview" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="159">
 				<license name="Apache 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
-				<metadata-artifact status="successful" details="" size="15945" time="467" location="/Users/mikelwyred/.ivy2/cache/net.java.dev.jets3t/jets3t/ivy-0.9.3.xml" searched="true" original-local-location="/Users/mikelwyred/.ivy2/cache/net.java.dev.jets3t/jets3t/ivy-0.9.3.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/net/java/dev/jets3t/jets3t/0.9.3/jets3t-0.9.3.pom"/>
+				<metadata-artifact status="successful" details="" size="15945" time="78" location="/Users/mikelwyred/.ivy2/cache/net.java.dev.jets3t/jets3t/ivy-0.9.3.xml" searched="true" original-local-location="/Users/mikelwyred/.ivy2/cache/net.java.dev.jets3t/jets3t/ivy-0.9.3.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/net/java/dev/jets3t/jets3t/0.9.3/jets3t-0.9.3.pom"/>
 				<caller organisation="classifier" name="classifier$sources_2.11" conf="compile" rev="0.9.3" rev-constraint-default="0.9.3" rev-constraint-dynamic="0.9.3" callerrev="0.0.1"/>
 				<artifacts>
 					<artifact name="jets3t" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="1594767" time="0" location="/Users/mikelwyred/.ivy2/cache/net.java.dev.jets3t/jets3t/srcs/jets3t-0.9.3-sources.jar">
@@ -1409,7 +1409,7 @@
 		<module organisation="com.jamesmurty.utils" name="java-xmlbuilder">
 			<revision name="1.0" status="release" pubdate="20140306150737" resolver="public" artresolver="public" homepage="https://github.com/jmurty/java-xmlbuilder" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="165">
 				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
-				<metadata-artifact status="successful" details="" size="3322" time="530" location="/Users/mikelwyred/.ivy2/cache/com.jamesmurty.utils/java-xmlbuilder/ivy-1.0.xml" searched="true" original-local-location="/Users/mikelwyred/.ivy2/cache/com.jamesmurty.utils/java-xmlbuilder/ivy-1.0.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/jamesmurty/utils/java-xmlbuilder/1.0/java-xmlbuilder-1.0.pom"/>
+				<metadata-artifact status="successful" details="" size="3322" time="38" location="/Users/mikelwyred/.ivy2/cache/com.jamesmurty.utils/java-xmlbuilder/ivy-1.0.xml" searched="true" original-local-location="/Users/mikelwyred/.ivy2/cache/com.jamesmurty.utils/java-xmlbuilder/ivy-1.0.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/jamesmurty/utils/java-xmlbuilder/1.0/java-xmlbuilder-1.0.pom"/>
 				<caller organisation="classifier" name="classifier$sources_2.11" conf="compile" rev="1.0" rev-constraint-default="1.0" rev-constraint-dynamic="1.0" callerrev="0.0.1"/>
 				<artifacts>
 					<artifact name="java-xmlbuilder" type="jar" ext="jar" status="no" details="" size="10023" time="0" location="/Users/mikelwyred/.ivy2/cache/com.jamesmurty.utils/java-xmlbuilder/jars/java-xmlbuilder-1.0.jar">
@@ -1453,7 +1453,7 @@
 		</module>
 		<module organisation="javax.mail" name="mail">
 			<revision name="1.4.7" status="release" pubdate="20130309023818" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="163">
-				<metadata-artifact status="successful" details="" size="5316" time="414" location="/Users/mikelwyred/.ivy2/cache/javax.mail/mail/ivy-1.4.7.xml" searched="true" original-local-location="/Users/mikelwyred/.ivy2/cache/javax.mail/mail/ivy-1.4.7.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/javax/mail/mail/1.4.7/mail-1.4.7.pom"/>
+				<metadata-artifact status="successful" details="" size="5316" time="32" location="/Users/mikelwyred/.ivy2/cache/javax.mail/mail/ivy-1.4.7.xml" searched="true" original-local-location="/Users/mikelwyred/.ivy2/cache/javax.mail/mail/ivy-1.4.7.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/javax/mail/mail/1.4.7/mail-1.4.7.pom"/>
 				<caller organisation="classifier" name="classifier$sources_2.11" conf="compile" rev="1.4.7" rev-constraint-default="1.4.7" rev-constraint-dynamic="1.4.7" callerrev="0.0.1"/>
 				<artifacts>
 					<artifact name="mail" type="jar" ext="jar" status="no" details="" size="521157" time="0" location="/Users/mikelwyred/.ivy2/cache/javax.mail/mail/jars/mail-1.4.7.jar">
@@ -1482,7 +1482,7 @@
 		</module>
 		<module organisation="org.apache.httpcomponents" name="httpclient">
 			<revision name="4.3.6" status="release" pubdate="20141102144602" resolver="public" artresolver="public" homepage="http://hc.apache.org/httpcomponents-client" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="161">
-				<metadata-artifact status="successful" details="" size="5209" time="487" location="/Users/mikelwyred/.ivy2/cache/org.apache.httpcomponents/httpclient/ivy-4.3.6.xml" searched="true" original-local-location="/Users/mikelwyred/.ivy2/cache/org.apache.httpcomponents/httpclient/ivy-4.3.6.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/httpcomponents/httpclient/4.3.6/httpclient-4.3.6.pom"/>
+				<metadata-artifact status="successful" details="" size="5209" time="47" location="/Users/mikelwyred/.ivy2/cache/org.apache.httpcomponents/httpclient/ivy-4.3.6.xml" searched="true" original-local-location="/Users/mikelwyred/.ivy2/cache/org.apache.httpcomponents/httpclient/ivy-4.3.6.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/httpcomponents/httpclient/4.3.6/httpclient-4.3.6.pom"/>
 				<caller organisation="classifier" name="classifier$sources_2.11" conf="compile" rev="4.3.6" rev-constraint-default="4.3.6" rev-constraint-dynamic="4.3.6" callerrev="0.0.1"/>
 				<artifacts>
 					<artifact name="httpclient" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="656337" time="0" location="/Users/mikelwyred/.ivy2/cache/org.apache.httpcomponents/httpclient/srcs/httpclient-4.3.6-sources.jar">
@@ -1496,7 +1496,7 @@
 		</module>
 		<module organisation="org.apache.httpcomponents" name="httpcore">
 			<revision name="4.3.3" status="release" pubdate="20141018135118" resolver="public" artresolver="public" homepage="http://hc.apache.org/httpcomponents-core-ga" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="160">
-				<metadata-artifact status="successful" details="" size="4597" time="338" location="/Users/mikelwyred/.ivy2/cache/org.apache.httpcomponents/httpcore/ivy-4.3.3.xml" searched="true" original-local-location="/Users/mikelwyred/.ivy2/cache/org.apache.httpcomponents/httpcore/ivy-4.3.3.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/httpcomponents/httpcore/4.3.3/httpcore-4.3.3.pom"/>
+				<metadata-artifact status="successful" details="" size="4597" time="36" location="/Users/mikelwyred/.ivy2/cache/org.apache.httpcomponents/httpcore/ivy-4.3.3.xml" searched="true" original-local-location="/Users/mikelwyred/.ivy2/cache/org.apache.httpcomponents/httpcore/ivy-4.3.3.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/httpcomponents/httpcore/4.3.3/httpcore-4.3.3.pom"/>
 				<caller organisation="classifier" name="classifier$sources_2.11" conf="compile" rev="4.3.3" rev-constraint-default="4.3.3" rev-constraint-dynamic="4.3.3" callerrev="0.0.1"/>
 				<artifacts>
 					<artifact name="httpcore" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="377206" time="0" location="/Users/mikelwyred/.ivy2/cache/org.apache.httpcomponents/httpcore/srcs/httpcore-4.3.3-sources.jar">
@@ -1510,7 +1510,7 @@
 		</module>
 		<module organisation="org.apache.spark" name="spark-unsafe_2.11">
 			<revision name="2.2.0" status="release" pubdate="20170701023350" resolver="public" artresolver="public" homepage="http://spark.apache.org/" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="158">
-				<metadata-artifact status="successful" details="" size="4906" time="382" location="/Users/mikelwyred/.ivy2/cache/org.apache.spark/spark-unsafe_2.11/ivy-2.2.0.xml" searched="true" original-local-location="/Users/mikelwyred/.ivy2/cache/org.apache.spark/spark-unsafe_2.11/ivy-2.2.0.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/spark/spark-unsafe_2.11/2.2.0/spark-unsafe_2.11-2.2.0.pom"/>
+				<metadata-artifact status="successful" details="" size="4906" time="61" location="/Users/mikelwyred/.ivy2/cache/org.apache.spark/spark-unsafe_2.11/ivy-2.2.0.xml" searched="true" original-local-location="/Users/mikelwyred/.ivy2/cache/org.apache.spark/spark-unsafe_2.11/ivy-2.2.0.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/spark/spark-unsafe_2.11/2.2.0/spark-unsafe_2.11-2.2.0.pom"/>
 				<caller organisation="classifier" name="classifier$sources_2.11" conf="compile" rev="2.2.0" rev-constraint-default="2.2.0" rev-constraint-dynamic="2.2.0" callerrev="0.0.1"/>
 				<artifacts>
 					<artifact name="spark-unsafe_2.11" type="jar" ext="jar" status="no" details="" size="46531" time="0" location="/Users/mikelwyred/.ivy2/cache/org.apache.spark/spark-unsafe_2.11/jars/spark-unsafe_2.11-2.2.0.jar">
@@ -1524,7 +1524,7 @@
 		</module>
 		<module organisation="org.apache.spark" name="spark-network-shuffle_2.11">
 			<revision name="2.2.0" status="release" pubdate="20170701024036" resolver="public" artresolver="public" homepage="http://spark.apache.org/" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="156">
-				<metadata-artifact status="successful" details="" size="4226" time="351" location="/Users/mikelwyred/.ivy2/cache/org.apache.spark/spark-network-shuffle_2.11/ivy-2.2.0.xml" searched="true" original-local-location="/Users/mikelwyred/.ivy2/cache/org.apache.spark/spark-network-shuffle_2.11/ivy-2.2.0.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/spark/spark-network-shuffle_2.11/2.2.0/spark-network-shuffle_2.11-2.2.0.pom"/>
+				<metadata-artifact status="successful" details="" size="4226" time="32" location="/Users/mikelwyred/.ivy2/cache/org.apache.spark/spark-network-shuffle_2.11/ivy-2.2.0.xml" searched="true" original-local-location="/Users/mikelwyred/.ivy2/cache/org.apache.spark/spark-network-shuffle_2.11/ivy-2.2.0.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/spark/spark-network-shuffle_2.11/2.2.0/spark-network-shuffle_2.11-2.2.0.pom"/>
 				<caller organisation="classifier" name="classifier$sources_2.11" conf="compile" rev="2.2.0" rev-constraint-default="2.2.0" rev-constraint-dynamic="2.2.0" callerrev="0.0.1"/>
 				<artifacts>
 					<artifact name="spark-network-shuffle_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="42555" time="0" location="/Users/mikelwyred/.ivy2/cache/org.apache.spark/spark-network-shuffle_2.11/srcs/spark-network-shuffle_2.11-2.2.0-sources.jar">
@@ -1553,7 +1553,7 @@
 		</module>
 		<module organisation="org.apache.spark" name="spark-network-common_2.11">
 			<revision name="2.2.0" status="release" pubdate="20170701023419" resolver="public" artresolver="public" homepage="http://spark.apache.org/" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="149">
-				<metadata-artifact status="successful" details="" size="5486" time="348" location="/Users/mikelwyred/.ivy2/cache/org.apache.spark/spark-network-common_2.11/ivy-2.2.0.xml" searched="true" original-local-location="/Users/mikelwyred/.ivy2/cache/org.apache.spark/spark-network-common_2.11/ivy-2.2.0.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/spark/spark-network-common_2.11/2.2.0/spark-network-common_2.11-2.2.0.pom"/>
+				<metadata-artifact status="successful" details="" size="5486" time="38" location="/Users/mikelwyred/.ivy2/cache/org.apache.spark/spark-network-common_2.11/ivy-2.2.0.xml" searched="true" original-local-location="/Users/mikelwyred/.ivy2/cache/org.apache.spark/spark-network-common_2.11/ivy-2.2.0.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/spark/spark-network-common_2.11/2.2.0/spark-network-common_2.11-2.2.0.pom"/>
 				<caller organisation="classifier" name="classifier$sources_2.11" conf="compile" rev="2.2.0" rev-constraint-default="2.2.0" rev-constraint-dynamic="2.2.0" callerrev="0.0.1"/>
 				<artifacts>
 					<artifact name="spark-network-common_2.11" type="jar" ext="jar" status="no" details="" size="2375104" time="0" location="/Users/mikelwyred/.ivy2/cache/org.apache.spark/spark-network-common_2.11/jars/spark-network-common_2.11-2.2.0.jar">
@@ -1656,7 +1656,7 @@
 		</module>
 		<module organisation="org.apache.spark" name="spark-launcher_2.11">
 			<revision name="2.2.0" status="release" pubdate="20170701023817" resolver="public" artresolver="public" homepage="http://spark.apache.org/" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="148">
-				<metadata-artifact status="successful" details="" size="6429" time="436" location="/Users/mikelwyred/.ivy2/cache/org.apache.spark/spark-launcher_2.11/ivy-2.2.0.xml" searched="true" original-local-location="/Users/mikelwyred/.ivy2/cache/org.apache.spark/spark-launcher_2.11/ivy-2.2.0.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/spark/spark-launcher_2.11/2.2.0/spark-launcher_2.11-2.2.0.pom"/>
+				<metadata-artifact status="successful" details="" size="6429" time="47" location="/Users/mikelwyred/.ivy2/cache/org.apache.spark/spark-launcher_2.11/ivy-2.2.0.xml" searched="true" original-local-location="/Users/mikelwyred/.ivy2/cache/org.apache.spark/spark-launcher_2.11/ivy-2.2.0.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/spark/spark-launcher_2.11/2.2.0/spark-launcher_2.11-2.2.0.pom"/>
 				<caller organisation="classifier" name="classifier$sources_2.11" conf="compile" rev="2.2.0" rev-constraint-default="2.2.0" rev-constraint-dynamic="2.2.0" callerrev="0.0.1"/>
 				<artifacts>
 					<artifact name="spark-launcher_2.11" type="jar" ext="jar" status="no" details="" size="66818" time="0" location="/Users/mikelwyred/.ivy2/cache/org.apache.spark/spark-launcher_2.11/jars/spark-launcher_2.11-2.2.0.jar">
@@ -1729,7 +1729,7 @@
 		</module>
 		<module organisation="org.apache.hadoop" name="hadoop-mapreduce-client-jobclient">
 			<revision name="2.6.5" status="release" pubdate="20161003012531" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="147">
-				<metadata-artifact status="successful" details="" size="5656" time="543" location="/Users/mikelwyred/.ivy2/cache/org.apache.hadoop/hadoop-mapreduce-client-jobclient/ivy-2.6.5.xml" searched="true" original-local-location="/Users/mikelwyred/.ivy2/cache/org.apache.hadoop/hadoop-mapreduce-client-jobclient/ivy-2.6.5.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/hadoop/hadoop-mapreduce-client-jobclient/2.6.5/hadoop-mapreduce-client-jobclient-2.6.5.pom"/>
+				<metadata-artifact status="successful" details="" size="5656" time="40" location="/Users/mikelwyred/.ivy2/cache/org.apache.hadoop/hadoop-mapreduce-client-jobclient/ivy-2.6.5.xml" searched="true" original-local-location="/Users/mikelwyred/.ivy2/cache/org.apache.hadoop/hadoop-mapreduce-client-jobclient/ivy-2.6.5.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/hadoop/hadoop-mapreduce-client-jobclient/2.6.5/hadoop-mapreduce-client-jobclient-2.6.5.pom"/>
 				<caller organisation="classifier" name="classifier$sources_2.11" conf="compile" rev="2.6.5" rev-constraint-default="2.6.5" rev-constraint-dynamic="2.6.5" callerrev="0.0.1"/>
 				<artifacts>
 					<artifact name="hadoop-mapreduce-client-jobclient" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="45670" time="0" location="/Users/mikelwyred/.ivy2/cache/org.apache.hadoop/hadoop-mapreduce-client-jobclient/srcs/hadoop-mapreduce-client-jobclient-2.6.5-sources.jar">
@@ -1743,7 +1743,7 @@
 		</module>
 		<module organisation="org.apache.hadoop" name="hadoop-mapreduce-client-app">
 			<revision name="2.6.5" status="release" pubdate="20161003012452" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="133">
-				<metadata-artifact status="successful" details="" size="4697" time="495" location="/Users/mikelwyred/.ivy2/cache/org.apache.hadoop/hadoop-mapreduce-client-app/ivy-2.6.5.xml" searched="true" original-local-location="/Users/mikelwyred/.ivy2/cache/org.apache.hadoop/hadoop-mapreduce-client-app/ivy-2.6.5.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/hadoop/hadoop-mapreduce-client-app/2.6.5/hadoop-mapreduce-client-app-2.6.5.pom"/>
+				<metadata-artifact status="successful" details="" size="4697" time="49" location="/Users/mikelwyred/.ivy2/cache/org.apache.hadoop/hadoop-mapreduce-client-app/ivy-2.6.5.xml" searched="true" original-local-location="/Users/mikelwyred/.ivy2/cache/org.apache.hadoop/hadoop-mapreduce-client-app/ivy-2.6.5.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/hadoop/hadoop-mapreduce-client-app/2.6.5/hadoop-mapreduce-client-app-2.6.5.pom"/>
 				<caller organisation="classifier" name="classifier$sources_2.11" conf="compile" rev="2.6.5" rev-constraint-default="2.6.5" rev-constraint-dynamic="2.6.5" callerrev="0.0.1"/>
 				<artifacts>
 					<artifact name="hadoop-mapreduce-client-app" type="jar" ext="jar" status="no" details="" size="528586" time="0" location="/Users/mikelwyred/.ivy2/cache/org.apache.hadoop/hadoop-mapreduce-client-app/jars/hadoop-mapreduce-client-app-2.6.5.jar">
@@ -1757,7 +1757,7 @@
 		</module>
 		<module organisation="org.apache.hadoop" name="hadoop-mapreduce-client-shuffle">
 			<revision name="2.6.5" status="release" pubdate="20161003012435" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="145">
-				<metadata-artifact status="successful" details="" size="3071" time="377" location="/Users/mikelwyred/.ivy2/cache/org.apache.hadoop/hadoop-mapreduce-client-shuffle/ivy-2.6.5.xml" searched="true" original-local-location="/Users/mikelwyred/.ivy2/cache/org.apache.hadoop/hadoop-mapreduce-client-shuffle/ivy-2.6.5.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/hadoop/hadoop-mapreduce-client-shuffle/2.6.5/hadoop-mapreduce-client-shuffle-2.6.5.pom"/>
+				<metadata-artifact status="successful" details="" size="3071" time="34" location="/Users/mikelwyred/.ivy2/cache/org.apache.hadoop/hadoop-mapreduce-client-shuffle/ivy-2.6.5.xml" searched="true" original-local-location="/Users/mikelwyred/.ivy2/cache/org.apache.hadoop/hadoop-mapreduce-client-shuffle/ivy-2.6.5.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/hadoop/hadoop-mapreduce-client-shuffle/2.6.5/hadoop-mapreduce-client-shuffle-2.6.5.pom"/>
 				<caller organisation="classifier" name="classifier$sources_2.11" conf="compile" rev="2.6.5" rev-constraint-default="2.6.5" rev-constraint-dynamic="2.6.5" callerrev="0.0.1"/>
 				<artifacts>
 					<artifact name="hadoop-mapreduce-client-shuffle" type="jar" ext="jar" status="no" details="" size="67772" time="0" location="/Users/mikelwyred/.ivy2/cache/org.apache.hadoop/hadoop-mapreduce-client-shuffle/jars/hadoop-mapreduce-client-shuffle-2.6.5.jar">
@@ -1785,7 +1785,7 @@
 		</module>
 		<module organisation="org.apache.hadoop" name="hadoop-mapreduce-client-common">
 			<revision name="2.6.5" status="release" pubdate="20161003012418" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="134">
-				<metadata-artifact status="successful" details="" size="3273" time="418" location="/Users/mikelwyred/.ivy2/cache/org.apache.hadoop/hadoop-mapreduce-client-common/ivy-2.6.5.xml" searched="true" original-local-location="/Users/mikelwyred/.ivy2/cache/org.apache.hadoop/hadoop-mapreduce-client-common/ivy-2.6.5.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/hadoop/hadoop-mapreduce-client-common/2.6.5/hadoop-mapreduce-client-common-2.6.5.pom"/>
+				<metadata-artifact status="successful" details="" size="3273" time="33" location="/Users/mikelwyred/.ivy2/cache/org.apache.hadoop/hadoop-mapreduce-client-common/ivy-2.6.5.xml" searched="true" original-local-location="/Users/mikelwyred/.ivy2/cache/org.apache.hadoop/hadoop-mapreduce-client-common/ivy-2.6.5.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/hadoop/hadoop-mapreduce-client-common/2.6.5/hadoop-mapreduce-client-common-2.6.5.pom"/>
 				<caller organisation="classifier" name="classifier$sources_2.11" conf="compile" rev="2.6.5" rev-constraint-default="2.6.5" rev-constraint-dynamic="2.6.5" callerrev="0.0.1"/>
 				<artifacts>
 					<artifact name="hadoop-mapreduce-client-common" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="272151" time="0" location="/Users/mikelwyred/.ivy2/cache/org.apache.hadoop/hadoop-mapreduce-client-common/srcs/hadoop-mapreduce-client-common-2.6.5-sources.jar">
@@ -1799,7 +1799,7 @@
 		</module>
 		<module organisation="org.apache.hadoop" name="hadoop-mapreduce-client-core">
 			<revision name="2.6.5" status="release" pubdate="20161003012350" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="142">
-				<metadata-artifact status="successful" details="" size="3492" time="527" location="/Users/mikelwyred/.ivy2/cache/org.apache.hadoop/hadoop-mapreduce-client-core/ivy-2.6.5.xml" searched="true" original-local-location="/Users/mikelwyred/.ivy2/cache/org.apache.hadoop/hadoop-mapreduce-client-core/ivy-2.6.5.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/hadoop/hadoop-mapreduce-client-core/2.6.5/hadoop-mapreduce-client-core-2.6.5.pom"/>
+				<metadata-artifact status="successful" details="" size="3492" time="42" location="/Users/mikelwyred/.ivy2/cache/org.apache.hadoop/hadoop-mapreduce-client-core/ivy-2.6.5.xml" searched="true" original-local-location="/Users/mikelwyred/.ivy2/cache/org.apache.hadoop/hadoop-mapreduce-client-core/ivy-2.6.5.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/hadoop/hadoop-mapreduce-client-core/2.6.5/hadoop-mapreduce-client-core-2.6.5.pom"/>
 				<caller organisation="classifier" name="classifier$sources_2.11" conf="compile" rev="2.6.5" rev-constraint-default="2.6.5" rev-constraint-dynamic="2.6.5" callerrev="0.0.1"/>
 				<artifacts>
 					<artifact name="hadoop-mapreduce-client-core" type="jar" ext="jar" status="no" details="" size="1537966" time="0" location="/Users/mikelwyred/.ivy2/cache/org.apache.hadoop/hadoop-mapreduce-client-core/jars/hadoop-mapreduce-client-core-2.6.5.jar">
@@ -1902,7 +1902,7 @@
 		</module>
 		<module organisation="com.sun.jersey" name="jersey-client">
 			<revision name="1.9" status="release" pubdate="20110902131806" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="138">
-				<metadata-artifact status="successful" details="" size="6443" time="332" location="/Users/mikelwyred/.ivy2/cache/com.sun.jersey/jersey-client/ivy-1.9.xml" searched="true" original-local-location="/Users/mikelwyred/.ivy2/cache/com.sun.jersey/jersey-client/ivy-1.9.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/sun/jersey/jersey-client/1.9/jersey-client-1.9.pom"/>
+				<metadata-artifact status="successful" details="" size="6443" time="31" location="/Users/mikelwyred/.ivy2/cache/com.sun.jersey/jersey-client/ivy-1.9.xml" searched="true" original-local-location="/Users/mikelwyred/.ivy2/cache/com.sun.jersey/jersey-client/ivy-1.9.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/sun/jersey/jersey-client/1.9/jersey-client-1.9.pom"/>
 				<caller organisation="classifier" name="classifier$sources_2.11" conf="compile" rev="1.9" rev-constraint-default="1.9" rev-constraint-dynamic="1.9" callerrev="0.0.1"/>
 				<artifacts>
 					<artifact name="jersey-client" type="jar" ext="jar" status="no" details="" size="130458" time="0" location="/Users/mikelwyred/.ivy2/cache/com.sun.jersey/jersey-client/jars/jersey-client-1.9.jar">
@@ -1958,7 +1958,7 @@
 		</module>
 		<module organisation="org.htrace" name="htrace-core">
 			<revision name="3.0.4" status="release" pubdate="20140419003047" resolver="public" artresolver="public" homepage="https://github.com/cloudera/htrace" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="130">
-				<metadata-artifact status="successful" details="" size="2818" time="376" location="/Users/mikelwyred/.ivy2/cache/org.htrace/htrace-core/ivy-3.0.4.xml" searched="true" original-local-location="/Users/mikelwyred/.ivy2/cache/org.htrace/htrace-core/ivy-3.0.4.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/htrace/htrace-core/3.0.4/htrace-core-3.0.4.pom"/>
+				<metadata-artifact status="successful" details="" size="2818" time="41" location="/Users/mikelwyred/.ivy2/cache/org.htrace/htrace-core/ivy-3.0.4.xml" searched="true" original-local-location="/Users/mikelwyred/.ivy2/cache/org.htrace/htrace-core/ivy-3.0.4.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/htrace/htrace-core/3.0.4/htrace-core-3.0.4.pom"/>
 				<caller organisation="classifier" name="classifier$sources_2.11" conf="compile" rev="3.0.4" rev-constraint-default="3.0.4" rev-constraint-dynamic="3.0.4" callerrev="0.0.1"/>
 				<artifacts>
 					<artifact name="htrace-core" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="26939" time="0" location="/Users/mikelwyred/.ivy2/cache/org.htrace/htrace-core/srcs/htrace-core-3.0.4-sources.jar">
@@ -1972,7 +1972,7 @@
 		</module>
 		<module organisation="org.apache.curator" name="curator-recipes">
 			<revision name="2.6.0" status="release" pubdate="20140708050148" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="129">
-				<metadata-artifact status="successful" details="" size="2365" time="374" location="/Users/mikelwyred/.ivy2/cache/org.apache.curator/curator-recipes/ivy-2.6.0.xml" searched="true" original-local-location="/Users/mikelwyred/.ivy2/cache/org.apache.curator/curator-recipes/ivy-2.6.0.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/curator/curator-recipes/2.6.0/curator-recipes-2.6.0.pom"/>
+				<metadata-artifact status="successful" details="" size="2365" time="42" location="/Users/mikelwyred/.ivy2/cache/org.apache.curator/curator-recipes/ivy-2.6.0.xml" searched="true" original-local-location="/Users/mikelwyred/.ivy2/cache/org.apache.curator/curator-recipes/ivy-2.6.0.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/curator/curator-recipes/2.6.0/curator-recipes-2.6.0.pom"/>
 				<caller organisation="classifier" name="classifier$sources_2.11" conf="compile" rev="2.6.0" rev-constraint-default="2.6.0" rev-constraint-dynamic="2.6.0" callerrev="0.0.1"/>
 				<artifacts>
 					<artifact name="curator-recipes" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="143004" time="0" location="/Users/mikelwyred/.ivy2/cache/org.apache.curator/curator-recipes/srcs/curator-recipes-2.6.0-sources.jar">
@@ -2000,7 +2000,7 @@
 		</module>
 		<module organisation="org.apache.curator" name="curator-framework">
 			<revision name="2.6.0" status="release" pubdate="20140708050112" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="126">
-				<metadata-artifact status="successful" details="" size="2164" time="405" location="/Users/mikelwyred/.ivy2/cache/org.apache.curator/curator-framework/ivy-2.6.0.xml" searched="true" original-local-location="/Users/mikelwyred/.ivy2/cache/org.apache.curator/curator-framework/ivy-2.6.0.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/curator/curator-framework/2.6.0/curator-framework-2.6.0.pom"/>
+				<metadata-artifact status="successful" details="" size="2164" time="46" location="/Users/mikelwyred/.ivy2/cache/org.apache.curator/curator-framework/ivy-2.6.0.xml" searched="true" original-local-location="/Users/mikelwyred/.ivy2/cache/org.apache.curator/curator-framework/ivy-2.6.0.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/curator/curator-framework/2.6.0/curator-framework-2.6.0.pom"/>
 				<caller organisation="classifier" name="classifier$sources_2.11" conf="compile" rev="2.6.0" rev-constraint-default="2.6.0" rev-constraint-dynamic="2.6.0" callerrev="0.0.1"/>
 				<artifacts>
 					<artifact name="curator-framework" type="jar" ext="jar" status="no" details="" size="185245" time="0" location="/Users/mikelwyred/.ivy2/cache/org.apache.curator/curator-framework/jars/curator-framework-2.6.0.jar">
@@ -2014,7 +2014,7 @@
 		</module>
 		<module organisation="org.apache.curator" name="curator-client">
 			<revision name="2.6.0" status="release" pubdate="20140708050047" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="127">
-				<metadata-artifact status="successful" details="" size="2260" time="384" location="/Users/mikelwyred/.ivy2/cache/org.apache.curator/curator-client/ivy-2.6.0.xml" searched="true" original-local-location="/Users/mikelwyred/.ivy2/cache/org.apache.curator/curator-client/ivy-2.6.0.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/curator/curator-client/2.6.0/curator-client-2.6.0.pom"/>
+				<metadata-artifact status="successful" details="" size="2260" time="63" location="/Users/mikelwyred/.ivy2/cache/org.apache.curator/curator-client/ivy-2.6.0.xml" searched="true" original-local-location="/Users/mikelwyred/.ivy2/cache/org.apache.curator/curator-client/ivy-2.6.0.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/curator/curator-client/2.6.0/curator-client-2.6.0.pom"/>
 				<caller organisation="classifier" name="classifier$sources_2.11" conf="compile" rev="2.6.0" rev-constraint-default="2.6.0" rev-constraint-dynamic="2.6.0" callerrev="0.0.1"/>
 				<artifacts>
 					<artifact name="curator-client" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="53044" time="0" location="/Users/mikelwyred/.ivy2/cache/org.apache.curator/curator-client/srcs/curator-client-2.6.0-sources.jar">
@@ -2042,7 +2042,7 @@
 		</module>
 		<module organisation="org.apache.directory.server" name="apacheds-kerberos-codec">
 			<revision name="2.0.0-M15" status="release" pubdate="20130814170537" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="122">
-				<metadata-artifact status="successful" details="" size="3920" time="360" location="/Users/mikelwyred/.ivy2/cache/org.apache.directory.server/apacheds-kerberos-codec/ivy-2.0.0-M15.xml" searched="true" original-local-location="/Users/mikelwyred/.ivy2/cache/org.apache.directory.server/apacheds-kerberos-codec/ivy-2.0.0-M15.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/directory/server/apacheds-kerberos-codec/2.0.0-M15/apacheds-kerberos-codec-2.0.0-M15.pom"/>
+				<metadata-artifact status="successful" details="" size="3920" time="39" location="/Users/mikelwyred/.ivy2/cache/org.apache.directory.server/apacheds-kerberos-codec/ivy-2.0.0-M15.xml" searched="true" original-local-location="/Users/mikelwyred/.ivy2/cache/org.apache.directory.server/apacheds-kerberos-codec/ivy-2.0.0-M15.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/directory/server/apacheds-kerberos-codec/2.0.0-M15/apacheds-kerberos-codec-2.0.0-M15.pom"/>
 				<caller organisation="classifier" name="classifier$sources_2.11" conf="compile" rev="2.0.0-M15" rev-constraint-default="2.0.0-M15" rev-constraint-dynamic="2.0.0-M15" callerrev="0.0.1"/>
 				<artifacts>
 					<artifact name="apacheds-kerberos-codec" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="726316" time="0" location="/Users/mikelwyred/.ivy2/cache/org.apache.directory.server/apacheds-kerberos-codec/srcs/apacheds-kerberos-codec-2.0.0-M15-sources.jar">
@@ -2056,7 +2056,7 @@
 		</module>
 		<module organisation="org.apache.directory.api" name="api-util">
 			<revision name="1.0.0-M20" status="release" pubdate="20130814102558" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="125">
-				<metadata-artifact status="successful" details="" size="2367" time="594" location="/Users/mikelwyred/.ivy2/cache/org.apache.directory.api/api-util/ivy-1.0.0-M20.xml" searched="true" original-local-location="/Users/mikelwyred/.ivy2/cache/org.apache.directory.api/api-util/ivy-1.0.0-M20.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/directory/api/api-util/1.0.0-M20/api-util-1.0.0-M20.pom"/>
+				<metadata-artifact status="successful" details="" size="2367" time="43" location="/Users/mikelwyred/.ivy2/cache/org.apache.directory.api/api-util/ivy-1.0.0-M20.xml" searched="true" original-local-location="/Users/mikelwyred/.ivy2/cache/org.apache.directory.api/api-util/ivy-1.0.0-M20.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/directory/api/api-util/1.0.0-M20/api-util-1.0.0-M20.pom"/>
 				<caller organisation="classifier" name="classifier$sources_2.11" conf="compile" rev="1.0.0-M20" rev-constraint-default="1.0.0-M20" rev-constraint-dynamic="1.0.0-M20" callerrev="0.0.1"/>
 				<artifacts>
 					<artifact name="api-util" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="78219" time="0" location="/Users/mikelwyred/.ivy2/cache/org.apache.directory.api/api-util/srcs/api-util-1.0.0-M20-sources.jar">
@@ -2070,7 +2070,7 @@
 		</module>
 		<module organisation="org.apache.directory.api" name="api-asn1-api">
 			<revision name="1.0.0-M20" status="release" pubdate="20130814103000" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="124">
-				<metadata-artifact status="successful" details="" size="2685" time="449" location="/Users/mikelwyred/.ivy2/cache/org.apache.directory.api/api-asn1-api/ivy-1.0.0-M20.xml" searched="true" original-local-location="/Users/mikelwyred/.ivy2/cache/org.apache.directory.api/api-asn1-api/ivy-1.0.0-M20.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/directory/api/api-asn1-api/1.0.0-M20/api-asn1-api-1.0.0-M20.pom"/>
+				<metadata-artifact status="successful" details="" size="2685" time="32" location="/Users/mikelwyred/.ivy2/cache/org.apache.directory.api/api-asn1-api/ivy-1.0.0-M20.xml" searched="true" original-local-location="/Users/mikelwyred/.ivy2/cache/org.apache.directory.api/api-asn1-api/ivy-1.0.0-M20.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/directory/api/api-asn1-api/1.0.0-M20/api-asn1-api-1.0.0-M20.pom"/>
 				<caller organisation="classifier" name="classifier$sources_2.11" conf="compile" rev="1.0.0-M20" rev-constraint-default="1.0.0-M20" rev-constraint-dynamic="1.0.0-M20" callerrev="0.0.1"/>
 				<artifacts>
 					<artifact name="api-asn1-api" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="21097" time="0" location="/Users/mikelwyred/.ivy2/cache/org.apache.directory.api/api-asn1-api/srcs/api-asn1-api-1.0.0-M20-sources.jar">
@@ -2084,7 +2084,7 @@
 		</module>
 		<module organisation="org.apache.directory.server" name="apacheds-i18n">
 			<revision name="2.0.0-M15" status="release" pubdate="20130814165100" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="123">
-				<metadata-artifact status="successful" details="" size="2399" time="424" location="/Users/mikelwyred/.ivy2/cache/org.apache.directory.server/apacheds-i18n/ivy-2.0.0-M15.xml" searched="true" original-local-location="/Users/mikelwyred/.ivy2/cache/org.apache.directory.server/apacheds-i18n/ivy-2.0.0-M15.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/directory/server/apacheds-i18n/2.0.0-M15/apacheds-i18n-2.0.0-M15.pom"/>
+				<metadata-artifact status="successful" details="" size="2399" time="45" location="/Users/mikelwyred/.ivy2/cache/org.apache.directory.server/apacheds-i18n/ivy-2.0.0-M15.xml" searched="true" original-local-location="/Users/mikelwyred/.ivy2/cache/org.apache.directory.server/apacheds-i18n/ivy-2.0.0-M15.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/directory/server/apacheds-i18n/2.0.0-M15/apacheds-i18n-2.0.0-M15.pom"/>
 				<caller organisation="classifier" name="classifier$sources_2.11" conf="compile" rev="2.0.0-M15" rev-constraint-default="2.0.0-M15" rev-constraint-dynamic="2.0.0-M15" callerrev="0.0.1"/>
 				<artifacts>
 					<artifact name="apacheds-i18n" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="27976" time="0" location="/Users/mikelwyred/.ivy2/cache/org.apache.directory.server/apacheds-i18n/srcs/apacheds-i18n-2.0.0-M15-sources.jar">
@@ -2099,7 +2099,7 @@
 		<module organisation="com.google.code.gson" name="gson">
 			<revision name="2.2.4" status="release" pubdate="20130513235652" resolver="public" artresolver="public" homepage="http://code.google.com/p/google-gson/" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="120">
 				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
-				<metadata-artifact status="successful" details="" size="8038" time="391" location="/Users/mikelwyred/.ivy2/cache/com.google.code.gson/gson/ivy-2.2.4.xml" searched="true" original-local-location="/Users/mikelwyred/.ivy2/cache/com.google.code.gson/gson/ivy-2.2.4.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/google/code/gson/gson/2.2.4/gson-2.2.4.pom"/>
+				<metadata-artifact status="successful" details="" size="8038" time="37" location="/Users/mikelwyred/.ivy2/cache/com.google.code.gson/gson/ivy-2.2.4.xml" searched="true" original-local-location="/Users/mikelwyred/.ivy2/cache/com.google.code.gson/gson/ivy-2.2.4.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/google/code/gson/gson/2.2.4/gson-2.2.4.pom"/>
 				<caller organisation="classifier" name="classifier$sources_2.11" conf="compile" rev="2.2.4" rev-constraint-default="2.2.4" rev-constraint-dynamic="2.2.4" callerrev="0.0.1"/>
 				<artifacts>
 					<artifact name="gson" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="127562" time="0" location="/Users/mikelwyred/.ivy2/cache/com.google.code.gson/gson/srcs/gson-2.2.4-sources.jar">
@@ -2113,7 +2113,7 @@
 		</module>
 		<module organisation="commons-lang" name="commons-lang">
 			<revision name="2.6" status="release" pubdate="20110116232147" resolver="public" artresolver="public" homepage="http://commons.apache.org/lang/" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="119">
-				<metadata-artifact status="successful" details="" size="17494" time="463" location="/Users/mikelwyred/.ivy2/cache/commons-lang/commons-lang/ivy-2.6.xml" searched="true" original-local-location="/Users/mikelwyred/.ivy2/cache/commons-lang/commons-lang/ivy-2.6.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/commons-lang/commons-lang/2.6/commons-lang-2.6.pom"/>
+				<metadata-artifact status="successful" details="" size="17494" time="53" location="/Users/mikelwyred/.ivy2/cache/commons-lang/commons-lang/ivy-2.6.xml" searched="true" original-local-location="/Users/mikelwyred/.ivy2/cache/commons-lang/commons-lang/ivy-2.6.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/commons-lang/commons-lang/2.6/commons-lang-2.6.pom"/>
 				<caller organisation="classifier" name="classifier$sources_2.11" conf="compile" rev="2.6" rev-constraint-default="2.6" rev-constraint-dynamic="2.6" callerrev="0.0.1"/>
 				<artifacts>
 					<artifact name="commons-lang" type="jar" ext="jar" status="no" details="" size="284220" time="0" location="/Users/mikelwyred/.ivy2/cache/commons-lang/commons-lang/jars/commons-lang-2.6.jar">
@@ -2353,7 +2353,7 @@
 		</module>
 		<module organisation="org.apache.spark" name="spark-sketch_2.11">
 			<revision name="2.2.0" status="release" pubdate="20170701023639" resolver="public" artresolver="public" homepage="http://spark.apache.org/" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="100">
-				<metadata-artifact status="successful" details="" size="3268" time="433" location="/Users/mikelwyred/.ivy2/cache/org.apache.spark/spark-sketch_2.11/ivy-2.2.0.xml" searched="true" original-local-location="/Users/mikelwyred/.ivy2/cache/org.apache.spark/spark-sketch_2.11/ivy-2.2.0.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/spark/spark-sketch_2.11/2.2.0/spark-sketch_2.11-2.2.0.pom"/>
+				<metadata-artifact status="successful" details="" size="3268" time="47" location="/Users/mikelwyred/.ivy2/cache/org.apache.spark/spark-sketch_2.11/ivy-2.2.0.xml" searched="true" original-local-location="/Users/mikelwyred/.ivy2/cache/org.apache.spark/spark-sketch_2.11/ivy-2.2.0.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/spark/spark-sketch_2.11/2.2.0/spark-sketch_2.11-2.2.0.pom"/>
 				<caller organisation="classifier" name="classifier$sources_2.11" conf="compile" rev="2.2.0" rev-constraint-default="2.2.0" rev-constraint-dynamic="2.2.0" callerrev="0.0.1"/>
 				<artifacts>
 					<artifact name="spark-sketch_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="24591" time="0" location="/Users/mikelwyred/.ivy2/cache/org.apache.spark/spark-sketch_2.11/srcs/spark-sketch_2.11-2.2.0-sources.jar">
@@ -2367,7 +2367,7 @@
 		</module>
 		<module organisation="org.apache.spark" name="spark-tags_2.11">
 			<revision name="2.2.0" status="release" pubdate="20170701023509" resolver="public" artresolver="public" homepage="http://spark.apache.org/" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="101">
-				<metadata-artifact status="successful" details="" size="2327" time="717" location="/Users/mikelwyred/.ivy2/cache/org.apache.spark/spark-tags_2.11/ivy-2.2.0.xml" searched="true" original-local-location="/Users/mikelwyred/.ivy2/cache/org.apache.spark/spark-tags_2.11/ivy-2.2.0.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/spark/spark-tags_2.11/2.2.0/spark-tags_2.11-2.2.0.pom"/>
+				<metadata-artifact status="successful" details="" size="2327" time="33" location="/Users/mikelwyred/.ivy2/cache/org.apache.spark/spark-tags_2.11/ivy-2.2.0.xml" searched="true" original-local-location="/Users/mikelwyred/.ivy2/cache/org.apache.spark/spark-tags_2.11/ivy-2.2.0.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/spark/spark-tags_2.11/2.2.0/spark-tags_2.11-2.2.0.pom"/>
 				<caller organisation="classifier" name="classifier$sources_2.11" conf="compile" rev="2.2.0" rev-constraint-default="2.2.0" rev-constraint-dynamic="2.2.0" callerrev="0.0.1"/>
 				<artifacts>
 					<artifact name="spark-tags_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="14746" time="0" location="/Users/mikelwyred/.ivy2/cache/org.apache.spark/spark-tags_2.11/srcs/spark-tags_2.11-2.2.0-sources.jar">
@@ -2395,7 +2395,7 @@
 			</revision>
 		</module>
 		<module organisation="ita-common" name="ita-common_2.11">
-			<revision name="0.0.1" status="integration" pubdate="20170822202237" resolver="inter-project" artresolver="inter-project" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="94">
+			<revision name="0.0.1" status="integration" pubdate="20170825173011" resolver="inter-project" artresolver="inter-project" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="94">
 				<metadata-artifact status="failed" details="" size="0" time="0" searched="false"/>
 				<caller organisation="classifier" name="classifier$sources_2.11" conf="compile" rev="0.0.1" rev-constraint-default="0.0.1" rev-constraint-dynamic="0.0.1" callerrev="0.0.1"/>
 				<artifacts>
@@ -2403,7 +2403,7 @@
 			</revision>
 		</module>
 		<module organisation="ita-domain" name="ita-domain_2.11">
-			<revision name="0.0.1" status="integration" pubdate="20170822202232" resolver="inter-project" artresolver="inter-project" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="95">
+			<revision name="0.0.1" status="integration" pubdate="20170825173009" resolver="inter-project" artresolver="inter-project" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="95">
 				<metadata-artifact status="failed" details="" size="0" time="0" searched="false"/>
 				<caller organisation="classifier" name="classifier$sources_2.11" conf="compile" rev="0.0.1" rev-constraint-default="0.0.1" rev-constraint-dynamic="0.0.1" callerrev="0.0.1"/>
 				<artifacts>
@@ -2683,7 +2683,7 @@
 			</revision>
 		</module>
 		<module organisation="ita-api" name="ita-api_2.11">
-			<revision name="0.0.1" status="integration" pubdate="20170822202237" resolver="inter-project" artresolver="inter-project" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="0">
+			<revision name="0.0.1" status="integration" pubdate="20170825173011" resolver="inter-project" artresolver="inter-project" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="0">
 				<metadata-artifact status="failed" details="" size="0" time="0" searched="false"/>
 				<caller organisation="classifier" name="classifier$sources_2.11" conf="compile" rev="0.0.1" rev-constraint-default="0.0.1" rev-constraint-dynamic="0.0.1" callerrev="0.0.1"/>
 				<artifacts>
@@ -2811,7 +2811,7 @@
 		</module>
 		<module organisation="org.apache.tika" name="tika-core">
 			<revision name="1.10" status="release" pubdate="20150802080823" resolver="public" artresolver="public" homepage="http://tika.apache.org/" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="89">
-				<metadata-artifact status="successful" details="" size="6070" time="521" location="/Users/mikelwyred/.ivy2/cache/org.apache.tika/tika-core/ivy-1.10.xml" searched="true" original-local-location="/Users/mikelwyred/.ivy2/cache/org.apache.tika/tika-core/ivy-1.10.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/tika/tika-core/1.10/tika-core-1.10.pom"/>
+				<metadata-artifact status="successful" details="" size="6070" time="178" location="/Users/mikelwyred/.ivy2/cache/org.apache.tika/tika-core/ivy-1.10.xml" searched="true" original-local-location="/Users/mikelwyred/.ivy2/cache/org.apache.tika/tika-core/ivy-1.10.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/tika/tika-core/1.10/tika-core-1.10.pom"/>
 				<caller organisation="classifier" name="classifier$sources_2.11" conf="compile" rev="1.10" rev-constraint-default="1.10" rev-constraint-dynamic="1.10" callerrev="0.0.1"/>
 				<artifacts>
 					<artifact name="tika-core" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="549040" time="0" location="/Users/mikelwyred/.ivy2/cache/org.apache.tika/tika-core/srcs/tika-core-1.10-sources.jar">
@@ -3050,7 +3050,7 @@
 		</module>
 		<module organisation="org.slf4j" name="slf4j-simple">
 			<revision name="1.7.5" status="release" pubdate="20130325215226" resolver="public" artresolver="public" homepage="http://www.slf4j.org" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="73">
-				<metadata-artifact status="successful" details="" size="1472" time="357" location="/Users/mikelwyred/.ivy2/cache/org.slf4j/slf4j-simple/ivy-1.7.5.xml" searched="true" original-local-location="/Users/mikelwyred/.ivy2/cache/org.slf4j/slf4j-simple/ivy-1.7.5.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/slf4j/slf4j-simple/1.7.5/slf4j-simple-1.7.5.pom"/>
+				<metadata-artifact status="successful" details="" size="1472" time="52" location="/Users/mikelwyred/.ivy2/cache/org.slf4j/slf4j-simple/ivy-1.7.5.xml" searched="true" original-local-location="/Users/mikelwyred/.ivy2/cache/org.slf4j/slf4j-simple/ivy-1.7.5.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/slf4j/slf4j-simple/1.7.5/slf4j-simple-1.7.5.pom"/>
 				<caller organisation="classifier" name="classifier$sources_2.11" conf="compile" rev="1.7.5" rev-constraint-default="1.7.5" rev-constraint-dynamic="1.7.5" callerrev="0.0.1"/>
 				<artifacts>
 					<artifact name="slf4j-simple" type="jar" ext="jar" status="no" details="" size="10680" time="0" location="/Users/mikelwyred/.ivy2/cache/org.slf4j/slf4j-simple/jars/slf4j-simple-1.7.5.jar">
@@ -3753,7 +3753,7 @@
 		<module organisation="org.json" name="json">
 			<revision name="20140107" status="release" pubdate="20140107193602" resolver="public" artresolver="public" homepage="https://github.com/douglascrockford/JSON-java" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="4">
 				<license name="The JSON License" url="http://json.org/license.html"/>
-				<metadata-artifact status="successful" details="" size="4188" time="739" location="/Users/mikelwyred/.ivy2/cache/org.json/json/ivy-20140107.xml" searched="true" original-local-location="/Users/mikelwyred/.ivy2/cache/org.json/json/ivy-20140107.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/json/json/20140107/json-20140107.pom"/>
+				<metadata-artifact status="successful" details="" size="4188" time="155" location="/Users/mikelwyred/.ivy2/cache/org.json/json/ivy-20140107.xml" searched="true" original-local-location="/Users/mikelwyred/.ivy2/cache/org.json/json/ivy-20140107.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/json/json/20140107/json-20140107.pom"/>
 				<caller organisation="classifier" name="classifier$sources_2.11" conf="compile" rev="20140107" rev-constraint-default="20140107" rev-constraint-dynamic="20140107" callerrev="0.0.1"/>
 				<artifacts>
 					<artifact name="json" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="79981" time="0" location="/Users/mikelwyred/.ivy2/cache/org.json/json/srcs/json-20140107-sources.jar">

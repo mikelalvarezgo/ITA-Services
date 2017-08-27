@@ -4,7 +4,7 @@ import com.mongodb.casbah.commons.MongoDBObject
 import domain.{Id, TweetInfo}
 import domain.gatherer.TweetPickUp
 import mongo.Converters.{dbObject, to}
-import mongo.{DAO, MongoDbComponent}
+import mongo.{DAO, DAOHelpers, MongoDbComponent}
 import mongo.Converters._
 import domain.gatherer.Model._
 import com.mongodb.casbah.Imports._

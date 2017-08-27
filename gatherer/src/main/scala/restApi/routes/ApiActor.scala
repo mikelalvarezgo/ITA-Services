@@ -14,6 +14,7 @@ import spray.httpx.SprayJsonSupport._
 import spray.routing._
 import restApi.routes.ApiHelper._
 import spray.httpx.unmarshalling.Unmarshaller
+import spray.json.{JsBoolean, JsValue, RootJsonFormat}
 
 import scala.concurrent.duration._
 import scala.util.Try
@@ -26,6 +27,12 @@ class ApiActor(
   with Logger {
   def actorRefFactory = context
 
+  implicit  val BooleanJF = new RootJsonFormat[Boolean] {
+    override def write(obj:Boolean):JsValue = JsBoolean(obj)
+    override def read(json: JsValue):Boolean =  json match  {
+      case JsBoolean(v) => v
+      case _ => ???
+    }
   implicit val timeout = Timeout(10 seconds)
   val pickupRoutes: Route =
     path("topic") {
