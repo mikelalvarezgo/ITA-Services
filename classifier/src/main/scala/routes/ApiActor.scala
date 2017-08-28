@@ -21,6 +21,7 @@ import scala.concurrent.ExecutionContext.Implicits.global
 import domain.Model.JFid
 import results.ModelExecution
 import spray.json.{JsBoolean, JsValue, RootJsonFormat}
+import spray.json.RootJsonFormat
 
 class ApiActor(
   apiName: String,
@@ -34,21 +35,20 @@ class ApiActor(
       case JsBoolean(v) => v
       case _ => ???
     }
-
   }
   implicit val timeout = Timeout(10 seconds)
-  val classifierRoutes: Route =
+  val modelRoutes: Route =
     path("model") {
       get {
         entity(as[Id]) { id: Id =>
           complete(classifierController.getPickUp(id))
         }
-      } ~
+      }~
         put {
           entity(as[ModelData]) { model: ModelData =>
             complete(classifierController.updateModel(model))
           }
-        } ~
+        }~
         post {
           entity(as[ModelData]) { payload: ModelData =>
             complete(classifierController.createModel(payload))
@@ -56,35 +56,30 @@ class ApiActor(
         }
     } ~
       path("execution") {
-    get {
-      entity(as[Id]) { id: Id =>
-        complete(classifierController.getExecution(id))
-      }
-    } ~
-      post {
-        entity(as[ModelExecution]) { payload: ModelExecution =>
-          complete(classifierController.createExecution(payload))
-        }
-      }
-  } ~
-      path("train" / Segment: PathMatcher1[String]) { idPickUp =>
-        post {
-          complete(classifierController.trainModelExecution(Id(idPickUp)))
-        }
+        get {
+          entity(as[Id]) { id: Id =>
+            complete(classifierController.getExecution(id))
+          }
+        }~
+          post {
+            entity(as[ModelExecution]) { payload: ModelExecution =>
+              complete(classifierController.createExecution(payload))
+            }
+          }
       } ~
-      path("classify" / Segment: PathMatcher1[String]) { idPickUp =>
+      path("train"){
         post {
-          complete(classifierController.executeModelExecution(Id(idPickUp)))
+          entity(as[Id]) { id: Id =>
+            complete(classifierController.trainModelExecution(id))
+          }
+        }
+      }~
+      path("execute") {
+        post {
+          entity(as[Id]) { id: Id =>
+            complete(classifierController.executeModelExecution(id))
+          }
         }
       }
-
-
-
-
-
-
-  def receive = runRoute(classifierRoutes)
-
-
-
+  def receive = runRoute(modelRoutes)
 }

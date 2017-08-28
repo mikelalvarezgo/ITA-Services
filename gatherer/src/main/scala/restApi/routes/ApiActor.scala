@@ -28,11 +28,13 @@ class ApiActor(
   def actorRefFactory = context
 
   implicit  val BooleanJF = new RootJsonFormat[Boolean] {
-    override def write(obj:Boolean):JsValue = JsBoolean(obj)
-    override def read(json: JsValue):Boolean =  json match  {
+    override def write(obj: Boolean): JsValue = JsBoolean(obj)
+
+    override def read(json: JsValue): Boolean = json match {
       case JsBoolean(v) => v
       case _ => ???
     }
+  }
   implicit val timeout = Timeout(10 seconds)
   val pickupRoutes: Route =
     path("topic") {
@@ -61,12 +63,12 @@ class ApiActor(
         post {
           complete(pickUpController.startPickUp(Id(idPickUp)))
         }
-      }~
+      } ~
       path("collect" / Segment: PathMatcher1[String]) { idPickUp =>
        post {
          complete(pickUpController.collectPickUp(Id(idPickUp)))
       }
-  }
+      }
 
 
 

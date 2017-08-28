@@ -17,7 +17,7 @@
 [0m[[0minfo[0m] [0mCompiling 18 Scala sources to /Users/mikelwyred/tfm/ITA-Services/classifier/target/scala-2.11/classes...[0m
 [0m[[0mdebug[0m] [0mGetting compiler-interface from component compiler for Scala 2.11.7[0m
 [0m[[0mdebug[0m] [0mGetting compiler-interface from component compiler for Scala 2.11.7[0m
-[0m[[0mdebug[0m] [0mRunning cached compiler 4456d3d3, interfacing (CompilerInterface) with Scala compiler version 2.11.7[0m
+[0m[[0mdebug[0m] [0mRunning cached compiler 2f4b94e2, interfacing (CompilerInterface) with Scala compiler version 2.11.7[0m
 [0m[[0mdebug[0m] [0mCalling Scala compiler with arguments  (CompilerInterface):[0m
 [0m[[0mdebug[0m] [0m	-deprecation[0m
 [0m[[0mdebug[0m] [0m	-unchecked[0m
@@ -34,18 +34,203 @@
 [0m[[33mwarn[0m] [0m/Users/mikelwyred/tfm/ITA-Services/classifier/src/main/scala/mongo/TweetResultDAO.scala:6: imported `DAOHelpers' is permanently hidden by definition of trait DAOHelpers in package mongo[0m
 [0m[[33mwarn[0m] [0mimport mongo.DAOHelpers[0m
 [0m[[33mwarn[0m] [0m             ^[0m
-[0m[[31merror[0m] [0mmissing or invalid dependency detected while loading class file 'Prepender.class'.[0m
-[0m[[31merror[0m] [0mCould not access type PrependAux in package shapeless,[0m
-[0m[[31merror[0m] [0mbecause it (or its dependencies) are missing. Check your build definition for[0m
-[0m[[31merror[0m] [0mmissing or conflicting dependencies. (Re-run with `-Ylog-classpath` to see the problematic classpath.)[0m
-[0m[[31merror[0m] [0mA full rebuild may help if 'Prepender.class' was compiled against an incompatible version of shapeless.[0m
-[0m[[31merror[0m] [0m/Users/mikelwyred/tfm/ITA-Services/classifier/src/main/scala/routes/ApiActor.scala:70: could not find implicit value for parameter prepender: spray.routing.Prepender[shapeless.HNil,shapeless.::[String,shapeless.HNil]][0m
-[0m[[31merror[0m] [0m      path("train" / Segment: PathMatcher1[String]) { idPickUp =>[0m
-[0m[[31merror[0m] [0m                   ^[0m
-[0m[[31merror[0m] [0m/Users/mikelwyred/tfm/ITA-Services/classifier/src/main/scala/routes/ApiActor.scala:75: could not find implicit value for parameter prepender: spray.routing.Prepender[shapeless.HNil,shapeless.::[String,shapeless.HNil]][0m
-[0m[[31merror[0m] [0m      path("classify" / Segment: PathMatcher1[String]) { idPickUp =>[0m
-[0m[[31merror[0m] [0m                      ^[0m
-[0m[[33mwarn[0m] [0mthree warnings found[0m
-[0m[[31merror[0m] [0mthree errors found[0m
-[0m[[0mdebug[0m] [0mCompilation failed (CompilerInterface)[0m
-[0m[[31merror[0m] [0m(classifier/compile:[31mcompileIncremental[0m) Compilation failed[0m
+[0m[[33mwarn[0m] [0mthere was one feature warning; re-run with -feature for details[0m
+[0m[[33mwarn[0m] [0mfour warnings found[0m
+[0m[[0mdebug[0m] [0mScala compilation took 7.168284981 s[0m
+[0m[[0mdebug[0m] [0mInvalidating /Users/mikelwyred/tfm/ITA-Services/classifier/src/main/scala/results/ModelExecution.scala...[0m
+[0m[[0mdebug[0m] [0mInvalidating (transitively) by inheritance from /Users/mikelwyred/tfm/ITA-Services/classifier/src/main/scala/results/ModelExecution.scala...[0m
+[0m[[0mdebug[0m] [0mInitial set of included nodes: Set(/Users/mikelwyred/tfm/ITA-Services/classifier/src/main/scala/results/ModelExecution.scala)[0m
+[0m[[0mdebug[0m] [0mInvalidated by transitive inheritance dependency: Set(/Users/mikelwyred/tfm/ITA-Services/classifier/src/main/scala/results/ModelExecution.scala)[0m
+[0m[[0mdebug[0m] [0mThe /Users/mikelwyred/tfm/ITA-Services/classifier/src/main/scala/results/ModelExecution.scala source file has the following regular definitions changed:[0m
+[0m[[0mdebug[0m] [0m	chargeModel, notify, wait, nTweetsAnalize, copy$default$2, $asInstanceOf, logger, copy$default$5, productArity, equals, saveResult, _id, asInstanceOf, synchronized, modelId, $isInstanceOf, topicId, canEqual, config, copy$default$4, productPrefix, notifyAll, isInstanceOf, <init>, ==, dateExecution, clone, status, copy$default$7, runModel, copy$default$3, copy, evaluateModel, toString, !=, getClass, copy$default$1, ModelExecution, resultModel, executeModel, extractData, getModelResult, copy$default$6, ne, eq, productIterator, ##, finalize, productElement, hashCode.[0m
+[0m[[0mdebug[0m] [0mAll member reference dependencies will be considered within this context.[0m
+[0m[[0mdebug[0m] [0mThe following modified names cause invalidation of /Users/mikelwyred/tfm/ITA-Services/classifier/src/main/scala/controllers/ClassifiercController.scala: Set(logger, _id, asInstanceOf, <init>, ModelExecution, getModelResult, ne)[0m
+[0m[[0mdebug[0m] [0mThe following modified names cause invalidation of /Users/mikelwyred/tfm/ITA-Services/classifier/src/main/scala/routes/ApiActor.scala: Set(asInstanceOf, isInstanceOf, <init>, ModelExecution)[0m
+[0m[[0mdebug[0m] [0mThe following modified names cause invalidation of /Users/mikelwyred/tfm/ITA-Services/classifier/src/main/scala/mongo/ModelDAO.scala: Set(_id, asInstanceOf, isInstanceOf, <init>, ==, toString, ModelExecution, eq)[0m
+[0m[[0mdebug[0m] [0mThe following modified names cause invalidation of /Users/mikelwyred/tfm/ITA-Services/classifier/src/main/scala/mongo/ModelExecutionDAO.scala: Set(_id, asInstanceOf, isInstanceOf, <init>, ==, toString, ModelExecution, eq)[0m
+[0m[[0mdebug[0m] [0mThe following modified names cause invalidation of /Users/mikelwyred/tfm/ITA-Services/classifier/src/main/scala/mongo/TweetResultDAO.scala: Set(_id, asInstanceOf, isInstanceOf, <init>, ==, toString, ModelExecution, eq)[0m
+[0m[[0mdebug[0m] [0mThe following modified names cause invalidation of /Users/mikelwyred/tfm/ITA-Services/classifier/src/main/scala/classifier/Model.scala: Set(asInstanceOf, isInstanceOf, <init>, ==, toString, ModelExecution)[0m
+[0m[[0mdebug[0m] [0mInvalidating /Users/mikelwyred/tfm/ITA-Services/classifier/src/main/scala/routes/ApiActor.scala...[0m
+[0m[[0mdebug[0m] [0mInvalidating (transitively) by inheritance from /Users/mikelwyred/tfm/ITA-Services/classifier/src/main/scala/routes/ApiActor.scala...[0m
+[0m[[0mdebug[0m] [0mInitial set of included nodes: Set(/Users/mikelwyred/tfm/ITA-Services/classifier/src/main/scala/routes/ApiActor.scala)[0m
+[0m[[0mdebug[0m] [0mInvalidated by transitive inheritance dependency: Set(/Users/mikelwyred/tfm/ITA-Services/classifier/src/main/scala/routes/ApiActor.scala)[0m
+[0m[[0mdebug[0m] [0mThe /Users/mikelwyred/tfm/ITA-Services/classifier/src/main/scala/routes/ApiActor.scala source file has the following implicit definitions changed:[0m
+[0m[[0mdebug[0m] [0m	pimpRouteWithConcatenation, segmentStringToPathMatcher, context, string2NR, symbol2NR, self, stringExtractionPair2PathMatcher, valueMap2PathMatcher, BooleanJF, stringOptionNameReceptacle2PathMatcher, timeout, regex2PathMatcher.[0m
+[0m[[0mdebug[0m] [0mAll member reference dependencies will be considered within this context.[0m
+[0m[[0mdebug[0m] [0mInvalidating /Users/mikelwyred/tfm/ITA-Services/classifier/src/main/scala/models/ModelClassifier.scala...[0m
+[0m[[0mdebug[0m] [0mInvalidating (transitively) by inheritance from /Users/mikelwyred/tfm/ITA-Services/classifier/src/main/scala/models/ModelClassifier.scala...[0m
+[0m[[0mdebug[0m] [0mInitial set of included nodes: Set(/Users/mikelwyred/tfm/ITA-Services/classifier/src/main/scala/models/ModelClassifier.scala)[0m
+[0m[[0mdebug[0m] [0mInvalidated by transitive inheritance dependency: Set(/Users/mikelwyred/tfm/ITA-Services/classifier/src/main/scala/models/ModelClassifier.scala)[0m
+[0m[[0mdebug[0m] [0mThe /Users/mikelwyred/tfm/ITA-Services/classifier/src/main/scala/models/ModelClassifier.scala source file has the following regular definitions changed:[0m
+[0m[[0mdebug[0m] [0m	notify, name, wait, copy$default$2, $asInstanceOf, classifySet, logger, copy$default$5, agregation_function_name, productArity, equals, copy$default$9, _id, dataSet, asInstanceOf, getNumberOfClassify, getNumberOfTrain, synchronized, num_iterations, $isInstanceOf, NLPStanfordClassifier, validationSet, copy$default$8, tagRDD, canEqual, config, copy$default$4, ApiClassifier, trainingSet, getNotClassifySet, productPrefix, notifyAll, PartitionConf, isInstanceOf, setRDD, setPartition, <init>, ==, clone, strategy_boosting, client, agregation_function, copy$default$7, copy$default$10, filterTweetsWithEmojis, $init$, prepareModel, runModel, boostingRDD, copy$default$3, copy, evaluateModel, ModelClassifier, toString, SetPartition, depth, !=, classification, train, GradientBoostingClassifier, getClass, copy$default$1, trainModel, type_classifier, copy$default$6, ne, listNegativeEmojis, getNumberOfValidation, nClassWords, eq, productIterator, validation, listPositiveEmojis, ##, finalize, productElement, hashCode.[0m
+[0m[[0mdebug[0m] [0mAll member reference dependencies will be considered within this context.[0m
+[0m[[0mdebug[0m] [0mThe following modified names cause invalidation of /Users/mikelwyred/tfm/ITA-Services/classifier/src/main/scala/models/ModelConverter.scala: Set(name, agregation_function_name, _id, asInstanceOf, num_iterations, NLPStanfordClassifier, ApiClassifier, setPartition, <init>, ==, strategy_boosting, client, ModelClassifier, toString, depth, GradientBoostingClassifier, getClass, type_classifier, listNegativeEmojis, nClassWords, listPositiveEmojis)[0m
+[0m[[0mdebug[0m] [0mThe following modified names cause invalidation of /Users/mikelwyred/tfm/ITA-Services/classifier/src/main/scala/results/ModelExecution.scala: Set(logger, _id, dataSet, asInstanceOf, NLPStanfordClassifier, config, ApiClassifier, isInstanceOf, setRDD, <init>, ==, prepareModel, runModel, evaluateModel, ModelClassifier, toString, GradientBoostingClassifier, trainModel, type_classifier, eq)[0m
+[0m[[0mdebug[0m] [0mThe following modified names cause invalidation of /Users/mikelwyred/tfm/ITA-Services/classifier/src/main/scala/models/ModelData.scala: Set(name, _id, asInstanceOf, PartitionConf, isInstanceOf, <init>, ==, toString, type_classifier, listNegativeEmojis, eq, listPositiveEmojis)[0m
+[0m[[0mdebug[0m] [0mThe following modified names cause invalidation of /Users/mikelwyred/tfm/ITA-Services/classifier/src/main/scala/classifier/Model.scala: Set(asInstanceOf, PartitionConf, isInstanceOf, <init>, ==, client, toString)[0m
+[0m[[0mdebug[0m] [0mInvalidating /Users/mikelwyred/tfm/ITA-Services/classifier/src/main/scala/models/ModelData.scala...[0m
+[0m[[0mdebug[0m] [0mInvalidating (transitively) by inheritance from /Users/mikelwyred/tfm/ITA-Services/classifier/src/main/scala/models/ModelData.scala...[0m
+[0m[[0mdebug[0m] [0mInitial set of included nodes: Set(/Users/mikelwyred/tfm/ITA-Services/classifier/src/main/scala/models/ModelData.scala)[0m
+[0m[[0mdebug[0m] [0mInvalidated by transitive inheritance dependency: Set(/Users/mikelwyred/tfm/ITA-Services/classifier/src/main/scala/models/ModelData.scala)[0m
+[0m[[0mdebug[0m] [0mThe /Users/mikelwyred/tfm/ITA-Services/classifier/src/main/scala/models/ModelData.scala source file has the following regular definitions changed:[0m
+[0m[[0mdebug[0m] [0m	notify, name, wait, copy$default$2, $asInstanceOf, ModelData, copy$default$5, productArity, equals, _id, asInstanceOf, synchronized, $isInstanceOf, canEqual, copy$default$4, productPrefix, notifyAll, isInstanceOf, <init>, ==, clone, copy$default$7, partitionConf, copy$default$3, copy, toString, !=, getClass, copy$default$1, type_classifier, copy$default$6, ne, listNegativeEmojis, parameters, eq, productIterator, listPositiveEmojis, ##, finalize, productElement, hashCode.[0m
+[0m[[0mdebug[0m] [0mAll member reference dependencies will be considered within this context.[0m
+[0m[[0mdebug[0m] [0mThe following modified names cause invalidation of /Users/mikelwyred/tfm/ITA-Services/classifier/src/main/scala/controllers/ClassifiercController.scala: Set(ModelData, _id, asInstanceOf, <init>, ne)[0m
+[0m[[0mdebug[0m] [0mThe following modified names cause invalidation of /Users/mikelwyred/tfm/ITA-Services/classifier/src/main/scala/models/ModelConverter.scala: Set(name, ModelData, _id, asInstanceOf, <init>, ==, partitionConf, toString, getClass, type_classifier, listNegativeEmojis, parameters, listPositiveEmojis)[0m
+[0m[[0mdebug[0m] [0mThe following modified names cause invalidation of /Users/mikelwyred/tfm/ITA-Services/classifier/src/main/scala/routes/ApiActor.scala: Set(ModelData, asInstanceOf, isInstanceOf, <init>)[0m
+[0m[[0mdebug[0m] [0mThe following modified names cause invalidation of /Users/mikelwyred/tfm/ITA-Services/classifier/src/main/scala/mongo/ModelDAO.scala: Set(ModelData, _id, asInstanceOf, isInstanceOf, <init>, ==, toString, eq)[0m
+[0m[[0mdebug[0m] [0mThe following modified names cause invalidation of /Users/mikelwyred/tfm/ITA-Services/classifier/src/main/scala/results/ModelExecution.scala: Set(_id, asInstanceOf, isInstanceOf, <init>, ==, toString, type_classifier, eq)[0m
+[0m[[0mdebug[0m] [0mThe following modified names cause invalidation of /Users/mikelwyred/tfm/ITA-Services/classifier/src/main/scala/classifier/Model.scala: Set(ModelData, asInstanceOf, isInstanceOf, <init>, ==, toString)[0m
+[0m[[0mdebug[0m] [0mInvalidating /Users/mikelwyred/tfm/ITA-Services/classifier/src/main/scala/client/ApiClient.scala...[0m
+[0m[[0mdebug[0m] [0mInvalidating (transitively) by inheritance from /Users/mikelwyred/tfm/ITA-Services/classifier/src/main/scala/client/ApiClient.scala...[0m
+[0m[[0mdebug[0m] [0mInitial set of included nodes: Set(/Users/mikelwyred/tfm/ITA-Services/classifier/src/main/scala/client/ApiClient.scala)[0m
+[0m[[0mdebug[0m] [0mIncluding /Users/mikelwyred/tfm/ITA-Services/classifier/src/main/scala/client/TextProccesingApiClient.scala by /Users/mikelwyred/tfm/ITA-Services/classifier/src/main/scala/client/ApiClient.scala[0m
+[0m[[0mdebug[0m] [0mInvalidated by transitive inheritance dependency: Set(/Users/mikelwyred/tfm/ITA-Services/classifier/src/main/scala/client/TextProccesingApiClient.scala, /Users/mikelwyred/tfm/ITA-Services/classifier/src/main/scala/client/ApiClient.scala)[0m
+[0m[[0mdebug[0m] [0mThe /Users/mikelwyred/tfm/ITA-Services/classifier/src/main/scala/client/ApiClient.scala source file has the following regular definitions changed:[0m
+[0m[[0mdebug[0m] [0m	ClientResponse, notify, unapply, ClientPayLoad, wait, copy$default$2, $asInstanceOf, compose, productArity, equals, asInstanceOf, pos, synchronized, label, $isInstanceOf, andThen, returnScore, text, canEqual, productPrefix, notifyAll, readResolve, base_url, neg, isInstanceOf, AnalizeText, <init>, ApiClient, apply, ==, clone, $init$, Probs, copy$default$3, copy, toString, !=, getClass, copy$default$1, neutral, ne, eq, productIterator, ##, finalize, productElement, hashCode, probability.[0m
+[0m[[0mdebug[0m] [0mAll member reference dependencies will be considered within this context.[0m
+[0m[[0mdebug[0m] [0mThe following modified names cause invalidation of /Users/mikelwyred/tfm/ITA-Services/classifier/src/main/scala/models/ModelConverter.scala: Set(asInstanceOf, <init>, apply, ==, toString, getClass)[0m
+[0m[[0mdebug[0m] [0mThe following modified names cause invalidation of /Users/mikelwyred/tfm/ITA-Services/classifier/src/main/scala/models/ModelClassifier.scala: Set(asInstanceOf, label, returnScore, isInstanceOf, AnalizeText, <init>, ApiClient, apply, ==, toString, !=, eq)[0m
+[0m[[0mdebug[0m] [0mThe following modified names cause invalidation of /Users/mikelwyred/tfm/ITA-Services/classifier/src/main/scala/client/TextProccesingApiClient.scala: Set(ClientResponse, asInstanceOf, base_url, isInstanceOf, <init>, ApiClient, apply, ==, toString, eq)[0m
+[0m[[0mdebug[0m] [0mThe following modified names cause invalidation of /Users/mikelwyred/tfm/ITA-Services/classifier/src/main/scala/classifier/Model.scala: Set(ClientResponse, asInstanceOf, isInstanceOf, <init>, ==, Probs, toString)[0m
+[0m[[0mdebug[0m] [0mInvalidating /Users/mikelwyred/tfm/ITA-Services/classifier/src/main/scala/mongo/ModelExecutionDAO.scala...[0m
+[0m[[0mdebug[0m] [0mInvalidating (transitively) by inheritance from /Users/mikelwyred/tfm/ITA-Services/classifier/src/main/scala/mongo/ModelExecutionDAO.scala...[0m
+[0m[[0mdebug[0m] [0mInitial set of included nodes: Set(/Users/mikelwyred/tfm/ITA-Services/classifier/src/main/scala/mongo/ModelExecutionDAO.scala)[0m
+[0m[[0mdebug[0m] [0mInvalidated by transitive inheritance dependency: Set(/Users/mikelwyred/tfm/ITA-Services/classifier/src/main/scala/mongo/ModelExecutionDAO.scala)[0m
+[0m[[0mdebug[0m] [0mThe /Users/mikelwyred/tfm/ITA-Services/classifier/src/main/scala/mongo/ModelExecutionDAO.scala source file has the following implicit definitions changed:[0m
+[0m[[0mdebug[0m] [0m	toMongoDBObject.[0m
+[0m[[0mdebug[0m] [0mAll member reference dependencies will be considered within this context.[0m
+[0m[[0mdebug[0m] [0mThe following member ref dependencies of /Users/mikelwyred/tfm/ITA-Services/classifier/src/main/scala/mongo/ModelExecutionDAO.scala are invalidated:[0m
+[0m[[0mdebug[0m] [0m	/Users/mikelwyred/tfm/ITA-Services/classifier/src/main/scala/controllers/ClassifiercController.scala[0m
+[0m[[0mdebug[0m] [0m	/Users/mikelwyred/tfm/ITA-Services/classifier/src/main/scala/utils/ClassifierDataContext.scala[0m
+[0m[[0mdebug[0m] [0mInvalidating /Users/mikelwyred/tfm/ITA-Services/classifier/src/main/scala/client/TextProccesingApiClient.scala...[0m
+[0m[[0mdebug[0m] [0mInvalidating (transitively) by inheritance from /Users/mikelwyred/tfm/ITA-Services/classifier/src/main/scala/client/TextProccesingApiClient.scala...[0m
+[0m[[0mdebug[0m] [0mInitial set of included nodes: Set(/Users/mikelwyred/tfm/ITA-Services/classifier/src/main/scala/client/TextProccesingApiClient.scala)[0m
+[0m[[0mdebug[0m] [0mInvalidated by transitive inheritance dependency: Set(/Users/mikelwyred/tfm/ITA-Services/classifier/src/main/scala/client/TextProccesingApiClient.scala)[0m
+[0m[[0mdebug[0m] [0mThe /Users/mikelwyred/tfm/ITA-Services/classifier/src/main/scala/client/TextProccesingApiClient.scala source file has the following regular definitions changed:[0m
+[0m[[0mdebug[0m] [0m	notify, unapply, ClientPayLoad, wait, copy$default$2, $asInstanceOf, compose, productArity, equals, asInstanceOf, serviceName, synchronized, $isInstanceOf, andThen, text, canEqual, productPrefix, notifyAll, readResolve, base_url, isInstanceOf, AnalizeText, <init>, apply, ==, clone, TextProccesingApiClient, copy, toString, !=, getClass, copy$default$1, ne, eq, productIterator, ##, finalize, productElement, hashCode.[0m
+[0m[[0mdebug[0m] [0mAll member reference dependencies will be considered within this context.[0m
+[0m[[0mdebug[0m] [0mThe following modified names cause invalidation of /Users/mikelwyred/tfm/ITA-Services/classifier/src/main/scala/models/ModelConverter.scala: Set(asInstanceOf, <init>, apply, ==, TextProccesingApiClient, toString, getClass)[0m
+[0m[[0mdebug[0m] [0mInvalidating /Users/mikelwyred/tfm/ITA-Services/classifier/src/main/scala/utils/ClassifierDataContext.scala...[0m
+[0m[[0mdebug[0m] [0mInvalidating (transitively) by inheritance from /Users/mikelwyred/tfm/ITA-Services/classifier/src/main/scala/utils/ClassifierDataContext.scala...[0m
+[0m[[0mdebug[0m] [0mInitial set of included nodes: Set(/Users/mikelwyred/tfm/ITA-Services/classifier/src/main/scala/utils/ClassifierDataContext.scala)[0m
+[0m[[0mdebug[0m] [0mInvalidated by transitive inheritance dependency: Set(/Users/mikelwyred/tfm/ITA-Services/classifier/src/main/scala/utils/ClassifierDataContext.scala)[0m
+[0m[[0mdebug[0m] [0mThe /Users/mikelwyred/tfm/ITA-Services/classifier/src/main/scala/utils/ClassifierDataContext.scala source file has the following regular definitions changed:[0m
+[0m[[0mdebug[0m] [0m	notify, unapply, executionDAO, wait, copy$default$2, $asInstanceOf, copy$default$5, chargeFromConfig, productArity, equals, ClassifierDataContext, asInstanceOf, modelDAO, pickupDAO, synchronized, $isInstanceOf, canEqual, config, copy$default$4, productPrefix, notifyAll, readResolve, isInstanceOf, <init>, tweetsDAO, apply, ==, clone, copy$default$3, copy, toString, tweetResultDAO, !=, getClass, copy$default$1, ne, eq, productIterator, ##, finalize, productElement, hashCode.[0m
+[0m[[0mdebug[0m] [0mAll member reference dependencies will be considered within this context.[0m
+[0m[[0mdebug[0m] [0mThe following modified names cause invalidation of /Users/mikelwyred/tfm/ITA-Services/classifier/src/main/scala/controllers/ClassifiercController.scala: Set(executionDAO, ClassifierDataContext, asInstanceOf, modelDAO, <init>, apply, ne)[0m
+[0m[[0mdebug[0m] [0mThe following modified names cause invalidation of /Users/mikelwyred/tfm/ITA-Services/classifier/src/main/scala/results/ModelExecution.scala: Set(ClassifierDataContext, asInstanceOf, modelDAO, config, isInstanceOf, <init>, apply, ==, toString, tweetResultDAO, eq)[0m
+[0m[[0mdebug[0m] [0mInvalidating /Users/mikelwyred/tfm/ITA-Services/classifier/src/main/scala/results/ModelResult.scala...[0m
+[0m[[0mdebug[0m] [0mInvalidating (transitively) by inheritance from /Users/mikelwyred/tfm/ITA-Services/classifier/src/main/scala/results/ModelResult.scala...[0m
+[0m[[0mdebug[0m] [0mInitial set of included nodes: Set(/Users/mikelwyred/tfm/ITA-Services/classifier/src/main/scala/results/ModelResult.scala)[0m
+[0m[[0mdebug[0m] [0mInvalidated by transitive inheritance dependency: Set(/Users/mikelwyred/tfm/ITA-Services/classifier/src/main/scala/results/ModelResult.scala)[0m
+[0m[[0mdebug[0m] [0mThe /Users/mikelwyred/tfm/ITA-Services/classifier/src/main/scala/results/ModelResult.scala source file has the following regular definitions changed:[0m
+[0m[[0mdebug[0m] [0m	notify, val_positive_bad_classified, wait, copy$default$2, $asInstanceOf, trainnegative_good_classified, copy$default$5, productArity, equals, copy$default$9, _id, asInstanceOf, synchronized, $isInstanceOf, copy$default$8, trainnegative_bad_classified, canEqual, val_positive_good_classified, copy$default$4, productPrefix, notifyAll, isInstanceOf, train_positive_good_classified, <init>, model_id, trainpositive_bad_classified, ModelResult, ==, val_negative_good_classified, clone, copy$default$7, copy$default$10, val_negative_bad_classified, copy$default$3, copy, toString, !=, getClass, copy$default$1, copy$default$6, ne, eq, productIterator, ##, finalize, productElement, hashCode.[0m
+[0m[[0mdebug[0m] [0mAll member reference dependencies will be considered within this context.[0m
+[0m[[0mdebug[0m] [0mThe following modified names cause invalidation of /Users/mikelwyred/tfm/ITA-Services/classifier/src/main/scala/models/ModelClassifier.scala: Set(_id, asInstanceOf, isInstanceOf, <init>, ModelResult, ==, toString, !=, eq)[0m
+[0m[[0mdebug[0m] [0mThe following modified names cause invalidation of /Users/mikelwyred/tfm/ITA-Services/classifier/src/main/scala/controllers/ClassifiercController.scala: Set(_id, asInstanceOf, <init>, ne)[0m
+[0m[[0mdebug[0m] [0mThe following modified names cause invalidation of /Users/mikelwyred/tfm/ITA-Services/classifier/src/main/scala/results/ModelExecution.scala: Set(_id, asInstanceOf, isInstanceOf, <init>, ModelResult, ==, toString, eq)[0m
+[0m[[0mdebug[0m] [0mThe following modified names cause invalidation of /Users/mikelwyred/tfm/ITA-Services/classifier/src/main/scala/classifier/Model.scala: Set(asInstanceOf, isInstanceOf, <init>, ModelResult, ==, toString)[0m
+[0m[[0mdebug[0m] [0mInvalidating /Users/mikelwyred/tfm/ITA-Services/classifier/src/main/scala/results/TweetResult.scala...[0m
+[0m[[0mdebug[0m] [0mInvalidating (transitively) by inheritance from /Users/mikelwyred/tfm/ITA-Services/classifier/src/main/scala/results/TweetResult.scala...[0m
+[0m[[0mdebug[0m] [0mInitial set of included nodes: Set(/Users/mikelwyred/tfm/ITA-Services/classifier/src/main/scala/results/TweetResult.scala)[0m
+[0m[[0mdebug[0m] [0mInvalidated by transitive inheritance dependency: Set(/Users/mikelwyred/tfm/ITA-Services/classifier/src/main/scala/results/TweetResult.scala)[0m
+[0m[[0mdebug[0m] [0mThe /Users/mikelwyred/tfm/ITA-Services/classifier/src/main/scala/results/TweetResult.scala source file has the following regular definitions changed:[0m
+[0m[[0mdebug[0m] [0m	notify, wait, copy$default$2, $asInstanceOf, copy$default$5, productArity, equals, _id, typeModel, asInstanceOf, result, synchronized, idTweet, $isInstanceOf, canEqual, copy$default$4, productPrefix, notifyAll, isInstanceOf, <init>, ==, clone, TweetResult, copy$default$3, copy, toString, !=, getClass, copy$default$1, ne, idExecution, eq, productIterator, ##, finalize, productElement, hashCode.[0m
+[0m[[0mdebug[0m] [0mAll member reference dependencies will be considered within this context.[0m
+[0m[[0mdebug[0m] [0mThe following modified names cause invalidation of /Users/mikelwyred/tfm/ITA-Services/classifier/src/main/scala/models/ModelClassifier.scala: Set(_id, asInstanceOf, result, isInstanceOf, <init>, ==, TweetResult, toString, !=, idExecution, eq)[0m
+[0m[[0mdebug[0m] [0mThe following modified names cause invalidation of /Users/mikelwyred/tfm/ITA-Services/classifier/src/main/scala/mongo/TweetResultDAO.scala: Set(_id, asInstanceOf, isInstanceOf, <init>, ==, TweetResult, toString, eq)[0m
+[0m[[0mdebug[0m] [0mThe following modified names cause invalidation of /Users/mikelwyred/tfm/ITA-Services/classifier/src/main/scala/results/ModelExecution.scala: Set(_id, asInstanceOf, result, isInstanceOf, <init>, ==, TweetResult, toString, eq)[0m
+[0m[[0mdebug[0m] [0mThe following modified names cause invalidation of /Users/mikelwyred/tfm/ITA-Services/classifier/src/main/scala/classifier/Model.scala: Set(asInstanceOf, isInstanceOf, <init>, ==, TweetResult, toString)[0m
+[0m[[0mdebug[0m] [0mInvalidating /Users/mikelwyred/tfm/ITA-Services/classifier/src/main/scala/mongo/ModelDAO.scala...[0m
+[0m[[0mdebug[0m] [0mInvalidating (transitively) by inheritance from /Users/mikelwyred/tfm/ITA-Services/classifier/src/main/scala/mongo/ModelDAO.scala...[0m
+[0m[[0mdebug[0m] [0mInitial set of included nodes: Set(/Users/mikelwyred/tfm/ITA-Services/classifier/src/main/scala/mongo/ModelDAO.scala)[0m
+[0m[[0mdebug[0m] [0mInvalidated by transitive inheritance dependency: Set(/Users/mikelwyred/tfm/ITA-Services/classifier/src/main/scala/mongo/ModelDAO.scala)[0m
+[0m[[0mdebug[0m] [0mThe /Users/mikelwyred/tfm/ITA-Services/classifier/src/main/scala/mongo/ModelDAO.scala source file has the following implicit definitions changed:[0m
+[0m[[0mdebug[0m] [0m	toMongoDBObject.[0m
+[0m[[0mdebug[0m] [0mAll member reference dependencies will be considered within this context.[0m
+[0m[[0mdebug[0m] [0mThe following member ref dependencies of /Users/mikelwyred/tfm/ITA-Services/classifier/src/main/scala/mongo/ModelDAO.scala are invalidated:[0m
+[0m[[0mdebug[0m] [0m	/Users/mikelwyred/tfm/ITA-Services/classifier/src/main/scala/controllers/ClassifiercController.scala[0m
+[0m[[0mdebug[0m] [0m	/Users/mikelwyred/tfm/ITA-Services/classifier/src/main/scala/results/ModelExecution.scala[0m
+[0m[[0mdebug[0m] [0m	/Users/mikelwyred/tfm/ITA-Services/classifier/src/main/scala/utils/ClassifierDataContext.scala[0m
+[0m[[0mdebug[0m] [0mInvalidating /Users/mikelwyred/tfm/ITA-Services/classifier/src/main/scala/controllers/ClassifiercController.scala...[0m
+[0m[[0mdebug[0m] [0mInvalidating (transitively) by inheritance from /Users/mikelwyred/tfm/ITA-Services/classifier/src/main/scala/controllers/ClassifiercController.scala...[0m
+[0m[[0mdebug[0m] [0mInitial set of included nodes: Set(/Users/mikelwyred/tfm/ITA-Services/classifier/src/main/scala/controllers/ClassifiercController.scala)[0m
+[0m[[0mdebug[0m] [0mInvalidated by transitive inheritance dependency: Set(/Users/mikelwyred/tfm/ITA-Services/classifier/src/main/scala/controllers/ClassifiercController.scala)[0m
+[0m[[0mdebug[0m] [0mThe /Users/mikelwyred/tfm/ITA-Services/classifier/src/main/scala/controllers/ClassifiercController.scala source file has the following implicit definitions changed:[0m
+[0m[[0mdebug[0m] [0m	toMongoDBObject, sparkContext, dataContext.[0m
+[0m[[0mdebug[0m] [0mAll member reference dependencies will be considered within this context.[0m
+[0m[[0mdebug[0m] [0mThe following member ref dependencies of /Users/mikelwyred/tfm/ITA-Services/classifier/src/main/scala/controllers/ClassifiercController.scala are invalidated:[0m
+[0m[[0mdebug[0m] [0m	/Users/mikelwyred/tfm/ITA-Services/classifier/src/main/scala/routes/ApiActor.scala[0m
+[0m[[0mdebug[0m] [0mInvalidating /Users/mikelwyred/tfm/ITA-Services/classifier/src/main/scala/utils/ModelToViewConverter.scala...[0m
+[0m[[0mdebug[0m] [0mInvalidating (transitively) by inheritance from /Users/mikelwyred/tfm/ITA-Services/classifier/src/main/scala/utils/ModelToViewConverter.scala...[0m
+[0m[[0mdebug[0m] [0mInitial set of included nodes: Set(/Users/mikelwyred/tfm/ITA-Services/classifier/src/main/scala/utils/ModelToViewConverter.scala)[0m
+[0m[[0mdebug[0m] [0mIncluding /Users/mikelwyred/tfm/ITA-Services/classifier/src/main/scala/models/ModelConverter.scala by /Users/mikelwyred/tfm/ITA-Services/classifier/src/main/scala/utils/ModelToViewConverter.scala[0m
+[0m[[0mdebug[0m] [0mInvalidated by transitive inheritance dependency: Set(/Users/mikelwyred/tfm/ITA-Services/classifier/src/main/scala/models/ModelConverter.scala, /Users/mikelwyred/tfm/ITA-Services/classifier/src/main/scala/utils/ModelToViewConverter.scala)[0m
+[0m[[0mdebug[0m] [0mThe /Users/mikelwyred/tfm/ITA-Services/classifier/src/main/scala/utils/ModelToViewConverter.scala source file has the following implicit definitions changed:[0m
+[0m[[0mdebug[0m] [0m	ViewModelHelper.[0m
+[0m[[0mdebug[0m] [0mAll member reference dependencies will be considered within this context.[0m
+[0m[[0mdebug[0m] [0mThe following member ref dependencies of /Users/mikelwyred/tfm/ITA-Services/classifier/src/main/scala/models/ModelConverter.scala are invalidated:[0m
+[0m[[0mdebug[0m] [0m	/Users/mikelwyred/tfm/ITA-Services/classifier/src/main/scala/models/ModelClassifier.scala[0m
+[0m[[0mdebug[0m] [0m	/Users/mikelwyred/tfm/ITA-Services/classifier/src/main/scala/results/ModelExecution.scala[0m
+[0m[[0mdebug[0m] [0mThe following member ref dependencies of /Users/mikelwyred/tfm/ITA-Services/classifier/src/main/scala/utils/ModelToViewConverter.scala are invalidated:[0m
+[0m[[0mdebug[0m] [0m	/Users/mikelwyred/tfm/ITA-Services/classifier/src/main/scala/models/ModelConverter.scala[0m
+[0m[[0mdebug[0m] [0m	/Users/mikelwyred/tfm/ITA-Services/classifier/src/main/scala/results/ModelExecution.scala[0m
+[0m[[0mdebug[0m] [0mInvalidating /Users/mikelwyred/tfm/ITA-Services/classifier/src/main/scala/models/ModelType.scala...[0m
+[0m[[0mdebug[0m] [0mInvalidating (transitively) by inheritance from /Users/mikelwyred/tfm/ITA-Services/classifier/src/main/scala/models/ModelType.scala...[0m
+[0m[[0mdebug[0m] [0mInitial set of included nodes: Set(/Users/mikelwyred/tfm/ITA-Services/classifier/src/main/scala/models/ModelType.scala)[0m
+[0m[[0mdebug[0m] [0mInvalidated by transitive inheritance dependency: Set(/Users/mikelwyred/tfm/ITA-Services/classifier/src/main/scala/models/ModelType.scala)[0m
+[0m[[0mdebug[0m] [0mThe /Users/mikelwyred/tfm/ITA-Services/classifier/src/main/scala/models/ModelType.scala source file has the following regular definitions changed:[0m
+[0m[[0mdebug[0m] [0m	notify, NLP, wait, $asInstanceOf, productArity, equals, asInstanceOf, synchronized, BOOSTING, $isInstanceOf, canEqual, productPrefix, notifyAll, readResolve, isInstanceOf, <init>, ==, clone, ModelType, toString, !=, API, getClass, ne, eq, productIterator, ##, finalize, productElement, hashCode.[0m
+[0m[[0mdebug[0m] [0mAll member reference dependencies will be considered within this context.[0m
+[0m[[0mdebug[0m] [0mThe following modified names cause invalidation of /Users/mikelwyred/tfm/ITA-Services/classifier/src/main/scala/models/ModelClassifier.scala: Set(NLP, asInstanceOf, BOOSTING, isInstanceOf, <init>, ==, ModelType, toString, !=, API, eq)[0m
+[0m[[0mdebug[0m] [0mThe following modified names cause invalidation of /Users/mikelwyred/tfm/ITA-Services/classifier/src/main/scala/models/ModelConverter.scala: Set(NLP, asInstanceOf, BOOSTING, <init>, ==, toString, API, getClass)[0m
+[0m[[0mdebug[0m] [0mThe following modified names cause invalidation of /Users/mikelwyred/tfm/ITA-Services/classifier/src/main/scala/results/ModelExecution.scala: Set(NLP, asInstanceOf, BOOSTING, isInstanceOf, <init>, ==, toString, API, eq)[0m
+[0m[[0mdebug[0m] [0mThe following modified names cause invalidation of /Users/mikelwyred/tfm/ITA-Services/classifier/src/main/scala/classifier/Model.scala: Set(NLP, asInstanceOf, BOOSTING, isInstanceOf, <init>, ==, ModelType, toString, API)[0m
+[0m[[0mdebug[0m] [0mThe following modified names cause invalidation of /Users/mikelwyred/tfm/ITA-Services/classifier/src/main/scala/models/ModelData.scala: Set(asInstanceOf, isInstanceOf, <init>, ==, ModelType, toString, eq)[0m
+[0m[[0mdebug[0m] [0mInvalidating /Users/mikelwyred/tfm/ITA-Services/classifier/src/main/scala/models/ModelConverter.scala...[0m
+[0m[[0mdebug[0m] [0mInvalidating (transitively) by inheritance from /Users/mikelwyred/tfm/ITA-Services/classifier/src/main/scala/models/ModelConverter.scala...[0m
+[0m[[0mdebug[0m] [0mInitial set of included nodes: Set(/Users/mikelwyred/tfm/ITA-Services/classifier/src/main/scala/models/ModelConverter.scala)[0m
+[0m[[0mdebug[0m] [0mInvalidated by transitive inheritance dependency: Set(/Users/mikelwyred/tfm/ITA-Services/classifier/src/main/scala/models/ModelConverter.scala)[0m
+[0m[[0mdebug[0m] [0mThe /Users/mikelwyred/tfm/ITA-Services/classifier/src/main/scala/models/ModelConverter.scala source file has the following implicit definitions changed:[0m
+[0m[[0mdebug[0m] [0m	ViewModelHelper, modelConverter.[0m
+[0m[[0mdebug[0m] [0mAll member reference dependencies will be considered within this context.[0m
+[0m[[0mdebug[0m] [0mThe following member ref dependencies of /Users/mikelwyred/tfm/ITA-Services/classifier/src/main/scala/models/ModelConverter.scala are invalidated:[0m
+[0m[[0mdebug[0m] [0m	/Users/mikelwyred/tfm/ITA-Services/classifier/src/main/scala/models/ModelClassifier.scala[0m
+[0m[[0mdebug[0m] [0m	/Users/mikelwyred/tfm/ITA-Services/classifier/src/main/scala/results/ModelExecution.scala[0m
+[0m[[0mdebug[0m] [0mInvalidating /Users/mikelwyred/tfm/ITA-Services/classifier/src/main/scala/classifier/Model.scala...[0m
+[0m[[0mdebug[0m] [0mInvalidating (transitively) by inheritance from /Users/mikelwyred/tfm/ITA-Services/classifier/src/main/scala/classifier/Model.scala...[0m
+[0m[[0mdebug[0m] [0mInitial set of included nodes: Set(/Users/mikelwyred/tfm/ITA-Services/classifier/src/main/scala/classifier/Model.scala)[0m
+[0m[[0mdebug[0m] [0mInvalidated by transitive inheritance dependency: Set(/Users/mikelwyred/tfm/ITA-Services/classifier/src/main/scala/classifier/Model.scala)[0m
+[0m[[0mdebug[0m] [0mThe /Users/mikelwyred/tfm/ITA-Services/classifier/src/main/scala/classifier/Model.scala source file has the following implicit definitions changed:[0m
+[0m[[0mdebug[0m] [0m	tweetResultJF, executionJF, modelTypeJF, modelResultJF, probsJF, responseJF, modelJF, partitionConfJF.[0m
+[0m[[0mdebug[0m] [0mAll member reference dependencies will be considered within this context.[0m
+[0m[[0mdebug[0m] [0mThe following member ref dependencies of /Users/mikelwyred/tfm/ITA-Services/classifier/src/main/scala/classifier/Model.scala are invalidated:[0m
+[0m[[0mdebug[0m] [0m	/Users/mikelwyred/tfm/ITA-Services/classifier/src/main/scala/client/TextProccesingApiClient.scala[0m
+[0m[[0mdebug[0m] [0m	/Users/mikelwyred/tfm/ITA-Services/classifier/src/main/scala/mongo/ModelDAO.scala[0m
+[0m[[0mdebug[0m] [0m	/Users/mikelwyred/tfm/ITA-Services/classifier/src/main/scala/mongo/ModelExecutionDAO.scala[0m
+[0m[[0mdebug[0m] [0m	/Users/mikelwyred/tfm/ITA-Services/classifier/src/main/scala/mongo/TweetResultDAO.scala[0m
+[0m[[0mdebug[0m] [0m	/Users/mikelwyred/tfm/ITA-Services/classifier/src/main/scala/routes/ApiActor.scala[0m
+[0m[[0mdebug[0m] [0mInvalidating /Users/mikelwyred/tfm/ITA-Services/classifier/src/main/scala/routes/ApiHelper.scala...[0m
+[0m[[0mdebug[0m] [0mInvalidating (transitively) by inheritance from /Users/mikelwyred/tfm/ITA-Services/classifier/src/main/scala/routes/ApiHelper.scala...[0m
+[0m[[0mdebug[0m] [0mInitial set of included nodes: Set(/Users/mikelwyred/tfm/ITA-Services/classifier/src/main/scala/routes/ApiHelper.scala)[0m
+[0m[[0mdebug[0m] [0mInvalidated by transitive inheritance dependency: Set(/Users/mikelwyred/tfm/ITA-Services/classifier/src/main/scala/routes/ApiHelper.scala)[0m
+[0m[[0mdebug[0m] [0mThe /Users/mikelwyred/tfm/ITA-Services/classifier/src/main/scala/routes/ApiHelper.scala source file has the following implicit definitions changed:[0m
+[0m[[0mdebug[0m] [0m	JFCreatePickUpPayloadRequest, JFUpdatePickUpPayloadRequest.[0m
+[0m[[0mdebug[0m] [0mAll member reference dependencies will be considered within this context.[0m
+[0m[[0mdebug[0m] [0mInvalidating /Users/mikelwyred/tfm/ITA-Services/classifier/src/main/scala/mongo/TweetResultDAO.scala...[0m
+[0m[[0mdebug[0m] [0mInvalidating (transitively) by inheritance from /Users/mikelwyred/tfm/ITA-Services/classifier/src/main/scala/mongo/TweetResultDAO.scala...[0m
+[0m[[0mdebug[0m] [0mInitial set of included nodes: Set(/Users/mikelwyred/tfm/ITA-Services/classifier/src/main/scala/mongo/TweetResultDAO.scala)[0m
+[0m[[0mdebug[0m] [0mInvalidated by transitive inheritance dependency: Set(/Users/mikelwyred/tfm/ITA-Services/classifier/src/main/scala/mongo/TweetResultDAO.scala)[0m
+[0m[[0mdebug[0m] [0mThe /Users/mikelwyred/tfm/ITA-Services/classifier/src/main/scala/mongo/TweetResultDAO.scala source file has the following implicit definitions changed:[0m
+[0m[[0mdebug[0m] [0m	toMongoDBObject.[0m
+[0m[[0mdebug[0m] [0mAll member reference dependencies will be considered within this context.[0m
+[0m[[0mdebug[0m] [0mThe following member ref dependencies of /Users/mikelwyred/tfm/ITA-Services/classifier/src/main/scala/mongo/TweetResultDAO.scala are invalidated:[0m
+[0m[[0mdebug[0m] [0m	/Users/mikelwyred/tfm/ITA-Services/classifier/src/main/scala/results/ModelExecution.scala[0m
+[0m[[0mdebug[0m] [0m	/Users/mikelwyred/tfm/ITA-Services/classifier/src/main/scala/utils/ClassifierDataContext.scala[0m
+[0m[[0mdebug[0m] [0mNew invalidations:[0m
+[0m[[0mdebug[0m] [0m	Set()[0m
+[0m[[0mdebug[0m] [0mInitial set of included nodes: Set()[0m
+[0m[[0mdebug[0m] [0mPreviously invalidated, but (transitively) depend on new invalidations:[0m
+[0m[[0mdebug[0m] [0m	Set()[0m
+[0m[[0mdebug[0m] [0mAll newly invalidated sources after taking into account (previously) recompiled sources:Set()[0m
