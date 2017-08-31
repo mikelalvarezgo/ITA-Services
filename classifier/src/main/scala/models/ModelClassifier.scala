@@ -20,8 +20,10 @@ import org.apache.spark.SparkConf
 import org.apache.spark.SparkContext
 import com.vdurmont.emoji.EmojiParser
 import edu.stanford.nlp.pipeline.{Annotation, StanfordCoreNLP}
+import org.apache.spark.mllib.classification.{NaiveBayes, NaiveBayesModel}
 import org.apache.spark.mllib.tree.model.GradientBoostedTreesModel
 import utils.{Config, Logger}
+
 import scala.collection.JavaConverters._
 import scala.concurrent.Future
 import scala.reflect.internal.util.Statistics.Quantity
@@ -597,6 +599,188 @@ case class NLPStanfordClassifier(
   }
 
 }
+
+case class BayesClassifier(
+  _id: Id,
+  name: String,
+  num_iterations: Int,
+  listPositiveEmojis: List[String],
+  listNegativeEmojis: List[String],
+  nClassWords:Int,
+  setPartition: Option[PartitionConf],
+  override val type_classifier:ModelType = NLP)
+  extends ModelClassifier {
+  def filterTweetsWithEmojis:RDD[TweetInfo] = {
+    dataSet.get.filter(tweet => tweet.contain_emoji)
+  }
+
+  def boostingRDD(
+    taggedRDD:RDD[(Double,Seq[String], Id)]):RDD[(LabeledPoint, String, Id)] = {
+    val hashingTF = new HashingTF(nClassWords)
+
+    //Map the input strings to a tuple of labeled point + input text
+    taggedRDD.map(
+      t => (t._1, hashingTF.transform(t._2), t._2, t._3))
+      .map(x => (new LabeledPoint((x._1).toDouble, x._2), x._3.fold("")((a,b) => a +" " +b),x._4))
+  }
+  def trainModel(partition:SetPartition)(implicit sc:SparkContext):NaiveBayesModel = {
+    val trainSet = boostingRDD(tagRDD(partition.trainingSet))
+    val boostingStrategy = BoostingStrategy.defaultParams("Classification")
+
+    //Depth of each tree. Higher numbers mean more parameters, which can cause overfitting.
+    //Lower numbers create a simpler model, which can be more accurate.
+    //In practice you have to tweak this number to find the best value.
+
+    val naiveBayesModel: NaiveBayesModel = NaiveBayes.train(trainSet.map(_._1), lambda = 1.0, modelType = "multinomial")
+    naiveBayesModel
+  }
+  def prepareModel()(implicit sc:SparkContext): SetPartition = {
+    //We will only use tweets with emojis and bad emojis for train and validation sets
+    val emojiTweeta = filterTweetsWithEmojis
+    val nTweets = dataSet.get.count()
+    val nEmojisTweets = emojiTweeta.count()
+    if( emojiTweeta.count()/dataSet.get.count() < setPartition.get.getNotClassifySet) {
+      logger.warn("[GradientBoostingClassifier] Dataset does not contain enough tweets for Partition required")
+      val relativeTrain = nTweets/nEmojisTweets * setPartition.get.train
+      val relativeValidation = nTweets/nEmojisTweets * setPartition.get.validation
+      val Array(train,validation) = emojiTweeta.randomSplit(Array(relativeTrain, (1- relativeValidation)))
+      val classifySet = dataSet.get.subtract(emojiTweeta)
+      SetPartition(train,validation,classifySet)
+    }else {
+      val relativeTrain = nTweets/nEmojisTweets * setPartition.get.train
+      val relativeValidation = nTweets/nEmojisTweets * setPartition.get.validation
+
+      val Array(train,validation,rest) = emojiTweeta.randomSplit(Array(relativeTrain, relativeValidation, 1 -(relativeTrain + relativeValidation)))
+      val classifySet = dataSet.get.subtract(emojiTweeta).union(rest)
+      SetPartition(train,validation,classifySet)
+    }
+  }
+
+  def evaluateModel(
+    model:NaiveBayesModel,
+    partition:SetPartition)
+    (implicit sc:SparkContext):ModelResult = {
+    val trainSet = boostingRDD(tagRDD(partition.trainingSet))
+    val validationSet = boostingRDD(tagRDD(partition.validationSet))
+
+    var labelAndPredsTrain = trainSet.map { point =>
+      val prediction = model.predict(point._1.features)
+      Tuple2(point._1.label, prediction)
+    }
+    var labelAndPredsValid = validationSet.map { point =>
+      val prediction = model.predict(point._1.features)
+      Tuple2(point._1.label, prediction)
+    }
+
+    //Since Spark has done the heavy lifting already, lets pull the results back to the driver machine.
+    //Calling collect() will bring the results to a single machine (the driver) and will convert it to a Scala array.
+
+    //Start with the Training Set
+    val result = labelAndPredsTrain.collect()
+    var trainhappyTotal = 0
+    var trainunhappyTotal = 0
+    var trainhappyCorrect = 0
+    var trainunhappyCorrect = 0
+    result.foreach(
+      r => {
+        if (r._1 == 1) {
+          trainhappyTotal += 1
+        } else if (r._1 == 0) {
+          trainunhappyTotal += 1
+        }
+        if (r._1 == 1 && r._2 ==1) {
+          trainhappyCorrect += 1
+        } else if (r._1 == 0 && r._2 == 0) {
+          trainunhappyCorrect += 1
+        }
+      }
+    )
+    logger.info(s"[NaiveBayesModel-$name]unhappy messages in Training Set: " + trainunhappyTotal + " happy messages: " + trainhappyTotal)
+    logger.info(s"[NaiveBayesModel-$name]happy % correct: " + trainhappyCorrect.toDouble/trainhappyTotal)
+    logger.info(s"[NaiveBayesModel-$name]unhappy % correct: " + trainunhappyCorrect.toDouble/trainunhappyTotal)
+
+    val traintestErr = labelAndPredsTrain.filter(r => r._1 != r._2).count.toDouble / trainSet.count()
+    logger.info(s"[NaiveBayesModel-$name]Test Error Training Set: " + traintestErr)
+
+    //Compute error for validation Set
+    val resultsVal = labelAndPredsValid.collect()
+
+    var happyTotal = 0
+    var unhappyTotal = 0
+    var happyCorrect = 0
+    var unhappyCorrect = 0
+    resultsVal.foreach(
+      r => {
+        if (r._1 == 1) {
+          happyTotal += 1
+        } else if (r._1 == 0) {
+          unhappyTotal += 1
+        }
+        if (r._1 == 1 && r._2 ==1) {
+          happyCorrect += 1
+        } else if (r._1 == 0 && r._2 == 0) {
+          unhappyCorrect += 1
+        }
+      }
+    )
+    logger.info(s"[NaiveBayesModel-$name] unhappy messages in Validation Set: " + unhappyTotal + " happy messages: " + happyTotal)
+    logger.info(s"[NaiveBayesModel-$name]happy % correct: " + happyCorrect.toDouble/happyTotal)
+    logger.info(s"[NaiveBayesModel-$name]unhappy % correct: " + unhappyCorrect.toDouble/unhappyTotal)
+
+    val testErr = labelAndPredsValid.filter(r => r._1 != r._2).count.toDouble / validationSet.count()
+    println(s"[NaiveBayesModel-$name]Test Error Validation Set: " + testErr)
+    ModelResult(
+      Id.generate,
+      _id,
+      trainhappyCorrect,
+      trainhappyTotal-trainhappyCorrect,
+      trainunhappyCorrect,
+      trainunhappyTotal- trainunhappyCorrect,
+      happyCorrect,
+      happyTotal -happyCorrect,
+      unhappyCorrect,
+      unhappyTotal -unhappyCorrect)
+  }
+
+
+  def tagRDD(tweetRDD:RDD[TweetInfo]):RDD[(Double,Seq[String],Id)] = {
+
+    val records = tweetRDD.map(
+      tweet =>{
+        Try{
+          val msg =   EmojiParser.parseToAliases(tweet.tweetText.toString.toLowerCase())
+          var isPositive:Double =
+            if (listPositiveEmojis.exists(msg.contains(_))) {
+              1
+            }else if (listNegativeEmojis.exists(msg.contains(_))){
+              0
+            }else 0.5
+          var msgSanitized = EmojiParser.removeAllEmojis(msg)
+          //Return a tuple
+          (isPositive, msgSanitized.split(" ").toSeq,tweet._id.get)
+        }
+      })
+    records.filter(_.isFailure).map(_.get)
+  }
+  def runModel(idExecution:Id, model:NaiveBayesModel,partition:SetPartition)(implicit sc:SparkContext): RDD[TweetResult] = {
+
+    val dataBoost = boostingRDD(tagRDD(partition.classifySet))
+    val scoredSentiments = dataBoost.map{
+      tweet =>
+        val score = model.predict(tweet._1.features)
+
+        TweetResult(
+          Id.generate,
+          tweet._3,
+          idExecution,
+          this.type_classifier.toString,
+          score.toDouble)
+    }
+    scoredSentiments
+  }
+
+}
+
 
 
 

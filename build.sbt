@@ -36,4 +36,3 @@ lazy val classifier = project.
 lazy val root = (project in file(".")).
 
   aggregate(common, domain,gatherer, classifier)
-scalacOptions += "-Ydependent-method-types"

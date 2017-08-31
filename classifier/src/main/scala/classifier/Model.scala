@@ -22,6 +22,8 @@ object Model {
           case v if v == API.toString => API
           case v if v == BOOSTING.toString => BOOSTING
           case v if v == NLP.toString => NLP
+          case v if v == BAYES.toString => BAYES
+
         }
       }
 

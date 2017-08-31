@@ -67,6 +67,12 @@ case class ModelExecution(
 
   def evaluateModel(model:ModelClassifier)(implicit dataContext:ClassifierDataContext, sc:SparkContext):Future[ModelResult] = {
     model.type_classifier match {
+      case BAYES =>
+        val bayesClassifier = model.asInstanceOf[BayesClassifier]
+        val partition = bayesClassifier.prepareModel()(sc)
+        val modelResult =
+          bayesClassifier.evaluateModel(bayesClassifier.trainModel(partition)(sc),partition)(sc)
+        Future(modelResult)
       case BOOSTING =>
         val boostModel = model.asInstanceOf[GradientBoostingClassifier]
         val partition = boostModel.prepareModel()(sc)
@@ -96,6 +102,13 @@ case class ModelExecution(
 
     } */
     model.type_classifier match {
+      case BAYES =>
+        val bayesClas = model.asInstanceOf[BayesClassifier]
+        val partition = bayesClas.prepareModel()(sc)
+        val modelTrained = bayesClas.trainModel(partition)(sc)
+        val modelResult =
+          bayesClas.runModel(this._id.get,modelTrained,partition)(sc)
+        Future(modelResult.collect().toList)
       case BOOSTING =>
         val boostModel = model.asInstanceOf[GradientBoostingClassifier]
         val partition = boostModel.prepareModel()(sc)

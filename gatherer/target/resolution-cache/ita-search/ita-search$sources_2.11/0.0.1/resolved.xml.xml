@@ -4,7 +4,7 @@
 		module="ita-search$sources_2.11"
 		revision="0.0.1"
 		status="integration"
-		publication="20170827232511"
+		publication="20170830083734"
 	/>
 	<configurations>
 		<conf name="compile" visibility="public" description=""/>
