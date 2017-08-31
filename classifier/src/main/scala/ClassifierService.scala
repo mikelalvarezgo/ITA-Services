@@ -12,12 +12,15 @@ import utils.{ClassifierDataContext, Config, Logger}
 
 import scala.concurrent.duration._
 
-object GatheringService  extends App
+object ClassifierService  extends App
   with Logger
   with Config{
 
   val hostApi = config.getString("service.host")
   val portApi = config.getInt("service.port")
+
+  val sparkAppNme = config.getString("spark.app-name")
+  val sparkMaster = config.getString("spark.master")
 
   //timeout needs to be set as an implicit val for the ask method (?)
 
@@ -25,7 +28,7 @@ object GatheringService  extends App
   implicit val system = ActorSystem("classifier-service")
   val execService: ExecutorService = Executors.newCachedThreadPool()
   // val sourceTweets  = Source.actorPublisher[TweetInfo](,TweetInfo))
-  val conf = new SparkConf().setMaster("local").setAppName("My App")
+  val conf = new SparkConf().setMaster(sparkMaster).setAppName(sparkAppNme)
   implicit val sc = new SparkContext(conf)
   implicit val dataContext:ClassifierDataContext =ClassifierDataContext.chargeFromConfig()
   implicit val executionContext = system.dispatcher

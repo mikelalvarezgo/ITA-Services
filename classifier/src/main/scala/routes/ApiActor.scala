@@ -38,7 +38,7 @@ class ApiActor(
   }
   implicit val timeout = Timeout(10 seconds)
   val modelRoutes: Route =
-    path("model") {
+    path("model"){
       get {
         entity(as[Id]) { id: Id =>
           complete(classifierController.getPickUp(id))
