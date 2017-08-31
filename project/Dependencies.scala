@@ -31,7 +31,7 @@ object Dependencies {
     "org.mongodb" %% "casbah-core" % casbahV,
     "org.mongodb" %% "casbah-query" % casbahV,
     "io.spray" %% "spray-can" % sprayVersion,
-    "io.spray" %% "spray-routing" % sprayVersion,
+    "io.spray" %% "spray-routing-shapeless2" % sprayVersion,
     "com.typesafe.akka" %% "akka-http-spray-json" % "10.0.8",
   "io.spray" %% "spray-json" % sprayVersion,
     "com.typesafe.akka" %%"akka-http" % AkkaHttpVersion,

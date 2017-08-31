@@ -1,20 +1,16 @@
 package classifier
 
-import com.fasterxml.jackson.annotation.JsonValue
 import models._
 import results.{ModelExecution, ModelResult, TweetResult}
-import spray.json.DefaultJsonProtocol.{jsonFormat2, jsonFormat9}
-import spray.json._
 import spray.json.DefaultJsonProtocol._
-import spray.httpx.SprayJsonSupport
-import spray.json._
 import client._
 import domain.Model._
+import spray.json._
 
 object Model {
 
-  implicit val modelTypeJF: JsonFormat[ModelType] =
-    new JsonFormat[ModelType] {
+  implicit val modelTypeJF: RootJsonFormat[ModelType] =
+    new RootJsonFormat[ModelType] {
 
       def read(json: JsValue): ModelType = {
         val JsString(value) = json
@@ -41,7 +37,19 @@ object Model {
 
   implicit val modelResultJF:RootJsonFormat[ModelResult] = jsonFormat10(ModelResult.apply)
 
-  implicit val executionJF:RootJsonFormat[ModelExecution] = jsonFormat7(ModelExecution.apply)
+  implicit val executionJF:RootJsonFormat[ModelExecution] = new  RootJsonFormat[ModelExecution]{
+    override def write(obj: ModelExecution): JsValue =
+      Json
+    override def read(json: JsValue): PickUpState = {
+      val JsString(value) = json
+      value match {
+        case v if v == Created.toString => Created
+        case v if v == Ready.toString => Ready
+        case v if v == InProcess.toString => InProcess
+        case v if v == Stopped.toString => Stopped
+        case v if v == Finished.toString => Finished
+      }
+    }
 
   implicit val modelJF:RootJsonFormat[ModelData] =  jsonFormat7(ModelData.apply)
 

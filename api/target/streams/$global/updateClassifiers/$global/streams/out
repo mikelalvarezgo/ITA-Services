@@ -12,12 +12,12 @@
 [debug] == resolving dependencies for ita-api#ita-api$sources_2.11;0.0.1 [compile]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.lightbend#emoji_2.11;1.1.1 [compile->default(compile)]
 [info] Resolving com.lightbend#emoji_2.11;1.1.1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@759e45e
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@21cb3d5c
 [debug] sbt-chain: module revision found in cache: com.lightbend#emoji_2.11;1.1.1
 [debug] 	found com.lightbend#emoji_2.11;1.1.1 in sbt-chain
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.vdurmont#emoji-java;3.2.0 [compile->default(compile)]
 [info] Resolving com.vdurmont#emoji-java;3.2.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@521ccf0b
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6c71eefd
 [debug] sbt-chain: module revision found in cache: com.vdurmont#emoji-java;3.2.0
 [debug] 	found com.vdurmont#emoji-java;3.2.0 in sbt-chain
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.vdurmont#emoji-java;3.2.0 [compile->runtime]
@@ -25,9 +25,9 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.vdurmont#emoji-java;3.2.0 [compile->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.json#json;20140107 [compile->default(compile)]
 [info] Resolving org.json#json;20140107 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@a86032a
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3f3c744d
 [info] Resolving org.json#json;20140107 ...
-[debug] sbt-chain-delegate: Checking cache for: sbt.ivyint.MergedDescriptors@a86032a
+[debug] sbt-chain-delegate: Checking cache for: sbt.ivyint.MergedDescriptors@3f3c744d
 [debug] 		tried /Users/mikelalvarezgo/.ivy2/local/org.json/json/20140107/ivys/ivy.xml
 [debug] 	local: no ivy file found for org.json#json;20140107
 [debug] 		tried https://repo1.maven.org/maven2/org/json/json/20140107/json-20140107.pom
@@ -37,7 +37,7 @@
 [debug] 	public: downloading https://repo1.maven.org/maven2/org/json/json/20140107/json-20140107.pom
 [debug] 	public: downloading https://repo1.maven.org/maven2/org/json/json/20140107/json-20140107.pom.sha1
 [debug] sha1 OK for https://repo1.maven.org/maven2/org/json/json/20140107/json-20140107.pom
-[debug] 	[SUCCESSFUL ] org.json#json;20140107!json.pom(pom.original) (476ms)
+[debug] 	[SUCCESSFUL ] org.json#json;20140107!json.pom(pom.original) (128ms)
 [info] Resolving org.sonatype.oss#oss-parent;7 ...
 [debug] sbt-chain: Checking cache for: dependency: org.sonatype.oss#oss-parent;7 {}
 [debug] sbt-chain: module revision found in cache: org.sonatype.oss#oss-parent;7
@@ -47,7 +47,7 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.json#json;20140107 [compile->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.spire-math#cats_2.11;0.3.0 [compile->default(compile)]
 [info] Resolving org.spire-math#cats_2.11;0.3.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@2779f57
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@40f14afb
 [debug] sbt-chain: module revision found in cache: org.spire-math#cats_2.11;0.3.0
 [debug] 	found org.spire-math#cats_2.11;0.3.0 in sbt-chain
 [debug] 	[0.3.0] org.spire-math#cats_2.11;0.3.0
@@ -56,7 +56,7 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.spire-math#cats_2.11;0.3.0 [compile->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.spire-math#cats-macros_2.11;0.3.0 [compile->default(compile)]
 [info] Resolving org.spire-math#cats-macros_2.11;0.3.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@38efc1c8
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@d964390
 [debug] sbt-chain: module revision found in cache: org.spire-math#cats-macros_2.11;0.3.0
 [debug] 	found org.spire-math#cats-macros_2.11;0.3.0 in sbt-chain
 [debug] 	[0.3.0] org.spire-math#cats-macros_2.11;0.3.0
@@ -65,7 +65,7 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.spire-math#cats-macros_2.11;0.3.0 [compile->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.github.mpilquist#simulacrum_2.11;0.4.0 [compile->default(compile)]
 [info] Resolving com.github.mpilquist#simulacrum_2.11;0.4.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@1599069d
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@63fbaf5
 [debug] sbt-chain: module revision found in cache: com.github.mpilquist#simulacrum_2.11;0.4.0
 [debug] 	found com.github.mpilquist#simulacrum_2.11;0.4.0 in sbt-chain
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.github.mpilquist#simulacrum_2.11;0.4.0 [compile->runtime]
@@ -73,7 +73,7 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.github.mpilquist#simulacrum_2.11;0.4.0 [compile->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.spire-math#algebra_2.11;0.3.1 [compile->default(compile)]
 [info] Resolving org.spire-math#algebra_2.11;0.3.1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@456a33b1
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@12380532
 [debug] sbt-chain: module revision found in cache: org.spire-math#algebra_2.11;0.3.1
 [debug] 	found org.spire-math#algebra_2.11;0.3.1 in sbt-chain
 [debug] 	[0.3.1] org.spire-math#algebra_2.11;0.3.1
@@ -82,7 +82,7 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.spire-math#algebra_2.11;0.3.1 [compile->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.spire-math#algebra-std_2.11;0.3.1 [compile->default(compile)]
 [info] Resolving org.spire-math#algebra-std_2.11;0.3.1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@4f5f6a6e
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6309d2ac
 [debug] sbt-chain: module revision found in cache: org.spire-math#algebra-std_2.11;0.3.1
 [debug] 	found org.spire-math#algebra-std_2.11;0.3.1 in sbt-chain
 [debug] 	[0.3.1] org.spire-math#algebra-std_2.11;0.3.1
@@ -91,7 +91,7 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.spire-math#algebra-std_2.11;0.3.1 [compile->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.typelevel#machinist_2.11;0.4.1 [compile->default(compile)]
 [info] Resolving org.typelevel#machinist_2.11;0.4.1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@4c29789c
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@1ed3bd90
 [debug] sbt-chain: module revision found in cache: org.typelevel#machinist_2.11;0.4.1
 [debug] 	found org.typelevel#machinist_2.11;0.4.1 in sbt-chain
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.typelevel#machinist_2.11;0.4.1 [compile->runtime]
@@ -99,7 +99,7 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.typelevel#machinist_2.11;0.4.1 [compile->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.spire-math#cats-core_2.11;0.3.0 [compile->default(compile)]
 [info] Resolving org.spire-math#cats-core_2.11;0.3.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@5e039617
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@4e39e9e9
 [debug] sbt-chain: module revision found in cache: org.spire-math#cats-core_2.11;0.3.0
 [debug] 	found org.spire-math#cats-core_2.11;0.3.0 in sbt-chain
 [debug] 	[0.3.0] org.spire-math#cats-core_2.11;0.3.0
@@ -108,7 +108,7 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.spire-math#cats-core_2.11;0.3.0 [compile->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.spire-math#cats-laws_2.11;0.3.0 [compile->default(compile)]
 [info] Resolving org.spire-math#cats-laws_2.11;0.3.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@4cdfef06
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@66c129d7
 [debug] sbt-chain: module revision found in cache: org.spire-math#cats-laws_2.11;0.3.0
 [debug] 	found org.spire-math#cats-laws_2.11;0.3.0 in sbt-chain
 [debug] 	[0.3.0] org.spire-math#cats-laws_2.11;0.3.0
@@ -117,7 +117,7 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.spire-math#cats-laws_2.11;0.3.0 [compile->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.scalacheck#scalacheck_2.11;1.12.5 [compile->default(compile)]
 [info] Resolving org.scalacheck#scalacheck_2.11;1.12.5 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6e12c1dc
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@4034f0dc
 [debug] sbt-chain: module revision found in cache: org.scalacheck#scalacheck_2.11;1.12.5
 [debug] 	found org.scalacheck#scalacheck_2.11;1.12.5 in sbt-chain
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.scalacheck#scalacheck_2.11;1.12.5 [compile->runtime]
@@ -125,7 +125,7 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.scalacheck#scalacheck_2.11;1.12.5 [compile->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.scala-sbt#test-interface;1.0 [compile->default(compile)]
 [info] Resolving org.scala-sbt#test-interface;1.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@1e9c99f2
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3fe511f1
 [debug] sbt-chain: module revision found in cache: org.scala-sbt#test-interface;1.0
 [debug] 	found org.scala-sbt#test-interface;1.0 in sbt-chain
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.scala-sbt#test-interface;1.0 [compile->runtime]
@@ -133,7 +133,7 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.scala-sbt#test-interface;1.0 [compile->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.typelevel#discipline_2.11;0.4 [compile->default(compile)]
 [info] Resolving org.typelevel#discipline_2.11;0.4 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@56be8e3f
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6e4657f1
 [debug] sbt-chain: module revision found in cache: org.typelevel#discipline_2.11;0.4
 [debug] 	found org.typelevel#discipline_2.11;0.4 in sbt-chain
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.typelevel#discipline_2.11;0.4 [compile->runtime]
@@ -141,7 +141,7 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.typelevel#discipline_2.11;0.4 [compile->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.spire-math#algebra-laws_2.11;0.3.1 [compile->default(compile)]
 [info] Resolving org.spire-math#algebra-laws_2.11;0.3.1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@716945d0
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@bcbd709
 [debug] sbt-chain: module revision found in cache: org.spire-math#algebra-laws_2.11;0.3.1
 [debug] 	found org.spire-math#algebra-laws_2.11;0.3.1 in sbt-chain
 [debug] 	[0.3.1] org.spire-math#algebra-laws_2.11;0.3.1
@@ -150,7 +150,7 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.spire-math#algebra-laws_2.11;0.3.1 [compile->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.spire-math#algebra-macros_2.11;0.3.1 [compile->default(compile)]
 [info] Resolving org.spire-math#algebra-macros_2.11;0.3.1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@4b22e476
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@4459f0ae
 [debug] sbt-chain: module revision found in cache: org.spire-math#algebra-macros_2.11;0.3.1
 [debug] 	found org.spire-math#algebra-macros_2.11;0.3.1 in sbt-chain
 [debug] 	[0.3.1] org.spire-math#algebra-macros_2.11;0.3.1
@@ -159,7 +159,7 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.spire-math#algebra-macros_2.11;0.3.1 [compile->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.github.inthenow#bricks-platform_2.11;0.0.1 [compile->default(compile)]
 [info] Resolving com.github.inthenow#bricks-platform_2.11;0.0.1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@5d1f8e39
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@c603f6f
 [debug] sbt-chain: module revision found in cache: com.github.inthenow#bricks-platform_2.11;0.0.1
 [debug] 	found com.github.inthenow#bricks-platform_2.11;0.0.1 in sbt-chain
 [debug] 	[0.0.1] com.github.inthenow#bricks-platform_2.11;0.0.1
@@ -168,7 +168,7 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.github.inthenow#bricks-platform_2.11;0.0.1 [compile->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.github.inthenow#bricks-macros_2.11;0.0.1 [compile->default(compile)]
 [info] Resolving com.github.inthenow#bricks-macros_2.11;0.0.1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@31c11c54
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@5fdf7ede
 [debug] sbt-chain: module revision found in cache: com.github.inthenow#bricks-macros_2.11;0.0.1
 [debug] 	found com.github.inthenow#bricks-macros_2.11;0.0.1 in sbt-chain
 [debug] 	[0.0.1] com.github.inthenow#bricks-macros_2.11;0.0.1
@@ -177,7 +177,7 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.github.inthenow#bricks-macros_2.11;0.0.1 [compile->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.typelevel#macro-compat_2.11;1.0.0 [compile->default(compile)]
 [info] Resolving org.typelevel#macro-compat_2.11;1.0.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6e2d9d03
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@719717fd
 [debug] sbt-chain: module revision found in cache: org.typelevel#macro-compat_2.11;1.0.0
 [debug] 	found org.typelevel#macro-compat_2.11;1.0.0 in sbt-chain
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.typelevel#macro-compat_2.11;1.0.0 [compile->runtime]
@@ -185,7 +185,7 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.typelevel#macro-compat_2.11;1.0.0 [compile->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.spire-math#cats-free_2.11;0.3.0 [compile->default(compile)]
 [info] Resolving org.spire-math#cats-free_2.11;0.3.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@5229b223
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@7e76462a
 [debug] sbt-chain: module revision found in cache: org.spire-math#cats-free_2.11;0.3.0
 [debug] 	found org.spire-math#cats-free_2.11;0.3.0 in sbt-chain
 [debug] 	[0.3.0] org.spire-math#cats-free_2.11;0.3.0
@@ -194,7 +194,7 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.spire-math#cats-free_2.11;0.3.0 [compile->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.spire-math#cats-state_2.11;0.3.0 [compile->default(compile)]
 [info] Resolving org.spire-math#cats-state_2.11;0.3.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@46c6ed2e
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@152ac61b
 [debug] sbt-chain: module revision found in cache: org.spire-math#cats-state_2.11;0.3.0
 [debug] 	found org.spire-math#cats-state_2.11;0.3.0 in sbt-chain
 [debug] 	[0.3.0] org.spire-math#cats-state_2.11;0.3.0
@@ -203,7 +203,7 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.spire-math#cats-state_2.11;0.3.0 [compile->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.spire-math#cats-jvm_2.11;0.3.0 [compile->default(compile)]
 [info] Resolving org.spire-math#cats-jvm_2.11;0.3.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@7f52c2cd
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@1c362db5
 [debug] sbt-chain: module revision found in cache: org.spire-math#cats-jvm_2.11;0.3.0
 [debug] 	found org.spire-math#cats-jvm_2.11;0.3.0 in sbt-chain
 [debug] 	[0.3.0] org.spire-math#cats-jvm_2.11;0.3.0
@@ -212,7 +212,7 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.spire-math#cats-jvm_2.11;0.3.0 [compile->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.typesafe#config;1.3.1 [compile->default(compile)]
 [info] Resolving com.typesafe#config;1.3.1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@49fdb760
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@764947e8
 [debug] sbt-chain: module revision found in cache: com.typesafe#config;1.3.1
 [debug] 	found com.typesafe#config;1.3.1 in sbt-chain
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.typesafe#config;1.3.1 [compile->runtime]
@@ -220,7 +220,7 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.typesafe#config;1.3.1 [compile->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.scalaz#scalaz-core_2.11;7.2.0 [compile->default(compile)]
 [info] Resolving org.scalaz#scalaz-core_2.11;7.2.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@5839d8bd
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6df82e7
 [debug] sbt-chain: module revision found in cache: org.scalaz#scalaz-core_2.11;7.2.0
 [debug] 	found org.scalaz#scalaz-core_2.11;7.2.0 in sbt-chain
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.scalaz#scalaz-core_2.11;7.2.0 [compile->runtime]
@@ -228,7 +228,7 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.scalaz#scalaz-core_2.11;7.2.0 [compile->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.scalaz#scalaz-scalacheck-binding_2.11;7.2.0 [compile->default(compile)]
 [info] Resolving org.scalaz#scalaz-scalacheck-binding_2.11;7.2.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@29f16f04
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@44a49457
 [debug] sbt-chain: module revision found in cache: org.scalaz#scalaz-scalacheck-binding_2.11;7.2.0
 [debug] 	found org.scalaz#scalaz-scalacheck-binding_2.11;7.2.0 in sbt-chain
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.scalaz#scalaz-scalacheck-binding_2.11;7.2.0 [compile->runtime]
@@ -236,7 +236,7 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.scalaz#scalaz-scalacheck-binding_2.11;7.2.0 [compile->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.scalaz#scalaz-concurrent_2.11;7.2.0 [compile->default(compile)]
 [info] Resolving org.scalaz#scalaz-concurrent_2.11;7.2.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@64d3d7e2
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@19f04ba7
 [debug] sbt-chain: module revision found in cache: org.scalaz#scalaz-concurrent_2.11;7.2.0
 [debug] 	found org.scalaz#scalaz-concurrent_2.11;7.2.0 in sbt-chain
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.scalaz#scalaz-concurrent_2.11;7.2.0 [compile->runtime]
@@ -244,7 +244,7 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.scalaz#scalaz-concurrent_2.11;7.2.0 [compile->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.scalaz#scalaz-effect_2.11;7.2.0 [compile->default(compile)]
 [info] Resolving org.scalaz#scalaz-effect_2.11;7.2.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@79a13f69
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@73101f9c
 [debug] sbt-chain: module revision found in cache: org.scalaz#scalaz-effect_2.11;7.2.0
 [debug] 	found org.scalaz#scalaz-effect_2.11;7.2.0 in sbt-chain
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.scalaz#scalaz-effect_2.11;7.2.0 [compile->runtime]
@@ -252,7 +252,7 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.scalaz#scalaz-effect_2.11;7.2.0 [compile->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.scalaz#scalaz-iteratee_2.11;7.2.0 [compile->default(compile)]
 [info] Resolving org.scalaz#scalaz-iteratee_2.11;7.2.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@53084da8
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@7a554e9a
 [debug] sbt-chain: module revision found in cache: org.scalaz#scalaz-iteratee_2.11;7.2.0
 [debug] 	found org.scalaz#scalaz-iteratee_2.11;7.2.0 in sbt-chain
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.scalaz#scalaz-iteratee_2.11;7.2.0 [compile->runtime]
@@ -260,7 +260,7 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.scalaz#scalaz-iteratee_2.11;7.2.0 [compile->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.etaty.rediscala#rediscala_2.11;1.3.1 [compile->default(compile)]
 [info] Resolving com.etaty.rediscala#rediscala_2.11;1.3.1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@33762f5a
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@7434c0e3
 [debug] sbt-chain: module revision found in cache: com.etaty.rediscala#rediscala_2.11;1.3.1
 [debug] 	found com.etaty.rediscala#rediscala_2.11;1.3.1 in sbt-chain
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.etaty.rediscala#rediscala_2.11;1.3.1 [compile->runtime]
@@ -268,7 +268,7 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.etaty.rediscala#rediscala_2.11;1.3.1 [compile->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.scalactic#scalactic_2.11;3.0.1 [compile->default(compile)]
 [info] Resolving org.scalactic#scalactic_2.11;3.0.1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6a22a81f
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@5724752b
 [debug] sbt-chain: module revision found in cache: org.scalactic#scalactic_2.11;3.0.1
 [debug] 	found org.scalactic#scalactic_2.11;3.0.1 in sbt-chain
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.scalactic#scalactic_2.11;3.0.1 [compile->runtime]
@@ -276,7 +276,7 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.scalactic#scalactic_2.11;3.0.1 [compile->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.scala-lang#scala-reflect;2.11.8 [compile->default(compile)]
 [info] Resolving org.scala-lang#scala-reflect;2.11.8 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@4f6a3288
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@419d8a14
 [debug] sbt-chain: module revision found in cache: org.scala-lang#scala-reflect;2.11.8
 [debug] 	found org.scala-lang#scala-reflect;2.11.8 in sbt-chain
 [debug] 	[2.11.8] org.scala-lang#scala-reflect;2.11.8
@@ -285,7 +285,7 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.scala-lang#scala-reflect;2.11.8 [compile->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.scalatest#scalatest_2.11;3.0.1 [compile->default(compile)]
 [info] Resolving org.scalatest#scalatest_2.11;3.0.1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@9b10a84
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@78e6e6d4
 [debug] sbt-chain: module revision found in cache: org.scalatest#scalatest_2.11;3.0.1
 [debug] 	found org.scalatest#scalatest_2.11;3.0.1 in sbt-chain
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.scalatest#scalatest_2.11;3.0.1 [compile->runtime]
@@ -293,7 +293,7 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.scalatest#scalatest_2.11;3.0.1 [compile->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.scala-lang.modules#scala-xml_2.11;1.0.5 [compile->default(compile)]
 [info] Resolving org.scala-lang.modules#scala-xml_2.11;1.0.5 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@427f6b8b
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@1246fb9f
 [debug] sbt-chain: module revision found in cache: org.scala-lang.modules#scala-xml_2.11;1.0.5
 [debug] 	found org.scala-lang.modules#scala-xml_2.11;1.0.5 in sbt-chain
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.scala-lang.modules#scala-xml_2.11;1.0.5 [compile->runtime]
@@ -301,7 +301,7 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.scala-lang.modules#scala-xml_2.11;1.0.5 [compile->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.4 [compile->default(compile)]
 [info] Resolving org.scala-lang.modules#scala-parser-combinators_2.11;1.0.4 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@416d7801
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@22ced3a7
 [debug] sbt-chain: module revision found in cache: org.scala-lang.modules#scala-parser-combinators_2.11;1.0.4
 [debug] 	found org.scala-lang.modules#scala-parser-combinators_2.11;1.0.4 in sbt-chain
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.4 [compile->runtime]
@@ -309,7 +309,7 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.4 [compile->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->io.spray#spray-client_2.11;1.3.3 [compile->default(compile)]
 [info] Resolving io.spray#spray-client_2.11;1.3.3 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3e99e59e
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@4fb3dcd3
 [debug] sbt-chain: module revision found in cache: io.spray#spray-client_2.11;1.3.3
 [debug] 	found io.spray#spray-client_2.11;1.3.3 in sbt-chain
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->io.spray#spray-client_2.11;1.3.3 [compile->runtime]
@@ -317,7 +317,7 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->io.spray#spray-client_2.11;1.3.3 [compile->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->io.spray#spray-can_2.11;1.3.3 [compile->default(compile)]
 [info] Resolving io.spray#spray-can_2.11;1.3.3 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@29ce36bb
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@27e80f2
 [debug] sbt-chain: module revision found in cache: io.spray#spray-can_2.11;1.3.3
 [debug] 	found io.spray#spray-can_2.11;1.3.3 in sbt-chain
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->io.spray#spray-can_2.11;1.3.3 [compile->runtime]
@@ -325,7 +325,7 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->io.spray#spray-can_2.11;1.3.3 [compile->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->io.spray#spray-io_2.11;1.3.3 [compile->default(compile)]
 [info] Resolving io.spray#spray-io_2.11;1.3.3 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@32d8e97f
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@1d3ea04e
 [debug] sbt-chain: module revision found in cache: io.spray#spray-io_2.11;1.3.3
 [debug] 	found io.spray#spray-io_2.11;1.3.3 in sbt-chain
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->io.spray#spray-io_2.11;1.3.3 [compile->runtime]
@@ -333,7 +333,7 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->io.spray#spray-io_2.11;1.3.3 [compile->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->io.spray#spray-util_2.11;1.3.3 [compile->default(compile)]
 [info] Resolving io.spray#spray-util_2.11;1.3.3 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3808ec6d
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@2e13ceea
 [debug] sbt-chain: module revision found in cache: io.spray#spray-util_2.11;1.3.3
 [debug] 	found io.spray#spray-util_2.11;1.3.3 in sbt-chain
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->io.spray#spray-util_2.11;1.3.3 [compile->runtime]
@@ -341,7 +341,7 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->io.spray#spray-util_2.11;1.3.3 [compile->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->io.spray#spray-http_2.11;1.3.3 [compile->default(compile)]
 [info] Resolving io.spray#spray-http_2.11;1.3.3 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@1706e8d
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@24bb6e14
 [debug] sbt-chain: module revision found in cache: io.spray#spray-http_2.11;1.3.3
 [debug] 	found io.spray#spray-http_2.11;1.3.3 in sbt-chain
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->io.spray#spray-http_2.11;1.3.3 [compile->runtime]
@@ -349,7 +349,7 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->io.spray#spray-http_2.11;1.3.3 [compile->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.parboiled#parboiled-scala_2.11;1.1.7 [compile->default(compile)]
 [info] Resolving org.parboiled#parboiled-scala_2.11;1.1.7 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3be41a10
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@5cad25ca
 [debug] sbt-chain: module revision found in cache: org.parboiled#parboiled-scala_2.11;1.1.7
 [debug] 	found org.parboiled#parboiled-scala_2.11;1.1.7 in sbt-chain
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.parboiled#parboiled-scala_2.11;1.1.7 [compile->runtime]
@@ -357,7 +357,7 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.parboiled#parboiled-scala_2.11;1.1.7 [compile->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.parboiled#parboiled-core;1.1.7 [compile->default(compile)]
 [info] Resolving org.parboiled#parboiled-core;1.1.7 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@671791f4
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@5d0d39a5
 [debug] sbt-chain: module revision found in cache: org.parboiled#parboiled-core;1.1.7
 [debug] 	found org.parboiled#parboiled-core;1.1.7 in sbt-chain
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.parboiled#parboiled-core;1.1.7 [compile->runtime]
@@ -365,7 +365,7 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.parboiled#parboiled-core;1.1.7 [compile->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->io.spray#spray-httpx_2.11;1.3.3 [compile->default(compile)]
 [info] Resolving io.spray#spray-httpx_2.11;1.3.3 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@aff4397
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@5d1ad3f2
 [debug] sbt-chain: module revision found in cache: io.spray#spray-httpx_2.11;1.3.3
 [debug] 	found io.spray#spray-httpx_2.11;1.3.3 in sbt-chain
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->io.spray#spray-httpx_2.11;1.3.3 [compile->runtime]
@@ -373,7 +373,7 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->io.spray#spray-httpx_2.11;1.3.3 [compile->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.jvnet.mimepull#mimepull;1.9.5 [compile->default(compile)]
 [info] Resolving org.jvnet.mimepull#mimepull;1.9.5 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@47e717f9
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@26943ec5
 [debug] sbt-chain: module revision found in cache: org.jvnet.mimepull#mimepull;1.9.5
 [debug] 	found org.jvnet.mimepull#mimepull;1.9.5 in sbt-chain
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.jvnet.mimepull#mimepull;1.9.5 [compile->runtime]
@@ -381,7 +381,7 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.jvnet.mimepull#mimepull;1.9.5 [compile->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.apache.spark#spark-core_2.11;1.2.1 [compile->default(compile)]
 [info] Resolving org.apache.spark#spark-core_2.11;1.2.1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@12542b0f
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@2e54826d
 [debug] sbt-chain: module revision found in cache: org.apache.spark#spark-core_2.11;1.2.1
 [debug] 	found org.apache.spark#spark-core_2.11;1.2.1 in sbt-chain
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.apache.spark#spark-core_2.11;1.2.1 [compile->runtime]
@@ -389,7 +389,7 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.apache.spark#spark-core_2.11;1.2.1 [compile->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.twitter#chill_2.11;0.5.0 [compile->default(compile)]
 [info] Resolving com.twitter#chill_2.11;0.5.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@294dab1e
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@794989cb
 [debug] sbt-chain: module revision found in cache: com.twitter#chill_2.11;0.5.0
 [debug] 	found com.twitter#chill_2.11;0.5.0 in sbt-chain
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.twitter#chill_2.11;0.5.0 [compile->runtime]
@@ -397,7 +397,7 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.twitter#chill_2.11;0.5.0 [compile->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.twitter#chill-java;0.5.0 [compile->default(compile)]
 [info] Resolving com.twitter#chill-java;0.5.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3b9a2a1
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@5bb3fec0
 [debug] sbt-chain: module revision found in cache: com.twitter#chill-java;0.5.0
 [debug] 	found com.twitter#chill-java;0.5.0 in sbt-chain
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.twitter#chill-java;0.5.0 [compile->runtime]
@@ -405,7 +405,7 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.twitter#chill-java;0.5.0 [compile->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.esotericsoftware.kryo#kryo;2.21 [compile->default(compile)]
 [info] Resolving com.esotericsoftware.kryo#kryo;2.21 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@1b04f213
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6b331d09
 [debug] sbt-chain: module revision found in cache: com.esotericsoftware.kryo#kryo;2.21
 [debug] 	found com.esotericsoftware.kryo#kryo;2.21 in sbt-chain
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.esotericsoftware.kryo#kryo;2.21 [compile->runtime]
@@ -413,7 +413,7 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.esotericsoftware.kryo#kryo;2.21 [compile->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.esotericsoftware.reflectasm#reflectasm;1.07 [compile->default(compile)]
 [info] Resolving com.esotericsoftware.reflectasm#reflectasm;1.07 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@192019a2
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@489f1b56
 [debug] sbt-chain: module revision found in cache: com.esotericsoftware.reflectasm#reflectasm;1.07
 [debug] 	found com.esotericsoftware.reflectasm#reflectasm;1.07 in sbt-chain
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.esotericsoftware.reflectasm#reflectasm;1.07 [compile->runtime]
@@ -421,7 +421,7 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.esotericsoftware.reflectasm#reflectasm;1.07 [compile->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.esotericsoftware.minlog#minlog;1.2 [compile->default(compile)]
 [info] Resolving com.esotericsoftware.minlog#minlog;1.2 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@2e3026f4
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@2d28288f
 [debug] sbt-chain: module revision found in cache: com.esotericsoftware.minlog#minlog;1.2
 [debug] 	found com.esotericsoftware.minlog#minlog;1.2 in sbt-chain
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.esotericsoftware.minlog#minlog;1.2 [compile->runtime]
@@ -429,7 +429,7 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.esotericsoftware.minlog#minlog;1.2 [compile->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.objenesis#objenesis;1.2 [compile->default(compile)]
 [info] Resolving org.objenesis#objenesis;1.2 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@64512087
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@61b6276f
 [debug] sbt-chain: module revision found in cache: org.objenesis#objenesis;1.2
 [debug] 	found org.objenesis#objenesis;1.2 in sbt-chain
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.objenesis#objenesis;1.2 [compile->runtime]
@@ -437,7 +437,7 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.objenesis#objenesis;1.2 [compile->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.apache.hadoop#hadoop-common;2.2.0 [compile->default(compile)]
 [info] Resolving org.apache.hadoop#hadoop-common;2.2.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@1c2c1d6
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@149c5941
 [debug] sbt-chain: module revision found in cache: org.apache.hadoop#hadoop-common;2.2.0
 [debug] 	found org.apache.hadoop#hadoop-common;2.2.0 in sbt-chain
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.apache.hadoop#hadoop-common;2.2.0 [compile->runtime]
@@ -445,7 +445,7 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.apache.hadoop#hadoop-common;2.2.0 [compile->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.apache.hadoop#hadoop-annotations;2.2.0 [compile->default(compile)]
 [info] Resolving org.apache.hadoop#hadoop-annotations;2.2.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@56b95183
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@f295312
 [debug] sbt-chain: module revision found in cache: org.apache.hadoop#hadoop-annotations;2.2.0
 [debug] 	found org.apache.hadoop#hadoop-annotations;2.2.0 in sbt-chain
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.apache.hadoop#hadoop-annotations;2.2.0 [compile->runtime]
@@ -453,7 +453,7 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.apache.hadoop#hadoop-annotations;2.2.0 [compile->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->commons-cli#commons-cli;1.2 [compile->default(compile)]
 [info] Resolving commons-cli#commons-cli;1.2 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@34881039
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@565b68f
 [debug] sbt-chain: module revision found in cache: commons-cli#commons-cli;1.2
 [debug] 	found commons-cli#commons-cli;1.2 in sbt-chain
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->commons-cli#commons-cli;1.2 [compile->runtime]
@@ -461,7 +461,7 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->commons-cli#commons-cli;1.2 [compile->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.apache.commons#commons-math;2.1 [compile->default(compile)]
 [info] Resolving org.apache.commons#commons-math;2.1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@c7de8d2
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@1ad136dd
 [debug] sbt-chain: module revision found in cache: org.apache.commons#commons-math;2.1
 [debug] 	found org.apache.commons#commons-math;2.1 in sbt-chain
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.apache.commons#commons-math;2.1 [compile->runtime]
@@ -469,7 +469,7 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.apache.commons#commons-math;2.1 [compile->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->commons-httpclient#commons-httpclient;3.1 [compile->default(compile)]
 [info] Resolving commons-httpclient#commons-httpclient;3.1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@45db03a
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6a81b16a
 [debug] sbt-chain: module revision found in cache: commons-httpclient#commons-httpclient;3.1
 [debug] 	found commons-httpclient#commons-httpclient;3.1 in sbt-chain
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->commons-httpclient#commons-httpclient;3.1 [compile->runtime]
@@ -477,7 +477,7 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->commons-httpclient#commons-httpclient;3.1 [compile->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->commons-codec#commons-codec;1.4 [compile->default(compile)]
 [info] Resolving commons-codec#commons-codec;1.4 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@37141382
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@1228cffa
 [debug] sbt-chain: module revision found in cache: commons-codec#commons-codec;1.4
 [debug] 	found commons-codec#commons-codec;1.4 in sbt-chain
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->commons-codec#commons-codec;1.4 [compile->runtime]
@@ -485,7 +485,7 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->commons-codec#commons-codec;1.4 [compile->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->commons-logging#commons-logging;1.1.1 [compile->default(compile)]
 [info] Resolving commons-logging#commons-logging;1.1.1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6cdfcfbe
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@14efe23d
 [debug] sbt-chain: module revision found in cache: commons-logging#commons-logging;1.1.1
 [debug] 	found commons-logging#commons-logging;1.1.1 in sbt-chain
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->commons-logging#commons-logging;1.1.1 [compile->runtime]
@@ -493,7 +493,7 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->commons-logging#commons-logging;1.1.1 [compile->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->log4j#log4j;1.2.17 [compile->default(compile)]
 [info] Resolving log4j#log4j;1.2.17 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@59f1d2d9
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@7e58d22c
 [debug] sbt-chain: module revision found in cache: log4j#log4j;1.2.17
 [debug] 	found log4j#log4j;1.2.17 in sbt-chain
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->log4j#log4j;1.2.17 [compile->runtime]
@@ -501,7 +501,7 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->log4j#log4j;1.2.17 [compile->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->commons-lang#commons-lang;2.5 [compile->default(compile)]
 [info] Resolving commons-lang#commons-lang;2.5 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@2e287c33
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@1b95e869
 [debug] sbt-chain: module revision found in cache: commons-lang#commons-lang;2.5
 [debug] 	found commons-lang#commons-lang;2.5 in sbt-chain
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->commons-lang#commons-lang;2.5 [compile->runtime]
@@ -509,7 +509,7 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->commons-lang#commons-lang;2.5 [compile->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->commons-configuration#commons-configuration;1.6 [compile->default(compile)]
 [info] Resolving commons-configuration#commons-configuration;1.6 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@18031343
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@49bc4e5b
 [debug] sbt-chain: module revision found in cache: commons-configuration#commons-configuration;1.6
 [debug] 	found commons-configuration#commons-configuration;1.6 in sbt-chain
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->commons-configuration#commons-configuration;1.6 [compile->runtime]
@@ -517,7 +517,7 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->commons-configuration#commons-configuration;1.6 [compile->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->commons-collections#commons-collections;3.2.1 [compile->default(compile)]
 [info] Resolving commons-collections#commons-collections;3.2.1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@4237c52d
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@71e0926f
 [debug] sbt-chain: module revision found in cache: commons-collections#commons-collections;3.2.1
 [debug] 	found commons-collections#commons-collections;3.2.1 in sbt-chain
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->commons-collections#commons-collections;3.2.1 [compile->runtime]
@@ -525,7 +525,7 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->commons-collections#commons-collections;3.2.1 [compile->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->commons-digester#commons-digester;1.8 [compile->default(compile)]
 [info] Resolving commons-digester#commons-digester;1.8 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@2ab7920c
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6240ae3
 [debug] sbt-chain: module revision found in cache: commons-digester#commons-digester;1.8
 [debug] 	found commons-digester#commons-digester;1.8 in sbt-chain
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->commons-digester#commons-digester;1.8 [compile->runtime]
@@ -533,7 +533,7 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->commons-digester#commons-digester;1.8 [compile->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->commons-beanutils#commons-beanutils;1.7.0 [compile->default(compile)]
 [info] Resolving commons-beanutils#commons-beanutils;1.7.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@24cd7969
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@194f7b3c
 [debug] sbt-chain: module revision found in cache: commons-beanutils#commons-beanutils;1.7.0
 [debug] 	found commons-beanutils#commons-beanutils;1.7.0 in sbt-chain
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->commons-beanutils#commons-beanutils;1.7.0 [compile->runtime]
@@ -541,7 +541,7 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->commons-beanutils#commons-beanutils;1.7.0 [compile->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.codehaus.jackson#jackson-core-asl;1.8.8 [compile->default(compile)]
 [info] Resolving org.codehaus.jackson#jackson-core-asl;1.8.8 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@4353dfc1
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@69d42f8c
 [debug] sbt-chain: module revision found in cache: org.codehaus.jackson#jackson-core-asl;1.8.8
 [debug] 	found org.codehaus.jackson#jackson-core-asl;1.8.8 in sbt-chain
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.codehaus.jackson#jackson-core-asl;1.8.8 [compile->runtime]
@@ -549,7 +549,7 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.codehaus.jackson#jackson-core-asl;1.8.8 [compile->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.codehaus.jackson#jackson-mapper-asl;1.8.8 [compile->default(compile)]
 [info] Resolving org.codehaus.jackson#jackson-mapper-asl;1.8.8 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@4c89813b
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@7f4df01f
 [debug] sbt-chain: module revision found in cache: org.codehaus.jackson#jackson-mapper-asl;1.8.8
 [debug] 	found org.codehaus.jackson#jackson-mapper-asl;1.8.8 in sbt-chain
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.codehaus.jackson#jackson-mapper-asl;1.8.8 [compile->runtime]
@@ -557,7 +557,7 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.codehaus.jackson#jackson-mapper-asl;1.8.8 [compile->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.apache.avro#avro;1.7.4 [compile->default(compile)]
 [info] Resolving org.apache.avro#avro;1.7.4 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@678b8b93
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@10ac0535
 [debug] sbt-chain: module revision found in cache: org.apache.avro#avro;1.7.4
 [debug] 	found org.apache.avro#avro;1.7.4 in sbt-chain
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.apache.avro#avro;1.7.4 [compile->runtime]
@@ -565,7 +565,7 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.apache.avro#avro;1.7.4 [compile->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.apache.commons#commons-compress;1.4.1 [compile->default(compile)]
 [info] Resolving org.apache.commons#commons-compress;1.4.1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@2465aa04
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@5d95f0c7
 [debug] sbt-chain: module revision found in cache: org.apache.commons#commons-compress;1.4.1
 [debug] 	found org.apache.commons#commons-compress;1.4.1 in sbt-chain
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.apache.commons#commons-compress;1.4.1 [compile->runtime]
@@ -573,7 +573,7 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.apache.commons#commons-compress;1.4.1 [compile->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.tukaani#xz;1.0 [compile->default(compile)]
 [info] Resolving org.tukaani#xz;1.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@168fc514
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@2cb7519a
 [debug] sbt-chain: module revision found in cache: org.tukaani#xz;1.0
 [debug] 	found org.tukaani#xz;1.0 in sbt-chain
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.tukaani#xz;1.0 [compile->runtime]
@@ -581,7 +581,7 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.tukaani#xz;1.0 [compile->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.google.protobuf#protobuf-java;2.5.0 [compile->default(compile)]
 [info] Resolving com.google.protobuf#protobuf-java;2.5.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@eb38439
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@107d6854
 [debug] sbt-chain: module revision found in cache: com.google.protobuf#protobuf-java;2.5.0
 [debug] 	found com.google.protobuf#protobuf-java;2.5.0 in sbt-chain
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.google.protobuf#protobuf-java;2.5.0 [compile->runtime]
@@ -589,7 +589,7 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.google.protobuf#protobuf-java;2.5.0 [compile->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.apache.hadoop#hadoop-auth;2.2.0 [compile->default(compile)]
 [info] Resolving org.apache.hadoop#hadoop-auth;2.2.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@423073c1
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@78e1ef48
 [debug] sbt-chain: module revision found in cache: org.apache.hadoop#hadoop-auth;2.2.0
 [debug] 	found org.apache.hadoop#hadoop-auth;2.2.0 in sbt-chain
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.apache.hadoop#hadoop-auth;2.2.0 [compile->runtime]
@@ -597,7 +597,7 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.apache.hadoop#hadoop-auth;2.2.0 [compile->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.apache.hadoop#hadoop-hdfs;2.2.0 [compile->default(compile)]
 [info] Resolving org.apache.hadoop#hadoop-hdfs;2.2.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6e49d32a
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@4696e9fe
 [debug] sbt-chain: module revision found in cache: org.apache.hadoop#hadoop-hdfs;2.2.0
 [debug] 	found org.apache.hadoop#hadoop-hdfs;2.2.0 in sbt-chain
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.apache.hadoop#hadoop-hdfs;2.2.0 [compile->runtime]
@@ -605,7 +605,7 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.apache.hadoop#hadoop-hdfs;2.2.0 [compile->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.mortbay.jetty#jetty-util;6.1.26 [compile->default(compile)]
 [info] Resolving org.mortbay.jetty#jetty-util;6.1.26 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@798b5600
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3044a797
 [debug] sbt-chain: module revision found in cache: org.mortbay.jetty#jetty-util;6.1.26
 [debug] 	found org.mortbay.jetty#jetty-util;6.1.26 in sbt-chain
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.mortbay.jetty#jetty-util;6.1.26 [compile->runtime]
@@ -613,7 +613,7 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.mortbay.jetty#jetty-util;6.1.26 [compile->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.apache.hadoop#hadoop-mapreduce-client-app;2.2.0 [compile->default(compile)]
 [info] Resolving org.apache.hadoop#hadoop-mapreduce-client-app;2.2.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@634002e1
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@758df749
 [debug] sbt-chain: module revision found in cache: org.apache.hadoop#hadoop-mapreduce-client-app;2.2.0
 [debug] 	found org.apache.hadoop#hadoop-mapreduce-client-app;2.2.0 in sbt-chain
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.apache.hadoop#hadoop-mapreduce-client-app;2.2.0 [compile->runtime]
@@ -621,7 +621,7 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.apache.hadoop#hadoop-mapreduce-client-app;2.2.0 [compile->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.apache.hadoop#hadoop-mapreduce-client-common;2.2.0 [compile->default(compile)]
 [info] Resolving org.apache.hadoop#hadoop-mapreduce-client-common;2.2.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3e5bbf5b
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@4fe3e08d
 [debug] sbt-chain: module revision found in cache: org.apache.hadoop#hadoop-mapreduce-client-common;2.2.0
 [debug] 	found org.apache.hadoop#hadoop-mapreduce-client-common;2.2.0 in sbt-chain
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.apache.hadoop#hadoop-mapreduce-client-common;2.2.0 [compile->runtime]
@@ -629,7 +629,7 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.apache.hadoop#hadoop-mapreduce-client-common;2.2.0 [compile->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.apache.hadoop#hadoop-yarn-common;2.2.0 [compile->default(compile)]
 [info] Resolving org.apache.hadoop#hadoop-yarn-common;2.2.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@aa5f8a8
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@1fca9ee9
 [debug] sbt-chain: module revision found in cache: org.apache.hadoop#hadoop-yarn-common;2.2.0
 [debug] 	found org.apache.hadoop#hadoop-yarn-common;2.2.0 in sbt-chain
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.apache.hadoop#hadoop-yarn-common;2.2.0 [compile->runtime]
@@ -637,7 +637,7 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.apache.hadoop#hadoop-yarn-common;2.2.0 [compile->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.apache.hadoop#hadoop-yarn-api;2.2.0 [compile->default(compile)]
 [info] Resolving org.apache.hadoop#hadoop-yarn-api;2.2.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@4784308f
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@26701f45
 [debug] sbt-chain: module revision found in cache: org.apache.hadoop#hadoop-yarn-api;2.2.0
 [debug] 	found org.apache.hadoop#hadoop-yarn-api;2.2.0 in sbt-chain
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.apache.hadoop#hadoop-yarn-api;2.2.0 [compile->runtime]
@@ -645,7 +645,7 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.apache.hadoop#hadoop-yarn-api;2.2.0 [compile->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.slf4j#slf4j-log4j12;1.7.5 [compile->default(compile)]
 [info] Resolving org.slf4j#slf4j-log4j12;1.7.5 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@1b7450d0
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@79cc5729
 [debug] sbt-chain: module revision found in cache: org.slf4j#slf4j-log4j12;1.7.5
 [debug] 	found org.slf4j#slf4j-log4j12;1.7.5 in sbt-chain
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.slf4j#slf4j-log4j12;1.7.5 [compile->runtime]
@@ -653,7 +653,7 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.slf4j#slf4j-log4j12;1.7.5 [compile->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.google.inject#guice;3.0 [compile->default(compile)]
 [info] Resolving com.google.inject#guice;3.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6be88568
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@5ca9503f
 [debug] sbt-chain: module revision found in cache: com.google.inject#guice;3.0
 [debug] 	found com.google.inject#guice;3.0 in sbt-chain
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.google.inject#guice;3.0 [compile->runtime]
@@ -661,7 +661,7 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.google.inject#guice;3.0 [compile->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->javax.inject#javax.inject;1 [compile->default(compile)]
 [info] Resolving javax.inject#javax.inject;1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@491dd489
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@79c06c01
 [debug] sbt-chain: module revision found in cache: javax.inject#javax.inject;1
 [debug] 	found javax.inject#javax.inject;1 in sbt-chain
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->javax.inject#javax.inject;1 [compile->runtime]
@@ -669,7 +669,7 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->javax.inject#javax.inject;1 [compile->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->aopalliance#aopalliance;1.0 [compile->default(compile)]
 [info] Resolving aopalliance#aopalliance;1.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@313740ff
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@2439c0ea
 [debug] sbt-chain: module revision found in cache: aopalliance#aopalliance;1.0
 [debug] 	found aopalliance#aopalliance;1.0 in sbt-chain
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->aopalliance#aopalliance;1.0 [compile->runtime]
@@ -677,7 +677,7 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->aopalliance#aopalliance;1.0 [compile->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.sonatype.sisu.inject#cglib;2.2.1-v20090111 [compile->default(compile)]
 [info] Resolving org.sonatype.sisu.inject#cglib;2.2.1-v20090111 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@48ccc429
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@7c8beae8
 [debug] sbt-chain: module revision found in cache: org.sonatype.sisu.inject#cglib;2.2.1-v20090111
 [debug] 	found org.sonatype.sisu.inject#cglib;2.2.1-v20090111 in sbt-chain
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.sonatype.sisu.inject#cglib;2.2.1-v20090111 [compile->runtime]
@@ -685,7 +685,7 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.sonatype.sisu.inject#cglib;2.2.1-v20090111 [compile->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->asm#asm;3.1 [compile->default(compile)]
 [info] Resolving asm#asm;3.1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@308a48f3
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3af7d3f8
 [debug] sbt-chain: module revision found in cache: asm#asm;3.1
 [debug] 	found asm#asm;3.1 in sbt-chain
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->asm#asm;3.1 [compile->runtime]
@@ -693,7 +693,7 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->asm#asm;3.1 [compile->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.sun.jersey.jersey-test-framework#jersey-test-framework-grizzly2;1.9 [compile->default(compile)]
 [info] Resolving com.sun.jersey.jersey-test-framework#jersey-test-framework-grizzly2;1.9 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@21499005
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@2d34927d
 [debug] sbt-chain: module revision found in cache: com.sun.jersey.jersey-test-framework#jersey-test-framework-grizzly2;1.9
 [debug] 	found com.sun.jersey.jersey-test-framework#jersey-test-framework-grizzly2;1.9 in sbt-chain
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.sun.jersey.jersey-test-framework#jersey-test-framework-grizzly2;1.9 [compile->runtime]
@@ -701,7 +701,7 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.sun.jersey.jersey-test-framework#jersey-test-framework-grizzly2;1.9 [compile->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.sun.jersey#jersey-server;1.9 [compile->default(compile)]
 [info] Resolving com.sun.jersey#jersey-server;1.9 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@56770cf5
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@5b52158b
 [debug] sbt-chain: module revision found in cache: com.sun.jersey#jersey-server;1.9
 [debug] 	found com.sun.jersey#jersey-server;1.9 in sbt-chain
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.sun.jersey#jersey-server;1.9 [compile->runtime]
@@ -709,7 +709,7 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.sun.jersey#jersey-server;1.9 [compile->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.sun.jersey#jersey-json;1.9 [compile->default(compile)]
 [info] Resolving com.sun.jersey#jersey-json;1.9 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6f24f687
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@22249072
 [debug] sbt-chain: module revision found in cache: com.sun.jersey#jersey-json;1.9
 [debug] 	found com.sun.jersey#jersey-json;1.9 in sbt-chain
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.sun.jersey#jersey-json;1.9 [compile->runtime]
@@ -717,7 +717,7 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.sun.jersey#jersey-json;1.9 [compile->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.codehaus.jettison#jettison;1.1 [compile->default(compile)]
 [info] Resolving org.codehaus.jettison#jettison;1.1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@5b9918ef
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@4e9bc015
 [debug] sbt-chain: module revision found in cache: org.codehaus.jettison#jettison;1.1
 [debug] 	found org.codehaus.jettison#jettison;1.1 in sbt-chain
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.codehaus.jettison#jettison;1.1 [compile->runtime]
@@ -725,7 +725,7 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.codehaus.jettison#jettison;1.1 [compile->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.sun.xml.bind#jaxb-impl;2.2.3-1 [compile->default(compile)]
 [info] Resolving com.sun.xml.bind#jaxb-impl;2.2.3-1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@393ff8f1
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3cfc198b
 [debug] sbt-chain: module revision found in cache: com.sun.xml.bind#jaxb-impl;2.2.3-1
 [debug] 	found com.sun.xml.bind#jaxb-impl;2.2.3-1 in sbt-chain
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.sun.xml.bind#jaxb-impl;2.2.3-1 [compile->runtime]
@@ -733,7 +733,7 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.sun.xml.bind#jaxb-impl;2.2.3-1 [compile->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->javax.xml.bind#jaxb-api;2.2.2 [compile->default(compile)]
 [info] Resolving javax.xml.bind#jaxb-api;2.2.2 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@47f34e3d
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@5dabb56b
 [debug] sbt-chain: module revision found in cache: javax.xml.bind#jaxb-api;2.2.2
 [debug] 	found javax.xml.bind#jaxb-api;2.2.2 in sbt-chain
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->javax.xml.bind#jaxb-api;2.2.2 [compile->runtime]
@@ -741,7 +741,7 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->javax.xml.bind#jaxb-api;2.2.2 [compile->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->javax.activation#activation;1.1 [compile->default(compile)]
 [info] Resolving javax.activation#activation;1.1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@4a26064e
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@7115e68b
 [debug] sbt-chain: module revision found in cache: javax.activation#activation;1.1
 [debug] 	found javax.activation#activation;1.1 in sbt-chain
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->javax.activation#activation;1.1 [compile->runtime]
@@ -749,7 +749,7 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->javax.activation#activation;1.1 [compile->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.codehaus.jackson#jackson-jaxrs;1.8.3 [compile->default(compile)]
 [info] Resolving org.codehaus.jackson#jackson-jaxrs;1.8.3 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@233b8d0
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@75e6f20d
 [debug] sbt-chain: module revision found in cache: org.codehaus.jackson#jackson-jaxrs;1.8.3
 [debug] 	found org.codehaus.jackson#jackson-jaxrs;1.8.3 in sbt-chain
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.codehaus.jackson#jackson-jaxrs;1.8.3 [compile->runtime]
@@ -757,7 +757,7 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.codehaus.jackson#jackson-jaxrs;1.8.3 [compile->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.codehaus.jackson#jackson-xc;1.8.3 [compile->default(compile)]
 [info] Resolving org.codehaus.jackson#jackson-xc;1.8.3 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6e670b69
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6c55f368
 [debug] sbt-chain: module revision found in cache: org.codehaus.jackson#jackson-xc;1.8.3
 [debug] 	found org.codehaus.jackson#jackson-xc;1.8.3 in sbt-chain
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.codehaus.jackson#jackson-xc;1.8.3 [compile->runtime]
@@ -765,7 +765,7 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.codehaus.jackson#jackson-xc;1.8.3 [compile->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.sun.jersey.contribs#jersey-guice;1.9 [compile->default(compile)]
 [info] Resolving com.sun.jersey.contribs#jersey-guice;1.9 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@424f72f8
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@188e9fc1
 [debug] sbt-chain: module revision found in cache: com.sun.jersey.contribs#jersey-guice;1.9
 [debug] 	found com.sun.jersey.contribs#jersey-guice;1.9 in sbt-chain
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.sun.jersey.contribs#jersey-guice;1.9 [compile->runtime]
@@ -773,7 +773,7 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.sun.jersey.contribs#jersey-guice;1.9 [compile->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.apache.hadoop#hadoop-yarn-client;2.2.0 [compile->default(compile)]
 [info] Resolving org.apache.hadoop#hadoop-yarn-client;2.2.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@5a798e49
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@478e4387
 [debug] sbt-chain: module revision found in cache: org.apache.hadoop#hadoop-yarn-client;2.2.0
 [debug] 	found org.apache.hadoop#hadoop-yarn-client;2.2.0 in sbt-chain
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.apache.hadoop#hadoop-yarn-client;2.2.0 [compile->runtime]
@@ -781,7 +781,7 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.apache.hadoop#hadoop-yarn-client;2.2.0 [compile->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.apache.hadoop#hadoop-mapreduce-client-core;2.2.0 [compile->default(compile)]
 [info] Resolving org.apache.hadoop#hadoop-mapreduce-client-core;2.2.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@4fbfaf8b
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@10f1fb7e
 [debug] sbt-chain: module revision found in cache: org.apache.hadoop#hadoop-mapreduce-client-core;2.2.0
 [debug] 	found org.apache.hadoop#hadoop-mapreduce-client-core;2.2.0 in sbt-chain
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.apache.hadoop#hadoop-mapreduce-client-core;2.2.0 [compile->runtime]
@@ -789,7 +789,7 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.apache.hadoop#hadoop-mapreduce-client-core;2.2.0 [compile->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.apache.hadoop#hadoop-yarn-server-common;2.2.0 [compile->default(compile)]
 [info] Resolving org.apache.hadoop#hadoop-yarn-server-common;2.2.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@4c85ba8d
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@39a3bcb7
 [debug] sbt-chain: module revision found in cache: org.apache.hadoop#hadoop-yarn-server-common;2.2.0
 [debug] 	found org.apache.hadoop#hadoop-yarn-server-common;2.2.0 in sbt-chain
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.apache.hadoop#hadoop-yarn-server-common;2.2.0 [compile->runtime]
@@ -797,7 +797,7 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.apache.hadoop#hadoop-yarn-server-common;2.2.0 [compile->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.apache.hadoop#hadoop-mapreduce-client-shuffle;2.2.0 [compile->default(compile)]
 [info] Resolving org.apache.hadoop#hadoop-mapreduce-client-shuffle;2.2.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3954781d
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@12c7f087
 [debug] sbt-chain: module revision found in cache: org.apache.hadoop#hadoop-mapreduce-client-shuffle;2.2.0
 [debug] 	found org.apache.hadoop#hadoop-mapreduce-client-shuffle;2.2.0 in sbt-chain
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.apache.hadoop#hadoop-mapreduce-client-shuffle;2.2.0 [compile->runtime]
@@ -805,7 +805,7 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.apache.hadoop#hadoop-mapreduce-client-shuffle;2.2.0 [compile->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.apache.hadoop#hadoop-mapreduce-client-jobclient;2.2.0 [compile->default(compile)]
 [info] Resolving org.apache.hadoop#hadoop-mapreduce-client-jobclient;2.2.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@30803bb1
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3950216f
 [debug] sbt-chain: module revision found in cache: org.apache.hadoop#hadoop-mapreduce-client-jobclient;2.2.0
 [debug] 	found org.apache.hadoop#hadoop-mapreduce-client-jobclient;2.2.0 in sbt-chain
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.apache.hadoop#hadoop-mapreduce-client-jobclient;2.2.0 [compile->runtime]
@@ -813,7 +813,7 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.apache.hadoop#hadoop-mapreduce-client-jobclient;2.2.0 [compile->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.apache.hadoop#hadoop-yarn-server-nodemanager;2.2.0 [compile->default(compile)]
 [info] Resolving org.apache.hadoop#hadoop-yarn-server-nodemanager;2.2.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@4d48eca6
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@44ec81c4
 [debug] sbt-chain: module revision found in cache: org.apache.hadoop#hadoop-yarn-server-nodemanager;2.2.0
 [debug] 	found org.apache.hadoop#hadoop-yarn-server-nodemanager;2.2.0 in sbt-chain
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.apache.hadoop#hadoop-yarn-server-nodemanager;2.2.0 [compile->runtime]
@@ -821,7 +821,7 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.apache.hadoop#hadoop-yarn-server-nodemanager;2.2.0 [compile->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.apache.spark#spark-network-common_2.11;1.2.1 [compile->default(compile)]
 [info] Resolving org.apache.spark#spark-network-common_2.11;1.2.1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6b2cee59
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@1d008366
 [debug] sbt-chain: module revision found in cache: org.apache.spark#spark-network-common_2.11;1.2.1
 [debug] 	found org.apache.spark#spark-network-common_2.11;1.2.1 in sbt-chain
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.apache.spark#spark-network-common_2.11;1.2.1 [compile->runtime]
@@ -829,7 +829,7 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.apache.spark#spark-network-common_2.11;1.2.1 [compile->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->io.netty#netty-all;4.0.23.Final [compile->default(compile)]
 [info] Resolving io.netty#netty-all;4.0.23.Final ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@55bb8d35
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@207558e3
 [debug] sbt-chain: module revision found in cache: io.netty#netty-all;4.0.23.Final
 [debug] 	found io.netty#netty-all;4.0.23.Final in sbt-chain
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->io.netty#netty-all;4.0.23.Final [compile->runtime]
@@ -837,7 +837,7 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->io.netty#netty-all;4.0.23.Final [compile->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.spark-project.spark#unused;1.0.0 [compile->default(compile)]
 [info] Resolving org.spark-project.spark#unused;1.0.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@556c5ac1
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@2d4dcd06
 [debug] sbt-chain: module revision found in cache: org.spark-project.spark#unused;1.0.0
 [debug] 	found org.spark-project.spark#unused;1.0.0 in sbt-chain
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.spark-project.spark#unused;1.0.0 [compile->runtime]
@@ -845,7 +845,7 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.spark-project.spark#unused;1.0.0 [compile->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.apache.spark#spark-network-shuffle_2.11;1.2.1 [compile->default(compile)]
 [info] Resolving org.apache.spark#spark-network-shuffle_2.11;1.2.1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@4c5f2797
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@608c921e
 [debug] sbt-chain: module revision found in cache: org.apache.spark#spark-network-shuffle_2.11;1.2.1
 [debug] 	found org.apache.spark#spark-network-shuffle_2.11;1.2.1 in sbt-chain
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.apache.spark#spark-network-shuffle_2.11;1.2.1 [compile->runtime]
@@ -853,7 +853,7 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.apache.spark#spark-network-shuffle_2.11;1.2.1 [compile->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->net.java.dev.jets3t#jets3t;0.7.1 [compile->default(compile)]
 [info] Resolving net.java.dev.jets3t#jets3t;0.7.1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@1fd4d541
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@5d06c666
 [debug] sbt-chain: module revision found in cache: net.java.dev.jets3t#jets3t;0.7.1
 [debug] 	found net.java.dev.jets3t#jets3t;0.7.1 in sbt-chain
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->net.java.dev.jets3t#jets3t;0.7.1 [compile->runtime]
@@ -861,7 +861,7 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->net.java.dev.jets3t#jets3t;0.7.1 [compile->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.apache.curator#curator-recipes;2.4.0 [compile->default(compile)]
 [info] Resolving org.apache.curator#curator-recipes;2.4.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@346710ef
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6da9e44b
 [debug] sbt-chain: module revision found in cache: org.apache.curator#curator-recipes;2.4.0
 [debug] 	found org.apache.curator#curator-recipes;2.4.0 in sbt-chain
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.apache.curator#curator-recipes;2.4.0 [compile->runtime]
@@ -869,7 +869,7 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.apache.curator#curator-recipes;2.4.0 [compile->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.apache.curator#curator-framework;2.4.0 [compile->default(compile)]
 [info] Resolving org.apache.curator#curator-framework;2.4.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@638e28b6
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@41ce1a33
 [debug] sbt-chain: module revision found in cache: org.apache.curator#curator-framework;2.4.0
 [debug] 	found org.apache.curator#curator-framework;2.4.0 in sbt-chain
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.apache.curator#curator-framework;2.4.0 [compile->runtime]
@@ -877,7 +877,7 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.apache.curator#curator-framework;2.4.0 [compile->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.apache.curator#curator-client;2.4.0 [compile->default(compile)]
 [info] Resolving org.apache.curator#curator-client;2.4.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@4929ec86
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6b95b0c3
 [debug] sbt-chain: module revision found in cache: org.apache.curator#curator-client;2.4.0
 [debug] 	found org.apache.curator#curator-client;2.4.0 in sbt-chain
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.apache.curator#curator-client;2.4.0 [compile->runtime]
@@ -885,7 +885,7 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.apache.curator#curator-client;2.4.0 [compile->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.apache.zookeeper#zookeeper;3.4.5 [compile->default(compile)]
 [info] Resolving org.apache.zookeeper#zookeeper;3.4.5 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@21aa6f7d
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6f4f8be7
 [debug] sbt-chain: module revision found in cache: org.apache.zookeeper#zookeeper;3.4.5
 [debug] 	found org.apache.zookeeper#zookeeper;3.4.5 in sbt-chain
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.apache.zookeeper#zookeeper;3.4.5 [compile->runtime]
@@ -893,7 +893,7 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.apache.zookeeper#zookeeper;3.4.5 [compile->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->jline#jline;0.9.94 [compile->default(compile)]
 [info] Resolving jline#jline;0.9.94 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@30ce1add
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@359e206f
 [debug] sbt-chain: module revision found in cache: jline#jline;0.9.94
 [debug] 	found jline#jline;0.9.94 in sbt-chain
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->jline#jline;0.9.94 [compile->runtime]
@@ -901,7 +901,7 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->jline#jline;0.9.94 [compile->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.eclipse.jetty#jetty-plus;8.1.14.v20131031 [compile->default(compile)]
 [info] Resolving org.eclipse.jetty#jetty-plus;8.1.14.v20131031 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@5b8fe361
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@25960379
 [debug] sbt-chain: module revision found in cache: org.eclipse.jetty#jetty-plus;8.1.14.v20131031
 [debug] 	found org.eclipse.jetty#jetty-plus;8.1.14.v20131031 in sbt-chain
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.eclipse.jetty#jetty-plus;8.1.14.v20131031 [compile->runtime]
@@ -909,7 +909,7 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.eclipse.jetty#jetty-plus;8.1.14.v20131031 [compile->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.eclipse.jetty.orbit#javax.transaction;1.1.1.v201105210645 [compile->default(compile)]
 [info] Resolving org.eclipse.jetty.orbit#javax.transaction;1.1.1.v201105210645 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6ed1c639
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@607e186c
 [debug] sbt-chain: module revision found in cache: org.eclipse.jetty.orbit#javax.transaction;1.1.1.v201105210645
 [debug] 	found org.eclipse.jetty.orbit#javax.transaction;1.1.1.v201105210645 in sbt-chain
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.eclipse.jetty.orbit#javax.transaction;1.1.1.v201105210645 [compile->runtime]
@@ -917,7 +917,7 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.eclipse.jetty.orbit#javax.transaction;1.1.1.v201105210645 [compile->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.eclipse.jetty#jetty-webapp;8.1.14.v20131031 [compile->default(compile)]
 [info] Resolving org.eclipse.jetty#jetty-webapp;8.1.14.v20131031 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6e5caa67
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@13f4ebac
 [debug] sbt-chain: module revision found in cache: org.eclipse.jetty#jetty-webapp;8.1.14.v20131031
 [debug] 	found org.eclipse.jetty#jetty-webapp;8.1.14.v20131031 in sbt-chain
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.eclipse.jetty#jetty-webapp;8.1.14.v20131031 [compile->runtime]
@@ -925,7 +925,7 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.eclipse.jetty#jetty-webapp;8.1.14.v20131031 [compile->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.eclipse.jetty#jetty-xml;8.1.14.v20131031 [compile->default(compile)]
 [info] Resolving org.eclipse.jetty#jetty-xml;8.1.14.v20131031 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6149e512
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@61918e7a
 [debug] sbt-chain: module revision found in cache: org.eclipse.jetty#jetty-xml;8.1.14.v20131031
 [debug] 	found org.eclipse.jetty#jetty-xml;8.1.14.v20131031 in sbt-chain
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.eclipse.jetty#jetty-xml;8.1.14.v20131031 [compile->runtime]
@@ -933,7 +933,7 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.eclipse.jetty#jetty-xml;8.1.14.v20131031 [compile->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.eclipse.jetty#jetty-util;8.1.14.v20131031 [compile->default(compile)]
 [info] Resolving org.eclipse.jetty#jetty-util;8.1.14.v20131031 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@df70f0b
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3ca7bf39
 [debug] sbt-chain: module revision found in cache: org.eclipse.jetty#jetty-util;8.1.14.v20131031
 [debug] 	found org.eclipse.jetty#jetty-util;8.1.14.v20131031 in sbt-chain
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.eclipse.jetty#jetty-util;8.1.14.v20131031 [compile->runtime]
@@ -941,7 +941,7 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.eclipse.jetty#jetty-util;8.1.14.v20131031 [compile->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.eclipse.jetty#jetty-servlet;8.1.14.v20131031 [compile->default(compile)]
 [info] Resolving org.eclipse.jetty#jetty-servlet;8.1.14.v20131031 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3d7f386d
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@5425e2a2
 [debug] sbt-chain: module revision found in cache: org.eclipse.jetty#jetty-servlet;8.1.14.v20131031
 [debug] 	found org.eclipse.jetty#jetty-servlet;8.1.14.v20131031 in sbt-chain
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.eclipse.jetty#jetty-servlet;8.1.14.v20131031 [compile->runtime]
@@ -949,7 +949,7 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.eclipse.jetty#jetty-servlet;8.1.14.v20131031 [compile->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.eclipse.jetty#jetty-security;8.1.14.v20131031 [compile->default(compile)]
 [info] Resolving org.eclipse.jetty#jetty-security;8.1.14.v20131031 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@36edde2e
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@68e13443
 [debug] sbt-chain: module revision found in cache: org.eclipse.jetty#jetty-security;8.1.14.v20131031
 [debug] 	found org.eclipse.jetty#jetty-security;8.1.14.v20131031 in sbt-chain
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.eclipse.jetty#jetty-security;8.1.14.v20131031 [compile->runtime]
@@ -957,7 +957,7 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.eclipse.jetty#jetty-security;8.1.14.v20131031 [compile->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.eclipse.jetty#jetty-server;8.1.14.v20131031 [compile->default(compile)]
 [info] Resolving org.eclipse.jetty#jetty-server;8.1.14.v20131031 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6e64171a
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@36363e28
 [debug] sbt-chain: module revision found in cache: org.eclipse.jetty#jetty-server;8.1.14.v20131031
 [debug] 	found org.eclipse.jetty#jetty-server;8.1.14.v20131031 in sbt-chain
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.eclipse.jetty#jetty-server;8.1.14.v20131031 [compile->runtime]
@@ -965,7 +965,7 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.eclipse.jetty#jetty-server;8.1.14.v20131031 [compile->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.eclipse.jetty.orbit#javax.servlet;3.0.0.v201112011016 [compile->default(compile)]
 [info] Resolving org.eclipse.jetty.orbit#javax.servlet;3.0.0.v201112011016 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@11808023
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@2abd9d9
 [debug] sbt-chain: module revision found in cache: org.eclipse.jetty.orbit#javax.servlet;3.0.0.v201112011016
 [debug] 	found org.eclipse.jetty.orbit#javax.servlet;3.0.0.v201112011016 in sbt-chain
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.eclipse.jetty.orbit#javax.servlet;3.0.0.v201112011016 [compile->runtime]
@@ -973,7 +973,7 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.eclipse.jetty.orbit#javax.servlet;3.0.0.v201112011016 [compile->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.eclipse.jetty#jetty-continuation;8.1.14.v20131031 [compile->default(compile)]
 [info] Resolving org.eclipse.jetty#jetty-continuation;8.1.14.v20131031 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@afaf009
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6fa1068f
 [debug] sbt-chain: module revision found in cache: org.eclipse.jetty#jetty-continuation;8.1.14.v20131031
 [debug] 	found org.eclipse.jetty#jetty-continuation;8.1.14.v20131031 in sbt-chain
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.eclipse.jetty#jetty-continuation;8.1.14.v20131031 [compile->runtime]
@@ -981,7 +981,7 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.eclipse.jetty#jetty-continuation;8.1.14.v20131031 [compile->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.eclipse.jetty#jetty-http;8.1.14.v20131031 [compile->default(compile)]
 [info] Resolving org.eclipse.jetty#jetty-http;8.1.14.v20131031 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@d06a38e
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@de3b930
 [debug] sbt-chain: module revision found in cache: org.eclipse.jetty#jetty-http;8.1.14.v20131031
 [debug] 	found org.eclipse.jetty#jetty-http;8.1.14.v20131031 in sbt-chain
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.eclipse.jetty#jetty-http;8.1.14.v20131031 [compile->runtime]
@@ -989,7 +989,7 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.eclipse.jetty#jetty-http;8.1.14.v20131031 [compile->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.eclipse.jetty#jetty-io;8.1.14.v20131031 [compile->default(compile)]
 [info] Resolving org.eclipse.jetty#jetty-io;8.1.14.v20131031 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@4e645e9a
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@5f648566
 [debug] sbt-chain: module revision found in cache: org.eclipse.jetty#jetty-io;8.1.14.v20131031
 [debug] 	found org.eclipse.jetty#jetty-io;8.1.14.v20131031 in sbt-chain
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.eclipse.jetty#jetty-io;8.1.14.v20131031 [compile->runtime]
@@ -997,7 +997,7 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.eclipse.jetty#jetty-io;8.1.14.v20131031 [compile->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.eclipse.jetty#jetty-jndi;8.1.14.v20131031 [compile->default(compile)]
 [info] Resolving org.eclipse.jetty#jetty-jndi;8.1.14.v20131031 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@87e9def
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6a2b0c4
 [debug] sbt-chain: module revision found in cache: org.eclipse.jetty#jetty-jndi;8.1.14.v20131031
 [debug] 	found org.eclipse.jetty#jetty-jndi;8.1.14.v20131031 in sbt-chain
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.eclipse.jetty#jetty-jndi;8.1.14.v20131031 [compile->runtime]
@@ -1005,7 +1005,7 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.eclipse.jetty#jetty-jndi;8.1.14.v20131031 [compile->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.eclipse.jetty.orbit#javax.mail.glassfish;1.4.1.v201005082020 [compile->default(compile)]
 [info] Resolving org.eclipse.jetty.orbit#javax.mail.glassfish;1.4.1.v201005082020 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@12f1eabe
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@1a487b55
 [debug] sbt-chain: module revision found in cache: org.eclipse.jetty.orbit#javax.mail.glassfish;1.4.1.v201005082020
 [debug] 	found org.eclipse.jetty.orbit#javax.mail.glassfish;1.4.1.v201005082020 in sbt-chain
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.eclipse.jetty.orbit#javax.mail.glassfish;1.4.1.v201005082020 [compile->runtime]
@@ -1013,7 +1013,7 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.eclipse.jetty.orbit#javax.mail.glassfish;1.4.1.v201005082020 [compile->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.eclipse.jetty.orbit#javax.activation;1.1.0.v201105071233 [compile->default(compile)]
 [info] Resolving org.eclipse.jetty.orbit#javax.activation;1.1.0.v201105071233 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@10d25b4f
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@8f4ff16
 [debug] sbt-chain: module revision found in cache: org.eclipse.jetty.orbit#javax.activation;1.1.0.v201105071233
 [debug] 	found org.eclipse.jetty.orbit#javax.activation;1.1.0.v201105071233 in sbt-chain
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.eclipse.jetty.orbit#javax.activation;1.1.0.v201105071233 [compile->runtime]
@@ -1021,7 +1021,7 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.eclipse.jetty.orbit#javax.activation;1.1.0.v201105071233 [compile->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.apache.commons#commons-lang3;3.3.2 [compile->default(compile)]
 [info] Resolving org.apache.commons#commons-lang3;3.3.2 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@54aa0a17
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@35d16296
 [debug] sbt-chain: module revision found in cache: org.apache.commons#commons-lang3;3.3.2
 [debug] 	found org.apache.commons#commons-lang3;3.3.2 in sbt-chain
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.apache.commons#commons-lang3;3.3.2 [compile->runtime]
@@ -1029,7 +1029,7 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.apache.commons#commons-lang3;3.3.2 [compile->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.apache.commons#commons-math3;3.1.1 [compile->default(compile)]
 [info] Resolving org.apache.commons#commons-math3;3.1.1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3a10c15
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@5e3a06b6
 [debug] sbt-chain: module revision found in cache: org.apache.commons#commons-math3;3.1.1
 [debug] 	found org.apache.commons#commons-math3;3.1.1 in sbt-chain
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.apache.commons#commons-math3;3.1.1 [compile->runtime]
@@ -1037,7 +1037,7 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.apache.commons#commons-math3;3.1.1 [compile->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.slf4j#jul-to-slf4j;1.7.5 [compile->default(compile)]
 [info] Resolving org.slf4j#jul-to-slf4j;1.7.5 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@708dc23
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3308034c
 [debug] sbt-chain: module revision found in cache: org.slf4j#jul-to-slf4j;1.7.5
 [debug] 	found org.slf4j#jul-to-slf4j;1.7.5 in sbt-chain
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.slf4j#jul-to-slf4j;1.7.5 [compile->runtime]
@@ -1045,7 +1045,7 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.slf4j#jul-to-slf4j;1.7.5 [compile->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.slf4j#jcl-over-slf4j;1.7.5 [compile->default(compile)]
 [info] Resolving org.slf4j#jcl-over-slf4j;1.7.5 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@5fccb9ce
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@631a398b
 [debug] sbt-chain: module revision found in cache: org.slf4j#jcl-over-slf4j;1.7.5
 [debug] 	found org.slf4j#jcl-over-slf4j;1.7.5 in sbt-chain
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.slf4j#jcl-over-slf4j;1.7.5 [compile->runtime]
@@ -1053,7 +1053,7 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.slf4j#jcl-over-slf4j;1.7.5 [compile->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.ning#compress-lzf;1.0.0 [compile->default(compile)]
 [info] Resolving com.ning#compress-lzf;1.0.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@ac657a4
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@658781ee
 [debug] sbt-chain: module revision found in cache: com.ning#compress-lzf;1.0.0
 [debug] 	found com.ning#compress-lzf;1.0.0 in sbt-chain
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.ning#compress-lzf;1.0.0 [compile->runtime]
@@ -1061,7 +1061,7 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.ning#compress-lzf;1.0.0 [compile->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.xerial.snappy#snappy-java;1.1.1.6 [compile->default(compile)]
 [info] Resolving org.xerial.snappy#snappy-java;1.1.1.6 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@74dccc61
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6b57f8f6
 [debug] sbt-chain: module revision found in cache: org.xerial.snappy#snappy-java;1.1.1.6
 [debug] 	found org.xerial.snappy#snappy-java;1.1.1.6 in sbt-chain
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.xerial.snappy#snappy-java;1.1.1.6 [compile->runtime]
@@ -1069,7 +1069,7 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.xerial.snappy#snappy-java;1.1.1.6 [compile->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->net.jpountz.lz4#lz4;1.2.0 [compile->default(compile)]
 [info] Resolving net.jpountz.lz4#lz4;1.2.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@5f4c4d50
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@22d32285
 [debug] sbt-chain: module revision found in cache: net.jpountz.lz4#lz4;1.2.0
 [debug] 	found net.jpountz.lz4#lz4;1.2.0 in sbt-chain
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->net.jpountz.lz4#lz4;1.2.0 [compile->runtime]
@@ -1077,7 +1077,7 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->net.jpountz.lz4#lz4;1.2.0 [compile->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.roaringbitmap#RoaringBitmap;0.4.5 [compile->default(compile)]
 [info] Resolving org.roaringbitmap#RoaringBitmap;0.4.5 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@65bfa72d
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@644e2c9e
 [debug] sbt-chain: module revision found in cache: org.roaringbitmap#RoaringBitmap;0.4.5
 [debug] 	found org.roaringbitmap#RoaringBitmap;0.4.5 in sbt-chain
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.roaringbitmap#RoaringBitmap;0.4.5 [compile->runtime]
@@ -1085,7 +1085,7 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.roaringbitmap#RoaringBitmap;0.4.5 [compile->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->commons-net#commons-net;2.2 [compile->default(compile)]
 [info] Resolving commons-net#commons-net;2.2 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@4488dff0
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@16b26af9
 [debug] sbt-chain: module revision found in cache: commons-net#commons-net;2.2
 [debug] 	found commons-net#commons-net;2.2 in sbt-chain
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->commons-net#commons-net;2.2 [compile->runtime]
@@ -1093,7 +1093,7 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->commons-net#commons-net;2.2 [compile->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.spark-project.akka#akka-remote_2.11;2.3.4-spark [compile->default(compile)]
 [info] Resolving org.spark-project.akka#akka-remote_2.11;2.3.4-spark ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@77635503
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@469481f4
 [debug] sbt-chain: module revision found in cache: org.spark-project.akka#akka-remote_2.11;2.3.4-spark
 [debug] 	found org.spark-project.akka#akka-remote_2.11;2.3.4-spark in sbt-chain
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.spark-project.akka#akka-remote_2.11;2.3.4-spark [compile->runtime]
@@ -1101,7 +1101,7 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.spark-project.akka#akka-remote_2.11;2.3.4-spark [compile->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.spark-project.akka#akka-actor_2.11;2.3.4-spark [compile->default(compile)]
 [info] Resolving org.spark-project.akka#akka-actor_2.11;2.3.4-spark ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3a32df1a
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@230fa41d
 [debug] sbt-chain: module revision found in cache: org.spark-project.akka#akka-actor_2.11;2.3.4-spark
 [debug] 	found org.spark-project.akka#akka-actor_2.11;2.3.4-spark in sbt-chain
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.spark-project.akka#akka-actor_2.11;2.3.4-spark [compile->runtime]
@@ -1109,7 +1109,7 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.spark-project.akka#akka-actor_2.11;2.3.4-spark [compile->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->io.netty#netty;3.8.0.Final [compile->default(compile)]
 [info] Resolving io.netty#netty;3.8.0.Final ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@d951ae2
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@1efafa3
 [debug] sbt-chain: module revision found in cache: io.netty#netty;3.8.0.Final
 [debug] 	found io.netty#netty;3.8.0.Final in sbt-chain
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->io.netty#netty;3.8.0.Final [compile->runtime]
@@ -1117,7 +1117,7 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->io.netty#netty;3.8.0.Final [compile->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.spark-project.protobuf#protobuf-java;2.5.0-spark [compile->default(compile)]
 [info] Resolving org.spark-project.protobuf#protobuf-java;2.5.0-spark ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@796588a4
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@78670376
 [debug] sbt-chain: module revision found in cache: org.spark-project.protobuf#protobuf-java;2.5.0-spark
 [debug] 	found org.spark-project.protobuf#protobuf-java;2.5.0-spark in sbt-chain
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.spark-project.protobuf#protobuf-java;2.5.0-spark [compile->runtime]
@@ -1125,7 +1125,7 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.spark-project.protobuf#protobuf-java;2.5.0-spark [compile->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.uncommons.maths#uncommons-maths;1.2.2a [compile->default(compile)]
 [info] Resolving org.uncommons.maths#uncommons-maths;1.2.2a ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@4ceb09ff
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@22952ea2
 [debug] sbt-chain: module revision found in cache: org.uncommons.maths#uncommons-maths;1.2.2a
 [debug] 	found org.uncommons.maths#uncommons-maths;1.2.2a in sbt-chain
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.uncommons.maths#uncommons-maths;1.2.2a [compile->runtime]
@@ -1133,7 +1133,7 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.uncommons.maths#uncommons-maths;1.2.2a [compile->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.spark-project.akka#akka-slf4j_2.11;2.3.4-spark [compile->default(compile)]
 [info] Resolving org.spark-project.akka#akka-slf4j_2.11;2.3.4-spark ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@7d99cb77
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6b7d027d
 [debug] sbt-chain: module revision found in cache: org.spark-project.akka#akka-slf4j_2.11;2.3.4-spark
 [debug] 	found org.spark-project.akka#akka-slf4j_2.11;2.3.4-spark in sbt-chain
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.spark-project.akka#akka-slf4j_2.11;2.3.4-spark [compile->runtime]
@@ -1141,7 +1141,7 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.spark-project.akka#akka-slf4j_2.11;2.3.4-spark [compile->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.json4s#json4s-jackson_2.11;3.2.10 [compile->default(compile)]
 [info] Resolving org.json4s#json4s-jackson_2.11;3.2.10 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@56ac3844
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@4d7988ee
 [debug] sbt-chain: module revision found in cache: org.json4s#json4s-jackson_2.11;3.2.10
 [debug] 	found org.json4s#json4s-jackson_2.11;3.2.10 in sbt-chain
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.json4s#json4s-jackson_2.11;3.2.10 [compile->runtime]
@@ -1149,7 +1149,7 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.json4s#json4s-jackson_2.11;3.2.10 [compile->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.json4s#json4s-core_2.11;3.2.10 [compile->default(compile)]
 [info] Resolving org.json4s#json4s-core_2.11;3.2.10 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@54a032e2
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3c403e8
 [debug] sbt-chain: module revision found in cache: org.json4s#json4s-core_2.11;3.2.10
 [debug] 	found org.json4s#json4s-core_2.11;3.2.10 in sbt-chain
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.json4s#json4s-core_2.11;3.2.10 [compile->runtime]
@@ -1157,7 +1157,7 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.json4s#json4s-core_2.11;3.2.10 [compile->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.json4s#json4s-ast_2.11;3.2.10 [compile->default(compile)]
 [info] Resolving org.json4s#json4s-ast_2.11;3.2.10 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@80a03b2
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@2b0580b7
 [debug] sbt-chain: module revision found in cache: org.json4s#json4s-ast_2.11;3.2.10
 [debug] 	found org.json4s#json4s-ast_2.11;3.2.10 in sbt-chain
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.json4s#json4s-ast_2.11;3.2.10 [compile->runtime]
@@ -1165,7 +1165,7 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.json4s#json4s-ast_2.11;3.2.10 [compile->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.thoughtworks.paranamer#paranamer;2.6 [compile->default(compile)]
 [info] Resolving com.thoughtworks.paranamer#paranamer;2.6 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@5ebd499f
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@2e73d2db
 [debug] sbt-chain: module revision found in cache: com.thoughtworks.paranamer#paranamer;2.6
 [debug] 	found com.thoughtworks.paranamer#paranamer;2.6 in sbt-chain
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.thoughtworks.paranamer#paranamer;2.6 [compile->runtime]
@@ -1173,7 +1173,7 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.thoughtworks.paranamer#paranamer;2.6 [compile->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.scala-lang#scalap;2.11.0 [compile->default(compile)]
 [info] Resolving org.scala-lang#scalap;2.11.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@70187672
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@23e59d4b
 [debug] sbt-chain: module revision found in cache: org.scala-lang#scalap;2.11.0
 [debug] 	found org.scala-lang#scalap;2.11.0 in sbt-chain
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.scala-lang#scalap;2.11.0 [compile->runtime]
@@ -1181,7 +1181,7 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.scala-lang#scalap;2.11.0 [compile->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.scala-lang#scala-compiler;2.11.0 [compile->default(compile)]
 [info] Resolving org.scala-lang#scala-compiler;2.11.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@5597c64c
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@5a97d3ac
 [debug] sbt-chain: module revision found in cache: org.scala-lang#scala-compiler;2.11.0
 [debug] 	found org.scala-lang#scala-compiler;2.11.0 in sbt-chain
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.scala-lang#scala-compiler;2.11.0 [compile->runtime]
@@ -1189,7 +1189,7 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.scala-lang#scala-compiler;2.11.0 [compile->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.fasterxml.jackson.core#jackson-databind;2.3.1 [compile->default(compile)]
 [info] Resolving com.fasterxml.jackson.core#jackson-databind;2.3.1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@50b1fc49
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@344e1922
 [debug] sbt-chain: module revision found in cache: com.fasterxml.jackson.core#jackson-databind;2.3.1
 [debug] 	found com.fasterxml.jackson.core#jackson-databind;2.3.1 in sbt-chain
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.fasterxml.jackson.core#jackson-databind;2.3.1 [compile->runtime]
@@ -1197,7 +1197,7 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.fasterxml.jackson.core#jackson-databind;2.3.1 [compile->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.fasterxml.jackson.core#jackson-annotations;2.3.0 [compile->default(compile)]
 [info] Resolving com.fasterxml.jackson.core#jackson-annotations;2.3.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@47f8e80a
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@5b1a15fd
 [debug] sbt-chain: module revision found in cache: com.fasterxml.jackson.core#jackson-annotations;2.3.0
 [debug] 	found com.fasterxml.jackson.core#jackson-annotations;2.3.0 in sbt-chain
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.fasterxml.jackson.core#jackson-annotations;2.3.0 [compile->runtime]
@@ -1205,7 +1205,7 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.fasterxml.jackson.core#jackson-annotations;2.3.0 [compile->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.fasterxml.jackson.core#jackson-core;2.3.1 [compile->default(compile)]
 [info] Resolving com.fasterxml.jackson.core#jackson-core;2.3.1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@1e28a838
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@63911d98
 [debug] sbt-chain: module revision found in cache: com.fasterxml.jackson.core#jackson-core;2.3.1
 [debug] 	found com.fasterxml.jackson.core#jackson-core;2.3.1 in sbt-chain
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.fasterxml.jackson.core#jackson-core;2.3.1 [compile->runtime]
@@ -1213,7 +1213,7 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.fasterxml.jackson.core#jackson-core;2.3.1 [compile->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.apache.mesos#mesos;0.18.1 [compile->default(compile)]
 [info] Resolving org.apache.mesos#mesos;0.18.1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@26580ad1
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@36cb2149
 [debug] sbt-chain: module revision found in cache: org.apache.mesos#mesos;0.18.1
 [debug] 	found org.apache.mesos#mesos;0.18.1 in sbt-chain
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.apache.mesos#mesos;0.18.1 [compile->runtime]
@@ -1221,7 +1221,7 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.apache.mesos#mesos;0.18.1 [compile->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.clearspring.analytics#stream;2.7.0 [compile->default(compile)]
 [info] Resolving com.clearspring.analytics#stream;2.7.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@9f3bc7b
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@38c69cd6
 [debug] sbt-chain: module revision found in cache: com.clearspring.analytics#stream;2.7.0
 [debug] 	found com.clearspring.analytics#stream;2.7.0 in sbt-chain
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.clearspring.analytics#stream;2.7.0 [compile->runtime]
@@ -1229,7 +1229,7 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.clearspring.analytics#stream;2.7.0 [compile->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.codahale.metrics#metrics-core;3.0.0 [compile->default(compile)]
 [info] Resolving com.codahale.metrics#metrics-core;3.0.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@15e876c0
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@322ed7cb
 [debug] sbt-chain: module revision found in cache: com.codahale.metrics#metrics-core;3.0.0
 [debug] 	found com.codahale.metrics#metrics-core;3.0.0 in sbt-chain
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.codahale.metrics#metrics-core;3.0.0 [compile->runtime]
@@ -1237,7 +1237,7 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.codahale.metrics#metrics-core;3.0.0 [compile->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.codahale.metrics#metrics-jvm;3.0.0 [compile->default(compile)]
 [info] Resolving com.codahale.metrics#metrics-jvm;3.0.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@69270e3c
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@68903b3d
 [debug] sbt-chain: module revision found in cache: com.codahale.metrics#metrics-jvm;3.0.0
 [debug] 	found com.codahale.metrics#metrics-jvm;3.0.0 in sbt-chain
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.codahale.metrics#metrics-jvm;3.0.0 [compile->runtime]
@@ -1245,7 +1245,7 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.codahale.metrics#metrics-jvm;3.0.0 [compile->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.codahale.metrics#metrics-json;3.0.0 [compile->default(compile)]
 [info] Resolving com.codahale.metrics#metrics-json;3.0.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@5a385fbf
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@7b717788
 [debug] sbt-chain: module revision found in cache: com.codahale.metrics#metrics-json;3.0.0
 [debug] 	found com.codahale.metrics#metrics-json;3.0.0 in sbt-chain
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.codahale.metrics#metrics-json;3.0.0 [compile->runtime]
@@ -1253,7 +1253,7 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.codahale.metrics#metrics-json;3.0.0 [compile->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.codahale.metrics#metrics-graphite;3.0.0 [compile->default(compile)]
 [info] Resolving com.codahale.metrics#metrics-graphite;3.0.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3a5ef2dc
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@7d82af01
 [debug] sbt-chain: module revision found in cache: com.codahale.metrics#metrics-graphite;3.0.0
 [debug] 	found com.codahale.metrics#metrics-graphite;3.0.0 in sbt-chain
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.codahale.metrics#metrics-graphite;3.0.0 [compile->runtime]
@@ -1261,7 +1261,7 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.codahale.metrics#metrics-graphite;3.0.0 [compile->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.tachyonproject#tachyon;0.5.0 [compile->default(compile)]
 [info] Resolving org.tachyonproject#tachyon;0.5.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@346bffbc
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@61e96ed
 [debug] sbt-chain: module revision found in cache: org.tachyonproject#tachyon;0.5.0
 [debug] 	found org.tachyonproject#tachyon;0.5.0 in sbt-chain
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.tachyonproject#tachyon;0.5.0 [compile->runtime]
@@ -1269,7 +1269,7 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.tachyonproject#tachyon;0.5.0 [compile->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->commons-io#commons-io;2.4 [compile->default(compile)]
 [info] Resolving commons-io#commons-io;2.4 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@7ca9d559
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@464305d2
 [debug] sbt-chain: module revision found in cache: commons-io#commons-io;2.4
 [debug] 	found commons-io#commons-io;2.4 in sbt-chain
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->commons-io#commons-io;2.4 [compile->runtime]
@@ -1277,7 +1277,7 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->commons-io#commons-io;2.4 [compile->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.spark-project#pyrolite;2.0.1 [compile->default(compile)]
 [info] Resolving org.spark-project#pyrolite;2.0.1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3bf945aa
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@5ffab204
 [debug] sbt-chain: module revision found in cache: org.spark-project#pyrolite;2.0.1
 [debug] 	found org.spark-project#pyrolite;2.0.1 in sbt-chain
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.spark-project#pyrolite;2.0.1 [compile->runtime]
@@ -1285,7 +1285,7 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.spark-project#pyrolite;2.0.1 [compile->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->net.sf.py4j#py4j;0.8.2.1 [compile->default(compile)]
 [info] Resolving net.sf.py4j#py4j;0.8.2.1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@286cd64d
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@385b5118
 [debug] sbt-chain: module revision found in cache: net.sf.py4j#py4j;0.8.2.1
 [debug] 	found net.sf.py4j#py4j;0.8.2.1 in sbt-chain
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->net.sf.py4j#py4j;0.8.2.1 [compile->runtime]
@@ -1293,7 +1293,7 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->net.sf.py4j#py4j;0.8.2.1 [compile->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.apache.spark#spark-streaming_2.11;1.2.1 [compile->default(compile)]
 [info] Resolving org.apache.spark#spark-streaming_2.11;1.2.1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@54d086af
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3e580022
 [debug] sbt-chain: module revision found in cache: org.apache.spark#spark-streaming_2.11;1.2.1
 [debug] 	found org.apache.spark#spark-streaming_2.11;1.2.1 in sbt-chain
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.apache.spark#spark-streaming_2.11;1.2.1 [compile->runtime]
@@ -1301,7 +1301,7 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.apache.spark#spark-streaming_2.11;1.2.1 [compile->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.apache.spark#spark-streaming-twitter_2.11;1.2.1 [compile->default(compile)]
 [info] Resolving org.apache.spark#spark-streaming-twitter_2.11;1.2.1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@4f4b979
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@5d208d70
 [debug] sbt-chain: module revision found in cache: org.apache.spark#spark-streaming-twitter_2.11;1.2.1
 [debug] 	found org.apache.spark#spark-streaming-twitter_2.11;1.2.1 in sbt-chain
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.apache.spark#spark-streaming-twitter_2.11;1.2.1 [compile->runtime]
@@ -1309,7 +1309,7 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.apache.spark#spark-streaming-twitter_2.11;1.2.1 [compile->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.twitter4j#twitter4j-stream;3.0.3 [compile->default(compile)]
 [info] Resolving org.twitter4j#twitter4j-stream;3.0.3 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@1a7d3574
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@63755218
 [debug] sbt-chain: module revision found in cache: org.twitter4j#twitter4j-stream;3.0.3
 [debug] 	found org.twitter4j#twitter4j-stream;3.0.3 in sbt-chain
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.twitter4j#twitter4j-stream;3.0.3 [compile->runtime]
@@ -1317,7 +1317,7 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.twitter4j#twitter4j-stream;3.0.3 [compile->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.twitter4j#twitter4j-core;3.0.3 [compile->default(compile)]
 [info] Resolving org.twitter4j#twitter4j-core;3.0.3 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@43070d0c
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@c417f12
 [debug] sbt-chain: module revision found in cache: org.twitter4j#twitter4j-core;3.0.3
 [debug] 	found org.twitter4j#twitter4j-core;3.0.3 in sbt-chain
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.twitter4j#twitter4j-core;3.0.3 [compile->runtime]
@@ -1325,7 +1325,7 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.twitter4j#twitter4j-core;3.0.3 [compile->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.typesafe.akka#akka-http-experimental_2.11;2.4.11 [compile->default(compile)]
 [info] Resolving com.typesafe.akka#akka-http-experimental_2.11;2.4.11 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3d412a92
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@112c8f65
 [debug] sbt-chain: module revision found in cache: com.typesafe.akka#akka-http-experimental_2.11;2.4.11
 [debug] 	found com.typesafe.akka#akka-http-experimental_2.11;2.4.11 in sbt-chain
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.typesafe.akka#akka-http-experimental_2.11;2.4.11 [compile->runtime]
@@ -1333,7 +1333,7 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.typesafe.akka#akka-http-experimental_2.11;2.4.11 [compile->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.scala-lang.modules#scala-java8-compat_2.11;0.7.0 [compile->default(compile)]
 [info] Resolving org.scala-lang.modules#scala-java8-compat_2.11;0.7.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@2f64d731
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@fe0f973
 [debug] sbt-chain: module revision found in cache: org.scala-lang.modules#scala-java8-compat_2.11;0.7.0
 [debug] 	found org.scala-lang.modules#scala-java8-compat_2.11;0.7.0 in sbt-chain
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.scala-lang.modules#scala-java8-compat_2.11;0.7.0 [compile->runtime]
@@ -1341,7 +1341,7 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.scala-lang.modules#scala-java8-compat_2.11;0.7.0 [compile->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.typesafe#ssl-config-core_2.11;0.2.1 [compile->default(compile)]
 [info] Resolving com.typesafe#ssl-config-core_2.11;0.2.1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@37b989b5
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@e547b65
 [debug] sbt-chain: module revision found in cache: com.typesafe#ssl-config-core_2.11;0.2.1
 [debug] 	found com.typesafe#ssl-config-core_2.11;0.2.1 in sbt-chain
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.typesafe#ssl-config-core_2.11;0.2.1 [compile->runtime]
@@ -1349,7 +1349,7 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.typesafe#ssl-config-core_2.11;0.2.1 [compile->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.reactivestreams#reactive-streams;1.0.0 [compile->default(compile)]
 [info] Resolving org.reactivestreams#reactive-streams;1.0.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@263d9302
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@2e74a2cd
 [debug] sbt-chain: module revision found in cache: org.reactivestreams#reactive-streams;1.0.0
 [debug] 	found org.reactivestreams#reactive-streams;1.0.0 in sbt-chain
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.reactivestreams#reactive-streams;1.0.0 [compile->runtime]
@@ -1357,7 +1357,7 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.reactivestreams#reactive-streams;1.0.0 [compile->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.slf4j#slf4j-simple;1.7.5 [compile->default(compile)]
 [info] Resolving org.slf4j#slf4j-simple;1.7.5 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@5d2a165d
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@25251207
 [debug] sbt-chain: module revision found in cache: org.slf4j#slf4j-simple;1.7.5
 [debug] 	found org.slf4j#slf4j-simple;1.7.5 in sbt-chain
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.slf4j#slf4j-simple;1.7.5 [compile->runtime]
@@ -1365,7 +1365,7 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.slf4j#slf4j-simple;1.7.5 [compile->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.mongodb#casbah-commons_2.11;3.1.1 [compile->default(compile)]
 [info] Resolving org.mongodb#casbah-commons_2.11;3.1.1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@1ad2e437
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@4173f728
 [debug] sbt-chain: module revision found in cache: org.mongodb#casbah-commons_2.11;3.1.1
 [debug] 	found org.mongodb#casbah-commons_2.11;3.1.1 in sbt-chain
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.mongodb#casbah-commons_2.11;3.1.1 [compile->runtime]
@@ -1373,7 +1373,7 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.mongodb#casbah-commons_2.11;3.1.1 [compile->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.github.nscala-time#nscala-time_2.11;1.0.0 [compile->default(compile)]
 [info] Resolving com.github.nscala-time#nscala-time_2.11;1.0.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@2a6f9dbc
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3da7323e
 [debug] sbt-chain: module revision found in cache: com.github.nscala-time#nscala-time_2.11;1.0.0
 [debug] 	found com.github.nscala-time#nscala-time_2.11;1.0.0 in sbt-chain
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.github.nscala-time#nscala-time_2.11;1.0.0 [compile->runtime]
@@ -1381,7 +1381,7 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.github.nscala-time#nscala-time_2.11;1.0.0 [compile->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->joda-time#joda-time;2.3 [compile->default(compile)]
 [info] Resolving joda-time#joda-time;2.3 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@780a629a
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3c7e4a6a
 [debug] sbt-chain: module revision found in cache: joda-time#joda-time;2.3
 [debug] 	found joda-time#joda-time;2.3 in sbt-chain
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->joda-time#joda-time;2.3 [compile->runtime]
@@ -1389,7 +1389,7 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->joda-time#joda-time;2.3 [compile->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.joda#joda-convert;1.2 [compile->default(compile)]
 [info] Resolving org.joda#joda-convert;1.2 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@582cf83a
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@19a7f0df
 [debug] sbt-chain: module revision found in cache: org.joda#joda-convert;1.2
 [debug] 	found org.joda#joda-convert;1.2 in sbt-chain
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.joda#joda-convert;1.2 [compile->runtime]
@@ -1397,7 +1397,7 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.joda#joda-convert;1.2 [compile->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.mongodb#mongo-java-driver;3.2.2 [compile->default(compile)]
 [info] Resolving org.mongodb#mongo-java-driver;3.2.2 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@2540b0df
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3204973e
 [debug] sbt-chain: module revision found in cache: org.mongodb#mongo-java-driver;3.2.2
 [debug] 	found org.mongodb#mongo-java-driver;3.2.2 in sbt-chain
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.mongodb#mongo-java-driver;3.2.2 [compile->runtime]
@@ -1405,7 +1405,7 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.mongodb#mongo-java-driver;3.2.2 [compile->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.mongodb#casbah-core_2.11;3.1.1 [compile->default(compile)]
 [info] Resolving org.mongodb#casbah-core_2.11;3.1.1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3b09ddcc
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@93b8b08
 [debug] sbt-chain: module revision found in cache: org.mongodb#casbah-core_2.11;3.1.1
 [debug] 	found org.mongodb#casbah-core_2.11;3.1.1 in sbt-chain
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.mongodb#casbah-core_2.11;3.1.1 [compile->runtime]
@@ -1413,31 +1413,31 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.mongodb#casbah-core_2.11;3.1.1 [compile->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.mongodb#casbah-query_2.11;3.1.1 [compile->default(compile)]
 [info] Resolving org.mongodb#casbah-query_2.11;3.1.1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@35de2101
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@4f2eb71d
 [debug] sbt-chain: module revision found in cache: org.mongodb#casbah-query_2.11;3.1.1
 [debug] 	found org.mongodb#casbah-query_2.11;3.1.1 in sbt-chain
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.mongodb#casbah-query_2.11;3.1.1 [compile->runtime]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.mongodb#casbah-query_2.11;3.1.1 [compile->compile]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.mongodb#casbah-query_2.11;3.1.1 [compile->master]
-[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->io.spray#spray-routing_2.11;1.3.2 [compile->default(compile)]
-[info] Resolving io.spray#spray-routing_2.11;1.3.2 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@4cff8942
-[debug] sbt-chain: module revision found in cache: io.spray#spray-routing_2.11;1.3.2
-[debug] 	found io.spray#spray-routing_2.11;1.3.2 in sbt-chain
-[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->io.spray#spray-routing_2.11;1.3.2 [compile->runtime]
-[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->io.spray#spray-routing_2.11;1.3.2 [compile->compile]
-[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->io.spray#spray-routing_2.11;1.3.2 [compile->master]
-[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.chuusai#shapeless_2.11;1.2.4 [compile->default(compile)]
-[info] Resolving com.chuusai#shapeless_2.11;1.2.4 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@60ae8d00
-[debug] sbt-chain: module revision found in cache: com.chuusai#shapeless_2.11;1.2.4
-[debug] 	found com.chuusai#shapeless_2.11;1.2.4 in sbt-chain
-[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.chuusai#shapeless_2.11;1.2.4 [compile->runtime]
-[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.chuusai#shapeless_2.11;1.2.4 [compile->compile]
-[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.chuusai#shapeless_2.11;1.2.4 [compile->master]
+[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->io.spray#spray-routing-shapeless2_2.11;1.3.2 [compile->default(compile)]
+[info] Resolving io.spray#spray-routing-shapeless2_2.11;1.3.2 ...
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@dc7f27a
+[debug] sbt-chain: module revision found in cache: io.spray#spray-routing-shapeless2_2.11;1.3.2
+[debug] 	found io.spray#spray-routing-shapeless2_2.11;1.3.2 in sbt-chain
+[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->io.spray#spray-routing-shapeless2_2.11;1.3.2 [compile->runtime]
+[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->io.spray#spray-routing-shapeless2_2.11;1.3.2 [compile->compile]
+[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->io.spray#spray-routing-shapeless2_2.11;1.3.2 [compile->master]
+[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.chuusai#shapeless_2.11;2.0.0 [compile->default(compile)]
+[info] Resolving com.chuusai#shapeless_2.11;2.0.0 ...
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6b94034a
+[debug] sbt-chain: module revision found in cache: com.chuusai#shapeless_2.11;2.0.0
+[debug] 	found com.chuusai#shapeless_2.11;2.0.0 in sbt-chain
+[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.chuusai#shapeless_2.11;2.0.0 [compile->runtime]
+[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.chuusai#shapeless_2.11;2.0.0 [compile->compile]
+[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.chuusai#shapeless_2.11;2.0.0 [compile->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.typesafe.akka#akka-http-spray-json_2.11;10.0.8 [compile->default(compile)]
 [info] Resolving com.typesafe.akka#akka-http-spray-json_2.11;10.0.8 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@610de39f
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@434d88b1
 [debug] sbt-chain: module revision found in cache: com.typesafe.akka#akka-http-spray-json_2.11;10.0.8
 [debug] 	found com.typesafe.akka#akka-http-spray-json_2.11;10.0.8 in sbt-chain
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.typesafe.akka#akka-http-spray-json_2.11;10.0.8 [compile->runtime]
@@ -1445,7 +1445,7 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.typesafe.akka#akka-http-spray-json_2.11;10.0.8 [compile->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.scala-lang#scala-library;2.11.11 [compile->default(compile)]
 [info] Resolving org.scala-lang#scala-library;2.11.11 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@40310fc0
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@35228b2d
 [debug] sbt-chain: module revision found in cache: org.scala-lang#scala-library;2.11.11
 [debug] 	found org.scala-lang#scala-library;2.11.11 in sbt-chain
 [debug] 	[2.11.11] org.scala-lang#scala-library;2.11.11
@@ -1454,7 +1454,7 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.scala-lang#scala-library;2.11.11 [compile->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.typesafe.akka#akka-http_2.11;10.0.8 [compile->default(compile)]
 [info] Resolving com.typesafe.akka#akka-http_2.11;10.0.8 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@475d0564
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@4fc14cf2
 [debug] sbt-chain: module revision found in cache: com.typesafe.akka#akka-http_2.11;10.0.8
 [debug] 	found com.typesafe.akka#akka-http_2.11;10.0.8 in sbt-chain
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.typesafe.akka#akka-http_2.11;10.0.8 [compile->runtime]
@@ -1462,7 +1462,7 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.typesafe.akka#akka-http_2.11;10.0.8 [compile->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.typesafe.akka#akka-http-core_2.11;10.0.8 [compile->default(compile)]
 [info] Resolving com.typesafe.akka#akka-http-core_2.11;10.0.8 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@53f8ca1e
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@2c0d8bc7
 [debug] sbt-chain: module revision found in cache: com.typesafe.akka#akka-http-core_2.11;10.0.8
 [debug] 	found com.typesafe.akka#akka-http-core_2.11;10.0.8 in sbt-chain
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.typesafe.akka#akka-http-core_2.11;10.0.8 [compile->runtime]
@@ -1470,7 +1470,7 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.typesafe.akka#akka-http-core_2.11;10.0.8 [compile->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.typesafe.akka#akka-parsing_2.11;10.0.8 [compile->default(compile)]
 [info] Resolving com.typesafe.akka#akka-parsing_2.11;10.0.8 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@746b333a
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@60654c29
 [debug] sbt-chain: module revision found in cache: com.typesafe.akka#akka-parsing_2.11;10.0.8
 [debug] 	found com.typesafe.akka#akka-parsing_2.11;10.0.8 in sbt-chain
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.typesafe.akka#akka-parsing_2.11;10.0.8 [compile->runtime]
@@ -1478,7 +1478,7 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.typesafe.akka#akka-parsing_2.11;10.0.8 [compile->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.typesafe.akka#akka-actor_2.11;2.4.19 [compile->default(compile)]
 [info] Resolving com.typesafe.akka#akka-actor_2.11;2.4.19 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@41652eb6
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@c878042
 [debug] sbt-chain: module revision found in cache: com.typesafe.akka#akka-actor_2.11;2.4.19
 [debug] 	found com.typesafe.akka#akka-actor_2.11;2.4.19 in sbt-chain
 [debug] 	[2.4.19] com.typesafe.akka#akka-actor_2.11;2.4.19
@@ -1487,7 +1487,7 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.typesafe.akka#akka-actor_2.11;2.4.19 [compile->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.typesafe.akka#akka-stream_2.11;2.4.19 [compile->default(compile)]
 [info] Resolving com.typesafe.akka#akka-stream_2.11;2.4.19 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@64044fa8
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@560f114f
 [debug] sbt-chain: module revision found in cache: com.typesafe.akka#akka-stream_2.11;2.4.19
 [debug] 	found com.typesafe.akka#akka-stream_2.11;2.4.19 in sbt-chain
 [debug] 	[2.4.19] com.typesafe.akka#akka-stream_2.11;2.4.19
@@ -1496,7 +1496,7 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.typesafe.akka#akka-stream_2.11;2.4.19 [compile->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->io.spray#spray-json_2.11;1.3.3 [compile->default(compile)]
 [info] Resolving io.spray#spray-json_2.11;1.3.3 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@55260d9a
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@2745b562
 [debug] sbt-chain: module revision found in cache: io.spray#spray-json_2.11;1.3.3
 [debug] 	found io.spray#spray-json_2.11;1.3.3 in sbt-chain
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->io.spray#spray-json_2.11;1.3.3 [compile->runtime]
@@ -1504,7 +1504,7 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->io.spray#spray-json_2.11;1.3.3 [compile->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.apache.tika#tika-core;1.10 [compile->default(compile)]
 [info] Resolving org.apache.tika#tika-core;1.10 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6cbb0bd0
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@5badf48d
 [debug] sbt-chain: module revision found in cache: org.apache.tika#tika-core;1.10
 [debug] 	found org.apache.tika#tika-core;1.10 in sbt-chain
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.apache.tika#tika-core;1.10 [compile->runtime]
@@ -1512,7 +1512,7 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.apache.tika#tika-core;1.10 [compile->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.optimaize.languagedetector#language-detector;0.5 [compile->default(compile)]
 [info] Resolving com.optimaize.languagedetector#language-detector;0.5 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@4929f74b
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@aac11f8
 [debug] sbt-chain: module revision found in cache: com.optimaize.languagedetector#language-detector;0.5
 [debug] 	found com.optimaize.languagedetector#language-detector;0.5 in sbt-chain
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.optimaize.languagedetector#language-detector;0.5 [compile->runtime]
@@ -1520,7 +1520,7 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.optimaize.languagedetector#language-detector;0.5 [compile->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->net.arnx#jsonic;1.2.11 [compile->default(compile)]
 [info] Resolving net.arnx#jsonic;1.2.11 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@469d53bb
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@1203c61b
 [debug] sbt-chain: module revision found in cache: net.arnx#jsonic;1.2.11
 [debug] 	found net.arnx#jsonic;1.2.11 in sbt-chain
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->net.arnx#jsonic;1.2.11 [compile->runtime]
@@ -1528,7 +1528,7 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->net.arnx#jsonic;1.2.11 [compile->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.intellij#annotations;12.0 [compile->default(compile)]
 [info] Resolving com.intellij#annotations;12.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@64f58fc9
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6e37b808
 [debug] sbt-chain: module revision found in cache: com.intellij#annotations;12.0
 [debug] 	found com.intellij#annotations;12.0 in sbt-chain
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.intellij#annotations;12.0 [compile->runtime]
@@ -1536,7 +1536,7 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.intellij#annotations;12.0 [compile->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.google.guava#guava;16.0.1 [compile->default(compile)]
 [info] Resolving com.google.guava#guava;16.0.1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3f53977a
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@69a0a523
 [debug] sbt-chain: module revision found in cache: com.google.guava#guava;16.0.1
 [debug] 	found com.google.guava#guava;16.0.1 in sbt-chain
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.google.guava#guava;16.0.1 [compile->runtime]
@@ -1544,7 +1544,7 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.google.guava#guava;16.0.1 [compile->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.slf4j#slf4j-api;1.7.6 [compile->default(compile)]
 [info] Resolving org.slf4j#slf4j-api;1.7.6 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@32e1f9e5
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@7399b4e7
 [debug] sbt-chain: module revision found in cache: org.slf4j#slf4j-api;1.7.6
 [debug] 	found org.slf4j#slf4j-api;1.7.6 in sbt-chain
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.slf4j#slf4j-api;1.7.6 [compile->runtime]
@@ -2242,14 +2242,14 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.mongodb#casbah-query_2.11;3.1.1 [compile->runtime]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.mongodb#casbah-query_2.11;3.1.1 [compile->compile]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.mongodb#casbah-query_2.11;3.1.1 [compile->master]
-[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->io.spray#spray-routing_2.11;1.3.2 [compile->default(compile)]
-[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->io.spray#spray-routing_2.11;1.3.2 [compile->runtime]
-[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->io.spray#spray-routing_2.11;1.3.2 [compile->compile]
-[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->io.spray#spray-routing_2.11;1.3.2 [compile->master]
-[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.chuusai#shapeless_2.11;1.2.4 [compile->default(compile)]
-[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.chuusai#shapeless_2.11;1.2.4 [compile->runtime]
-[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.chuusai#shapeless_2.11;1.2.4 [compile->compile]
-[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.chuusai#shapeless_2.11;1.2.4 [compile->master]
+[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->io.spray#spray-routing-shapeless2_2.11;1.3.2 [compile->default(compile)]
+[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->io.spray#spray-routing-shapeless2_2.11;1.3.2 [compile->runtime]
+[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->io.spray#spray-routing-shapeless2_2.11;1.3.2 [compile->compile]
+[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->io.spray#spray-routing-shapeless2_2.11;1.3.2 [compile->master]
+[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.chuusai#shapeless_2.11;2.0.0 [compile->default(compile)]
+[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.chuusai#shapeless_2.11;2.0.0 [compile->runtime]
+[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.chuusai#shapeless_2.11;2.0.0 [compile->compile]
+[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.chuusai#shapeless_2.11;2.0.0 [compile->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.typesafe.akka#akka-http-spray-json_2.11;10.0.8 [compile->default(compile)]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.typesafe.akka#akka-http-spray-json_2.11;10.0.8 [compile->runtime]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.typesafe.akka#akka-http-spray-json_2.11;10.0.8 [compile->compile]
@@ -2995,14 +2995,14 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.mongodb#casbah-query_2.11;3.1.1 [runtime->runtime]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.mongodb#casbah-query_2.11;3.1.1 [runtime->compile]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.mongodb#casbah-query_2.11;3.1.1 [runtime->master]
-[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->io.spray#spray-routing_2.11;1.3.2 [runtime->default(compile)]
-[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->io.spray#spray-routing_2.11;1.3.2 [runtime->runtime]
-[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->io.spray#spray-routing_2.11;1.3.2 [runtime->compile]
-[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->io.spray#spray-routing_2.11;1.3.2 [runtime->master]
-[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.chuusai#shapeless_2.11;1.2.4 [runtime->default(compile)]
-[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.chuusai#shapeless_2.11;1.2.4 [runtime->runtime]
-[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.chuusai#shapeless_2.11;1.2.4 [runtime->compile]
-[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.chuusai#shapeless_2.11;1.2.4 [runtime->master]
+[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->io.spray#spray-routing-shapeless2_2.11;1.3.2 [runtime->default(compile)]
+[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->io.spray#spray-routing-shapeless2_2.11;1.3.2 [runtime->runtime]
+[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->io.spray#spray-routing-shapeless2_2.11;1.3.2 [runtime->compile]
+[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->io.spray#spray-routing-shapeless2_2.11;1.3.2 [runtime->master]
+[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.chuusai#shapeless_2.11;2.0.0 [runtime->default(compile)]
+[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.chuusai#shapeless_2.11;2.0.0 [runtime->runtime]
+[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.chuusai#shapeless_2.11;2.0.0 [runtime->compile]
+[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.chuusai#shapeless_2.11;2.0.0 [runtime->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.typesafe.akka#akka-http-spray-json_2.11;10.0.8 [runtime->default(compile)]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.typesafe.akka#akka-http-spray-json_2.11;10.0.8 [runtime->runtime]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.typesafe.akka#akka-http-spray-json_2.11;10.0.8 [runtime->compile]
@@ -3752,14 +3752,14 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.mongodb#casbah-query_2.11;3.1.1 [compile->runtime]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.mongodb#casbah-query_2.11;3.1.1 [compile->compile]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.mongodb#casbah-query_2.11;3.1.1 [compile->master]
-[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->io.spray#spray-routing_2.11;1.3.2 [compile->default(compile)]
-[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->io.spray#spray-routing_2.11;1.3.2 [compile->runtime]
-[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->io.spray#spray-routing_2.11;1.3.2 [compile->compile]
-[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->io.spray#spray-routing_2.11;1.3.2 [compile->master]
-[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.chuusai#shapeless_2.11;1.2.4 [compile->default(compile)]
-[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.chuusai#shapeless_2.11;1.2.4 [compile->runtime]
-[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.chuusai#shapeless_2.11;1.2.4 [compile->compile]
-[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.chuusai#shapeless_2.11;1.2.4 [compile->master]
+[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->io.spray#spray-routing-shapeless2_2.11;1.3.2 [compile->default(compile)]
+[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->io.spray#spray-routing-shapeless2_2.11;1.3.2 [compile->runtime]
+[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->io.spray#spray-routing-shapeless2_2.11;1.3.2 [compile->compile]
+[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->io.spray#spray-routing-shapeless2_2.11;1.3.2 [compile->master]
+[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.chuusai#shapeless_2.11;2.0.0 [compile->default(compile)]
+[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.chuusai#shapeless_2.11;2.0.0 [compile->runtime]
+[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.chuusai#shapeless_2.11;2.0.0 [compile->compile]
+[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.chuusai#shapeless_2.11;2.0.0 [compile->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.typesafe.akka#akka-http-spray-json_2.11;10.0.8 [compile->default(compile)]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.typesafe.akka#akka-http-spray-json_2.11;10.0.8 [compile->runtime]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.typesafe.akka#akka-http-spray-json_2.11;10.0.8 [compile->compile]
@@ -4505,14 +4505,14 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.mongodb#casbah-query_2.11;3.1.1 [runtime->runtime]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.mongodb#casbah-query_2.11;3.1.1 [runtime->compile]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.mongodb#casbah-query_2.11;3.1.1 [runtime->master]
-[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->io.spray#spray-routing_2.11;1.3.2 [runtime->default(compile)]
-[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->io.spray#spray-routing_2.11;1.3.2 [runtime->runtime]
-[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->io.spray#spray-routing_2.11;1.3.2 [runtime->compile]
-[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->io.spray#spray-routing_2.11;1.3.2 [runtime->master]
-[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.chuusai#shapeless_2.11;1.2.4 [runtime->default(compile)]
-[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.chuusai#shapeless_2.11;1.2.4 [runtime->runtime]
-[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.chuusai#shapeless_2.11;1.2.4 [runtime->compile]
-[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.chuusai#shapeless_2.11;1.2.4 [runtime->master]
+[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->io.spray#spray-routing-shapeless2_2.11;1.3.2 [runtime->default(compile)]
+[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->io.spray#spray-routing-shapeless2_2.11;1.3.2 [runtime->runtime]
+[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->io.spray#spray-routing-shapeless2_2.11;1.3.2 [runtime->compile]
+[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->io.spray#spray-routing-shapeless2_2.11;1.3.2 [runtime->master]
+[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.chuusai#shapeless_2.11;2.0.0 [runtime->default(compile)]
+[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.chuusai#shapeless_2.11;2.0.0 [runtime->runtime]
+[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.chuusai#shapeless_2.11;2.0.0 [runtime->compile]
+[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.chuusai#shapeless_2.11;2.0.0 [runtime->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.typesafe.akka#akka-http-spray-json_2.11;10.0.8 [runtime->default(compile)]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.typesafe.akka#akka-http-spray-json_2.11;10.0.8 [runtime->runtime]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.typesafe.akka#akka-http-spray-json_2.11;10.0.8 [runtime->compile]
@@ -5258,14 +5258,14 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.mongodb#casbah-query_2.11;3.1.1 [test->runtime]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.mongodb#casbah-query_2.11;3.1.1 [test->compile]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.mongodb#casbah-query_2.11;3.1.1 [test->master]
-[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->io.spray#spray-routing_2.11;1.3.2 [test->default(compile)]
-[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->io.spray#spray-routing_2.11;1.3.2 [test->runtime]
-[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->io.spray#spray-routing_2.11;1.3.2 [test->compile]
-[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->io.spray#spray-routing_2.11;1.3.2 [test->master]
-[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.chuusai#shapeless_2.11;1.2.4 [test->default(compile)]
-[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.chuusai#shapeless_2.11;1.2.4 [test->runtime]
-[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.chuusai#shapeless_2.11;1.2.4 [test->compile]
-[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.chuusai#shapeless_2.11;1.2.4 [test->master]
+[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->io.spray#spray-routing-shapeless2_2.11;1.3.2 [test->default(compile)]
+[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->io.spray#spray-routing-shapeless2_2.11;1.3.2 [test->runtime]
+[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->io.spray#spray-routing-shapeless2_2.11;1.3.2 [test->compile]
+[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->io.spray#spray-routing-shapeless2_2.11;1.3.2 [test->master]
+[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.chuusai#shapeless_2.11;2.0.0 [test->default(compile)]
+[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.chuusai#shapeless_2.11;2.0.0 [test->runtime]
+[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.chuusai#shapeless_2.11;2.0.0 [test->compile]
+[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.chuusai#shapeless_2.11;2.0.0 [test->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.typesafe.akka#akka-http-spray-json_2.11;10.0.8 [test->default(compile)]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.typesafe.akka#akka-http-spray-json_2.11;10.0.8 [test->runtime]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.typesafe.akka#akka-http-spray-json_2.11;10.0.8 [test->compile]
@@ -6018,14 +6018,14 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.mongodb#casbah-query_2.11;3.1.1 [compile->runtime]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.mongodb#casbah-query_2.11;3.1.1 [compile->compile]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.mongodb#casbah-query_2.11;3.1.1 [compile->master]
-[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->io.spray#spray-routing_2.11;1.3.2 [compile->default(compile)]
-[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->io.spray#spray-routing_2.11;1.3.2 [compile->runtime]
-[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->io.spray#spray-routing_2.11;1.3.2 [compile->compile]
-[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->io.spray#spray-routing_2.11;1.3.2 [compile->master]
-[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.chuusai#shapeless_2.11;1.2.4 [compile->default(compile)]
-[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.chuusai#shapeless_2.11;1.2.4 [compile->runtime]
-[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.chuusai#shapeless_2.11;1.2.4 [compile->compile]
-[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.chuusai#shapeless_2.11;1.2.4 [compile->master]
+[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->io.spray#spray-routing-shapeless2_2.11;1.3.2 [compile->default(compile)]
+[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->io.spray#spray-routing-shapeless2_2.11;1.3.2 [compile->runtime]
+[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->io.spray#spray-routing-shapeless2_2.11;1.3.2 [compile->compile]
+[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->io.spray#spray-routing-shapeless2_2.11;1.3.2 [compile->master]
+[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.chuusai#shapeless_2.11;2.0.0 [compile->default(compile)]
+[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.chuusai#shapeless_2.11;2.0.0 [compile->runtime]
+[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.chuusai#shapeless_2.11;2.0.0 [compile->compile]
+[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.chuusai#shapeless_2.11;2.0.0 [compile->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.typesafe.akka#akka-http-spray-json_2.11;10.0.8 [compile->default(compile)]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.typesafe.akka#akka-http-spray-json_2.11;10.0.8 [compile->runtime]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.typesafe.akka#akka-http-spray-json_2.11;10.0.8 [compile->compile]
@@ -6773,14 +6773,14 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.mongodb#casbah-query_2.11;3.1.1 [compile-internal->runtime]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.mongodb#casbah-query_2.11;3.1.1 [compile-internal->compile]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.mongodb#casbah-query_2.11;3.1.1 [compile-internal->master]
-[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->io.spray#spray-routing_2.11;1.3.2 [compile-internal->default(compile)]
-[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->io.spray#spray-routing_2.11;1.3.2 [compile-internal->runtime]
-[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->io.spray#spray-routing_2.11;1.3.2 [compile-internal->compile]
-[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->io.spray#spray-routing_2.11;1.3.2 [compile-internal->master]
-[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.chuusai#shapeless_2.11;1.2.4 [compile-internal->default(compile)]
-[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.chuusai#shapeless_2.11;1.2.4 [compile-internal->runtime]
-[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.chuusai#shapeless_2.11;1.2.4 [compile-internal->compile]
-[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.chuusai#shapeless_2.11;1.2.4 [compile-internal->master]
+[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->io.spray#spray-routing-shapeless2_2.11;1.3.2 [compile-internal->default(compile)]
+[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->io.spray#spray-routing-shapeless2_2.11;1.3.2 [compile-internal->runtime]
+[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->io.spray#spray-routing-shapeless2_2.11;1.3.2 [compile-internal->compile]
+[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->io.spray#spray-routing-shapeless2_2.11;1.3.2 [compile-internal->master]
+[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.chuusai#shapeless_2.11;2.0.0 [compile-internal->default(compile)]
+[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.chuusai#shapeless_2.11;2.0.0 [compile-internal->runtime]
+[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.chuusai#shapeless_2.11;2.0.0 [compile-internal->compile]
+[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.chuusai#shapeless_2.11;2.0.0 [compile-internal->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.typesafe.akka#akka-http-spray-json_2.11;10.0.8 [compile-internal->default(compile)]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.typesafe.akka#akka-http-spray-json_2.11;10.0.8 [compile-internal->runtime]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.typesafe.akka#akka-http-spray-json_2.11;10.0.8 [compile-internal->compile]
@@ -7530,14 +7530,14 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.mongodb#casbah-query_2.11;3.1.1 [compile->runtime]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.mongodb#casbah-query_2.11;3.1.1 [compile->compile]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.mongodb#casbah-query_2.11;3.1.1 [compile->master]
-[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->io.spray#spray-routing_2.11;1.3.2 [compile->default(compile)]
-[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->io.spray#spray-routing_2.11;1.3.2 [compile->runtime]
-[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->io.spray#spray-routing_2.11;1.3.2 [compile->compile]
-[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->io.spray#spray-routing_2.11;1.3.2 [compile->master]
-[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.chuusai#shapeless_2.11;1.2.4 [compile->default(compile)]
-[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.chuusai#shapeless_2.11;1.2.4 [compile->runtime]
-[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.chuusai#shapeless_2.11;1.2.4 [compile->compile]
-[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.chuusai#shapeless_2.11;1.2.4 [compile->master]
+[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->io.spray#spray-routing-shapeless2_2.11;1.3.2 [compile->default(compile)]
+[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->io.spray#spray-routing-shapeless2_2.11;1.3.2 [compile->runtime]
+[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->io.spray#spray-routing-shapeless2_2.11;1.3.2 [compile->compile]
+[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->io.spray#spray-routing-shapeless2_2.11;1.3.2 [compile->master]
+[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.chuusai#shapeless_2.11;2.0.0 [compile->default(compile)]
+[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.chuusai#shapeless_2.11;2.0.0 [compile->runtime]
+[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.chuusai#shapeless_2.11;2.0.0 [compile->compile]
+[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.chuusai#shapeless_2.11;2.0.0 [compile->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.typesafe.akka#akka-http-spray-json_2.11;10.0.8 [compile->default(compile)]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.typesafe.akka#akka-http-spray-json_2.11;10.0.8 [compile->runtime]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.typesafe.akka#akka-http-spray-json_2.11;10.0.8 [compile->compile]
@@ -8283,14 +8283,14 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.mongodb#casbah-query_2.11;3.1.1 [runtime->runtime]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.mongodb#casbah-query_2.11;3.1.1 [runtime->compile]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.mongodb#casbah-query_2.11;3.1.1 [runtime->master]
-[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->io.spray#spray-routing_2.11;1.3.2 [runtime->default(compile)]
-[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->io.spray#spray-routing_2.11;1.3.2 [runtime->runtime]
-[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->io.spray#spray-routing_2.11;1.3.2 [runtime->compile]
-[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->io.spray#spray-routing_2.11;1.3.2 [runtime->master]
-[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.chuusai#shapeless_2.11;1.2.4 [runtime->default(compile)]
-[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.chuusai#shapeless_2.11;1.2.4 [runtime->runtime]
-[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.chuusai#shapeless_2.11;1.2.4 [runtime->compile]
-[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.chuusai#shapeless_2.11;1.2.4 [runtime->master]
+[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->io.spray#spray-routing-shapeless2_2.11;1.3.2 [runtime->default(compile)]
+[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->io.spray#spray-routing-shapeless2_2.11;1.3.2 [runtime->runtime]
+[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->io.spray#spray-routing-shapeless2_2.11;1.3.2 [runtime->compile]
+[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->io.spray#spray-routing-shapeless2_2.11;1.3.2 [runtime->master]
+[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.chuusai#shapeless_2.11;2.0.0 [runtime->default(compile)]
+[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.chuusai#shapeless_2.11;2.0.0 [runtime->runtime]
+[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.chuusai#shapeless_2.11;2.0.0 [runtime->compile]
+[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.chuusai#shapeless_2.11;2.0.0 [runtime->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.typesafe.akka#akka-http-spray-json_2.11;10.0.8 [runtime->default(compile)]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.typesafe.akka#akka-http-spray-json_2.11;10.0.8 [runtime->runtime]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.typesafe.akka#akka-http-spray-json_2.11;10.0.8 [runtime->compile]
@@ -9037,14 +9037,14 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.mongodb#casbah-query_2.11;3.1.1 [runtime-internal->runtime]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.mongodb#casbah-query_2.11;3.1.1 [runtime-internal->compile]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.mongodb#casbah-query_2.11;3.1.1 [runtime-internal->master]
-[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->io.spray#spray-routing_2.11;1.3.2 [runtime-internal->default(compile)]
-[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->io.spray#spray-routing_2.11;1.3.2 [runtime-internal->runtime]
-[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->io.spray#spray-routing_2.11;1.3.2 [runtime-internal->compile]
-[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->io.spray#spray-routing_2.11;1.3.2 [runtime-internal->master]
-[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.chuusai#shapeless_2.11;1.2.4 [runtime-internal->default(compile)]
-[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.chuusai#shapeless_2.11;1.2.4 [runtime-internal->runtime]
-[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.chuusai#shapeless_2.11;1.2.4 [runtime-internal->compile]
-[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.chuusai#shapeless_2.11;1.2.4 [runtime-internal->master]
+[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->io.spray#spray-routing-shapeless2_2.11;1.3.2 [runtime-internal->default(compile)]
+[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->io.spray#spray-routing-shapeless2_2.11;1.3.2 [runtime-internal->runtime]
+[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->io.spray#spray-routing-shapeless2_2.11;1.3.2 [runtime-internal->compile]
+[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->io.spray#spray-routing-shapeless2_2.11;1.3.2 [runtime-internal->master]
+[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.chuusai#shapeless_2.11;2.0.0 [runtime-internal->default(compile)]
+[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.chuusai#shapeless_2.11;2.0.0 [runtime-internal->runtime]
+[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.chuusai#shapeless_2.11;2.0.0 [runtime-internal->compile]
+[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.chuusai#shapeless_2.11;2.0.0 [runtime-internal->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.typesafe.akka#akka-http-spray-json_2.11;10.0.8 [runtime-internal->default(compile)]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.typesafe.akka#akka-http-spray-json_2.11;10.0.8 [runtime-internal->runtime]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.typesafe.akka#akka-http-spray-json_2.11;10.0.8 [runtime-internal->compile]
@@ -9795,14 +9795,14 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.mongodb#casbah-query_2.11;3.1.1 [compile->runtime]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.mongodb#casbah-query_2.11;3.1.1 [compile->compile]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.mongodb#casbah-query_2.11;3.1.1 [compile->master]
-[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->io.spray#spray-routing_2.11;1.3.2 [compile->default(compile)]
-[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->io.spray#spray-routing_2.11;1.3.2 [compile->runtime]
-[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->io.spray#spray-routing_2.11;1.3.2 [compile->compile]
-[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->io.spray#spray-routing_2.11;1.3.2 [compile->master]
-[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.chuusai#shapeless_2.11;1.2.4 [compile->default(compile)]
-[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.chuusai#shapeless_2.11;1.2.4 [compile->runtime]
-[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.chuusai#shapeless_2.11;1.2.4 [compile->compile]
-[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.chuusai#shapeless_2.11;1.2.4 [compile->master]
+[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->io.spray#spray-routing-shapeless2_2.11;1.3.2 [compile->default(compile)]
+[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->io.spray#spray-routing-shapeless2_2.11;1.3.2 [compile->runtime]
+[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->io.spray#spray-routing-shapeless2_2.11;1.3.2 [compile->compile]
+[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->io.spray#spray-routing-shapeless2_2.11;1.3.2 [compile->master]
+[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.chuusai#shapeless_2.11;2.0.0 [compile->default(compile)]
+[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.chuusai#shapeless_2.11;2.0.0 [compile->runtime]
+[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.chuusai#shapeless_2.11;2.0.0 [compile->compile]
+[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.chuusai#shapeless_2.11;2.0.0 [compile->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.typesafe.akka#akka-http-spray-json_2.11;10.0.8 [compile->default(compile)]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.typesafe.akka#akka-http-spray-json_2.11;10.0.8 [compile->runtime]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.typesafe.akka#akka-http-spray-json_2.11;10.0.8 [compile->compile]
@@ -10548,14 +10548,14 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.mongodb#casbah-query_2.11;3.1.1 [runtime->runtime]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.mongodb#casbah-query_2.11;3.1.1 [runtime->compile]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.mongodb#casbah-query_2.11;3.1.1 [runtime->master]
-[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->io.spray#spray-routing_2.11;1.3.2 [runtime->default(compile)]
-[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->io.spray#spray-routing_2.11;1.3.2 [runtime->runtime]
-[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->io.spray#spray-routing_2.11;1.3.2 [runtime->compile]
-[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->io.spray#spray-routing_2.11;1.3.2 [runtime->master]
-[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.chuusai#shapeless_2.11;1.2.4 [runtime->default(compile)]
-[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.chuusai#shapeless_2.11;1.2.4 [runtime->runtime]
-[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.chuusai#shapeless_2.11;1.2.4 [runtime->compile]
-[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.chuusai#shapeless_2.11;1.2.4 [runtime->master]
+[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->io.spray#spray-routing-shapeless2_2.11;1.3.2 [runtime->default(compile)]
+[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->io.spray#spray-routing-shapeless2_2.11;1.3.2 [runtime->runtime]
+[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->io.spray#spray-routing-shapeless2_2.11;1.3.2 [runtime->compile]
+[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->io.spray#spray-routing-shapeless2_2.11;1.3.2 [runtime->master]
+[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.chuusai#shapeless_2.11;2.0.0 [runtime->default(compile)]
+[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.chuusai#shapeless_2.11;2.0.0 [runtime->runtime]
+[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.chuusai#shapeless_2.11;2.0.0 [runtime->compile]
+[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.chuusai#shapeless_2.11;2.0.0 [runtime->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.typesafe.akka#akka-http-spray-json_2.11;10.0.8 [runtime->default(compile)]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.typesafe.akka#akka-http-spray-json_2.11;10.0.8 [runtime->runtime]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.typesafe.akka#akka-http-spray-json_2.11;10.0.8 [runtime->compile]
@@ -11301,14 +11301,14 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.mongodb#casbah-query_2.11;3.1.1 [test->runtime]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.mongodb#casbah-query_2.11;3.1.1 [test->compile]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.mongodb#casbah-query_2.11;3.1.1 [test->master]
-[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->io.spray#spray-routing_2.11;1.3.2 [test->default(compile)]
-[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->io.spray#spray-routing_2.11;1.3.2 [test->runtime]
-[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->io.spray#spray-routing_2.11;1.3.2 [test->compile]
-[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->io.spray#spray-routing_2.11;1.3.2 [test->master]
-[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.chuusai#shapeless_2.11;1.2.4 [test->default(compile)]
-[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.chuusai#shapeless_2.11;1.2.4 [test->runtime]
-[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.chuusai#shapeless_2.11;1.2.4 [test->compile]
-[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.chuusai#shapeless_2.11;1.2.4 [test->master]
+[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->io.spray#spray-routing-shapeless2_2.11;1.3.2 [test->default(compile)]
+[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->io.spray#spray-routing-shapeless2_2.11;1.3.2 [test->runtime]
+[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->io.spray#spray-routing-shapeless2_2.11;1.3.2 [test->compile]
+[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->io.spray#spray-routing-shapeless2_2.11;1.3.2 [test->master]
+[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.chuusai#shapeless_2.11;2.0.0 [test->default(compile)]
+[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.chuusai#shapeless_2.11;2.0.0 [test->runtime]
+[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.chuusai#shapeless_2.11;2.0.0 [test->compile]
+[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.chuusai#shapeless_2.11;2.0.0 [test->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.typesafe.akka#akka-http-spray-json_2.11;10.0.8 [test->default(compile)]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.typesafe.akka#akka-http-spray-json_2.11;10.0.8 [test->runtime]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.typesafe.akka#akka-http-spray-json_2.11;10.0.8 [test->compile]
@@ -12056,14 +12056,14 @@
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.mongodb#casbah-query_2.11;3.1.1 [test-internal->runtime]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.mongodb#casbah-query_2.11;3.1.1 [test-internal->compile]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->org.mongodb#casbah-query_2.11;3.1.1 [test-internal->master]
-[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->io.spray#spray-routing_2.11;1.3.2 [test-internal->default(compile)]
-[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->io.spray#spray-routing_2.11;1.3.2 [test-internal->runtime]
-[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->io.spray#spray-routing_2.11;1.3.2 [test-internal->compile]
-[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->io.spray#spray-routing_2.11;1.3.2 [test-internal->master]
-[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.chuusai#shapeless_2.11;1.2.4 [test-internal->default(compile)]
-[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.chuusai#shapeless_2.11;1.2.4 [test-internal->runtime]
-[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.chuusai#shapeless_2.11;1.2.4 [test-internal->compile]
-[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.chuusai#shapeless_2.11;1.2.4 [test-internal->master]
+[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->io.spray#spray-routing-shapeless2_2.11;1.3.2 [test-internal->default(compile)]
+[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->io.spray#spray-routing-shapeless2_2.11;1.3.2 [test-internal->runtime]
+[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->io.spray#spray-routing-shapeless2_2.11;1.3.2 [test-internal->compile]
+[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->io.spray#spray-routing-shapeless2_2.11;1.3.2 [test-internal->master]
+[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.chuusai#shapeless_2.11;2.0.0 [test-internal->default(compile)]
+[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.chuusai#shapeless_2.11;2.0.0 [test-internal->runtime]
+[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.chuusai#shapeless_2.11;2.0.0 [test-internal->compile]
+[debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.chuusai#shapeless_2.11;2.0.0 [test-internal->master]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.typesafe.akka#akka-http-spray-json_2.11;10.0.8 [test-internal->default(compile)]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.typesafe.akka#akka-http-spray-json_2.11;10.0.8 [test-internal->runtime]
 [debug] == resolving dependencies ita-api#ita-api$sources_2.11;0.0.1->com.typesafe.akka#akka-http-spray-json_2.11;10.0.8 [test-internal->compile]
@@ -12524,12 +12524,12 @@
 [debug] 	[NOT REQUIRED] org.mongodb#casbah-core_2.11;3.1.1!casbah-core_2.11.jar(src)
 [debug] 	[NOT REQUIRED] org.mongodb#casbah-query_2.11;3.1.1!casbah-query_2.11.jar(src)
 [debug] 	[NOT REQUIRED] org.mongodb#casbah-query_2.11;3.1.1!casbah-query_2.11.jar
-[debug] 	[NOT REQUIRED] io.spray#spray-routing_2.11;1.3.2!spray-routing_2.11.jar
-[debug] 	[NOT REQUIRED] io.spray#spray-routing_2.11;1.3.2!spray-routing_2.11.jar(src)
-[debug] 	[NOT REQUIRED] com.chuusai#shapeless_2.11;1.2.4!shapeless_2.11.jar(src)
-[debug] 	[NOT REQUIRED] com.chuusai#shapeless_2.11;1.2.4!shapeless_2.11.jar
-[debug] 	[NOT REQUIRED] com.typesafe.akka#akka-http-spray-json_2.11;10.0.8!akka-http-spray-json_2.11.jar
+[debug] 	[NOT REQUIRED] io.spray#spray-routing-shapeless2_2.11;1.3.2!spray-routing-shapeless2_2.11.jar(src)
+[debug] 	[NOT REQUIRED] io.spray#spray-routing-shapeless2_2.11;1.3.2!spray-routing-shapeless2_2.11.jar
+[debug] 	[NOT REQUIRED] com.chuusai#shapeless_2.11;2.0.0!shapeless_2.11.jar(src)
+[debug] 	[NOT REQUIRED] com.chuusai#shapeless_2.11;2.0.0!shapeless_2.11.jar
 [debug] 	[NOT REQUIRED] com.typesafe.akka#akka-http-spray-json_2.11;10.0.8!akka-http-spray-json_2.11.jar(src)
+[debug] 	[NOT REQUIRED] com.typesafe.akka#akka-http-spray-json_2.11;10.0.8!akka-http-spray-json_2.11.jar
 [debug] 	[NOT REQUIRED] org.scala-lang#scala-library;2.11.11!scala-library.jar(src)
 [debug] 	[NOT REQUIRED] org.scala-lang#scala-library;2.11.11!scala-library.jar
 [debug] 	[NOT REQUIRED] com.typesafe.akka#akka-http_2.11;10.0.8!akka-http_2.11.jar(src)
@@ -12561,7 +12561,7 @@
 [debug] 	[NOT REQUIRED] org.scala-lang#scala-reflect;2.11.7!scala-reflect.jar(src)
 [debug] 	[NOT REQUIRED] org.scala-lang.modules#scala-xml_2.11;1.0.4!scala-xml_2.11.jar(src)
 [debug] 	[NOT REQUIRED] jline#jline;2.12.1!jline.jar(src)
-[debug] :: resolution report :: resolve 11937ms :: artifacts dl 144ms
+[debug] :: resolution report :: resolve 9655ms :: artifacts dl 116ms
 [debug] 	report for ita-api#ita-api$sources_2.11;0.0.1 compile produced in /Users/mikelalvarezgo/repositories/TFM/ITA-Services/api/target/resolution-cache/reports/ita-api-ita-api$sources_2.11-compile.xml
 [debug] 	report for ita-api#ita-api$sources_2.11;0.0.1 runtime produced in /Users/mikelalvarezgo/repositories/TFM/ITA-Services/api/target/resolution-cache/reports/ita-api-ita-api$sources_2.11-runtime.xml
 [debug] 	report for ita-api#ita-api$sources_2.11;0.0.1 test produced in /Users/mikelalvarezgo/repositories/TFM/ITA-Services/api/target/resolution-cache/reports/ita-api-ita-api$sources_2.11-test.xml
@@ -12575,4 +12575,4 @@
 [debug] 	report for ita-api#ita-api$sources_2.11;0.0.1 docs produced in /Users/mikelalvarezgo/repositories/TFM/ITA-Services/api/target/resolution-cache/reports/ita-api-ita-api$sources_2.11-docs.xml
 [debug] 	report for ita-api#ita-api$sources_2.11;0.0.1 pom produced in /Users/mikelalvarezgo/repositories/TFM/ITA-Services/api/target/resolution-cache/reports/ita-api-ita-api$sources_2.11-pom.xml
 [debug] 	report for ita-api#ita-api$sources_2.11;0.0.1 scala-tool produced in /Users/mikelalvarezgo/repositories/TFM/ITA-Services/api/target/resolution-cache/reports/ita-api-ita-api$sources_2.11-scala-tool.xml
-[debug] 	resolve done (11937ms resolve - 144ms download)
+[debug] 	resolve done (9655ms resolve - 116ms download)

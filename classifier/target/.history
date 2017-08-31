@@ -2,3 +2,5 @@ compile
 clean
 build
 run
+exit
+run

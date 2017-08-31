@@ -7,7 +7,7 @@
 		revision="0.0.1"
 		conf="test"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
-		date="20170831192702"/>
+		date="20170901011856"/>
 	<dependencies>
 		<module organisation="org.tachyonproject" name="tachyon">
 			<revision name="0.5.0" status="release" pubdate="20140720044556" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="154">
@@ -571,7 +571,7 @@
 			</revision>
 		</module>
 		<module organisation="ita-api" name="ita-api_2.11">
-			<revision name="0.0.1" status="integration" pubdate="20170831191556" resolver="inter-project" artresolver="inter-project" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="0">
+			<revision name="0.0.1" status="integration" pubdate="20170901011415" resolver="inter-project" artresolver="inter-project" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="0">
 				<metadata-artifact status="failed" details="" size="0" time="0" searched="false"/>
 				<caller organisation="ita-client" name="ita-client$sources_2.11" conf="test, compile, runtime" rev="0.0.1" rev-constraint-default="0.0.1" rev-constraint-dynamic="0.0.1" callerrev="0.0.1"/>
 				<artifacts>
@@ -706,7 +706,7 @@
 					<artifact name="akka-http-spray-json_2.11" type="jar" ext="jar" status="no" details="" size="27968" time="0" location="/Users/mikelalvarezgo/.ivy2/cache/com.typesafe.akka/akka-http-spray-json_2.11/jars/akka-http-spray-json_2.11-10.0.8.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/akka/akka-http-spray-json_2.11/10.0.8/akka-http-spray-json_2.11-10.0.8.jar"/>
 					</artifact>
-					<artifact name="akka-http-spray-json_2.11" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="3993" time="394" location="/Users/mikelalvarezgo/.ivy2/cache/com.typesafe.akka/akka-http-spray-json_2.11/srcs/akka-http-spray-json_2.11-10.0.8-sources.jar">
+					<artifact name="akka-http-spray-json_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="3993" time="0" location="/Users/mikelalvarezgo/.ivy2/cache/com.typesafe.akka/akka-http-spray-json_2.11/srcs/akka-http-spray-json_2.11-10.0.8-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/akka/akka-http-spray-json_2.11/10.0.8/akka-http-spray-json_2.11-10.0.8-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -718,7 +718,7 @@
 				<metadata-artifact status="no" details="" size="2666" time="0" location="/Users/mikelalvarezgo/.ivy2/cache/com.typesafe.akka/akka-http_2.11/ivy-10.0.8.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/akka/akka-http_2.11/10.0.8/akka-http_2.11-10.0.8.pom"/>
 				<caller organisation="ita-client" name="ita-client$sources_2.11" conf="test, compile, runtime" rev="10.0.8" rev-constraint-default="10.0.8" rev-constraint-dynamic="10.0.8" callerrev="0.0.1"/>
 				<artifacts>
-					<artifact name="akka-http_2.11" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="197011" time="1051" location="/Users/mikelalvarezgo/.ivy2/cache/com.typesafe.akka/akka-http_2.11/srcs/akka-http_2.11-10.0.8-sources.jar">
+					<artifact name="akka-http_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="197011" time="0" location="/Users/mikelalvarezgo/.ivy2/cache/com.typesafe.akka/akka-http_2.11/srcs/akka-http_2.11-10.0.8-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/akka/akka-http_2.11/10.0.8/akka-http_2.11-10.0.8-sources.jar"/>
 					</artifact>
 					<artifact name="akka-http_2.11" type="jar" ext="jar" status="no" details="" size="2835835" time="0" location="/Users/mikelalvarezgo/.ivy2/cache/com.typesafe.akka/akka-http_2.11/jars/akka-http_2.11-10.0.8.jar">
@@ -733,7 +733,7 @@
 				<metadata-artifact status="no" details="" size="3443" time="0" location="/Users/mikelalvarezgo/.ivy2/cache/com.typesafe.akka/akka-http-core_2.11/ivy-10.0.8.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/akka/akka-http-core_2.11/10.0.8/akka-http-core_2.11-10.0.8.pom"/>
 				<caller organisation="ita-client" name="ita-client$sources_2.11" conf="test, compile, runtime" rev="10.0.8" rev-constraint-default="10.0.8" rev-constraint-dynamic="10.0.8" callerrev="0.0.1"/>
 				<artifacts>
-					<artifact name="akka-http-core_2.11" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="389305" time="1506" location="/Users/mikelalvarezgo/.ivy2/cache/com.typesafe.akka/akka-http-core_2.11/srcs/akka-http-core_2.11-10.0.8-sources.jar">
+					<artifact name="akka-http-core_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="389305" time="0" location="/Users/mikelalvarezgo/.ivy2/cache/com.typesafe.akka/akka-http-core_2.11/srcs/akka-http-core_2.11-10.0.8-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/akka/akka-http-core_2.11/10.0.8/akka-http-core_2.11-10.0.8-sources.jar"/>
 					</artifact>
 					<artifact name="akka-http-core_2.11" type="jar" ext="jar" status="no" details="" size="3609742" time="0" location="/Users/mikelalvarezgo/.ivy2/cache/com.typesafe.akka/akka-http-core_2.11/jars/akka-http-core_2.11-10.0.8.jar">
@@ -751,7 +751,7 @@
 					<artifact name="akka-stream_2.11" type="jar" ext="jar" status="no" details="" size="4439051" time="0" location="/Users/mikelalvarezgo/.ivy2/cache/com.typesafe.akka/akka-stream_2.11/jars/akka-stream_2.11-2.4.19.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/akka/akka-stream_2.11/2.4.19/akka-stream_2.11-2.4.19.jar"/>
 					</artifact>
-					<artifact name="akka-stream_2.11" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="390851" time="2236" location="/Users/mikelalvarezgo/.ivy2/cache/com.typesafe.akka/akka-stream_2.11/srcs/akka-stream_2.11-2.4.19-sources.jar">
+					<artifact name="akka-stream_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="390851" time="0" location="/Users/mikelalvarezgo/.ivy2/cache/com.typesafe.akka/akka-stream_2.11/srcs/akka-stream_2.11-2.4.19-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/akka/akka-stream_2.11/2.4.19/akka-stream_2.11-2.4.19-sources.jar"/>
 					</artifact>
 				</artifacts>
@@ -793,10 +793,10 @@
 				<metadata-artifact status="no" details="" size="2955" time="0" location="/Users/mikelalvarezgo/.ivy2/cache/io.spray/spray-json_2.11/ivy-1.3.3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/spray/spray-json_2.11/1.3.3/spray-json_2.11-1.3.3.pom"/>
 				<caller organisation="ita-client" name="ita-client$sources_2.11" conf="test, compile, runtime" rev="1.3.3" rev-constraint-default="1.3.3" rev-constraint-dynamic="1.3.3" callerrev="0.0.1"/>
 				<artifacts>
-					<artifact name="spray-json_2.11" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="22956" time="602" location="/Users/mikelalvarezgo/.ivy2/cache/io.spray/spray-json_2.11/srcs/spray-json_2.11-1.3.3-sources.jar">
+					<artifact name="spray-json_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="22956" time="0" location="/Users/mikelalvarezgo/.ivy2/cache/io.spray/spray-json_2.11/srcs/spray-json_2.11-1.3.3-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/io/spray/spray-json_2.11/1.3.3/spray-json_2.11-1.3.3-sources.jar"/>
 					</artifact>
-					<artifact name="spray-json_2.11" type="jar" ext="jar" status="successful" details="" size="293513" time="1357" location="/Users/mikelalvarezgo/.ivy2/cache/io.spray/spray-json_2.11/jars/spray-json_2.11-1.3.3.jar">
+					<artifact name="spray-json_2.11" type="jar" ext="jar" status="no" details="" size="293513" time="0" location="/Users/mikelalvarezgo/.ivy2/cache/io.spray/spray-json_2.11/jars/spray-json_2.11-1.3.3.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/io/spray/spray-json_2.11/1.3.3/spray-json_2.11-1.3.3.jar"/>
 					</artifact>
 				</artifacts>
@@ -808,7 +808,7 @@
 				<metadata-artifact status="no" details="" size="2823" time="0" location="/Users/mikelalvarezgo/.ivy2/cache/com.typesafe.akka/akka-parsing_2.11/ivy-10.0.8.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/akka/akka-parsing_2.11/10.0.8/akka-parsing_2.11-10.0.8.pom"/>
 				<caller organisation="ita-client" name="ita-client$sources_2.11" conf="test, compile, runtime" rev="10.0.8" rev-constraint-default="10.0.8" rev-constraint-dynamic="10.0.8" callerrev="0.0.1"/>
 				<artifacts>
-					<artifact name="akka-parsing_2.11" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="63824" time="631" location="/Users/mikelalvarezgo/.ivy2/cache/com.typesafe.akka/akka-parsing_2.11/srcs/akka-parsing_2.11-10.0.8-sources.jar">
+					<artifact name="akka-parsing_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="63824" time="0" location="/Users/mikelalvarezgo/.ivy2/cache/com.typesafe.akka/akka-parsing_2.11/srcs/akka-parsing_2.11-10.0.8-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/akka/akka-parsing_2.11/10.0.8/akka-parsing_2.11-10.0.8-sources.jar"/>
 					</artifact>
 					<artifact name="akka-parsing_2.11" type="jar" ext="jar" status="no" details="" size="988920" time="0" location="/Users/mikelalvarezgo/.ivy2/cache/com.typesafe.akka/akka-parsing_2.11/jars/akka-parsing_2.11-10.0.8.jar">
@@ -823,7 +823,7 @@
 				<metadata-artifact status="no" details="" size="3103" time="0" location="/Users/mikelalvarezgo/.ivy2/cache/com.typesafe.akka/akka-actor_2.11/ivy-2.4.19.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/akka/akka-actor_2.11/2.4.19/akka-actor_2.11-2.4.19.pom"/>
 				<caller organisation="ita-client" name="ita-client$sources_2.11" conf="test, compile, runtime" rev="2.4.19" rev-constraint-default="2.4.19" rev-constraint-dynamic="2.4.19" callerrev="0.0.1" extra-info.apiURL="http://doc.akka.io/api/akka/2.4.19"/>
 				<artifacts>
-					<artifact name="akka-actor_2.11" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="410366" time="1380" location="/Users/mikelalvarezgo/.ivy2/cache/com.typesafe.akka/akka-actor_2.11/srcs/akka-actor_2.11-2.4.19-sources.jar">
+					<artifact name="akka-actor_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="410366" time="0" location="/Users/mikelalvarezgo/.ivy2/cache/com.typesafe.akka/akka-actor_2.11/srcs/akka-actor_2.11-2.4.19-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/akka/akka-actor_2.11/2.4.19/akka-actor_2.11-2.4.19-sources.jar"/>
 					</artifact>
 					<artifact name="akka-actor_2.11" type="jar" ext="jar" status="no" details="" size="3373552" time="0" location="/Users/mikelalvarezgo/.ivy2/cache/com.typesafe.akka/akka-actor_2.11/jars/akka-actor_2.11-2.4.19.jar">
@@ -853,7 +853,7 @@
 				<metadata-artifact status="no" details="" size="2656" time="0" location="/Users/mikelalvarezgo/.ivy2/cache/org.scala-lang/scala-library/ivy-2.11.11.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.11.11/scala-library-2.11.11.pom"/>
 				<caller organisation="ita-client" name="ita-client$sources_2.11" conf="test, compile, runtime" rev="2.11.11" rev-constraint-default="2.11.11" rev-constraint-dynamic="2.11.11" callerrev="0.0.1" extra-info.apiURL="http://www.scala-lang.org/api/2.11.11/"/>
 				<artifacts>
-					<artifact name="scala-library" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="911961" time="2659" location="/Users/mikelalvarezgo/.ivy2/cache/org.scala-lang/scala-library/srcs/scala-library-2.11.11-sources.jar">
+					<artifact name="scala-library" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="911961" time="0" location="/Users/mikelalvarezgo/.ivy2/cache/org.scala-lang/scala-library/srcs/scala-library-2.11.11-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.11.11/scala-library-2.11.11-sources.jar"/>
 					</artifact>
 					<artifact name="scala-library" type="jar" ext="jar" status="no" details="" size="5748808" time="0" location="/Users/mikelalvarezgo/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.11.jar">
@@ -862,32 +862,32 @@
 				</artifacts>
 			</revision>
 		</module>
-		<module organisation="io.spray" name="spray-routing_2.11">
-			<revision name="1.3.2" status="release" pubdate="20141008155229" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://spray.io" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="174">
+		<module organisation="io.spray" name="spray-routing-shapeless2_2.11">
+			<revision name="1.3.2" status="release" pubdate="20141008155257" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://spray.io" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="174">
 				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
-				<metadata-artifact status="no" details="" size="3624" time="0" location="/Users/mikelalvarezgo/.ivy2/cache/io.spray/spray-routing_2.11/ivy-1.3.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/spray/spray-routing_2.11/1.3.2/spray-routing_2.11-1.3.2.pom"/>
+				<metadata-artifact status="no" details="" size="3646" time="0" location="/Users/mikelalvarezgo/.ivy2/cache/io.spray/spray-routing-shapeless2_2.11/ivy-1.3.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/spray/spray-routing-shapeless2_2.11/1.3.2/spray-routing-shapeless2_2.11-1.3.2.pom"/>
 				<caller organisation="ita-client" name="ita-client$sources_2.11" conf="test, compile, runtime" rev="1.3.2" rev-constraint-default="1.3.2" rev-constraint-dynamic="1.3.2" callerrev="0.0.1"/>
 				<artifacts>
-					<artifact name="spray-routing_2.11" type="jar" ext="jar" status="no" details="" size="1054286" time="0" location="/Users/mikelalvarezgo/.ivy2/cache/io.spray/spray-routing_2.11/jars/spray-routing_2.11-1.3.2.jar">
-						<origin-location is-local="false" location="https://repo1.maven.org/maven2/io/spray/spray-routing_2.11/1.3.2/spray-routing_2.11-1.3.2.jar"/>
+					<artifact name="spray-routing-shapeless2_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="80379" time="0" location="/Users/mikelalvarezgo/.ivy2/cache/io.spray/spray-routing-shapeless2_2.11/srcs/spray-routing-shapeless2_2.11-1.3.2-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/io/spray/spray-routing-shapeless2_2.11/1.3.2/spray-routing-shapeless2_2.11-1.3.2-sources.jar"/>
 					</artifact>
-					<artifact name="spray-routing_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="80369" time="0" location="/Users/mikelalvarezgo/.ivy2/cache/io.spray/spray-routing_2.11/srcs/spray-routing_2.11-1.3.2-sources.jar">
-						<origin-location is-local="false" location="https://repo1.maven.org/maven2/io/spray/spray-routing_2.11/1.3.2/spray-routing_2.11-1.3.2-sources.jar"/>
+					<artifact name="spray-routing-shapeless2_2.11" type="jar" ext="jar" status="no" details="" size="1066180" time="0" location="/Users/mikelalvarezgo/.ivy2/cache/io.spray/spray-routing-shapeless2_2.11/jars/spray-routing-shapeless2_2.11-1.3.2.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/io/spray/spray-routing-shapeless2_2.11/1.3.2/spray-routing-shapeless2_2.11-1.3.2.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="com.chuusai" name="shapeless_2.11">
-			<revision name="1.2.4" status="release" pubdate="20140417123056" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/milessabin/shapeless" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="175">
+			<revision name="2.0.0" status="release" pubdate="20140417120556" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/milessabin/shapeless" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="175">
 				<license name="Apache License" url="http://www.apache.org/licenses/"/>
-				<metadata-artifact status="no" details="" size="2646" time="0" location="/Users/mikelalvarezgo/.ivy2/cache/com.chuusai/shapeless_2.11/ivy-1.2.4.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/chuusai/shapeless_2.11/1.2.4/shapeless_2.11-1.2.4.pom"/>
-				<caller organisation="ita-client" name="ita-client$sources_2.11" conf="test, compile, runtime" rev="1.2.4" rev-constraint-default="1.2.4" rev-constraint-dynamic="1.2.4" callerrev="0.0.1"/>
+				<metadata-artifact status="no" details="" size="2800" time="0" location="/Users/mikelalvarezgo/.ivy2/cache/com.chuusai/shapeless_2.11/ivy-2.0.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/chuusai/shapeless_2.11/2.0.0/shapeless_2.11-2.0.0.pom"/>
+				<caller organisation="ita-client" name="ita-client$sources_2.11" conf="test, compile, runtime" rev="2.0.0" rev-constraint-default="2.0.0" rev-constraint-dynamic="2.0.0" callerrev="0.0.1"/>
 				<artifacts>
-					<artifact name="shapeless_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="74351" time="0" location="/Users/mikelalvarezgo/.ivy2/cache/com.chuusai/shapeless_2.11/srcs/shapeless_2.11-1.2.4-sources.jar">
-						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/chuusai/shapeless_2.11/1.2.4/shapeless_2.11-1.2.4-sources.jar"/>
+					<artifact name="shapeless_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="134515" time="0" location="/Users/mikelalvarezgo/.ivy2/cache/com.chuusai/shapeless_2.11/srcs/shapeless_2.11-2.0.0-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/chuusai/shapeless_2.11/2.0.0/shapeless_2.11-2.0.0-sources.jar"/>
 					</artifact>
-					<artifact name="shapeless_2.11" type="jar" ext="jar" status="no" details="" size="1259355" time="0" location="/Users/mikelalvarezgo/.ivy2/cache/com.chuusai/shapeless_2.11/jars/shapeless_2.11-1.2.4.jar">
-						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/chuusai/shapeless_2.11/1.2.4/shapeless_2.11-1.2.4.jar"/>
+					<artifact name="shapeless_2.11" type="jar" ext="jar" status="no" details="" size="2049451" time="0" location="/Users/mikelalvarezgo/.ivy2/cache/com.chuusai/shapeless_2.11/jars/shapeless_2.11-2.0.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/chuusai/shapeless_2.11/2.0.0/shapeless_2.11-2.0.0.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
@@ -1018,7 +1018,7 @@
 				<metadata-artifact status="no" details="" size="3170" time="0" location="/Users/mikelalvarezgo/.ivy2/cache/com.typesafe.akka/akka-http-experimental_2.11/ivy-2.4.11.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/akka/akka-http-experimental_2.11/2.4.11/akka-http-experimental_2.11-2.4.11.pom"/>
 				<caller organisation="ita-client" name="ita-client$sources_2.11" conf="test, compile, runtime" rev="2.4.11" rev-constraint-default="2.4.11" rev-constraint-dynamic="2.4.11" callerrev="0.0.1"/>
 				<artifacts>
-					<artifact name="akka-http-experimental_2.11" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="178388" time="591" location="/Users/mikelalvarezgo/.ivy2/cache/com.typesafe.akka/akka-http-experimental_2.11/srcs/akka-http-experimental_2.11-2.4.11-sources.jar">
+					<artifact name="akka-http-experimental_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="178388" time="0" location="/Users/mikelalvarezgo/.ivy2/cache/com.typesafe.akka/akka-http-experimental_2.11/srcs/akka-http-experimental_2.11-2.4.11-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/akka/akka-http-experimental_2.11/2.4.11/akka-http-experimental_2.11-2.4.11-sources.jar"/>
 					</artifact>
 					<artifact name="akka-http-experimental_2.11" type="jar" ext="jar" status="no" details="" size="2706653" time="0" location="/Users/mikelalvarezgo/.ivy2/cache/com.typesafe.akka/akka-http-experimental_2.11/jars/akka-http-experimental_2.11-2.4.11.jar">
@@ -2746,7 +2746,7 @@
 				<metadata-artifact status="no" details="" size="2747" time="0" location="/Users/mikelalvarezgo/.ivy2/cache/com.vdurmont/emoji-java/ivy-3.2.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/vdurmont/emoji-java/3.2.0/emoji-java-3.2.0.pom"/>
 				<caller organisation="ita-client" name="ita-client$sources_2.11" conf="test, compile, runtime" rev="3.2.0" rev-constraint-default="3.2.0" rev-constraint-dynamic="3.2.0" callerrev="0.0.1"/>
 				<artifacts>
-					<artifact name="emoji-java" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="37552" time="468" location="/Users/mikelalvarezgo/.ivy2/cache/com.vdurmont/emoji-java/srcs/emoji-java-3.2.0-sources.jar">
+					<artifact name="emoji-java" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="37552" time="0" location="/Users/mikelalvarezgo/.ivy2/cache/com.vdurmont/emoji-java/srcs/emoji-java-3.2.0-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/vdurmont/emoji-java/3.2.0/emoji-java-3.2.0-sources.jar"/>
 					</artifact>
 					<artifact name="emoji-java" type="jar" ext="jar" status="no" details="" size="52531" time="0" location="/Users/mikelalvarezgo/.ivy2/cache/com.vdurmont/emoji-java/jars/emoji-java-3.2.0.jar">
@@ -2758,10 +2758,10 @@
 		<module organisation="org.json" name="json">
 			<revision name="20140107" status="release" pubdate="20140107193602" resolver="public" artresolver="public" homepage="https://github.com/douglascrockford/JSON-java" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="3">
 				<license name="The JSON License" url="http://json.org/license.html"/>
-				<metadata-artifact status="successful" details="" size="4188" time="151" location="/Users/mikelalvarezgo/.ivy2/cache/org.json/json/ivy-20140107.xml" searched="true" original-local-location="/Users/mikelalvarezgo/.ivy2/cache/org.json/json/ivy-20140107.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/json/json/20140107/json-20140107.pom"/>
+				<metadata-artifact status="successful" details="" size="4188" time="102" location="/Users/mikelalvarezgo/.ivy2/cache/org.json/json/ivy-20140107.xml" searched="true" original-local-location="/Users/mikelalvarezgo/.ivy2/cache/org.json/json/ivy-20140107.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/json/json/20140107/json-20140107.pom"/>
 				<caller organisation="ita-client" name="ita-client$sources_2.11" conf="test, compile, runtime" rev="20140107" rev-constraint-default="20140107" rev-constraint-dynamic="20140107" callerrev="0.0.1"/>
 				<artifacts>
-					<artifact name="json" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="79981" time="334" location="/Users/mikelalvarezgo/.ivy2/cache/org.json/json/srcs/json-20140107-sources.jar">
+					<artifact name="json" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="79981" time="0" location="/Users/mikelalvarezgo/.ivy2/cache/org.json/json/srcs/json-20140107-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/json/json/20140107/json-20140107-sources.jar"/>
 					</artifact>
 					<artifact name="json" type="jar" ext="jar" status="no" details="" size="64952" time="0" location="/Users/mikelalvarezgo/.ivy2/cache/org.json/json/jars/json-20140107.jar">
@@ -2776,7 +2776,7 @@
 				<metadata-artifact status="no" details="" size="1462" time="0" location="/Users/mikelalvarezgo/.ivy2/cache/com.lightbend/emoji_2.11/ivy-1.1.1.xml" searched="false" origin-is-local="false" origin-location="https://repo.typesafe.com/typesafe/ivy-releases/com.lightbend/emoji_2.11/1.1.1/ivys/ivy.xml"/>
 				<caller organisation="ita-client" name="ita-client$sources_2.11" conf="test, compile, runtime" rev="1.1.1" rev-constraint-default="1.1.1" rev-constraint-dynamic="1.1.1" callerrev="0.0.1"/>
 				<artifacts>
-					<artifact name="emoji_2.11" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="10398" time="3050" location="/Users/mikelalvarezgo/.ivy2/cache/com.lightbend/emoji_2.11/srcs/emoji_2.11-1.1.1-sources.jar">
+					<artifact name="emoji_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="10398" time="0" location="/Users/mikelalvarezgo/.ivy2/cache/com.lightbend/emoji_2.11/srcs/emoji_2.11-1.1.1-sources.jar">
 						<origin-location is-local="false" location="https://repo.typesafe.com/typesafe/ivy-releases/com.lightbend/emoji_2.11/1.1.1/srcs/emoji_2.11-sources.jar"/>
 					</artifact>
 					<artifact name="emoji_2.11" type="jar" ext="jar" status="no" details="" size="45595" time="0" location="/Users/mikelalvarezgo/.ivy2/cache/com.lightbend/emoji_2.11/jars/emoji_2.11-1.1.1.jar">

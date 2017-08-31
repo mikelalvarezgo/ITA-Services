@@ -3,7 +3,6 @@ package routes
 
 import controllers.ClassifierController
 import spray.routing.{Route, _}
-import utils.Logger
 import akka.actor.Actor
 import akka.util.Timeout
 import domain.Id
@@ -15,7 +14,6 @@ import classifier.Model._
 import spray.httpx.SprayJsonSupport._
 import spray.routing._
 import models.ModelData
-import shapeless._
 
 import scala.concurrent.ExecutionContext.Implicits.global
 import domain.Model.JFid
