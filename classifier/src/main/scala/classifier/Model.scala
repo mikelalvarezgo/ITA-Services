@@ -4,8 +4,10 @@ import models._
 import results.{ModelExecution, ModelResult, TweetResult}
 import spray.json.DefaultJsonProtocol._
 import client._
+import domain.Id
 import domain.Model._
 import spray.json._
+import mongo.Converters._
 
 object Model {
 
@@ -37,19 +39,33 @@ object Model {
 
   implicit val modelResultJF:RootJsonFormat[ModelResult] = jsonFormat10(ModelResult.apply)
 
-  implicit val executionJF:RootJsonFormat[ModelExecution] = new  RootJsonFormat[ModelExecution]{
+  implicit val executionJF:RootJsonFormat[ModelExecution] = new  RootJsonFormat[ModelExecution] {
     override def write(obj: ModelExecution): JsValue =
-      Json
-    override def read(json: JsValue): PickUpState = {
-      val JsString(value) = json
-      value match {
-        case v if v == Created.toString => Created
-        case v if v == Ready.toString => Ready
-        case v if v == InProcess.toString => InProcess
-        case v if v == Stopped.toString => Stopped
-        case v if v == Finished.toString => Finished
+      JsObject(Map(
+        "_id" ->
+          obj._id.map(_.toJson).getOrElse(JsNull),
+        "modelId" -> obj.modelId.toJson,
+        "topicId" -> obj.topicId.toJson,
+        "dateExecution" -> JsNumber(obj.dateExecution),
+        "resultModel" -> obj.resultModel.map(_.toJson).getOrElse(JsString("")),
+        "status" -> JsString(obj.status)))
+
+    override def read(json: JsValue): ModelExecution = {
+      val JsObject(atts) = json
+      val JsNumber(dateExecution) = atts("dateExecution")
+      val JsObject(ola) = atts("modelId")
+      val modelId = atts("modelId").convertTo[Id]
+      val topicId = atts("topicId").convertTo[Id]
+      val id = if (atts.isDefinedAt("_id")) Some(atts("_id").convertTo[Id]) else None
+      val result:Option[ModelResult] =  (atts("resultModel")) match {
+        case JsString("") |JsNull => None
+        case _ =>  Some((atts("resultModel")).convertTo[ModelResult])
       }
+
+      val JsString(status) = atts("status")
+      ModelExecution(id, modelId, topicId, dateExecution.toLong, status,result)
     }
+  }
 
   implicit val modelJF:RootJsonFormat[ModelData] =  jsonFormat7(ModelData.apply)
 

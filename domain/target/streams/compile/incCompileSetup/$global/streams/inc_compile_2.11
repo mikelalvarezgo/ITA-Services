@@ -1,0 +1,866 @@
+format version: 5
+output mode:
+1 items
+0 -> single
+output directories:
+1 items
+output dir -> /Users/mikelwyred/tfm/ITA-Services/domain/target/scala-2.11/classes
+compile options:
+2 items
+0 -> -deprecation
+1 -> -unchecked
+javac options:
+4 items
+0 -> -source
+1 -> 1.7
+2 -> -target
+3 -> 1.7
+compiler version:
+1 items
+0 -> 2.11.7
+compile order:
+1 items
+0 -> Mixed
+name hashing:
+1 items
+0 -> true
+products:
+54 items
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Address.scala -> /Users/mikelwyred/tfm/ITA-Services/domain/target/scala-2.11/classes/domain/Address$.class
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Address.scala -> /Users/mikelwyred/tfm/ITA-Services/domain/target/scala-2.11/classes/domain/Address.class
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Business.scala -> /Users/mikelwyred/tfm/ITA-Services/domain/target/scala-2.11/classes/domain/Business$.class
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Business.scala -> /Users/mikelwyred/tfm/ITA-Services/domain/target/scala-2.11/classes/domain/Business.class
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Domain.scala -> /Users/mikelwyred/tfm/ITA-Services/domain/target/scala-2.11/classes/server/Server$.class
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Domain.scala -> /Users/mikelwyred/tfm/ITA-Services/domain/target/scala-2.11/classes/server/Server$delayedInit$body.class
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Domain.scala -> /Users/mikelwyred/tfm/ITA-Services/domain/target/scala-2.11/classes/server/Server.class
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Employee.scala -> /Users/mikelwyred/tfm/ITA-Services/domain/target/scala-2.11/classes/domain/Employee$.class
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Employee.scala -> /Users/mikelwyred/tfm/ITA-Services/domain/target/scala-2.11/classes/domain/Employee.class
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Id.scala -> /Users/mikelwyred/tfm/ITA-Services/domain/target/scala-2.11/classes/domain/Id$.class
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Id.scala -> /Users/mikelwyred/tfm/ITA-Services/domain/target/scala-2.11/classes/domain/Id.class
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Model.scala -> /Users/mikelwyred/tfm/ITA-Services/domain/target/scala-2.11/classes/domain/Model$$anon$1$$anonfun$read$1.class
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Model.scala -> /Users/mikelwyred/tfm/ITA-Services/domain/target/scala-2.11/classes/domain/Model$$anon$1$$anonfun$read$2.class
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Model.scala -> /Users/mikelwyred/tfm/ITA-Services/domain/target/scala-2.11/classes/domain/Model$$anon$1$$anonfun$write$1.class
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Model.scala -> /Users/mikelwyred/tfm/ITA-Services/domain/target/scala-2.11/classes/domain/Model$$anon$1$$anonfun$write$2.class
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Model.scala -> /Users/mikelwyred/tfm/ITA-Services/domain/target/scala-2.11/classes/domain/Model$$anon$1$$anonfun$write$3.class
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Model.scala -> /Users/mikelwyred/tfm/ITA-Services/domain/target/scala-2.11/classes/domain/Model$$anon$1$$anonfun$write$4.class
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Model.scala -> /Users/mikelwyred/tfm/ITA-Services/domain/target/scala-2.11/classes/domain/Model$$anon$1.class
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Model.scala -> /Users/mikelwyred/tfm/ITA-Services/domain/target/scala-2.11/classes/domain/Model$$anon$2.class
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Model.scala -> /Users/mikelwyred/tfm/ITA-Services/domain/target/scala-2.11/classes/domain/Model$$anonfun$1.class
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Model.scala -> /Users/mikelwyred/tfm/ITA-Services/domain/target/scala-2.11/classes/domain/Model$$anonfun$2.class
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Model.scala -> /Users/mikelwyred/tfm/ITA-Services/domain/target/scala-2.11/classes/domain/Model$.class
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Model.scala -> /Users/mikelwyred/tfm/ITA-Services/domain/target/scala-2.11/classes/domain/Model.class
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/TweetInfo.scala -> /Users/mikelwyred/tfm/ITA-Services/domain/target/scala-2.11/classes/domain/Location$.class
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/TweetInfo.scala -> /Users/mikelwyred/tfm/ITA-Services/domain/target/scala-2.11/classes/domain/Location.class
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/TweetInfo.scala -> /Users/mikelwyred/tfm/ITA-Services/domain/target/scala-2.11/classes/domain/TweetInfo$$anonfun$content2TwitterInfo$1$$anonfun$1.class
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/TweetInfo.scala -> /Users/mikelwyred/tfm/ITA-Services/domain/target/scala-2.11/classes/domain/TweetInfo$$anonfun$content2TwitterInfo$1.class
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/TweetInfo.scala -> /Users/mikelwyred/tfm/ITA-Services/domain/target/scala-2.11/classes/domain/TweetInfo$.class
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/TweetInfo.scala -> /Users/mikelwyred/tfm/ITA-Services/domain/target/scala-2.11/classes/domain/TweetInfo.class
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/classifier/exception/ClassifierException.scala -> /Users/mikelwyred/tfm/ITA-Services/domain/target/scala-2.11/classes/domain/classifier/exception/ClassifierException$.class
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/classifier/exception/ClassifierException.scala -> /Users/mikelwyred/tfm/ITA-Services/domain/target/scala-2.11/classes/domain/classifier/exception/ClassifierException.class
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/exception/ITAException.scala -> /Users/mikelwyred/tfm/ITA-Services/domain/target/scala-2.11/classes/domain/exception/ITAException$$anon$1.class
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/exception/ITAException.scala -> /Users/mikelwyred/tfm/ITA-Services/domain/target/scala-2.11/classes/domain/exception/ITAException$.class
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/exception/ITAException.scala -> /Users/mikelwyred/tfm/ITA-Services/domain/target/scala-2.11/classes/domain/exception/ITAException$class.class
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/exception/ITAException.scala -> /Users/mikelwyred/tfm/ITA-Services/domain/target/scala-2.11/classes/domain/exception/ITAException.class
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/Model.scala -> /Users/mikelwyred/tfm/ITA-Services/domain/target/scala-2.11/classes/domain/gatherer/Model$$anon$1.class
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/Model.scala -> /Users/mikelwyred/tfm/ITA-Services/domain/target/scala-2.11/classes/domain/gatherer/Model$$anonfun$1.class
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/Model.scala -> /Users/mikelwyred/tfm/ITA-Services/domain/target/scala-2.11/classes/domain/gatherer/Model$.class
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/Model.scala -> /Users/mikelwyred/tfm/ITA-Services/domain/target/scala-2.11/classes/domain/gatherer/Model.class
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/PickUpState.scala -> /Users/mikelwyred/tfm/ITA-Services/domain/target/scala-2.11/classes/domain/gatherer/Created$.class
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/PickUpState.scala -> /Users/mikelwyred/tfm/ITA-Services/domain/target/scala-2.11/classes/domain/gatherer/Created.class
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/PickUpState.scala -> /Users/mikelwyred/tfm/ITA-Services/domain/target/scala-2.11/classes/domain/gatherer/Finished$.class
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/PickUpState.scala -> /Users/mikelwyred/tfm/ITA-Services/domain/target/scala-2.11/classes/domain/gatherer/Finished.class
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/PickUpState.scala -> /Users/mikelwyred/tfm/ITA-Services/domain/target/scala-2.11/classes/domain/gatherer/InProcess$.class
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/PickUpState.scala -> /Users/mikelwyred/tfm/ITA-Services/domain/target/scala-2.11/classes/domain/gatherer/InProcess.class
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/PickUpState.scala -> /Users/mikelwyred/tfm/ITA-Services/domain/target/scala-2.11/classes/domain/gatherer/PickUpState.class
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/PickUpState.scala -> /Users/mikelwyred/tfm/ITA-Services/domain/target/scala-2.11/classes/domain/gatherer/Ready$.class
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/PickUpState.scala -> /Users/mikelwyred/tfm/ITA-Services/domain/target/scala-2.11/classes/domain/gatherer/Ready.class
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/PickUpState.scala -> /Users/mikelwyred/tfm/ITA-Services/domain/target/scala-2.11/classes/domain/gatherer/Stopped$.class
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/PickUpState.scala -> /Users/mikelwyred/tfm/ITA-Services/domain/target/scala-2.11/classes/domain/gatherer/Stopped.class
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/TweetPickup.scala -> /Users/mikelwyred/tfm/ITA-Services/domain/target/scala-2.11/classes/domain/gatherer/TweetPickUp$.class
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/TweetPickup.scala -> /Users/mikelwyred/tfm/ITA-Services/domain/target/scala-2.11/classes/domain/gatherer/TweetPickUp.class
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/exception/GathererException.scala -> /Users/mikelwyred/tfm/ITA-Services/domain/target/scala-2.11/classes/domain/gatherer/exception/GathererException$.class
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/exception/GathererException.scala -> /Users/mikelwyred/tfm/ITA-Services/domain/target/scala-2.11/classes/domain/gatherer/exception/GathererException.class
+binary dependencies:
+33 items
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Address.scala -> /Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/rt.jar
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Address.scala -> /Users/mikelwyred/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.7.jar
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Business.scala -> /Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/rt.jar
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Business.scala -> /Users/mikelwyred/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.7.jar
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Domain.scala -> /Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/rt.jar
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Domain.scala -> /Users/mikelwyred/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.7.jar
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Employee.scala -> /Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/rt.jar
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Employee.scala -> /Users/mikelwyred/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.7.jar
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Id.scala -> /Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/rt.jar
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Id.scala -> /Users/mikelwyred/.ivy2/cache/org.mongodb/mongo-java-driver/jars/mongo-java-driver-3.2.2.jar
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Id.scala -> /Users/mikelwyred/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.7.jar
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Model.scala -> /Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/rt.jar
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Model.scala -> /Users/mikelwyred/.ivy2/cache/com.fasterxml.jackson.core/jackson-annotations/bundles/jackson-annotations-2.3.0.jar
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Model.scala -> /Users/mikelwyred/.ivy2/cache/io.spray/spray-httpx_2.11/bundles/spray-httpx_2.11-1.3.3.jar
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Model.scala -> /Users/mikelwyred/.ivy2/cache/io.spray/spray-json_2.11/bundles/spray-json_2.11-1.3.3.jar
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Model.scala -> /Users/mikelwyred/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.7.jar
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/TweetInfo.scala -> /Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/rt.jar
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/TweetInfo.scala -> /Users/mikelwyred/.ivy2/cache/com.vdurmont/emoji-java/jars/emoji-java-3.2.0.jar
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/TweetInfo.scala -> /Users/mikelwyred/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.7.jar
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/TweetInfo.scala -> /Users/mikelwyred/.ivy2/cache/org.twitter4j/twitter4j-core/jars/twitter4j-core-3.0.3.jar
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/classifier/exception/ClassifierException.scala -> /Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/rt.jar
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/classifier/exception/ClassifierException.scala -> /Users/mikelwyred/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.7.jar
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/exception/ITAException.scala -> /Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/rt.jar
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/exception/ITAException.scala -> /Users/mikelwyred/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.7.jar
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/Model.scala -> /Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/rt.jar
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/Model.scala -> /Users/mikelwyred/.ivy2/cache/io.spray/spray-json_2.11/bundles/spray-json_2.11-1.3.3.jar
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/Model.scala -> /Users/mikelwyred/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.7.jar
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/PickUpState.scala -> /Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/rt.jar
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/PickUpState.scala -> /Users/mikelwyred/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.7.jar
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/TweetPickup.scala -> /Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/rt.jar
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/TweetPickup.scala -> /Users/mikelwyred/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.7.jar
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/exception/GathererException.scala -> /Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/rt.jar
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/exception/GathererException.scala -> /Users/mikelwyred/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.7.jar
+direct source dependencies:
+0 items
+direct external dependencies:
+0 items
+public inherited source dependencies:
+0 items
+public inherited external dependencies:
+0 items
+member reference internal dependencies:
+14 items
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Business.scala -> /Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Address.scala
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Business.scala -> /Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Employee.scala
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Employee.scala -> /Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Address.scala
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Model.scala -> /Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Id.scala
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Model.scala -> /Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/TweetInfo.scala
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/TweetInfo.scala -> /Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Id.scala
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/classifier/exception/ClassifierException.scala -> /Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/exception/ITAException.scala
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/Model.scala -> /Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Id.scala
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/Model.scala -> /Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Model.scala
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/Model.scala -> /Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/PickUpState.scala
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/Model.scala -> /Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/TweetPickup.scala
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/TweetPickup.scala -> /Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Id.scala
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/TweetPickup.scala -> /Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/PickUpState.scala
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/exception/GathererException.scala -> /Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/exception/ITAException.scala
+member reference external dependencies:
+0 items
+inheritance internal dependencies:
+2 items
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/classifier/exception/ClassifierException.scala -> /Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/exception/ITAException.scala
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/exception/GathererException.scala -> /Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/exception/ITAException.scala
+inheritance external dependencies:
+0 items
+class names:
+54 items
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Address.scala -> domain.Address
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Address.scala -> domain.Address$
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Business.scala -> domain.Business
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Business.scala -> domain.Business$
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Domain.scala -> server.Server
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Domain.scala -> server.Server$
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Domain.scala -> server.Server$delayedInit$body
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Employee.scala -> domain.Employee
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Employee.scala -> domain.Employee$
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Id.scala -> domain.Id
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Id.scala -> domain.Id$
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Model.scala -> domain.Model
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Model.scala -> domain.Model$
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Model.scala -> domain.Model$$anon$1
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Model.scala -> domain.Model$$anon$1$$anonfun$read$1
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Model.scala -> domain.Model$$anon$1$$anonfun$read$2
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Model.scala -> domain.Model$$anon$1$$anonfun$write$1
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Model.scala -> domain.Model$$anon$1$$anonfun$write$2
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Model.scala -> domain.Model$$anon$1$$anonfun$write$3
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Model.scala -> domain.Model$$anon$1$$anonfun$write$4
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Model.scala -> domain.Model$$anon$2
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Model.scala -> domain.Model$$anonfun$1
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Model.scala -> domain.Model$$anonfun$2
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/TweetInfo.scala -> domain.Location
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/TweetInfo.scala -> domain.Location$
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/TweetInfo.scala -> domain.TweetInfo
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/TweetInfo.scala -> domain.TweetInfo$
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/TweetInfo.scala -> domain.TweetInfo$$anonfun$content2TwitterInfo$1
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/TweetInfo.scala -> domain.TweetInfo$$anonfun$content2TwitterInfo$1$$anonfun$1
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/classifier/exception/ClassifierException.scala -> domain.classifier.exception.ClassifierException
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/classifier/exception/ClassifierException.scala -> domain.classifier.exception.ClassifierException$
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/exception/ITAException.scala -> domain.exception.ITAException
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/exception/ITAException.scala -> domain.exception.ITAException$
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/exception/ITAException.scala -> domain.exception.ITAException$$anon$1
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/exception/ITAException.scala -> domain.exception.ITAException$class
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/Model.scala -> domain.gatherer.Model
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/Model.scala -> domain.gatherer.Model$
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/Model.scala -> domain.gatherer.Model$$anon$1
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/Model.scala -> domain.gatherer.Model$$anonfun$1
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/PickUpState.scala -> domain.gatherer.Created
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/PickUpState.scala -> domain.gatherer.Created$
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/PickUpState.scala -> domain.gatherer.Finished
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/PickUpState.scala -> domain.gatherer.Finished$
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/PickUpState.scala -> domain.gatherer.InProcess
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/PickUpState.scala -> domain.gatherer.InProcess$
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/PickUpState.scala -> domain.gatherer.PickUpState
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/PickUpState.scala -> domain.gatherer.Ready
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/PickUpState.scala -> domain.gatherer.Ready$
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/PickUpState.scala -> domain.gatherer.Stopped
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/PickUpState.scala -> domain.gatherer.Stopped$
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/TweetPickup.scala -> domain.gatherer.TweetPickUp
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/TweetPickup.scala -> domain.gatherer.TweetPickUp$
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/exception/GathererException.scala -> domain.gatherer.exception.GathererException
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/exception/GathererException.scala -> domain.gatherer.exception.GathererException$
+used names:
+507 items
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Address.scala -> &&
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Address.scala -> <init>
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Address.scala -> ==
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Address.scala -> AbstractFunction6
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Address.scala -> Address
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Address.scala -> None
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Address.scala -> Option
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Address.scala -> Predef
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Address.scala -> Product
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Address.scala -> ScalaRunTime
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Address.scala -> Serializable
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Address.scala -> String
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Address.scala -> _hashCode
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Address.scala -> _toString
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Address.scala -> asInstanceOf
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Address.scala -> country
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Address.scala -> domain
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Address.scala -> eq
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Address.scala -> isInstanceOf
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Address.scala -> line1
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Address.scala -> line2
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Address.scala -> name
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Address.scala -> runtime
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Address.scala -> scala
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Address.scala -> street
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Address.scala -> toString
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Address.scala -> typedProductIterator
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Address.scala -> zip
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Address.scala -> ||
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Business.scala -> &&
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Business.scala -> <init>
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Business.scala -> ==
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Business.scala -> AbstractFunction4
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Business.scala -> Address
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Business.scala -> Business
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Business.scala -> Employee
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Business.scala -> None
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Business.scala -> Predef
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Business.scala -> Product
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Business.scala -> ScalaRunTime
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Business.scala -> Serializable
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Business.scala -> Set
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Business.scala -> String
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Business.scala -> UUID
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Business.scala -> _hashCode
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Business.scala -> _toString
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Business.scala -> address
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Business.scala -> asInstanceOf
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Business.scala -> domain
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Business.scala -> employees
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Business.scala -> eq
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Business.scala -> id
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Business.scala -> isInstanceOf
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Business.scala -> java
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Business.scala -> name
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Business.scala -> runtime
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Business.scala -> scala
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Business.scala -> toString
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Business.scala -> typedProductIterator
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Business.scala -> util
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Business.scala -> ||
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Domain.scala -> <init>
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Domain.scala -> App
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Domain.scala -> Predef
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Domain.scala -> Server
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Domain.scala -> println
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Domain.scala -> scala
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Domain.scala -> server
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Employee.scala -> &&
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Employee.scala -> <init>
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Employee.scala -> ==
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Employee.scala -> AbstractFunction3
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Employee.scala -> Address
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Employee.scala -> Employee
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Employee.scala -> None
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Employee.scala -> Predef
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Employee.scala -> Product
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Employee.scala -> ScalaRunTime
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Employee.scala -> Serializable
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Employee.scala -> String
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Employee.scala -> UUID
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Employee.scala -> _hashCode
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Employee.scala -> _toString
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Employee.scala -> address
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Employee.scala -> asInstanceOf
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Employee.scala -> domain
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Employee.scala -> eq
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Employee.scala -> id
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Employee.scala -> isInstanceOf
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Employee.scala -> java
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Employee.scala -> name
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Employee.scala -> runtime
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Employee.scala -> scala
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Employee.scala -> toString
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Employee.scala -> typedProductIterator
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Employee.scala -> util
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Employee.scala -> ||
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Id.scala -> &&
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Id.scala -> <init>
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Id.scala -> ==
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Id.scala -> AnyRef
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Id.scala -> Id
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Id.scala -> None
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Id.scala -> ObjectId
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Id.scala -> Predef
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Id.scala -> Product
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Id.scala -> ScalaRunTime
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Id.scala -> Serializable
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Id.scala -> String
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Id.scala -> _hashCode
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Id.scala -> _toString
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Id.scala -> asInstanceOf
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Id.scala -> bson
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Id.scala -> domain
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Id.scala -> eq
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Id.scala -> get
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Id.scala -> id
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Id.scala -> implicitConversions
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Id.scala -> isInstanceOf
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Id.scala -> language
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Id.scala -> org
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Id.scala -> runtime
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Id.scala -> scala
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Id.scala -> toHexString
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Id.scala -> toString
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Id.scala -> typedProductIterator
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Id.scala -> types
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Id.scala -> value
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Id.scala -> ||
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Model.scala -> $anon
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Model.scala -> $conforms
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Model.scala -> ->
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Model.scala -> <init>
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Model.scala -> Any
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Model.scala -> AnyRef
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Model.scala -> BooleanJsonFormat
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Model.scala -> ClassManifestFactory
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Model.scala -> DefaultJsonProtocol
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Model.scala -> DoubleJsonFormat
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Model.scala -> Id
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Model.scala -> IntJsonFormat
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Model.scala -> JFLocation
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Model.scala -> JFTweetInfo
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Model.scala -> JFid
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Model.scala -> JsArray
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Model.scala -> JsBoolean
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Model.scala -> JsNull
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Model.scala -> JsNumber
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Model.scala -> JsObject
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Model.scala -> JsString
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Model.scala -> JsValue
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Model.scala -> JsonValue
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Model.scala -> List
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Model.scala -> Location
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Model.scala -> LongJsonFormat
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Model.scala -> Model
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Model.scala -> None
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Model.scala -> Option
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Model.scala -> Predef
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Model.scala -> RootJsonFormat
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Model.scala -> SprayJsonSupport
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Model.scala -> StringJsonFormat
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Model.scala -> TweetInfo
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Model.scala -> annotation
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Model.scala -> anyJF
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Model.scala -> apply
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Model.scala -> asInstanceOf
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Model.scala -> asJsObject
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Model.scala -> b
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Model.scala -> canBuildFrom
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Model.scala -> classType
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Model.scala -> com
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Model.scala -> domain
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Model.scala -> elements
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Model.scala -> fasterxml
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Model.scala -> fields
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Model.scala -> get
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Model.scala -> getOrElse
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Model.scala -> httpx
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Model.scala -> immutable
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Model.scala -> isEmpty
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Model.scala -> isInstanceOf
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Model.scala -> jackson
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Model.scala -> json
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Model.scala -> jsonFormat11
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Model.scala -> jsonFormat2
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Model.scala -> jsonFormat9
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Model.scala -> map
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Model.scala -> mapValues
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Model.scala -> n
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Model.scala -> obj
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Model.scala -> optionFormat
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Model.scala -> orNull
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Model.scala -> read
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Model.scala -> reflect
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Model.scala -> s
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Model.scala -> scala
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Model.scala -> spray
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Model.scala -> toDouble
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Model.scala -> toList
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Model.scala -> toString
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Model.scala -> toVector
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Model.scala -> unapply
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Model.scala -> unary_!
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Model.scala -> unchecked
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Model.scala -> value
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Model.scala -> write
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/TweetInfo.scala -> !=
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/TweetInfo.scala -> &&
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/TweetInfo.scala -> <init>
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/TweetInfo.scala -> ==
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/TweetInfo.scala -> AnyRef
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/TweetInfo.scala -> Boolean
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/TweetInfo.scala -> Double
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/TweetInfo.scala -> EmojiParser
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/TweetInfo.scala -> Id
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/TweetInfo.scala -> Int
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/TweetInfo.scala -> Location
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/TweetInfo.scala -> Long
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/TweetInfo.scala -> None
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/TweetInfo.scala -> Option
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/TweetInfo.scala -> Predef
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/TweetInfo.scala -> Product
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/TweetInfo.scala -> ScalaRunTime
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/TweetInfo.scala -> Serializable
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/TweetInfo.scala -> Statics
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/TweetInfo.scala -> Status
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/TweetInfo.scala -> String
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/TweetInfo.scala -> Try
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/TweetInfo.scala -> TweetInfo
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/TweetInfo.scala -> _id
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/TweetInfo.scala -> _toString
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/TweetInfo.scala -> anyHash
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/TweetInfo.scala -> apply
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/TweetInfo.scala -> asInstanceOf
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/TweetInfo.scala -> com
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/TweetInfo.scala -> contain_emoji
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/TweetInfo.scala -> containtTextEmojis
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/TweetInfo.scala -> createdAt
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/TweetInfo.scala -> domain
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/TweetInfo.scala -> doubleHash
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/TweetInfo.scala -> emoji
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/TweetInfo.scala -> eq
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/TweetInfo.scala -> finalizeHash
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/TweetInfo.scala -> getCreatedAt
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/TweetInfo.scala -> getFollowersCount
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/TweetInfo.scala -> getGeoLocation
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/TweetInfo.scala -> getId
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/TweetInfo.scala -> getLatitude
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/TweetInfo.scala -> getLongitude
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/TweetInfo.scala -> getName
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/TweetInfo.scala -> getText
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/TweetInfo.scala -> getTime
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/TweetInfo.scala -> getUser
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/TweetInfo.scala -> idTopic
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/TweetInfo.scala -> isInstanceOf
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/TweetInfo.scala -> latitude
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/TweetInfo.scala -> leng
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/TweetInfo.scala -> lenguage
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/TweetInfo.scala -> location
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/TweetInfo.scala -> longHash
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/TweetInfo.scala -> longitude
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/TweetInfo.scala -> mix
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/TweetInfo.scala -> parseToAliases
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/TweetInfo.scala -> runtime
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/TweetInfo.scala -> scala
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/TweetInfo.scala -> text
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/TweetInfo.scala -> toOption
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/TweetInfo.scala -> toString
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/TweetInfo.scala -> topic
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/TweetInfo.scala -> tw
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/TweetInfo.scala -> tweetLoc
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/TweetInfo.scala -> tweetText
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/TweetInfo.scala -> tweet_id
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/TweetInfo.scala -> twitter4j
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/TweetInfo.scala -> typedProductIterator
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/TweetInfo.scala -> user_followers
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/TweetInfo.scala -> user_id
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/TweetInfo.scala -> user_name
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/TweetInfo.scala -> util
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/TweetInfo.scala -> vdurmont
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/TweetInfo.scala -> ||
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/classifier/exception/ClassifierException.scala -> &&
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/classifier/exception/ClassifierException.scala -> <init>
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/classifier/exception/ClassifierException.scala -> ==
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/classifier/exception/ClassifierException.scala -> AnyRef
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/classifier/exception/ClassifierException.scala -> ClassifierException
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/classifier/exception/ClassifierException.scala -> ITAException
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/classifier/exception/ClassifierException.scala -> Int
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/classifier/exception/ClassifierException.scala -> None
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/classifier/exception/ClassifierException.scala -> Option
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/classifier/exception/ClassifierException.scala -> Predef
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/classifier/exception/ClassifierException.scala -> Product
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/classifier/exception/ClassifierException.scala -> ScalaRunTime
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/classifier/exception/ClassifierException.scala -> Serializable
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/classifier/exception/ClassifierException.scala -> String
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/classifier/exception/ClassifierException.scala -> StringContext
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/classifier/exception/ClassifierException.scala -> Throwable
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/classifier/exception/ClassifierException.scala -> _hashCode
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/classifier/exception/ClassifierException.scala -> asInstanceOf
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/classifier/exception/ClassifierException.scala -> cause
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/classifier/exception/ClassifierException.scala -> classifier
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/classifier/exception/ClassifierException.scala -> classifierControllerCreateExecutionAlreadyCreate
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/classifier/exception/ClassifierException.scala -> classifierControllerCreateExecutionErrorCreatingDB
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/classifier/exception/ClassifierException.scala -> classifierControllerCreateExecutionErrorInternalError
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/classifier/exception/ClassifierException.scala -> classifierControllerCreateModelAlreadyCreate
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/classifier/exception/ClassifierException.scala -> classifierControllerCreateModelErrorCreatingDB
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/classifier/exception/ClassifierException.scala -> classifierControllerCreateModelErrorInternalError
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/classifier/exception/ClassifierException.scala -> classifierControllerGetExecutionNotFound
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/classifier/exception/ClassifierException.scala -> classifierControllerGetModelNotFound
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/classifier/exception/ClassifierException.scala -> classifierControllerTrainModelExecutionDoesNotExist
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/classifier/exception/ClassifierException.scala -> classifierControllerTrainModelExecutionlErrorInternalError
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/classifier/exception/ClassifierException.scala -> classifierControllerUpdateExecutionInternalError
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/classifier/exception/ClassifierException.scala -> classifierControllerUpdateExecutionNotFound
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/classifier/exception/ClassifierException.scala -> classifierControllerUpdateModelInternalError
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/classifier/exception/ClassifierException.scala -> classifierControllerUpdateModelNotFound
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/classifier/exception/ClassifierException.scala -> code
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/classifier/exception/ClassifierException.scala -> domain
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/classifier/exception/ClassifierException.scala -> eq
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/classifier/exception/ClassifierException.scala -> errorCode
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/classifier/exception/ClassifierException.scala -> exception
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/classifier/exception/ClassifierException.scala -> executionModelIdNotFound
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/classifier/exception/ClassifierException.scala -> isInstanceOf
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/classifier/exception/ClassifierException.scala -> message
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/classifier/exception/ClassifierException.scala -> package
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/classifier/exception/ClassifierException.scala -> runtime
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/classifier/exception/ClassifierException.scala -> s
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/classifier/exception/ClassifierException.scala -> scala
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/classifier/exception/ClassifierException.scala -> toString
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/classifier/exception/ClassifierException.scala -> typedProductIterator
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/classifier/exception/ClassifierException.scala -> ||
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/exception/ITAException.scala -> $anon
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/exception/ITAException.scala -> $conforms
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/exception/ITAException.scala -> <init>
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/exception/ITAException.scala -> AnyRef
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/exception/ITAException.scala -> Exception
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/exception/ITAException.scala -> ITAException
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/exception/ITAException.scala -> None
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/exception/ITAException.scala -> Option
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/exception/ITAException.scala -> Predef
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/exception/ITAException.scala -> String
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/exception/ITAException.scala -> StringContext
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/exception/ITAException.scala -> Throwable
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/exception/ITAException.scala -> _cause
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/exception/ITAException.scala -> _code
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/exception/ITAException.scala -> _message
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/exception/ITAException.scala -> cause
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/exception/ITAException.scala -> code
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/exception/ITAException.scala -> domain
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/exception/ITAException.scala -> exception
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/exception/ITAException.scala -> message
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/exception/ITAException.scala -> orNull
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/exception/ITAException.scala -> package
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/exception/ITAException.scala -> s
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/exception/ITAException.scala -> scala
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/Model.scala -> $anon
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/Model.scala -> <init>
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/Model.scala -> ==
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/Model.scala -> AnyRef
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/Model.scala -> ClassManifestFactory
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/Model.scala -> Created
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/Model.scala -> DefaultJsonProtocol
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/Model.scala -> Finished
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/Model.scala -> InProcess
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/Model.scala -> IntJsonFormat
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/Model.scala -> JFid
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/Model.scala -> JsString
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/Model.scala -> JsValue
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/Model.scala -> JsonFormat
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/Model.scala -> LongJsonFormat
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/Model.scala -> Model
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/Model.scala -> PickUpState
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/Model.scala -> Ready
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/Model.scala -> RootJsonFormat
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/Model.scala -> Stopped
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/Model.scala -> StringJsonFormat
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/Model.scala -> TweetPickUp
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/Model.scala -> asInstanceOf
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/Model.scala -> classType
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/Model.scala -> domain
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/Model.scala -> gatherer
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/Model.scala -> isInstanceOf
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/Model.scala -> json
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/Model.scala -> jsonFormat6
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/Model.scala -> listFormat
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/Model.scala -> obj
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/Model.scala -> optionFormat
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/Model.scala -> pickUpJF
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/Model.scala -> pickUpStateJF
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/Model.scala -> reflect
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/Model.scala -> scala
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/Model.scala -> spray
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/Model.scala -> toString
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/Model.scala -> unchecked
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/Model.scala -> value
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/PickUpState.scala -> <init>
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/PickUpState.scala -> AnyRef
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/PickUpState.scala -> Created
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/PickUpState.scala -> Finished
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/PickUpState.scala -> InProcess
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/PickUpState.scala -> PickUpState
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/PickUpState.scala -> Predef
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/PickUpState.scala -> Product
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/PickUpState.scala -> Ready
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/PickUpState.scala -> ScalaRunTime
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/PickUpState.scala -> Serializable
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/PickUpState.scala -> Stopped
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/PickUpState.scala -> domain
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/PickUpState.scala -> gatherer
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/PickUpState.scala -> getClass
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/PickUpState.scala -> getName
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/PickUpState.scala -> last
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/PickUpState.scala -> refArrayOps
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/PickUpState.scala -> runtime
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/PickUpState.scala -> scala
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/PickUpState.scala -> split
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/PickUpState.scala -> toString
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/PickUpState.scala -> toUpperCase
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/PickUpState.scala -> typedProductIterator
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/TweetPickup.scala -> &&
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/TweetPickup.scala -> <init>
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/TweetPickup.scala -> ==
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/TweetPickup.scala -> AbstractFunction6
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/TweetPickup.scala -> Boolean
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/TweetPickup.scala -> Finished
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/TweetPickup.scala -> Id
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/TweetPickup.scala -> InProcess
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/TweetPickup.scala -> Int
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/TweetPickup.scala -> List
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/TweetPickup.scala -> Long
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/TweetPickup.scala -> None
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/TweetPickup.scala -> Option
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/TweetPickup.scala -> PickUpState
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/TweetPickup.scala -> Predef
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/TweetPickup.scala -> Product
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/TweetPickup.scala -> Ready
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/TweetPickup.scala -> ScalaRunTime
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/TweetPickup.scala -> Serializable
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/TweetPickup.scala -> Statics
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/TweetPickup.scala -> String
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/TweetPickup.scala -> TweetPickUp
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/TweetPickup.scala -> _id
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/TweetPickup.scala -> _toString
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/TweetPickup.scala -> anyHash
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/TweetPickup.scala -> apply
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/TweetPickup.scala -> asInstanceOf
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/TweetPickup.scala -> contains
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/TweetPickup.scala -> cuantity_warn
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/TweetPickup.scala -> domain
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/TweetPickup.scala -> eq
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/TweetPickup.scala -> finalizeHash
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/TweetPickup.scala -> gatherer
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/TweetPickup.scala -> immutable
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/TweetPickup.scala -> isInstanceOf
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/TweetPickup.scala -> longHash
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/TweetPickup.scala -> mix
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/TweetPickup.scala -> nEmojis
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/TweetPickup.scala -> nTweets
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/TweetPickup.scala -> package
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/TweetPickup.scala -> runtime
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/TweetPickup.scala -> scala
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/TweetPickup.scala -> state
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/TweetPickup.scala -> toString
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/TweetPickup.scala -> topics
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/TweetPickup.scala -> typedProductIterator
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/TweetPickup.scala -> unary_!
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/TweetPickup.scala -> ||
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/exception/GathererException.scala -> &&
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/exception/GathererException.scala -> <init>
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/exception/GathererException.scala -> ==
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/exception/GathererException.scala -> AnyRef
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/exception/GathererException.scala -> GathererException
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/exception/GathererException.scala -> ITAException
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/exception/GathererException.scala -> Int
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/exception/GathererException.scala -> None
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/exception/GathererException.scala -> Option
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/exception/GathererException.scala -> Predef
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/exception/GathererException.scala -> Product
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/exception/GathererException.scala -> ScalaRunTime
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/exception/GathererException.scala -> Serializable
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/exception/GathererException.scala -> String
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/exception/GathererException.scala -> StringContext
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/exception/GathererException.scala -> Throwable
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/exception/GathererException.scala -> _hashCode
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/exception/GathererException.scala -> asInstanceOf
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/exception/GathererException.scala -> cause
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/exception/GathererException.scala -> code
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/exception/GathererException.scala -> domain
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/exception/GathererException.scala -> eq
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/exception/GathererException.scala -> errorCode
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/exception/GathererException.scala -> exception
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/exception/GathererException.scala -> gatherer
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/exception/GathererException.scala -> isInstanceOf
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/exception/GathererException.scala -> message
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/exception/GathererException.scala -> package
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/exception/GathererException.scala -> pickUpControllerCreatePickUpAlreadyCreate
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/exception/GathererException.scala -> pickUpControllerCreatePickUpErrorCreatingDB
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/exception/GathererException.scala -> pickUpControllerCreatePickUpErrorInternalError
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/exception/GathererException.scala -> pickUpControllerGetPickUpNotFound
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/exception/GathererException.scala -> pickUpControllerUpdatePickUpInternalError
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/exception/GathererException.scala -> pickUpControllerUpdatePickUpNotFound
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/exception/GathererException.scala -> runtime
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/exception/GathererException.scala -> s
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/exception/GathererException.scala -> scala
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/exception/GathererException.scala -> toString
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/exception/GathererException.scala -> typedProductIterator
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/exception/GathererException.scala -> ||
+product stamps:
+54 items
+/Users/mikelwyred/tfm/ITA-Services/domain/target/scala-2.11/classes/domain/Address$.class -> lastModified(1504255207000)
+/Users/mikelwyred/tfm/ITA-Services/domain/target/scala-2.11/classes/domain/Address.class -> lastModified(1504255207000)
+/Users/mikelwyred/tfm/ITA-Services/domain/target/scala-2.11/classes/domain/Business$.class -> lastModified(1504255207000)
+/Users/mikelwyred/tfm/ITA-Services/domain/target/scala-2.11/classes/domain/Business.class -> lastModified(1504255207000)
+/Users/mikelwyred/tfm/ITA-Services/domain/target/scala-2.11/classes/domain/Employee$.class -> lastModified(1504255207000)
+/Users/mikelwyred/tfm/ITA-Services/domain/target/scala-2.11/classes/domain/Employee.class -> lastModified(1504255207000)
+/Users/mikelwyred/tfm/ITA-Services/domain/target/scala-2.11/classes/domain/Id$.class -> lastModified(1504255207000)
+/Users/mikelwyred/tfm/ITA-Services/domain/target/scala-2.11/classes/domain/Id.class -> lastModified(1504255207000)
+/Users/mikelwyred/tfm/ITA-Services/domain/target/scala-2.11/classes/domain/Location$.class -> lastModified(1504255207000)
+/Users/mikelwyred/tfm/ITA-Services/domain/target/scala-2.11/classes/domain/Location.class -> lastModified(1504255207000)
+/Users/mikelwyred/tfm/ITA-Services/domain/target/scala-2.11/classes/domain/Model$$anon$1$$anonfun$read$1.class -> lastModified(1504255207000)
+/Users/mikelwyred/tfm/ITA-Services/domain/target/scala-2.11/classes/domain/Model$$anon$1$$anonfun$read$2.class -> lastModified(1504255207000)
+/Users/mikelwyred/tfm/ITA-Services/domain/target/scala-2.11/classes/domain/Model$$anon$1$$anonfun$write$1.class -> lastModified(1504255207000)
+/Users/mikelwyred/tfm/ITA-Services/domain/target/scala-2.11/classes/domain/Model$$anon$1$$anonfun$write$2.class -> lastModified(1504255207000)
+/Users/mikelwyred/tfm/ITA-Services/domain/target/scala-2.11/classes/domain/Model$$anon$1$$anonfun$write$3.class -> lastModified(1504255207000)
+/Users/mikelwyred/tfm/ITA-Services/domain/target/scala-2.11/classes/domain/Model$$anon$1$$anonfun$write$4.class -> lastModified(1504255207000)
+/Users/mikelwyred/tfm/ITA-Services/domain/target/scala-2.11/classes/domain/Model$$anon$1.class -> lastModified(1504255207000)
+/Users/mikelwyred/tfm/ITA-Services/domain/target/scala-2.11/classes/domain/Model$$anon$2.class -> lastModified(1504255207000)
+/Users/mikelwyred/tfm/ITA-Services/domain/target/scala-2.11/classes/domain/Model$$anonfun$1.class -> lastModified(1504255207000)
+/Users/mikelwyred/tfm/ITA-Services/domain/target/scala-2.11/classes/domain/Model$$anonfun$2.class -> lastModified(1504255207000)
+/Users/mikelwyred/tfm/ITA-Services/domain/target/scala-2.11/classes/domain/Model$.class -> lastModified(1504255207000)
+/Users/mikelwyred/tfm/ITA-Services/domain/target/scala-2.11/classes/domain/Model.class -> lastModified(1504255207000)
+/Users/mikelwyred/tfm/ITA-Services/domain/target/scala-2.11/classes/domain/TweetInfo$$anonfun$content2TwitterInfo$1$$anonfun$1.class -> lastModified(1504255207000)
+/Users/mikelwyred/tfm/ITA-Services/domain/target/scala-2.11/classes/domain/TweetInfo$$anonfun$content2TwitterInfo$1.class -> lastModified(1504255207000)
+/Users/mikelwyred/tfm/ITA-Services/domain/target/scala-2.11/classes/domain/TweetInfo$.class -> lastModified(1504255207000)
+/Users/mikelwyred/tfm/ITA-Services/domain/target/scala-2.11/classes/domain/TweetInfo.class -> lastModified(1504255207000)
+/Users/mikelwyred/tfm/ITA-Services/domain/target/scala-2.11/classes/domain/classifier/exception/ClassifierException$.class -> lastModified(1504255207000)
+/Users/mikelwyred/tfm/ITA-Services/domain/target/scala-2.11/classes/domain/classifier/exception/ClassifierException.class -> lastModified(1504255207000)
+/Users/mikelwyred/tfm/ITA-Services/domain/target/scala-2.11/classes/domain/exception/ITAException$$anon$1.class -> lastModified(1504255207000)
+/Users/mikelwyred/tfm/ITA-Services/domain/target/scala-2.11/classes/domain/exception/ITAException$.class -> lastModified(1504255207000)
+/Users/mikelwyred/tfm/ITA-Services/domain/target/scala-2.11/classes/domain/exception/ITAException$class.class -> lastModified(1504255207000)
+/Users/mikelwyred/tfm/ITA-Services/domain/target/scala-2.11/classes/domain/exception/ITAException.class -> lastModified(1504255207000)
+/Users/mikelwyred/tfm/ITA-Services/domain/target/scala-2.11/classes/domain/gatherer/Created$.class -> lastModified(1504255207000)
+/Users/mikelwyred/tfm/ITA-Services/domain/target/scala-2.11/classes/domain/gatherer/Created.class -> lastModified(1504255207000)
+/Users/mikelwyred/tfm/ITA-Services/domain/target/scala-2.11/classes/domain/gatherer/Finished$.class -> lastModified(1504255207000)
+/Users/mikelwyred/tfm/ITA-Services/domain/target/scala-2.11/classes/domain/gatherer/Finished.class -> lastModified(1504255207000)
+/Users/mikelwyred/tfm/ITA-Services/domain/target/scala-2.11/classes/domain/gatherer/InProcess$.class -> lastModified(1504255207000)
+/Users/mikelwyred/tfm/ITA-Services/domain/target/scala-2.11/classes/domain/gatherer/InProcess.class -> lastModified(1504255207000)
+/Users/mikelwyred/tfm/ITA-Services/domain/target/scala-2.11/classes/domain/gatherer/Model$$anon$1.class -> lastModified(1504255207000)
+/Users/mikelwyred/tfm/ITA-Services/domain/target/scala-2.11/classes/domain/gatherer/Model$$anonfun$1.class -> lastModified(1504255207000)
+/Users/mikelwyred/tfm/ITA-Services/domain/target/scala-2.11/classes/domain/gatherer/Model$.class -> lastModified(1504255207000)
+/Users/mikelwyred/tfm/ITA-Services/domain/target/scala-2.11/classes/domain/gatherer/Model.class -> lastModified(1504255207000)
+/Users/mikelwyred/tfm/ITA-Services/domain/target/scala-2.11/classes/domain/gatherer/PickUpState.class -> lastModified(1504255207000)
+/Users/mikelwyred/tfm/ITA-Services/domain/target/scala-2.11/classes/domain/gatherer/Ready$.class -> lastModified(1504255207000)
+/Users/mikelwyred/tfm/ITA-Services/domain/target/scala-2.11/classes/domain/gatherer/Ready.class -> lastModified(1504255207000)
+/Users/mikelwyred/tfm/ITA-Services/domain/target/scala-2.11/classes/domain/gatherer/Stopped$.class -> lastModified(1504255207000)
+/Users/mikelwyred/tfm/ITA-Services/domain/target/scala-2.11/classes/domain/gatherer/Stopped.class -> lastModified(1504255207000)
+/Users/mikelwyred/tfm/ITA-Services/domain/target/scala-2.11/classes/domain/gatherer/TweetPickUp$.class -> lastModified(1504255207000)
+/Users/mikelwyred/tfm/ITA-Services/domain/target/scala-2.11/classes/domain/gatherer/TweetPickUp.class -> lastModified(1504255207000)
+/Users/mikelwyred/tfm/ITA-Services/domain/target/scala-2.11/classes/domain/gatherer/exception/GathererException$.class -> lastModified(1504255207000)
+/Users/mikelwyred/tfm/ITA-Services/domain/target/scala-2.11/classes/domain/gatherer/exception/GathererException.class -> lastModified(1504255207000)
+/Users/mikelwyred/tfm/ITA-Services/domain/target/scala-2.11/classes/server/Server$.class -> lastModified(1504255207000)
+/Users/mikelwyred/tfm/ITA-Services/domain/target/scala-2.11/classes/server/Server$delayedInit$body.class -> lastModified(1504255207000)
+/Users/mikelwyred/tfm/ITA-Services/domain/target/scala-2.11/classes/server/Server.class -> lastModified(1504255207000)
+source stamps:
+13 items
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Address.scala -> hash(137ad54eb5179f9b616038f8c40232a5a6acaa1e)
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Business.scala -> hash(c832f337704cb7290ab2565d9ec72bea60126f44)
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Domain.scala -> hash(4536d505a5d00bd24abcd414024e997be8a957a0)
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Employee.scala -> hash(581f1a6a71fc5316056474c2f0e8961344eec44e)
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Id.scala -> hash(9e8c27e46bb1d76ede3c965df72f921d21d7ec1b)
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Model.scala -> hash(df815f4b3bea2b87e76195f32257ecc41e3e374a)
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/TweetInfo.scala -> hash(5f0c07b9aaeb672f73fb3e8cdb7e76f46c2d04fb)
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/classifier/exception/ClassifierException.scala -> hash(d2b346a0cca6f761b00bd123ec4c5d50308bd8d6)
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/exception/ITAException.scala -> hash(77c4ae1a72bea7f718d7d14bfcd1f4c6b64ab9d4)
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/Model.scala -> hash(051171d45a17d9eec83c61801698700867357fb5)
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/PickUpState.scala -> hash(e5bd867d223ce31fd9604beb80c9fae96e2fa5a0)
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/TweetPickup.scala -> hash(34f8d0d4c2d7934870511bf72000571c264c4740)
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/exception/GathererException.scala -> hash(5b62112d5606d0c3a723ab9fda06c06e61f50b92)
+binary stamps:
+8 items
+/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/rt.jar -> lastModified(1481605174000)
+/Users/mikelwyred/.ivy2/cache/com.fasterxml.jackson.core/jackson-annotations/bundles/jackson-annotations-2.3.0.jar -> lastModified(1384405002000)
+/Users/mikelwyred/.ivy2/cache/com.vdurmont/emoji-java/jars/emoji-java-3.2.0.jar -> lastModified(1486947147000)
+/Users/mikelwyred/.ivy2/cache/io.spray/spray-httpx_2.11/bundles/spray-httpx_2.11-1.3.3.jar -> lastModified(1427205102000)
+/Users/mikelwyred/.ivy2/cache/io.spray/spray-json_2.11/bundles/spray-json_2.11-1.3.3.jar -> lastModified(1483006084000)
+/Users/mikelwyred/.ivy2/cache/org.mongodb/mongo-java-driver/jars/mongo-java-driver-3.2.2.jar -> lastModified(1455553232000)
+/Users/mikelwyred/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.7.jar -> lastModified(1435004218000)
+/Users/mikelwyred/.ivy2/cache/org.twitter4j/twitter4j-core/jars/twitter4j-core-3.0.3.jar -> lastModified(1356264771000)
+class names:
+8 items
+/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/rt.jar -> java.lang.Exception
+/Users/mikelwyred/.ivy2/cache/com.fasterxml.jackson.core/jackson-annotations/bundles/jackson-annotations-2.3.0.jar -> com.fasterxml.jackson.annotation.JsonValue
+/Users/mikelwyred/.ivy2/cache/com.vdurmont/emoji-java/jars/emoji-java-3.2.0.jar -> com.vdurmont.emoji.EmojiParser
+/Users/mikelwyred/.ivy2/cache/io.spray/spray-httpx_2.11/bundles/spray-httpx_2.11-1.3.3.jar -> spray.httpx.SprayJsonSupport
+/Users/mikelwyred/.ivy2/cache/io.spray/spray-json_2.11/bundles/spray-json_2.11-1.3.3.jar -> spray.json.RootJsonFormat
+/Users/mikelwyred/.ivy2/cache/org.mongodb/mongo-java-driver/jars/mongo-java-driver-3.2.2.jar -> org.bson.types.ObjectId
+/Users/mikelwyred/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.7.jar -> scala.Serializable
+/Users/mikelwyred/.ivy2/cache/org.twitter4j/twitter4j-core/jars/twitter4j-core-3.0.3.jar -> twitter4j.Status
+internal apis:
+13 items
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Address.scala -> 
+rO0ABXNyABB4c2J0aS5hcGkuU291cmNlFlpwRASfbtoCAAZJAAdhcGlIYXNoWgAIaGFzTWFjcm9MABhfaW50ZXJuYWxPbmx5X25hbWVIYXNoZXN0ACRMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2hlcztMAANhcGl0ABVMeHNidGkvYXBpL1NvdXJjZUFQSTtMAAtjb21waWxhdGlvbnQAF0x4c2J0aS9hcGkvQ29tcGlsYXRpb247WwAEaGFzaHQAAltCeHBxk7ICAHNyACJ4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaGVzVNq+mfrU7EwCAAJbAA9pbXBsaWNpdE1lbWJlcnN0ACNbTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoO1sADnJlZ3VsYXJNZW1iZXJzcQB+AAd4cHVyACNbTHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoO0lagLbdlov0AgAAeHAAAAAAdXEAfgAJAAAAJ3NyACB4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaFsO9SJ2OFfPAgACSQAEaGFzaEwABG5hbWV0ABJMamF2YS9sYW5nL1N0cmluZzt4cK3TRD10AAZub3RpZnlzcQB+AAwH8RBBdAAEbmFtZXNxAH4ADD92iiB0AAR3YWl0c3EAfgAMniQSVHQADmNvcHkkZGVmYXVsdCQyc3EAfgAM30rVG3QADSRhc0luc3RhbmNlT2ZzcQB+AAx9i+vrdAAOY29weSRkZWZhdWx0JDVzcQB+AAwAZLnIdAADemlwc3EAfgAMH3N0FnQADHByb2R1Y3RBcml0eXNxAH4ADLz1gl10AAZlcXVhbHNzcQB+AAxYENQfdAAHQWRkcmVzc3NxAH4ADKiBmqR0AAxhc0luc3RhbmNlT2ZzcQB+AAwXA/eWdAAMc3luY2hyb25pemVkc3EAfgAMyPDPDXQADSRpc0luc3RhbmNlT2ZzcQB+AAz6+JUPdAAIY2FuRXF1YWxzcQB+AAxQAwdHdAAHY291bnRyeXNxAH4ADNbxkQN0AA5jb3B5JGRlZmF1bHQkNHNxAH4ADFjqimt0AA1wcm9kdWN0UHJlZml4c3EAfgAMHFujLnQACW5vdGlmeUFsbHNxAH4ADNmxH0N0AAVsaW5lMXNxAH4ADPQhbad0AAxpc0luc3RhbmNlT2ZzcQB+AAykeQFMdAAGPGluaXQ+c3EAfgAMjSTz4HQAAj09c3EAfgAMZwQTh3QABWNsb25lc3EAfgAM6DxP53QABWxpbmUyc3EAfgAMuLOb1nQADmNvcHkkZGVmYXVsdCQzc3EAfgAMXkkuKHQABGNvcHlzcQB+AAzRJl5YdAAIdG9TdHJpbmdzcQB+AAwsMcgqdAAGc3RyZWV0c3EAfgAMTpX+ZXQAAiE9c3EAfgAMUY/WL3QACGdldENsYXNzc3EAfgAMtYSN43QADmNvcHkkZGVmYXVsdCQxc3EAfgAMFMoDW3QADmNvcHkkZGVmYXVsdCQ2c3EAfgAM2qCVFHQAAm5lc3EAfgAMiadr5HQAAmVxc3EAfgAMIeMWT3QAD3Byb2R1Y3RJdGVyYXRvcnNxAH4ADHA+73x0AAIjI3NxAH4ADFY3TM50AAhmaW5hbGl6ZXNxAH4ADI4rH0h0AA5wcm9kdWN0RWxlbWVudHNxAH4ADDQI82d0AAhoYXNoQ29kZXNyABN4c2J0aS5hcGkuU291cmNlQVBJuV6n+SkjOKQCAAJbAAtkZWZpbml0aW9uc3QAF1tMeHNidGkvYXBpL0RlZmluaXRpb247WwAIcGFja2FnZXN0ABRbTHhzYnRpL2FwaS9QYWNrYWdlO3hwdXIAF1tMeHNidGkuYXBpLkRlZmluaXRpb247iMlc57TjXg4CAAB4cAAAAAFzcgATeHNidGkuYXBpLkNsYXNzTGlrZYM0HKHfsJdsAgAETAAOZGVmaW5pdGlvblR5cGV0ABpMeHNidGkvYXBpL0RlZmluaXRpb25UeXBlO1sAEHNhdmVkQW5ub3RhdGlvbnN0ABNbTGphdmEvbGFuZy9TdHJpbmc7TAAIc2VsZlR5cGV0ABBMeHNidGkvYXBpL0xhenk7TAAJc3RydWN0dXJlcQB+AGV4cgAheHNidGkuYXBpLlBhcmFtZXRlcml6ZWREZWZpbml0aW9u+RFusdVQPOICAAFbAA50eXBlUGFyYW1ldGVyc3QAGltMeHNidGkvYXBpL1R5cGVQYXJhbWV0ZXI7eHIAFHhzYnRpLmFwaS5EZWZpbml0aW9uhyob6HFC40YCAARMAAZhY2Nlc3N0ABJMeHNidGkvYXBpL0FjY2VzcztbAAthbm5vdGF0aW9uc3QAF1tMeHNidGkvYXBpL0Fubm90YXRpb247TAAJbW9kaWZpZXJzdAAVTHhzYnRpL2FwaS9Nb2RpZmllcnM7TAAEbmFtZXEAfgANeHBzcgAQeHNidGkuYXBpLlB1YmxpY7pYPa5sLWBCAgAAeHIAEHhzYnRpLmFwaS5BY2Nlc3PdYpr4HWMxSAIAAHhwdXIAF1tMeHNidGkuYXBpLkFubm90YXRpb24765frGRD2jUgCAAB4cAAAAABzcgATeHNidGkuYXBpLk1vZGlmaWVyc8cREyFpnNwkAgABQgAFZmxhZ3N4cAB0AA5kb21haW4uQWRkcmVzc3VyABpbTHhzYnRpLmFwaS5UeXBlUGFyYW1ldGVyO9ltJg8onfK2AgAAeHAAAAAAfnIAGHhzYnRpLmFwaS5EZWZpbml0aW9uVHlwZQAAAAAAAAAAEgAAeHIADmphdmEubGFuZy5FbnVtAAAAAAAAAAASAAB4cHQACENsYXNzRGVmdXIAE1tMamF2YS5sYW5nLlN0cmluZzut0lbn6R17RwIAAHhwAAAAAHNyABN4c2J0aS5TYWZlTGF6eSRJbXBsUAIuk5eXQD8CAANaAAhiaXRtYXAkMEwAAl90dAASTGphdmEvbGFuZy9PYmplY3Q7TAAEZXZhbHQAEUxzY2FsYS9GdW5jdGlvbjA7eHIAFnhzYnRpLmFwaS5BYnN0cmFjdExhennTd7UBX7vnoAIAAHhwAHBzcgAgeHNidGkuU2FmZUxhenkkJGFub25mdW4kc3RyaWN0JDEAAAAAAAAAAAIAAUwAB3ZhbHVlJDFxAH4Afnhwc3IAE3hzYnRpLmFwaS5FbXB0eVR5cGW8/Z5GSTuJJAIAAHhyABR4c2J0aS5hcGkuU2ltcGxlVHlwZXJ4YoghI79AAgAAeHIADnhzYnRpLmFwaS5UeXBlP2rZIRZJqsoCAAB4cHNxAH4AfQBwc3EAfgCCc3IAE3hzYnRpLmFwaS5TdHJ1Y3R1cmWpqvmAk2/YAAIAA0wACGRlY2xhcmVkcQB+AGVMAAlpbmhlcml0ZWRxAH4AZUwAB3BhcmVudHNxAH4AZXhxAH4AhnNxAH4AfQBwc3EAfgCCdXEAfgBgAAAAAHNxAH4AfQBwc3EAfgCCdXEAfgBgAAAAAHNxAH4AfQBwc3EAfgCCdXIAEVtMeHNidGkuYXBpLlR5cGU7dP+lWnv56UECAAB4cAAAAAZzcgAUeHNidGkuYXBpLlByb2plY3Rpb27z0o1U6UWkLQIAAkwAAmlkcQB+AA1MAAZwcmVmaXh0ABZMeHNidGkvYXBpL1NpbXBsZVR5cGU7eHEAfgCFdAAMU2VyaWFsaXphYmxlc3IAE3hzYnRpLmFwaS5TaW5nbGV0b278p1/4z1bkRgIAAUwABHBhdGh0ABBMeHNidGkvYXBpL1BhdGg7eHEAfgCFc3IADnhzYnRpLmFwaS5QYXRomz1cCM6lJ4QCAAFbAApjb21wb25lbnRzdAAaW0x4c2J0aS9hcGkvUGF0aENvbXBvbmVudDt4cHVyABpbTHhzYnRpLmFwaS5QYXRoQ29tcG9uZW50O0PaCXQtZxZ0AgAAeHAAAAACc3IADHhzYnRpLmFwaS5JZJgybIs3U8RAAgABTAACaWRxAH4ADXhyABd4c2J0aS5hcGkuUGF0aENvbXBvbmVudF+aIlsuhp+8AgAAeHB0AAVzY2FsYXNyAA54c2J0aS5hcGkuVGhpc9sJ7abMWkBcAgAAeHEAfgCjc3EAfgCWcQB+AJlzcQB+AJpzcQB+AJ11cQB+AKAAAAADc3EAfgCidAAEamF2YXNxAH4AonQAAmlvcQB+AKdzcQB+AJZ0AAdQcm9kdWN0cQB+AJxzcQB+AJZ0AAZFcXVhbHNxAH4AnHNxAH4AlnQABk9iamVjdHNxAH4AmnNxAH4AnXVxAH4AoAAAAANzcQB+AKJxAH4ArXNxAH4AonQABGxhbmdxAH4Ap3NxAH4AlnQAA0FueXEAfgCcdXIAFFtMeHNidGkuYXBpLlBhY2thZ2U7WxMZN3CnJ6ECAAB4cAAAAAFzcgAReHNidGkuYXBpLlBhY2thZ2V+WY/2rs45WAIAAUwABG5hbWVxAH4ADXhwdAAGZG9tYWluc3IAFXhzYnRpLmFwaS5Db21waWxhdGlvbu364MNq6KBCAgACSgAJc3RhcnRUaW1lWwAHb3V0cHV0c3QAGltMeHNidGkvYXBpL091dHB1dFNldHRpbmc7eHAAAAFePJjIwXVyABpbTHhzYnRpLmFwaS5PdXRwdXRTZXR0aW5nO39qwvOnh6VCAgAAeHAAAAABc3IAF3hzYnRpLmFwaS5PdXRwdXRTZXR0aW5netmaR3T7HXsCAAJMAA9vdXRwdXREaXJlY3RvcnlxAH4ADUwAD3NvdXJjZURpcmVjdG9yeXEAfgANeHB0AEMvVXNlcnMvbWlrZWx3eXJlZC90Zm0vSVRBLVNlcnZpY2VzL2RvbWFpbi90YXJnZXQvc2NhbGEtMi4xMS9jbGFzc2VzdAABL3VyAAJbQqzzF/gGCFTgAgAAeHAAAAAUE3rVTrUXn5thYDj4xAIypaasqh4=
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Business.scala -> 
+rO0ABXNyABB4c2J0aS5hcGkuU291cmNlFlpwRASfbtoCAAZJAAdhcGlIYXNoWgAIaGFzTWFjcm9MABhfaW50ZXJuYWxPbmx5X25hbWVIYXNoZXN0ACRMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2hlcztMAANhcGl0ABVMeHNidGkvYXBpL1NvdXJjZUFQSTtMAAtjb21waWxhdGlvbnQAF0x4c2J0aS9hcGkvQ29tcGlsYXRpb247WwAEaGFzaHQAAltCeHCazdABAHNyACJ4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaGVzVNq+mfrU7EwCAAJbAA9pbXBsaWNpdE1lbWJlcnN0ACNbTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoO1sADnJlZ3VsYXJNZW1iZXJzcQB+AAd4cHVyACNbTHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoO0lagLbdlov0AgAAeHAAAAAAdXEAfgAJAAAAI3NyACB4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaFsO9SJ2OFfPAgACSQAEaGFzaEwABG5hbWV0ABJMamF2YS9sYW5nL1N0cmluZzt4cCWNg/d0AAZub3RpZnlzcQB+AAzwb9egdAAEbmFtZXNxAH4ADP0IinB0AAR3YWl0c3EAfgAMY/qnrXQADmNvcHkkZGVmYXVsdCQyc3EAfgAMm/KZpHQADSRhc0luc3RhbmNlT2ZzcQB+AAwEDwh5dAAMcHJvZHVjdEFyaXR5c3EAfgAM7Cd/sHQABmVxdWFsc3NxAH4ADLPqUBJ0AAxhc0luc3RhbmNlT2ZzcQB+AAy/msp7dAAMc3luY2hyb25pemVkc3EAfgAMSdamBHQADSRpc0luc3RhbmNlT2ZzcQB+AAxOisCEdAAJZW1wbG95ZWVzc3EAfgAM/en2tHQACGNhbkVxdWFsc3EAfgAMfO2Kh3QADmNvcHkkZGVmYXVsdCQ0c3EAfgAM+pwtqnQADXByb2R1Y3RQcmVmaXhzcQB+AAwJM3RodAAJbm90aWZ5QWxsc3EAfgAM/kUkB3QADGlzSW5zdGFuY2VPZnNxAH4ADPUJ5zx0AAY8aW5pdD5zcQB+AAzx9R+PdAACaWRzcQB+AAy3h3vMdAACPT1zcQB+AAzzhmFOdAAFY2xvbmVzcQB+AAwEiPkMdAAIQnVzaW5lc3NzcQB+AAwe3X+wdAAOY29weSRkZWZhdWx0JDNzcQB+AAzPgLugdAAHYWRkcmVzc3NxAH4ADOlbnoB0AARjb3B5c3EAfgAM/kytJ3QACHRvU3RyaW5nc3EAfgAMdtXJ7HQAAiE9c3EAfgAMqs2WgXQACGdldENsYXNzc3EAfgAMpYdZP3QADmNvcHkkZGVmYXVsdCQxc3EAfgAMa9k9/nQAAm5lc3EAfgAMeRcUg3QAAmVxc3EAfgAMaNzlP3QAD3Byb2R1Y3RJdGVyYXRvcnNxAH4ADOEU4AJ0AAIjI3NxAH4ADLdGizJ0AAhmaW5hbGl6ZXNxAH4ADBxzRMx0AA5wcm9kdWN0RWxlbWVudHNxAH4ADOMPLK10AAhoYXNoQ29kZXNyABN4c2J0aS5hcGkuU291cmNlQVBJuV6n+SkjOKQCAAJbAAtkZWZpbml0aW9uc3QAF1tMeHNidGkvYXBpL0RlZmluaXRpb247WwAIcGFja2FnZXN0ABRbTHhzYnRpL2FwaS9QYWNrYWdlO3hwdXIAF1tMeHNidGkuYXBpLkRlZmluaXRpb247iMlc57TjXg4CAAB4cAAAAAFzcgATeHNidGkuYXBpLkNsYXNzTGlrZYM0HKHfsJdsAgAETAAOZGVmaW5pdGlvblR5cGV0ABpMeHNidGkvYXBpL0RlZmluaXRpb25UeXBlO1sAEHNhdmVkQW5ub3RhdGlvbnN0ABNbTGphdmEvbGFuZy9TdHJpbmc7TAAIc2VsZlR5cGV0ABBMeHNidGkvYXBpL0xhenk7TAAJc3RydWN0dXJlcQB+AF14cgAheHNidGkuYXBpLlBhcmFtZXRlcml6ZWREZWZpbml0aW9u+RFusdVQPOICAAFbAA50eXBlUGFyYW1ldGVyc3QAGltMeHNidGkvYXBpL1R5cGVQYXJhbWV0ZXI7eHIAFHhzYnRpLmFwaS5EZWZpbml0aW9uhyob6HFC40YCAARMAAZhY2Nlc3N0ABJMeHNidGkvYXBpL0FjY2VzcztbAAthbm5vdGF0aW9uc3QAF1tMeHNidGkvYXBpL0Fubm90YXRpb247TAAJbW9kaWZpZXJzdAAVTHhzYnRpL2FwaS9Nb2RpZmllcnM7TAAEbmFtZXEAfgANeHBzcgAQeHNidGkuYXBpLlB1YmxpY7pYPa5sLWBCAgAAeHIAEHhzYnRpLmFwaS5BY2Nlc3PdYpr4HWMxSAIAAHhwdXIAF1tMeHNidGkuYXBpLkFubm90YXRpb24765frGRD2jUgCAAB4cAAAAABzcgATeHNidGkuYXBpLk1vZGlmaWVyc8cREyFpnNwkAgABQgAFZmxhZ3N4cAB0AA9kb21haW4uQnVzaW5lc3N1cgAaW0x4c2J0aS5hcGkuVHlwZVBhcmFtZXRlcjvZbSYPKJ3ytgIAAHhwAAAAAH5yABh4c2J0aS5hcGkuRGVmaW5pdGlvblR5cGUAAAAAAAAAABIAAHhyAA5qYXZhLmxhbmcuRW51bQAAAAAAAAAAEgAAeHB0AAhDbGFzc0RlZnVyABNbTGphdmEubGFuZy5TdHJpbmc7rdJW5+kde0cCAAB4cAAAAABzcgATeHNidGkuU2FmZUxhenkkSW1wbFACLpOXl0A/AgADWgAIYml0bWFwJDBMAAJfdHQAEkxqYXZhL2xhbmcvT2JqZWN0O0wABGV2YWx0ABFMc2NhbGEvRnVuY3Rpb24wO3hyABZ4c2J0aS5hcGkuQWJzdHJhY3RMYXp503e1AV+756ACAAB4cABwc3IAIHhzYnRpLlNhZmVMYXp5JCRhbm9uZnVuJHN0cmljdCQxAAAAAAAAAAACAAFMAAd2YWx1ZSQxcQB+AHZ4cHNyABN4c2J0aS5hcGkuRW1wdHlUeXBlvP2eRkk7iSQCAAB4cgAUeHNidGkuYXBpLlNpbXBsZVR5cGVyeGKIISO/QAIAAHhyAA54c2J0aS5hcGkuVHlwZT9q2SEWSarKAgAAeHBzcQB+AHUAcHNxAH4AenNyABN4c2J0aS5hcGkuU3RydWN0dXJlqar5gJNv2AACAANMAAhkZWNsYXJlZHEAfgBdTAAJaW5oZXJpdGVkcQB+AF1MAAdwYXJlbnRzcQB+AF14cQB+AH5zcQB+AHUAcHNxAH4AenVxAH4AWAAAAABzcQB+AHUAcHNxAH4AenVxAH4AWAAAAABzcQB+AHUAcHNxAH4AenVyABFbTHhzYnRpLmFwaS5UeXBlO3T/pVp7+elBAgAAeHAAAAAGc3IAFHhzYnRpLmFwaS5Qcm9qZWN0aW9u89KNVOlFpC0CAAJMAAJpZHEAfgANTAAGcHJlZml4dAAWTHhzYnRpL2FwaS9TaW1wbGVUeXBlO3hxAH4AfXQADFNlcmlhbGl6YWJsZXNyABN4c2J0aS5hcGkuU2luZ2xldG9u/Kdf+M9W5EYCAAFMAARwYXRodAAQTHhzYnRpL2FwaS9QYXRoO3hxAH4AfXNyAA54c2J0aS5hcGkuUGF0aJs9XAjOpSeEAgABWwAKY29tcG9uZW50c3QAGltMeHNidGkvYXBpL1BhdGhDb21wb25lbnQ7eHB1cgAaW0x4c2J0aS5hcGkuUGF0aENvbXBvbmVudDtD2gl0LWcWdAIAAHhwAAAAAnNyAAx4c2J0aS5hcGkuSWSYMmyLN1PEQAIAAUwAAmlkcQB+AA14cgAXeHNidGkuYXBpLlBhdGhDb21wb25lbnRfmiJbLoafvAIAAHhwdAAFc2NhbGFzcgAOeHNidGkuYXBpLlRoaXPbCe2mzFpAXAIAAHhxAH4Am3NxAH4AjnEAfgCRc3EAfgCSc3EAfgCVdXEAfgCYAAAAA3NxAH4AmnQABGphdmFzcQB+AJp0AAJpb3EAfgCfc3EAfgCOdAAHUHJvZHVjdHEAfgCUc3EAfgCOdAAGRXF1YWxzcQB+AJRzcQB+AI50AAZPYmplY3RzcQB+AJJzcQB+AJV1cQB+AJgAAAADc3EAfgCacQB+AKVzcQB+AJp0AARsYW5ncQB+AJ9zcQB+AI50AANBbnlxAH4AlHVyABRbTHhzYnRpLmFwaS5QYWNrYWdlO1sTGTdwpyehAgAAeHAAAAABc3IAEXhzYnRpLmFwaS5QYWNrYWdlflmP9q7OOVgCAAFMAARuYW1lcQB+AA14cHQABmRvbWFpbnNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABXjyYyMF1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5cQB+AA1MAA9zb3VyY2VEaXJlY3RvcnlxAH4ADXhwdABDL1VzZXJzL21pa2Vsd3lyZWQvdGZtL0lUQS1TZXJ2aWNlcy9kb21haW4vdGFyZ2V0L3NjYWxhLTIuMTEvY2xhc3Nlc3QAAS91cgACW0Ks8xf4BghU4AIAAHhwAAAAFMgy8zdwTLcpCrJWXZ7HK+pgEm9E
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Domain.scala -> 
+rO0ABXNyABB4c2J0aS5hcGkuU291cmNlFlpwRASfbtoCAAZJAAdhcGlIYXNoWgAIaGFzTWFjcm9MABhfaW50ZXJuYWxPbmx5X25hbWVIYXNoZXN0ACRMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2hlcztMAANhcGl0ABVMeHNidGkvYXBpL1NvdXJjZUFQSTtMAAtjb21waWxhdGlvbnQAF0x4c2J0aS9hcGkvQ29tcGlsYXRpb247WwAEaGFzaHQAAltCeHAIf6t4AHNyACJ4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaGVzVNq+mfrU7EwCAAJbAA9pbXBsaWNpdE1lbWJlcnN0ACNbTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoO1sADnJlZ3VsYXJNZW1iZXJzcQB+AAd4cHVyACNbTHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoO0lagLbdlov0AgAAeHAAAAAAdXEAfgAJAAAAGHNyACB4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaFsO9SJ2OFfPAgACSQAEaGFzaEwABG5hbWV0ABJMamF2YS9sYW5nL1N0cmluZzt4cPErutN0AAZub3RpZnlzcQB+AAz5kMAMdAAEd2FpdHNxAH4ADC6d7rV0AA0kYXNJbnN0YW5jZU9mc3EAfgAMdawECXQABlNlcnZlcnNxAH4ADPEQpzd0AAZlcXVhbHNzcQB+AAyH1h4PdAAMYXNJbnN0YW5jZU9mc3EAfgAM8/+0I3QADmV4ZWN1dGlvblN0YXJ0c3EAfgAMW5MrCXQADHN5bmNocm9uaXplZHNxAH4ADJsnj7h0AA0kaXNJbnN0YW5jZU9mc3EAfgAMEcZiKXQABG1haW5zcQB+AAwrqJcydAAJbm90aWZ5QWxsc3EAfgAM8S08TnQADGlzSW5zdGFuY2VPZnNxAH4ADM1LhVd0AAI9PXNxAH4ADLAJ5nx0AAVjbG9uZXNxAH4ADIbOJTF0AAh0b1N0cmluZ3NxAH4ADI9YKbF0AARhcmdzc3EAfgAMnzqQRHQAAiE9c3EAfgAM5gSpbXQACGdldENsYXNzc3EAfgAMnZcYQXQAAm5lc3EAfgAMKj8myXQAAmVxc3EAfgAM0TN3TnQAC2RlbGF5ZWRJbml0c3EAfgAMFgPhJXQAAiMjc3EAfgAMH0MJVHQACGZpbmFsaXplc3EAfgAMAbcsYnQACGhhc2hDb2Rlc3IAE3hzYnRpLmFwaS5Tb3VyY2VBUEm5Xqf5KSM4pAIAAlsAC2RlZmluaXRpb25zdAAXW0x4c2J0aS9hcGkvRGVmaW5pdGlvbjtbAAhwYWNrYWdlc3QAFFtMeHNidGkvYXBpL1BhY2thZ2U7eHB1cgAXW0x4c2J0aS5hcGkuRGVmaW5pdGlvbjuIyVzntONeDgIAAHhwAAAAAXNyABN4c2J0aS5hcGkuQ2xhc3NMaWtlgzQcod+wl2wCAARMAA5kZWZpbml0aW9uVHlwZXQAGkx4c2J0aS9hcGkvRGVmaW5pdGlvblR5cGU7WwAQc2F2ZWRBbm5vdGF0aW9uc3QAE1tMamF2YS9sYW5nL1N0cmluZztMAAhzZWxmVHlwZXQAEEx4c2J0aS9hcGkvTGF6eTtMAAlzdHJ1Y3R1cmVxAH4AR3hyACF4c2J0aS5hcGkuUGFyYW1ldGVyaXplZERlZmluaXRpb275EW6x1VA84gIAAVsADnR5cGVQYXJhbWV0ZXJzdAAaW0x4c2J0aS9hcGkvVHlwZVBhcmFtZXRlcjt4cgAUeHNidGkuYXBpLkRlZmluaXRpb26HKhvocULjRgIABEwABmFjY2Vzc3QAEkx4c2J0aS9hcGkvQWNjZXNzO1sAC2Fubm90YXRpb25zdAAXW0x4c2J0aS9hcGkvQW5ub3RhdGlvbjtMAAltb2RpZmllcnN0ABVMeHNidGkvYXBpL01vZGlmaWVycztMAARuYW1lcQB+AA14cHNyABB4c2J0aS5hcGkuUHVibGljulg9rmwtYEICAAB4cgAQeHNidGkuYXBpLkFjY2Vzc91imvgdYzFIAgAAeHB1cgAXW0x4c2J0aS5hcGkuQW5ub3RhdGlvbjvrl+sZEPaNSAIAAHhwAAAAAHNyABN4c2J0aS5hcGkuTW9kaWZpZXJzxxETIWmc3CQCAAFCAAVmbGFnc3hwAHQADXNlcnZlci5TZXJ2ZXJ1cgAaW0x4c2J0aS5hcGkuVHlwZVBhcmFtZXRlcjvZbSYPKJ3ytgIAAHhwAAAAAH5yABh4c2J0aS5hcGkuRGVmaW5pdGlvblR5cGUAAAAAAAAAABIAAHhyAA5qYXZhLmxhbmcuRW51bQAAAAAAAAAAEgAAeHB0AAZNb2R1bGV1cgATW0xqYXZhLmxhbmcuU3RyaW5nO63SVufpHXtHAgAAeHAAAAACdAAQc2NhbGEuZGVwcmVjYXRlZHQAGnNjYWxhLmRlcHJlY2F0ZWRPdmVycmlkaW5nc3IAE3hzYnRpLlNhZmVMYXp5JEltcGxQAi6Tl5dAPwIAA1oACGJpdG1hcCQwTAACX3R0ABJMamF2YS9sYW5nL09iamVjdDtMAARldmFsdAARTHNjYWxhL0Z1bmN0aW9uMDt4cgAWeHNidGkuYXBpLkFic3RyYWN0TGF6edN3tQFfu+egAgAAeHAAcHNyACB4c2J0aS5TYWZlTGF6eSQkYW5vbmZ1biRzdHJpY3QkMQAAAAAAAAAAAgABTAAHdmFsdWUkMXEAfgBieHBzcgATeHNidGkuYXBpLkVtcHR5VHlwZbz9nkZJO4kkAgAAeHIAFHhzYnRpLmFwaS5TaW1wbGVUeXBlcnhiiCEjv0ACAAB4cgAOeHNidGkuYXBpLlR5cGU/atkhFkmqygIAAHhwc3EAfgBhAHBzcQB+AGZzcgATeHNidGkuYXBpLlN0cnVjdHVyZamq+YCTb9gAAgADTAAIZGVjbGFyZWRxAH4AR0wACWluaGVyaXRlZHEAfgBHTAAHcGFyZW50c3EAfgBHeHEAfgBqc3EAfgBhAHBzcQB+AGZ1cQB+AEIAAAAAc3EAfgBhAHBzcQB+AGZ1cQB+AEIAAAABc3IADXhzYnRpLmFwaS5EZWZSvp/ifLQ2aQIAAkwACnJldHVyblR5cGV0ABBMeHNidGkvYXBpL1R5cGU7WwAPdmFsdWVQYXJhbWV0ZXJzdAAaW0x4c2J0aS9hcGkvUGFyYW1ldGVyTGlzdDt4cQB+AEhxAH4AUXVxAH4AUgAAAAFzcgAUeHNidGkuYXBpLkFubm90YXRpb27eDoGi9lwKsgIAAlsACWFyZ3VtZW50c3QAH1tMeHNidGkvYXBpL0Fubm90YXRpb25Bcmd1bWVudDtMAARiYXNlcQB+AHd4cHVyAB9bTHhzYnRpLmFwaS5Bbm5vdGF0aW9uQXJndW1lbnQ7UZ2mjzglD3gCAAB4cAAAAAFzcgAceHNidGkuYXBpLkFubm90YXRpb25Bcmd1bWVudNZFsdgDGxd8AgACTAAEbmFtZXEAfgANTAAFdmFsdWVxAH4ADXhwdAAAdAAqKCJtYWluIHNob3VsZCBub3QgYmUgb3ZlcnJpZGRlbiIsIjIuMTEuMCIpc3IAFHhzYnRpLmFwaS5Qcm9qZWN0aW9u89KNVOlFpC0CAAJMAAJpZHEAfgANTAAGcHJlZml4dAAWTHhzYnRpL2FwaS9TaW1wbGVUeXBlO3hxAH4AaXQAFGRlcHJlY2F0ZWRPdmVycmlkaW5nc3IAE3hzYnRpLmFwaS5TaW5nbGV0b278p1/4z1bkRgIAAUwABHBhdGh0ABBMeHNidGkvYXBpL1BhdGg7eHEAfgBpc3IADnhzYnRpLmFwaS5QYXRomz1cCM6lJ4QCAAFbAApjb21wb25lbnRzdAAaW0x4c2J0aS9hcGkvUGF0aENvbXBvbmVudDt4cHVyABpbTHhzYnRpLmFwaS5QYXRoQ29tcG9uZW50O0PaCXQtZxZ0AgAAeHAAAAACc3IADHhzYnRpLmFwaS5JZJgybIs3U8RAAgABTAACaWRxAH4ADXhyABd4c2J0aS5hcGkuUGF0aENvbXBvbmVudF+aIlsuhp+8AgAAeHB0AAVzY2FsYXNyAA54c2J0aS5hcGkuVGhpc9sJ7abMWkBcAgAAeHEAfgCRc3EAfgBUAHEAfgAhdXEAfgBXAAAAAHNxAH4AhHQABFVuaXRxAH4AinVyABpbTHhzYnRpLmFwaS5QYXJhbWV0ZXJMaXN0O/XTOh3ys3DuAgAAeHAAAAABc3IAF3hzYnRpLmFwaS5QYXJhbWV0ZXJMaXN01sW8HGRJdOMCAAJaAAppc0ltcGxpY2l0WwAKcGFyYW1ldGVyc3QAHFtMeHNidGkvYXBpL01ldGhvZFBhcmFtZXRlcjt4cAB1cgAcW0x4c2J0aS5hcGkuTWV0aG9kUGFyYW1ldGVyO8+4xV2l3bVtAgAAeHAAAAABc3IAGXhzYnRpLmFwaS5NZXRob2RQYXJhbWV0ZXIfRa4X00mw6gIABFoACmhhc0RlZmF1bHRMAAhtb2RpZmllcnQAHUx4c2J0aS9hcGkvUGFyYW1ldGVyTW9kaWZpZXI7TAAEbmFtZXEAfgANTAADdHBlcQB+AHd4cAB+cgAbeHNidGkuYXBpLlBhcmFtZXRlck1vZGlmaWVyAAAAAAAAAAASAAB4cQB+AFp0AAVQbGFpbnEAfgAtc3IAF3hzYnRpLmFwaS5QYXJhbWV0ZXJpemVkFmzuaQPJu38CAAJMAAhiYXNlVHlwZXEAfgCFWwANdHlwZUFyZ3VtZW50c3QAEVtMeHNidGkvYXBpL1R5cGU7eHEAfgBpc3EAfgCEdAAFQXJyYXlxAH4AinVyABFbTHhzYnRpLmFwaS5UeXBlO3T/pVp7+elBAgAAeHAAAAABc3EAfgCEdAAGU3RyaW5nc3EAfgCIc3EAfgCLdXEAfgCOAAAAA3NxAH4AkHQABGphdmFzcQB+AJB0AARsYW5ncQB+AJVzcQB+AGEAcHNxAH4AZnVxAH4ArAAAAARzcQB+AIR0AANBcHBxAH4AinNxAH4AhHQAC0RlbGF5ZWRJbml0cQB+AIpzcQB+AIR0AAZPYmplY3RxAH4AsHNxAH4AhHQAA0FueXEAfgCKdXIAFFtMeHNidGkuYXBpLlBhY2thZ2U7WxMZN3CnJ6ECAAB4cAAAAAFzcgAReHNidGkuYXBpLlBhY2thZ2V+WY/2rs45WAIAAUwABG5hbWVxAH4ADXhwdAAGc2VydmVyc3IAFXhzYnRpLmFwaS5Db21waWxhdGlvbu364MNq6KBCAgACSgAJc3RhcnRUaW1lWwAHb3V0cHV0c3QAGltMeHNidGkvYXBpL091dHB1dFNldHRpbmc7eHAAAAFePJjIwXVyABpbTHhzYnRpLmFwaS5PdXRwdXRTZXR0aW5nO39qwvOnh6VCAgAAeHAAAAABc3IAF3hzYnRpLmFwaS5PdXRwdXRTZXR0aW5netmaR3T7HXsCAAJMAA9vdXRwdXREaXJlY3RvcnlxAH4ADUwAD3NvdXJjZURpcmVjdG9yeXEAfgANeHB0AEMvVXNlcnMvbWlrZWx3eXJlZC90Zm0vSVRBLVNlcnZpY2VzL2RvbWFpbi90YXJnZXQvc2NhbGEtMi4xMS9jbGFzc2VzdAABL3VyAAJbQqzzF/gGCFTgAgAAeHAAAAAURTbVBaXQC9JKvNQUAk6Ze+ipV6A=
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Employee.scala -> 
+rO0ABXNyABB4c2J0aS5hcGkuU291cmNlFlpwRASfbtoCAAZJAAdhcGlIYXNoWgAIaGFzTWFjcm9MABhfaW50ZXJuYWxPbmx5X25hbWVIYXNoZXN0ACRMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2hlcztMAANhcGl0ABVMeHNidGkvYXBpL1NvdXJjZUFQSTtMAAtjb21waWxhdGlvbnQAF0x4c2J0aS9hcGkvQ29tcGlsYXRpb247WwAEaGFzaHQAAltCeHAhilP1AHNyACJ4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaGVzVNq+mfrU7EwCAAJbAA9pbXBsaWNpdE1lbWJlcnN0ACNbTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoO1sADnJlZ3VsYXJNZW1iZXJzcQB+AAd4cHVyACNbTHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoO0lagLbdlov0AgAAeHAAAAAAdXEAfgAJAAAAIXNyACB4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaFsO9SJ2OFfPAgACSQAEaGFzaEwABG5hbWV0ABJMamF2YS9sYW5nL1N0cmluZzt4cOjNHwV0AAZub3RpZnlzcQB+AAyr7I3bdAAEbmFtZXNxAH4ADI2oj7J0AAR3YWl0c3EAfgAMC3GGhnQADmNvcHkkZGVmYXVsdCQyc3EAfgAMc+2GwXQADSRhc0luc3RhbmNlT2ZzcQB+AAwUgJDAdAAMcHJvZHVjdEFyaXR5c3EAfgAMNH8EFXQABmVxdWFsc3NxAH4ADOhqxf10AAxhc0luc3RhbmNlT2ZzcQB+AAzrFXu5dAAMc3luY2hyb25pemVkc3EAfgAM+VF9IHQADSRpc0luc3RhbmNlT2ZzcQB+AAyN6ecVdAAIY2FuRXF1YWxzcQB+AAzAGHfFdAANcHJvZHVjdFByZWZpeHNxAH4ADG3BWZB0AAlub3RpZnlBbGxzcQB+AAxDdoctdAAMaXNJbnN0YW5jZU9mc3EAfgAMtw8aoHQABjxpbml0PnNxAH4ADHD5TEJ0AAJpZHNxAH4ADLXdiw10AAI9PXNxAH4ADEspZOl0AAVjbG9uZXNxAH4ADANQOxN0AA5jb3B5JGRlZmF1bHQkM3NxAH4ADL0PPvF0AAdhZGRyZXNzc3EAfgAMesIe1XQABGNvcHlzcQB+AAwezTu9dAAIdG9TdHJpbmdzcQB+AAy7dxMUdAACIT1zcQB+AAyK79a0dAAIZ2V0Q2xhc3NzcQB+AAx+P/hcdAAOY29weSRkZWZhdWx0JDFzcQB+AAykjbYidAAIRW1wbG95ZWVzcQB+AAy8qyM9dAACbmVzcQB+AAycGGMSdAACZXFzcQB+AAzvWBbgdAAPcHJvZHVjdEl0ZXJhdG9yc3EAfgAMyqf0KnQAAiMjc3EAfgAMCBSodnQACGZpbmFsaXplc3EAfgAMDgHS+3QADnByb2R1Y3RFbGVtZW50c3EAfgAMenV1M3QACGhhc2hDb2Rlc3IAE3hzYnRpLmFwaS5Tb3VyY2VBUEm5Xqf5KSM4pAIAAlsAC2RlZmluaXRpb25zdAAXW0x4c2J0aS9hcGkvRGVmaW5pdGlvbjtbAAhwYWNrYWdlc3QAFFtMeHNidGkvYXBpL1BhY2thZ2U7eHB1cgAXW0x4c2J0aS5hcGkuRGVmaW5pdGlvbjuIyVzntONeDgIAAHhwAAAAAXNyABN4c2J0aS5hcGkuQ2xhc3NMaWtlgzQcod+wl2wCAARMAA5kZWZpbml0aW9uVHlwZXQAGkx4c2J0aS9hcGkvRGVmaW5pdGlvblR5cGU7WwAQc2F2ZWRBbm5vdGF0aW9uc3QAE1tMamF2YS9sYW5nL1N0cmluZztMAAhzZWxmVHlwZXQAEEx4c2J0aS9hcGkvTGF6eTtMAAlzdHJ1Y3R1cmVxAH4AWXhyACF4c2J0aS5hcGkuUGFyYW1ldGVyaXplZERlZmluaXRpb275EW6x1VA84gIAAVsADnR5cGVQYXJhbWV0ZXJzdAAaW0x4c2J0aS9hcGkvVHlwZVBhcmFtZXRlcjt4cgAUeHNidGkuYXBpLkRlZmluaXRpb26HKhvocULjRgIABEwABmFjY2Vzc3QAEkx4c2J0aS9hcGkvQWNjZXNzO1sAC2Fubm90YXRpb25zdAAXW0x4c2J0aS9hcGkvQW5ub3RhdGlvbjtMAAltb2RpZmllcnN0ABVMeHNidGkvYXBpL01vZGlmaWVycztMAARuYW1lcQB+AA14cHNyABB4c2J0aS5hcGkuUHVibGljulg9rmwtYEICAAB4cgAQeHNidGkuYXBpLkFjY2Vzc91imvgdYzFIAgAAeHB1cgAXW0x4c2J0aS5hcGkuQW5ub3RhdGlvbjvrl+sZEPaNSAIAAHhwAAAAAHNyABN4c2J0aS5hcGkuTW9kaWZpZXJzxxETIWmc3CQCAAFCAAVmbGFnc3hwAHQAD2RvbWFpbi5FbXBsb3llZXVyABpbTHhzYnRpLmFwaS5UeXBlUGFyYW1ldGVyO9ltJg8onfK2AgAAeHAAAAAAfnIAGHhzYnRpLmFwaS5EZWZpbml0aW9uVHlwZQAAAAAAAAAAEgAAeHIADmphdmEubGFuZy5FbnVtAAAAAAAAAAASAAB4cHQACENsYXNzRGVmdXIAE1tMamF2YS5sYW5nLlN0cmluZzut0lbn6R17RwIAAHhwAAAAAHNyABN4c2J0aS5TYWZlTGF6eSRJbXBsUAIuk5eXQD8CAANaAAhiaXRtYXAkMEwAAl90dAASTGphdmEvbGFuZy9PYmplY3Q7TAAEZXZhbHQAEUxzY2FsYS9GdW5jdGlvbjA7eHIAFnhzYnRpLmFwaS5BYnN0cmFjdExhennTd7UBX7vnoAIAAHhwAHBzcgAgeHNidGkuU2FmZUxhenkkJGFub25mdW4kc3RyaWN0JDEAAAAAAAAAAAIAAUwAB3ZhbHVlJDFxAH4Acnhwc3IAE3hzYnRpLmFwaS5FbXB0eVR5cGW8/Z5GSTuJJAIAAHhyABR4c2J0aS5hcGkuU2ltcGxlVHlwZXJ4YoghI79AAgAAeHIADnhzYnRpLmFwaS5UeXBlP2rZIRZJqsoCAAB4cHNxAH4AcQBwc3EAfgB2c3IAE3hzYnRpLmFwaS5TdHJ1Y3R1cmWpqvmAk2/YAAIAA0wACGRlY2xhcmVkcQB+AFlMAAlpbmhlcml0ZWRxAH4AWUwAB3BhcmVudHNxAH4AWXhxAH4AenNxAH4AcQBwc3EAfgB2dXEAfgBUAAAAAHNxAH4AcQBwc3EAfgB2dXEAfgBUAAAAAHNxAH4AcQBwc3EAfgB2dXIAEVtMeHNidGkuYXBpLlR5cGU7dP+lWnv56UECAAB4cAAAAAZzcgAUeHNidGkuYXBpLlByb2plY3Rpb27z0o1U6UWkLQIAAkwAAmlkcQB+AA1MAAZwcmVmaXh0ABZMeHNidGkvYXBpL1NpbXBsZVR5cGU7eHEAfgB5dAAMU2VyaWFsaXphYmxlc3IAE3hzYnRpLmFwaS5TaW5nbGV0b278p1/4z1bkRgIAAUwABHBhdGh0ABBMeHNidGkvYXBpL1BhdGg7eHEAfgB5c3IADnhzYnRpLmFwaS5QYXRomz1cCM6lJ4QCAAFbAApjb21wb25lbnRzdAAaW0x4c2J0aS9hcGkvUGF0aENvbXBvbmVudDt4cHVyABpbTHhzYnRpLmFwaS5QYXRoQ29tcG9uZW50O0PaCXQtZxZ0AgAAeHAAAAACc3IADHhzYnRpLmFwaS5JZJgybIs3U8RAAgABTAACaWRxAH4ADXhyABd4c2J0aS5hcGkuUGF0aENvbXBvbmVudF+aIlsuhp+8AgAAeHB0AAVzY2FsYXNyAA54c2J0aS5hcGkuVGhpc9sJ7abMWkBcAgAAeHEAfgCXc3EAfgCKcQB+AI1zcQB+AI5zcQB+AJF1cQB+AJQAAAADc3EAfgCWdAAEamF2YXNxAH4AlnQAAmlvcQB+AJtzcQB+AIp0AAdQcm9kdWN0cQB+AJBzcQB+AIp0AAZFcXVhbHNxAH4AkHNxAH4AinQABk9iamVjdHNxAH4AjnNxAH4AkXVxAH4AlAAAAANzcQB+AJZxAH4AoXNxAH4AlnQABGxhbmdxAH4Am3NxAH4AinQAA0FueXEAfgCQdXIAFFtMeHNidGkuYXBpLlBhY2thZ2U7WxMZN3CnJ6ECAAB4cAAAAAFzcgAReHNidGkuYXBpLlBhY2thZ2V+WY/2rs45WAIAAUwABG5hbWVxAH4ADXhwdAAGZG9tYWluc3IAFXhzYnRpLmFwaS5Db21waWxhdGlvbu364MNq6KBCAgACSgAJc3RhcnRUaW1lWwAHb3V0cHV0c3QAGltMeHNidGkvYXBpL091dHB1dFNldHRpbmc7eHAAAAFePJjIwXVyABpbTHhzYnRpLmFwaS5PdXRwdXRTZXR0aW5nO39qwvOnh6VCAgAAeHAAAAABc3IAF3hzYnRpLmFwaS5PdXRwdXRTZXR0aW5netmaR3T7HXsCAAJMAA9vdXRwdXREaXJlY3RvcnlxAH4ADUwAD3NvdXJjZURpcmVjdG9yeXEAfgANeHB0AEMvVXNlcnMvbWlrZWx3eXJlZC90Zm0vSVRBLVNlcnZpY2VzL2RvbWFpbi90YXJnZXQvc2NhbGEtMi4xMS9jbGFzc2VzdAABL3VyAAJbQqzzF/gGCFTgAgAAeHAAAAAUWB8aanH8UxYFZHTC8OiWE0TuxE4=
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Id.scala -> 
+rO0ABXNyABB4c2J0aS5hcGkuU291cmNlFlpwRASfbtoCAAZJAAdhcGlIYXNoWgAIaGFzTWFjcm9MABhfaW50ZXJuYWxPbmx5X25hbWVIYXNoZXN0ACRMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2hlcztMAANhcGl0ABVMeHNidGkvYXBpL1NvdXJjZUFQSTtMAAtjb21waWxhdGlvbnQAF0x4c2J0aS9hcGkvQ29tcGlsYXRpb247WwAEaGFzaHQAAltCeHA8+xH1AHNyACJ4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaGVzVNq+mfrU7EwCAAJbAA9pbXBsaWNpdE1lbWJlcnN0ACNbTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoO1sADnJlZ3VsYXJNZW1iZXJzcQB+AAd4cHVyACNbTHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoO0lagLbdlov0AgAAeHAAAAACc3IAIHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoWw71InY4V88CAAJJAARoYXNoTAAEbmFtZXQAEkxqYXZhL2xhbmcvU3RyaW5nO3hwF83eDnQABHRvSWRzcQB+AAu5w1FxdAAHdG9WYWx1ZXVxAH4ACQAAACFzcQB+AAvJHz1RdAAGbm90aWZ5c3EAfgALTf2LwnQAB3VuYXBwbHlzcQB+AAsbmMsIdAACSWRzcQB+AAskGpGrdAAEd2FpdHNxAH4ACyHmo1h0AA0kYXNJbnN0YW5jZU9mc3EAfgAL3VVRdnQADHByb2R1Y3RBcml0eXNxAH4ACxdAdEh0AAZlcXVhbHNzcQB+AAscLCm2dAAIZ2VuZXJhdGVzcQB+AAsRH3tzdAAMYXNJbnN0YW5jZU9mc3EAfgAL/gfqFXQADHN5bmNocm9uaXplZHNxAH4ACxHLVVR0AA0kaXNJbnN0YW5jZU9mc3EAfgALsCRbaHQACGNhbkVxdWFsc3EAfgALt3FdeXQADXByb2R1Y3RQcmVmaXhzcQB+AAsT5cGOdAAJbm90aWZ5QWxsc3EAfgALUSBHtHQAC3JlYWRSZXNvbHZlc3EAfgALV/sm6nQADGlzSW5zdGFuY2VPZnNxAH4ACwBvQxJ0AAY8aW5pdD5zcQB+AAtNHK1ydAAFYXBwbHlzcQB+AAtg1/tudAACPT1zcQB+AAvCT6n/dAAFY2xvbmVzcQB+AAuu78WNdAAEY29weXNxAH4AC/V1UWp0AAh0b1N0cmluZ3NxAH4AC0ydZUV0AAIhPXNxAH4ACydZWAh0AAhnZXRDbGFzc3NxAH4AC36phdV0AA5jb3B5JGRlZmF1bHQkMXNxAH4AC3XqBq10AAJuZXNxAH4ACyyuXlh0AAV2YWx1ZXNxAH4AC4zc54x0AAJlcXNxAH4AC6qowSN0AA9wcm9kdWN0SXRlcmF0b3JzcQB+AAvivpYldAACIyNzcQB+AAtPSDQmdAAIZmluYWxpemVzcQB+AAvcWhUzdAAOcHJvZHVjdEVsZW1lbnRzcQB+AAsIAktEdAAIaGFzaENvZGVzcgATeHNidGkuYXBpLlNvdXJjZUFQSblep/kpIzikAgACWwALZGVmaW5pdGlvbnN0ABdbTHhzYnRpL2FwaS9EZWZpbml0aW9uO1sACHBhY2thZ2VzdAAUW0x4c2J0aS9hcGkvUGFja2FnZTt4cHVyABdbTHhzYnRpLmFwaS5EZWZpbml0aW9uO4jJXOe0414OAgAAeHAAAAACc3IAE3hzYnRpLmFwaS5DbGFzc0xpa2WDNByh37CXbAIABEwADmRlZmluaXRpb25UeXBldAAaTHhzYnRpL2FwaS9EZWZpbml0aW9uVHlwZTtbABBzYXZlZEFubm90YXRpb25zdAATW0xqYXZhL2xhbmcvU3RyaW5nO0wACHNlbGZUeXBldAAQTHhzYnRpL2FwaS9MYXp5O0wACXN0cnVjdHVyZXEAfgBdeHIAIXhzYnRpLmFwaS5QYXJhbWV0ZXJpemVkRGVmaW5pdGlvbvkRbrHVUDziAgABWwAOdHlwZVBhcmFtZXRlcnN0ABpbTHhzYnRpL2FwaS9UeXBlUGFyYW1ldGVyO3hyABR4c2J0aS5hcGkuRGVmaW5pdGlvbocqG+hxQuNGAgAETAAGYWNjZXNzdAASTHhzYnRpL2FwaS9BY2Nlc3M7WwALYW5ub3RhdGlvbnN0ABdbTHhzYnRpL2FwaS9Bbm5vdGF0aW9uO0wACW1vZGlmaWVyc3QAFUx4c2J0aS9hcGkvTW9kaWZpZXJzO0wABG5hbWVxAH4ADHhwc3IAEHhzYnRpLmFwaS5QdWJsaWO6WD2ubC1gQgIAAHhyABB4c2J0aS5hcGkuQWNjZXNz3WKa+B1jMUgCAAB4cHVyABdbTHhzYnRpLmFwaS5Bbm5vdGF0aW9uO+uX6xkQ9o1IAgAAeHAAAAAAc3IAE3hzYnRpLmFwaS5Nb2RpZmllcnPHERMhaZzcJAIAAUIABWZsYWdzeHAAdAAJZG9tYWluLklkdXIAGltMeHNidGkuYXBpLlR5cGVQYXJhbWV0ZXI72W0mDyid8rYCAAB4cAAAAAB+cgAYeHNidGkuYXBpLkRlZmluaXRpb25UeXBlAAAAAAAAAAASAAB4cgAOamF2YS5sYW5nLkVudW0AAAAAAAAAABIAAHhwdAAIQ2xhc3NEZWZ1cgATW0xqYXZhLmxhbmcuU3RyaW5nO63SVufpHXtHAgAAeHAAAAAAc3IAE3hzYnRpLlNhZmVMYXp5JEltcGxQAi6Tl5dAPwIAA1oACGJpdG1hcCQwTAACX3R0ABJMamF2YS9sYW5nL09iamVjdDtMAARldmFsdAARTHNjYWxhL0Z1bmN0aW9uMDt4cgAWeHNidGkuYXBpLkFic3RyYWN0TGF6edN3tQFfu+egAgAAeHAAcHNyACB4c2J0aS5TYWZlTGF6eSQkYW5vbmZ1biRzdHJpY3QkMQAAAAAAAAAAAgABTAAHdmFsdWUkMXEAfgB2eHBzcgATeHNidGkuYXBpLkVtcHR5VHlwZbz9nkZJO4kkAgAAeHIAFHhzYnRpLmFwaS5TaW1wbGVUeXBlcnhiiCEjv0ACAAB4cgAOeHNidGkuYXBpLlR5cGU/atkhFkmqygIAAHhwc3EAfgB1AHBzcQB+AHpzcgATeHNidGkuYXBpLlN0cnVjdHVyZamq+YCTb9gAAgADTAAIZGVjbGFyZWRxAH4AXUwACWluaGVyaXRlZHEAfgBdTAAHcGFyZW50c3EAfgBdeHEAfgB+c3EAfgB1AHBzcQB+AHp1cQB+AFgAAAAAc3EAfgB1AHBzcQB+AHp1cQB+AFgAAAAAc3EAfgB1AHBzcQB+AHp1cgARW0x4c2J0aS5hcGkuVHlwZTt0/6Vae/npQQIAAHhwAAAABnNyABR4c2J0aS5hcGkuUHJvamVjdGlvbvPSjVTpRaQtAgACTAACaWRxAH4ADEwABnByZWZpeHQAFkx4c2J0aS9hcGkvU2ltcGxlVHlwZTt4cQB+AH10AAxTZXJpYWxpemFibGVzcgATeHNidGkuYXBpLlNpbmdsZXRvbvynX/jPVuRGAgABTAAEcGF0aHQAEEx4c2J0aS9hcGkvUGF0aDt4cQB+AH1zcgAOeHNidGkuYXBpLlBhdGibPVwIzqUnhAIAAVsACmNvbXBvbmVudHN0ABpbTHhzYnRpL2FwaS9QYXRoQ29tcG9uZW50O3hwdXIAGltMeHNidGkuYXBpLlBhdGhDb21wb25lbnQ7Q9oJdC1nFnQCAAB4cAAAAAJzcgAMeHNidGkuYXBpLklkmDJsizdTxEACAAFMAAJpZHEAfgAMeHIAF3hzYnRpLmFwaS5QYXRoQ29tcG9uZW50X5oiWy6Gn7wCAAB4cHQABXNjYWxhc3IADnhzYnRpLmFwaS5UaGlz2wntpsxaQFwCAAB4cQB+AJtzcQB+AI5xAH4AkXNxAH4AknNxAH4AlXVxAH4AmAAAAANzcQB+AJp0AARqYXZhc3EAfgCadAACaW9xAH4An3NxAH4AjnQAB1Byb2R1Y3RxAH4AlHNxAH4AjnQABkVxdWFsc3EAfgCUc3EAfgCOdAAGT2JqZWN0c3EAfgCSc3EAfgCVdXEAfgCYAAAAA3NxAH4AmnEAfgClc3EAfgCadAAEbGFuZ3EAfgCfc3EAfgCOdAADQW55cQB+AJRzcQB+AFpxAH4AZ3VxAH4AaAAAAABzcQB+AGoAdAAJZG9tYWluLklkdXEAfgBtAAAAAH5xAH4Ab3QABk1vZHVsZXVxAH4AcwAAAABzcQB+AHUAcHNxAH4AenEAfgB/c3EAfgB1AHBzcQB+AHpzcQB+AIJzcQB+AHUAcHNxAH4AenVxAH4AWAAAAABzcQB+AHUAcHNxAH4AenVxAH4AWAAAAABzcQB+AHUAcHNxAH4AenVxAH4AjAAAAARzcQB+AI5xAH4AkXNxAH4AknNxAH4AlXVxAH4AmAAAAAJzcQB+AJpxAH4AnXEAfgCfc3EAfgCOcQB+AJFzcQB+AJJzcQB+AJV1cQB+AJgAAAADc3EAfgCacQB+AKVzcQB+AJp0AAJpb3EAfgCfc3EAfgCOcQB+AK1zcQB+AJJzcQB+AJV1cQB+AJgAAAADc3EAfgCacQB+AKVzcQB+AJpxAH4As3EAfgCfc3EAfgCOcQB+ALVxAH4AzXVyABRbTHhzYnRpLmFwaS5QYWNrYWdlO1sTGTdwpyehAgAAeHAAAAABc3IAEXhzYnRpLmFwaS5QYWNrYWdlflmP9q7OOVgCAAFMAARuYW1lcQB+AAx4cHQABmRvbWFpbnNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABXjyYyMF1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5cQB+AAxMAA9zb3VyY2VEaXJlY3RvcnlxAH4ADHhwdABDL1VzZXJzL21pa2Vsd3lyZWQvdGZtL0lUQS1TZXJ2aWNlcy9kb21haW4vdGFyZ2V0L3NjYWxhLTIuMTEvY2xhc3Nlc3QAAS91cgACW0Ks8xf4BghU4AIAAHhwAAAAFJ6MJ+Rrsddu3jyWXfcvkh0h1+wb
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Model.scala -> 
+rO0ABXNyABB4c2J0aS5hcGkuU291cmNlFlpwRASfbtoCAAZJAAdhcGlIYXNoWgAIaGFzTWFjcm9MABhfaW50ZXJuYWxPbmx5X25hbWVIYXNoZXN0ACRMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2hlcztMAANhcGl0ABVMeHNidGkvYXBpL1NvdXJjZUFQSTtMAAtjb21waWxhdGlvbnQAF0x4c2J0aS9hcGkvQ29tcGlsYXRpb247WwAEaGFzaHQAAltCeHCADK6zAHNyACJ4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaGVzVNq+mfrU7EwCAAJbAA9pbXBsaWNpdE1lbWJlcnN0ACNbTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoO1sADnJlZ3VsYXJNZW1iZXJzcQB+AAd4cHVyACNbTHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoO0lagLbdlov0AgAAeHAAAAAEc3IAIHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoWw71InY4V88CAAJJAARoYXNoTAAEbmFtZXQAEkxqYXZhL2xhbmcvU3RyaW5nO3hwDaaO5HQACkpGTG9jYXRpb25zcQB+AAtT4VFGdAAFYW55SkZzcQB+AAtPdoLqdAALSkZUd2VldEluZm9zcQB+AAsTZZ6QdAAESkZpZHVxAH4ACQAAABRzcQB+AAv10SzSdAAGbm90aWZ5c3EAfgALnKgoGnQABHdhaXRzcQB+AAtHQ3CodAANJGFzSW5zdGFuY2VPZnNxAH4AC/G49XN0AAZlcXVhbHNzcQB+AAuG8OTHdAAMYXNJbnN0YW5jZU9mc3EAfgALg9qLLnQADHN5bmNocm9uaXplZHNxAH4AC6doO4h0AA0kaXNJbnN0YW5jZU9mc3EAfgALirn+Q3QACW5vdGlmeUFsbHNxAH4AC5d/t2l0AAVNb2RlbHNxAH4ACwQXrJ90AAxpc0luc3RhbmNlT2ZzcQB+AAud0inmdAACPT1zcQB+AAsnnNukdAAFY2xvbmVzcQB+AAsuw8+EdAAIdG9TdHJpbmdzcQB+AAsilKoVdAACIT1zcQB+AAvwAoWxdAAIZ2V0Q2xhc3NzcQB+AAtjEvYAdAACbmVzcQB+AAs18YAWdAACZXFzcQB+AAvFZbj/dAACIyNzcQB+AAt9TRc+dAAIZmluYWxpemVzcQB+AAu7Ooe8dAAIaGFzaENvZGVzcgATeHNidGkuYXBpLlNvdXJjZUFQSblep/kpIzikAgACWwALZGVmaW5pdGlvbnN0ABdbTHhzYnRpL2FwaS9EZWZpbml0aW9uO1sACHBhY2thZ2VzdAAUW0x4c2J0aS9hcGkvUGFja2FnZTt4cHVyABdbTHhzYnRpLmFwaS5EZWZpbml0aW9uO4jJXOe0414OAgAAeHAAAAABc3IAE3hzYnRpLmFwaS5DbGFzc0xpa2WDNByh37CXbAIABEwADmRlZmluaXRpb25UeXBldAAaTHhzYnRpL2FwaS9EZWZpbml0aW9uVHlwZTtbABBzYXZlZEFubm90YXRpb25zdAATW0xqYXZhL2xhbmcvU3RyaW5nO0wACHNlbGZUeXBldAAQTHhzYnRpL2FwaS9MYXp5O0wACXN0cnVjdHVyZXEAfgBHeHIAIXhzYnRpLmFwaS5QYXJhbWV0ZXJpemVkRGVmaW5pdGlvbvkRbrHVUDziAgABWwAOdHlwZVBhcmFtZXRlcnN0ABpbTHhzYnRpL2FwaS9UeXBlUGFyYW1ldGVyO3hyABR4c2J0aS5hcGkuRGVmaW5pdGlvbocqG+hxQuNGAgAETAAGYWNjZXNzdAASTHhzYnRpL2FwaS9BY2Nlc3M7WwALYW5ub3RhdGlvbnN0ABdbTHhzYnRpL2FwaS9Bbm5vdGF0aW9uO0wACW1vZGlmaWVyc3QAFUx4c2J0aS9hcGkvTW9kaWZpZXJzO0wABG5hbWVxAH4ADHhwc3IAEHhzYnRpLmFwaS5QdWJsaWO6WD2ubC1gQgIAAHhyABB4c2J0aS5hcGkuQWNjZXNz3WKa+B1jMUgCAAB4cHVyABdbTHhzYnRpLmFwaS5Bbm5vdGF0aW9uO+uX6xkQ9o1IAgAAeHAAAAAAc3IAE3hzYnRpLmFwaS5Nb2RpZmllcnPHERMhaZzcJAIAAUIABWZsYWdzeHAAdAAMZG9tYWluLk1vZGVsdXIAGltMeHNidGkuYXBpLlR5cGVQYXJhbWV0ZXI72W0mDyid8rYCAAB4cAAAAAB+cgAYeHNidGkuYXBpLkRlZmluaXRpb25UeXBlAAAAAAAAAAASAAB4cgAOamF2YS5sYW5nLkVudW0AAAAAAAAAABIAAHhwdAAGTW9kdWxldXIAE1tMamF2YS5sYW5nLlN0cmluZzut0lbn6R17RwIAAHhwAAAAAHNyABN4c2J0aS5TYWZlTGF6eSRJbXBsUAIuk5eXQD8CAANaAAhiaXRtYXAkMEwAAl90dAASTGphdmEvbGFuZy9PYmplY3Q7TAAEZXZhbHQAEUxzY2FsYS9GdW5jdGlvbjA7eHIAFnhzYnRpLmFwaS5BYnN0cmFjdExhennTd7UBX7vnoAIAAHhwAHBzcgAgeHNidGkuU2FmZUxhenkkJGFub25mdW4kc3RyaWN0JDEAAAAAAAAAAAIAAUwAB3ZhbHVlJDFxAH4AYHhwc3IAE3hzYnRpLmFwaS5FbXB0eVR5cGW8/Z5GSTuJJAIAAHhyABR4c2J0aS5hcGkuU2ltcGxlVHlwZXJ4YoghI79AAgAAeHIADnhzYnRpLmFwaS5UeXBlP2rZIRZJqsoCAAB4cHNxAH4AXwBwc3EAfgBkc3IAE3hzYnRpLmFwaS5TdHJ1Y3R1cmWpqvmAk2/YAAIAA0wACGRlY2xhcmVkcQB+AEdMAAlpbmhlcml0ZWRxAH4AR0wAB3BhcmVudHNxAH4AR3hxAH4AaHNxAH4AXwBwc3EAfgBkdXEAfgBCAAAAAHNxAH4AXwBwc3EAfgBkdXEAfgBCAAAAAHNxAH4AXwBwc3EAfgBkdXIAEVtMeHNidGkuYXBpLlR5cGU7dP+lWnv56UECAAB4cAAAAAJzcgAUeHNidGkuYXBpLlByb2plY3Rpb27z0o1U6UWkLQIAAkwAAmlkcQB+AAxMAAZwcmVmaXh0ABZMeHNidGkvYXBpL1NpbXBsZVR5cGU7eHEAfgBndAAGT2JqZWN0c3IAE3hzYnRpLmFwaS5TaW5nbGV0b278p1/4z1bkRgIAAUwABHBhdGh0ABBMeHNidGkvYXBpL1BhdGg7eHEAfgBnc3IADnhzYnRpLmFwaS5QYXRomz1cCM6lJ4QCAAFbAApjb21wb25lbnRzdAAaW0x4c2J0aS9hcGkvUGF0aENvbXBvbmVudDt4cHVyABpbTHhzYnRpLmFwaS5QYXRoQ29tcG9uZW50O0PaCXQtZxZ0AgAAeHAAAAADc3IADHhzYnRpLmFwaS5JZJgybIs3U8RAAgABTAACaWRxAH4ADHhyABd4c2J0aS5hcGkuUGF0aENvbXBvbmVudF+aIlsuhp+8AgAAeHB0AARqYXZhc3EAfgCEdAAEbGFuZ3NyAA54c2J0aS5hcGkuVGhpc9sJ7abMWkBcAgAAeHEAfgCFc3EAfgB4dAADQW55c3EAfgB8c3EAfgB/dXEAfgCCAAAAAnNxAH4AhHQABXNjYWxhcQB+AIt1cgAUW0x4c2J0aS5hcGkuUGFja2FnZTtbExk3cKcnoQIAAHhwAAAAAXNyABF4c2J0aS5hcGkuUGFja2FnZX5Zj/auzjlYAgABTAAEbmFtZXEAfgAMeHB0AAZkb21haW5zcgAVeHNidGkuYXBpLkNvbXBpbGF0aW9u7frgw2rooEICAAJKAAlzdGFydFRpbWVbAAdvdXRwdXRzdAAaW0x4c2J0aS9hcGkvT3V0cHV0U2V0dGluZzt4cAAAAV48mMjBdXIAGltMeHNidGkuYXBpLk91dHB1dFNldHRpbmc7f2rC86eHpUICAAB4cAAAAAFzcgAXeHNidGkuYXBpLk91dHB1dFNldHRpbmd62ZpHdPsdewIAAkwAD291dHB1dERpcmVjdG9yeXEAfgAMTAAPc291cmNlRGlyZWN0b3J5cQB+AAx4cHQAQy9Vc2Vycy9taWtlbHd5cmVkL3RmbS9JVEEtU2VydmljZXMvZG9tYWluL3RhcmdldC9zY2FsYS0yLjExL2NsYXNzZXN0AAEvdXIAAltCrPMX+AYIVOACAAB4cAAAABTfgV9LO+orh+dhlfMiV+zEHj43Sg==
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/TweetInfo.scala -> 
+rO0ABXNyABB4c2J0aS5hcGkuU291cmNlFlpwRASfbtoCAAZJAAdhcGlIYXNoWgAIaGFzTWFjcm9MABhfaW50ZXJuYWxPbmx5X25hbWVIYXNoZXN0ACRMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2hlcztMAANhcGl0ABVMeHNidGkvYXBpL1NvdXJjZUFQSTtMAAtjb21waWxhdGlvbnQAF0x4c2J0aS9hcGkvQ29tcGlsYXRpb247WwAEaGFzaHQAAltCeHBaD/+gAHNyACJ4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaGVzVNq+mfrU7EwCAAJbAA9pbXBsaWNpdE1lbWJlcnN0ACNbTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoO1sADnJlZ3VsYXJNZW1iZXJzcQB+AAd4cHVyACNbTHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoO0lagLbdlov0AgAAeHAAAAAAdXEAfgAJAAAAOnNyACB4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaFsO9SJ2OFfPAgACSQAEaGFzaEwABG5hbWV0ABJMamF2YS9sYW5nL1N0cmluZzt4cP8gPz10ABJjb250YWludFRleHRFbW9qaXNzcQB+AAwChJTSdAAGbm90aWZ5c3EAfgAMXVgED3QAB3VuYXBwbHlzcQB+AAxrsIbQdAAITG9jYXRpb25zcQB+AAycacb/dAAEd2FpdHNxAH4ADG8pIRp0AA5jb3B5JGRlZmF1bHQkMnNxAH4ADI3axJh0AA0kYXNJbnN0YW5jZU9mc3EAfgAMTRpSVnQADWNvbnRhaW5fZW1vamlzcQB+AAwMT+wOdAAIbGF0aXR1ZGVzcQB+AAylXs32dAAOY29weSRkZWZhdWx0JDVzcQB+AAyk7LOddAAITGF0aXR1ZGVzcQB+AAzOiYZadAAMcHJvZHVjdEFyaXR5c3EAfgAM50PLinQABmVxdWFsc3NxAH4ADEZ8iCR0AAhsZW5ndWFnZXNxAH4ADOodEgd0AA5jb3B5JGRlZmF1bHQkOXNxAH4ADCnCgVN0AAlMb25naXR1ZGVzcQB+AAzSoiOudAADX2lkc3EAfgAMuGEbK3QACXR3ZWV0VGV4dHNxAH4ADDPHdtV0AAxhc0luc3RhbmNlT2ZzcQB+AAwUd/sEdAAMc3luY2hyb25pemVkc3EAfgAMJ9FP23QADSRpc0luc3RhbmNlT2ZzcQB+AAyEQ8dudAAOY29weSRkZWZhdWx0JDhzcQB+AAzJluHWdAAIY2FuRXF1YWxzcQB+AAytfMCSdAAOdXNlcl9mb2xsb3dlcnNzcQB+AAx5aevNdAAOY29weSRkZWZhdWx0JDRzcQB+AAykls07dAANcHJvZHVjdFByZWZpeHNxAH4ADMP0NqJ0AAlub3RpZnlBbGxzcQB+AAw4ckB6dAAJbG9uZ2l0dWRlc3EAfgAMKot0M3QAC3JlYWRSZXNvbHZlc3EAfgAMysJdVHQAB3VzZXJfaWRzcQB+AAx8swaNdAAMaXNJbnN0YW5jZU9mc3EAfgAM9BIFOXQABjxpbml0PnNxAH4ADIs2awR0AAVhcHBseXNxAH4ADCRCCpl0AAI9PXNxAH4ADDrgmAB0AAVjbG9uZXNxAH4ADOZNWqp0AA5jb3B5JGRlZmF1bHQkN3NxAH4ADM7Qdt90AA9jb3B5JGRlZmF1bHQkMTBzcQB+AAyxsFujdAAJY3JlYXRlZEF0c3EAfgAM75c3UnQADmNvcHkkZGVmYXVsdCQzc3EAfgAMpgHTAHQABGNvcHlzcQB+AAxnCqoEdAAIdG9TdHJpbmdzcQB+AAyX+I3qdAAJVHdlZXRJbmZvc3EAfgAMcfYrQXQAAiE9c3EAfgAMEyHpxXQABXRvcGljc3EAfgAMjZiB4nQACGdldENsYXNzc3EAfgAMgK5Jd3QADmNvcHkkZGVmYXVsdCQxc3EAfgAMq9AsKnQADmNvcHkkZGVmYXVsdCQ2c3EAfgAMZt7DOXQAAm5lc3EAfgAMjk5zI3QACXVzZXJfbmFtZXNxAH4ADPuMuyB0AA9jb3B5JGRlZmF1bHQkMTFzcQB+AAwA6OUQdAACZXFzcQB+AAx+ZWDtdAAPcHJvZHVjdEl0ZXJhdG9yc3EAfgAMaPwXAXQAE2NvbnRlbnQyVHdpdHRlckluZm9zcQB+AAy3q5C2dAAIdHdlZXRfaWRzcQB+AAwlR6tCdAACIyNzcQB+AAxEigPFdAAIZmluYWxpemVzcQB+AAyHDcV0dAAOcHJvZHVjdEVsZW1lbnRzcQB+AAzv6PQ/dAAIaGFzaENvZGVzcgATeHNidGkuYXBpLlNvdXJjZUFQSblep/kpIzikAgACWwALZGVmaW5pdGlvbnN0ABdbTHhzYnRpL2FwaS9EZWZpbml0aW9uO1sACHBhY2thZ2VzdAAUW0x4c2J0aS9hcGkvUGFja2FnZTt4cHVyABdbTHhzYnRpLmFwaS5EZWZpbml0aW9uO4jJXOe0414OAgAAeHAAAAAEc3IAE3hzYnRpLmFwaS5DbGFzc0xpa2WDNByh37CXbAIABEwADmRlZmluaXRpb25UeXBldAAaTHhzYnRpL2FwaS9EZWZpbml0aW9uVHlwZTtbABBzYXZlZEFubm90YXRpb25zdAATW0xqYXZhL2xhbmcvU3RyaW5nO0wACHNlbGZUeXBldAAQTHhzYnRpL2FwaS9MYXp5O0wACXN0cnVjdHVyZXEAfgCLeHIAIXhzYnRpLmFwaS5QYXJhbWV0ZXJpemVkRGVmaW5pdGlvbvkRbrHVUDziAgABWwAOdHlwZVBhcmFtZXRlcnN0ABpbTHhzYnRpL2FwaS9UeXBlUGFyYW1ldGVyO3hyABR4c2J0aS5hcGkuRGVmaW5pdGlvbocqG+hxQuNGAgAETAAGYWNjZXNzdAASTHhzYnRpL2FwaS9BY2Nlc3M7WwALYW5ub3RhdGlvbnN0ABdbTHhzYnRpL2FwaS9Bbm5vdGF0aW9uO0wACW1vZGlmaWVyc3QAFUx4c2J0aS9hcGkvTW9kaWZpZXJzO0wABG5hbWVxAH4ADXhwc3IAEHhzYnRpLmFwaS5QdWJsaWO6WD2ubC1gQgIAAHhyABB4c2J0aS5hcGkuQWNjZXNz3WKa+B1jMUgCAAB4cHVyABdbTHhzYnRpLmFwaS5Bbm5vdGF0aW9uO+uX6xkQ9o1IAgAAeHAAAAAAc3IAE3hzYnRpLmFwaS5Nb2RpZmllcnPHERMhaZzcJAIAAUIABWZsYWdzeHAAdAAQZG9tYWluLlR3ZWV0SW5mb3VyABpbTHhzYnRpLmFwaS5UeXBlUGFyYW1ldGVyO9ltJg8onfK2AgAAeHAAAAAAfnIAGHhzYnRpLmFwaS5EZWZpbml0aW9uVHlwZQAAAAAAAAAAEgAAeHIADmphdmEubGFuZy5FbnVtAAAAAAAAAAASAAB4cHQACENsYXNzRGVmdXIAE1tMamF2YS5sYW5nLlN0cmluZzut0lbn6R17RwIAAHhwAAAAAHNyABN4c2J0aS5TYWZlTGF6eSRJbXBsUAIuk5eXQD8CAANaAAhiaXRtYXAkMEwAAl90dAASTGphdmEvbGFuZy9PYmplY3Q7TAAEZXZhbHQAEUxzY2FsYS9GdW5jdGlvbjA7eHIAFnhzYnRpLmFwaS5BYnN0cmFjdExhennTd7UBX7vnoAIAAHhwAHBzcgAgeHNidGkuU2FmZUxhenkkJGFub25mdW4kc3RyaWN0JDEAAAAAAAAAAAIAAUwAB3ZhbHVlJDFxAH4ApHhwc3IAE3hzYnRpLmFwaS5FbXB0eVR5cGW8/Z5GSTuJJAIAAHhyABR4c2J0aS5hcGkuU2ltcGxlVHlwZXJ4YoghI79AAgAAeHIADnhzYnRpLmFwaS5UeXBlP2rZIRZJqsoCAAB4cHNxAH4AowBwc3EAfgCoc3IAE3hzYnRpLmFwaS5TdHJ1Y3R1cmWpqvmAk2/YAAIAA0wACGRlY2xhcmVkcQB+AItMAAlpbmhlcml0ZWRxAH4Ai0wAB3BhcmVudHNxAH4Ai3hxAH4ArHNxAH4AowBwc3EAfgCodXEAfgCGAAAAAHNxAH4AowBwc3EAfgCodXEAfgCGAAAAAHNxAH4AowBwc3EAfgCodXIAEVtMeHNidGkuYXBpLlR5cGU7dP+lWnv56UECAAB4cAAAAAZzcgAUeHNidGkuYXBpLlByb2plY3Rpb27z0o1U6UWkLQIAAkwAAmlkcQB+AA1MAAZwcmVmaXh0ABZMeHNidGkvYXBpL1NpbXBsZVR5cGU7eHEAfgCrdAAMU2VyaWFsaXphYmxlc3IAE3hzYnRpLmFwaS5TaW5nbGV0b278p1/4z1bkRgIAAUwABHBhdGh0ABBMeHNidGkvYXBpL1BhdGg7eHEAfgCrc3IADnhzYnRpLmFwaS5QYXRomz1cCM6lJ4QCAAFbAApjb21wb25lbnRzdAAaW0x4c2J0aS9hcGkvUGF0aENvbXBvbmVudDt4cHVyABpbTHhzYnRpLmFwaS5QYXRoQ29tcG9uZW50O0PaCXQtZxZ0AgAAeHAAAAACc3IADHhzYnRpLmFwaS5JZJgybIs3U8RAAgABTAACaWRxAH4ADXhyABd4c2J0aS5hcGkuUGF0aENvbXBvbmVudF+aIlsuhp+8AgAAeHB0AAVzY2FsYXNyAA54c2J0aS5hcGkuVGhpc9sJ7abMWkBcAgAAeHEAfgDJc3EAfgC8cQB+AL9zcQB+AMBzcQB+AMN1cQB+AMYAAAADc3EAfgDIdAAEamF2YXNxAH4AyHQAAmlvcQB+AM1zcQB+ALx0AAdQcm9kdWN0cQB+AMJzcQB+ALx0AAZFcXVhbHNxAH4AwnNxAH4AvHQABk9iamVjdHNxAH4AwHNxAH4Aw3VxAH4AxgAAAANzcQB+AMhxAH4A03NxAH4AyHQABGxhbmdxAH4AzXNxAH4AvHQAA0FueXEAfgDCc3EAfgCIcQB+AJV1cQB+AJYAAAAAc3EAfgCYAHQAD2RvbWFpbi5Mb2NhdGlvbnVxAH4AmwAAAABxAH4An3VxAH4AoQAAAABzcQB+AKMAcHNxAH4AqHEAfgCtc3EAfgCjAHBzcQB+AKhzcQB+ALBzcQB+AKMAcHNxAH4AqHVxAH4AhgAAAABzcQB+AKMAcHNxAH4AqHVxAH4AhgAAAABzcQB+AKMAcHNxAH4AqHVxAH4AugAAAAZzcQB+ALxxAH4Av3NxAH4AwHNxAH4Aw3VxAH4AxgAAAAJzcQB+AMhxAH4Ay3EAfgDNc3EAfgC8cQB+AL9zcQB+AMBzcQB+AMN1cQB+AMYAAAADc3EAfgDIcQB+ANNzcQB+AMh0AAJpb3EAfgDNc3EAfgC8cQB+ANdxAH4A+XNxAH4AvHQABkVxdWFsc3EAfgD5c3EAfgC8cQB+ANtzcQB+AMBzcQB+AMN1cQB+AMYAAAADc3EAfgDIcQB+ANNzcQB+AMhxAH4A4XEAfgDNc3EAfgC8cQB+AONxAH4A+XNxAH4AiHEAfgCVdXEAfgCWAAAAAHNxAH4AmAB0AA9kb21haW4uTG9jYXRpb251cQB+AJsAAAAAfnEAfgCddAAGTW9kdWxldXEAfgChAAAAAHNxAH4AowBwc3EAfgCocQB+AK1zcQB+AKMAcHNxAH4AqHNxAH4AsHNxAH4AowBwc3EAfgCodXEAfgCGAAAAAHNxAH4AowBwc3EAfgCodXEAfgCGAAAAAHNxAH4AowBwc3EAfgCodXEAfgC6AAAABHNxAH4AvHEAfgC/c3EAfgDAc3EAfgDDdXEAfgDGAAAAAnNxAH4AyHEAfgDLcQB+AM1zcQB+ALxxAH4Av3NxAH4AwHNxAH4Aw3VxAH4AxgAAAANzcQB+AMhxAH4A03NxAH4AyHQAAmlvcQB+AM1zcQB+ALxxAH4A23NxAH4AwHNxAH4Aw3VxAH4AxgAAAANzcQB+AMhxAH4A03NxAH4AyHEAfgDhcQB+AM1zcQB+ALxxAH4A43EAfgElc3EAfgCIcQB+AJV1cQB+AJYAAAAAc3EAfgCYAHQAEGRvbWFpbi5Ud2VldEluZm91cQB+AJsAAAAAcQB+ARN1cQB+AKEAAAAAc3EAfgCjAHBzcQB+AKhxAH4ArXNxAH4AowBwc3EAfgCoc3EAfgCwc3EAfgCjAHBzcQB+AKh1cQB+AIYAAAAAc3EAfgCjAHBzcQB+AKh1cQB+AIYAAAAAc3EAfgCjAHBzcQB+AKh1cQB+ALoAAAAEc3EAfgC8cQB+AL9zcQB+AMBzcQB+AMN1cQB+AMYAAAACc3EAfgDIcQB+AMtxAH4AzXNxAH4AvHEAfgC/c3EAfgDAc3EAfgDDdXEAfgDGAAAAA3NxAH4AyHEAfgDTc3EAfgDIdAACaW9xAH4AzXNxAH4AvHEAfgDbc3EAfgDAc3EAfgDDdXEAfgDGAAAAA3NxAH4AyHEAfgDTc3EAfgDIcQB+AOFxAH4AzXNxAH4AvHEAfgDjcQB+AUx1cgAUW0x4c2J0aS5hcGkuUGFja2FnZTtbExk3cKcnoQIAAHhwAAAAAXNyABF4c2J0aS5hcGkuUGFja2FnZX5Zj/auzjlYAgABTAAEbmFtZXEAfgANeHB0AAZkb21haW5zcgAVeHNidGkuYXBpLkNvbXBpbGF0aW9u7frgw2rooEICAAJKAAlzdGFydFRpbWVbAAdvdXRwdXRzdAAaW0x4c2J0aS9hcGkvT3V0cHV0U2V0dGluZzt4cAAAAV48mMjBdXIAGltMeHNidGkuYXBpLk91dHB1dFNldHRpbmc7f2rC86eHpUICAAB4cAAAAAFzcgAXeHNidGkuYXBpLk91dHB1dFNldHRpbmd62ZpHdPsdewIAAkwAD291dHB1dERpcmVjdG9yeXEAfgANTAAPc291cmNlRGlyZWN0b3J5cQB+AA14cHQAQy9Vc2Vycy9taWtlbHd5cmVkL3RmbS9JVEEtU2VydmljZXMvZG9tYWluL3RhcmdldC9zY2FsYS0yLjExL2NsYXNzZXN0AAEvdXIAAltCrPMX+AYIVOACAAB4cAAAABRfDAe5qutnL3P7Pozbfnb0bC0E+w==
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/classifier/exception/ClassifierException.scala -> 
+rO0ABXNyABB4c2J0aS5hcGkuU291cmNlFlpwRASfbtoCAAZJAAdhcGlIYXNoWgAIaGFzTWFjcm9MABhfaW50ZXJuYWxPbmx5X25hbWVIYXNoZXN0ACRMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2hlcztMAANhcGl0ABVMeHNidGkvYXBpL1NvdXJjZUFQSTtMAAtjb21waWxhdGlvbnQAF0x4c2J0aS9hcGkvQ29tcGlsYXRpb247WwAEaGFzaHQAAltCeHB+0qq5AHNyACJ4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaGVzVNq+mfrU7EwCAAJbAA9pbXBsaWNpdE1lbWJlcnN0ACNbTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoO1sADnJlZ3VsYXJNZW1iZXJzcQB+AAd4cHVyACNbTHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoO0lagLbdlov0AgAAeHAAAAAAdXEAfgAJAAAAQnNyACB4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaFsO9SJ2OFfPAgACSQAEaGFzaEwABG5hbWV0ABJMamF2YS9sYW5nL1N0cmluZzt4cK4x4XJ0AAZub3RpZnlzcQB+AAwRH/eydAAHdW5hcHBseXNxAH4ADF/SR850AA9wcmludFN0YWNrVHJhY2VzcQB+AAz3GnFGdAATZ2V0TG9jYWxpemVkTWVzc2FnZXNxAH4ADNelmsZ0AAR3YWl0c3EAfgAMuAamQXQADmNvcHkkZGVmYXVsdCQyc3EAfgAMdMinUXQADSRhc0luc3RhbmNlT2ZzcQB+AAzyZNHQdAAsY2xhc3NpZmllckNvbnRyb2xsZXJVcGRhdGVNb2RlbEludGVybmFsRXJyb3JzcQB+AAyNYTV+dAAMcHJvZHVjdEFyaXR5c3EAfgAMB9atx3QABmVxdWFsc3NxAH4ADEMF1yp0ABBmaWxsSW5TdGFja1RyYWNlc3EAfgAMBb422HQACWluaXRDYXVzZXNxAH4ADKRIYsl0AAxhc0luc3RhbmNlT2ZzcQB+AAwUu2G/dAAYZXhlY3V0aW9uTW9kZWxJZE5vdEZvdW5kc3EAfgAM8Us9d3QAE0NsYXNzaWZpZXJFeGNlcHRpb25zcQB+AAxj/y3PdAAMc3luY2hyb25pemVkc3EAfgAM4aaRbHQADSRpc0luc3RhbmNlT2ZzcQB+AAx2lie3dAAPYXBwbHkkZGVmYXVsdCQzc3EAfgAMeYWZfXQACGdldENhdXNlc3EAfgAMUlue5XQANWNsYXNzaWZpZXJDb250cm9sbGVyQ3JlYXRlRXhlY3V0aW9uRXJyb3JJbnRlcm5hbEVycm9yc3EAfgAMOJDcKHQACGNhbkVxdWFsc3EAfgAMNbQuXnQAMGNsYXNzaWZpZXJDb250cm9sbGVyVXBkYXRlRXhlY3V0aW9uSW50ZXJuYWxFcnJvcnNxAH4ADK4uRQh0AA1wcm9kdWN0UHJlZml4c3EAfgAMal9kQnQACW5vdGlmeUFsbHNxAH4ADKzOeFh0AAtyZWFkUmVzb2x2ZXNxAH4ADAuK/2Z0ADBjbGFzc2lmaWVyQ29udHJvbGxlckNyZWF0ZUV4ZWN1dGlvbkFscmVhZHlDcmVhdGVzcQB+AAzT8ViedAAuY2xhc3NpZmllckNvbnRyb2xsZXJDcmVhdGVNb2RlbEVycm9yQ3JlYXRpbmdEQnNxAH4ADNY+0Zh0AARjb2Rlc3EAfgAMGWt7E3QADGlzSW5zdGFuY2VPZnNxAH4ADJJL2v10AA1nZXRTdGFja1RyYWNlc3EAfgAM2kCNYnQAFGdldFN0YWNrVHJhY2VFbGVtZW50c3EAfgAMbhM9XnQAEDxpbml0PiRkZWZhdWx0JDNzcQB+AAzCCQTUdAAxY2xhc3NpZmllckNvbnRyb2xsZXJDcmVhdGVNb2RlbEVycm9ySW50ZXJuYWxFcnJvcnNxAH4ADOk+MR90ACxjbGFzc2lmaWVyQ29udHJvbGxlckNyZWF0ZU1vZGVsQWxyZWFkeUNyZWF0ZXNxAH4ADC8+v8p0AAY8aW5pdD5zcQB+AAyekPo8dAAJZXJyb3JDb2Rlc3EAfgAMiuykMXQACmdldE1lc3NhZ2VzcQB+AAzM28YQdAANc2V0U3RhY2tUcmFjZXNxAH4ADAdRZz90AAVhcHBseXNxAH4ADF82EUB0AA1nZXRTdXBwcmVzc2Vkc3EAfgAMg1wU/XQAAj09c3EAfgAM0gPmsXQAEmdldFN0YWNrVHJhY2VEZXB0aHNxAH4ADIBzsWp0AAVjbG9uZXNxAH4ADLw4U+p0AA1hZGRTdXBwcmVzc2Vkc3EAfgAMz1nJknQAK2NsYXNzaWZpZXJDb250cm9sbGVyVXBkYXRlRXhlY3V0aW9uTm90Rm91bmRzcQB+AAz+dPtydAAFY2F1c2VzcQB+AAyFyo1qdAAoY2xhc3NpZmllckNvbnRyb2xsZXJHZXRFeGVjdXRpb25Ob3RGb3VuZHNxAH4ADLXVggB0AA5jb3B5JGRlZmF1bHQkM3NxAH4ADMNoPV90AARjb3B5c3EAfgAM8oj/W3QAB21lc3NhZ2VzcQB+AAzFhEZVdAAIdG9TdHJpbmdzcQB+AAwuvpjwdAAyY2xhc3NpZmllckNvbnRyb2xsZXJDcmVhdGVFeGVjdXRpb25FcnJvckNyZWF0aW5nREJzcQB+AAy9+miIdAACIT1zcQB+AAyTVlAudAAIZ2V0Q2xhc3NzcQB+AAyx0BlzdAAOY29weSRkZWZhdWx0JDFzcQB+AAxTN7bVdAA6Y2xhc3NpZmllckNvbnRyb2xsZXJUcmFpbk1vZGVsRXhlY3V0aW9ubEVycm9ySW50ZXJuYWxFcnJvcnNxAH4ADJaif4J0AAJuZXNxAH4ADHNaQDN0ACRjbGFzc2lmaWVyQ29udHJvbGxlckdldE1vZGVsTm90Rm91bmRzcQB+AAx354/adAACZXFzcQB+AAzPR9kedAAPcHJvZHVjdEl0ZXJhdG9yc3EAfgAMxgjkOHQAAiMjc3EAfgAMZKRo1XQACGZpbmFsaXplc3EAfgAMMhYK93QADnByb2R1Y3RFbGVtZW50c3EAfgAM5cvnCXQACGhhc2hDb2Rlc3EAfgAMGTL3yHQAJ2NsYXNzaWZpZXJDb250cm9sbGVyVXBkYXRlTW9kZWxOb3RGb3VuZHNxAH4ADHqED8R0ADNjbGFzc2lmaWVyQ29udHJvbGxlclRyYWluTW9kZWxFeGVjdXRpb25Eb2VzTm90RXhpc3RzcgATeHNidGkuYXBpLlNvdXJjZUFQSblep/kpIzikAgACWwALZGVmaW5pdGlvbnN0ABdbTHhzYnRpL2FwaS9EZWZpbml0aW9uO1sACHBhY2thZ2VzdAAUW0x4c2J0aS9hcGkvUGFja2FnZTt4cHVyABdbTHhzYnRpLmFwaS5EZWZpbml0aW9uO4jJXOe0414OAgAAeHAAAAACc3IAE3hzYnRpLmFwaS5DbGFzc0xpa2WDNByh37CXbAIABEwADmRlZmluaXRpb25UeXBldAAaTHhzYnRpL2FwaS9EZWZpbml0aW9uVHlwZTtbABBzYXZlZEFubm90YXRpb25zdAATW0xqYXZhL2xhbmcvU3RyaW5nO0wACHNlbGZUeXBldAAQTHhzYnRpL2FwaS9MYXp5O0wACXN0cnVjdHVyZXEAfgCbeHIAIXhzYnRpLmFwaS5QYXJhbWV0ZXJpemVkRGVmaW5pdGlvbvkRbrHVUDziAgABWwAOdHlwZVBhcmFtZXRlcnN0ABpbTHhzYnRpL2FwaS9UeXBlUGFyYW1ldGVyO3hyABR4c2J0aS5hcGkuRGVmaW5pdGlvbocqG+hxQuNGAgAETAAGYWNjZXNzdAASTHhzYnRpL2FwaS9BY2Nlc3M7WwALYW5ub3RhdGlvbnN0ABdbTHhzYnRpL2FwaS9Bbm5vdGF0aW9uO0wACW1vZGlmaWVyc3QAFUx4c2J0aS9hcGkvTW9kaWZpZXJzO0wABG5hbWVxAH4ADXhwc3IAEHhzYnRpLmFwaS5QdWJsaWO6WD2ubC1gQgIAAHhyABB4c2J0aS5hcGkuQWNjZXNz3WKa+B1jMUgCAAB4cHVyABdbTHhzYnRpLmFwaS5Bbm5vdGF0aW9uO+uX6xkQ9o1IAgAAeHAAAAAAc3IAE3hzYnRpLmFwaS5Nb2RpZmllcnPHERMhaZzcJAIAAUIABWZsYWdzeHAAdAAvZG9tYWluLmNsYXNzaWZpZXIuZXhjZXB0aW9uLkNsYXNzaWZpZXJFeGNlcHRpb251cgAaW0x4c2J0aS5hcGkuVHlwZVBhcmFtZXRlcjvZbSYPKJ3ytgIAAHhwAAAAAH5yABh4c2J0aS5hcGkuRGVmaW5pdGlvblR5cGUAAAAAAAAAABIAAHhyAA5qYXZhLmxhbmcuRW51bQAAAAAAAAAAEgAAeHB0AAhDbGFzc0RlZnVyABNbTGphdmEubGFuZy5TdHJpbmc7rdJW5+kde0cCAAB4cAAAAABzcgATeHNidGkuU2FmZUxhenkkSW1wbFACLpOXl0A/AgADWgAIYml0bWFwJDBMAAJfdHQAEkxqYXZhL2xhbmcvT2JqZWN0O0wABGV2YWx0ABFMc2NhbGEvRnVuY3Rpb24wO3hyABZ4c2J0aS5hcGkuQWJzdHJhY3RMYXp503e1AV+756ACAAB4cABwc3IAIHhzYnRpLlNhZmVMYXp5JCRhbm9uZnVuJHN0cmljdCQxAAAAAAAAAAACAAFMAAd2YWx1ZSQxcQB+ALR4cHNyABN4c2J0aS5hcGkuRW1wdHlUeXBlvP2eRkk7iSQCAAB4cgAUeHNidGkuYXBpLlNpbXBsZVR5cGVyeGKIISO/QAIAAHhyAA54c2J0aS5hcGkuVHlwZT9q2SEWSarKAgAAeHBzcQB+ALMAcHNxAH4AuHNyABN4c2J0aS5hcGkuU3RydWN0dXJlqar5gJNv2AACAANMAAhkZWNsYXJlZHEAfgCbTAAJaW5oZXJpdGVkcQB+AJtMAAdwYXJlbnRzcQB+AJt4cQB+ALxzcQB+ALMAcHNxAH4AuHVxAH4AlgAAAABzcQB+ALMAcHNxAH4AuHVxAH4AlgAAAABzcQB+ALMAcHNxAH4AuHVyABFbTHhzYnRpLmFwaS5UeXBlO3T/pVp7+elBAgAAeHAAAAAJc3IAFHhzYnRpLmFwaS5Qcm9qZWN0aW9u89KNVOlFpC0CAAJMAAJpZHEAfgANTAAGcHJlZml4dAAWTHhzYnRpL2FwaS9TaW1wbGVUeXBlO3hxAH4Au3QADFNlcmlhbGl6YWJsZXNyABN4c2J0aS5hcGkuU2luZ2xldG9u/Kdf+M9W5EYCAAFMAARwYXRodAAQTHhzYnRpL2FwaS9QYXRoO3hxAH4Au3NyAA54c2J0aS5hcGkuUGF0aJs9XAjOpSeEAgABWwAKY29tcG9uZW50c3QAGltMeHNidGkvYXBpL1BhdGhDb21wb25lbnQ7eHB1cgAaW0x4c2J0aS5hcGkuUGF0aENvbXBvbmVudDtD2gl0LWcWdAIAAHhwAAAAAnNyAAx4c2J0aS5hcGkuSWSYMmyLN1PEQAIAAUwAAmlkcQB+AA14cgAXeHNidGkuYXBpLlBhdGhDb21wb25lbnRfmiJbLoafvAIAAHhwdAAFc2NhbGFzcgAOeHNidGkuYXBpLlRoaXPbCe2mzFpAXAIAAHhxAH4A2XNxAH4AzHQAB1Byb2R1Y3RxAH4A0nNxAH4AzHQABkVxdWFsc3EAfgDSc3EAfgDMdAAMSVRBRXhjZXB0aW9uc3EAfgDQc3EAfgDTdXEAfgDWAAAAA3NxAH4A2HQABmRvbWFpbnNxAH4A2HQACWV4Y2VwdGlvbnEAfgDdc3EAfgDMdAAJRXhjZXB0aW9uc3EAfgDQc3EAfgDTdXEAfgDWAAAAA3NxAH4A2HQABGphdmFzcQB+ANh0AARsYW5ncQB+AN1zcQB+AMx0AAlUaHJvd2FibGVxAH4A7XNxAH4AzHEAfgDPc3EAfgDQc3EAfgDTdXEAfgDWAAAAA3NxAH4A2HEAfgDxc3EAfgDYdAACaW9xAH4A3XNxAH4AzHQABk9iamVjdHEAfgDtc3EAfgDMdAADQW55cQB+ANJzcQB+AJhxAH4ApXVxAH4ApgAAAABzcQB+AKgAdAAvZG9tYWluLmNsYXNzaWZpZXIuZXhjZXB0aW9uLkNsYXNzaWZpZXJFeGNlcHRpb251cQB+AKsAAAAAfnEAfgCtdAAGTW9kdWxldXEAfgCxAAAAAHNxAH4AswBwc3EAfgC4cQB+AL1zcQB+ALMAcHNxAH4AuHNxAH4AwHNxAH4AswBwc3EAfgC4dXEAfgCWAAAAAHNxAH4AswBwc3EAfgC4dXEAfgCWAAAAAHNxAH4AswBwc3EAfgC4dXEAfgDKAAAABHNxAH4AzHEAfgDPc3EAfgDQc3EAfgDTdXEAfgDWAAAAAnNxAH4A2HEAfgDbcQB+AN1zcQB+AMxxAH4Az3NxAH4A0HNxAH4A03VxAH4A1gAAAANzcQB+ANhxAH4A8XNxAH4A2HQAAmlvcQB+AN1zcQB+AMxxAH4A/nNxAH4A0HNxAH4A03VxAH4A1gAAAANzcQB+ANhxAH4A8XNxAH4A2HEAfgDzcQB+AN1zcQB+AMxxAH4BAHEAfgEYdXIAFFtMeHNidGkuYXBpLlBhY2thZ2U7WxMZN3CnJ6ECAAB4cAAAAANzcgAReHNidGkuYXBpLlBhY2thZ2V+WY/2rs45WAIAAUwABG5hbWVxAH4ADXhwdAARZG9tYWluLmNsYXNzaWZpZXJzcQB+ASx0ABtkb21haW4uY2xhc3NpZmllci5leGNlcHRpb25zcQB+ASx0AAZkb21haW5zcgAVeHNidGkuYXBpLkNvbXBpbGF0aW9u7frgw2rooEICAAJKAAlzdGFydFRpbWVbAAdvdXRwdXRzdAAaW0x4c2J0aS9hcGkvT3V0cHV0U2V0dGluZzt4cAAAAV48mMjBdXIAGltMeHNidGkuYXBpLk91dHB1dFNldHRpbmc7f2rC86eHpUICAAB4cAAAAAFzcgAXeHNidGkuYXBpLk91dHB1dFNldHRpbmd62ZpHdPsdewIAAkwAD291dHB1dERpcmVjdG9yeXEAfgANTAAPc291cmNlRGlyZWN0b3J5cQB+AA14cHQAQy9Vc2Vycy9taWtlbHd5cmVkL3RmbS9JVEEtU2VydmljZXMvZG9tYWluL3RhcmdldC9zY2FsYS0yLjExL2NsYXNzZXN0AAEvdXIAAltCrPMX+AYIVOACAAB4cAAAABTSs0agzKb3YbAL0SPsTF1QMIvY1g==
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/exception/ITAException.scala -> 
+rO0ABXNyABB4c2J0aS5hcGkuU291cmNlFlpwRASfbtoCAAZJAAdhcGlIYXNoWgAIaGFzTWFjcm9MABhfaW50ZXJuYWxPbmx5X25hbWVIYXNoZXN0ACRMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2hlcztMAANhcGl0ABVMeHNidGkvYXBpL1NvdXJjZUFQSTtMAAtjb21waWxhdGlvbnQAF0x4c2J0aS9hcGkvQ29tcGlsYXRpb247WwAEaGFzaHQAAltCeHA+K0Q8AHNyACJ4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaGVzVNq+mfrU7EwCAAJbAA9pbXBsaWNpdE1lbWJlcnN0ACNbTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoO1sADnJlZ3VsYXJNZW1iZXJzcQB+AAd4cHVyACNbTHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoO0lagLbdlov0AgAAeHAAAAAAdXEAfgAJAAAAJ3NyACB4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaFsO9SJ2OFfPAgACSQAEaGFzaEwABG5hbWV0ABJMamF2YS9sYW5nL1N0cmluZzt4cInbDth0AAZub3RpZnlzcQB+AAxgorPidAAPcHJpbnRTdGFja1RyYWNlc3EAfgAMAWioenQAE2dldExvY2FsaXplZE1lc3NhZ2VzcQB+AAxwCsFidAAEd2FpdHNxAH4ADP0ZC1d0AA0kYXNJbnN0YW5jZU9mc3EAfgAM0sK4n3QABmVxdWFsc3NxAH4ADLAH9Jl0ABBmaWxsSW5TdGFja1RyYWNlc3EAfgAMk4rIOHQACWluaXRDYXVzZXNxAH4ADH/gaIh0AAxhc0luc3RhbmNlT2ZzcQB+AAz38ThUdAAMc3luY2hyb25pemVkc3EAfgAMK/ojxHQADSRpc0luc3RhbmNlT2ZzcQB+AAxPrMe6dAAPYXBwbHkkZGVmYXVsdCQzc3EAfgAMwAf5VHQACGdldENhdXNlc3EAfgAMaAQHrHQACW5vdGlmeUFsbHNxAH4ADNeW85N0AAtyZWFkUmVzb2x2ZXNxAH4ADH7cRCV0AARjb2Rlc3EAfgAMlxX1nXQADGlzSW5zdGFuY2VPZnNxAH4ADDqCK450AA1nZXRTdGFja1RyYWNlc3EAfgAM0v5LanQAFGdldFN0YWNrVHJhY2VFbGVtZW50c3EAfgAMLAq353QACmdldE1lc3NhZ2VzcQB+AAwX61h7dAANc2V0U3RhY2tUcmFjZXNxAH4ADI1M2Nx0AAVhcHBseXNxAH4ADLweXsR0AA1nZXRTdXBwcmVzc2Vkc3EAfgAMB9IIAHQAAj09c3EAfgAMSlAvT3QAEmdldFN0YWNrVHJhY2VEZXB0aHNxAH4ADDbYfeh0AAVjbG9uZXNxAH4ADPkT16J0AA1hZGRTdXBwcmVzc2Vkc3EAfgAM29IBbXQABWNhdXNlc3EAfgAMBBcQd3QADElUQUV4Y2VwdGlvbnNxAH4ADKe4ZTl0AAYkaW5pdCRzcQB+AAxzlARHdAAHbWVzc2FnZXNxAH4ADBiZ6/p0AAh0b1N0cmluZ3NxAH4ADGJuu7Z0AAIhPXNxAH4ADCkTfd90AAhnZXRDbGFzc3NxAH4ADF1l5XV0AAJuZXNxAH4ADPL3Jsd0AAJlcXNxAH4ADCJ5OcF0AAIjI3NxAH4ADGAbY9F0AAhmaW5hbGl6ZXNxAH4ADJsWTQ10AAhoYXNoQ29kZXNyABN4c2J0aS5hcGkuU291cmNlQVBJuV6n+SkjOKQCAAJbAAtkZWZpbml0aW9uc3QAF1tMeHNidGkvYXBpL0RlZmluaXRpb247WwAIcGFja2FnZXN0ABRbTHhzYnRpL2FwaS9QYWNrYWdlO3hwdXIAF1tMeHNidGkuYXBpLkRlZmluaXRpb247iMlc57TjXg4CAAB4cAAAAAJzcgATeHNidGkuYXBpLkNsYXNzTGlrZYM0HKHfsJdsAgAETAAOZGVmaW5pdGlvblR5cGV0ABpMeHNidGkvYXBpL0RlZmluaXRpb25UeXBlO1sAEHNhdmVkQW5ub3RhdGlvbnN0ABNbTGphdmEvbGFuZy9TdHJpbmc7TAAIc2VsZlR5cGV0ABBMeHNidGkvYXBpL0xhenk7TAAJc3RydWN0dXJlcQB+AGV4cgAheHNidGkuYXBpLlBhcmFtZXRlcml6ZWREZWZpbml0aW9u+RFusdVQPOICAAFbAA50eXBlUGFyYW1ldGVyc3QAGltMeHNidGkvYXBpL1R5cGVQYXJhbWV0ZXI7eHIAFHhzYnRpLmFwaS5EZWZpbml0aW9uhyob6HFC40YCAARMAAZhY2Nlc3N0ABJMeHNidGkvYXBpL0FjY2VzcztbAAthbm5vdGF0aW9uc3QAF1tMeHNidGkvYXBpL0Fubm90YXRpb247TAAJbW9kaWZpZXJzdAAVTHhzYnRpL2FwaS9Nb2RpZmllcnM7TAAEbmFtZXEAfgANeHBzcgAQeHNidGkuYXBpLlB1YmxpY7pYPa5sLWBCAgAAeHIAEHhzYnRpLmFwaS5BY2Nlc3PdYpr4HWMxSAIAAHhwdXIAF1tMeHNidGkuYXBpLkFubm90YXRpb24765frGRD2jUgCAAB4cAAAAABzcgATeHNidGkuYXBpLk1vZGlmaWVyc8cREyFpnNwkAgABQgAFZmxhZ3N4cAF0AB1kb21haW4uZXhjZXB0aW9uLklUQUV4Y2VwdGlvbnVyABpbTHhzYnRpLmFwaS5UeXBlUGFyYW1ldGVyO9ltJg8onfK2AgAAeHAAAAAAfnIAGHhzYnRpLmFwaS5EZWZpbml0aW9uVHlwZQAAAAAAAAAAEgAAeHIADmphdmEubGFuZy5FbnVtAAAAAAAAAAASAAB4cHQABVRyYWl0dXIAE1tMamF2YS5sYW5nLlN0cmluZzut0lbn6R17RwIAAHhwAAAAAHNyABN4c2J0aS5TYWZlTGF6eSRJbXBsUAIuk5eXQD8CAANaAAhiaXRtYXAkMEwAAl90dAASTGphdmEvbGFuZy9PYmplY3Q7TAAEZXZhbHQAEUxzY2FsYS9GdW5jdGlvbjA7eHIAFnhzYnRpLmFwaS5BYnN0cmFjdExhennTd7UBX7vnoAIAAHhwAHBzcgAgeHNidGkuU2FmZUxhenkkJGFub25mdW4kc3RyaWN0JDEAAAAAAAAAAAIAAUwAB3ZhbHVlJDFxAH4Afnhwc3IAE3hzYnRpLmFwaS5FbXB0eVR5cGW8/Z5GSTuJJAIAAHhyABR4c2J0aS5hcGkuU2ltcGxlVHlwZXJ4YoghI79AAgAAeHIADnhzYnRpLmFwaS5UeXBlP2rZIRZJqsoCAAB4cHNxAH4AfQBwc3EAfgCCc3IAE3hzYnRpLmFwaS5TdHJ1Y3R1cmWpqvmAk2/YAAIAA0wACGRlY2xhcmVkcQB+AGVMAAlpbmhlcml0ZWRxAH4AZUwAB3BhcmVudHNxAH4AZXhxAH4AhnNxAH4AfQBwc3EAfgCCdXEAfgBgAAAAAHNxAH4AfQBwc3EAfgCCdXEAfgBgAAAAAHNxAH4AfQBwc3EAfgCCdXIAEVtMeHNidGkuYXBpLlR5cGU7dP+lWnv56UECAAB4cAAAAAVzcgAUeHNidGkuYXBpLlByb2plY3Rpb27z0o1U6UWkLQIAAkwAAmlkcQB+AA1MAAZwcmVmaXh0ABZMeHNidGkvYXBpL1NpbXBsZVR5cGU7eHEAfgCFdAAJRXhjZXB0aW9uc3IAE3hzYnRpLmFwaS5TaW5nbGV0b278p1/4z1bkRgIAAUwABHBhdGh0ABBMeHNidGkvYXBpL1BhdGg7eHEAfgCFc3IADnhzYnRpLmFwaS5QYXRomz1cCM6lJ4QCAAFbAApjb21wb25lbnRzdAAaW0x4c2J0aS9hcGkvUGF0aENvbXBvbmVudDt4cHVyABpbTHhzYnRpLmFwaS5QYXRoQ29tcG9uZW50O0PaCXQtZxZ0AgAAeHAAAAADc3IADHhzYnRpLmFwaS5JZJgybIs3U8RAAgABTAACaWRxAH4ADXhyABd4c2J0aS5hcGkuUGF0aENvbXBvbmVudF+aIlsuhp+8AgAAeHB0AARqYXZhc3EAfgCidAAEbGFuZ3NyAA54c2J0aS5hcGkuVGhpc9sJ7abMWkBcAgAAeHEAfgCjc3EAfgCWdAAJVGhyb3dhYmxlcQB+AJxzcQB+AJZ0AAxTZXJpYWxpemFibGVzcQB+AJpzcQB+AJ11cQB+AKAAAAADc3EAfgCicQB+AKVzcQB+AKJ0AAJpb3EAfgCpc3EAfgCWdAAGT2JqZWN0cQB+AJxzcQB+AJZ0AANBbnlzcQB+AJpzcQB+AJ11cQB+AKAAAAACc3EAfgCidAAFc2NhbGFxAH4AqXNxAH4AYnEAfgBvdXEAfgBwAAAAAHNxAH4AcgB0AB1kb21haW4uZXhjZXB0aW9uLklUQUV4Y2VwdGlvbnVxAH4AdQAAAAB+cQB+AHd0AAZNb2R1bGV1cQB+AHsAAAAAc3EAfgB9AHBzcQB+AIJxAH4Ah3NxAH4AfQBwc3EAfgCCc3EAfgCKc3EAfgB9AHBzcQB+AIJ1cQB+AGAAAAAAc3EAfgB9AHBzcQB+AIJ1cQB+AGAAAAAAc3EAfgB9AHBzcQB+AIJ1cQB+AJQAAAAEc3EAfgCWcQB+AK1zcQB+AJpzcQB+AJ11cQB+AKAAAAACc3EAfgCicQB+ALxxAH4AqXNxAH4AlnEAfgCtc3EAfgCac3EAfgCddXEAfgCgAAAAA3NxAH4AonEAfgClc3EAfgCidAACaW9xAH4AqXNxAH4AlnEAfgC1c3EAfgCac3EAfgCddXEAfgCgAAAAA3NxAH4AonEAfgClc3EAfgCicQB+AKdxAH4AqXNxAH4AlnEAfgC3cQB+ANR1cgAUW0x4c2J0aS5hcGkuUGFja2FnZTtbExk3cKcnoQIAAHhwAAAAAnNyABF4c2J0aS5hcGkuUGFja2FnZX5Zj/auzjlYAgABTAAEbmFtZXEAfgANeHB0ABBkb21haW4uZXhjZXB0aW9uc3EAfgDodAAGZG9tYWluc3IAFXhzYnRpLmFwaS5Db21waWxhdGlvbu364MNq6KBCAgACSgAJc3RhcnRUaW1lWwAHb3V0cHV0c3QAGltMeHNidGkvYXBpL091dHB1dFNldHRpbmc7eHAAAAFePJjIwXVyABpbTHhzYnRpLmFwaS5PdXRwdXRTZXR0aW5nO39qwvOnh6VCAgAAeHAAAAABc3IAF3hzYnRpLmFwaS5PdXRwdXRTZXR0aW5netmaR3T7HXsCAAJMAA9vdXRwdXREaXJlY3RvcnlxAH4ADUwAD3NvdXJjZURpcmVjdG9yeXEAfgANeHB0AEMvVXNlcnMvbWlrZWx3eXJlZC90Zm0vSVRBLVNlcnZpY2VzL2RvbWFpbi90YXJnZXQvc2NhbGEtMi4xMS9jbGFzc2VzdAABL3VyAAJbQqzzF/gGCFTgAgAAeHAAAAAUd8SuGnK+p/cY19FL/NH0xrZKudQ=
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/Model.scala -> 
+rO0ABXNyABB4c2J0aS5hcGkuU291cmNlFlpwRASfbtoCAAZJAAdhcGlIYXNoWgAIaGFzTWFjcm9MABhfaW50ZXJuYWxPbmx5X25hbWVIYXNoZXN0ACRMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2hlcztMAANhcGl0ABVMeHNidGkvYXBpL1NvdXJjZUFQSTtMAAtjb21waWxhdGlvbnQAF0x4c2J0aS9hcGkvQ29tcGlsYXRpb247WwAEaGFzaHQAAltCeHBVGkKaAHNyACJ4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaGVzVNq+mfrU7EwCAAJbAA9pbXBsaWNpdE1lbWJlcnN0ACNbTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoO1sADnJlZ3VsYXJNZW1iZXJzcQB+AAd4cHVyACNbTHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoO0lagLbdlov0AgAAeHAAAAACc3IAIHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoWw71InY4V88CAAJJAARoYXNoTAAEbmFtZXQAEkxqYXZhL2xhbmcvU3RyaW5nO3hwk8AFSnQADXBpY2tVcFN0YXRlSkZzcQB+AAvpB9V0dAAIcGlja1VwSkZ1cQB+AAkAAAAUc3EAfgAL4YImNnQABm5vdGlmeXNxAH4AC1aZDnl0AAR3YWl0c3EAfgALy6B3ZXQADSRhc0luc3RhbmNlT2ZzcQB+AAsWBhYddAAGZXF1YWxzc3EAfgALtmw6bXQADGFzSW5zdGFuY2VPZnNxAH4AC3kN8Ip0AAxzeW5jaHJvbml6ZWRzcQB+AAuiJFmpdAANJGlzSW5zdGFuY2VPZnNxAH4AC/UcYmR0AAlub3RpZnlBbGxzcQB+AAvzwIAddAAFTW9kZWxzcQB+AAu4r8WHdAAMaXNJbnN0YW5jZU9mc3EAfgAL6ydnVXQAAj09c3EAfgALqn8rcXQABWNsb25lc3EAfgALNlKRP3QACHRvU3RyaW5nc3EAfgALPGXmKnQAAiE9c3EAfgALy3LHt3QACGdldENsYXNzc3EAfgALgPu/ZHQAAm5lc3EAfgALYmJK8HQAAmVxc3EAfgAL2TDF8XQAAiMjc3EAfgALzyfHBXQACGZpbmFsaXplc3EAfgALojXGO3QACGhhc2hDb2Rlc3IAE3hzYnRpLmFwaS5Tb3VyY2VBUEm5Xqf5KSM4pAIAAlsAC2RlZmluaXRpb25zdAAXW0x4c2J0aS9hcGkvRGVmaW5pdGlvbjtbAAhwYWNrYWdlc3QAFFtMeHNidGkvYXBpL1BhY2thZ2U7eHB1cgAXW0x4c2J0aS5hcGkuRGVmaW5pdGlvbjuIyVzntONeDgIAAHhwAAAAAXNyABN4c2J0aS5hcGkuQ2xhc3NMaWtlgzQcod+wl2wCAARMAA5kZWZpbml0aW9uVHlwZXQAGkx4c2J0aS9hcGkvRGVmaW5pdGlvblR5cGU7WwAQc2F2ZWRBbm5vdGF0aW9uc3QAE1tMamF2YS9sYW5nL1N0cmluZztMAAhzZWxmVHlwZXQAEEx4c2J0aS9hcGkvTGF6eTtMAAlzdHJ1Y3R1cmVxAH4AQ3hyACF4c2J0aS5hcGkuUGFyYW1ldGVyaXplZERlZmluaXRpb275EW6x1VA84gIAAVsADnR5cGVQYXJhbWV0ZXJzdAAaW0x4c2J0aS9hcGkvVHlwZVBhcmFtZXRlcjt4cgAUeHNidGkuYXBpLkRlZmluaXRpb26HKhvocULjRgIABEwABmFjY2Vzc3QAEkx4c2J0aS9hcGkvQWNjZXNzO1sAC2Fubm90YXRpb25zdAAXW0x4c2J0aS9hcGkvQW5ub3RhdGlvbjtMAAltb2RpZmllcnN0ABVMeHNidGkvYXBpL01vZGlmaWVycztMAARuYW1lcQB+AAx4cHNyABB4c2J0aS5hcGkuUHVibGljulg9rmwtYEICAAB4cgAQeHNidGkuYXBpLkFjY2Vzc91imvgdYzFIAgAAeHB1cgAXW0x4c2J0aS5hcGkuQW5ub3RhdGlvbjvrl+sZEPaNSAIAAHhwAAAAAHNyABN4c2J0aS5hcGkuTW9kaWZpZXJzxxETIWmc3CQCAAFCAAVmbGFnc3hwAHQAFWRvbWFpbi5nYXRoZXJlci5Nb2RlbHVyABpbTHhzYnRpLmFwaS5UeXBlUGFyYW1ldGVyO9ltJg8onfK2AgAAeHAAAAAAfnIAGHhzYnRpLmFwaS5EZWZpbml0aW9uVHlwZQAAAAAAAAAAEgAAeHIADmphdmEubGFuZy5FbnVtAAAAAAAAAAASAAB4cHQABk1vZHVsZXVyABNbTGphdmEubGFuZy5TdHJpbmc7rdJW5+kde0cCAAB4cAAAAABzcgATeHNidGkuU2FmZUxhenkkSW1wbFACLpOXl0A/AgADWgAIYml0bWFwJDBMAAJfdHQAEkxqYXZhL2xhbmcvT2JqZWN0O0wABGV2YWx0ABFMc2NhbGEvRnVuY3Rpb24wO3hyABZ4c2J0aS5hcGkuQWJzdHJhY3RMYXp503e1AV+756ACAAB4cABwc3IAIHhzYnRpLlNhZmVMYXp5JCRhbm9uZnVuJHN0cmljdCQxAAAAAAAAAAACAAFMAAd2YWx1ZSQxcQB+AFx4cHNyABN4c2J0aS5hcGkuRW1wdHlUeXBlvP2eRkk7iSQCAAB4cgAUeHNidGkuYXBpLlNpbXBsZVR5cGVyeGKIISO/QAIAAHhyAA54c2J0aS5hcGkuVHlwZT9q2SEWSarKAgAAeHBzcQB+AFsAcHNxAH4AYHNyABN4c2J0aS5hcGkuU3RydWN0dXJlqar5gJNv2AACAANMAAhkZWNsYXJlZHEAfgBDTAAJaW5oZXJpdGVkcQB+AENMAAdwYXJlbnRzcQB+AEN4cQB+AGRzcQB+AFsAcHNxAH4AYHVxAH4APgAAAABzcQB+AFsAcHNxAH4AYHVxAH4APgAAAABzcQB+AFsAcHNxAH4AYHVyABFbTHhzYnRpLmFwaS5UeXBlO3T/pVp7+elBAgAAeHAAAAACc3IAFHhzYnRpLmFwaS5Qcm9qZWN0aW9u89KNVOlFpC0CAAJMAAJpZHEAfgAMTAAGcHJlZml4dAAWTHhzYnRpL2FwaS9TaW1wbGVUeXBlO3hxAH4AY3QABk9iamVjdHNyABN4c2J0aS5hcGkuU2luZ2xldG9u/Kdf+M9W5EYCAAFMAARwYXRodAAQTHhzYnRpL2FwaS9QYXRoO3hxAH4AY3NyAA54c2J0aS5hcGkuUGF0aJs9XAjOpSeEAgABWwAKY29tcG9uZW50c3QAGltMeHNidGkvYXBpL1BhdGhDb21wb25lbnQ7eHB1cgAaW0x4c2J0aS5hcGkuUGF0aENvbXBvbmVudDtD2gl0LWcWdAIAAHhwAAAAA3NyAAx4c2J0aS5hcGkuSWSYMmyLN1PEQAIAAUwAAmlkcQB+AAx4cgAXeHNidGkuYXBpLlBhdGhDb21wb25lbnRfmiJbLoafvAIAAHhwdAAEamF2YXNxAH4AgHQABGxhbmdzcgAOeHNidGkuYXBpLlRoaXPbCe2mzFpAXAIAAHhxAH4AgXNxAH4AdHQAA0FueXNxAH4AeHNxAH4Ae3VxAH4AfgAAAAJzcQB+AIB0AAVzY2FsYXEAfgCHdXIAFFtMeHNidGkuYXBpLlBhY2thZ2U7WxMZN3CnJ6ECAAB4cAAAAAJzcgAReHNidGkuYXBpLlBhY2thZ2V+WY/2rs45WAIAAUwABG5hbWVxAH4ADHhwdAAPZG9tYWluLmdhdGhlcmVyc3EAfgCRdAAGZG9tYWluc3IAFXhzYnRpLmFwaS5Db21waWxhdGlvbu364MNq6KBCAgACSgAJc3RhcnRUaW1lWwAHb3V0cHV0c3QAGltMeHNidGkvYXBpL091dHB1dFNldHRpbmc7eHAAAAFePJjIwXVyABpbTHhzYnRpLmFwaS5PdXRwdXRTZXR0aW5nO39qwvOnh6VCAgAAeHAAAAABc3IAF3hzYnRpLmFwaS5PdXRwdXRTZXR0aW5netmaR3T7HXsCAAJMAA9vdXRwdXREaXJlY3RvcnlxAH4ADEwAD3NvdXJjZURpcmVjdG9yeXEAfgAMeHB0AEMvVXNlcnMvbWlrZWx3eXJlZC90Zm0vSVRBLVNlcnZpY2VzL2RvbWFpbi90YXJnZXQvc2NhbGEtMi4xMS9jbGFzc2VzdAABL3VyAAJbQqzzF/gGCFTgAgAAeHAAAAAUBRFx1FoX2e7IPGGAFphwCGc1f7U=
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/PickUpState.scala -> 
+rO0ABXNyABB4c2J0aS5hcGkuU291cmNlFlpwRASfbtoCAAZJAAdhcGlIYXNoWgAIaGFzTWFjcm9MABhfaW50ZXJuYWxPbmx5X25hbWVIYXNoZXN0ACRMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2hlcztMAANhcGl0ABVMeHNidGkvYXBpL1NvdXJjZUFQSTtMAAtjb21waWxhdGlvbnQAF0x4c2J0aS9hcGkvQ29tcGlsYXRpb247WwAEaGFzaHQAAltCeHAsjAPuAHNyACJ4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaGVzVNq+mfrU7EwCAAJbAA9pbXBsaWNpdE1lbWJlcnN0ACNbTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoO1sADnJlZ3VsYXJNZW1iZXJzcQB+AAd4cHVyACNbTHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoO0lagLbdlov0AgAAeHAAAAAAdXEAfgAJAAAAIHNyACB4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaFsO9SJ2OFfPAgACSQAEaGFzaEwABG5hbWV0ABJMamF2YS9sYW5nL1N0cmluZzt4cN2FNnN0AAZub3RpZnlzcQB+AAwAbycFdAAEd2FpdHNxAH4ADF2Oikd0AAhGaW5pc2hlZHNxAH4ADLjVDvJ0AAdDcmVhdGVkc3EAfgAMB3RxeXQADSRhc0luc3RhbmNlT2ZzcQB+AAx+Wx5HdAAMcHJvZHVjdEFyaXR5c3EAfgAMKsntPnQACUluUHJvY2Vzc3NxAH4ADBk2ftp0AAZlcXVhbHNzcQB+AAwCTfTbdAAHU3RvcHBlZHNxAH4ADL1muaB0AAVSZWFkeXNxAH4ADOUAmAF0AAxhc0luc3RhbmNlT2ZzcQB+AAzRA4O/dAAMc3luY2hyb25pemVkc3EAfgAMAXZi13QADSRpc0luc3RhbmNlT2ZzcQB+AAyR9azAdAALUGlja1VwU3RhdGVzcQB+AAzluV6PdAAIY2FuRXF1YWxzcQB+AAzaos5rdAANcHJvZHVjdFByZWZpeHNxAH4ADFZ5SOZ0AAlub3RpZnlBbGxzcQB+AAy4bsi8dAALcmVhZFJlc29sdmVzcQB+AAzcqyJqdAAMaXNJbnN0YW5jZU9mc3EAfgAM4HlXwnQABjxpbml0PnNxAH4ADEpEPEB0AAI9PXNxAH4ADLPltfp0AAVjbG9uZXNxAH4ADHi0tRJ0AAh0b1N0cmluZ3NxAH4ADMzs/8t0AAIhPXNxAH4ADKG8Eih0AAhnZXRDbGFzc3NxAH4ADDGp7a10AAJuZXNxAH4ADFf72iZ0AAJlcXNxAH4ADLldmAd0AA9wcm9kdWN0SXRlcmF0b3JzcQB+AAz8VCvGdAACIyNzcQB+AAxA0cJqdAAIZmluYWxpemVzcQB+AAxE7yH/dAAOcHJvZHVjdEVsZW1lbnRzcQB+AAzNYTWzdAAIaGFzaENvZGVzcgATeHNidGkuYXBpLlNvdXJjZUFQSblep/kpIzikAgACWwALZGVmaW5pdGlvbnN0ABdbTHhzYnRpL2FwaS9EZWZpbml0aW9uO1sACHBhY2thZ2VzdAAUW0x4c2J0aS9hcGkvUGFja2FnZTt4cHVyABdbTHhzYnRpLmFwaS5EZWZpbml0aW9uO4jJXOe0414OAgAAeHAAAAAGc3IAE3hzYnRpLmFwaS5DbGFzc0xpa2WDNByh37CXbAIABEwADmRlZmluaXRpb25UeXBldAAaTHhzYnRpL2FwaS9EZWZpbml0aW9uVHlwZTtbABBzYXZlZEFubm90YXRpb25zdAATW0xqYXZhL2xhbmcvU3RyaW5nO0wACHNlbGZUeXBldAAQTHhzYnRpL2FwaS9MYXp5O0wACXN0cnVjdHVyZXEAfgBXeHIAIXhzYnRpLmFwaS5QYXJhbWV0ZXJpemVkRGVmaW5pdGlvbvkRbrHVUDziAgABWwAOdHlwZVBhcmFtZXRlcnN0ABpbTHhzYnRpL2FwaS9UeXBlUGFyYW1ldGVyO3hyABR4c2J0aS5hcGkuRGVmaW5pdGlvbocqG+hxQuNGAgAETAAGYWNjZXNzdAASTHhzYnRpL2FwaS9BY2Nlc3M7WwALYW5ub3RhdGlvbnN0ABdbTHhzYnRpL2FwaS9Bbm5vdGF0aW9uO0wACW1vZGlmaWVyc3QAFUx4c2J0aS9hcGkvTW9kaWZpZXJzO0wABG5hbWVxAH4ADXhwc3IAEHhzYnRpLmFwaS5QdWJsaWO6WD2ubC1gQgIAAHhyABB4c2J0aS5hcGkuQWNjZXNz3WKa+B1jMUgCAAB4cHVyABdbTHhzYnRpLmFwaS5Bbm5vdGF0aW9uO+uX6xkQ9o1IAgAAeHAAAAAAc3IAE3hzYnRpLmFwaS5Nb2RpZmllcnPHERMhaZzcJAIAAUIABWZsYWdzeHABdAAbZG9tYWluLmdhdGhlcmVyLlBpY2tVcFN0YXRldXIAGltMeHNidGkuYXBpLlR5cGVQYXJhbWV0ZXI72W0mDyid8rYCAAB4cAAAAAB+cgAYeHNidGkuYXBpLkRlZmluaXRpb25UeXBlAAAAAAAAAAASAAB4cgAOamF2YS5sYW5nLkVudW0AAAAAAAAAABIAAHhwdAAIQ2xhc3NEZWZ1cgATW0xqYXZhLmxhbmcuU3RyaW5nO63SVufpHXtHAgAAeHAAAAAAc3IAE3hzYnRpLlNhZmVMYXp5JEltcGxQAi6Tl5dAPwIAA1oACGJpdG1hcCQwTAACX3R0ABJMamF2YS9sYW5nL09iamVjdDtMAARldmFsdAARTHNjYWxhL0Z1bmN0aW9uMDt4cgAWeHNidGkuYXBpLkFic3RyYWN0TGF6edN3tQFfu+egAgAAeHAAcHNyACB4c2J0aS5TYWZlTGF6eSQkYW5vbmZ1biRzdHJpY3QkMQAAAAAAAAAAAgABTAAHdmFsdWUkMXEAfgBweHBzcgATeHNidGkuYXBpLkVtcHR5VHlwZbz9nkZJO4kkAgAAeHIAFHhzYnRpLmFwaS5TaW1wbGVUeXBlcnhiiCEjv0ACAAB4cgAOeHNidGkuYXBpLlR5cGU/atkhFkmqygIAAHhwc3EAfgBvAHBzcQB+AHRzcgATeHNidGkuYXBpLlN0cnVjdHVyZamq+YCTb9gAAgADTAAIZGVjbGFyZWRxAH4AV0wACWluaGVyaXRlZHEAfgBXTAAHcGFyZW50c3EAfgBXeHEAfgB4c3EAfgBvAHBzcQB+AHR1cQB+AFIAAAAAc3EAfgBvAHBzcQB+AHR1cQB+AFIAAAAAc3EAfgBvAHBzcQB+AHR1cgARW0x4c2J0aS5hcGkuVHlwZTt0/6Vae/npQQIAAHhwAAAAAnNyABR4c2J0aS5hcGkuUHJvamVjdGlvbvPSjVTpRaQtAgACTAACaWRxAH4ADUwABnByZWZpeHQAFkx4c2J0aS9hcGkvU2ltcGxlVHlwZTt4cQB+AHd0AAZPYmplY3RzcgATeHNidGkuYXBpLlNpbmdsZXRvbvynX/jPVuRGAgABTAAEcGF0aHQAEEx4c2J0aS9hcGkvUGF0aDt4cQB+AHdzcgAOeHNidGkuYXBpLlBhdGibPVwIzqUnhAIAAVsACmNvbXBvbmVudHN0ABpbTHhzYnRpL2FwaS9QYXRoQ29tcG9uZW50O3hwdXIAGltMeHNidGkuYXBpLlBhdGhDb21wb25lbnQ7Q9oJdC1nFnQCAAB4cAAAAANzcgAMeHNidGkuYXBpLklkmDJsizdTxEACAAFMAAJpZHEAfgANeHIAF3hzYnRpLmFwaS5QYXRoQ29tcG9uZW50X5oiWy6Gn7wCAAB4cHQABGphdmFzcQB+AJR0AARsYW5nc3IADnhzYnRpLmFwaS5UaGlz2wntpsxaQFwCAAB4cQB+AJVzcQB+AIh0AANBbnlzcQB+AIxzcQB+AI91cQB+AJIAAAACc3EAfgCUdAAFc2NhbGFxAH4Am3NxAH4AVHEAfgBhdXEAfgBiAAAAAHNxAH4AZAB0ABdkb21haW4uZ2F0aGVyZXIuQ3JlYXRlZHVxAH4AZwAAAAB+cQB+AGl0AAZNb2R1bGV1cQB+AG0AAAAAc3EAfgBvAHBzcQB+AHRxAH4AeXNxAH4AbwBwc3EAfgB0c3EAfgB8c3EAfgBvAHBzcQB+AHR1cQB+AFIAAAAAc3EAfgBvAHBzcQB+AHR1cQB+AFIAAAAAc3EAfgBvAHBzcQB+AHR1cQB+AIYAAAAHc3EAfgCIdAAMU2VyaWFsaXphYmxlc3EAfgCMc3EAfgCPdXEAfgCSAAAAAnNxAH4AlHEAfgCicQB+AJtzcQB+AIhxAH4AunNxAH4AjHNxAH4Aj3VxAH4AkgAAAANzcQB+AJRxAH4Al3NxAH4AlHQAAmlvcQB+AJtzcQB+AIh0AAdQcm9kdWN0cQB+ALtzcQB+AIh0AAZFcXVhbHNxAH4Au3NxAH4AiHQAC1BpY2tVcFN0YXRlc3EAfgCMc3EAfgCPdXEAfgCSAAAAA3NxAH4AlHQABmRvbWFpbnNxAH4AlHQACGdhdGhlcmVycQB+AJtzcQB+AIhxAH4Ai3NxAH4AjHNxAH4Aj3VxAH4AkgAAAANzcQB+AJRxAH4Al3NxAH4AlHEAfgCZcQB+AJtzcQB+AIhxAH4AnXEAfgC7c3EAfgBUcQB+AGF1cQB+AGIAAAAAc3EAfgBkAHQAFWRvbWFpbi5nYXRoZXJlci5SZWFkeXVxAH4AZwAAAABxAH4AqHVxAH4AbQAAAABzcQB+AG8AcHNxAH4AdHEAfgB5c3EAfgBvAHBzcQB+AHRzcQB+AHxzcQB+AG8AcHNxAH4AdHVxAH4AUgAAAABzcQB+AG8AcHNxAH4AdHVxAH4AUgAAAABzcQB+AG8AcHNxAH4AdHVxAH4AhgAAAAdzcQB+AIhxAH4AunNxAH4AjHNxAH4Aj3VxAH4AkgAAAAJzcQB+AJRxAH4AonEAfgCbc3EAfgCIcQB+ALpzcQB+AIxzcQB+AI91cQB+AJIAAAADc3EAfgCUcQB+AJdzcQB+AJR0AAJpb3EAfgCbc3EAfgCIcQB+AMdxAH4A73NxAH4AiHQABkVxdWFsc3EAfgDvc3EAfgCIdAALUGlja1VwU3RhdGVzcQB+AIxzcQB+AI91cQB+AJIAAAADc3EAfgCUdAAGZG9tYWluc3EAfgCUdAAIZ2F0aGVyZXJxAH4Am3NxAH4AiHEAfgCLc3EAfgCMc3EAfgCPdXEAfgCSAAAAA3NxAH4AlHEAfgCXc3EAfgCUcQB+AJlxAH4Am3NxAH4AiHEAfgCdcQB+AO9zcQB+AFRxAH4AYXVxAH4AYgAAAABzcQB+AGQAdAAZZG9tYWluLmdhdGhlcmVyLkluUHJvY2Vzc3VxAH4AZwAAAABxAH4AqHVxAH4AbQAAAABzcQB+AG8AcHNxAH4AdHEAfgB5c3EAfgBvAHBzcQB+AHRzcQB+AHxzcQB+AG8AcHNxAH4AdHVxAH4AUgAAAABzcQB+AG8AcHNxAH4AdHVxAH4AUgAAAABzcQB+AG8AcHNxAH4AdHVxAH4AhgAAAAdzcQB+AIhxAH4AunNxAH4AjHNxAH4Aj3VxAH4AkgAAAAJzcQB+AJRxAH4AonEAfgCbc3EAfgCIcQB+ALpzcQB+AIxzcQB+AI91cQB+AJIAAAADc3EAfgCUcQB+AJdzcQB+AJR0AAJpb3EAfgCbc3EAfgCIcQB+AMdxAH4BInNxAH4AiHQABkVxdWFsc3EAfgEic3EAfgCIdAALUGlja1VwU3RhdGVzcQB+AIxzcQB+AI91cQB+AJIAAAADc3EAfgCUdAAGZG9tYWluc3EAfgCUdAAIZ2F0aGVyZXJxAH4Am3NxAH4AiHEAfgCLc3EAfgCMc3EAfgCPdXEAfgCSAAAAA3NxAH4AlHEAfgCXc3EAfgCUcQB+AJlxAH4Am3NxAH4AiHEAfgCdcQB+ASJzcQB+AFRxAH4AYXVxAH4AYgAAAABzcQB+AGQAdAAXZG9tYWluLmdhdGhlcmVyLlN0b3BwZWR1cQB+AGcAAAAAcQB+AKh1cQB+AG0AAAAAc3EAfgBvAHBzcQB+AHRxAH4AeXNxAH4AbwBwc3EAfgB0c3EAfgB8c3EAfgBvAHBzcQB+AHR1cQB+AFIAAAAAc3EAfgBvAHBzcQB+AHR1cQB+AFIAAAAAc3EAfgBvAHBzcQB+AHR1cQB+AIYAAAAHc3EAfgCIcQB+ALpzcQB+AIxzcQB+AI91cQB+AJIAAAACc3EAfgCUcQB+AKJxAH4Am3NxAH4AiHEAfgC6c3EAfgCMc3EAfgCPdXEAfgCSAAAAA3NxAH4AlHEAfgCXc3EAfgCUdAACaW9xAH4Am3NxAH4AiHEAfgDHcQB+AVVzcQB+AIh0AAZFcXVhbHNxAH4BVXNxAH4AiHQAC1BpY2tVcFN0YXRlc3EAfgCMc3EAfgCPdXEAfgCSAAAAA3NxAH4AlHQABmRvbWFpbnNxAH4AlHQACGdhdGhlcmVycQB+AJtzcQB+AIhxAH4Ai3NxAH4AjHNxAH4Aj3VxAH4AkgAAAANzcQB+AJRxAH4Al3NxAH4AlHEAfgCZcQB+AJtzcQB+AIhxAH4AnXEAfgFVc3EAfgBUcQB+AGF1cQB+AGIAAAAAc3EAfgBkAHQAGGRvbWFpbi5nYXRoZXJlci5GaW5pc2hlZHVxAH4AZwAAAABxAH4AqHVxAH4AbQAAAABzcQB+AG8AcHNxAH4AdHEAfgB5c3EAfgBvAHBzcQB+AHRzcQB+AHxzcQB+AG8AcHNxAH4AdHVxAH4AUgAAAABzcQB+AG8AcHNxAH4AdHVxAH4AUgAAAABzcQB+AG8AcHNxAH4AdHVxAH4AhgAAAAdzcQB+AIhxAH4AunNxAH4AjHNxAH4Aj3VxAH4AkgAAAAJzcQB+AJRxAH4AonEAfgCbc3EAfgCIcQB+ALpzcQB+AIxzcQB+AI91cQB+AJIAAAADc3EAfgCUcQB+AJdzcQB+AJR0AAJpb3EAfgCbc3EAfgCIcQB+AMdxAH4BiHNxAH4AiHQABkVxdWFsc3EAfgGIc3EAfgCIdAALUGlja1VwU3RhdGVzcQB+AIxzcQB+AI91cQB+AJIAAAADc3EAfgCUdAAGZG9tYWluc3EAfgCUdAAIZ2F0aGVyZXJxAH4Am3NxAH4AiHEAfgCLc3EAfgCMc3EAfgCPdXEAfgCSAAAAA3NxAH4AlHEAfgCXc3EAfgCUcQB+AJlxAH4Am3NxAH4AiHEAfgCdcQB+AYh1cgAUW0x4c2J0aS5hcGkuUGFja2FnZTtbExk3cKcnoQIAAHhwAAAAAnNyABF4c2J0aS5hcGkuUGFja2FnZX5Zj/auzjlYAgABTAAEbmFtZXEAfgANeHB0AA9kb21haW4uZ2F0aGVyZXJzcQB+Aah0AAZkb21haW5zcgAVeHNidGkuYXBpLkNvbXBpbGF0aW9u7frgw2rooEICAAJKAAlzdGFydFRpbWVbAAdvdXRwdXRzdAAaW0x4c2J0aS9hcGkvT3V0cHV0U2V0dGluZzt4cAAAAV48mMjBdXIAGltMeHNidGkuYXBpLk91dHB1dFNldHRpbmc7f2rC86eHpUICAAB4cAAAAAFzcgAXeHNidGkuYXBpLk91dHB1dFNldHRpbmd62ZpHdPsdewIAAkwAD291dHB1dERpcmVjdG9yeXEAfgANTAAPc291cmNlRGlyZWN0b3J5cQB+AA14cHQAQy9Vc2Vycy9taWtlbHd5cmVkL3RmbS9JVEEtU2VydmljZXMvZG9tYWluL3RhcmdldC9zY2FsYS0yLjExL2NsYXNzZXN0AAEvdXIAAltCrPMX+AYIVOACAAB4cAAAABTlvYZ9IjzjH9lgS+uAyfrpbi+loA==
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/TweetPickup.scala -> 
+rO0ABXNyABB4c2J0aS5hcGkuU291cmNlFlpwRASfbtoCAAZJAAdhcGlIYXNoWgAIaGFzTWFjcm9MABhfaW50ZXJuYWxPbmx5X25hbWVIYXNoZXN0ACRMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2hlcztMAANhcGl0ABVMeHNidGkvYXBpL1NvdXJjZUFQSTtMAAtjb21waWxhdGlvbnQAF0x4c2J0aS9hcGkvQ29tcGlsYXRpb247WwAEaGFzaHQAAltCeHB7rXGhAHNyACJ4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaGVzVNq+mfrU7EwCAAJbAA9pbXBsaWNpdE1lbWJlcnN0ACNbTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoO1sADnJlZ3VsYXJNZW1iZXJzcQB+AAd4cHVyACNbTHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoO0lagLbdlov0AgAAeHAAAAAAdXEAfgAJAAAAKnNyACB4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaFsO9SJ2OFfPAgACSQAEaGFzaEwABG5hbWV0ABJMamF2YS9sYW5nL1N0cmluZzt4cHk++Np0AAduRW1vamlzc3EAfgAMznTZCXQABm5vdGlmeXNxAH4ADNdOSWh0AAZ0b3BpY3NzcQB+AAzW4t4GdAAEd2FpdHNxAH4ADMUoPzl0AA5jb3B5JGRlZmF1bHQkMnNxAH4ADCZhsYB0AA0kYXNJbnN0YW5jZU9mc3EAfgAMDQBwdHQADGNhbkJlQ3JlYXRlZHNxAH4ADCkmDCl0AA5jb3B5JGRlZmF1bHQkNXNxAH4ADAmC5RR0AAVzdGF0ZXNxAH4ADGgOUwd0AAduVHdlZXRzc3EAfgAMfn1ajXQADHByb2R1Y3RBcml0eXNxAH4ADGnfdPl0AAZlcXVhbHNzcQB+AAzsmYGRdAADX2lkc3EAfgAMTj8IaXQADGFzSW5zdGFuY2VPZnNxAH4ADD5/blV0AAxzeW5jaHJvbml6ZWRzcQB+AAyqwlWPdAANY2FuQmVGaW5pc2hlZHNxAH4ADMaPrjd0AA0kaXNJbnN0YW5jZU9mc3EAfgAMMvP0NnQADmNhbkJlQ29sbGVjdGVkc3EAfgAMh3kgknQACGNhbkVxdWFsc3EAfgAMVdJrKXQADmNvcHkkZGVmYXVsdCQ0c3EAfgAM4+OleHQADXByb2R1Y3RQcmVmaXhzcQB+AAyjhwJAdAAJbm90aWZ5QWxsc3EAfgAMd2i5KnQADGlzSW5zdGFuY2VPZnNxAH4ADDVTXqN0AAY8aW5pdD5zcQB+AAx7boAxdAACPT1zcQB+AAyUtKdbdAAFY2xvbmVzcQB+AAyKjTFxdAAOY29weSRkZWZhdWx0JDNzcQB+AAzPzEhudAAEY29weXNxAH4ADH8UEkd0AAh0b1N0cmluZ3NxAH4ADCTP+jp0AAIhPXNxAH4ADFB7PBN0AAhnZXRDbGFzc3NxAH4ADIsXcdJ0AA5jb3B5JGRlZmF1bHQkMXNxAH4ADDwTm1V0AA5jb3B5JGRlZmF1bHQkNnNxAH4ADLjk9VF0AAJuZXNxAH4ADBK6x1l0AAJlcXNxAH4ADGrdZeV0AA9wcm9kdWN0SXRlcmF0b3JzcQB+AAz4WnJYdAALVHdlZXRQaWNrVXBzcQB+AAxyd+LGdAACIyNzcQB+AAyiNWYkdAAIZmluYWxpemVzcQB+AAyQIHrQdAANY3VhbnRpdHlfd2FybnNxAH4ADCKzAD10AA5wcm9kdWN0RWxlbWVudHNxAH4ADF+dSqJ0AAhoYXNoQ29kZXNyABN4c2J0aS5hcGkuU291cmNlQVBJuV6n+SkjOKQCAAJbAAtkZWZpbml0aW9uc3QAF1tMeHNidGkvYXBpL0RlZmluaXRpb247WwAIcGFja2FnZXN0ABRbTHhzYnRpL2FwaS9QYWNrYWdlO3hwdXIAF1tMeHNidGkuYXBpLkRlZmluaXRpb247iMlc57TjXg4CAAB4cAAAAAFzcgATeHNidGkuYXBpLkNsYXNzTGlrZYM0HKHfsJdsAgAETAAOZGVmaW5pdGlvblR5cGV0ABpMeHNidGkvYXBpL0RlZmluaXRpb25UeXBlO1sAEHNhdmVkQW5ub3RhdGlvbnN0ABNbTGphdmEvbGFuZy9TdHJpbmc7TAAIc2VsZlR5cGV0ABBMeHNidGkvYXBpL0xhenk7TAAJc3RydWN0dXJlcQB+AGt4cgAheHNidGkuYXBpLlBhcmFtZXRlcml6ZWREZWZpbml0aW9u+RFusdVQPOICAAFbAA50eXBlUGFyYW1ldGVyc3QAGltMeHNidGkvYXBpL1R5cGVQYXJhbWV0ZXI7eHIAFHhzYnRpLmFwaS5EZWZpbml0aW9uhyob6HFC40YCAARMAAZhY2Nlc3N0ABJMeHNidGkvYXBpL0FjY2VzcztbAAthbm5vdGF0aW9uc3QAF1tMeHNidGkvYXBpL0Fubm90YXRpb247TAAJbW9kaWZpZXJzdAAVTHhzYnRpL2FwaS9Nb2RpZmllcnM7TAAEbmFtZXEAfgANeHBzcgAQeHNidGkuYXBpLlB1YmxpY7pYPa5sLWBCAgAAeHIAEHhzYnRpLmFwaS5BY2Nlc3PdYpr4HWMxSAIAAHhwdXIAF1tMeHNidGkuYXBpLkFubm90YXRpb24765frGRD2jUgCAAB4cAAAAABzcgATeHNidGkuYXBpLk1vZGlmaWVyc8cREyFpnNwkAgABQgAFZmxhZ3N4cAB0ABtkb21haW4uZ2F0aGVyZXIuVHdlZXRQaWNrVXB1cgAaW0x4c2J0aS5hcGkuVHlwZVBhcmFtZXRlcjvZbSYPKJ3ytgIAAHhwAAAAAH5yABh4c2J0aS5hcGkuRGVmaW5pdGlvblR5cGUAAAAAAAAAABIAAHhyAA5qYXZhLmxhbmcuRW51bQAAAAAAAAAAEgAAeHB0AAhDbGFzc0RlZnVyABNbTGphdmEubGFuZy5TdHJpbmc7rdJW5+kde0cCAAB4cAAAAABzcgATeHNidGkuU2FmZUxhenkkSW1wbFACLpOXl0A/AgADWgAIYml0bWFwJDBMAAJfdHQAEkxqYXZhL2xhbmcvT2JqZWN0O0wABGV2YWx0ABFMc2NhbGEvRnVuY3Rpb24wO3hyABZ4c2J0aS5hcGkuQWJzdHJhY3RMYXp503e1AV+756ACAAB4cABwc3IAIHhzYnRpLlNhZmVMYXp5JCRhbm9uZnVuJHN0cmljdCQxAAAAAAAAAAACAAFMAAd2YWx1ZSQxcQB+AIR4cHNyABN4c2J0aS5hcGkuRW1wdHlUeXBlvP2eRkk7iSQCAAB4cgAUeHNidGkuYXBpLlNpbXBsZVR5cGVyeGKIISO/QAIAAHhyAA54c2J0aS5hcGkuVHlwZT9q2SEWSarKAgAAeHBzcQB+AIMAcHNxAH4AiHNyABN4c2J0aS5hcGkuU3RydWN0dXJlqar5gJNv2AACAANMAAhkZWNsYXJlZHEAfgBrTAAJaW5oZXJpdGVkcQB+AGtMAAdwYXJlbnRzcQB+AGt4cQB+AIxzcQB+AIMAcHNxAH4AiHVxAH4AZgAAAABzcQB+AIMAcHNxAH4AiHVxAH4AZgAAAABzcQB+AIMAcHNxAH4AiHVyABFbTHhzYnRpLmFwaS5UeXBlO3T/pVp7+elBAgAAeHAAAAAGc3IAFHhzYnRpLmFwaS5Qcm9qZWN0aW9u89KNVOlFpC0CAAJMAAJpZHEAfgANTAAGcHJlZml4dAAWTHhzYnRpL2FwaS9TaW1wbGVUeXBlO3hxAH4Ai3QADFNlcmlhbGl6YWJsZXNyABN4c2J0aS5hcGkuU2luZ2xldG9u/Kdf+M9W5EYCAAFMAARwYXRodAAQTHhzYnRpL2FwaS9QYXRoO3hxAH4Ai3NyAA54c2J0aS5hcGkuUGF0aJs9XAjOpSeEAgABWwAKY29tcG9uZW50c3QAGltMeHNidGkvYXBpL1BhdGhDb21wb25lbnQ7eHB1cgAaW0x4c2J0aS5hcGkuUGF0aENvbXBvbmVudDtD2gl0LWcWdAIAAHhwAAAAAnNyAAx4c2J0aS5hcGkuSWSYMmyLN1PEQAIAAUwAAmlkcQB+AA14cgAXeHNidGkuYXBpLlBhdGhDb21wb25lbnRfmiJbLoafvAIAAHhwdAAFc2NhbGFzcgAOeHNidGkuYXBpLlRoaXPbCe2mzFpAXAIAAHhxAH4AqXNxAH4AnHEAfgCfc3EAfgCgc3EAfgCjdXEAfgCmAAAAA3NxAH4AqHQABGphdmFzcQB+AKh0AAJpb3EAfgCtc3EAfgCcdAAHUHJvZHVjdHEAfgCic3EAfgCcdAAGRXF1YWxzcQB+AKJzcQB+AJx0AAZPYmplY3RzcQB+AKBzcQB+AKN1cQB+AKYAAAADc3EAfgCocQB+ALNzcQB+AKh0AARsYW5ncQB+AK1zcQB+AJx0AANBbnlxAH4AonVyABRbTHhzYnRpLmFwaS5QYWNrYWdlO1sTGTdwpyehAgAAeHAAAAACc3IAEXhzYnRpLmFwaS5QYWNrYWdlflmP9q7OOVgCAAFMAARuYW1lcQB+AA14cHQAD2RvbWFpbi5nYXRoZXJlcnNxAH4AxnQABmRvbWFpbnNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABXjyYyMF1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5cQB+AA1MAA9zb3VyY2VEaXJlY3RvcnlxAH4ADXhwdABDL1VzZXJzL21pa2Vsd3lyZWQvdGZtL0lUQS1TZXJ2aWNlcy9kb21haW4vdGFyZ2V0L3NjYWxhLTIuMTEvY2xhc3Nlc3QAAS91cgACW0Ks8xf4BghU4AIAAHhwAAAAFDT40NTC15NIcFEb9yAAVxwmTEdA
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/exception/GathererException.scala -> 
+rO0ABXNyABB4c2J0aS5hcGkuU291cmNlFlpwRASfbtoCAAZJAAdhcGlIYXNoWgAIaGFzTWFjcm9MABhfaW50ZXJuYWxPbmx5X25hbWVIYXNoZXN0ACRMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2hlcztMAANhcGl0ABVMeHNidGkvYXBpL1NvdXJjZUFQSTtMAAtjb21waWxhdGlvbnQAF0x4c2J0aS9hcGkvQ29tcGlsYXRpb247WwAEaGFzaHQAAltCeHB2aBqZAHNyACJ4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaGVzVNq+mfrU7EwCAAJbAA9pbXBsaWNpdE1lbWJlcnN0ACNbTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoO1sADnJlZ3VsYXJNZW1iZXJzcQB+AAd4cHVyACNbTHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoO0lagLbdlov0AgAAeHAAAAAAdXEAfgAJAAAAOXNyACB4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaFsO9SJ2OFfPAgACSQAEaGFzaEwABG5hbWV0ABJMamF2YS9sYW5nL1N0cmluZzt4cAPSgMp0AAZub3RpZnlzcQB+AAy7KwDrdAAHdW5hcHBseXNxAH4ADFlE7U50AA9wcmludFN0YWNrVHJhY2VzcQB+AAwsVXRPdAATZ2V0TG9jYWxpemVkTWVzc2FnZXNxAH4ADCePAot0AAR3YWl0c3EAfgAMbzi6CXQADmNvcHkkZGVmYXVsdCQyc3EAfgAMT8HXz3QADSRhc0luc3RhbmNlT2ZzcQB+AAzrt8XJdAAMcHJvZHVjdEFyaXR5c3EAfgAM+NTB0XQABmVxdWFsc3NxAH4ADF45f2F0AClwaWNrVXBDb250cm9sbGVyQ3JlYXRlUGlja1VwQWxyZWFkeUNyZWF0ZXNxAH4ADGp8nEd0ABBmaWxsSW5TdGFja1RyYWNlc3EAfgAMHQHE0nQACWluaXRDYXVzZXNxAH4ADDB4tuV0AAxhc0luc3RhbmNlT2ZzcQB+AAxed7D1dAAMc3luY2hyb25pemVkc3EAfgAMm7eXVXQAK3BpY2tVcENvbnRyb2xsZXJDcmVhdGVQaWNrVXBFcnJvckNyZWF0aW5nREJzcQB+AAyL3RFjdAANJGlzSW5zdGFuY2VPZnNxAH4ADCc0TT10AA9hcHBseSRkZWZhdWx0JDNzcQB+AAwd9p19dAAIZ2V0Q2F1c2VzcQB+AAwBXo74dAApcGlja1VwQ29udHJvbGxlclVwZGF0ZVBpY2tVcEludGVybmFsRXJyb3JzcQB+AAwVTQ8VdAAIY2FuRXF1YWxzcQB+AAyta/YKdAAhcGlja1VwQ29udHJvbGxlckdldFBpY2tVcE5vdEZvdW5kc3EAfgAMbxLqJXQADXByb2R1Y3RQcmVmaXhzcQB+AAwywdQ5dAAJbm90aWZ5QWxsc3EAfgAM6g2V6HQAC3JlYWRSZXNvbHZlc3EAfgAMhTNWDHQABGNvZGVzcQB+AAwQRDzCdAAMaXNJbnN0YW5jZU9mc3EAfgAMe0Nz1XQADWdldFN0YWNrVHJhY2VzcQB+AAzQMavzdAAUZ2V0U3RhY2tUcmFjZUVsZW1lbnRzcQB+AAwZsde6dAAQPGluaXQ+JGRlZmF1bHQkM3NxAH4ADMKEXOZ0ABFHYXRoZXJlckV4Y2VwdGlvbnNxAH4ADOHyDLp0AC5waWNrVXBDb250cm9sbGVyQ3JlYXRlUGlja1VwRXJyb3JJbnRlcm5hbEVycm9yc3EAfgAMLrjBZHQABjxpbml0PnNxAH4ADHaD9xR0AAllcnJvckNvZGVzcQB+AAw/oln9dAAKZ2V0TWVzc2FnZXNxAH4ADNQiGSF0AA1zZXRTdGFja1RyYWNlc3EAfgAMck6s7XQABWFwcGx5c3EAfgAM8rzfCnQADWdldFN1cHByZXNzZWRzcQB+AAyefyNFdAACPT1zcQB+AAyyN1DhdAASZ2V0U3RhY2tUcmFjZURlcHRoc3EAfgAMLTuQQnQABWNsb25lc3EAfgAMAZmQU3QADWFkZFN1cHByZXNzZWRzcQB+AAwcJiREdAAFY2F1c2VzcQB+AAyodHQFdAAOY29weSRkZWZhdWx0JDNzcQB+AAzpUu7bdAAEY29weXNxAH4ADHo6vup0AAdtZXNzYWdlc3EAfgAMnqSU+3QACHRvU3RyaW5nc3EAfgAMyVCu9nQAJHBpY2tVcENvbnRyb2xsZXJVcGRhdGVQaWNrVXBOb3RGb3VuZHNxAH4ADETbv8p0AAIhPXNxAH4ADMqT4/p0AAhnZXRDbGFzc3NxAH4ADIfsorZ0AA5jb3B5JGRlZmF1bHQkMXNxAH4ADJUgX6J0AAJuZXNxAH4ADNUho1R0AAJlcXNxAH4ADKaIakZ0AA9wcm9kdWN0SXRlcmF0b3JzcQB+AAxQoi9hdAACIyNzcQB+AAy6XPaydAAIZmluYWxpemVzcQB+AAyHrTECdAAOcHJvZHVjdEVsZW1lbnRzcQB+AAwI4k4fdAAIaGFzaENvZGVzcgATeHNidGkuYXBpLlNvdXJjZUFQSblep/kpIzikAgACWwALZGVmaW5pdGlvbnN0ABdbTHhzYnRpL2FwaS9EZWZpbml0aW9uO1sACHBhY2thZ2VzdAAUW0x4c2J0aS9hcGkvUGFja2FnZTt4cHVyABdbTHhzYnRpLmFwaS5EZWZpbml0aW9uO4jJXOe0414OAgAAeHAAAAACc3IAE3hzYnRpLmFwaS5DbGFzc0xpa2WDNByh37CXbAIABEwADmRlZmluaXRpb25UeXBldAAaTHhzYnRpL2FwaS9EZWZpbml0aW9uVHlwZTtbABBzYXZlZEFubm90YXRpb25zdAATW0xqYXZhL2xhbmcvU3RyaW5nO0wACHNlbGZUeXBldAAQTHhzYnRpL2FwaS9MYXp5O0wACXN0cnVjdHVyZXEAfgCJeHIAIXhzYnRpLmFwaS5QYXJhbWV0ZXJpemVkRGVmaW5pdGlvbvkRbrHVUDziAgABWwAOdHlwZVBhcmFtZXRlcnN0ABpbTHhzYnRpL2FwaS9UeXBlUGFyYW1ldGVyO3hyABR4c2J0aS5hcGkuRGVmaW5pdGlvbocqG+hxQuNGAgAETAAGYWNjZXNzdAASTHhzYnRpL2FwaS9BY2Nlc3M7WwALYW5ub3RhdGlvbnN0ABdbTHhzYnRpL2FwaS9Bbm5vdGF0aW9uO0wACW1vZGlmaWVyc3QAFUx4c2J0aS9hcGkvTW9kaWZpZXJzO0wABG5hbWVxAH4ADXhwc3IAEHhzYnRpLmFwaS5QdWJsaWO6WD2ubC1gQgIAAHhyABB4c2J0aS5hcGkuQWNjZXNz3WKa+B1jMUgCAAB4cHVyABdbTHhzYnRpLmFwaS5Bbm5vdGF0aW9uO+uX6xkQ9o1IAgAAeHAAAAAAc3IAE3hzYnRpLmFwaS5Nb2RpZmllcnPHERMhaZzcJAIAAUIABWZsYWdzeHAAdAArZG9tYWluLmdhdGhlcmVyLmV4Y2VwdGlvbi5HYXRoZXJlckV4Y2VwdGlvbnVyABpbTHhzYnRpLmFwaS5UeXBlUGFyYW1ldGVyO9ltJg8onfK2AgAAeHAAAAAAfnIAGHhzYnRpLmFwaS5EZWZpbml0aW9uVHlwZQAAAAAAAAAAEgAAeHIADmphdmEubGFuZy5FbnVtAAAAAAAAAAASAAB4cHQACENsYXNzRGVmdXIAE1tMamF2YS5sYW5nLlN0cmluZzut0lbn6R17RwIAAHhwAAAAAHNyABN4c2J0aS5TYWZlTGF6eSRJbXBsUAIuk5eXQD8CAANaAAhiaXRtYXAkMEwAAl90dAASTGphdmEvbGFuZy9PYmplY3Q7TAAEZXZhbHQAEUxzY2FsYS9GdW5jdGlvbjA7eHIAFnhzYnRpLmFwaS5BYnN0cmFjdExhennTd7UBX7vnoAIAAHhwAHBzcgAgeHNidGkuU2FmZUxhenkkJGFub25mdW4kc3RyaWN0JDEAAAAAAAAAAAIAAUwAB3ZhbHVlJDFxAH4Aonhwc3IAE3hzYnRpLmFwaS5FbXB0eVR5cGW8/Z5GSTuJJAIAAHhyABR4c2J0aS5hcGkuU2ltcGxlVHlwZXJ4YoghI79AAgAAeHIADnhzYnRpLmFwaS5UeXBlP2rZIRZJqsoCAAB4cHNxAH4AoQBwc3EAfgCmc3IAE3hzYnRpLmFwaS5TdHJ1Y3R1cmWpqvmAk2/YAAIAA0wACGRlY2xhcmVkcQB+AIlMAAlpbmhlcml0ZWRxAH4AiUwAB3BhcmVudHNxAH4AiXhxAH4AqnNxAH4AoQBwc3EAfgCmdXEAfgCEAAAAAHNxAH4AoQBwc3EAfgCmdXEAfgCEAAAAAHNxAH4AoQBwc3EAfgCmdXIAEVtMeHNidGkuYXBpLlR5cGU7dP+lWnv56UECAAB4cAAAAAlzcgAUeHNidGkuYXBpLlByb2plY3Rpb27z0o1U6UWkLQIAAkwAAmlkcQB+AA1MAAZwcmVmaXh0ABZMeHNidGkvYXBpL1NpbXBsZVR5cGU7eHEAfgCpdAAMU2VyaWFsaXphYmxlc3IAE3hzYnRpLmFwaS5TaW5nbGV0b278p1/4z1bkRgIAAUwABHBhdGh0ABBMeHNidGkvYXBpL1BhdGg7eHEAfgCpc3IADnhzYnRpLmFwaS5QYXRomz1cCM6lJ4QCAAFbAApjb21wb25lbnRzdAAaW0x4c2J0aS9hcGkvUGF0aENvbXBvbmVudDt4cHVyABpbTHhzYnRpLmFwaS5QYXRoQ29tcG9uZW50O0PaCXQtZxZ0AgAAeHAAAAACc3IADHhzYnRpLmFwaS5JZJgybIs3U8RAAgABTAACaWRxAH4ADXhyABd4c2J0aS5hcGkuUGF0aENvbXBvbmVudF+aIlsuhp+8AgAAeHB0AAVzY2FsYXNyAA54c2J0aS5hcGkuVGhpc9sJ7abMWkBcAgAAeHEAfgDHc3EAfgC6dAAHUHJvZHVjdHEAfgDAc3EAfgC6dAAGRXF1YWxzcQB+AMBzcQB+ALp0AAxJVEFFeGNlcHRpb25zcQB+AL5zcQB+AMF1cQB+AMQAAAADc3EAfgDGdAAGZG9tYWluc3EAfgDGdAAJZXhjZXB0aW9ucQB+AMtzcQB+ALp0AAlFeGNlcHRpb25zcQB+AL5zcQB+AMF1cQB+AMQAAAADc3EAfgDGdAAEamF2YXNxAH4AxnQABGxhbmdxAH4Ay3NxAH4AunQACVRocm93YWJsZXEAfgDbc3EAfgC6cQB+AL1zcQB+AL5zcQB+AMF1cQB+AMQAAAADc3EAfgDGcQB+AN9zcQB+AMZ0AAJpb3EAfgDLc3EAfgC6dAAGT2JqZWN0cQB+ANtzcQB+ALp0AANBbnlxAH4AwHNxAH4AhnEAfgCTdXEAfgCUAAAAAHNxAH4AlgB0ACtkb21haW4uZ2F0aGVyZXIuZXhjZXB0aW9uLkdhdGhlcmVyRXhjZXB0aW9udXEAfgCZAAAAAH5xAH4Am3QABk1vZHVsZXVxAH4AnwAAAABzcQB+AKEAcHNxAH4ApnEAfgCrc3EAfgChAHBzcQB+AKZzcQB+AK5zcQB+AKEAcHNxAH4ApnVxAH4AhAAAAABzcQB+AKEAcHNxAH4ApnVxAH4AhAAAAABzcQB+AKEAcHNxAH4ApnVxAH4AuAAAAARzcQB+ALpxAH4AvXNxAH4AvnNxAH4AwXVxAH4AxAAAAAJzcQB+AMZxAH4AyXEAfgDLc3EAfgC6cQB+AL1zcQB+AL5zcQB+AMF1cQB+AMQAAAADc3EAfgDGcQB+AN9zcQB+AMZ0AAJpb3EAfgDLc3EAfgC6cQB+AOxzcQB+AL5zcQB+AMF1cQB+AMQAAAADc3EAfgDGcQB+AN9zcQB+AMZxAH4A4XEAfgDLc3EAfgC6cQB+AO5xAH4BBnVyABRbTHhzYnRpLmFwaS5QYWNrYWdlO1sTGTdwpyehAgAAeHAAAAADc3IAEXhzYnRpLmFwaS5QYWNrYWdlflmP9q7OOVgCAAFMAARuYW1lcQB+AA14cHQAGWRvbWFpbi5nYXRoZXJlci5leGNlcHRpb25zcQB+ARp0AA9kb21haW4uZ2F0aGVyZXJzcQB+ARp0AAZkb21haW5zcgAVeHNidGkuYXBpLkNvbXBpbGF0aW9u7frgw2rooEICAAJKAAlzdGFydFRpbWVbAAdvdXRwdXRzdAAaW0x4c2J0aS9hcGkvT3V0cHV0U2V0dGluZzt4cAAAAV48mMjBdXIAGltMeHNidGkuYXBpLk91dHB1dFNldHRpbmc7f2rC86eHpUICAAB4cAAAAAFzcgAXeHNidGkuYXBpLk91dHB1dFNldHRpbmd62ZpHdPsdewIAAkwAD291dHB1dERpcmVjdG9yeXEAfgANTAAPc291cmNlRGlyZWN0b3J5cQB+AA14cHQAQy9Vc2Vycy9taWtlbHd5cmVkL3RmbS9JVEEtU2VydmljZXMvZG9tYWluL3RhcmdldC9zY2FsYS0yLjExL2NsYXNzZXN0AAEvdXIAAltCrPMX+AYIVOACAAB4cAAAABRbYhEtVgbQw6cjq5/aBsBuYfULkg==
+external apis:
+0 items
+source infos:
+13 items
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Address.scala -> 
+AAAAAAAAAAA=
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Business.scala -> 
+AAAAAAAAAAA=
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Domain.scala -> 
+AAAAAAAAAAA=
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Employee.scala -> 
+AAAAAAAAAAA=
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Id.scala -> 
+AAAAAAAAAAA=
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/Model.scala -> 
+AAAAAAAAAAA=
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/TweetInfo.scala -> 
+AAAAAAAAAAA=
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/classifier/exception/ClassifierException.scala -> 
+AAAAAAAAAAA=
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/exception/ITAException.scala -> 
+AAAAAAAAAAA=
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/Model.scala -> 
+AAAAAAAAAAA=
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/PickUpState.scala -> 
+AAAAAAAAAAA=
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/TweetPickup.scala -> 
+AAAAAAAAAAA=
+/Users/mikelwyred/tfm/ITA-Services/domain/src/main/scala/domain/gatherer/exception/GathererException.scala -> 
+AAAAAAAAAAA=
+compilations:
+1 items
+0 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABXjyYyMF1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAQy9Vc2Vycy9taWtlbHd5cmVkL3RmbS9JVEEtU2VydmljZXMvZG9tYWluL3RhcmdldC9zY2FsYS0yLjExL2NsYXNzZXN0AAEv

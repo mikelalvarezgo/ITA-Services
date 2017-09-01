@@ -4,9 +4,6 @@ import domain.classifier.exception.ClassifierException
 import models.ModelData
 import org.apache.spark.{SparkConf, SparkContext}
 import results.ModelExecution
-
-
-
 import akka.actor.{ActorRef, ActorSystem, Props}
 import akka.util.Timeout
 import domain.Id
@@ -20,6 +17,7 @@ import utils.{ClassifierDataContext, Logger}
 import akka.pattern.ask
 import domain.Model._
 import mongo.DAOHelpers
+import routes.ModelExecutionPayload
 
 import scala.concurrent.Future
 import scala.util.Try
@@ -98,7 +96,7 @@ trait ClassifierController extends DAOHelpers
   }
 
 
-  def createExecution(execution: ModelExecution): Future[Id] = {
+  def createExecution(execution: ModelExecutionPayload): Future[Id] = {
     logger.info(s"Request for $execution arrived to controller")
     (for {
       _ <- Future(execution._id.foreach(aId =>
@@ -106,7 +104,7 @@ trait ClassifierController extends DAOHelpers
           classifierControllerCreateExecutionAlreadyCreate,
           "Error model already created!")))
       id <- Future(genObjectId())
-      _ <- Future(dataContext.executionDAO.create(execution.copy(_id = Some(id))).getOrElse(
+      _ <- Future(dataContext.executionDAO.create(execution.toExecution(id).copy(_id = Some(id))).getOrElse(
         throw ClassifierException(
           classifierControllerCreateModelAlreadyCreate,
           "Error execution already created!")))
@@ -129,7 +127,7 @@ trait ClassifierController extends DAOHelpers
       execution <- Future(dataContext.executionDAO.get(executionId).getOrElse(
         throw ClassifierException(
           classifierControllerTrainModelExecutionDoesNotExist,
-          "Error execution already created!")))
+          "Error execution not created!")))
       data <- execution.getModelResult()
       _ <- Future(dataContext.executionDAO.update(execution.copy(resultModel = Some(data), status = "trained")))
     } yield {

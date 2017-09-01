@@ -22,10 +22,10 @@ case class ModelExecution(
   _id: Option[Id],
   modelId: Id,
   topicId: Id,
-  nTweetsAnalize: Int,
   dateExecution: Long,
-  resultModel: Option[ModelResult],
-  status: String)//created, trained, runned
+  status: String,
+  resultModel: Option[ModelResult] =None
+)//created, trained, runned
  extends Config with Logger{
 
   def chargeModel(dataSet: RDD[TweetInfo])(implicit dataContext:ClassifierDataContext):ModelClassifier = {

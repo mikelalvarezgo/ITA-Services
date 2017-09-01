@@ -3,12 +3,14 @@ package mongo
 import com.mongodb.casbah.commons.MongoDBObject
 import domain.Id
 import domain.Model._
+
 import scala.util.Try
 import mongo._
 import mongo.DAOHelpers
 import mongo.Converters._
 import classifier.Model._
-
+import domain.gatherer.TweetPickUp
+import org.bson.types.ObjectId
 import results.ModelExecution
 case class ModelExecutionlDAO(
   mongoHost: String,
@@ -18,14 +20,14 @@ case class ModelExecutionlDAO(
   with DAOHelpers {
 
 
-  lazy val model_info = database("models")
+  lazy val exec_info = database("executions")
 
   override def getAll: Stream[ModelExecution] = {
-    model_info.find().toStream.map(to[ModelExecution].apply)
+    exec_info.find().toStream.map(to[ModelExecution].apply)
   }
 
   def create(stateAcc: ModelExecution): Try[Unit] = Try {
-    val bulk = model_info.initializeOrderedBulkOperation
+    val bulk = exec_info.initializeOrderedBulkOperation
     bulk.insert(dbObject[ModelExecution].apply(stateAcc))
     require(bulk.execute().isAcknowledged)
   }
@@ -40,14 +42,14 @@ case class ModelExecutionlDAO(
     }
 
   def remove(idAccount: Id): Try[Unit] = Try {
-    val bulk = model_info.initializeOrderedBulkOperation
-    bulk.find(MongoDBObject("id" -> idAccount.value)).remove()
+    val bulk = exec_info.initializeOrderedBulkOperation
+    bulk.find(MongoDBObject("_id" -> idAccount.value)).remove()
     require(bulk.execute().isAcknowledged)
   }
 
   def get(idAcc: Id): Try[ModelExecution] = Try {
-    model_info.findOne(MongoDBObject(
-      "id" -> idAcc.value)).toStream.map(to[ModelExecution].apply).head
+    exec_info.findOne(MongoDBObject(
+      "_id" -> new ObjectId(idAcc.value))).toStream.map(to[ModelExecution].apply).head
   }
 
   def get(
@@ -57,7 +59,7 @@ case class ModelExecutionlDAO(
     sortAsc: Option[Boolean]): Try[List[ModelExecution]] = ???
 
   def getLatest: Try[ModelExecution] = Try {
-    model_info.find()
+    exec_info.find()
       .sort(MongoDBObject("date" -> -1))
       .map(obj => to[ModelExecution].apply(obj))
       .toStream.head

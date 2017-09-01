@@ -14,7 +14,7 @@ import classifier.Model._
 import spray.httpx.SprayJsonSupport._
 import spray.routing._
 import models.ModelData
-
+import routes.ApiHelper._
 import scala.concurrent.ExecutionContext.Implicits.global
 import domain.Model.JFid
 import results.ModelExecution
@@ -60,7 +60,7 @@ class ApiActor(
           }
         }~
           post {
-            entity(as[ModelExecution]) { payload: ModelExecution =>
+            entity(as[ModelExecutionPayload]) { payload: ModelExecutionPayload =>
               complete(classifierController.createExecution(payload))
             }
           }

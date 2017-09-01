@@ -10,7 +10,8 @@ import results.ModelExecution
 import classifier.Model._
 
 import scala.util.Try
-import models.{ModelData}
+import models.ModelData
+import org.bson.types.ObjectId
 case class ModelDAO(
   mongoHost: String,
   mongoPort: Int,
@@ -42,13 +43,13 @@ case class ModelDAO(
 
   def remove(idAccount: Id): Try[Unit] = Try {
     val bulk = model_info.initializeOrderedBulkOperation
-    bulk.find(MongoDBObject("id" -> idAccount.value)).remove()
+    bulk.find(MongoDBObject("_id" -> idAccount.value)).remove()
     require(bulk.execute().isAcknowledged)
   }
 
   def get(idAcc: Id): Try[ModelData] = Try {
     model_info.findOne(MongoDBObject(
-      "id" -> idAcc.value)).toStream.map(to[ModelData].apply).head
+      "_id" -> new ObjectId(idAcc.value))).toStream.map(to[ModelData].apply).head
   }
 
   def get(

@@ -7,7 +7,7 @@ object Dependencies {
   val slf4jNop = "org.slf4j" % "slf4j-nop" % slf4jVersion
   val casbahV = "3.1.1"
   val sprayVersion = "1.3.2"
-  val sparkVersion = "1.2.1"
+  val sparkVersion = "2.2.0"
   val AkkaHttpVersion = "10.0.6"
 
   val commonDependencies: Seq[ModuleID] = Seq(
@@ -56,10 +56,10 @@ object Dependencies {
     "com.sksamuel.elastic4s" %% "elastic4s-testkit" % "1.7.0" % "test"
   )
   val classifierDependencies: Seq[ModuleID] = commonDependencies ++ Seq(
-    "org.mongodb.spark" % "mongo-spark-connector_2.11" % "2.2.0",
-    "org.apache.spark" % "spark-sql_2.11" % "2.2.0",
-    "org.apache.spark" % "spark-sql_2.11" % "2.2.0",
-    "org.apache.spark" %% "spark-mllib" % "2.2.0",
+    "org.mongodb.spark" % "mongo-spark-connector_2.11" % sparkVersion,
+    "org.apache.spark" % "spark-sql_2.11" % sparkVersion,
+    "org.apache.spark" % "spark-sql_2.11" % sparkVersion,
+    "org.apache.spark" %% "spark-mllib" % "sparkVersion",
     "org.apache.spark" %% "spark-core" % sparkVersion,
     "edu.stanford.nlp" % "stanford-corenlp" % "3.6.0",
     "org.apache.opennlp" % "opennlp-tools" % "1.6.0",

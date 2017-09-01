@@ -7,8 +7,10 @@ import mongo.DAOHelpers
 import mongo.Converters._
 import results.ModelExecution
 import results.TweetResult
-
 import classifier.Model._
+import models.ModelData
+import org.bson.types.ObjectId
+
 import scala.util.Try
 case class TweetResultDAO(
   mongoHost: String,
@@ -18,7 +20,7 @@ case class TweetResultDAO(
   with DAOHelpers {
 
 
-  lazy val model_info = database("models")
+  lazy val model_info = database("tweet_results")
 
   override def getAll: Stream[TweetResult] = {
     model_info.find().toStream.map(to[TweetResult].apply)
@@ -41,13 +43,13 @@ case class TweetResultDAO(
 
   def remove(idAccount: Id): Try[Unit] = Try {
     val bulk = model_info.initializeOrderedBulkOperation
-    bulk.find(MongoDBObject("id" -> idAccount.value)).remove()
+    bulk.find(MongoDBObject("_id" -> idAccount.value)).remove()
     require(bulk.execute().isAcknowledged)
   }
 
   def get(idAcc: Id): Try[TweetResult] = Try {
     model_info.findOne(MongoDBObject(
-      "id" -> idAcc.value)).toStream.map(to[TweetResult].apply).head
+      "_id" -> new ObjectId(idAcc.value))).toStream.map(to[TweetResult].apply).head
   }
 
   def get(
