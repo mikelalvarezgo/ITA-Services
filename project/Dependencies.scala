@@ -9,6 +9,7 @@ object Dependencies {
   val sprayVersion = "1.3.2"
   val sparkVersion = "2.2.0"
   val AkkaHttpVersion = "10.0.6"
+  val akkaActorVersion = "2.4.19"
 
   val commonDependencies: Seq[ModuleID] = Seq(
     "com.lightbend" %% "emoji" % "1.1.1",
@@ -17,17 +18,17 @@ object Dependencies {
     "com.typesafe" % "config" % "1.3.1",
     "org.scalaz" %% "scalaz-core" % "7.2.0",
     "org.scalaz" %% "scalaz-scalacheck-binding" % "7.2.0",
-    "com.typesafe.akka" %% "akka-actor" % "2.3.2",
+    "com.typesafe.akka" %% "akka-actor" % akkaActorVersion,
     "com.etaty.rediscala" %% "rediscala" % "1.3.1",
     "org.scalactic" %% "scalactic" % "3.0.1",
     "org.scalatest" % "scalatest_2.11" % "3.0.1",
     "io.spray" %% "spray-client" % "1.3.3",
     "org.apache.spark" %% "spark-core" % sparkVersion,
     "org.apache.spark" %% "spark-streaming" % sparkVersion,
-    "org.apache.spark" %% "spark-streaming-twitter" % sparkVersion,
-    "com.typesafe.akka" % "akka-http-experimental_2.11" % "2.4.11",
+    "com.typesafe.akka" % "akka-http-experimental_2.11" % "2.4.10",
     "org.slf4j" % "slf4j-simple" % "1.7.5",
-    "org.mongodb" %% "casbah-commons" % casbahV,
+    "org.apache.spark" % "spark-streaming-twitter_2.10" % "1.6.2",
+  "org.mongodb" %% "casbah-commons" % casbahV,
     "org.mongodb" %% "casbah-core" % casbahV,
     "org.mongodb" %% "casbah-query" % casbahV,
     "io.spray" %% "spray-can" % sprayVersion,
@@ -49,23 +50,20 @@ object Dependencies {
   val domainDependencies: Seq[ModuleID] = commonDependencies
   val clientDependencies: Seq[ModuleID] = commonDependencies
   val gathererDependencies: Seq[ModuleID] = commonDependencies ++ Seq(
-    "org.apache.spark" %% "spark-core" % sparkVersion,
-    "org.apache.spark" %% "spark-streaming" % sparkVersion,
-    "org.apache.spark" %% "spark-streaming-twitter" % sparkVersion,
+    "org.twitter4j" % "twitter4j-core" % "4.0.6",
     "com.sksamuel.elastic4s" %% "elastic4s-core" % "1.7.0",
     "com.sksamuel.elastic4s" %% "elastic4s-testkit" % "1.7.0" % "test"
   )
   val classifierDependencies: Seq[ModuleID] = commonDependencies ++ Seq(
-    "org.mongodb.spark" % "mongo-spark-connector_2.11" % sparkVersion,
+    "org.mongodb.spark" % "mongo-spark-connector_2.11" % "2.2.0",
     "org.apache.spark" % "spark-sql_2.11" % sparkVersion,
     "org.apache.spark" % "spark-sql_2.11" % sparkVersion,
-    "org.apache.spark" %% "spark-mllib" % "sparkVersion",
+    "org.apache.spark" %% "spark-mllib" % sparkVersion,
     "org.apache.spark" %% "spark-core" % sparkVersion,
     "edu.stanford.nlp" % "stanford-corenlp" % "3.6.0",
     "org.apache.opennlp" % "opennlp-tools" % "1.6.0",
     "org.apache.opennlp" % "opennlp-uima" % "1.6.0",
     "org.apache.spark" %% "spark-streaming" % sparkVersion,
-    "org.apache.spark" %% "spark-streaming-twitter" % sparkVersion,
     "com.sksamuel.elastic4s" %% "elastic4s-core" % "1.7.0",
     "com.sksamuel.elastic4s" %% "elastic4s-testkit" % "1.7.0" % "test"
   )

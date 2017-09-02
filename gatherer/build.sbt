@@ -1,3 +1,3 @@
 name := MyBuild.NamePrefix + "search"
 
-mainClass in (Compile, run) := Some("search.SearchMain")
+mainClass in (Compile, run) := Some("GatheringService")

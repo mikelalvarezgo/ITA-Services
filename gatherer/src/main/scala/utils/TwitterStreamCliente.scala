@@ -104,6 +104,16 @@ with TwitterCredentials{
     override def onTrackLimitationNotice(numberOfLimitedStatuses: Int) = {}
 
     override def onException(ex: Exception) = {}
+
+    override def onUserDeletion(deletedUser: Long): Unit = {}
+
+    override def onRetweetedRetweet(source: User, target: User, retweetedStatus: Status): Unit = {}
+
+    override def onFavoritedRetweet(source: User, target: User, favoritedRetweeet: Status): Unit = {}
+
+    override def onQuotedTweet(source: User, target: User, quotingTweet: Status): Unit = {}
+
+    override def onUserSuspension(suspendedUser: Long): Unit = {}
   }
 
   def stop = {

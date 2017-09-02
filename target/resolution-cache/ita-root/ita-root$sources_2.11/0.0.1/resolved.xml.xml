@@ -4,7 +4,7 @@
 		module="ita-root$sources_2.11"
 		revision="0.0.1"
 		status="integration"
-		publication="20170901201208"
+		publication="20170902134107"
 	/>
 	<configurations>
 		<conf name="compile" visibility="public" description=""/>
@@ -24,13 +24,13 @@
 	<publications>
 	</publications>
 	<dependencies>
-		<dependency org="org.scala-lang" name="scala-library" rev="2.11.8" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile);scala-tool->default(compile)" info.apiURL="http://www.scala-lang.org/api/2.11.8/">
+		<dependency org="org.scala-lang" name="scala-library" rev="2.11.7" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile);scala-tool->default(compile)" info.apiURL="http://www.scala-lang.org/api/2.11.7/">
 			<artifact name="scala-library" type="src" ext="jar" conf="sources" e:classifier="sources"/>
 		</dependency>
-		<dependency org="org.scala-lang" name="scala-compiler" rev="2.11.8" transitive="false" conf="scala-tool->default(compile)">
+		<dependency org="org.scala-lang" name="scala-compiler" rev="2.11.7" transitive="false" conf="scala-tool->default(compile)">
 			<artifact name="scala-compiler" type="src" ext="jar" conf="sources" e:classifier="sources"/>
 		</dependency>
-		<dependency org="org.scala-lang" name="scala-reflect" rev="2.11.8" transitive="false" conf="scala-tool->default(compile)" info.apiURL="http://www.scala-lang.org/api/2.11.8/">
+		<dependency org="org.scala-lang" name="scala-reflect" rev="2.11.7" transitive="false" conf="scala-tool->default(compile)" info.apiURL="http://www.scala-lang.org/api/2.11.7/">
 			<artifact name="scala-reflect" type="src" ext="jar" conf="sources" e:classifier="sources"/>
 		</dependency>
 		<dependency org="org.scala-lang.modules" name="scala-xml_2.11" rev="1.0.4" transitive="false" conf="scala-tool->default(compile)">
@@ -42,8 +42,8 @@
 		<dependency org="jline" name="jline" rev="2.12.1" transitive="false" conf="scala-tool->default(compile)">
 			<artifact name="jline" type="src" ext="jar" conf="sources" e:classifier="sources"/>
 		</dependency>
-		<override org="org.scala-lang" module="scala-library" matcher="exact" rev="2.11.8"/>
-		<override org="org.scala-lang" module="scala-compiler" matcher="exact" rev="2.11.8"/>
-		<override org="org.scala-lang" module="scala-reflect" matcher="exact" rev="2.11.8"/>
+		<override org="org.scala-lang" module="scala-library" matcher="exact" rev="2.11.7"/>
+		<override org="org.scala-lang" module="scala-compiler" matcher="exact" rev="2.11.7"/>
+		<override org="org.scala-lang" module="scala-reflect" matcher="exact" rev="2.11.7"/>
 	</dependencies>
 </ivy-module>

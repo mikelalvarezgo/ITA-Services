@@ -132,10 +132,19 @@ case class ModelExecution(
   }
 
   def extractData()(implicit sc:SparkContext):RDD[TweetInfo] ={
-
-    val readConfig = ReadConfig(Map("uri" -> "mongodb://127.0.0.1/", "database" -> "test", "collection" -> "zips")) // 1)
-    sc.loadFromMongoDB(readConfig).filter(tw =>
+    import com.mongodb.spark.config._
+    val db = config.getString("mongodb.name")
+    val data = Array(1, 2, 3, 4, 5)
+    val distData = sc.parallelize(data)
+    val n = distData.count()
+    val readConfig = ReadConfig(Map(
+      "uri" -> "mongodb://127.0.0.1",
+      "database" -> db,
+      "collection" -> "tweets")) // 1)
+    val rdd =MongoSpark.load(sc, readConfig).filter(tw =>
       tw.get[Id]("topic", classOf[Id]) == topicId).map(doc => doc.asInstanceOf[TweetInfo]) // 2)
+    val a = rdd.count()
+    rdd
   }
 
 }

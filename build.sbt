@@ -1,8 +1,8 @@
 name := MyBuild.NamePrefix + "root"
 
 version := "0.0.1"
-
-scalaVersion := "2.11.8"
+javacOptions ++= Seq("-source", "1.8", "-target", "1.8")
+scalaVersion := "2.11.7"
 ivyScala := ivyScala.value map { _.copy(overrideScalaVersion = true) }
 lazy val common = project.
   dependsOn(domain).
