@@ -1,6 +1,5 @@
 package domain
 
-import com.fasterxml.jackson.annotation.JsonValue
 import spray.json.DefaultJsonProtocol.{jsonFormat2, jsonFormat9}
 import spray.json._
 import spray.json.DefaultJsonProtocol._

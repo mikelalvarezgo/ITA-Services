@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Vendor: com.github.inthenow
+Implementation-Title: platform
+Implementation-Version: 0.0.1
+Implementation-Vendor-Id: com.github.inthenow
+Specification-Vendor: com.github.inthenow
+Specification-Title: platform
+Implementation-URL: https://github.com/InTheNow/scala-bricks
+Specification-Version: 0.0.1
+

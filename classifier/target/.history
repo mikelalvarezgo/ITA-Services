@@ -15,3 +15,16 @@ run
 exit
 run
 run 
+run
+project client
+run
+artefact
+artifact
+assembly
+artifact
+assembly
+clean
+assembly
+clean
+assembly
+ls

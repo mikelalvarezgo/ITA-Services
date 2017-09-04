@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Title: free
+Implementation-Version: 0.3.0
+Specification-Vendor: org.spire-math
+Specification-Title: free
+Implementation-Vendor-Id: org.spire-math
+Specification-Version: 0.3.0
+Implementation-URL: https://github.com/non/cats
+Implementation-Vendor: org.spire-math
+

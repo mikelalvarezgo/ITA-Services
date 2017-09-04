@@ -30,7 +30,7 @@ object ClassifierService  extends App
   implicit val system = ActorSystem("classifier-service")
   val execService: ExecutorService = Executors.newCachedThreadPool()
   // val sourceTweets  = Source.actorPublisher[TweetInfo](,TweetInfo))
-  implicit val conf = new SparkConf().setMaster("local").setAppName(sparkAppNme)
+  implicit val conf = new SparkConf().setMaster("local[2]").setAppName(sparkAppNme)
   implicit val sc = new SparkContext("local", "sparkAppNme")
   implicit val dataContext:ClassifierDataContext =ClassifierDataContext.chargeFromConfig()
   implicit val executionContext = system.dispatcher

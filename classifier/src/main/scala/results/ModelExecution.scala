@@ -1,6 +1,6 @@
 package results
 
-import domain.{Id, TweetInfo}
+import domain.{Id, Location, TweetInfo}
 import org.apache.spark.rdd.RDD
 import org.apache.spark.{SparkConf, SparkContext}
 import com.mongodb.spark._
@@ -15,9 +15,17 @@ import utils.{ClassifierDataContext, Config, Logger}
 import domain.classifier.exception.ClassifierException
 import domain.classifier.exception.ClassifierException._
 import models.ModelConverter.modelConverter
+
 import scala.concurrent.ExecutionContext.Implicits.global
+import domain.Model._
+import classifier.Model._
+import org.apache.spark.mllib.tree.model.GradientBoostedTreesModel
 
 import scala.concurrent.Future
+import scala.util.Try
+
+
+
 case class ModelExecution(
   _id: Option[Id],
   modelId: Id,
@@ -112,7 +120,8 @@ case class ModelExecution(
       case BOOSTING =>
         val boostModel = model.asInstanceOf[GradientBoostingClassifier]
         val partition = boostModel.prepareModel()(sc)
-        val modelTrained = boostModel.trainModel(partition)(sc)
+        val pathModels = config.getString("models.path") +s"gradient_${boostModel._id.value}"
+        val modelTrained = GradientBoostedTreesModel.load(sc, pathModels)
         val modelResult =
           boostModel.runModel(modelTrained,this._id.get,topicId,partition)(sc)
         Future(modelResult.collect().toList)
@@ -131,19 +140,36 @@ case class ModelExecution(
     }
   }
 
+
   def extractData()(implicit sc:SparkContext):RDD[TweetInfo] ={
+    def parseDocument(doc:Document):TweetInfo ={
+      val id = Some(Id(doc.getObjectId("_id").toHexString))
+      val tweetId = doc.getLong("tweet_id")
+      val createdAt = doc.getLong("createdAt")
+      val latitude = None
+      val t_user_id = Try{
+        doc.getInteger("user_id")
+      }.toOption
+      val user_id = t_user_id.map(_.toLong).getOrElse(doc.getLong("user_id").toLong)
+      val user_name = doc.getString("user_name")
+      val user_followers = doc.getInteger("user_followers")
+      val tweetText = doc.getString("tweetText")
+      val lenguage = doc.getString("lenguage")
+      val contain_emoji = doc.getBoolean("contain_emoji")
+      val topic = Id(doc.getObjectId("topic").toHexString)
+      TweetInfo(id,tweetId,createdAt,latitude,user_id,user_name,user_followers,tweetText,lenguage,contain_emoji,topic)
+    }
     import com.mongodb.spark.config._
     val db = config.getString("mongodb.name")
-    val data = Array(1, 2, 3, 4, 5)
-    val distData = sc.parallelize(data)
-    val n = distData.count()
+
     val readConfig = ReadConfig(Map(
       "uri" -> "mongodb://127.0.0.1",
       "database" -> db,
       "collection" -> "tweets")) // 1)
-    val rdd =MongoSpark.load(sc, readConfig).filter(tw =>
-      tw.get[Id]("topic", classOf[Id]) == topicId).map(doc => doc.asInstanceOf[TweetInfo]) // 2)
-    val a = rdd.count()
+    val rdd =MongoSpark.load(sc, readConfig)
+        .filter(doc => doc.getObjectId("topic").toHexString == topicId.value)
+      .map(doc => parseDocument(doc))// 2)
+    val a = rdd.take(1)
     rdd
   }
 

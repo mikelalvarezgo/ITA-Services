@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Implementation-Title: elastic4s-core
+Implementation-Version: 1.7.0
+Specification-Vendor: com.sksamuel.elastic4s
+Specification-Title: elastic4s-core
+Implementation-Vendor-Id: com.sksamuel.elastic4s
+Specification-Version: 1.7.0
+Implementation-Vendor: com.sksamuel.elastic4s
+

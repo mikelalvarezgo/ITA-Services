@@ -1,4 +1,6 @@
-sbt.ResolveException: unresolved dependency: org.twitter4j#twitter4j-core_2.11;4.0.1: not found
+sbt.ResolveException: unresolved dependency: com.lightbend#emoji_2.10;1.1.1: not found
+unresolved dependency: com.typesafe.akka#akka-http-experimental_2.10;2.4.10: not found
+unresolved dependency: com.typesafe.akka#akka-http-spray-json-experimental_2.10;2.4.4: not found
 	at sbt.IvyActions$.sbt$IvyActions$$resolve(IvyActions.scala:291)
 	at sbt.IvyActions$$anonfun$updateEither$1.apply(IvyActions.scala:188)
 	at sbt.IvyActions$$anonfun$updateEither$1.apply(IvyActions.scala:165)
@@ -49,4 +51,6 @@ sbt.ResolveException: unresolved dependency: org.twitter4j#twitter4j-core_2.11;4
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
 	at java.lang.Thread.run(Thread.java:745)
-[error] (api/*:ssExtractDependencies) sbt.ResolveException: unresolved dependency: org.twitter4j#twitter4j-core_2.11;4.0.1: not found
+[error] (api/*:ssExtractDependencies) sbt.ResolveException: unresolved dependency: com.lightbend#emoji_2.10;1.1.1: not found
+[error] unresolved dependency: com.typesafe.akka#akka-http-experimental_2.10;2.4.10: not found
+[error] unresolved dependency: com.typesafe.akka#akka-http-spray-json-experimental_2.10;2.4.4: not found
