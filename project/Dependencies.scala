@@ -16,7 +16,7 @@ object Dependencies {
     "org.spire-math" %% "cats" % "0.3.0",
     "com.typesafe" % "config" % "1.3.1",
     "io.spray" %% "spray-client" % "1.3.3",
-    "org.apache.spark" %% "spark-streaming-twitter" %sparkVersion %"provided",
+    "org.apache.spark" %% "spark-streaming-twitter" %sparkVersion ,
     "org.mongodb" %% "casbah-commons" % casbahV,
     "org.mongodb" %% "casbah-core" % casbahV,
     "org.mongodb" %% "casbah-query" % casbahV,
@@ -25,7 +25,7 @@ object Dependencies {
     "com.typesafe.akka" %% "akka-http-spray-json-experimental" % akkaV,
     "io.spray" %% "spray-json" % sprayVersion,
     "com.typesafe.akka" %% "akka-http-experimental" % akkaV)
-    .map(_.exclude("org.objectweb.asm", "org.objectweb.asm").
+    /*.map(_.exclude("org.objectweb.asm", "org.objectweb.asm").
       exclude("org.eclipse.jetty.orbit", "javax.servlet").
       exclude("org.eclipse.jetty.orbit", "javax.transaction").
       exclude("org.eclipse.jetty.orbit", "javax.mail").
@@ -33,9 +33,9 @@ object Dependencies {
       exclude("commons-beanutils", "commons-beanutils-core").
       exclude("commons-collections", "commons-collections").
       exclude("commons-collections", "commons-collections").
-      exclude("com.esotericsoftware.minlog", "minlog")
+      exclude("com.esotericsoftware.minlog", "minlog"))*/
 
-  )
+
 
 
   // https://mvnrepository.com/artifact/org.apache.tika/tika-core)
@@ -87,7 +87,7 @@ object Dependencies {
     "org.apache.opennlp" % "opennlp-uima" % "1.6.0",
     "com.sksamuel.elastic4s" %% "elastic4s-core" % "1.7.0",
     "com.sksamuel.elastic4s" %% "elastic4s-testkit" % "1.7.0" % "test"
-  ).map(_.exclude("org.objectweb.asm", "org.objectweb.asm").
+  )/*.map(_.exclude("org.objectweb.asm", "org.objectweb.asm").
     exclude("org.eclipse.jetty.orbit", "javax.servlet").
     exclude("org.eclipse.jetty.orbit", "javax.transaction").
     exclude("org.eclipse.jetty.orbit", "javax.mail").
@@ -95,8 +95,8 @@ object Dependencies {
     exclude("commons-beanutils", "commons-beanutils-core").
     exclude("commons-collections", "commons-collections").
     exclude("commons-collections", "commons-collections").
-    exclude("com.esotericsoftware.minlog", "minlog")
-  )
+    exclude("com.esotericsoftware.minlog", "minlog"))*/
+
 
   val sparkDependencies: Seq[ModuleID] = commonDependencies
   val webDependencies: Seq[ModuleID] = commonDependencies

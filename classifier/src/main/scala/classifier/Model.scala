@@ -67,6 +67,6 @@ object Model {
     }
   }
 
-  implicit val modelJF:RootJsonFormat[ModelData] =  jsonFormat7(ModelData.apply)
+  implicit val modelJF:RootJsonFormat[ModelData] =  jsonFormat6(ModelData.apply)
 
 }

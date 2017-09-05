@@ -1,4 +1,5 @@
 [0m[[0minfo[0m] [0mUpdating {file:/Users/mikelwyred/tfm/ITA-Services/}client...[0m
+[0m[[0mdebug[0m] [0mno default cache defined: set to /Users/mikelwyred/.ivy2/cache[0m
 [0m[[0mdebug[0m] [0m:: resolving dependencies :: ita-client#ita-client_2.11;0.0.1[0m
 [0m[[0mdebug[0m] [0m	confs: [compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool][0m
 [0m[[0mdebug[0m] [0m	validate = true[0m
@@ -7,7 +8,8 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies for ita-client#ita-client_2.11;0.0.1 [compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies ita-client#ita-client_2.11;0.0.1->org.scala-lang#scala-library;2.11.7 [compile->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving org.scala-lang#scala-library;2.11.7 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@1276f33c[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@2dde6602[0m
+[0m[[0mdebug[0m] [0mno default cache defined: set to /Users/mikelwyred/.ivy2/cache[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-lang#scala-library;2.11.7[0m
 [0m[[0mdebug[0m] [0m	found org.scala-lang#scala-library;2.11.7 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m	[2.11.7] org.scala-lang#scala-library;2.11.7[0m
@@ -35,7 +37,7 @@
 [0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/org/json/json/20140107/json-20140107.pom[0m
 [0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/org/json/json/20140107/json-20140107.pom.sha1[0m
 [0m[[0mdebug[0m] [0msha1 OK for https://repo1.maven.org/maven2/org/json/json/20140107/json-20140107.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.json#json;20140107!json.pom(pom.original) (165ms)[0m
+[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.json#json;20140107!json.pom(pom.original) (116ms)[0m
 [0m[[0minfo[0m] [0mResolving org.sonatype.oss#oss-parent;7 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.sonatype.oss#oss-parent;7 {}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.sonatype.oss#oss-parent;7[0m
@@ -662,6 +664,42 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies io.spray#spray-client_2.11;1.3.3->io.spray#spray-util_2.11;1.3.3 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies io.spray#spray-client_2.11;1.3.3->io.spray#spray-util_2.11;1.3.3 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies ita-client#ita-client_2.11;0.0.1->io.spray#spray-client_2.11;1.3.3 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ita-client#ita-client_2.11;0.0.1->org.apache.spark#spark-streaming-twitter_2.11;1.6.0 [compile->default(compile)][0m
+[0m[[0minfo[0m] [0mResolving org.apache.spark#spark-streaming-twitter_2.11;1.6.0 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.apache.spark#spark-streaming-twitter_2.11;1.6.0 {compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.apache.spark#spark-streaming-twitter_2.11;1.6.0[0m
+[0m[[0mdebug[0m] [0m	found org.apache.spark#spark-streaming-twitter_2.11;1.6.0 in sbt-chain[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ita-client#ita-client_2.11;0.0.1->org.apache.spark#spark-streaming-twitter_2.11;1.6.0 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ita-client#ita-client_2.11;0.0.1->org.apache.spark#spark-streaming-twitter_2.11;1.6.0 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-streaming-twitter_2.11;1.6.0->org.twitter4j#twitter4j-stream;4.0.4 [compile->master(compile)][0m
+[0m[[0minfo[0m] [0mResolving org.twitter4j#twitter4j-stream;4.0.4 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.twitter4j#twitter4j-stream;4.0.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.twitter4j#twitter4j-stream;4.0.4[0m
+[0m[[0mdebug[0m] [0m	found org.twitter4j#twitter4j-stream;4.0.4 in sbt-chain[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-streaming-twitter_2.11;1.6.0->org.twitter4j#twitter4j-stream;4.0.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.twitter4j#twitter4j-stream;4.0.4->org.twitter4j#twitter4j-core;4.0.4 [compile->master(compile)][0m
+[0m[[0minfo[0m] [0mResolving org.twitter4j#twitter4j-core;4.0.4 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.twitter4j#twitter4j-core;4.0.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.twitter4j#twitter4j-core;4.0.4[0m
+[0m[[0mdebug[0m] [0m	found org.twitter4j#twitter4j-core;4.0.4 in sbt-chain[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.twitter4j#twitter4j-stream;4.0.4->org.twitter4j#twitter4j-core;4.0.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-streaming-twitter_2.11;1.6.0->org.twitter4j#twitter4j-stream;4.0.4 [compile->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-streaming-twitter_2.11;1.6.0->org.twitter4j#twitter4j-stream;4.0.4 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.twitter4j#twitter4j-stream;4.0.4->org.twitter4j#twitter4j-core;4.0.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.twitter4j#twitter4j-stream;4.0.4->org.twitter4j#twitter4j-core;4.0.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-streaming-twitter_2.11;1.6.0->org.spark-project.spark#unused;1.0.0 [compile->master(compile)][0m
+[0m[[0minfo[0m] [0mResolving org.spark-project.spark#unused;1.0.0 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.spark-project.spark#unused;1.0.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.spark-project.spark#unused;1.0.0[0m
+[0m[[0mdebug[0m] [0m	found org.spark-project.spark#unused;1.0.0 in sbt-chain[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-streaming-twitter_2.11;1.6.0->org.spark-project.spark#unused;1.0.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-streaming-twitter_2.11;1.6.0->org.spark-project.spark#unused;1.0.0 [compile->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-streaming-twitter_2.11;1.6.0->org.spark-project.spark#unused;1.0.0 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-streaming-twitter_2.11;1.6.0->org.twitter4j#twitter4j-stream;4.0.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-streaming-twitter_2.11;1.6.0->org.twitter4j#twitter4j-stream;4.0.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-streaming-twitter_2.11;1.6.0->org.spark-project.spark#unused;1.0.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-streaming-twitter_2.11;1.6.0->org.spark-project.spark#unused;1.0.0 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ita-client#ita-client_2.11;0.0.1->org.apache.spark#spark-streaming-twitter_2.11;1.6.0 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies ita-client#ita-client_2.11;0.0.1->org.mongodb#casbah-commons_2.11;3.1.1 [compile->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving org.mongodb#casbah-commons_2.11;3.1.1 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.mongodb#casbah-commons_2.11;3.1.1 {compile=[default(compile)]}[0m
@@ -1093,7 +1131,7 @@
 [0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/de/jollyday/jollyday/0.4.7/jollyday-0.4.7.pom[0m
 [0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/de/jollyday/jollyday/0.4.7/jollyday-0.4.7.pom.sha1[0m
 [0m[[0mdebug[0m] [0msha1 OK for https://repo1.maven.org/maven2/de/jollyday/jollyday/0.4.7/jollyday-0.4.7.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] de.jollyday#jollyday;0.4.7!jollyday.pom(pom.original) (143ms)[0m
+[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] de.jollyday#jollyday;0.4.7!jollyday.pom(pom.original) (94ms)[0m
 [0m[[0minfo[0m] [0mResolving org.sonatype.oss#oss-parent;7 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.sonatype.oss#oss-parent;7 {}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.sonatype.oss#oss-parent;7[0m
@@ -1117,7 +1155,7 @@
 [0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/javax/xml/bind/jaxb-api/2.2.7/jaxb-api-2.2.7.pom[0m
 [0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/javax/xml/bind/jaxb-api/2.2.7/jaxb-api-2.2.7.pom.sha1[0m
 [0m[[0mdebug[0m] [0msha1 OK for https://repo1.maven.org/maven2/javax/xml/bind/jaxb-api/2.2.7/jaxb-api-2.2.7.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] javax.xml.bind#jaxb-api;2.2.7!jaxb-api.pom(pom.original) (144ms)[0m
+[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] javax.xml.bind#jaxb-api;2.2.7!jaxb-api.pom(pom.original) (107ms)[0m
 [0m[[0minfo[0m] [0mResolving net.java#jvnet-parent;1 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: net.java#jvnet-parent;1 {}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: net.java#jvnet-parent;1[0m
@@ -1144,7 +1182,7 @@
 [0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/com/googlecode/efficient-java-matrix-library/ejml/0.23/ejml-0.23.pom[0m
 [0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/com/googlecode/efficient-java-matrix-library/ejml/0.23/ejml-0.23.pom.sha1[0m
 [0m[[0mdebug[0m] [0msha1 OK for https://repo1.maven.org/maven2/com/googlecode/efficient-java-matrix-library/ejml/0.23/ejml-0.23.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] com.googlecode.efficient-java-matrix-library#ejml;0.23!ejml.pom(pom.original) (138ms)[0m
+[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] com.googlecode.efficient-java-matrix-library#ejml;0.23!ejml.pom(pom.original) (80ms)[0m
 [0m[[0minfo[0m] [0mResolving org.sonatype.oss#oss-parent;7 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.sonatype.oss#oss-parent;7 {}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.sonatype.oss#oss-parent;7[0m
@@ -1166,7 +1204,7 @@
 [0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/javax/json/javax.json-api/1.0/javax.json-api-1.0.pom[0m
 [0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/javax/json/javax.json-api/1.0/javax.json-api-1.0.pom.sha1[0m
 [0m[[0mdebug[0m] [0msha1 OK for https://repo1.maven.org/maven2/javax/json/javax.json-api/1.0/javax.json-api-1.0.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] javax.json#javax.json-api;1.0!javax.json-api.pom(pom.original) (142ms)[0m
+[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] javax.json#javax.json-api;1.0!javax.json-api.pom(pom.original) (119ms)[0m
 [0m[[0minfo[0m] [0mResolving org.glassfish#json;1.0 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.glassfish#json;1.0 {}[0m
 [0m[[0minfo[0m] [0mResolving org.glassfish#json;1.0 ...[0m
@@ -1180,7 +1218,7 @@
 [0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/org/glassfish/json/1.0/json-1.0.pom[0m
 [0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/org/glassfish/json/1.0/json-1.0.pom.sha1[0m
 [0m[[0mdebug[0m] [0msha1 OK for https://repo1.maven.org/maven2/org/glassfish/json/1.0/json-1.0.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.glassfish#json;1.0!json.pom(pom.original) (144ms)[0m
+[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.glassfish#json;1.0!json.pom(pom.original) (113ms)[0m
 [0m[[0minfo[0m] [0mResolving net.java#jvnet-parent;3 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: net.java#jvnet-parent;3 {}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: net.java#jvnet-parent;3[0m
@@ -1235,7 +1273,7 @@
 [0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/org/apache/opennlp/opennlp-tools/1.6.0/opennlp-tools-1.6.0.pom[0m
 [0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/org/apache/opennlp/opennlp-tools/1.6.0/opennlp-tools-1.6.0.pom.sha1[0m
 [0m[[0mdebug[0m] [0msha1 OK for https://repo1.maven.org/maven2/org/apache/opennlp/opennlp-tools/1.6.0/opennlp-tools-1.6.0.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.apache.opennlp#opennlp-tools;1.6.0!opennlp-tools.pom(pom.original) (158ms)[0m
+[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.apache.opennlp#opennlp-tools;1.6.0!opennlp-tools.pom(pom.original) (120ms)[0m
 [0m[[0minfo[0m] [0mResolving org.apache.opennlp#opennlp;1.6.0 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.apache.opennlp#opennlp;1.6.0 {}[0m
 [0m[[0minfo[0m] [0mResolving org.apache.opennlp#opennlp;1.6.0 ...[0m
@@ -1249,7 +1287,7 @@
 [0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/org/apache/opennlp/opennlp/1.6.0/opennlp-1.6.0.pom[0m
 [0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/org/apache/opennlp/opennlp/1.6.0/opennlp-1.6.0.pom.sha1[0m
 [0m[[0mdebug[0m] [0msha1 OK for https://repo1.maven.org/maven2/org/apache/opennlp/opennlp/1.6.0/opennlp-1.6.0.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.apache.opennlp#opennlp;1.6.0!opennlp.pom(pom.original) (160ms)[0m
+[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.apache.opennlp#opennlp;1.6.0!opennlp.pom(pom.original) (113ms)[0m
 [0m[[0minfo[0m] [0mResolving org.apache#apache;16 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.apache#apache;16 {}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.apache#apache;16[0m
@@ -1283,7 +1321,7 @@
 [0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/org/apache/opennlp/opennlp-uima/1.6.0/opennlp-uima-1.6.0.pom[0m
 [0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/org/apache/opennlp/opennlp-uima/1.6.0/opennlp-uima-1.6.0.pom.sha1[0m
 [0m[[0mdebug[0m] [0msha1 OK for https://repo1.maven.org/maven2/org/apache/opennlp/opennlp-uima/1.6.0/opennlp-uima-1.6.0.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.apache.opennlp#opennlp-uima;1.6.0!opennlp-uima.pom(pom.original) (162ms)[0m
+[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.apache.opennlp#opennlp-uima;1.6.0!opennlp-uima.pom(pom.original) (123ms)[0m
 [0m[[0minfo[0m] [0mResolving org.apache.opennlp#opennlp;1.6.0 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.apache.opennlp#opennlp;1.6.0 {}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.apache.opennlp#opennlp;1.6.0[0m
@@ -2859,13 +2897,7 @@
 [0m[[0mdebug[0m] [0m	found org.apache.spark#spark-launcher_2.11;1.6.0 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-core_2.11;1.6.0->org.apache.spark#spark-launcher_2.11;1.6.0 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-launcher_2.11;1.6.0->org.spark-project.spark#unused;1.0.0 [compile->master(compile)][0m
-[0m[[0minfo[0m] [0mResolving org.spark-project.spark#unused;1.0.0 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.spark-project.spark#unused;1.0.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.spark-project.spark#unused;1.0.0[0m
-[0m[[0mdebug[0m] [0m	found org.spark-project.spark#unused;1.0.0 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-launcher_2.11;1.6.0->org.spark-project.spark#unused;1.0.0 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-launcher_2.11;1.6.0->org.spark-project.spark#unused;1.0.0 [compile->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-launcher_2.11;1.6.0->org.spark-project.spark#unused;1.0.0 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-core_2.11;1.6.0->org.apache.spark#spark-network-common_2.11;1.6.0 [compile->master(compile)][0m
 [0m[[0minfo[0m] [0mResolving org.apache.spark#spark-network-common_2.11;1.6.0 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.apache.spark#spark-network-common_2.11;1.6.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
@@ -4814,7 +4846,7 @@
 [0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/com/sun/xml/bind/jaxb-impl/2.2.7/jaxb-impl-2.2.7.pom[0m
 [0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/com/sun/xml/bind/jaxb-impl/2.2.7/jaxb-impl-2.2.7.pom.sha1[0m
 [0m[[0mdebug[0m] [0msha1 OK for https://repo1.maven.org/maven2/com/sun/xml/bind/jaxb-impl/2.2.7/jaxb-impl-2.2.7.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] com.sun.xml.bind#jaxb-impl;2.2.7!jaxb-impl.pom(pom.original) (165ms)[0m
+[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] com.sun.xml.bind#jaxb-impl;2.2.7!jaxb-impl.pom(pom.original) (123ms)[0m
 [0m[[0minfo[0m] [0mResolving net.java#jvnet-parent;1 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: net.java#jvnet-parent;1 {}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: net.java#jvnet-parent;1[0m
@@ -4834,7 +4866,7 @@
 [0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/com/sun/xml/bind/jaxb-core/2.2.7/jaxb-core-2.2.7.pom[0m
 [0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/com/sun/xml/bind/jaxb-core/2.2.7/jaxb-core-2.2.7.pom.sha1[0m
 [0m[[0mdebug[0m] [0msha1 OK for https://repo1.maven.org/maven2/com/sun/xml/bind/jaxb-core/2.2.7/jaxb-core-2.2.7.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] com.sun.xml.bind#jaxb-core;2.2.7!jaxb-core.pom(pom.original) (157ms)[0m
+[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] com.sun.xml.bind#jaxb-core;2.2.7!jaxb-core.pom(pom.original) (149ms)[0m
 [0m[[0minfo[0m] [0mResolving net.java#jvnet-parent;1 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: net.java#jvnet-parent;1 {}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: net.java#jvnet-parent;1[0m
@@ -4856,7 +4888,7 @@
 [0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/com/sun/istack/istack-commons-runtime/2.16/istack-commons-runtime-2.16.pom[0m
 [0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/com/sun/istack/istack-commons-runtime/2.16/istack-commons-runtime-2.16.pom.sha1[0m
 [0m[[0mdebug[0m] [0msha1 OK for https://repo1.maven.org/maven2/com/sun/istack/istack-commons-runtime/2.16/istack-commons-runtime-2.16.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] com.sun.istack#istack-commons-runtime;2.16!istack-commons-runtime.pom(pom.original) (159ms)[0m
+[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] com.sun.istack#istack-commons-runtime;2.16!istack-commons-runtime.pom(pom.original) (99ms)[0m
 [0m[[0minfo[0m] [0mResolving com.sun.istack#istack-commons;2.16 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.sun.istack#istack-commons;2.16 {}[0m
 [0m[[0minfo[0m] [0mResolving com.sun.istack#istack-commons;2.16 ...[0m
@@ -4870,7 +4902,7 @@
 [0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/com/sun/istack/istack-commons/2.16/istack-commons-2.16.pom[0m
 [0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/com/sun/istack/istack-commons/2.16/istack-commons-2.16.pom.sha1[0m
 [0m[[0mdebug[0m] [0msha1 OK for https://repo1.maven.org/maven2/com/sun/istack/istack-commons/2.16/istack-commons-2.16.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] com.sun.istack#istack-commons;2.16!istack-commons.pom(pom.original) (163ms)[0m
+[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] com.sun.istack#istack-commons;2.16!istack-commons.pom(pom.original) (118ms)[0m
 [0m[[0minfo[0m] [0mResolving net.java#jvnet-parent;3 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: net.java#jvnet-parent;3 {}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: net.java#jvnet-parent;3[0m
@@ -4908,7 +4940,7 @@
 [0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/com/sun/xml/fastinfoset/FastInfoset/1.2.12/FastInfoset-1.2.12.pom[0m
 [0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/com/sun/xml/fastinfoset/FastInfoset/1.2.12/FastInfoset-1.2.12.pom.sha1[0m
 [0m[[0mdebug[0m] [0msha1 OK for https://repo1.maven.org/maven2/com/sun/xml/fastinfoset/FastInfoset/1.2.12/FastInfoset-1.2.12.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] com.sun.xml.fastinfoset#FastInfoset;1.2.12!FastInfoset.pom(pom.original) (158ms)[0m
+[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] com.sun.xml.fastinfoset#FastInfoset;1.2.12!FastInfoset.pom(pom.original) (83ms)[0m
 [0m[[0minfo[0m] [0mResolving com.sun.xml.fastinfoset#fastinfoset-project;1.2.12 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.sun.xml.fastinfoset#fastinfoset-project;1.2.12 {}[0m
 [0m[[0minfo[0m] [0mResolving com.sun.xml.fastinfoset#fastinfoset-project;1.2.12 ...[0m
@@ -4922,7 +4954,7 @@
 [0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/com/sun/xml/fastinfoset/fastinfoset-project/1.2.12/fastinfoset-project-1.2.12.pom[0m
 [0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/com/sun/xml/fastinfoset/fastinfoset-project/1.2.12/fastinfoset-project-1.2.12.pom.sha1[0m
 [0m[[0mdebug[0m] [0msha1 OK for https://repo1.maven.org/maven2/com/sun/xml/fastinfoset/fastinfoset-project/1.2.12/fastinfoset-project-1.2.12.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] com.sun.xml.fastinfoset#fastinfoset-project;1.2.12!fastinfoset-project.pom(pom.original) (157ms)[0m
+[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] com.sun.xml.fastinfoset#fastinfoset-project;1.2.12!fastinfoset-project.pom(pom.original) (107ms)[0m
 [0m[[0minfo[0m] [0mResolving net.java#jvnet-parent;1 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: net.java#jvnet-parent;1 {}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: net.java#jvnet-parent;1[0m
@@ -5451,6 +5483,22 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies io.spray#spray-client_2.11;1.3.3->io.spray#spray-util_2.11;1.3.3 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies io.spray#spray-client_2.11;1.3.3->io.spray#spray-util_2.11;1.3.3 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies ita-client#ita-client_2.11;0.0.1->io.spray#spray-client_2.11;1.3.3 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ita-client#ita-client_2.11;0.0.1->org.apache.spark#spark-streaming-twitter_2.11;1.6.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ita-client#ita-client_2.11;0.0.1->org.apache.spark#spark-streaming-twitter_2.11;1.6.0 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ita-client#ita-client_2.11;0.0.1->org.apache.spark#spark-streaming-twitter_2.11;1.6.0 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-streaming-twitter_2.11;1.6.0->org.twitter4j#twitter4j-stream;4.0.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-streaming-twitter_2.11;1.6.0->org.twitter4j#twitter4j-stream;4.0.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.twitter4j#twitter4j-stream;4.0.4->org.twitter4j#twitter4j-core;4.0.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.twitter4j#twitter4j-stream;4.0.4->org.twitter4j#twitter4j-core;4.0.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-streaming-twitter_2.11;1.6.0->org.spark-project.spark#unused;1.0.0 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-streaming-twitter_2.11;1.6.0->org.spark-project.spark#unused;1.0.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-streaming-twitter_2.11;1.6.0->org.twitter4j#twitter4j-stream;4.0.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-streaming-twitter_2.11;1.6.0->org.twitter4j#twitter4j-stream;4.0.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.twitter4j#twitter4j-stream;4.0.4->org.twitter4j#twitter4j-core;4.0.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.twitter4j#twitter4j-stream;4.0.4->org.twitter4j#twitter4j-core;4.0.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-streaming-twitter_2.11;1.6.0->org.spark-project.spark#unused;1.0.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-streaming-twitter_2.11;1.6.0->org.spark-project.spark#unused;1.0.0 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ita-client#ita-client_2.11;0.0.1->org.apache.spark#spark-streaming-twitter_2.11;1.6.0 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies ita-client#ita-client_2.11;0.0.1->org.mongodb#casbah-commons_2.11;3.1.1 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies ita-client#ita-client_2.11;0.0.1->org.mongodb#casbah-commons_2.11;3.1.1 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies ita-client#ita-client_2.11;0.0.1->org.mongodb#casbah-commons_2.11;3.1.1 [compile->compile][0m
@@ -9362,6 +9410,22 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies io.spray#spray-client_2.11;1.3.3->io.spray#spray-util_2.11;1.3.3 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies io.spray#spray-client_2.11;1.3.3->io.spray#spray-util_2.11;1.3.3 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies ita-client#ita-client_2.11;0.0.1->io.spray#spray-client_2.11;1.3.3 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ita-client#ita-client_2.11;0.0.1->org.apache.spark#spark-streaming-twitter_2.11;1.6.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ita-client#ita-client_2.11;0.0.1->org.apache.spark#spark-streaming-twitter_2.11;1.6.0 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ita-client#ita-client_2.11;0.0.1->org.apache.spark#spark-streaming-twitter_2.11;1.6.0 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-streaming-twitter_2.11;1.6.0->org.twitter4j#twitter4j-stream;4.0.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-streaming-twitter_2.11;1.6.0->org.twitter4j#twitter4j-stream;4.0.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.twitter4j#twitter4j-stream;4.0.4->org.twitter4j#twitter4j-core;4.0.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.twitter4j#twitter4j-stream;4.0.4->org.twitter4j#twitter4j-core;4.0.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-streaming-twitter_2.11;1.6.0->org.spark-project.spark#unused;1.0.0 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-streaming-twitter_2.11;1.6.0->org.spark-project.spark#unused;1.0.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-streaming-twitter_2.11;1.6.0->org.twitter4j#twitter4j-stream;4.0.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-streaming-twitter_2.11;1.6.0->org.twitter4j#twitter4j-stream;4.0.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.twitter4j#twitter4j-stream;4.0.4->org.twitter4j#twitter4j-core;4.0.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.twitter4j#twitter4j-stream;4.0.4->org.twitter4j#twitter4j-core;4.0.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-streaming-twitter_2.11;1.6.0->org.spark-project.spark#unused;1.0.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-streaming-twitter_2.11;1.6.0->org.spark-project.spark#unused;1.0.0 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ita-client#ita-client_2.11;0.0.1->org.apache.spark#spark-streaming-twitter_2.11;1.6.0 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies ita-client#ita-client_2.11;0.0.1->org.mongodb#casbah-commons_2.11;3.1.1 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies ita-client#ita-client_2.11;0.0.1->org.mongodb#casbah-commons_2.11;3.1.1 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies ita-client#ita-client_2.11;0.0.1->org.mongodb#casbah-commons_2.11;3.1.1 [compile->compile][0m
@@ -12811,36 +12875,6 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies ita-client#ita-client_2.11;0.0.1->org.apache.spark#spark-core_2.11;1.6.0 [compile->master][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'provided'[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for ita-client#ita-client_2.11;0.0.1 [provided][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies ita-client#ita-client_2.11;0.0.1->org.apache.spark#spark-streaming-twitter_2.11;1.6.0 [provided->default(compile)][0m
-[0m[[0minfo[0m] [0mResolving org.apache.spark#spark-streaming-twitter_2.11;1.6.0 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.apache.spark#spark-streaming-twitter_2.11;1.6.0 {provided=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.apache.spark#spark-streaming-twitter_2.11;1.6.0[0m
-[0m[[0mdebug[0m] [0m	found org.apache.spark#spark-streaming-twitter_2.11;1.6.0 in sbt-chain[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies ita-client#ita-client_2.11;0.0.1->org.apache.spark#spark-streaming-twitter_2.11;1.6.0 [provided->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies ita-client#ita-client_2.11;0.0.1->org.apache.spark#spark-streaming-twitter_2.11;1.6.0 [provided->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-streaming-twitter_2.11;1.6.0->org.twitter4j#twitter4j-stream;4.0.4 [compile->master(compile)][0m
-[0m[[0minfo[0m] [0mResolving org.twitter4j#twitter4j-stream;4.0.4 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.twitter4j#twitter4j-stream;4.0.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.twitter4j#twitter4j-stream;4.0.4[0m
-[0m[[0mdebug[0m] [0m	found org.twitter4j#twitter4j-stream;4.0.4 in sbt-chain[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-streaming-twitter_2.11;1.6.0->org.twitter4j#twitter4j-stream;4.0.4 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.twitter4j#twitter4j-stream;4.0.4->org.twitter4j#twitter4j-core;4.0.4 [compile->master(compile)][0m
-[0m[[0minfo[0m] [0mResolving org.twitter4j#twitter4j-core;4.0.4 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.twitter4j#twitter4j-core;4.0.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.twitter4j#twitter4j-core;4.0.4[0m
-[0m[[0mdebug[0m] [0m	found org.twitter4j#twitter4j-core;4.0.4 in sbt-chain[0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.twitter4j#twitter4j-stream;4.0.4->org.twitter4j#twitter4j-core;4.0.4 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-streaming-twitter_2.11;1.6.0->org.twitter4j#twitter4j-stream;4.0.4 [compile->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-streaming-twitter_2.11;1.6.0->org.twitter4j#twitter4j-stream;4.0.4 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.twitter4j#twitter4j-stream;4.0.4->org.twitter4j#twitter4j-core;4.0.4 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.twitter4j#twitter4j-stream;4.0.4->org.twitter4j#twitter4j-core;4.0.4 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-streaming-twitter_2.11;1.6.0->org.spark-project.spark#unused;1.0.0 [compile->master(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-streaming-twitter_2.11;1.6.0->org.spark-project.spark#unused;1.0.0 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-streaming-twitter_2.11;1.6.0->org.twitter4j#twitter4j-stream;4.0.4 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-streaming-twitter_2.11;1.6.0->org.twitter4j#twitter4j-stream;4.0.4 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-streaming-twitter_2.11;1.6.0->org.spark-project.spark#unused;1.0.0 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-streaming-twitter_2.11;1.6.0->org.spark-project.spark#unused;1.0.0 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies ita-client#ita-client_2.11;0.0.1->org.apache.spark#spark-streaming-twitter_2.11;1.6.0 [provided->master][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'optional'[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for ita-client#ita-client_2.11;0.0.1 [optional][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'compile-internal'[0m
@@ -13306,6 +13340,22 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies io.spray#spray-client_2.11;1.3.3->io.spray#spray-util_2.11;1.3.3 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies io.spray#spray-client_2.11;1.3.3->io.spray#spray-util_2.11;1.3.3 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies ita-client#ita-client_2.11;0.0.1->io.spray#spray-client_2.11;1.3.3 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ita-client#ita-client_2.11;0.0.1->org.apache.spark#spark-streaming-twitter_2.11;1.6.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ita-client#ita-client_2.11;0.0.1->org.apache.spark#spark-streaming-twitter_2.11;1.6.0 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ita-client#ita-client_2.11;0.0.1->org.apache.spark#spark-streaming-twitter_2.11;1.6.0 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-streaming-twitter_2.11;1.6.0->org.twitter4j#twitter4j-stream;4.0.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-streaming-twitter_2.11;1.6.0->org.twitter4j#twitter4j-stream;4.0.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.twitter4j#twitter4j-stream;4.0.4->org.twitter4j#twitter4j-core;4.0.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.twitter4j#twitter4j-stream;4.0.4->org.twitter4j#twitter4j-core;4.0.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-streaming-twitter_2.11;1.6.0->org.spark-project.spark#unused;1.0.0 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-streaming-twitter_2.11;1.6.0->org.spark-project.spark#unused;1.0.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-streaming-twitter_2.11;1.6.0->org.twitter4j#twitter4j-stream;4.0.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-streaming-twitter_2.11;1.6.0->org.twitter4j#twitter4j-stream;4.0.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.twitter4j#twitter4j-stream;4.0.4->org.twitter4j#twitter4j-core;4.0.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.twitter4j#twitter4j-stream;4.0.4->org.twitter4j#twitter4j-core;4.0.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-streaming-twitter_2.11;1.6.0->org.spark-project.spark#unused;1.0.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-streaming-twitter_2.11;1.6.0->org.spark-project.spark#unused;1.0.0 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ita-client#ita-client_2.11;0.0.1->org.apache.spark#spark-streaming-twitter_2.11;1.6.0 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies ita-client#ita-client_2.11;0.0.1->org.mongodb#casbah-commons_2.11;3.1.1 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies ita-client#ita-client_2.11;0.0.1->org.mongodb#casbah-commons_2.11;3.1.1 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies ita-client#ita-client_2.11;0.0.1->org.mongodb#casbah-commons_2.11;3.1.1 [compile->compile][0m
@@ -16755,22 +16805,6 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies ita-client#ita-client_2.11;0.0.1->org.apache.spark#spark-core_2.11;1.6.0 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for ita-client#ita-client_2.11;0.0.1 [optional][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for ita-client#ita-client_2.11;0.0.1 [provided][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies ita-client#ita-client_2.11;0.0.1->org.apache.spark#spark-streaming-twitter_2.11;1.6.0 [provided->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies ita-client#ita-client_2.11;0.0.1->org.apache.spark#spark-streaming-twitter_2.11;1.6.0 [provided->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies ita-client#ita-client_2.11;0.0.1->org.apache.spark#spark-streaming-twitter_2.11;1.6.0 [provided->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-streaming-twitter_2.11;1.6.0->org.twitter4j#twitter4j-stream;4.0.4 [compile->master(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-streaming-twitter_2.11;1.6.0->org.twitter4j#twitter4j-stream;4.0.4 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.twitter4j#twitter4j-stream;4.0.4->org.twitter4j#twitter4j-core;4.0.4 [compile->master(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.twitter4j#twitter4j-stream;4.0.4->org.twitter4j#twitter4j-core;4.0.4 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-streaming-twitter_2.11;1.6.0->org.spark-project.spark#unused;1.0.0 [compile->master(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-streaming-twitter_2.11;1.6.0->org.spark-project.spark#unused;1.0.0 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-streaming-twitter_2.11;1.6.0->org.twitter4j#twitter4j-stream;4.0.4 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-streaming-twitter_2.11;1.6.0->org.twitter4j#twitter4j-stream;4.0.4 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.twitter4j#twitter4j-stream;4.0.4->org.twitter4j#twitter4j-core;4.0.4 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.twitter4j#twitter4j-stream;4.0.4->org.twitter4j#twitter4j-core;4.0.4 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-streaming-twitter_2.11;1.6.0->org.spark-project.spark#unused;1.0.0 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-streaming-twitter_2.11;1.6.0->org.spark-project.spark#unused;1.0.0 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies ita-client#ita-client_2.11;0.0.1->org.apache.spark#spark-streaming-twitter_2.11;1.6.0 [provided->master][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'runtime-internal'[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for ita-client#ita-client_2.11;0.0.1 [runtime-internal][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for ita-client#ita-client_2.11;0.0.1 [runtime][0m
@@ -17235,6 +17269,22 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies io.spray#spray-client_2.11;1.3.3->io.spray#spray-util_2.11;1.3.3 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies io.spray#spray-client_2.11;1.3.3->io.spray#spray-util_2.11;1.3.3 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies ita-client#ita-client_2.11;0.0.1->io.spray#spray-client_2.11;1.3.3 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ita-client#ita-client_2.11;0.0.1->org.apache.spark#spark-streaming-twitter_2.11;1.6.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ita-client#ita-client_2.11;0.0.1->org.apache.spark#spark-streaming-twitter_2.11;1.6.0 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ita-client#ita-client_2.11;0.0.1->org.apache.spark#spark-streaming-twitter_2.11;1.6.0 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-streaming-twitter_2.11;1.6.0->org.twitter4j#twitter4j-stream;4.0.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-streaming-twitter_2.11;1.6.0->org.twitter4j#twitter4j-stream;4.0.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.twitter4j#twitter4j-stream;4.0.4->org.twitter4j#twitter4j-core;4.0.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.twitter4j#twitter4j-stream;4.0.4->org.twitter4j#twitter4j-core;4.0.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-streaming-twitter_2.11;1.6.0->org.spark-project.spark#unused;1.0.0 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-streaming-twitter_2.11;1.6.0->org.spark-project.spark#unused;1.0.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-streaming-twitter_2.11;1.6.0->org.twitter4j#twitter4j-stream;4.0.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-streaming-twitter_2.11;1.6.0->org.twitter4j#twitter4j-stream;4.0.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.twitter4j#twitter4j-stream;4.0.4->org.twitter4j#twitter4j-core;4.0.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.twitter4j#twitter4j-stream;4.0.4->org.twitter4j#twitter4j-core;4.0.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-streaming-twitter_2.11;1.6.0->org.spark-project.spark#unused;1.0.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-streaming-twitter_2.11;1.6.0->org.spark-project.spark#unused;1.0.0 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ita-client#ita-client_2.11;0.0.1->org.apache.spark#spark-streaming-twitter_2.11;1.6.0 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies ita-client#ita-client_2.11;0.0.1->org.mongodb#casbah-commons_2.11;3.1.1 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies ita-client#ita-client_2.11;0.0.1->org.mongodb#casbah-commons_2.11;3.1.1 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies ita-client#ita-client_2.11;0.0.1->org.mongodb#casbah-commons_2.11;3.1.1 [compile->compile][0m
@@ -21148,6 +21198,22 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies io.spray#spray-client_2.11;1.3.3->io.spray#spray-util_2.11;1.3.3 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies io.spray#spray-client_2.11;1.3.3->io.spray#spray-util_2.11;1.3.3 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies ita-client#ita-client_2.11;0.0.1->io.spray#spray-client_2.11;1.3.3 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ita-client#ita-client_2.11;0.0.1->org.apache.spark#spark-streaming-twitter_2.11;1.6.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ita-client#ita-client_2.11;0.0.1->org.apache.spark#spark-streaming-twitter_2.11;1.6.0 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ita-client#ita-client_2.11;0.0.1->org.apache.spark#spark-streaming-twitter_2.11;1.6.0 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-streaming-twitter_2.11;1.6.0->org.twitter4j#twitter4j-stream;4.0.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-streaming-twitter_2.11;1.6.0->org.twitter4j#twitter4j-stream;4.0.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.twitter4j#twitter4j-stream;4.0.4->org.twitter4j#twitter4j-core;4.0.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.twitter4j#twitter4j-stream;4.0.4->org.twitter4j#twitter4j-core;4.0.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-streaming-twitter_2.11;1.6.0->org.spark-project.spark#unused;1.0.0 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-streaming-twitter_2.11;1.6.0->org.spark-project.spark#unused;1.0.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-streaming-twitter_2.11;1.6.0->org.twitter4j#twitter4j-stream;4.0.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-streaming-twitter_2.11;1.6.0->org.twitter4j#twitter4j-stream;4.0.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.twitter4j#twitter4j-stream;4.0.4->org.twitter4j#twitter4j-core;4.0.4 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.twitter4j#twitter4j-stream;4.0.4->org.twitter4j#twitter4j-core;4.0.4 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-streaming-twitter_2.11;1.6.0->org.spark-project.spark#unused;1.0.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-streaming-twitter_2.11;1.6.0->org.spark-project.spark#unused;1.0.0 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ita-client#ita-client_2.11;0.0.1->org.apache.spark#spark-streaming-twitter_2.11;1.6.0 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies ita-client#ita-client_2.11;0.0.1->org.mongodb#casbah-commons_2.11;3.1.1 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies ita-client#ita-client_2.11;0.0.1->org.mongodb#casbah-commons_2.11;3.1.1 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies ita-client#ita-client_2.11;0.0.1->org.mongodb#casbah-commons_2.11;3.1.1 [compile->compile][0m
@@ -24597,22 +24663,6 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies ita-client#ita-client_2.11;0.0.1->org.apache.spark#spark-core_2.11;1.6.0 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for ita-client#ita-client_2.11;0.0.1 [optional][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for ita-client#ita-client_2.11;0.0.1 [provided][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies ita-client#ita-client_2.11;0.0.1->org.apache.spark#spark-streaming-twitter_2.11;1.6.0 [provided->default(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies ita-client#ita-client_2.11;0.0.1->org.apache.spark#spark-streaming-twitter_2.11;1.6.0 [provided->runtime][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies ita-client#ita-client_2.11;0.0.1->org.apache.spark#spark-streaming-twitter_2.11;1.6.0 [provided->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-streaming-twitter_2.11;1.6.0->org.twitter4j#twitter4j-stream;4.0.4 [compile->master(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-streaming-twitter_2.11;1.6.0->org.twitter4j#twitter4j-stream;4.0.4 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.twitter4j#twitter4j-stream;4.0.4->org.twitter4j#twitter4j-core;4.0.4 [compile->master(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.twitter4j#twitter4j-stream;4.0.4->org.twitter4j#twitter4j-core;4.0.4 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-streaming-twitter_2.11;1.6.0->org.spark-project.spark#unused;1.0.0 [compile->master(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-streaming-twitter_2.11;1.6.0->org.spark-project.spark#unused;1.0.0 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-streaming-twitter_2.11;1.6.0->org.twitter4j#twitter4j-stream;4.0.4 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-streaming-twitter_2.11;1.6.0->org.twitter4j#twitter4j-stream;4.0.4 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.twitter4j#twitter4j-stream;4.0.4->org.twitter4j#twitter4j-core;4.0.4 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.twitter4j#twitter4j-stream;4.0.4->org.twitter4j#twitter4j-core;4.0.4 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-streaming-twitter_2.11;1.6.0->org.spark-project.spark#unused;1.0.0 [runtime->runtime(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-streaming-twitter_2.11;1.6.0->org.spark-project.spark#unused;1.0.0 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies ita-client#ita-client_2.11;0.0.1->org.apache.spark#spark-streaming-twitter_2.11;1.6.0 [provided->master][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'plugin'[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for ita-client#ita-client_2.11;0.0.1 [plugin][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'sources'[0m
@@ -24695,6 +24745,7 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.spire-math#cats_2.11;0.3.0!cats_2.11.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe#config;1.3.1!config.jar(bundle)[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] io.spray#spray-client_2.11;1.3.3!spray-client_2.11.jar(bundle)[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.apache.spark#spark-streaming-twitter_2.11;1.6.0!spark-streaming-twitter_2.11.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.mongodb#casbah-commons_2.11;3.1.1!casbah-commons_2.11.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.mongodb#casbah-core_2.11;3.1.1!casbah-core_2.11.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.mongodb#casbah-query_2.11;3.1.1!casbah-query_2.11.jar[0m
@@ -24737,6 +24788,9 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.parboiled#parboiled-core;1.1.7!parboiled-core.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang.modules#scala-xml_2.11;1.0.3!scala-xml_2.11.jar(bundle)[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.jvnet.mimepull#mimepull;1.9.5!mimepull.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.twitter4j#twitter4j-stream;4.0.4!twitter4j-stream.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.spark-project.spark#unused;1.0.0!unused.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.twitter4j#twitter4j-core;4.0.4!twitter4j-core.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.github.nscala-time#nscala-time_2.11;1.0.0!nscala-time_2.11.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.mongodb#mongo-java-driver;3.2.2!mongo-java-driver.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.joda#joda-convert;1.2!joda-convert.jar[0m
@@ -24766,7 +24820,6 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scalanlp#breeze_2.11;0.11.2!breeze_2.11.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.apache.commons#commons-math3;3.4.1!commons-math3.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.jpmml#pmml-model;1.1.15!pmml-model.jar[0m
-[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.spark-project.spark#unused;1.0.0!unused.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.apache.avro#avro-mapred;1.7.7!avro-mapred.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.twitter#chill_2.11;0.5.0!chill_2.11.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.twitter#chill-java;0.5.0!chill-java.jar[0m
@@ -24902,13 +24955,10 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.sun.xml.fastinfoset#FastInfoset;1.2.12!FastInfoset.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.sun.istack#istack-commons-runtime;2.16!istack-commons-runtime.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] javax.xml.bind#jsr173_api;1.0!jsr173_api.jar[0m
-[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.apache.spark#spark-streaming-twitter_2.11;1.6.0!spark-streaming-twitter_2.11.jar[0m
-[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.twitter4j#twitter4j-stream;4.0.4!twitter4j-stream.jar[0m
-[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.twitter4j#twitter4j-core;4.0.4!twitter4j-core.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#scala-compiler;2.11.7!scala-compiler.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang.modules#scala-xml_2.11;1.0.4!scala-xml_2.11.jar(bundle)[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] jline#jline;2.12.1!jline.jar[0m
-[0m[[0mdebug[0m] [0m:: resolution report :: resolve 21705ms :: artifacts dl 372ms[0m
+[0m[[0mdebug[0m] [0m:: resolution report :: resolve 11705ms :: artifacts dl 116ms[0m
 [0m[[0mdebug[0m] [0m	report for ita-client#ita-client_2.11;0.0.1 compile produced in /Users/mikelwyred/tfm/ITA-Services/client/target/resolution-cache/reports/ita-client-ita-client_2.11-compile.xml[0m
 [0m[[0mdebug[0m] [0m	report for ita-client#ita-client_2.11;0.0.1 runtime produced in /Users/mikelwyred/tfm/ITA-Services/client/target/resolution-cache/reports/ita-client-ita-client_2.11-runtime.xml[0m
 [0m[[0mdebug[0m] [0m	report for ita-client#ita-client_2.11;0.0.1 test produced in /Users/mikelwyred/tfm/ITA-Services/client/target/resolution-cache/reports/ita-client-ita-client_2.11-test.xml[0m
@@ -24922,5 +24972,5 @@
 [0m[[0mdebug[0m] [0m	report for ita-client#ita-client_2.11;0.0.1 docs produced in /Users/mikelwyred/tfm/ITA-Services/client/target/resolution-cache/reports/ita-client-ita-client_2.11-docs.xml[0m
 [0m[[0mdebug[0m] [0m	report for ita-client#ita-client_2.11;0.0.1 pom produced in /Users/mikelwyred/tfm/ITA-Services/client/target/resolution-cache/reports/ita-client-ita-client_2.11-pom.xml[0m
 [0m[[0mdebug[0m] [0m	report for ita-client#ita-client_2.11;0.0.1 scala-tool produced in /Users/mikelwyred/tfm/ITA-Services/client/target/resolution-cache/reports/ita-client-ita-client_2.11-scala-tool.xml[0m
-[0m[[0mdebug[0m] [0m	resolve done (21705ms resolve - 372ms download)[0m
+[0m[[0mdebug[0m] [0m	resolve done (11705ms resolve - 116ms download)[0m
 [0m[[0minfo[0m] [0mDone updating.[0m

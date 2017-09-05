@@ -19,6 +19,7 @@ import models.ModelConverter.modelConverter
 import scala.concurrent.ExecutionContext.Implicits.global
 import domain.Model._
 import classifier.Model._
+import org.apache.spark.mllib.classification.NaiveBayesModel
 import org.apache.spark.mllib.tree.model.GradientBoostedTreesModel
 
 import scala.concurrent.Future
@@ -78,26 +79,57 @@ case class ModelExecution(
       case BAYES =>
         val bayesClassifier = model.asInstanceOf[BayesClassifier]
         val partition = bayesClassifier.prepareModel()(sc)
+        val modeltrained:NaiveBayesModel = if(status != "trained"){
+          bayesClassifier.trainModel(partition)(sc)
+        } else{
+          val path = config.getString("models.path") +s"bayes_${model._id.value}"
+          NaiveBayesModel.load(sc, path)
+        }
+
         val modelResult =
-          bayesClassifier.evaluateModel(bayesClassifier.trainModel(partition)(sc),partition)(sc)
+          bayesClassifier.evaluateModel(modeltrained,partition)(sc)
+        dataContext.executionDAO.update(copy(status= "trained"))
+        dataContext.modelResultDAO.create(modelResult)
         Future(modelResult)
       case BOOSTING =>
         val boostModel = model.asInstanceOf[GradientBoostingClassifier]
         val partition = boostModel.prepareModel()(sc)
+        val modeltrained:GradientBoostedTreesModel = if(status != "trained"){
+          boostModel.trainModel(partition)(sc)
+        } else{
+          val path = config.getString("models.path") +s"gradient_${model._id.value}"
+          GradientBoostedTreesModel.load(sc, path)
+        }
         val modelResult =
           boostModel.evaluateModel(boostModel.trainModel(partition)(sc),partition)(sc)
+        dataContext.executionDAO.update(copy(status= "trained"))
+        dataContext.modelResultDAO.create(modelResult)
+        Future(modelResult)
+      case RR =>
+        val boostModel = model.asInstanceOf[RandomForestClassifier]
+        val partition = boostModel.prepareModel()(sc)
+        if(status != "trained"){
+          boostModel.trainModel(partition)(sc)
+        }
+        val modelResult =
+          boostModel.evaluateModel(partition)(sc)
+        dataContext.executionDAO.update(copy(status= "trained"))
+        dataContext.modelResultDAO.create(modelResult)
         Future(modelResult)
       case NLP =>
         val nlp = model.asInstanceOf[NLPStanfordClassifier]
         val partition = nlp.prepareModel()(sc)
         val modelResult =
           nlp.evaluateModel(partition)(sc)
+        dataContext.executionDAO.update(copy(status= "trained"))
+        dataContext.modelResultDAO.create(modelResult)
         Future(modelResult)
       case API =>
         val nlp = model.asInstanceOf[ApiClassifier]
         val partition = nlp.prepareModel()(sc)
         val modelResult =
           nlp.evaluateModel(partition)(sc)
+
         modelResult
     }
   }
@@ -106,16 +138,13 @@ case class ModelExecution(
    /* tweets.map{tweet   =>
       logger.info(s"[EXECUTION] $modelId STARTING EXECUTION ")
 
-
-
     } */
     model.type_classifier match {
       case BAYES =>
         val bayesClas = model.asInstanceOf[BayesClassifier]
         val partition = bayesClas.prepareModel()(sc)
-        val modelTrained = bayesClas.trainModel(partition)(sc)
         val modelResult =
-          bayesClas.runModel(this._id.get,modelTrained,partition)(sc)
+          bayesClas.runModel(this._id.get,partition)(sc)
         Future(modelResult.collect().toList)
       case BOOSTING =>
         val boostModel = model.asInstanceOf[GradientBoostingClassifier]
@@ -123,7 +152,7 @@ case class ModelExecution(
         val pathModels = config.getString("models.path") +s"gradient_${boostModel._id.value}"
         val modelTrained = GradientBoostedTreesModel.load(sc, pathModels)
         val modelResult =
-          boostModel.runModel(modelTrained,this._id.get,topicId,partition)(sc)
+          boostModel.runModel(_id.get,topicId,partition)(sc)
         Future(modelResult.collect().toList)
       case NLP =>
         val nlp = model.asInstanceOf[NLPStanfordClassifier]

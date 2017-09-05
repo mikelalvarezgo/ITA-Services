@@ -6,8 +6,7 @@ import domain.Id
 case class ModelData(
   _id:Option[Id],
   name: String,
-  listPositiveEmojis: List[String],
-  listNegativeEmojis: List[String],
+  tag_tweets:String, //emoji or vader
   type_classifier:ModelType,
   parameters: Map[String,String],
   partitionConf: PartitionConf)

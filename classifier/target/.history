@@ -28,3 +28,9 @@ assembly
 clean
 assembly
 ls
+run
+assembly
+compile
+assembly
+compile
+project gatherer

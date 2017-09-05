@@ -11,4 +11,7 @@ case object NLP extends ModelType
 case object BOOSTING extends ModelType
 case object API extends ModelType
 case object BAYES extends ModelType
+case object RR extends ModelType
+case object RNN extends ModelType
+
 

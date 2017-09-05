@@ -41,7 +41,8 @@ lazy val gatherer = (project in file("./gatherer")).
     includeFilter in Compile := "application.conf").
   settings(libraryDependencies ++= Dependencies.gathererDependencies,
     excludeDependencies += "org.objectweb.asm" % "org.objectweb.asm",
-    dependencyOverrides += "joda-time" % "joda-time" % "2.8.2"
+    dependencyOverrides += "joda-time" % "joda-time" % "2.8.2",
+    dependencyOverrides += "spark-streaming-twitter_2.11" % "spark-streaming-twitter_2.11" % "1.6.0"
 
   ).
   settings(
@@ -53,8 +54,7 @@ lazy val gatherer = (project in file("./gatherer")).
 lazy val classifier = project.
   dependsOn(common, domain).
   settings(Common.settings: _*).
-  settings(libraryDependencies ++= Dependencies.classifierDependencies,
-    excludeDependencies += "org.objectweb.asm" % "org.objectweb.asm"
+  settings(libraryDependencies ++= Dependencies.classifierDependencies
 ).
   settings(
       mainClass in assembly := Some("ClassifierService"),

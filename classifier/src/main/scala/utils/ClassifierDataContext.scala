@@ -1,6 +1,6 @@
 package utils
 
-import mongo.{ModelDAO, ModelExecutionlDAO, TweetResultDAO}
+import mongo.{ModelDAO, ModelExecutionlDAO, ModelResultDAO, TweetResultDAO}
 import mongo.daos.{PickUpDAO, TweetInfoDAO}
 
 /**
@@ -9,6 +9,7 @@ import mongo.daos.{PickUpDAO, TweetInfoDAO}
  case class ClassifierDataContext(
   pickupDAO: PickUpDAO,
   modelDAO: ModelDAO,
+  modelResultDAO: ModelResultDAO,
   tweetResultDAO: TweetResultDAO,
   executionDAO: ModelExecutionlDAO,
   tweetsDAO: TweetInfoDAO)
@@ -17,6 +18,11 @@ object ClassifierDataContext extends Config{
 
   def chargeFromConfig():ClassifierDataContext ={
      val tweetInfoDao: TweetInfoDAO = TweetInfoDAO(
+      config.getString("mongodb.host"),
+      config.getInt("mongodb.port"),
+      config.getString("mongodb.name"))
+
+    val modelresultDAO: ModelResultDAO = ModelResultDAO(
       config.getString("mongodb.host"),
       config.getInt("mongodb.port"),
       config.getString("mongodb.name"))
@@ -42,7 +48,7 @@ object ClassifierDataContext extends Config{
       config.getString("mongodb.name"))
 
 
-    new ClassifierDataContext(pickupDAO,modelDAO, resultDAO, executionlDAO,tweetInfoDao)
+    new ClassifierDataContext(pickupDAO,modelDAO,modelresultDAO, resultDAO, executionlDAO,tweetInfoDao)
 
 
   }

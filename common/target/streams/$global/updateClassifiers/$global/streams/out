@@ -1,3 +1,4 @@
+[debug] no default cache defined: set to /Users/mikelwyred/.ivy2/cache
 [warn] Multiple dependencies with the same organization/name but different versions. To avoid conflict, pick one version:
 [warn]  * org.scala-lang.modules:scala-xml_2.11:(1.0.3, 1.0.4)
 [debug] :: resolving dependencies :: ita-common#ita-common$sources_2.11;0.0.1
@@ -8,7 +9,7 @@
 [debug] == resolving dependencies for ita-common#ita-common$sources_2.11;0.0.1 [compile]
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.scala-lang#scala-library;2.11.7 [compile->default(compile)]
 [info] Resolving org.scala-lang#scala-library;2.11.7 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@5d0d289c
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@2bd0f3a7
 [debug] sbt-chain: module revision found in cache: org.scala-lang#scala-library;2.11.7
 [debug] 	found org.scala-lang#scala-library;2.11.7 in sbt-chain
 [debug] 	[2.11.7] org.scala-lang#scala-library;2.11.7
@@ -17,11 +18,11 @@
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.scala-lang#scala-library;2.11.7 [compile->master]
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->ita-domain#ita-domain_2.11;0.0.1 [compile->default(compile)]
 [info] Resolving ita-domain#ita-domain_2.11;0.0.1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@1871dd46
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3c57fe34
 [debug] 	found ita-domain#ita-domain_2.11;0.0.1 in inter-project
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->com.vdurmont#emoji-java;3.2.0 [compile->default(compile)]
 [info] Resolving com.vdurmont#emoji-java;3.2.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@13964111
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3ad95cf0
 [debug] sbt-chain: module revision found in cache: com.vdurmont#emoji-java;3.2.0
 [debug] 	found com.vdurmont#emoji-java;3.2.0 in sbt-chain
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->com.vdurmont#emoji-java;3.2.0 [compile->runtime]
@@ -29,9 +30,9 @@
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->com.vdurmont#emoji-java;3.2.0 [compile->master]
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.json#json;20140107 [compile->default(compile)]
 [info] Resolving org.json#json;20140107 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@59bea261
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@23d53b10
 [info] Resolving org.json#json;20140107 ...
-[debug] sbt-chain-delegate: Checking cache for: sbt.ivyint.MergedDescriptors@59bea261
+[debug] sbt-chain-delegate: Checking cache for: sbt.ivyint.MergedDescriptors@23d53b10
 [debug] 		tried /Users/mikelwyred/.ivy2/local/org.json/json/20140107/ivys/ivy.xml
 [debug] 	local: no ivy file found for org.json#json;20140107
 [debug] 		tried https://repo1.maven.org/maven2/org/json/json/20140107/json-20140107.pom
@@ -41,7 +42,7 @@
 [debug] 	public: downloading https://repo1.maven.org/maven2/org/json/json/20140107/json-20140107.pom
 [debug] 	public: downloading https://repo1.maven.org/maven2/org/json/json/20140107/json-20140107.pom.sha1
 [debug] sha1 OK for https://repo1.maven.org/maven2/org/json/json/20140107/json-20140107.pom
-[debug] 	[SUCCESSFUL ] org.json#json;20140107!json.pom(pom.original) (102ms)
+[debug] 	[SUCCESSFUL ] org.json#json;20140107!json.pom(pom.original) (135ms)
 [info] Resolving org.sonatype.oss#oss-parent;7 ...
 [debug] sbt-chain: Checking cache for: dependency: org.sonatype.oss#oss-parent;7 {}
 [debug] sbt-chain: module revision found in cache: org.sonatype.oss#oss-parent;7
@@ -51,7 +52,7 @@
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.json#json;20140107 [compile->master]
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.spire-math#cats_2.11;0.3.0 [compile->default(compile)]
 [info] Resolving org.spire-math#cats_2.11;0.3.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@1b66a042
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@68167ce
 [debug] sbt-chain: module revision found in cache: org.spire-math#cats_2.11;0.3.0
 [debug] 	found org.spire-math#cats_2.11;0.3.0 in sbt-chain
 [debug] 	[0.3.0] org.spire-math#cats_2.11;0.3.0
@@ -60,7 +61,7 @@
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.spire-math#cats_2.11;0.3.0 [compile->master]
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.spire-math#cats-macros_2.11;0.3.0 [compile->default(compile)]
 [info] Resolving org.spire-math#cats-macros_2.11;0.3.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@2b19a08c
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@7dc16c04
 [debug] sbt-chain: module revision found in cache: org.spire-math#cats-macros_2.11;0.3.0
 [debug] 	found org.spire-math#cats-macros_2.11;0.3.0 in sbt-chain
 [debug] 	[0.3.0] org.spire-math#cats-macros_2.11;0.3.0
@@ -69,7 +70,7 @@
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.spire-math#cats-macros_2.11;0.3.0 [compile->master]
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->com.github.mpilquist#simulacrum_2.11;0.4.0 [compile->default(compile)]
 [info] Resolving com.github.mpilquist#simulacrum_2.11;0.4.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@36d97246
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@553725dc
 [debug] sbt-chain: module revision found in cache: com.github.mpilquist#simulacrum_2.11;0.4.0
 [debug] 	found com.github.mpilquist#simulacrum_2.11;0.4.0 in sbt-chain
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->com.github.mpilquist#simulacrum_2.11;0.4.0 [compile->runtime]
@@ -77,7 +78,7 @@
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->com.github.mpilquist#simulacrum_2.11;0.4.0 [compile->master]
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.spire-math#algebra_2.11;0.3.1 [compile->default(compile)]
 [info] Resolving org.spire-math#algebra_2.11;0.3.1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@83f166a
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3fe468e3
 [debug] sbt-chain: module revision found in cache: org.spire-math#algebra_2.11;0.3.1
 [debug] 	found org.spire-math#algebra_2.11;0.3.1 in sbt-chain
 [debug] 	[0.3.1] org.spire-math#algebra_2.11;0.3.1
@@ -86,7 +87,7 @@
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.spire-math#algebra_2.11;0.3.1 [compile->master]
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.spire-math#algebra-std_2.11;0.3.1 [compile->default(compile)]
 [info] Resolving org.spire-math#algebra-std_2.11;0.3.1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@31794843
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6441ce35
 [debug] sbt-chain: module revision found in cache: org.spire-math#algebra-std_2.11;0.3.1
 [debug] 	found org.spire-math#algebra-std_2.11;0.3.1 in sbt-chain
 [debug] 	[0.3.1] org.spire-math#algebra-std_2.11;0.3.1
@@ -95,7 +96,7 @@
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.spire-math#algebra-std_2.11;0.3.1 [compile->master]
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.typelevel#machinist_2.11;0.4.1 [compile->default(compile)]
 [info] Resolving org.typelevel#machinist_2.11;0.4.1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@198e5e01
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@71826e5b
 [debug] sbt-chain: module revision found in cache: org.typelevel#machinist_2.11;0.4.1
 [debug] 	found org.typelevel#machinist_2.11;0.4.1 in sbt-chain
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.typelevel#machinist_2.11;0.4.1 [compile->runtime]
@@ -103,7 +104,7 @@
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.typelevel#machinist_2.11;0.4.1 [compile->master]
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.scala-lang#scala-reflect;2.11.7 [compile->default(compile)]
 [info] Resolving org.scala-lang#scala-reflect;2.11.7 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@8ede955
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@1117a81c
 [debug] sbt-chain: module revision found in cache: org.scala-lang#scala-reflect;2.11.7
 [debug] 	found org.scala-lang#scala-reflect;2.11.7 in sbt-chain
 [debug] 	[2.11.7] org.scala-lang#scala-reflect;2.11.7
@@ -112,7 +113,7 @@
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.scala-lang#scala-reflect;2.11.7 [compile->master]
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.spire-math#cats-core_2.11;0.3.0 [compile->default(compile)]
 [info] Resolving org.spire-math#cats-core_2.11;0.3.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3b267764
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@78d98b67
 [debug] sbt-chain: module revision found in cache: org.spire-math#cats-core_2.11;0.3.0
 [debug] 	found org.spire-math#cats-core_2.11;0.3.0 in sbt-chain
 [debug] 	[0.3.0] org.spire-math#cats-core_2.11;0.3.0
@@ -121,7 +122,7 @@
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.spire-math#cats-core_2.11;0.3.0 [compile->master]
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.spire-math#cats-laws_2.11;0.3.0 [compile->default(compile)]
 [info] Resolving org.spire-math#cats-laws_2.11;0.3.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@4890b987
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@4d579ebb
 [debug] sbt-chain: module revision found in cache: org.spire-math#cats-laws_2.11;0.3.0
 [debug] 	found org.spire-math#cats-laws_2.11;0.3.0 in sbt-chain
 [debug] 	[0.3.0] org.spire-math#cats-laws_2.11;0.3.0
@@ -130,7 +131,7 @@
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.spire-math#cats-laws_2.11;0.3.0 [compile->master]
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.scalacheck#scalacheck_2.11;1.12.5 [compile->default(compile)]
 [info] Resolving org.scalacheck#scalacheck_2.11;1.12.5 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@39294bfb
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@35d7e5cb
 [debug] sbt-chain: module revision found in cache: org.scalacheck#scalacheck_2.11;1.12.5
 [debug] 	found org.scalacheck#scalacheck_2.11;1.12.5 in sbt-chain
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.scalacheck#scalacheck_2.11;1.12.5 [compile->runtime]
@@ -138,7 +139,7 @@
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.scalacheck#scalacheck_2.11;1.12.5 [compile->master]
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.scala-sbt#test-interface;1.0 [compile->default(compile)]
 [info] Resolving org.scala-sbt#test-interface;1.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@116cdd04
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@736154a1
 [debug] sbt-chain: module revision found in cache: org.scala-sbt#test-interface;1.0
 [debug] 	found org.scala-sbt#test-interface;1.0 in sbt-chain
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.scala-sbt#test-interface;1.0 [compile->runtime]
@@ -146,7 +147,7 @@
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.scala-sbt#test-interface;1.0 [compile->master]
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.typelevel#discipline_2.11;0.4 [compile->default(compile)]
 [info] Resolving org.typelevel#discipline_2.11;0.4 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6b756c32
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@768cb228
 [debug] sbt-chain: module revision found in cache: org.typelevel#discipline_2.11;0.4
 [debug] 	found org.typelevel#discipline_2.11;0.4 in sbt-chain
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.typelevel#discipline_2.11;0.4 [compile->runtime]
@@ -154,7 +155,7 @@
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.typelevel#discipline_2.11;0.4 [compile->master]
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.spire-math#algebra-laws_2.11;0.3.1 [compile->default(compile)]
 [info] Resolving org.spire-math#algebra-laws_2.11;0.3.1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@7b4d5500
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@5059a422
 [debug] sbt-chain: module revision found in cache: org.spire-math#algebra-laws_2.11;0.3.1
 [debug] 	found org.spire-math#algebra-laws_2.11;0.3.1 in sbt-chain
 [debug] 	[0.3.1] org.spire-math#algebra-laws_2.11;0.3.1
@@ -163,7 +164,7 @@
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.spire-math#algebra-laws_2.11;0.3.1 [compile->master]
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.spire-math#algebra-macros_2.11;0.3.1 [compile->default(compile)]
 [info] Resolving org.spire-math#algebra-macros_2.11;0.3.1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@4a9004e8
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@12110790
 [debug] sbt-chain: module revision found in cache: org.spire-math#algebra-macros_2.11;0.3.1
 [debug] 	found org.spire-math#algebra-macros_2.11;0.3.1 in sbt-chain
 [debug] 	[0.3.1] org.spire-math#algebra-macros_2.11;0.3.1
@@ -172,7 +173,7 @@
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.spire-math#algebra-macros_2.11;0.3.1 [compile->master]
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->com.github.inthenow#bricks-platform_2.11;0.0.1 [compile->default(compile)]
 [info] Resolving com.github.inthenow#bricks-platform_2.11;0.0.1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@d86379a
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@584c1b67
 [debug] sbt-chain: module revision found in cache: com.github.inthenow#bricks-platform_2.11;0.0.1
 [debug] 	found com.github.inthenow#bricks-platform_2.11;0.0.1 in sbt-chain
 [debug] 	[0.0.1] com.github.inthenow#bricks-platform_2.11;0.0.1
@@ -181,7 +182,7 @@
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->com.github.inthenow#bricks-platform_2.11;0.0.1 [compile->master]
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->com.github.inthenow#bricks-macros_2.11;0.0.1 [compile->default(compile)]
 [info] Resolving com.github.inthenow#bricks-macros_2.11;0.0.1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@1ab5c53a
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6606224d
 [debug] sbt-chain: module revision found in cache: com.github.inthenow#bricks-macros_2.11;0.0.1
 [debug] 	found com.github.inthenow#bricks-macros_2.11;0.0.1 in sbt-chain
 [debug] 	[0.0.1] com.github.inthenow#bricks-macros_2.11;0.0.1
@@ -190,7 +191,7 @@
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->com.github.inthenow#bricks-macros_2.11;0.0.1 [compile->master]
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.typelevel#macro-compat_2.11;1.0.0 [compile->default(compile)]
 [info] Resolving org.typelevel#macro-compat_2.11;1.0.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@20d70694
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@20ec0978
 [debug] sbt-chain: module revision found in cache: org.typelevel#macro-compat_2.11;1.0.0
 [debug] 	found org.typelevel#macro-compat_2.11;1.0.0 in sbt-chain
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.typelevel#macro-compat_2.11;1.0.0 [compile->runtime]
@@ -198,7 +199,7 @@
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.typelevel#macro-compat_2.11;1.0.0 [compile->master]
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.spire-math#cats-free_2.11;0.3.0 [compile->default(compile)]
 [info] Resolving org.spire-math#cats-free_2.11;0.3.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@78b7f3f3
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@20b54a96
 [debug] sbt-chain: module revision found in cache: org.spire-math#cats-free_2.11;0.3.0
 [debug] 	found org.spire-math#cats-free_2.11;0.3.0 in sbt-chain
 [debug] 	[0.3.0] org.spire-math#cats-free_2.11;0.3.0
@@ -207,7 +208,7 @@
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.spire-math#cats-free_2.11;0.3.0 [compile->master]
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.spire-math#cats-state_2.11;0.3.0 [compile->default(compile)]
 [info] Resolving org.spire-math#cats-state_2.11;0.3.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@336fb796
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@43c91657
 [debug] sbt-chain: module revision found in cache: org.spire-math#cats-state_2.11;0.3.0
 [debug] 	found org.spire-math#cats-state_2.11;0.3.0 in sbt-chain
 [debug] 	[0.3.0] org.spire-math#cats-state_2.11;0.3.0
@@ -216,7 +217,7 @@
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.spire-math#cats-state_2.11;0.3.0 [compile->master]
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.spire-math#cats-jvm_2.11;0.3.0 [compile->default(compile)]
 [info] Resolving org.spire-math#cats-jvm_2.11;0.3.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3831e114
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@46d4dd6
 [debug] sbt-chain: module revision found in cache: org.spire-math#cats-jvm_2.11;0.3.0
 [debug] 	found org.spire-math#cats-jvm_2.11;0.3.0 in sbt-chain
 [debug] 	[0.3.0] org.spire-math#cats-jvm_2.11;0.3.0
@@ -225,7 +226,7 @@
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.spire-math#cats-jvm_2.11;0.3.0 [compile->master]
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->com.typesafe#config;1.3.1 [compile->default(compile)]
 [info] Resolving com.typesafe#config;1.3.1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@5ffecf30
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@12f79442
 [debug] sbt-chain: module revision found in cache: com.typesafe#config;1.3.1
 [debug] 	found com.typesafe#config;1.3.1 in sbt-chain
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->com.typesafe#config;1.3.1 [compile->runtime]
@@ -233,7 +234,7 @@
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->com.typesafe#config;1.3.1 [compile->master]
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->io.spray#spray-client_2.11;1.3.3 [compile->default(compile)]
 [info] Resolving io.spray#spray-client_2.11;1.3.3 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@2bcf8d27
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@34b060bc
 [debug] sbt-chain: module revision found in cache: io.spray#spray-client_2.11;1.3.3
 [debug] 	found io.spray#spray-client_2.11;1.3.3 in sbt-chain
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->io.spray#spray-client_2.11;1.3.3 [compile->runtime]
@@ -241,7 +242,7 @@
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->io.spray#spray-client_2.11;1.3.3 [compile->master]
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->io.spray#spray-can_2.11;1.3.3 [compile->default(compile)]
 [info] Resolving io.spray#spray-can_2.11;1.3.3 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@1a74116
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@70810fe0
 [debug] sbt-chain: module revision found in cache: io.spray#spray-can_2.11;1.3.3
 [debug] 	found io.spray#spray-can_2.11;1.3.3 in sbt-chain
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->io.spray#spray-can_2.11;1.3.3 [compile->runtime]
@@ -249,7 +250,7 @@
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->io.spray#spray-can_2.11;1.3.3 [compile->master]
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->io.spray#spray-io_2.11;1.3.3 [compile->default(compile)]
 [info] Resolving io.spray#spray-io_2.11;1.3.3 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@1222a400
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@5e408197
 [debug] sbt-chain: module revision found in cache: io.spray#spray-io_2.11;1.3.3
 [debug] 	found io.spray#spray-io_2.11;1.3.3 in sbt-chain
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->io.spray#spray-io_2.11;1.3.3 [compile->runtime]
@@ -257,7 +258,7 @@
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->io.spray#spray-io_2.11;1.3.3 [compile->master]
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->io.spray#spray-util_2.11;1.3.3 [compile->default(compile)]
 [info] Resolving io.spray#spray-util_2.11;1.3.3 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@74efa446
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@2306668
 [debug] sbt-chain: module revision found in cache: io.spray#spray-util_2.11;1.3.3
 [debug] 	found io.spray#spray-util_2.11;1.3.3 in sbt-chain
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->io.spray#spray-util_2.11;1.3.3 [compile->runtime]
@@ -265,7 +266,7 @@
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->io.spray#spray-util_2.11;1.3.3 [compile->master]
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->io.spray#spray-http_2.11;1.3.3 [compile->default(compile)]
 [info] Resolving io.spray#spray-http_2.11;1.3.3 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3cede3d8
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@54a7ff4e
 [debug] sbt-chain: module revision found in cache: io.spray#spray-http_2.11;1.3.3
 [debug] 	found io.spray#spray-http_2.11;1.3.3 in sbt-chain
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->io.spray#spray-http_2.11;1.3.3 [compile->runtime]
@@ -273,7 +274,7 @@
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->io.spray#spray-http_2.11;1.3.3 [compile->master]
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.parboiled#parboiled-scala_2.11;1.1.7 [compile->default(compile)]
 [info] Resolving org.parboiled#parboiled-scala_2.11;1.1.7 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@5226a8a7
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@72e7b2a9
 [debug] sbt-chain: module revision found in cache: org.parboiled#parboiled-scala_2.11;1.1.7
 [debug] 	found org.parboiled#parboiled-scala_2.11;1.1.7 in sbt-chain
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.parboiled#parboiled-scala_2.11;1.1.7 [compile->runtime]
@@ -281,7 +282,7 @@
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.parboiled#parboiled-scala_2.11;1.1.7 [compile->master]
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.parboiled#parboiled-core;1.1.7 [compile->default(compile)]
 [info] Resolving org.parboiled#parboiled-core;1.1.7 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@1cf7a785
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@44270c41
 [debug] sbt-chain: module revision found in cache: org.parboiled#parboiled-core;1.1.7
 [debug] 	found org.parboiled#parboiled-core;1.1.7 in sbt-chain
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.parboiled#parboiled-core;1.1.7 [compile->runtime]
@@ -289,7 +290,7 @@
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.parboiled#parboiled-core;1.1.7 [compile->master]
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->io.spray#spray-httpx_2.11;1.3.3 [compile->default(compile)]
 [info] Resolving io.spray#spray-httpx_2.11;1.3.3 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6d9f20c9
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@56b92ddf
 [debug] sbt-chain: module revision found in cache: io.spray#spray-httpx_2.11;1.3.3
 [debug] 	found io.spray#spray-httpx_2.11;1.3.3 in sbt-chain
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->io.spray#spray-httpx_2.11;1.3.3 [compile->runtime]
@@ -297,7 +298,7 @@
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->io.spray#spray-httpx_2.11;1.3.3 [compile->master]
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.scala-lang.modules#scala-xml_2.11;1.0.3 [compile->default(compile)]
 [info] Resolving org.scala-lang.modules#scala-xml_2.11;1.0.3 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@2726e108
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3735db2d
 [debug] sbt-chain: module revision found in cache: org.scala-lang.modules#scala-xml_2.11;1.0.3
 [debug] 	found org.scala-lang.modules#scala-xml_2.11;1.0.3 in sbt-chain
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.scala-lang.modules#scala-xml_2.11;1.0.3 [compile->runtime]
@@ -305,15 +306,47 @@
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.scala-lang.modules#scala-xml_2.11;1.0.3 [compile->master]
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.jvnet.mimepull#mimepull;1.9.5 [compile->default(compile)]
 [info] Resolving org.jvnet.mimepull#mimepull;1.9.5 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@5fd41b42
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@43e4913a
 [debug] sbt-chain: module revision found in cache: org.jvnet.mimepull#mimepull;1.9.5
 [debug] 	found org.jvnet.mimepull#mimepull;1.9.5 in sbt-chain
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.jvnet.mimepull#mimepull;1.9.5 [compile->runtime]
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.jvnet.mimepull#mimepull;1.9.5 [compile->compile]
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.jvnet.mimepull#mimepull;1.9.5 [compile->master]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.apache.spark#spark-streaming-twitter_2.11;1.6.0 [compile->default(compile)]
+[info] Resolving org.apache.spark#spark-streaming-twitter_2.11;1.6.0 ...
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@701171b9
+[debug] sbt-chain: module revision found in cache: org.apache.spark#spark-streaming-twitter_2.11;1.6.0
+[debug] 	found org.apache.spark#spark-streaming-twitter_2.11;1.6.0 in sbt-chain
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.apache.spark#spark-streaming-twitter_2.11;1.6.0 [compile->runtime]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.apache.spark#spark-streaming-twitter_2.11;1.6.0 [compile->compile]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.apache.spark#spark-streaming-twitter_2.11;1.6.0 [compile->master]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.twitter4j#twitter4j-stream;4.0.4 [compile->default(compile)]
+[info] Resolving org.twitter4j#twitter4j-stream;4.0.4 ...
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@143e1f2f
+[debug] sbt-chain: module revision found in cache: org.twitter4j#twitter4j-stream;4.0.4
+[debug] 	found org.twitter4j#twitter4j-stream;4.0.4 in sbt-chain
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.twitter4j#twitter4j-stream;4.0.4 [compile->runtime]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.twitter4j#twitter4j-stream;4.0.4 [compile->compile]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.twitter4j#twitter4j-stream;4.0.4 [compile->master]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.twitter4j#twitter4j-core;4.0.4 [compile->default(compile)]
+[info] Resolving org.twitter4j#twitter4j-core;4.0.4 ...
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@92dc240
+[debug] sbt-chain: module revision found in cache: org.twitter4j#twitter4j-core;4.0.4
+[debug] 	found org.twitter4j#twitter4j-core;4.0.4 in sbt-chain
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.twitter4j#twitter4j-core;4.0.4 [compile->runtime]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.twitter4j#twitter4j-core;4.0.4 [compile->compile]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.twitter4j#twitter4j-core;4.0.4 [compile->master]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.spark-project.spark#unused;1.0.0 [compile->default(compile)]
+[info] Resolving org.spark-project.spark#unused;1.0.0 ...
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@62534016
+[debug] sbt-chain: module revision found in cache: org.spark-project.spark#unused;1.0.0
+[debug] 	found org.spark-project.spark#unused;1.0.0 in sbt-chain
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.spark-project.spark#unused;1.0.0 [compile->runtime]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.spark-project.spark#unused;1.0.0 [compile->compile]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.spark-project.spark#unused;1.0.0 [compile->master]
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.mongodb#casbah-commons_2.11;3.1.1 [compile->default(compile)]
 [info] Resolving org.mongodb#casbah-commons_2.11;3.1.1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@2255d5ee
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@563d32ca
 [debug] sbt-chain: module revision found in cache: org.mongodb#casbah-commons_2.11;3.1.1
 [debug] 	found org.mongodb#casbah-commons_2.11;3.1.1 in sbt-chain
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.mongodb#casbah-commons_2.11;3.1.1 [compile->runtime]
@@ -321,7 +354,7 @@
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.mongodb#casbah-commons_2.11;3.1.1 [compile->master]
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->com.github.nscala-time#nscala-time_2.11;1.0.0 [compile->default(compile)]
 [info] Resolving com.github.nscala-time#nscala-time_2.11;1.0.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6983a892
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@1f3e9f85
 [debug] sbt-chain: module revision found in cache: com.github.nscala-time#nscala-time_2.11;1.0.0
 [debug] 	found com.github.nscala-time#nscala-time_2.11;1.0.0 in sbt-chain
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->com.github.nscala-time#nscala-time_2.11;1.0.0 [compile->runtime]
@@ -329,7 +362,7 @@
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->com.github.nscala-time#nscala-time_2.11;1.0.0 [compile->master]
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->joda-time#joda-time;2.3 [compile->default(compile)]
 [info] Resolving joda-time#joda-time;2.3 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@46e4e3c
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@e661cf3
 [debug] sbt-chain: module revision found in cache: joda-time#joda-time;2.3
 [debug] 	found joda-time#joda-time;2.3 in sbt-chain
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->joda-time#joda-time;2.3 [compile->runtime]
@@ -337,7 +370,7 @@
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->joda-time#joda-time;2.3 [compile->master]
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.joda#joda-convert;1.2 [compile->default(compile)]
 [info] Resolving org.joda#joda-convert;1.2 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@47d45014
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@2d26fe2e
 [debug] sbt-chain: module revision found in cache: org.joda#joda-convert;1.2
 [debug] 	found org.joda#joda-convert;1.2 in sbt-chain
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.joda#joda-convert;1.2 [compile->runtime]
@@ -345,7 +378,7 @@
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.joda#joda-convert;1.2 [compile->master]
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.mongodb#mongo-java-driver;3.2.2 [compile->default(compile)]
 [info] Resolving org.mongodb#mongo-java-driver;3.2.2 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@7b5458e7
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@db5d17
 [debug] sbt-chain: module revision found in cache: org.mongodb#mongo-java-driver;3.2.2
 [debug] 	found org.mongodb#mongo-java-driver;3.2.2 in sbt-chain
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.mongodb#mongo-java-driver;3.2.2 [compile->runtime]
@@ -353,7 +386,7 @@
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.mongodb#mongo-java-driver;3.2.2 [compile->master]
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.slf4j#slf4j-api;1.6.0 [compile->default(compile)]
 [info] Resolving org.slf4j#slf4j-api;1.6.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@e399e17
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@2877baef
 [debug] sbt-chain: module revision found in cache: org.slf4j#slf4j-api;1.6.0
 [debug] 	found org.slf4j#slf4j-api;1.6.0 in sbt-chain
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.slf4j#slf4j-api;1.6.0 [compile->runtime]
@@ -361,7 +394,7 @@
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.slf4j#slf4j-api;1.6.0 [compile->master]
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.mongodb#casbah-core_2.11;3.1.1 [compile->default(compile)]
 [info] Resolving org.mongodb#casbah-core_2.11;3.1.1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@39bc106e
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@46655efe
 [debug] sbt-chain: module revision found in cache: org.mongodb#casbah-core_2.11;3.1.1
 [debug] 	found org.mongodb#casbah-core_2.11;3.1.1 in sbt-chain
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.mongodb#casbah-core_2.11;3.1.1 [compile->runtime]
@@ -369,7 +402,7 @@
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.mongodb#casbah-core_2.11;3.1.1 [compile->master]
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.mongodb#casbah-query_2.11;3.1.1 [compile->default(compile)]
 [info] Resolving org.mongodb#casbah-query_2.11;3.1.1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@40ddeffe
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3f865c12
 [debug] sbt-chain: module revision found in cache: org.mongodb#casbah-query_2.11;3.1.1
 [debug] 	found org.mongodb#casbah-query_2.11;3.1.1 in sbt-chain
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.mongodb#casbah-query_2.11;3.1.1 [compile->runtime]
@@ -377,7 +410,7 @@
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.mongodb#casbah-query_2.11;3.1.1 [compile->master]
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->io.spray#spray-routing-shapeless2_2.11;1.3.2 [compile->default(compile)]
 [info] Resolving io.spray#spray-routing-shapeless2_2.11;1.3.2 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@4b2dcc91
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@738f94ee
 [debug] sbt-chain: module revision found in cache: io.spray#spray-routing-shapeless2_2.11;1.3.2
 [debug] 	found io.spray#spray-routing-shapeless2_2.11;1.3.2 in sbt-chain
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->io.spray#spray-routing-shapeless2_2.11;1.3.2 [compile->runtime]
@@ -385,7 +418,7 @@
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->io.spray#spray-routing-shapeless2_2.11;1.3.2 [compile->master]
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->com.chuusai#shapeless_2.11;2.0.0 [compile->default(compile)]
 [info] Resolving com.chuusai#shapeless_2.11;2.0.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@7e7ec12b
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@580bd259
 [debug] sbt-chain: module revision found in cache: com.chuusai#shapeless_2.11;2.0.0
 [debug] 	found com.chuusai#shapeless_2.11;2.0.0 in sbt-chain
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->com.chuusai#shapeless_2.11;2.0.0 [compile->runtime]
@@ -393,7 +426,7 @@
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->com.chuusai#shapeless_2.11;2.0.0 [compile->master]
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->com.typesafe.akka#akka-http-spray-json-experimental_2.11;2.4.4 [compile->default(compile)]
 [info] Resolving com.typesafe.akka#akka-http-spray-json-experimental_2.11;2.4.4 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@677cb57d
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@72b9ecde
 [debug] sbt-chain: module revision found in cache: com.typesafe.akka#akka-http-spray-json-experimental_2.11;2.4.4
 [debug] 	found com.typesafe.akka#akka-http-spray-json-experimental_2.11;2.4.4 in sbt-chain
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->com.typesafe.akka#akka-http-spray-json-experimental_2.11;2.4.4 [compile->runtime]
@@ -401,7 +434,7 @@
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->com.typesafe.akka#akka-http-spray-json-experimental_2.11;2.4.4 [compile->master]
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->com.typesafe.akka#akka-http-experimental_2.11;2.4.4 [compile->default(compile)]
 [info] Resolving com.typesafe.akka#akka-http-experimental_2.11;2.4.4 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@263059fc
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@367974e9
 [debug] sbt-chain: module revision found in cache: com.typesafe.akka#akka-http-experimental_2.11;2.4.4
 [debug] 	found com.typesafe.akka#akka-http-experimental_2.11;2.4.4 in sbt-chain
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->com.typesafe.akka#akka-http-experimental_2.11;2.4.4 [compile->runtime]
@@ -409,7 +442,7 @@
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->com.typesafe.akka#akka-http-experimental_2.11;2.4.4 [compile->master]
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->com.typesafe.akka#akka-http-core_2.11;2.4.4 [compile->default(compile)]
 [info] Resolving com.typesafe.akka#akka-http-core_2.11;2.4.4 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@2eb7c0e8
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@2c169759
 [debug] sbt-chain: module revision found in cache: com.typesafe.akka#akka-http-core_2.11;2.4.4
 [debug] 	found com.typesafe.akka#akka-http-core_2.11;2.4.4 in sbt-chain
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->com.typesafe.akka#akka-http-core_2.11;2.4.4 [compile->runtime]
@@ -417,7 +450,7 @@
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->com.typesafe.akka#akka-http-core_2.11;2.4.4 [compile->master]
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->com.typesafe.akka#akka-stream_2.11;2.4.4 [compile->default(compile)]
 [info] Resolving com.typesafe.akka#akka-stream_2.11;2.4.4 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@220842b2
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@1fabd775
 [debug] sbt-chain: module revision found in cache: com.typesafe.akka#akka-stream_2.11;2.4.4
 [debug] 	found com.typesafe.akka#akka-stream_2.11;2.4.4 in sbt-chain
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->com.typesafe.akka#akka-stream_2.11;2.4.4 [compile->runtime]
@@ -425,7 +458,7 @@
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->com.typesafe.akka#akka-stream_2.11;2.4.4 [compile->master]
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->com.typesafe.akka#akka-actor_2.11;2.4.4 [compile->default(compile)]
 [info] Resolving com.typesafe.akka#akka-actor_2.11;2.4.4 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@63960b5e
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@630bc924
 [debug] sbt-chain: module revision found in cache: com.typesafe.akka#akka-actor_2.11;2.4.4
 [debug] 	found com.typesafe.akka#akka-actor_2.11;2.4.4 in sbt-chain
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->com.typesafe.akka#akka-actor_2.11;2.4.4 [compile->runtime]
@@ -433,7 +466,7 @@
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->com.typesafe.akka#akka-actor_2.11;2.4.4 [compile->master]
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.scala-lang.modules#scala-java8-compat_2.11;0.7.0 [compile->default(compile)]
 [info] Resolving org.scala-lang.modules#scala-java8-compat_2.11;0.7.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6930cd71
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@7dacbe02
 [debug] sbt-chain: module revision found in cache: org.scala-lang.modules#scala-java8-compat_2.11;0.7.0
 [debug] 	found org.scala-lang.modules#scala-java8-compat_2.11;0.7.0 in sbt-chain
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.scala-lang.modules#scala-java8-compat_2.11;0.7.0 [compile->runtime]
@@ -441,7 +474,7 @@
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.scala-lang.modules#scala-java8-compat_2.11;0.7.0 [compile->master]
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->com.typesafe#ssl-config-akka_2.11;0.2.1 [compile->default(compile)]
 [info] Resolving com.typesafe#ssl-config-akka_2.11;0.2.1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@14dcb621
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@70d2dbca
 [debug] sbt-chain: module revision found in cache: com.typesafe#ssl-config-akka_2.11;0.2.1
 [debug] 	found com.typesafe#ssl-config-akka_2.11;0.2.1 in sbt-chain
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->com.typesafe#ssl-config-akka_2.11;0.2.1 [compile->runtime]
@@ -449,7 +482,7 @@
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->com.typesafe#ssl-config-akka_2.11;0.2.1 [compile->master]
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->com.typesafe#ssl-config-core_2.11;0.2.1 [compile->default(compile)]
 [info] Resolving com.typesafe#ssl-config-core_2.11;0.2.1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6e367ec1
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3324d5f8
 [debug] sbt-chain: module revision found in cache: com.typesafe#ssl-config-core_2.11;0.2.1
 [debug] 	found com.typesafe#ssl-config-core_2.11;0.2.1 in sbt-chain
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->com.typesafe#ssl-config-core_2.11;0.2.1 [compile->runtime]
@@ -457,7 +490,7 @@
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->com.typesafe#ssl-config-core_2.11;0.2.1 [compile->master]
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.4 [compile->default(compile)]
 [info] Resolving org.scala-lang.modules#scala-parser-combinators_2.11;1.0.4 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3e373d8f
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@78a1390d
 [debug] sbt-chain: module revision found in cache: org.scala-lang.modules#scala-parser-combinators_2.11;1.0.4
 [debug] 	found org.scala-lang.modules#scala-parser-combinators_2.11;1.0.4 in sbt-chain
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.4 [compile->runtime]
@@ -465,7 +498,7 @@
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.4 [compile->master]
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.reactivestreams#reactive-streams;1.0.0 [compile->default(compile)]
 [info] Resolving org.reactivestreams#reactive-streams;1.0.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@75010ebb
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@4e1370dd
 [debug] sbt-chain: module revision found in cache: org.reactivestreams#reactive-streams;1.0.0
 [debug] 	found org.reactivestreams#reactive-streams;1.0.0 in sbt-chain
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.reactivestreams#reactive-streams;1.0.0 [compile->runtime]
@@ -473,7 +506,7 @@
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.reactivestreams#reactive-streams;1.0.0 [compile->master]
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->com.typesafe.akka#akka-parsing_2.11;2.4.4 [compile->default(compile)]
 [info] Resolving com.typesafe.akka#akka-parsing_2.11;2.4.4 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6f8d4c82
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@261f262
 [debug] sbt-chain: module revision found in cache: com.typesafe.akka#akka-parsing_2.11;2.4.4
 [debug] 	found com.typesafe.akka#akka-parsing_2.11;2.4.4 in sbt-chain
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->com.typesafe.akka#akka-parsing_2.11;2.4.4 [compile->runtime]
@@ -481,7 +514,7 @@
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->com.typesafe.akka#akka-parsing_2.11;2.4.4 [compile->master]
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->io.spray#spray-json_2.11;1.3.2 [compile->default(compile)]
 [info] Resolving io.spray#spray-json_2.11;1.3.2 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@349d6479
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@4af5a9c1
 [debug] sbt-chain: module revision found in cache: io.spray#spray-json_2.11;1.3.2
 [debug] 	found io.spray#spray-json_2.11;1.3.2 in sbt-chain
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->io.spray#spray-json_2.11;1.3.2 [compile->runtime]
@@ -627,6 +660,22 @@
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.jvnet.mimepull#mimepull;1.9.5 [compile->runtime]
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.jvnet.mimepull#mimepull;1.9.5 [compile->compile]
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.jvnet.mimepull#mimepull;1.9.5 [compile->master]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.apache.spark#spark-streaming-twitter_2.11;1.6.0 [compile->default(compile)]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.apache.spark#spark-streaming-twitter_2.11;1.6.0 [compile->runtime]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.apache.spark#spark-streaming-twitter_2.11;1.6.0 [compile->compile]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.apache.spark#spark-streaming-twitter_2.11;1.6.0 [compile->master]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.twitter4j#twitter4j-stream;4.0.4 [compile->default(compile)]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.twitter4j#twitter4j-stream;4.0.4 [compile->runtime]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.twitter4j#twitter4j-stream;4.0.4 [compile->compile]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.twitter4j#twitter4j-stream;4.0.4 [compile->master]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.twitter4j#twitter4j-core;4.0.4 [compile->default(compile)]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.twitter4j#twitter4j-core;4.0.4 [compile->runtime]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.twitter4j#twitter4j-core;4.0.4 [compile->compile]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.twitter4j#twitter4j-core;4.0.4 [compile->master]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.spark-project.spark#unused;1.0.0 [compile->default(compile)]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.spark-project.spark#unused;1.0.0 [compile->runtime]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.spark-project.spark#unused;1.0.0 [compile->compile]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.spark-project.spark#unused;1.0.0 [compile->master]
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.mongodb#casbah-commons_2.11;3.1.1 [compile->default(compile)]
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.mongodb#casbah-commons_2.11;3.1.1 [compile->runtime]
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.mongodb#casbah-commons_2.11;3.1.1 [compile->compile]
@@ -852,6 +901,22 @@
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.jvnet.mimepull#mimepull;1.9.5 [runtime->runtime]
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.jvnet.mimepull#mimepull;1.9.5 [runtime->compile]
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.jvnet.mimepull#mimepull;1.9.5 [runtime->master]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.apache.spark#spark-streaming-twitter_2.11;1.6.0 [runtime->default(compile)]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.apache.spark#spark-streaming-twitter_2.11;1.6.0 [runtime->runtime]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.apache.spark#spark-streaming-twitter_2.11;1.6.0 [runtime->compile]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.apache.spark#spark-streaming-twitter_2.11;1.6.0 [runtime->master]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.twitter4j#twitter4j-stream;4.0.4 [runtime->default(compile)]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.twitter4j#twitter4j-stream;4.0.4 [runtime->runtime]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.twitter4j#twitter4j-stream;4.0.4 [runtime->compile]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.twitter4j#twitter4j-stream;4.0.4 [runtime->master]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.twitter4j#twitter4j-core;4.0.4 [runtime->default(compile)]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.twitter4j#twitter4j-core;4.0.4 [runtime->runtime]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.twitter4j#twitter4j-core;4.0.4 [runtime->compile]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.twitter4j#twitter4j-core;4.0.4 [runtime->master]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.spark-project.spark#unused;1.0.0 [runtime->default(compile)]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.spark-project.spark#unused;1.0.0 [runtime->runtime]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.spark-project.spark#unused;1.0.0 [runtime->compile]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.spark-project.spark#unused;1.0.0 [runtime->master]
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.mongodb#casbah-commons_2.11;3.1.1 [runtime->default(compile)]
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.mongodb#casbah-commons_2.11;3.1.1 [runtime->runtime]
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.mongodb#casbah-commons_2.11;3.1.1 [runtime->compile]
@@ -1081,6 +1146,22 @@
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.jvnet.mimepull#mimepull;1.9.5 [compile->runtime]
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.jvnet.mimepull#mimepull;1.9.5 [compile->compile]
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.jvnet.mimepull#mimepull;1.9.5 [compile->master]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.apache.spark#spark-streaming-twitter_2.11;1.6.0 [compile->default(compile)]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.apache.spark#spark-streaming-twitter_2.11;1.6.0 [compile->runtime]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.apache.spark#spark-streaming-twitter_2.11;1.6.0 [compile->compile]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.apache.spark#spark-streaming-twitter_2.11;1.6.0 [compile->master]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.twitter4j#twitter4j-stream;4.0.4 [compile->default(compile)]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.twitter4j#twitter4j-stream;4.0.4 [compile->runtime]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.twitter4j#twitter4j-stream;4.0.4 [compile->compile]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.twitter4j#twitter4j-stream;4.0.4 [compile->master]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.twitter4j#twitter4j-core;4.0.4 [compile->default(compile)]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.twitter4j#twitter4j-core;4.0.4 [compile->runtime]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.twitter4j#twitter4j-core;4.0.4 [compile->compile]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.twitter4j#twitter4j-core;4.0.4 [compile->master]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.spark-project.spark#unused;1.0.0 [compile->default(compile)]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.spark-project.spark#unused;1.0.0 [compile->runtime]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.spark-project.spark#unused;1.0.0 [compile->compile]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.spark-project.spark#unused;1.0.0 [compile->master]
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.mongodb#casbah-commons_2.11;3.1.1 [compile->default(compile)]
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.mongodb#casbah-commons_2.11;3.1.1 [compile->runtime]
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.mongodb#casbah-commons_2.11;3.1.1 [compile->compile]
@@ -1306,6 +1387,22 @@
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.jvnet.mimepull#mimepull;1.9.5 [runtime->runtime]
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.jvnet.mimepull#mimepull;1.9.5 [runtime->compile]
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.jvnet.mimepull#mimepull;1.9.5 [runtime->master]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.apache.spark#spark-streaming-twitter_2.11;1.6.0 [runtime->default(compile)]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.apache.spark#spark-streaming-twitter_2.11;1.6.0 [runtime->runtime]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.apache.spark#spark-streaming-twitter_2.11;1.6.0 [runtime->compile]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.apache.spark#spark-streaming-twitter_2.11;1.6.0 [runtime->master]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.twitter4j#twitter4j-stream;4.0.4 [runtime->default(compile)]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.twitter4j#twitter4j-stream;4.0.4 [runtime->runtime]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.twitter4j#twitter4j-stream;4.0.4 [runtime->compile]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.twitter4j#twitter4j-stream;4.0.4 [runtime->master]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.twitter4j#twitter4j-core;4.0.4 [runtime->default(compile)]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.twitter4j#twitter4j-core;4.0.4 [runtime->runtime]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.twitter4j#twitter4j-core;4.0.4 [runtime->compile]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.twitter4j#twitter4j-core;4.0.4 [runtime->master]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.spark-project.spark#unused;1.0.0 [runtime->default(compile)]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.spark-project.spark#unused;1.0.0 [runtime->runtime]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.spark-project.spark#unused;1.0.0 [runtime->compile]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.spark-project.spark#unused;1.0.0 [runtime->master]
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.mongodb#casbah-commons_2.11;3.1.1 [runtime->default(compile)]
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.mongodb#casbah-commons_2.11;3.1.1 [runtime->runtime]
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.mongodb#casbah-commons_2.11;3.1.1 [runtime->compile]
@@ -1531,6 +1628,22 @@
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.jvnet.mimepull#mimepull;1.9.5 [test->runtime]
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.jvnet.mimepull#mimepull;1.9.5 [test->compile]
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.jvnet.mimepull#mimepull;1.9.5 [test->master]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.apache.spark#spark-streaming-twitter_2.11;1.6.0 [test->default(compile)]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.apache.spark#spark-streaming-twitter_2.11;1.6.0 [test->runtime]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.apache.spark#spark-streaming-twitter_2.11;1.6.0 [test->compile]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.apache.spark#spark-streaming-twitter_2.11;1.6.0 [test->master]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.twitter4j#twitter4j-stream;4.0.4 [test->default(compile)]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.twitter4j#twitter4j-stream;4.0.4 [test->runtime]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.twitter4j#twitter4j-stream;4.0.4 [test->compile]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.twitter4j#twitter4j-stream;4.0.4 [test->master]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.twitter4j#twitter4j-core;4.0.4 [test->default(compile)]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.twitter4j#twitter4j-core;4.0.4 [test->runtime]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.twitter4j#twitter4j-core;4.0.4 [test->compile]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.twitter4j#twitter4j-core;4.0.4 [test->master]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.spark-project.spark#unused;1.0.0 [test->default(compile)]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.spark-project.spark#unused;1.0.0 [test->runtime]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.spark-project.spark#unused;1.0.0 [test->compile]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.spark-project.spark#unused;1.0.0 [test->master]
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.mongodb#casbah-commons_2.11;3.1.1 [test->default(compile)]
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.mongodb#casbah-commons_2.11;3.1.1 [test->runtime]
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.mongodb#casbah-commons_2.11;3.1.1 [test->compile]
@@ -1621,38 +1734,6 @@
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->io.spray#spray-json_2.11;1.3.2 [test->master]
 [debug] resolving dependencies for configuration 'provided'
 [debug] == resolving dependencies for ita-common#ita-common$sources_2.11;0.0.1 [provided]
-[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.apache.spark#spark-streaming-twitter_2.11;1.6.0 [provided->default(compile)]
-[info] Resolving org.apache.spark#spark-streaming-twitter_2.11;1.6.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@5137cb0f
-[debug] sbt-chain: module revision found in cache: org.apache.spark#spark-streaming-twitter_2.11;1.6.0
-[debug] 	found org.apache.spark#spark-streaming-twitter_2.11;1.6.0 in sbt-chain
-[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.apache.spark#spark-streaming-twitter_2.11;1.6.0 [provided->runtime]
-[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.apache.spark#spark-streaming-twitter_2.11;1.6.0 [provided->compile]
-[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.apache.spark#spark-streaming-twitter_2.11;1.6.0 [provided->master]
-[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.twitter4j#twitter4j-stream;4.0.4 [provided->default(compile)]
-[info] Resolving org.twitter4j#twitter4j-stream;4.0.4 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@7734448e
-[debug] sbt-chain: module revision found in cache: org.twitter4j#twitter4j-stream;4.0.4
-[debug] 	found org.twitter4j#twitter4j-stream;4.0.4 in sbt-chain
-[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.twitter4j#twitter4j-stream;4.0.4 [provided->runtime]
-[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.twitter4j#twitter4j-stream;4.0.4 [provided->compile]
-[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.twitter4j#twitter4j-stream;4.0.4 [provided->master]
-[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.twitter4j#twitter4j-core;4.0.4 [provided->default(compile)]
-[info] Resolving org.twitter4j#twitter4j-core;4.0.4 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@4196af2b
-[debug] sbt-chain: module revision found in cache: org.twitter4j#twitter4j-core;4.0.4
-[debug] 	found org.twitter4j#twitter4j-core;4.0.4 in sbt-chain
-[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.twitter4j#twitter4j-core;4.0.4 [provided->runtime]
-[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.twitter4j#twitter4j-core;4.0.4 [provided->compile]
-[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.twitter4j#twitter4j-core;4.0.4 [provided->master]
-[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.spark-project.spark#unused;1.0.0 [provided->default(compile)]
-[info] Resolving org.spark-project.spark#unused;1.0.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@654464ea
-[debug] sbt-chain: module revision found in cache: org.spark-project.spark#unused;1.0.0
-[debug] 	found org.spark-project.spark#unused;1.0.0 in sbt-chain
-[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.spark-project.spark#unused;1.0.0 [provided->runtime]
-[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.spark-project.spark#unused;1.0.0 [provided->compile]
-[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.spark-project.spark#unused;1.0.0 [provided->master]
 [debug] resolving dependencies for configuration 'optional'
 [debug] == resolving dependencies for ita-common#ita-common$sources_2.11;0.0.1 [optional]
 [debug] resolving dependencies for configuration 'compile-internal'
@@ -1795,6 +1876,22 @@
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.jvnet.mimepull#mimepull;1.9.5 [compile->runtime]
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.jvnet.mimepull#mimepull;1.9.5 [compile->compile]
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.jvnet.mimepull#mimepull;1.9.5 [compile->master]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.apache.spark#spark-streaming-twitter_2.11;1.6.0 [compile->default(compile)]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.apache.spark#spark-streaming-twitter_2.11;1.6.0 [compile->runtime]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.apache.spark#spark-streaming-twitter_2.11;1.6.0 [compile->compile]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.apache.spark#spark-streaming-twitter_2.11;1.6.0 [compile->master]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.twitter4j#twitter4j-stream;4.0.4 [compile->default(compile)]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.twitter4j#twitter4j-stream;4.0.4 [compile->runtime]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.twitter4j#twitter4j-stream;4.0.4 [compile->compile]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.twitter4j#twitter4j-stream;4.0.4 [compile->master]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.twitter4j#twitter4j-core;4.0.4 [compile->default(compile)]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.twitter4j#twitter4j-core;4.0.4 [compile->runtime]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.twitter4j#twitter4j-core;4.0.4 [compile->compile]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.twitter4j#twitter4j-core;4.0.4 [compile->master]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.spark-project.spark#unused;1.0.0 [compile->default(compile)]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.spark-project.spark#unused;1.0.0 [compile->runtime]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.spark-project.spark#unused;1.0.0 [compile->compile]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.spark-project.spark#unused;1.0.0 [compile->master]
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.mongodb#casbah-commons_2.11;3.1.1 [compile->default(compile)]
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.mongodb#casbah-commons_2.11;3.1.1 [compile->runtime]
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.mongodb#casbah-commons_2.11;3.1.1 [compile->compile]
@@ -1885,22 +1982,6 @@
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->io.spray#spray-json_2.11;1.3.2 [compile->master]
 [debug] == resolving dependencies for ita-common#ita-common$sources_2.11;0.0.1 [optional]
 [debug] == resolving dependencies for ita-common#ita-common$sources_2.11;0.0.1 [provided]
-[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.apache.spark#spark-streaming-twitter_2.11;1.6.0 [provided->default(compile)]
-[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.apache.spark#spark-streaming-twitter_2.11;1.6.0 [provided->runtime]
-[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.apache.spark#spark-streaming-twitter_2.11;1.6.0 [provided->compile]
-[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.apache.spark#spark-streaming-twitter_2.11;1.6.0 [provided->master]
-[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.twitter4j#twitter4j-stream;4.0.4 [provided->default(compile)]
-[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.twitter4j#twitter4j-stream;4.0.4 [provided->runtime]
-[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.twitter4j#twitter4j-stream;4.0.4 [provided->compile]
-[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.twitter4j#twitter4j-stream;4.0.4 [provided->master]
-[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.twitter4j#twitter4j-core;4.0.4 [provided->default(compile)]
-[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.twitter4j#twitter4j-core;4.0.4 [provided->runtime]
-[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.twitter4j#twitter4j-core;4.0.4 [provided->compile]
-[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.twitter4j#twitter4j-core;4.0.4 [provided->master]
-[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.spark-project.spark#unused;1.0.0 [provided->default(compile)]
-[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.spark-project.spark#unused;1.0.0 [provided->runtime]
-[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.spark-project.spark#unused;1.0.0 [provided->compile]
-[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.spark-project.spark#unused;1.0.0 [provided->master]
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.scala-lang#scala-library;2.11.7 [compile-internal->default(compile)]
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.scala-lang#scala-library;2.11.7 [compile-internal->runtime]
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.scala-lang#scala-library;2.11.7 [compile-internal->compile]
@@ -2038,6 +2119,22 @@
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.jvnet.mimepull#mimepull;1.9.5 [compile-internal->runtime]
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.jvnet.mimepull#mimepull;1.9.5 [compile-internal->compile]
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.jvnet.mimepull#mimepull;1.9.5 [compile-internal->master]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.apache.spark#spark-streaming-twitter_2.11;1.6.0 [compile-internal->default(compile)]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.apache.spark#spark-streaming-twitter_2.11;1.6.0 [compile-internal->runtime]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.apache.spark#spark-streaming-twitter_2.11;1.6.0 [compile-internal->compile]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.apache.spark#spark-streaming-twitter_2.11;1.6.0 [compile-internal->master]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.twitter4j#twitter4j-stream;4.0.4 [compile-internal->default(compile)]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.twitter4j#twitter4j-stream;4.0.4 [compile-internal->runtime]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.twitter4j#twitter4j-stream;4.0.4 [compile-internal->compile]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.twitter4j#twitter4j-stream;4.0.4 [compile-internal->master]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.twitter4j#twitter4j-core;4.0.4 [compile-internal->default(compile)]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.twitter4j#twitter4j-core;4.0.4 [compile-internal->runtime]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.twitter4j#twitter4j-core;4.0.4 [compile-internal->compile]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.twitter4j#twitter4j-core;4.0.4 [compile-internal->master]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.spark-project.spark#unused;1.0.0 [compile-internal->default(compile)]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.spark-project.spark#unused;1.0.0 [compile-internal->runtime]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.spark-project.spark#unused;1.0.0 [compile-internal->compile]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.spark-project.spark#unused;1.0.0 [compile-internal->master]
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.mongodb#casbah-commons_2.11;3.1.1 [compile-internal->default(compile)]
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.mongodb#casbah-commons_2.11;3.1.1 [compile-internal->runtime]
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.mongodb#casbah-commons_2.11;3.1.1 [compile-internal->compile]
@@ -2126,22 +2223,6 @@
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->io.spray#spray-json_2.11;1.3.2 [compile-internal->runtime]
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->io.spray#spray-json_2.11;1.3.2 [compile-internal->compile]
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->io.spray#spray-json_2.11;1.3.2 [compile-internal->master]
-[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.apache.spark#spark-streaming-twitter_2.11;1.6.0 [compile-internal->default(compile)]
-[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.apache.spark#spark-streaming-twitter_2.11;1.6.0 [compile-internal->runtime]
-[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.apache.spark#spark-streaming-twitter_2.11;1.6.0 [compile-internal->compile]
-[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.apache.spark#spark-streaming-twitter_2.11;1.6.0 [compile-internal->master]
-[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.twitter4j#twitter4j-stream;4.0.4 [compile-internal->default(compile)]
-[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.twitter4j#twitter4j-stream;4.0.4 [compile-internal->runtime]
-[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.twitter4j#twitter4j-stream;4.0.4 [compile-internal->compile]
-[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.twitter4j#twitter4j-stream;4.0.4 [compile-internal->master]
-[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.twitter4j#twitter4j-core;4.0.4 [compile-internal->default(compile)]
-[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.twitter4j#twitter4j-core;4.0.4 [compile-internal->runtime]
-[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.twitter4j#twitter4j-core;4.0.4 [compile-internal->compile]
-[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.twitter4j#twitter4j-core;4.0.4 [compile-internal->master]
-[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.spark-project.spark#unused;1.0.0 [compile-internal->default(compile)]
-[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.spark-project.spark#unused;1.0.0 [compile-internal->runtime]
-[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.spark-project.spark#unused;1.0.0 [compile-internal->compile]
-[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.spark-project.spark#unused;1.0.0 [compile-internal->master]
 [debug] resolving dependencies for configuration 'runtime-internal'
 [debug] == resolving dependencies for ita-common#ita-common$sources_2.11;0.0.1 [runtime-internal]
 [debug] == resolving dependencies for ita-common#ita-common$sources_2.11;0.0.1 [runtime]
@@ -2283,6 +2364,22 @@
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.jvnet.mimepull#mimepull;1.9.5 [compile->runtime]
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.jvnet.mimepull#mimepull;1.9.5 [compile->compile]
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.jvnet.mimepull#mimepull;1.9.5 [compile->master]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.apache.spark#spark-streaming-twitter_2.11;1.6.0 [compile->default(compile)]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.apache.spark#spark-streaming-twitter_2.11;1.6.0 [compile->runtime]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.apache.spark#spark-streaming-twitter_2.11;1.6.0 [compile->compile]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.apache.spark#spark-streaming-twitter_2.11;1.6.0 [compile->master]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.twitter4j#twitter4j-stream;4.0.4 [compile->default(compile)]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.twitter4j#twitter4j-stream;4.0.4 [compile->runtime]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.twitter4j#twitter4j-stream;4.0.4 [compile->compile]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.twitter4j#twitter4j-stream;4.0.4 [compile->master]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.twitter4j#twitter4j-core;4.0.4 [compile->default(compile)]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.twitter4j#twitter4j-core;4.0.4 [compile->runtime]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.twitter4j#twitter4j-core;4.0.4 [compile->compile]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.twitter4j#twitter4j-core;4.0.4 [compile->master]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.spark-project.spark#unused;1.0.0 [compile->default(compile)]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.spark-project.spark#unused;1.0.0 [compile->runtime]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.spark-project.spark#unused;1.0.0 [compile->compile]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.spark-project.spark#unused;1.0.0 [compile->master]
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.mongodb#casbah-commons_2.11;3.1.1 [compile->default(compile)]
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.mongodb#casbah-commons_2.11;3.1.1 [compile->runtime]
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.mongodb#casbah-commons_2.11;3.1.1 [compile->compile]
@@ -2508,6 +2605,22 @@
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.jvnet.mimepull#mimepull;1.9.5 [runtime->runtime]
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.jvnet.mimepull#mimepull;1.9.5 [runtime->compile]
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.jvnet.mimepull#mimepull;1.9.5 [runtime->master]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.apache.spark#spark-streaming-twitter_2.11;1.6.0 [runtime->default(compile)]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.apache.spark#spark-streaming-twitter_2.11;1.6.0 [runtime->runtime]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.apache.spark#spark-streaming-twitter_2.11;1.6.0 [runtime->compile]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.apache.spark#spark-streaming-twitter_2.11;1.6.0 [runtime->master]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.twitter4j#twitter4j-stream;4.0.4 [runtime->default(compile)]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.twitter4j#twitter4j-stream;4.0.4 [runtime->runtime]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.twitter4j#twitter4j-stream;4.0.4 [runtime->compile]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.twitter4j#twitter4j-stream;4.0.4 [runtime->master]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.twitter4j#twitter4j-core;4.0.4 [runtime->default(compile)]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.twitter4j#twitter4j-core;4.0.4 [runtime->runtime]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.twitter4j#twitter4j-core;4.0.4 [runtime->compile]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.twitter4j#twitter4j-core;4.0.4 [runtime->master]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.spark-project.spark#unused;1.0.0 [runtime->default(compile)]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.spark-project.spark#unused;1.0.0 [runtime->runtime]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.spark-project.spark#unused;1.0.0 [runtime->compile]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.spark-project.spark#unused;1.0.0 [runtime->master]
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.mongodb#casbah-commons_2.11;3.1.1 [runtime->default(compile)]
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.mongodb#casbah-commons_2.11;3.1.1 [runtime->runtime]
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.mongodb#casbah-commons_2.11;3.1.1 [runtime->compile]
@@ -2734,6 +2847,22 @@
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.jvnet.mimepull#mimepull;1.9.5 [runtime-internal->runtime]
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.jvnet.mimepull#mimepull;1.9.5 [runtime-internal->compile]
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.jvnet.mimepull#mimepull;1.9.5 [runtime-internal->master]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.apache.spark#spark-streaming-twitter_2.11;1.6.0 [runtime-internal->default(compile)]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.apache.spark#spark-streaming-twitter_2.11;1.6.0 [runtime-internal->runtime]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.apache.spark#spark-streaming-twitter_2.11;1.6.0 [runtime-internal->compile]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.apache.spark#spark-streaming-twitter_2.11;1.6.0 [runtime-internal->master]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.twitter4j#twitter4j-stream;4.0.4 [runtime-internal->default(compile)]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.twitter4j#twitter4j-stream;4.0.4 [runtime-internal->runtime]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.twitter4j#twitter4j-stream;4.0.4 [runtime-internal->compile]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.twitter4j#twitter4j-stream;4.0.4 [runtime-internal->master]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.twitter4j#twitter4j-core;4.0.4 [runtime-internal->default(compile)]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.twitter4j#twitter4j-core;4.0.4 [runtime-internal->runtime]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.twitter4j#twitter4j-core;4.0.4 [runtime-internal->compile]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.twitter4j#twitter4j-core;4.0.4 [runtime-internal->master]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.spark-project.spark#unused;1.0.0 [runtime-internal->default(compile)]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.spark-project.spark#unused;1.0.0 [runtime-internal->runtime]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.spark-project.spark#unused;1.0.0 [runtime-internal->compile]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.spark-project.spark#unused;1.0.0 [runtime-internal->master]
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.mongodb#casbah-commons_2.11;3.1.1 [runtime-internal->default(compile)]
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.mongodb#casbah-commons_2.11;3.1.1 [runtime-internal->runtime]
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.mongodb#casbah-commons_2.11;3.1.1 [runtime-internal->compile]
@@ -2964,6 +3093,22 @@
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.jvnet.mimepull#mimepull;1.9.5 [compile->runtime]
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.jvnet.mimepull#mimepull;1.9.5 [compile->compile]
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.jvnet.mimepull#mimepull;1.9.5 [compile->master]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.apache.spark#spark-streaming-twitter_2.11;1.6.0 [compile->default(compile)]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.apache.spark#spark-streaming-twitter_2.11;1.6.0 [compile->runtime]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.apache.spark#spark-streaming-twitter_2.11;1.6.0 [compile->compile]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.apache.spark#spark-streaming-twitter_2.11;1.6.0 [compile->master]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.twitter4j#twitter4j-stream;4.0.4 [compile->default(compile)]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.twitter4j#twitter4j-stream;4.0.4 [compile->runtime]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.twitter4j#twitter4j-stream;4.0.4 [compile->compile]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.twitter4j#twitter4j-stream;4.0.4 [compile->master]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.twitter4j#twitter4j-core;4.0.4 [compile->default(compile)]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.twitter4j#twitter4j-core;4.0.4 [compile->runtime]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.twitter4j#twitter4j-core;4.0.4 [compile->compile]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.twitter4j#twitter4j-core;4.0.4 [compile->master]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.spark-project.spark#unused;1.0.0 [compile->default(compile)]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.spark-project.spark#unused;1.0.0 [compile->runtime]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.spark-project.spark#unused;1.0.0 [compile->compile]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.spark-project.spark#unused;1.0.0 [compile->master]
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.mongodb#casbah-commons_2.11;3.1.1 [compile->default(compile)]
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.mongodb#casbah-commons_2.11;3.1.1 [compile->runtime]
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.mongodb#casbah-commons_2.11;3.1.1 [compile->compile]
@@ -3189,6 +3334,22 @@
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.jvnet.mimepull#mimepull;1.9.5 [runtime->runtime]
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.jvnet.mimepull#mimepull;1.9.5 [runtime->compile]
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.jvnet.mimepull#mimepull;1.9.5 [runtime->master]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.apache.spark#spark-streaming-twitter_2.11;1.6.0 [runtime->default(compile)]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.apache.spark#spark-streaming-twitter_2.11;1.6.0 [runtime->runtime]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.apache.spark#spark-streaming-twitter_2.11;1.6.0 [runtime->compile]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.apache.spark#spark-streaming-twitter_2.11;1.6.0 [runtime->master]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.twitter4j#twitter4j-stream;4.0.4 [runtime->default(compile)]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.twitter4j#twitter4j-stream;4.0.4 [runtime->runtime]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.twitter4j#twitter4j-stream;4.0.4 [runtime->compile]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.twitter4j#twitter4j-stream;4.0.4 [runtime->master]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.twitter4j#twitter4j-core;4.0.4 [runtime->default(compile)]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.twitter4j#twitter4j-core;4.0.4 [runtime->runtime]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.twitter4j#twitter4j-core;4.0.4 [runtime->compile]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.twitter4j#twitter4j-core;4.0.4 [runtime->master]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.spark-project.spark#unused;1.0.0 [runtime->default(compile)]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.spark-project.spark#unused;1.0.0 [runtime->runtime]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.spark-project.spark#unused;1.0.0 [runtime->compile]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.spark-project.spark#unused;1.0.0 [runtime->master]
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.mongodb#casbah-commons_2.11;3.1.1 [runtime->default(compile)]
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.mongodb#casbah-commons_2.11;3.1.1 [runtime->runtime]
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.mongodb#casbah-commons_2.11;3.1.1 [runtime->compile]
@@ -3414,6 +3575,22 @@
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.jvnet.mimepull#mimepull;1.9.5 [test->runtime]
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.jvnet.mimepull#mimepull;1.9.5 [test->compile]
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.jvnet.mimepull#mimepull;1.9.5 [test->master]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.apache.spark#spark-streaming-twitter_2.11;1.6.0 [test->default(compile)]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.apache.spark#spark-streaming-twitter_2.11;1.6.0 [test->runtime]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.apache.spark#spark-streaming-twitter_2.11;1.6.0 [test->compile]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.apache.spark#spark-streaming-twitter_2.11;1.6.0 [test->master]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.twitter4j#twitter4j-stream;4.0.4 [test->default(compile)]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.twitter4j#twitter4j-stream;4.0.4 [test->runtime]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.twitter4j#twitter4j-stream;4.0.4 [test->compile]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.twitter4j#twitter4j-stream;4.0.4 [test->master]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.twitter4j#twitter4j-core;4.0.4 [test->default(compile)]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.twitter4j#twitter4j-core;4.0.4 [test->runtime]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.twitter4j#twitter4j-core;4.0.4 [test->compile]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.twitter4j#twitter4j-core;4.0.4 [test->master]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.spark-project.spark#unused;1.0.0 [test->default(compile)]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.spark-project.spark#unused;1.0.0 [test->runtime]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.spark-project.spark#unused;1.0.0 [test->compile]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.spark-project.spark#unused;1.0.0 [test->master]
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.mongodb#casbah-commons_2.11;3.1.1 [test->default(compile)]
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.mongodb#casbah-commons_2.11;3.1.1 [test->runtime]
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.mongodb#casbah-commons_2.11;3.1.1 [test->compile]
@@ -3504,22 +3681,6 @@
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->io.spray#spray-json_2.11;1.3.2 [test->master]
 [debug] == resolving dependencies for ita-common#ita-common$sources_2.11;0.0.1 [optional]
 [debug] == resolving dependencies for ita-common#ita-common$sources_2.11;0.0.1 [provided]
-[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.apache.spark#spark-streaming-twitter_2.11;1.6.0 [provided->default(compile)]
-[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.apache.spark#spark-streaming-twitter_2.11;1.6.0 [provided->runtime]
-[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.apache.spark#spark-streaming-twitter_2.11;1.6.0 [provided->compile]
-[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.apache.spark#spark-streaming-twitter_2.11;1.6.0 [provided->master]
-[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.twitter4j#twitter4j-stream;4.0.4 [provided->default(compile)]
-[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.twitter4j#twitter4j-stream;4.0.4 [provided->runtime]
-[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.twitter4j#twitter4j-stream;4.0.4 [provided->compile]
-[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.twitter4j#twitter4j-stream;4.0.4 [provided->master]
-[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.twitter4j#twitter4j-core;4.0.4 [provided->default(compile)]
-[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.twitter4j#twitter4j-core;4.0.4 [provided->runtime]
-[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.twitter4j#twitter4j-core;4.0.4 [provided->compile]
-[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.twitter4j#twitter4j-core;4.0.4 [provided->master]
-[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.spark-project.spark#unused;1.0.0 [provided->default(compile)]
-[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.spark-project.spark#unused;1.0.0 [provided->runtime]
-[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.spark-project.spark#unused;1.0.0 [provided->compile]
-[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.spark-project.spark#unused;1.0.0 [provided->master]
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.scala-lang#scala-library;2.11.7 [test-internal->default(compile)]
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.scala-lang#scala-library;2.11.7 [test-internal->runtime]
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.scala-lang#scala-library;2.11.7 [test-internal->compile]
@@ -3657,6 +3818,22 @@
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.jvnet.mimepull#mimepull;1.9.5 [test-internal->runtime]
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.jvnet.mimepull#mimepull;1.9.5 [test-internal->compile]
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.jvnet.mimepull#mimepull;1.9.5 [test-internal->master]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.apache.spark#spark-streaming-twitter_2.11;1.6.0 [test-internal->default(compile)]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.apache.spark#spark-streaming-twitter_2.11;1.6.0 [test-internal->runtime]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.apache.spark#spark-streaming-twitter_2.11;1.6.0 [test-internal->compile]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.apache.spark#spark-streaming-twitter_2.11;1.6.0 [test-internal->master]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.twitter4j#twitter4j-stream;4.0.4 [test-internal->default(compile)]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.twitter4j#twitter4j-stream;4.0.4 [test-internal->runtime]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.twitter4j#twitter4j-stream;4.0.4 [test-internal->compile]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.twitter4j#twitter4j-stream;4.0.4 [test-internal->master]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.twitter4j#twitter4j-core;4.0.4 [test-internal->default(compile)]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.twitter4j#twitter4j-core;4.0.4 [test-internal->runtime]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.twitter4j#twitter4j-core;4.0.4 [test-internal->compile]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.twitter4j#twitter4j-core;4.0.4 [test-internal->master]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.spark-project.spark#unused;1.0.0 [test-internal->default(compile)]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.spark-project.spark#unused;1.0.0 [test-internal->runtime]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.spark-project.spark#unused;1.0.0 [test-internal->compile]
+[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.spark-project.spark#unused;1.0.0 [test-internal->master]
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.mongodb#casbah-commons_2.11;3.1.1 [test-internal->default(compile)]
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.mongodb#casbah-commons_2.11;3.1.1 [test-internal->runtime]
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.mongodb#casbah-commons_2.11;3.1.1 [test-internal->compile]
@@ -3745,22 +3922,6 @@
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->io.spray#spray-json_2.11;1.3.2 [test-internal->runtime]
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->io.spray#spray-json_2.11;1.3.2 [test-internal->compile]
 [debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->io.spray#spray-json_2.11;1.3.2 [test-internal->master]
-[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.apache.spark#spark-streaming-twitter_2.11;1.6.0 [test-internal->default(compile)]
-[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.apache.spark#spark-streaming-twitter_2.11;1.6.0 [test-internal->runtime]
-[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.apache.spark#spark-streaming-twitter_2.11;1.6.0 [test-internal->compile]
-[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.apache.spark#spark-streaming-twitter_2.11;1.6.0 [test-internal->master]
-[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.twitter4j#twitter4j-stream;4.0.4 [test-internal->default(compile)]
-[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.twitter4j#twitter4j-stream;4.0.4 [test-internal->runtime]
-[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.twitter4j#twitter4j-stream;4.0.4 [test-internal->compile]
-[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.twitter4j#twitter4j-stream;4.0.4 [test-internal->master]
-[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.twitter4j#twitter4j-core;4.0.4 [test-internal->default(compile)]
-[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.twitter4j#twitter4j-core;4.0.4 [test-internal->runtime]
-[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.twitter4j#twitter4j-core;4.0.4 [test-internal->compile]
-[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.twitter4j#twitter4j-core;4.0.4 [test-internal->master]
-[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.spark-project.spark#unused;1.0.0 [test-internal->default(compile)]
-[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.spark-project.spark#unused;1.0.0 [test-internal->runtime]
-[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.spark-project.spark#unused;1.0.0 [test-internal->compile]
-[debug] == resolving dependencies ita-common#ita-common$sources_2.11;0.0.1->org.spark-project.spark#unused;1.0.0 [test-internal->master]
 [debug] resolving dependencies for configuration 'plugin'
 [debug] == resolving dependencies for ita-common#ita-common$sources_2.11;0.0.1 [plugin]
 [debug] resolving dependencies for configuration 'sources'
@@ -3877,6 +4038,14 @@
 [debug] 	[NOT REQUIRED] org.scala-lang.modules#scala-xml_2.11;1.0.3!scala-xml_2.11.jar(src)
 [debug] 	[NOT REQUIRED] org.jvnet.mimepull#mimepull;1.9.5!mimepull.jar(src)
 [debug] 	[NOT REQUIRED] org.jvnet.mimepull#mimepull;1.9.5!mimepull.jar
+[debug] 	[NOT REQUIRED] org.apache.spark#spark-streaming-twitter_2.11;1.6.0!spark-streaming-twitter_2.11.jar
+[debug] 	[NOT REQUIRED] org.apache.spark#spark-streaming-twitter_2.11;1.6.0!spark-streaming-twitter_2.11.jar(src)
+[debug] 	[NOT REQUIRED] org.twitter4j#twitter4j-stream;4.0.4!twitter4j-stream.jar
+[debug] 	[NOT REQUIRED] org.twitter4j#twitter4j-stream;4.0.4!twitter4j-stream.jar(src)
+[debug] 	[NOT REQUIRED] org.twitter4j#twitter4j-core;4.0.4!twitter4j-core.jar
+[debug] 	[NOT REQUIRED] org.twitter4j#twitter4j-core;4.0.4!twitter4j-core.jar(src)
+[debug] 	[NOT REQUIRED] org.spark-project.spark#unused;1.0.0!unused.jar(src)
+[debug] 	[NOT REQUIRED] org.spark-project.spark#unused;1.0.0!unused.jar
 [debug] 	[NOT REQUIRED] org.mongodb#casbah-commons_2.11;3.1.1!casbah-commons_2.11.jar
 [debug] 	[NOT REQUIRED] org.mongodb#casbah-commons_2.11;3.1.1!casbah-commons_2.11.jar(src)
 [debug] 	[NOT REQUIRED] com.github.nscala-time#nscala-time_2.11;1.0.0!nscala-time_2.11.jar
@@ -3921,18 +4090,10 @@
 [debug] 	[NOT REQUIRED] com.typesafe.akka#akka-parsing_2.11;2.4.4!akka-parsing_2.11.jar(src)
 [debug] 	[NOT REQUIRED] io.spray#spray-json_2.11;1.3.2!spray-json_2.11.jar
 [debug] 	[NOT REQUIRED] io.spray#spray-json_2.11;1.3.2!spray-json_2.11.jar(src)
-[debug] 	[NOT REQUIRED] org.apache.spark#spark-streaming-twitter_2.11;1.6.0!spark-streaming-twitter_2.11.jar
-[debug] 	[NOT REQUIRED] org.apache.spark#spark-streaming-twitter_2.11;1.6.0!spark-streaming-twitter_2.11.jar(src)
-[debug] 	[NOT REQUIRED] org.twitter4j#twitter4j-stream;4.0.4!twitter4j-stream.jar
-[debug] 	[NOT REQUIRED] org.twitter4j#twitter4j-stream;4.0.4!twitter4j-stream.jar(src)
-[debug] 	[NOT REQUIRED] org.twitter4j#twitter4j-core;4.0.4!twitter4j-core.jar
-[debug] 	[NOT REQUIRED] org.twitter4j#twitter4j-core;4.0.4!twitter4j-core.jar(src)
-[debug] 	[NOT REQUIRED] org.spark-project.spark#unused;1.0.0!unused.jar(src)
-[debug] 	[NOT REQUIRED] org.spark-project.spark#unused;1.0.0!unused.jar
 [debug] 	[NOT REQUIRED] org.scala-lang#scala-compiler;2.11.7!scala-compiler.jar(src)
 [debug] 	[NOT REQUIRED] org.scala-lang.modules#scala-xml_2.11;1.0.4!scala-xml_2.11.jar(src)
 [debug] 	[NOT REQUIRED] jline#jline;2.12.1!jline.jar(src)
-[debug] :: resolution report :: resolve 932ms :: artifacts dl 26ms
+[debug] :: resolution report :: resolve 6597ms :: artifacts dl 173ms
 [debug] 	report for ita-common#ita-common$sources_2.11;0.0.1 compile produced in /Users/mikelwyred/tfm/ITA-Services/common/target/resolution-cache/reports/ita-common-ita-common$sources_2.11-compile.xml
 [debug] 	report for ita-common#ita-common$sources_2.11;0.0.1 runtime produced in /Users/mikelwyred/tfm/ITA-Services/common/target/resolution-cache/reports/ita-common-ita-common$sources_2.11-runtime.xml
 [debug] 	report for ita-common#ita-common$sources_2.11;0.0.1 test produced in /Users/mikelwyred/tfm/ITA-Services/common/target/resolution-cache/reports/ita-common-ita-common$sources_2.11-test.xml
@@ -3946,4 +4107,4 @@
 [debug] 	report for ita-common#ita-common$sources_2.11;0.0.1 docs produced in /Users/mikelwyred/tfm/ITA-Services/common/target/resolution-cache/reports/ita-common-ita-common$sources_2.11-docs.xml
 [debug] 	report for ita-common#ita-common$sources_2.11;0.0.1 pom produced in /Users/mikelwyred/tfm/ITA-Services/common/target/resolution-cache/reports/ita-common-ita-common$sources_2.11-pom.xml
 [debug] 	report for ita-common#ita-common$sources_2.11;0.0.1 scala-tool produced in /Users/mikelwyred/tfm/ITA-Services/common/target/resolution-cache/reports/ita-common-ita-common$sources_2.11-scala-tool.xml
-[debug] 	resolve done (932ms resolve - 26ms download)
+[debug] 	resolve done (6597ms resolve - 173ms download)
