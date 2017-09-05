@@ -7,10 +7,10 @@
 		revision="0.0.1"
 		conf="runtime-internal"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
-		date="20170905014211"/>
+		date="20170905235246"/>
 	<dependencies>
 		<module organisation="ita-domain" name="ita-domain_2.11">
-			<revision name="0.0.1" status="integration" pubdate="20170905014157" resolver="inter-project" artresolver="inter-project" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="1">
+			<revision name="0.0.1" status="integration" pubdate="20170905235156" resolver="inter-project" artresolver="inter-project" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="1">
 				<metadata-artifact status="failed" details="" size="0" time="0" searched="false"/>
 				<caller organisation="ita-common" name="ita-common$sources_2.11" conf="compile, runtime-internal, runtime, optional" rev="0.0.1" rev-constraint-default="0.0.1" rev-constraint-dynamic="0.0.1" callerrev="0.0.1"/>
 				<artifacts>
@@ -889,7 +889,7 @@
 		<module organisation="org.json" name="json">
 			<revision name="20140107" status="release" pubdate="20140107193602" resolver="public" artresolver="public" homepage="https://github.com/douglascrockford/JSON-java" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="3">
 				<license name="The JSON License" url="http://json.org/license.html"/>
-				<metadata-artifact status="successful" details="" size="4188" time="135" location="/Users/mikelwyred/.ivy2/cache/org.json/json/ivy-20140107.xml" searched="true" original-local-location="/Users/mikelwyred/.ivy2/cache/org.json/json/ivy-20140107.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/json/json/20140107/json-20140107.pom"/>
+				<metadata-artifact status="successful" details="" size="4188" time="122" location="/Users/mikelwyred/.ivy2/cache/org.json/json/ivy-20140107.xml" searched="true" original-local-location="/Users/mikelwyred/.ivy2/cache/org.json/json/ivy-20140107.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/json/json/20140107/json-20140107.pom"/>
 				<caller organisation="ita-common" name="ita-common$sources_2.11" conf="compile, runtime-internal, runtime, optional" rev="20140107" rev-constraint-default="20140107" rev-constraint-dynamic="20140107" callerrev="0.0.1"/>
 				<artifacts>
 					<artifact name="json" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="79981" time="0" location="/Users/mikelwyred/.ivy2/cache/org.json/json/srcs/json-20140107-sources.jar">

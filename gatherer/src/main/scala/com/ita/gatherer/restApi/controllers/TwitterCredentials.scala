@@ -1,4 +1,6 @@
-package utils
+package com.ita.gatherer.restApi.controllers
+
+import com.ita.domain.utils.Config
 
 trait  TwitterCredentials {_: Config =>
 

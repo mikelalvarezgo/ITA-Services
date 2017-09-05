@@ -1,25 +1,15 @@
-package client
+package com.ita.classifier.client
 
 import akka.actor.ActorSystem
-import akka.http.scaladsl.model.RequestEntity
 import akka.http.scaladsl.Http
+import akka.http.scaladsl.marshallers.sprayjson.SprayJsonSupport._
 import akka.http.scaladsl.marshalling.Marshal
-import akka.http.scaladsl.model._
-import akka.http.scaladsl.model.HttpMethods._
-import akka.http.scaladsl.model.headers.BasicHttpCredentials
+import akka.http.scaladsl.model.{RequestEntity, _}
 import akka.http.scaladsl.unmarshalling.Unmarshal
 import akka.stream.ActorMaterializer
-import spray.json.DefaultJsonProtocol.{jsonFormat2, jsonFormat3}
-import akka.http.scaladsl.marshallers.sprayjson.SprayJsonSupport._
-
+import com.ita.classifier.Model._
 import scala.concurrent.ExecutionContext.Implicits.global
-import akka.http.scaladsl.marshalling._
-import com.ita.common.rest.HttpClient
-import com.ita.domain.Id
-
 import scala.concurrent.Future
-import scala.util.Try
-import spray.json._
 case class TextProccesingApiClient(
   serviceName: String,
   base_url:String = "http://text-processing.com/api/sentiment/")

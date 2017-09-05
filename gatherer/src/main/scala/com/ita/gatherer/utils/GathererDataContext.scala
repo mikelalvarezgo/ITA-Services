@@ -1,8 +1,7 @@
-package utils
+package com.ita.gatherer.utils
 
-import domain.TweetInfo
-import mongo.daos.{PickUpDAO, TweetInfoDAO}
-import utils.DAOS.config
+import com.ita.common.mong.daos.{PickUpDAO, TweetInfoDAO}
+import com.ita.domain.utils.Config
 
 /**
   * Created by mikelalvarezgo on 17/6/17.

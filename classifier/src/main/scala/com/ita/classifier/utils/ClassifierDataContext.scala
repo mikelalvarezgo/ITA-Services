@@ -1,9 +1,8 @@
-package com.ita.common.utils
+package com.ita.classifier.utils
 
+import com.ita.classifier.mongo.{ModelDAO, ModelExecutionlDAO, ModelResultDAO, TweetResultDAO}
 import com.ita.common.mong.daos.{PickUpDAO, TweetInfoDAO}
-import com.ita.common.mongo.daos.mongo.daos.PickUpDAO
-import mongo.{ModelDAO, ModelExecutionlDAO, ModelResultDAO, TweetResultDAO}
-import mongo.daos.PickUpDAO
+import com.ita.domain.utils.Config
 
 /**
   * Created by mikelalvarezgo on 17/6/17.

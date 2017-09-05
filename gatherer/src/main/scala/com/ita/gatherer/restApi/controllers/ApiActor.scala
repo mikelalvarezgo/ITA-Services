@@ -2,16 +2,13 @@ package com.ita.gatherer.restApi.controllers
 
 import akka.actor.Actor
 import akka.util.Timeout
-import domain.Id
-import domain.Model._
-import domain.gatherer.Model._
-import domain.gatherer.TweetPickUp
-import domain.gatherer.exception.GathererException
+import com.ita.domain.Id
+import com.ita.domain.Model._
+import com.ita.domain.utils.Logger
 import spray.http.StatusCodes
 import spray.httpx.SprayJsonSupport._
 import spray.json.{JsBoolean, JsValue, RootJsonFormat}
 import spray.routing._
-import utils.Logger
 
 import scala.concurrent.ExecutionContext.Implicits.global
 import scala.concurrent.duration._

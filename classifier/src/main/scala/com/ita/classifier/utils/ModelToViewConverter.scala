@@ -1,4 +1,4 @@
-package com.ita.common.utils
+package com.ita.classifier.utils
 
 trait ModelToViewConverter[M, V] {
   def toView(m: M): V

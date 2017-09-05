@@ -1,6 +1,6 @@
-package domain.gatherer.exception
+package com.ita.domain.gatherer.exception
 
-import domain.exception.ITAException
+import com.ita.domain.exception.ITAException
 
 case class GathererException(
   code: String,

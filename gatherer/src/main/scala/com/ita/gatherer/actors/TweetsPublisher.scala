@@ -1,12 +1,13 @@
-package actors
+package com.ita.gatherer.actors
 
 /**
   * Created by mikelwyred on 20/06/2017.
   */
 
 import akka.stream.actor.ActorPublisher
-import domain.TweetInfo
-import utils.{Config, GathererDataContext, Logger}
+import com.ita.domain.TweetInfo
+import com.ita.domain.utils.{Config, Logger}
+import com.ita.gatherer.utils.GathererDataContext
 
 class TweetsPublisher(implicit dataContext:GathererDataContext ) extends ActorPublisher[TweetInfo]
 with Config

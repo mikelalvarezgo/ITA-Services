@@ -2,18 +2,20 @@ package com.ita.classifier.models
 
 import java.util.Properties
 
-import client.ApiClient
-import com.ita.classifier.utils.{Config, Logger}
-import com.ita.common.utils.Config
+import com.ita.classifier.client.ApiClient
+import com.ita.classifier.lexicons.emojis.EmojiSentiText
+import com.ita.classifier.lexicons.vader.SentimentIntensityAnalyzer
+import com.ita.classifier.results.ModelResult
+import com.ita.domain.utils.{Config, Logger}
 import com.ita.domain.{Id, TweetInfo}
-import domain.TweetInfo
+import com.ita.domain.TweetInfo
 import org.apache.spark.SparkContext
 import org.apache.spark.mllib.feature.HashingTF
 import org.apache.spark.mllib.regression.LabeledPoint
 import org.apache.spark.mllib.tree.{GradientBoostedTrees, RandomForest}
 import org.apache.spark.mllib.tree.configuration.{BoostingStrategy, Strategy}
 import org.apache.spark.rdd.RDD
-import results.{ModelResult, TweetResult}
+import com.ita.classifier.results.TweetResult
 import edu.stanford.nlp.ling.CoreAnnotations
 import edu.stanford.nlp.neural.rnn.RNNCoreAnnotations
 import edu.stanford.nlp.sentiment.SentimentCoreAnnotations
@@ -21,7 +23,6 @@ import org.apache.spark.SparkConf
 import org.apache.spark.SparkContext
 import com.vdurmont.emoji.EmojiParser
 import edu.stanford.nlp.pipeline.{Annotation, StanfordCoreNLP}
-import lexicons.vader.SentimentIntensityAnalyzer
 import org.apache.spark.mllib.classification.{NaiveBayes, NaiveBayesModel}
 import org.apache.spark.mllib.tree.model.GradientBoostedTreesModel
 import org.apache.spark.mllib.tree.RandomForest
@@ -249,14 +250,28 @@ case class RandomForestClassifier
               val isPositive = if (score < 0) 0 else if (score> 1.0) 1.0 else score
               var msgSanitized = EmojiParser.removeAllEmojis(msg)
               //Return a tuple
-              (isPositive, msgSanitized.split(" ").toSeq, tweet._id.get)
+              (score, msgSanitized.split(" ").toSeq, tweet._id.get)
             }.recover{
               case e:Exception =>
                 logger.error("Error parsinf tweet", e)
                 throw e}
           })
         records.filter(_.isSuccess).map(_.get)
-
+      case v if (v == "emoji") =>
+        val records = tweetRDD.map(
+          tweet => {
+            Try {
+              val msg = EmojiParser.parseToAliases(tweet.tweetText.toString.toLowerCase())
+              var score: Double = EmojiSentiText.totalPolarityScores(msg).compound
+              var msgSanitized = EmojiParser.removeAllEmojis(msg)
+              //Return a tuple
+              (score, msgSanitized.split(" ").toSeq, tweet._id.get)
+            }.recover{
+              case e:Exception =>
+                logger.error("Error parsinf tweet", e)
+                throw e}
+          })
+        records.filter(_.isSuccess).map(_.get)
     }
 
   }
@@ -450,14 +465,28 @@ case class GradientBoostingClassifier
               val isPositive = if (score < 0) 0 else if (score> 1.0) 1.0 else score
               var msgSanitized = EmojiParser.removeAllEmojis(msg)
               //Return a tuple
-              (isPositive, msgSanitized.split(" ").toSeq, tweet._id.get)
+              (score, msgSanitized.split(" ").toSeq, tweet._id.get)
             }.recover{
               case e:Exception =>
                 logger.error("Error parsinf tweet", e)
                 throw e}
           })
         records.filter(_.isSuccess).map(_.get)
-
+      case v if (v == "emoji") =>
+        val records = tweetRDD.map(
+          tweet => {
+            Try {
+              val msg = EmojiParser.parseToAliases(tweet.tweetText.toString.toLowerCase())
+              var score: Double = EmojiSentiText.totalPolarityScores(msg).compound
+              var msgSanitized = EmojiParser.removeAllEmojis(msg)
+              //Return a tuple
+              (score, msgSanitized.split(" ").toSeq, tweet._id.get)
+            }.recover{
+              case e:Exception =>
+                logger.error("Error parsinf tweet", e)
+                throw e}
+          })
+        records.filter(_.isSuccess).map(_.get)
     }
 
   }
@@ -486,7 +515,42 @@ case class ApiClassifier(
   override val type_classifier: ModelType = API)
   extends ModelClassifier {
 
-  def tagRDD(tweetRDD: RDD[TweetInfo]): RDD[(Double, String, Id)] = ???
+  def tagRDD(tweetRDD: RDD[TweetInfo]): RDD[(Double, String, Id)] =
+    tag_tweets match {
+
+      case v if (v == "vader") =>
+        val analyzer = new SentimentIntensityAnalyzer
+        val records = tweetRDD.map(
+          tweet => {
+            Try {
+              val msg = EmojiParser.parseToAliases(tweet.tweetText.toString.toLowerCase())
+              var score: Double = analyzer.polarityScores(msg).compound
+              val isPositive = if (score < 0) 0 else if (score> 1.0) 1.0 else score
+              var msgSanitized = EmojiParser.removeAllEmojis(msg)
+              //Return a tuple
+              (score, msgSanitized, tweet._id.get)
+            }.recover{
+              case e:Exception =>
+                logger.error("Error parsinf tweet", e)
+                throw e}
+          })
+        records.filter(_.isSuccess).map(_.get)
+      case v if (v == "emoji") =>
+        val records = tweetRDD.map(
+          tweet => {
+            Try {
+              val msg = EmojiParser.parseToAliases(tweet.tweetText.toString.toLowerCase())
+              var score: Double = EmojiSentiText.totalPolarityScores(msg).compound
+              var msgSanitized = EmojiParser.removeAllEmojis(msg)
+              //Return a tuple
+              (score, msgSanitized, tweet._id.get)
+            }.recover{
+              case e:Exception =>
+                logger.error("Error parsinf tweet", e)
+                throw e}
+          })
+        records.filter(_.isSuccess).map(_.get)
+    }
 
   def runModel(idExecution: Id)(implicit sc: SparkContext): Future[List[TweetResult]] = {
 
@@ -637,6 +701,42 @@ case class NLPStanfordClassifier(
     dataSet.get.filter(tweet => tweet.contain_emoji)
   }
 
+  def tagRDD(tweetRDD: RDD[TweetInfo]): RDD[(Double, String, Id)] =
+    tag_tweets match {
+
+      case v if (v == "vader") =>
+        val analyzer = new SentimentIntensityAnalyzer
+        val records = tweetRDD.map(
+          tweet => {
+            Try {
+              val msg = EmojiParser.parseToAliases(tweet.tweetText.toString.toLowerCase())
+              var score: Double = analyzer.polarityScores(msg).compound
+              val isPositive = if (score < 0) 0 else if (score> 1.0) 1.0 else score
+              var msgSanitized = EmojiParser.removeAllEmojis(msg)
+              //Return a tuple
+              (score, msgSanitized, tweet._id.get)
+            }.recover{
+              case e:Exception =>
+                logger.error("Error parsinf tweet", e)
+                throw e}
+          })
+        records.filter(_.isSuccess).map(_.get)
+      case v if (v == "emoji") =>
+        val records = tweetRDD.map(
+          tweet => {
+            Try {
+              val msg = EmojiParser.parseToAliases(tweet.tweetText.toString.toLowerCase())
+              var score: Double = EmojiSentiText.totalPolarityScores(msg).compound
+              var msgSanitized = EmojiParser.removeAllEmojis(msg)
+              //Return a tuple
+              (score, msgSanitized, tweet._id.get)
+            }.recover{
+              case e:Exception =>
+                logger.error("Error parsinf tweet", e)
+                throw e}
+          })
+        records.filter(_.isSuccess).map(_.get)
+    }
   def prepareModel()(implicit sc: SparkContext): SetPartition = {
     //We will only use tweets with emojis and bad emojis for train and validation sets
     val emojiTweeta = filterTweetsWithEmojis
@@ -765,7 +865,6 @@ case class NLPStanfordClassifier(
       unhappyTotal - unhappyCorrect)
   }
 
-  def tagRDD(tweetRDD: RDD[TweetInfo]): RDD[(Double, String, Id)] = ???
 
   def runModel(idExecution: Id)(implicit sc: SparkContext): RDD[TweetResult] = {
     val sentimentText = List("Very Negative", "Negative", "Neutral", "Positive", "Very Positive")
@@ -943,7 +1042,41 @@ case class BayesClassifier(
   }
 
 
-  def tagRDD(tweetRDD: RDD[TweetInfo]): RDD[(Double, Seq[String], Id)] = ???
+  def tagRDD(tweetRDD: RDD[TweetInfo]): RDD[(Double, Seq[String], Id)] = tag_tweets match {
+
+    case v if (v == "vader") =>
+      val analyzer = new SentimentIntensityAnalyzer
+      val records = tweetRDD.map(
+        tweet => {
+          Try {
+            val msg = EmojiParser.parseToAliases(tweet.tweetText.toString.toLowerCase())
+            var score: Double = analyzer.polarityScores(msg).compound
+            val isPositive = if (score < 0) 0 else if (score> 1.0) 1.0 else score
+            var msgSanitized = EmojiParser.removeAllEmojis(msg)
+            //Return a tuple
+            (score, msgSanitized.split(" ").toSeq, tweet._id.get)
+          }.recover{
+            case e:Exception =>
+              logger.error("Error parsinf tweet", e)
+              throw e}
+        })
+      records.filter(_.isSuccess).map(_.get)
+    case v if (v == "emoji") =>
+      val records = tweetRDD.map(
+        tweet => {
+          Try {
+            val msg = EmojiParser.parseToAliases(tweet.tweetText.toString.toLowerCase())
+            var score: Double = EmojiSentiText.totalPolarityScores(msg).compound
+            var msgSanitized = EmojiParser.removeAllEmojis(msg)
+            //Return a tuple
+            (score,  msgSanitized.split(" ").toSeq, tweet._id.get)
+          }.recover{
+            case e:Exception =>
+              logger.error("Error parsinf tweet", e)
+              throw e}
+        })
+      records.filter(_.isSuccess).map(_.get)
+  }
 
   def runModel(idExecution: Id, partition: SetPartition)(implicit sc: SparkContext): RDD[TweetResult] = {
     val model = NaiveBayesModel.load(sc,config.getString("models.path") +s"bayes_${_id.value}"

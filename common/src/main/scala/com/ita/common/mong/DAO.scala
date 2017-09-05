@@ -1,4 +1,4 @@
-package com.ita.common.mongo.daos.mongo
+package com.ita.common.mong
 
 import com.ita.domain.Id
 

@@ -1,10 +1,12 @@
-package actors
+package com.ita.gatherer.actors
+
 
 import akka.actor.{Actor, ActorRef, ActorSystem, PoisonPill, Props}
-import domain.Id
-import mongo.daos.PickUpDAO
 import ActorMessages._
-import utils.{Config, GathererDataContext, Logger}
+import com.ita.common.mong.daos.PickUpDAO
+import com.ita.domain.Id
+import com.ita.domain.utils.{Config, Logger}
+import com.ita.gatherer.utils.GathererDataContext
 
 class PickUpManager(implicit dataContext:GathererDataContext ,system: ActorSystem) extends Actor
   with Config

@@ -1,8 +1,9 @@
-package domain
+package com.ita.domain
 
 import com.vdurmont.emoji._
-import scala.util.Try
 import twitter4j.Status
+
+import scala.util.Try
 case class TweetInfo(
   _id: Option[Id],
   tweet_id: Long,

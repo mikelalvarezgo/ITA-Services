@@ -1,11 +1,8 @@
-package models
+package com.ita.classifier.models
 
 import com.ita.classifier.client.TextProccesingApiClient
 import com.ita.classifier.utils.ModelToViewConverter
-import com.ita.domain.TweetInfo
-import com.vdurmont.emoji.EmojiParser
-import org.apache.spark.SparkContext
-import org.apache.spark.rdd.RDD
+import com.ita.classifier.utils.ModelToViewConverter.ModelToViewConverterDSL
 
 sealed trait AggFunction {
   def toFunction:(List[Int] =>Double)

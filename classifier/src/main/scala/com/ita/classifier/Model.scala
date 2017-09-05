@@ -1,11 +1,11 @@
-package classifier
+package com.ita.classifier
 
 import models._
 import results.{ModelExecution, ModelResult, TweetResult}
 import spray.json.DefaultJsonProtocol._
 import client._
 import com.ita.domain.Id
-import domain.Model._
+import com.ita.domain.Model._
 import spray.json._
 
 object Model {

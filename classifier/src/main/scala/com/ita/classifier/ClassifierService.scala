@@ -1,14 +1,17 @@
+package com.ita.classifier
+
 import java.util.concurrent.{ExecutorService, Executors}
 
 import akka.actor.{ActorSystem, Props}
 import akka.io.IO
 import akka.pattern.ask
 import akka.util.Timeout
-import controllers.ClassifierController
+import com.ita.classifier.controllers.ClassifierController
+import com.ita.domain.utils.{Config, Logger}
 import org.apache.spark.{SparkConf, SparkContext}
 import routes.ApiActor
 import spray.can.Http
-import utils.{ClassifierDataContext, Config, Logger}
+import utils.ClassifierDataContext
 
 import scala.concurrent.duration._
 

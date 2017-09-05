@@ -1,4 +1,4 @@
-package domain
+package com.ita.domain
 
 import org.bson.types.ObjectId
 

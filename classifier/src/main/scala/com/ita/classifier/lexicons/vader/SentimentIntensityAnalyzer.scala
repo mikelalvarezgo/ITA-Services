@@ -1,8 +1,7 @@
-package lexicons.vader
+package com.ita.classifier.lexicons.vader
 
-import com.ita.classifier.utils.Config
 import com.ita.classifiers.lexicons.utils.ResourceUtils
-import lexicons.vader.SentimentUtils
+import com.ita.domain.utils.Config
 
 import scala.collection.mutable.ListBuffer
 import scala.collection.{Seq, _}

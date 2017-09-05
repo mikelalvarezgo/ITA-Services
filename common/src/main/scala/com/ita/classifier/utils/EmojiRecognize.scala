@@ -1,4 +1,4 @@
-package com.ita.common.utils
+package com.ita.classifier.utils
 
 import com.vdurmont.emoji._
 /**

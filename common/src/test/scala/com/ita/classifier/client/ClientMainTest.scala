@@ -1,4 +1,4 @@
-package client
+package com.ita.classifier.client
 
 import org.scalatest._
 

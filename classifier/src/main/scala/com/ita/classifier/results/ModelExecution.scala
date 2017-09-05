@@ -1,24 +1,23 @@
-package results
+package com.ita.classifier.results
 
-import com.ita.classifier.utils.{ClassifierDataContext, Config, Logger}
-import domain.{Location, TweetInfo}
+import com.ita.classifier.utils.ClassifierDataContext
 import org.apache.spark.rdd.RDD
 import org.apache.spark.{SparkConf, SparkContext}
 import com.mongodb.spark._
 import com.mongodb.spark.config.ReadConfig
-import models._
+import com.ita.classifier.models._
 import org.apache.spark.sql.SQLContext
 import org.apache.spark.sql.functions.{max, min}
 import org.apache.spark.{SparkConf, SparkContext}
 import org.bson.Document
 import org.dmg.pmml.ClusteringModel.ModelClass
-import domain.classifier.exception.ClassifierException
-import domain.classifier.exception.ClassifierException._
+import com.ita.domain.classifier.exception.ClassifierException
+import com.ita.domain.classifier.exception.ClassifierException._
 import com.ita.classifier.models.ModelConverter.modelConverter
 
 import scala.concurrent.ExecutionContext.Implicits.global
-import domain.Model._
-import com.ita.common.utils.{Config, Logger}
+import com.ita.domain.Model._
+import com.ita.domain.utils.{Config, Logger}
 import com.ita.domain.{Id, TweetInfo}
 import org.apache.spark.mllib.classification.NaiveBayesModel
 import org.apache.spark.mllib.tree.model.GradientBoostedTreesModel

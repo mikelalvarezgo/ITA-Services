@@ -1,15 +1,14 @@
-package mongo
+package com.ita.classifier.mongo
 
 import com.mongodb.casbah.commons.MongoDBObject
-import mongo._
 import com.ita.common.mong.Converters._
-import results.ModelExecution
-import results.TweetResult
+import com.ita.classifier.results.ModelExecution
+import com.ita.classifier.results.TweetResult
 import com.ita.common.mong.{DAO, DAOHelpers, MongoDbComponent}
-import com.ita.common.mongo.daos.mongo.{DAO, DAOHelpers}
 import com.ita.domain.Id
-import models.ModelData
+import com.ita.classifier.models.ModelData
 import org.bson.types.ObjectId
+import com.ita.classifier.Model._
 
 import scala.util.Try
 case class TweetResultDAO(

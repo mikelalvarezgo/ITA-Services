@@ -1,4 +1,4 @@
-package domain.gatherer
+package com.ita.domain.gatherer
 
 /**
   * Created by mikelalvarezgo on 13/4/17.

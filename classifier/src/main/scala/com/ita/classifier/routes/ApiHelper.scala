@@ -1,13 +1,12 @@
-package routes
+package com.ita.classifier.routes
 
+import com.ita.classifier.results.ModelExecution
 import com.ita.domain.Id
-import com.ita.domain.gatherer.Created
-import domain.Model._
-import domain.gatherer.TweetPickUp
-import results.ModelExecution
+import com.ita.domain.gatherer.{Created, TweetPickUp}
+import com.ita.domain.Model._
 import spray.json.DefaultJsonProtocol.{jsonFormat2, jsonFormat3, _}
 import spray.json.RootJsonFormat
-
+import com.ita.classifier.Model._
 
 
 case class CreatePickUpPayloadRequest(

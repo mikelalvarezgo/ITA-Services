@@ -1,8 +1,8 @@
-package com.ita.common.mongo.daos.mongo
+package com.ita.common.mong
 
 import com.ita.domain.Id
 import com.mongodb.util.JSON
-import domain.Model.JFid
+import com.ita.domain.Model.JFid
 import org.bson.types.ObjectId
 import spray.json.JsonFormat
 /**

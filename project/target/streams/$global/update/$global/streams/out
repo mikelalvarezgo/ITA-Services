@@ -204,7 +204,7 @@
 [0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/org/ow2/asm/asm/5.2/asm-5.2.pom[0m
 [0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/org/ow2/asm/asm/5.2/asm-5.2.pom.sha1[0m
 [0m[[0mdebug[0m] [0msha1 OK for https://repo1.maven.org/maven2/org/ow2/asm/asm/5.2/asm-5.2.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.ow2.asm#asm;5.2!asm.pom(pom.original) (98ms)[0m
+[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.ow2.asm#asm;5.2!asm.pom(pom.original) (181ms)[0m
 [0m[[0minfo[0m] [0mResolving org.ow2.asm#asm-parent;5.2 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.ow2.asm#asm-parent;5.2 {}[0m
 [0m[[0minfo[0m] [0mResolving org.ow2.asm#asm-parent;5.2 ...[0m
@@ -224,7 +224,7 @@
 [0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/org/ow2/asm/asm-parent/5.2/asm-parent-5.2.pom[0m
 [0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/org/ow2/asm/asm-parent/5.2/asm-parent-5.2.pom.sha1[0m
 [0m[[0mdebug[0m] [0msha1 OK for https://repo1.maven.org/maven2/org/ow2/asm/asm-parent/5.2/asm-parent-5.2.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.ow2.asm#asm-parent;5.2!asm-parent.pom(pom.original) (99ms)[0m
+[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.ow2.asm#asm-parent;5.2!asm-parent.pom(pom.original) (158ms)[0m
 [0m[[0minfo[0m] [0mResolving org.ow2#ow2;1.3 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.ow2#ow2;1.3 {}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.ow2#ow2;1.3[0m
@@ -261,7 +261,7 @@
 [0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/org/ow2/asm/asm-commons/5.2/asm-commons-5.2.pom[0m
 [0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/org/ow2/asm/asm-commons/5.2/asm-commons-5.2.pom.sha1[0m
 [0m[[0mdebug[0m] [0msha1 OK for https://repo1.maven.org/maven2/org/ow2/asm/asm-commons/5.2/asm-commons-5.2.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.ow2.asm#asm-commons;5.2!asm-commons.pom(pom.original) (90ms)[0m
+[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.ow2.asm#asm-commons;5.2!asm-commons.pom(pom.original) (110ms)[0m
 [0m[[0minfo[0m] [0mResolving org.ow2.asm#asm-parent;5.2 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.ow2.asm#asm-parent;5.2 {}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.ow2.asm#asm-parent;5.2[0m
@@ -289,7 +289,7 @@
 [0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/org/ow2/asm/asm-tree/5.2/asm-tree-5.2.pom[0m
 [0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/org/ow2/asm/asm-tree/5.2/asm-tree-5.2.pom.sha1[0m
 [0m[[0mdebug[0m] [0msha1 OK for https://repo1.maven.org/maven2/org/ow2/asm/asm-tree/5.2/asm-tree-5.2.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.ow2.asm#asm-tree;5.2!asm-tree.pom(pom.original) (89ms)[0m
+[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.ow2.asm#asm-tree;5.2!asm-tree.pom(pom.original) (92ms)[0m
 [0m[[0minfo[0m] [0mResolving org.ow2.asm#asm-parent;5.2 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.ow2.asm#asm-parent;5.2 {}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.ow2.asm#asm-parent;5.2[0m
@@ -325,7 +325,7 @@
 [0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/org/apache/maven/maven-plugin-api/3.3.9/maven-plugin-api-3.3.9.pom[0m
 [0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/org/apache/maven/maven-plugin-api/3.3.9/maven-plugin-api-3.3.9.pom.sha1[0m
 [0m[[0mdebug[0m] [0msha1 OK for https://repo1.maven.org/maven2/org/apache/maven/maven-plugin-api/3.3.9/maven-plugin-api-3.3.9.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.apache.maven#maven-plugin-api;3.3.9!maven-plugin-api.pom(pom.original) (104ms)[0m
+[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.apache.maven#maven-plugin-api;3.3.9!maven-plugin-api.pom(pom.original) (105ms)[0m
 [0m[[0minfo[0m] [0mResolving org.apache.maven#maven;3.3.9 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.apache.maven#maven;3.3.9 {}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.apache.maven#maven;3.3.9[0m
@@ -500,7 +500,7 @@
 [0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/org/codehaus/plexus/plexus-component-annotations/1.6/plexus-component-annotations-1.6.pom[0m
 [0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/org/codehaus/plexus/plexus-component-annotations/1.6/plexus-component-annotations-1.6.pom.sha1[0m
 [0m[[0mdebug[0m] [0msha1 OK for https://repo1.maven.org/maven2/org/codehaus/plexus/plexus-component-annotations/1.6/plexus-component-annotations-1.6.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.codehaus.plexus#plexus-component-annotations;1.6!plexus-component-annotations.pom(pom.original) (107ms)[0m
+[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.codehaus.plexus#plexus-component-annotations;1.6!plexus-component-annotations.pom(pom.original) (98ms)[0m
 [0m[[0minfo[0m] [0mResolving org.codehaus.plexus#plexus-containers;1.6 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.codehaus.plexus#plexus-containers;1.6 {}[0m
 [0m[[0minfo[0m] [0mResolving org.codehaus.plexus#plexus-containers;1.6 ...[0m
@@ -520,7 +520,7 @@
 [0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/org/codehaus/plexus/plexus-containers/1.6/plexus-containers-1.6.pom[0m
 [0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/org/codehaus/plexus/plexus-containers/1.6/plexus-containers-1.6.pom.sha1[0m
 [0m[[0mdebug[0m] [0msha1 OK for https://repo1.maven.org/maven2/org/codehaus/plexus/plexus-containers/1.6/plexus-containers-1.6.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.codehaus.plexus#plexus-containers;1.6!plexus-containers.pom(pom.original) (273ms)[0m
+[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.codehaus.plexus#plexus-containers;1.6!plexus-containers.pom(pom.original) (322ms)[0m
 [0m[[0minfo[0m] [0mResolving org.codehaus.plexus#plexus;3.3.2 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.codehaus.plexus#plexus;3.3.2 {}[0m
 [0m[[0minfo[0m] [0mResolving org.codehaus.plexus#plexus;3.3.2 ...[0m
@@ -540,7 +540,7 @@
 [0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/org/codehaus/plexus/plexus/3.3.2/plexus-3.3.2.pom[0m
 [0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/org/codehaus/plexus/plexus/3.3.2/plexus-3.3.2.pom.sha1[0m
 [0m[[0mdebug[0m] [0msha1 OK for https://repo1.maven.org/maven2/org/codehaus/plexus/plexus/3.3.2/plexus-3.3.2.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.codehaus.plexus#plexus;3.3.2!plexus.pom(pom.original) (127ms)[0m
+[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.codehaus.plexus#plexus;3.3.2!plexus.pom(pom.original) (118ms)[0m
 [0m[[0minfo[0m] [0mResolving org.sonatype.spice#spice-parent;17 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.sonatype.spice#spice-parent;17 {}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.sonatype.spice#spice-parent;17[0m
@@ -4094,7 +4094,7 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-sbt#apply-macro;0.13.8!apply-macro.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#jline;2.10.4!jline.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.fusesource.jansi#jansi;1.4!jansi.jar[0m
-[0m[[0mdebug[0m] [0m:: resolution report :: resolve 14159ms :: artifacts dl 40ms[0m
+[0m[[0mdebug[0m] [0m:: resolution report :: resolve 14715ms :: artifacts dl 56ms[0m
 [0m[[0mdebug[0m] [0m	report for default#ita-services-build;0.1-SNAPSHOT compile produced in /Users/mikelwyred/tfm/ITA-Services/project/target/resolution-cache/reports/default-ita-services-build-compile.xml[0m
 [0m[[0mdebug[0m] [0m	report for default#ita-services-build;0.1-SNAPSHOT runtime produced in /Users/mikelwyred/tfm/ITA-Services/project/target/resolution-cache/reports/default-ita-services-build-runtime.xml[0m
 [0m[[0mdebug[0m] [0m	report for default#ita-services-build;0.1-SNAPSHOT test produced in /Users/mikelwyred/tfm/ITA-Services/project/target/resolution-cache/reports/default-ita-services-build-test.xml[0m
@@ -4108,5 +4108,5 @@
 [0m[[0mdebug[0m] [0m	report for default#ita-services-build;0.1-SNAPSHOT docs produced in /Users/mikelwyred/tfm/ITA-Services/project/target/resolution-cache/reports/default-ita-services-build-docs.xml[0m
 [0m[[0mdebug[0m] [0m	report for default#ita-services-build;0.1-SNAPSHOT pom produced in /Users/mikelwyred/tfm/ITA-Services/project/target/resolution-cache/reports/default-ita-services-build-pom.xml[0m
 [0m[[0mdebug[0m] [0m	report for default#ita-services-build;0.1-SNAPSHOT scala-tool produced in /Users/mikelwyred/tfm/ITA-Services/project/target/resolution-cache/reports/default-ita-services-build-scala-tool.xml[0m
-[0m[[0mdebug[0m] [0m	resolve done (14159ms resolve - 40ms download)[0m
+[0m[[0mdebug[0m] [0m	resolve done (14715ms resolve - 56ms download)[0m
 [0m[[0minfo[0m] [0mDone updating.[0m

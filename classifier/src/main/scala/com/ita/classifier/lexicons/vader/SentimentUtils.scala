@@ -1,5 +1,4 @@
-package lexicons.vader
-
+package com.ita.classifier.lexicons.vader
 
 object SentimentUtils {
 

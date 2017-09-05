@@ -1,6 +1,5 @@
-package lexicons.vader
+package com.ita.classifier.lexicons.vader
 
-import lexicons.vader.SentimentUtils
 import scala.util.control.Breaks._
  class SentiText(val text: String) {
 

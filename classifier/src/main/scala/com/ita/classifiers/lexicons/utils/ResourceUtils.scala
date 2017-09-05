@@ -1,4 +1,4 @@
-package lexicons.utils
+package com.ita.classifiers.lexicons.utils
 
 import java.io.InputStream
 

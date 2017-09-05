@@ -7,3 +7,9 @@ compile
 assembly
 clean
 assembly
+run
+assembly
+run
+run last gatherer/compile:run 
+ls
+run last gatherer/compile:run 

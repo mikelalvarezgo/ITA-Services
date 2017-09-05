@@ -1,8 +1,9 @@
 package com.ita.gatherer.restApi.controllers
 
-import domain.Id
-import domain.Model._
-import domain.gatherer.{Created, TweetPickUp}
+import com.ita.domain.Id
+import com.ita.domain.gatherer.{Created, TweetPickUp}
+import com.ita.domain.Model._
+import com.ita.classifier
 import spray.json.DefaultJsonProtocol.{jsonFormat2, jsonFormat3, _}
 import spray.json.RootJsonFormat
 /**

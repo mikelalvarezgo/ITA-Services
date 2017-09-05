@@ -1,6 +1,6 @@
-package actors
+package com.ita.gatherer.actors
 
-import domain.gatherer.TweetPickUp
+import com.ita.domain.gatherer.TweetPickUp
 
 object ActorMessages {
   case class StartPickUp(tweetPickUp: TweetPickUp)

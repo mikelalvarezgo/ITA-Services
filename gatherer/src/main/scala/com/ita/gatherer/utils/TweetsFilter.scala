@@ -1,4 +1,4 @@
-package utils
+package com.ita.gatherer.utils
 
 import org.apache.tika.language.LanguageIdentifier
 

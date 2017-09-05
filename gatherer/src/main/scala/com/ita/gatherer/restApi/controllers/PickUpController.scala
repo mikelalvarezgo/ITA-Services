@@ -1,20 +1,22 @@
-package restApi.controllers
+package com.ita.gatherer.restApi.controllers
 
-import actors.ActorMessages._
-import actors.PickUpManager
+import com.ita.gatherer.actors.ActorMessages._
 import akka.actor.{ActorRef, ActorSystem, Props}
 import akka.util.Timeout
-import domain.Id
-import domain.gatherer.{InProcess, Ready, TweetPickUp}
-import domain.gatherer.exception.GathererException
-import domain.gatherer.exception.GathererException._
-import mongo.daos.PickUpDAO
+import com.ita.domain.gatherer.{InProcess, TweetPickUp}
+import com.ita.domain.gatherer.exception.GathererException
+import com.ita.domain.gatherer.exception.GathererException._
 
 import scala.concurrent.ExecutionContext.Implicits.global
-import utils.{GathererDataContext, Logger}
 import akka.pattern.ask
-import domain.Model._
-import mongo.DAOHelpers
+import com.ita.common.mong.DAOHelpers
+import com.ita.common.mong.daos.PickUpDAO
+import com.ita.domain.Id
+import com.ita.domain.gatherer.{InProcess, Ready}
+import com.ita.domain.utils.Logger
+import com.ita.gatherer.actors.PickUpManager
+import com.ita.gatherer.utils.GathererDataContext
+import com.ita.domain.Model._
 
 import scala.concurrent.Future
 import scala.util.Try

@@ -1,13 +1,14 @@
-package actors
+package com.ita.gatherer.actors
 
-import actors.ActorMessages.{StartPickUp, StopPickUp}
+import ActorMessages.{StartPickUp, StopPickUp}
 import akka.actor.{Actor, ActorSystem}
 import akka.actor.Actor.Receive
-import domain.TweetInfo
-import domain.gatherer.TweetPickUp
-import mongo.daos.PickUpDAO
-import utils.DAOS.tweetInfoDao
-import utils._
+import com.ita.common.mong.daos.PickUpDAO
+import com.ita.domain.TweetInfo
+import com.ita.domain.utils.{Config, Logger}
+import com.ita.gatherer.restApi.controllers.TwitterStreamClient
+import com.ita.gatherer.utils.{DAOS, GathererDataContext}
+import com.ita.gatherer.utils.DAOS.tweetInfoDao
 
 class PickUpWorker(implicit dataContext:GathererDataContext, system:ActorSystem) extends  Actor
   with Config

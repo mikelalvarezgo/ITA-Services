@@ -5,8 +5,10 @@ import com.ita.common.mong.{DAO, DAOHelpers, MongoDbComponent}
 import com.ita.domain.Id
 import com.mongodb.casbah.commons.MongoDBObject
 import org.bson.types.ObjectId
-
+import com.ita.classifier.models._
 import scala.util.Try
+import com.ita.classifier.Model._
+
 case class ModelDAO(
   mongoHost: String,
   mongoPort: Int,

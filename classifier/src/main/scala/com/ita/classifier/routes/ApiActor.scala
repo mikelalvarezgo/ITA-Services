@@ -1,25 +1,25 @@
-package routes
+package com.ita.classifier.routes
 
 import spray.routing.{Route, _}
 import akka.actor.Actor
 import akka.util.Timeout
 import com.ita.classifier.controllers.ClassifierController
-import com.ita.classifier.utils.Logger
-import domain.Model._
+import com.ita.domain.Model._
 
 import scala.concurrent.duration._
 import com.ita.domain.Id
 import spray.httpx.SprayJsonSupport._
 import spray.routing._
-import models.ModelData
-import routes.ApiHelper._
+import com.ita.classifier.models.ModelData
+import com.ita.classifier.routes.ApiHelper._
 
 import scala.concurrent.ExecutionContext.Implicits.global
-import domain.Model.JFid
-import results.ModelExecution
+import com.ita.domain.Model.JFid
+import com.ita.classifier.results.ModelExecution
+import com.ita.domain.utils.Logger
 import spray.json.{JsBoolean, JsValue, RootJsonFormat}
 import spray.json.RootJsonFormat
-
+import com.ita.classifier.Model._
 class ApiActor(
   apiName: String,
   classifierController: ClassifierController) extends Actor

@@ -1,4 +1,4 @@
-package domain
+package com.ita.domain
 
 import spray.json.DefaultJsonProtocol.{jsonFormat2, jsonFormat9}
 import spray.json._

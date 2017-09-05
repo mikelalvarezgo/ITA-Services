@@ -1,6 +1,7 @@
-package utils
+package com.ita.gatherer.utils
 
-import mongo.daos.TweetInfoDAO
+import com.ita.common.mong.daos.TweetInfoDAO
+import com.ita.domain.utils.{Config, Logger}
 
 trait  DAOS {_: Config =>
 

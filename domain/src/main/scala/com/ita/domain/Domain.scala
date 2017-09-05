@@ -1,5 +1,4 @@
-package server
-
+package com.ita.domain
 
 object Server extends App {
 	

@@ -1,15 +1,14 @@
-package utils
-
+package com.ita.gatherer.restApi.controllers
 
 import akka.actor.ActorSystem
+import com.ita.classifier
+import com.ita.domain.TweetInfo
+import com.ita.domain.gatherer.TweetPickUp
+import com.ita.domain.utils.Config
+import com.ita.gatherer.restApi.controllers.TwitterCredentials._
+import com.ita.gatherer.utils.TweetsFilter
 import twitter4j._
-import twitter4j.auth.AccessToken
 import twitter4j.conf.ConfigurationBuilder
-import TwitterCredentials._
-import domain.TweetInfo
-import domain.gatherer.TweetPickUp
-import utils.DAOS.tweetInfoDao
-import scala.collection.JavaConverters._
 
 import scala.collection._
 
@@ -33,8 +32,6 @@ with TwitterCredentials{
   val appSecret =  config.getString(ConsumerSecret)
   val token = config.getString("twitter4j.oauth.accessToken")
   val tokenSecret = config.getString(AccessTokenSecret)
-
-
 
   def init = {
     val builder:ConfigurationBuilder  = new ConfigurationBuilder()

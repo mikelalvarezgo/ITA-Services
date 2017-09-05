@@ -1,16 +1,17 @@
-package com.ita.common.mongo.daos.mongo.daos
+package com.ita.common.mong.daos
 
 import com.ita.domain.Id
 import com.mongodb.casbah.commons.MongoDBObject
-import domain.TweetInfo
-import com.ita.common.mongo.daos.mongo.Converters.{dbObject, to}
-import mongo.{DAO, DAOHelpers}
-import com.ita.common.mongo.daos.mongo.Converters._
-import com.ita.common.mongo.daos.mongo.{DAO, DAOHelpers, MongoDbComponent}
+import com.ita.common.mong.Converters.{dbObject, to}
+import com.ita.common.mong.Converters._
+import com.ita.common.mong.{DAO, DAOHelpers, MongoDbComponent}
+import com.ita.domain.gatherer.TweetPickUp
 import com.mongodb.casbah.Imports._
 import com.mongodb.casbah.query.dsl.BSONType.BSONObjectId
 import org.bson.types.ObjectId
-
+import com.ita.common.mong.Converters.{dbObject, to}
+import com.ita.domain.Model._
+import com.ita.domain.gatherer.Model._
 import scala.util.Try
 
 case class PickUpDAO(mongo_Host: String, mongo_Port: Int, db_name: String) extends AbsPickUpDAO

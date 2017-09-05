@@ -1,5 +1,4 @@
-package client
-
+package com.ita.classifier.client
 
 import scala.concurrent.Future
 

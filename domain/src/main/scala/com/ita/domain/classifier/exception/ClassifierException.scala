@@ -1,6 +1,6 @@
-package domain.classifier.exception
+package com.ita.domain.classifier.exception
 
-import domain.exception.ITAException
+import com.ita.domain.exception.ITAException
 
 case class ClassifierException(
   code: String,

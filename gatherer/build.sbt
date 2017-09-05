@@ -1,19 +1,9 @@
 name := MyBuild.NamePrefix + "search"
 
-mainClass in (Compile, run) := Some("GatheringService")
+mainClass in (Compile, run) := Some("com.ita.gatherer.GatheringService")
 
 
-mergeStrategy in assembly := {
-
-  case PathList("org",
-  "apache",
-  "spark", "unused",
-  "org/objectweb/asm/*",
-  "SignatureReader.class",
-  "SignatureWriter.class",
-  "UnusedStubClass.class")
-  => MergeStrategy.first
-
-  case x => (mergeStrategy in assembly).value(x)
-
+assemblyMergeStrategy in assembly := {
+  case PathList("META-INF", xs @ _*) => MergeStrategy.discard
+  case x => MergeStrategy.first
 }

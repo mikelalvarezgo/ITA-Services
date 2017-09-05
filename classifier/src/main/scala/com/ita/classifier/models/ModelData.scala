@@ -1,4 +1,4 @@
-package models
+package com.ita.classifier.models
 
 import com.ita.domain.Id
 

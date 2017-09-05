@@ -1,4 +1,4 @@
-package domain.gatherer
+package com.ita.domain.gatherer
 
 import com.ita.domain.Id
 

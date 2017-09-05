@@ -1,4 +1,4 @@
-package rest
+package com.ita.common.rest
 
 import akka.actor.ActorSystem
 import akka.http.scaladsl.Http

@@ -1,6 +1,6 @@
-package domain.gatherer
+package com.ita.domain.gatherer
 
-import domain.Model._
+import com.ita.domain.Model._
 import spray.json.{JsonFormat, _}
 import spray.json.DefaultJsonProtocol._
 

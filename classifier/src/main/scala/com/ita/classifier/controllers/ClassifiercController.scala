@@ -1,23 +1,24 @@
-package controllers
+package com.ita.classifier.controllers
 
-import domain.classifier.exception.ClassifierException
-import models.ModelData
+import com.ita.domain.classifier.exception.ClassifierException
+import com.ita.domain.classifier.exception.ClassifierException._
+import com.ita.classifier.models.ModelData
 import org.apache.spark.{SparkConf, SparkContext}
-import results.ModelExecution
+import com.ita.classifier.results.ModelExecution
 import akka.actor.{ActorRef, ActorSystem, Props}
 import akka.util.Timeout
 
 import scala.concurrent.ExecutionContext.Implicits.global
-import utils.ClassifierDataContext
 import akka.pattern.ask
+import com.ita.classifier.utils.ClassifierDataContext
 import com.ita.common.mong.DAOHelpers
 import com.ita.common.mong.daos.PickUpDAO
-import com.ita.common.mongo.daos.mongo.DAOHelpers
-import com.ita.common.utils.{ClassifierDataContext, Logger}
+import com.ita.common.mong.DAOHelpers
 import com.ita.domain.Id
-import domain.Model._
-import mongo.DAOHelpers
-import routes.ModelExecutionPayload
+import com.ita.domain.Model._
+import com.ita.common.mong.DAOHelpers
+import com.ita.classifier.routes.ModelExecutionPayload
+import com.ita.domain.utils.Logger
 
 import scala.concurrent.Future
 import scala.util.Try
@@ -27,11 +28,11 @@ trait ClassifierController extends DAOHelpers
 
   import akka.http.scaladsl.model.StatusCodes
   import akka.http.scaladsl.server.Directives._
-  import domain.Model.JFid
+  import com.ita.domain.Model.JFid
   implicit val dataContext: ClassifierDataContext
   //declare actors and timeout
   implicit val sparkContext: SparkContext
-  import domain.classifier.exception.ClassifierException._
+  import com.ita.domain.classifier.exception.ClassifierException._
   import ClassifierController._
   def createModel(modelData: ModelData): Future[Id] = {
     logger.info(s"Request for $modelData arrived to controller")
@@ -68,7 +69,7 @@ trait ClassifierController extends DAOHelpers
     } yield {}).recover {
       case e: Throwable =>
         logger.error(s"${~>}Error when updating model $model", e)
-        throw GathererException(
+        throw ClassifierException(
           classifierControllerUpdateModelInternalError,
           "Unknown Error when updating model",
           Some(e))

@@ -8,7 +8,7 @@
 [debug] == resolving dependencies for ita-domain#ita-domain$sources_2.11;0.0.1 [compile]
 [debug] == resolving dependencies ita-domain#ita-domain$sources_2.11;0.0.1->org.scala-lang#scala-library;2.11.7 [compile->default(compile)]
 [info] Resolving org.scala-lang#scala-library;2.11.7 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@2028584c
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@727fd9e7
 [debug] sbt-chain: module revision found in cache: org.scala-lang#scala-library;2.11.7
 [debug] 	found org.scala-lang#scala-library;2.11.7 in sbt-chain
 [debug] 	[2.11.7] org.scala-lang#scala-library;2.11.7
@@ -17,7 +17,7 @@
 [debug] == resolving dependencies ita-domain#ita-domain$sources_2.11;0.0.1->org.scala-lang#scala-library;2.11.7 [compile->master]
 [debug] == resolving dependencies ita-domain#ita-domain$sources_2.11;0.0.1->com.vdurmont#emoji-java;3.2.0 [compile->default(compile)]
 [info] Resolving com.vdurmont#emoji-java;3.2.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@2c91d9ce
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@5c4e5339
 [debug] sbt-chain: module revision found in cache: com.vdurmont#emoji-java;3.2.0
 [debug] 	found com.vdurmont#emoji-java;3.2.0 in sbt-chain
 [debug] == resolving dependencies ita-domain#ita-domain$sources_2.11;0.0.1->com.vdurmont#emoji-java;3.2.0 [compile->runtime]
@@ -25,9 +25,9 @@
 [debug] == resolving dependencies ita-domain#ita-domain$sources_2.11;0.0.1->com.vdurmont#emoji-java;3.2.0 [compile->master]
 [debug] == resolving dependencies ita-domain#ita-domain$sources_2.11;0.0.1->org.json#json;20140107 [compile->default(compile)]
 [info] Resolving org.json#json;20140107 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@4f287c6b
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@35dacf01
 [info] Resolving org.json#json;20140107 ...
-[debug] sbt-chain-delegate: Checking cache for: sbt.ivyint.MergedDescriptors@4f287c6b
+[debug] sbt-chain-delegate: Checking cache for: sbt.ivyint.MergedDescriptors@35dacf01
 [debug] 		tried /Users/mikelwyred/.ivy2/local/org.json/json/20140107/ivys/ivy.xml
 [debug] 	local: no ivy file found for org.json#json;20140107
 [debug] 		tried https://repo1.maven.org/maven2/org/json/json/20140107/json-20140107.pom
@@ -37,7 +37,7 @@
 [debug] 	public: downloading https://repo1.maven.org/maven2/org/json/json/20140107/json-20140107.pom
 [debug] 	public: downloading https://repo1.maven.org/maven2/org/json/json/20140107/json-20140107.pom.sha1
 [debug] sha1 OK for https://repo1.maven.org/maven2/org/json/json/20140107/json-20140107.pom
-[debug] 	[SUCCESSFUL ] org.json#json;20140107!json.pom(pom.original) (134ms)
+[debug] 	[SUCCESSFUL ] org.json#json;20140107!json.pom(pom.original) (141ms)
 [info] Resolving org.sonatype.oss#oss-parent;7 ...
 [debug] sbt-chain: Checking cache for: dependency: org.sonatype.oss#oss-parent;7 {}
 [debug] sbt-chain: module revision found in cache: org.sonatype.oss#oss-parent;7
@@ -47,7 +47,7 @@
 [debug] == resolving dependencies ita-domain#ita-domain$sources_2.11;0.0.1->org.json#json;20140107 [compile->master]
 [debug] == resolving dependencies ita-domain#ita-domain$sources_2.11;0.0.1->org.spire-math#cats_2.11;0.3.0 [compile->default(compile)]
 [info] Resolving org.spire-math#cats_2.11;0.3.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@75ee1038
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@681eed6e
 [debug] sbt-chain: module revision found in cache: org.spire-math#cats_2.11;0.3.0
 [debug] 	found org.spire-math#cats_2.11;0.3.0 in sbt-chain
 [debug] 	[0.3.0] org.spire-math#cats_2.11;0.3.0
@@ -56,7 +56,7 @@
 [debug] == resolving dependencies ita-domain#ita-domain$sources_2.11;0.0.1->org.spire-math#cats_2.11;0.3.0 [compile->master]
 [debug] == resolving dependencies ita-domain#ita-domain$sources_2.11;0.0.1->org.spire-math#cats-macros_2.11;0.3.0 [compile->default(compile)]
 [info] Resolving org.spire-math#cats-macros_2.11;0.3.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@2a737744
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@48a6f54a
 [debug] sbt-chain: module revision found in cache: org.spire-math#cats-macros_2.11;0.3.0
 [debug] 	found org.spire-math#cats-macros_2.11;0.3.0 in sbt-chain
 [debug] 	[0.3.0] org.spire-math#cats-macros_2.11;0.3.0
@@ -65,7 +65,7 @@
 [debug] == resolving dependencies ita-domain#ita-domain$sources_2.11;0.0.1->org.spire-math#cats-macros_2.11;0.3.0 [compile->master]
 [debug] == resolving dependencies ita-domain#ita-domain$sources_2.11;0.0.1->com.github.mpilquist#simulacrum_2.11;0.4.0 [compile->default(compile)]
 [info] Resolving com.github.mpilquist#simulacrum_2.11;0.4.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@769dfd64
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@1ace5a
 [debug] sbt-chain: module revision found in cache: com.github.mpilquist#simulacrum_2.11;0.4.0
 [debug] 	found com.github.mpilquist#simulacrum_2.11;0.4.0 in sbt-chain
 [debug] == resolving dependencies ita-domain#ita-domain$sources_2.11;0.0.1->com.github.mpilquist#simulacrum_2.11;0.4.0 [compile->runtime]
@@ -73,7 +73,7 @@
 [debug] == resolving dependencies ita-domain#ita-domain$sources_2.11;0.0.1->com.github.mpilquist#simulacrum_2.11;0.4.0 [compile->master]
 [debug] == resolving dependencies ita-domain#ita-domain$sources_2.11;0.0.1->org.spire-math#algebra_2.11;0.3.1 [compile->default(compile)]
 [info] Resolving org.spire-math#algebra_2.11;0.3.1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@47b54395
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@5d88eb41
 [debug] sbt-chain: module revision found in cache: org.spire-math#algebra_2.11;0.3.1
 [debug] 	found org.spire-math#algebra_2.11;0.3.1 in sbt-chain
 [debug] 	[0.3.1] org.spire-math#algebra_2.11;0.3.1
@@ -82,7 +82,7 @@
 [debug] == resolving dependencies ita-domain#ita-domain$sources_2.11;0.0.1->org.spire-math#algebra_2.11;0.3.1 [compile->master]
 [debug] == resolving dependencies ita-domain#ita-domain$sources_2.11;0.0.1->org.spire-math#algebra-std_2.11;0.3.1 [compile->default(compile)]
 [info] Resolving org.spire-math#algebra-std_2.11;0.3.1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@483f63c1
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@701bfb4b
 [debug] sbt-chain: module revision found in cache: org.spire-math#algebra-std_2.11;0.3.1
 [debug] 	found org.spire-math#algebra-std_2.11;0.3.1 in sbt-chain
 [debug] 	[0.3.1] org.spire-math#algebra-std_2.11;0.3.1
@@ -91,7 +91,7 @@
 [debug] == resolving dependencies ita-domain#ita-domain$sources_2.11;0.0.1->org.spire-math#algebra-std_2.11;0.3.1 [compile->master]
 [debug] == resolving dependencies ita-domain#ita-domain$sources_2.11;0.0.1->org.typelevel#machinist_2.11;0.4.1 [compile->default(compile)]
 [info] Resolving org.typelevel#machinist_2.11;0.4.1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@56e00d42
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6a4753eb
 [debug] sbt-chain: module revision found in cache: org.typelevel#machinist_2.11;0.4.1
 [debug] 	found org.typelevel#machinist_2.11;0.4.1 in sbt-chain
 [debug] == resolving dependencies ita-domain#ita-domain$sources_2.11;0.0.1->org.typelevel#machinist_2.11;0.4.1 [compile->runtime]
@@ -99,7 +99,7 @@
 [debug] == resolving dependencies ita-domain#ita-domain$sources_2.11;0.0.1->org.typelevel#machinist_2.11;0.4.1 [compile->master]
 [debug] == resolving dependencies ita-domain#ita-domain$sources_2.11;0.0.1->org.scala-lang#scala-reflect;2.11.7 [compile->default(compile)]
 [info] Resolving org.scala-lang#scala-reflect;2.11.7 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@4d3dfa1c
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@2bc62785
 [debug] sbt-chain: module revision found in cache: org.scala-lang#scala-reflect;2.11.7
 [debug] 	found org.scala-lang#scala-reflect;2.11.7 in sbt-chain
 [debug] 	[2.11.7] org.scala-lang#scala-reflect;2.11.7
@@ -108,7 +108,7 @@
 [debug] == resolving dependencies ita-domain#ita-domain$sources_2.11;0.0.1->org.scala-lang#scala-reflect;2.11.7 [compile->master]
 [debug] == resolving dependencies ita-domain#ita-domain$sources_2.11;0.0.1->org.spire-math#cats-core_2.11;0.3.0 [compile->default(compile)]
 [info] Resolving org.spire-math#cats-core_2.11;0.3.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@5c6a6413
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@25a3a034
 [debug] sbt-chain: module revision found in cache: org.spire-math#cats-core_2.11;0.3.0
 [debug] 	found org.spire-math#cats-core_2.11;0.3.0 in sbt-chain
 [debug] 	[0.3.0] org.spire-math#cats-core_2.11;0.3.0
@@ -117,7 +117,7 @@
 [debug] == resolving dependencies ita-domain#ita-domain$sources_2.11;0.0.1->org.spire-math#cats-core_2.11;0.3.0 [compile->master]
 [debug] == resolving dependencies ita-domain#ita-domain$sources_2.11;0.0.1->org.spire-math#cats-laws_2.11;0.3.0 [compile->default(compile)]
 [info] Resolving org.spire-math#cats-laws_2.11;0.3.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@63be94e9
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@5d907cbd
 [debug] sbt-chain: module revision found in cache: org.spire-math#cats-laws_2.11;0.3.0
 [debug] 	found org.spire-math#cats-laws_2.11;0.3.0 in sbt-chain
 [debug] 	[0.3.0] org.spire-math#cats-laws_2.11;0.3.0
@@ -126,7 +126,7 @@
 [debug] == resolving dependencies ita-domain#ita-domain$sources_2.11;0.0.1->org.spire-math#cats-laws_2.11;0.3.0 [compile->master]
 [debug] == resolving dependencies ita-domain#ita-domain$sources_2.11;0.0.1->org.scalacheck#scalacheck_2.11;1.12.5 [compile->default(compile)]
 [info] Resolving org.scalacheck#scalacheck_2.11;1.12.5 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@51a341f3
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@230668f5
 [debug] sbt-chain: module revision found in cache: org.scalacheck#scalacheck_2.11;1.12.5
 [debug] 	found org.scalacheck#scalacheck_2.11;1.12.5 in sbt-chain
 [debug] == resolving dependencies ita-domain#ita-domain$sources_2.11;0.0.1->org.scalacheck#scalacheck_2.11;1.12.5 [compile->runtime]
@@ -134,7 +134,7 @@
 [debug] == resolving dependencies ita-domain#ita-domain$sources_2.11;0.0.1->org.scalacheck#scalacheck_2.11;1.12.5 [compile->master]
 [debug] == resolving dependencies ita-domain#ita-domain$sources_2.11;0.0.1->org.scala-sbt#test-interface;1.0 [compile->default(compile)]
 [info] Resolving org.scala-sbt#test-interface;1.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@a6c64a9
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@20719131
 [debug] sbt-chain: module revision found in cache: org.scala-sbt#test-interface;1.0
 [debug] 	found org.scala-sbt#test-interface;1.0 in sbt-chain
 [debug] == resolving dependencies ita-domain#ita-domain$sources_2.11;0.0.1->org.scala-sbt#test-interface;1.0 [compile->runtime]
@@ -142,7 +142,7 @@
 [debug] == resolving dependencies ita-domain#ita-domain$sources_2.11;0.0.1->org.scala-sbt#test-interface;1.0 [compile->master]
 [debug] == resolving dependencies ita-domain#ita-domain$sources_2.11;0.0.1->org.typelevel#discipline_2.11;0.4 [compile->default(compile)]
 [info] Resolving org.typelevel#discipline_2.11;0.4 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@2e88a4f0
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@21509ac7
 [debug] sbt-chain: module revision found in cache: org.typelevel#discipline_2.11;0.4
 [debug] 	found org.typelevel#discipline_2.11;0.4 in sbt-chain
 [debug] == resolving dependencies ita-domain#ita-domain$sources_2.11;0.0.1->org.typelevel#discipline_2.11;0.4 [compile->runtime]
@@ -150,7 +150,7 @@
 [debug] == resolving dependencies ita-domain#ita-domain$sources_2.11;0.0.1->org.typelevel#discipline_2.11;0.4 [compile->master]
 [debug] == resolving dependencies ita-domain#ita-domain$sources_2.11;0.0.1->org.spire-math#algebra-laws_2.11;0.3.1 [compile->default(compile)]
 [info] Resolving org.spire-math#algebra-laws_2.11;0.3.1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@4e2dd998
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@68665f97
 [debug] sbt-chain: module revision found in cache: org.spire-math#algebra-laws_2.11;0.3.1
 [debug] 	found org.spire-math#algebra-laws_2.11;0.3.1 in sbt-chain
 [debug] 	[0.3.1] org.spire-math#algebra-laws_2.11;0.3.1
@@ -159,7 +159,7 @@
 [debug] == resolving dependencies ita-domain#ita-domain$sources_2.11;0.0.1->org.spire-math#algebra-laws_2.11;0.3.1 [compile->master]
 [debug] == resolving dependencies ita-domain#ita-domain$sources_2.11;0.0.1->org.spire-math#algebra-macros_2.11;0.3.1 [compile->default(compile)]
 [info] Resolving org.spire-math#algebra-macros_2.11;0.3.1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@5ecaff0f
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@39d8134d
 [debug] sbt-chain: module revision found in cache: org.spire-math#algebra-macros_2.11;0.3.1
 [debug] 	found org.spire-math#algebra-macros_2.11;0.3.1 in sbt-chain
 [debug] 	[0.3.1] org.spire-math#algebra-macros_2.11;0.3.1
@@ -168,7 +168,7 @@
 [debug] == resolving dependencies ita-domain#ita-domain$sources_2.11;0.0.1->org.spire-math#algebra-macros_2.11;0.3.1 [compile->master]
 [debug] == resolving dependencies ita-domain#ita-domain$sources_2.11;0.0.1->com.github.inthenow#bricks-platform_2.11;0.0.1 [compile->default(compile)]
 [info] Resolving com.github.inthenow#bricks-platform_2.11;0.0.1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3f7d915d
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6e505fd5
 [debug] sbt-chain: module revision found in cache: com.github.inthenow#bricks-platform_2.11;0.0.1
 [debug] 	found com.github.inthenow#bricks-platform_2.11;0.0.1 in sbt-chain
 [debug] 	[0.0.1] com.github.inthenow#bricks-platform_2.11;0.0.1
@@ -177,7 +177,7 @@
 [debug] == resolving dependencies ita-domain#ita-domain$sources_2.11;0.0.1->com.github.inthenow#bricks-platform_2.11;0.0.1 [compile->master]
 [debug] == resolving dependencies ita-domain#ita-domain$sources_2.11;0.0.1->com.github.inthenow#bricks-macros_2.11;0.0.1 [compile->default(compile)]
 [info] Resolving com.github.inthenow#bricks-macros_2.11;0.0.1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@57bf777c
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@7e1fcb47
 [debug] sbt-chain: module revision found in cache: com.github.inthenow#bricks-macros_2.11;0.0.1
 [debug] 	found com.github.inthenow#bricks-macros_2.11;0.0.1 in sbt-chain
 [debug] 	[0.0.1] com.github.inthenow#bricks-macros_2.11;0.0.1
@@ -186,7 +186,7 @@
 [debug] == resolving dependencies ita-domain#ita-domain$sources_2.11;0.0.1->com.github.inthenow#bricks-macros_2.11;0.0.1 [compile->master]
 [debug] == resolving dependencies ita-domain#ita-domain$sources_2.11;0.0.1->org.typelevel#macro-compat_2.11;1.0.0 [compile->default(compile)]
 [info] Resolving org.typelevel#macro-compat_2.11;1.0.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@577570ea
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6183f322
 [debug] sbt-chain: module revision found in cache: org.typelevel#macro-compat_2.11;1.0.0
 [debug] 	found org.typelevel#macro-compat_2.11;1.0.0 in sbt-chain
 [debug] == resolving dependencies ita-domain#ita-domain$sources_2.11;0.0.1->org.typelevel#macro-compat_2.11;1.0.0 [compile->runtime]
@@ -194,7 +194,7 @@
 [debug] == resolving dependencies ita-domain#ita-domain$sources_2.11;0.0.1->org.typelevel#macro-compat_2.11;1.0.0 [compile->master]
 [debug] == resolving dependencies ita-domain#ita-domain$sources_2.11;0.0.1->org.spire-math#cats-free_2.11;0.3.0 [compile->default(compile)]
 [info] Resolving org.spire-math#cats-free_2.11;0.3.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6d06529
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@67e319ef
 [debug] sbt-chain: module revision found in cache: org.spire-math#cats-free_2.11;0.3.0
 [debug] 	found org.spire-math#cats-free_2.11;0.3.0 in sbt-chain
 [debug] 	[0.3.0] org.spire-math#cats-free_2.11;0.3.0
@@ -203,7 +203,7 @@
 [debug] == resolving dependencies ita-domain#ita-domain$sources_2.11;0.0.1->org.spire-math#cats-free_2.11;0.3.0 [compile->master]
 [debug] == resolving dependencies ita-domain#ita-domain$sources_2.11;0.0.1->org.spire-math#cats-state_2.11;0.3.0 [compile->default(compile)]
 [info] Resolving org.spire-math#cats-state_2.11;0.3.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@15c07940
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@8cbb3df
 [debug] sbt-chain: module revision found in cache: org.spire-math#cats-state_2.11;0.3.0
 [debug] 	found org.spire-math#cats-state_2.11;0.3.0 in sbt-chain
 [debug] 	[0.3.0] org.spire-math#cats-state_2.11;0.3.0
@@ -212,7 +212,7 @@
 [debug] == resolving dependencies ita-domain#ita-domain$sources_2.11;0.0.1->org.spire-math#cats-state_2.11;0.3.0 [compile->master]
 [debug] == resolving dependencies ita-domain#ita-domain$sources_2.11;0.0.1->org.spire-math#cats-jvm_2.11;0.3.0 [compile->default(compile)]
 [info] Resolving org.spire-math#cats-jvm_2.11;0.3.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@65a818be
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@24ef2ef2
 [debug] sbt-chain: module revision found in cache: org.spire-math#cats-jvm_2.11;0.3.0
 [debug] 	found org.spire-math#cats-jvm_2.11;0.3.0 in sbt-chain
 [debug] 	[0.3.0] org.spire-math#cats-jvm_2.11;0.3.0
@@ -221,7 +221,7 @@
 [debug] == resolving dependencies ita-domain#ita-domain$sources_2.11;0.0.1->org.spire-math#cats-jvm_2.11;0.3.0 [compile->master]
 [debug] == resolving dependencies ita-domain#ita-domain$sources_2.11;0.0.1->com.typesafe#config;1.3.1 [compile->default(compile)]
 [info] Resolving com.typesafe#config;1.3.1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@43a9c18
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@56ffa683
 [debug] sbt-chain: module revision found in cache: com.typesafe#config;1.3.1
 [debug] 	found com.typesafe#config;1.3.1 in sbt-chain
 [debug] == resolving dependencies ita-domain#ita-domain$sources_2.11;0.0.1->com.typesafe#config;1.3.1 [compile->runtime]
@@ -229,7 +229,7 @@
 [debug] == resolving dependencies ita-domain#ita-domain$sources_2.11;0.0.1->com.typesafe#config;1.3.1 [compile->master]
 [debug] == resolving dependencies ita-domain#ita-domain$sources_2.11;0.0.1->io.spray#spray-client_2.11;1.3.3 [compile->default(compile)]
 [info] Resolving io.spray#spray-client_2.11;1.3.3 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@19780c50
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@22f691e0
 [debug] sbt-chain: module revision found in cache: io.spray#spray-client_2.11;1.3.3
 [debug] 	found io.spray#spray-client_2.11;1.3.3 in sbt-chain
 [debug] == resolving dependencies ita-domain#ita-domain$sources_2.11;0.0.1->io.spray#spray-client_2.11;1.3.3 [compile->runtime]
@@ -237,7 +237,7 @@
 [debug] == resolving dependencies ita-domain#ita-domain$sources_2.11;0.0.1->io.spray#spray-client_2.11;1.3.3 [compile->master]
 [debug] == resolving dependencies ita-domain#ita-domain$sources_2.11;0.0.1->io.spray#spray-can_2.11;1.3.3 [compile->default(compile)]
 [info] Resolving io.spray#spray-can_2.11;1.3.3 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@57420038
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@5bd81373
 [debug] sbt-chain: module revision found in cache: io.spray#spray-can_2.11;1.3.3
 [debug] 	found io.spray#spray-can_2.11;1.3.3 in sbt-chain
 [debug] == resolving dependencies ita-domain#ita-domain$sources_2.11;0.0.1->io.spray#spray-can_2.11;1.3.3 [compile->runtime]
@@ -245,7 +245,7 @@
 [debug] == resolving dependencies ita-domain#ita-domain$sources_2.11;0.0.1->io.spray#spray-can_2.11;1.3.3 [compile->master]
 [debug] == resolving dependencies ita-domain#ita-domain$sources_2.11;0.0.1->io.spray#spray-io_2.11;1.3.3 [compile->default(compile)]
 [info] Resolving io.spray#spray-io_2.11;1.3.3 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@415246b1
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@50536d16
 [debug] sbt-chain: module revision found in cache: io.spray#spray-io_2.11;1.3.3
 [debug] 	found io.spray#spray-io_2.11;1.3.3 in sbt-chain
 [debug] == resolving dependencies ita-domain#ita-domain$sources_2.11;0.0.1->io.spray#spray-io_2.11;1.3.3 [compile->runtime]
@@ -253,7 +253,7 @@
 [debug] == resolving dependencies ita-domain#ita-domain$sources_2.11;0.0.1->io.spray#spray-io_2.11;1.3.3 [compile->master]
 [debug] == resolving dependencies ita-domain#ita-domain$sources_2.11;0.0.1->io.spray#spray-util_2.11;1.3.3 [compile->default(compile)]
 [info] Resolving io.spray#spray-util_2.11;1.3.3 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@2cc5e8
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@13210c0
 [debug] sbt-chain: module revision found in cache: io.spray#spray-util_2.11;1.3.3
 [debug] 	found io.spray#spray-util_2.11;1.3.3 in sbt-chain
 [debug] == resolving dependencies ita-domain#ita-domain$sources_2.11;0.0.1->io.spray#spray-util_2.11;1.3.3 [compile->runtime]
@@ -261,7 +261,7 @@
 [debug] == resolving dependencies ita-domain#ita-domain$sources_2.11;0.0.1->io.spray#spray-util_2.11;1.3.3 [compile->master]
 [debug] == resolving dependencies ita-domain#ita-domain$sources_2.11;0.0.1->io.spray#spray-http_2.11;1.3.3 [compile->default(compile)]
 [info] Resolving io.spray#spray-http_2.11;1.3.3 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@540da304
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@ba7618a
 [debug] sbt-chain: module revision found in cache: io.spray#spray-http_2.11;1.3.3
 [debug] 	found io.spray#spray-http_2.11;1.3.3 in sbt-chain
 [debug] == resolving dependencies ita-domain#ita-domain$sources_2.11;0.0.1->io.spray#spray-http_2.11;1.3.3 [compile->runtime]
@@ -269,7 +269,7 @@
 [debug] == resolving dependencies ita-domain#ita-domain$sources_2.11;0.0.1->io.spray#spray-http_2.11;1.3.3 [compile->master]
 [debug] == resolving dependencies ita-domain#ita-domain$sources_2.11;0.0.1->org.parboiled#parboiled-scala_2.11;1.1.7 [compile->default(compile)]
 [info] Resolving org.parboiled#parboiled-scala_2.11;1.1.7 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@4856c6d2
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@7060cf57
 [debug] sbt-chain: module revision found in cache: org.parboiled#parboiled-scala_2.11;1.1.7
 [debug] 	found org.parboiled#parboiled-scala_2.11;1.1.7 in sbt-chain
 [debug] == resolving dependencies ita-domain#ita-domain$sources_2.11;0.0.1->org.parboiled#parboiled-scala_2.11;1.1.7 [compile->runtime]
@@ -277,7 +277,7 @@
 [debug] == resolving dependencies ita-domain#ita-domain$sources_2.11;0.0.1->org.parboiled#parboiled-scala_2.11;1.1.7 [compile->master]
 [debug] == resolving dependencies ita-domain#ita-domain$sources_2.11;0.0.1->org.parboiled#parboiled-core;1.1.7 [compile->default(compile)]
 [info] Resolving org.parboiled#parboiled-core;1.1.7 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@43de8414
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@5cbfba2
 [debug] sbt-chain: module revision found in cache: org.parboiled#parboiled-core;1.1.7
 [debug] 	found org.parboiled#parboiled-core;1.1.7 in sbt-chain
 [debug] == resolving dependencies ita-domain#ita-domain$sources_2.11;0.0.1->org.parboiled#parboiled-core;1.1.7 [compile->runtime]
@@ -285,7 +285,7 @@
 [debug] == resolving dependencies ita-domain#ita-domain$sources_2.11;0.0.1->org.parboiled#parboiled-core;1.1.7 [compile->master]
 [debug] == resolving dependencies ita-domain#ita-domain$sources_2.11;0.0.1->io.spray#spray-httpx_2.11;1.3.3 [compile->default(compile)]
 [info] Resolving io.spray#spray-httpx_2.11;1.3.3 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@18b26005
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@70cf6bd9
 [debug] sbt-chain: module revision found in cache: io.spray#spray-httpx_2.11;1.3.3
 [debug] 	found io.spray#spray-httpx_2.11;1.3.3 in sbt-chain
 [debug] == resolving dependencies ita-domain#ita-domain$sources_2.11;0.0.1->io.spray#spray-httpx_2.11;1.3.3 [compile->runtime]
@@ -293,7 +293,7 @@
 [debug] == resolving dependencies ita-domain#ita-domain$sources_2.11;0.0.1->io.spray#spray-httpx_2.11;1.3.3 [compile->master]
 [debug] == resolving dependencies ita-domain#ita-domain$sources_2.11;0.0.1->org.scala-lang.modules#scala-xml_2.11;1.0.3 [compile->default(compile)]
 [info] Resolving org.scala-lang.modules#scala-xml_2.11;1.0.3 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3e5bff4e
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3046daa3
 [debug] sbt-chain: module revision found in cache: org.scala-lang.modules#scala-xml_2.11;1.0.3
 [debug] 	found org.scala-lang.modules#scala-xml_2.11;1.0.3 in sbt-chain
 [debug] == resolving dependencies ita-domain#ita-domain$sources_2.11;0.0.1->org.scala-lang.modules#scala-xml_2.11;1.0.3 [compile->runtime]
@@ -301,7 +301,7 @@
 [debug] == resolving dependencies ita-domain#ita-domain$sources_2.11;0.0.1->org.scala-lang.modules#scala-xml_2.11;1.0.3 [compile->master]
 [debug] == resolving dependencies ita-domain#ita-domain$sources_2.11;0.0.1->org.jvnet.mimepull#mimepull;1.9.5 [compile->default(compile)]
 [info] Resolving org.jvnet.mimepull#mimepull;1.9.5 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@62828b6d
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@d3c943a
 [debug] sbt-chain: module revision found in cache: org.jvnet.mimepull#mimepull;1.9.5
 [debug] 	found org.jvnet.mimepull#mimepull;1.9.5 in sbt-chain
 [debug] == resolving dependencies ita-domain#ita-domain$sources_2.11;0.0.1->org.jvnet.mimepull#mimepull;1.9.5 [compile->runtime]
@@ -309,7 +309,7 @@
 [debug] == resolving dependencies ita-domain#ita-domain$sources_2.11;0.0.1->org.jvnet.mimepull#mimepull;1.9.5 [compile->master]
 [debug] == resolving dependencies ita-domain#ita-domain$sources_2.11;0.0.1->org.apache.spark#spark-streaming-twitter_2.11;1.6.0 [compile->default(compile)]
 [info] Resolving org.apache.spark#spark-streaming-twitter_2.11;1.6.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3499278b
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@2f16b538
 [debug] sbt-chain: module revision found in cache: org.apache.spark#spark-streaming-twitter_2.11;1.6.0
 [debug] 	found org.apache.spark#spark-streaming-twitter_2.11;1.6.0 in sbt-chain
 [debug] == resolving dependencies ita-domain#ita-domain$sources_2.11;0.0.1->org.apache.spark#spark-streaming-twitter_2.11;1.6.0 [compile->runtime]
@@ -317,7 +317,7 @@
 [debug] == resolving dependencies ita-domain#ita-domain$sources_2.11;0.0.1->org.apache.spark#spark-streaming-twitter_2.11;1.6.0 [compile->master]
 [debug] == resolving dependencies ita-domain#ita-domain$sources_2.11;0.0.1->org.twitter4j#twitter4j-stream;4.0.4 [compile->default(compile)]
 [info] Resolving org.twitter4j#twitter4j-stream;4.0.4 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6a617654
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@2f18c71c
 [debug] sbt-chain: module revision found in cache: org.twitter4j#twitter4j-stream;4.0.4
 [debug] 	found org.twitter4j#twitter4j-stream;4.0.4 in sbt-chain
 [debug] == resolving dependencies ita-domain#ita-domain$sources_2.11;0.0.1->org.twitter4j#twitter4j-stream;4.0.4 [compile->runtime]
@@ -325,7 +325,7 @@
 [debug] == resolving dependencies ita-domain#ita-domain$sources_2.11;0.0.1->org.twitter4j#twitter4j-stream;4.0.4 [compile->master]
 [debug] == resolving dependencies ita-domain#ita-domain$sources_2.11;0.0.1->org.twitter4j#twitter4j-core;4.0.4 [compile->default(compile)]
 [info] Resolving org.twitter4j#twitter4j-core;4.0.4 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@7e1b6c6b
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@34fa6305
 [debug] sbt-chain: module revision found in cache: org.twitter4j#twitter4j-core;4.0.4
 [debug] 	found org.twitter4j#twitter4j-core;4.0.4 in sbt-chain
 [debug] == resolving dependencies ita-domain#ita-domain$sources_2.11;0.0.1->org.twitter4j#twitter4j-core;4.0.4 [compile->runtime]
@@ -333,7 +333,7 @@
 [debug] == resolving dependencies ita-domain#ita-domain$sources_2.11;0.0.1->org.twitter4j#twitter4j-core;4.0.4 [compile->master]
 [debug] == resolving dependencies ita-domain#ita-domain$sources_2.11;0.0.1->org.spark-project.spark#unused;1.0.0 [compile->default(compile)]
 [info] Resolving org.spark-project.spark#unused;1.0.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@32be4955
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6075fc47
 [debug] sbt-chain: module revision found in cache: org.spark-project.spark#unused;1.0.0
 [debug] 	found org.spark-project.spark#unused;1.0.0 in sbt-chain
 [debug] == resolving dependencies ita-domain#ita-domain$sources_2.11;0.0.1->org.spark-project.spark#unused;1.0.0 [compile->runtime]
@@ -341,7 +341,7 @@
 [debug] == resolving dependencies ita-domain#ita-domain$sources_2.11;0.0.1->org.spark-project.spark#unused;1.0.0 [compile->master]
 [debug] == resolving dependencies ita-domain#ita-domain$sources_2.11;0.0.1->org.mongodb#casbah-commons_2.11;3.1.1 [compile->default(compile)]
 [info] Resolving org.mongodb#casbah-commons_2.11;3.1.1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@cb29566
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@696ffc6d
 [debug] sbt-chain: module revision found in cache: org.mongodb#casbah-commons_2.11;3.1.1
 [debug] 	found org.mongodb#casbah-commons_2.11;3.1.1 in sbt-chain
 [debug] == resolving dependencies ita-domain#ita-domain$sources_2.11;0.0.1->org.mongodb#casbah-commons_2.11;3.1.1 [compile->runtime]
@@ -349,7 +349,7 @@
 [debug] == resolving dependencies ita-domain#ita-domain$sources_2.11;0.0.1->org.mongodb#casbah-commons_2.11;3.1.1 [compile->master]
 [debug] == resolving dependencies ita-domain#ita-domain$sources_2.11;0.0.1->com.github.nscala-time#nscala-time_2.11;1.0.0 [compile->default(compile)]
 [info] Resolving com.github.nscala-time#nscala-time_2.11;1.0.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@61ad81d3
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@47c1edd5
 [debug] sbt-chain: module revision found in cache: com.github.nscala-time#nscala-time_2.11;1.0.0
 [debug] 	found com.github.nscala-time#nscala-time_2.11;1.0.0 in sbt-chain
 [debug] == resolving dependencies ita-domain#ita-domain$sources_2.11;0.0.1->com.github.nscala-time#nscala-time_2.11;1.0.0 [compile->runtime]
@@ -357,7 +357,7 @@
 [debug] == resolving dependencies ita-domain#ita-domain$sources_2.11;0.0.1->com.github.nscala-time#nscala-time_2.11;1.0.0 [compile->master]
 [debug] == resolving dependencies ita-domain#ita-domain$sources_2.11;0.0.1->joda-time#joda-time;2.3 [compile->default(compile)]
 [info] Resolving joda-time#joda-time;2.3 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@17b0cb93
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@11a35a77
 [debug] sbt-chain: module revision found in cache: joda-time#joda-time;2.3
 [debug] 	found joda-time#joda-time;2.3 in sbt-chain
 [debug] == resolving dependencies ita-domain#ita-domain$sources_2.11;0.0.1->joda-time#joda-time;2.3 [compile->runtime]
@@ -365,7 +365,7 @@
 [debug] == resolving dependencies ita-domain#ita-domain$sources_2.11;0.0.1->joda-time#joda-time;2.3 [compile->master]
 [debug] == resolving dependencies ita-domain#ita-domain$sources_2.11;0.0.1->org.joda#joda-convert;1.2 [compile->default(compile)]
 [info] Resolving org.joda#joda-convert;1.2 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@4f0f9f77
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@7c50c69
 [debug] sbt-chain: module revision found in cache: org.joda#joda-convert;1.2
 [debug] 	found org.joda#joda-convert;1.2 in sbt-chain
 [debug] == resolving dependencies ita-domain#ita-domain$sources_2.11;0.0.1->org.joda#joda-convert;1.2 [compile->runtime]
@@ -373,7 +373,7 @@
 [debug] == resolving dependencies ita-domain#ita-domain$sources_2.11;0.0.1->org.joda#joda-convert;1.2 [compile->master]
 [debug] == resolving dependencies ita-domain#ita-domain$sources_2.11;0.0.1->org.mongodb#mongo-java-driver;3.2.2 [compile->default(compile)]
 [info] Resolving org.mongodb#mongo-java-driver;3.2.2 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@bb94599
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@990793
 [debug] sbt-chain: module revision found in cache: org.mongodb#mongo-java-driver;3.2.2
 [debug] 	found org.mongodb#mongo-java-driver;3.2.2 in sbt-chain
 [debug] == resolving dependencies ita-domain#ita-domain$sources_2.11;0.0.1->org.mongodb#mongo-java-driver;3.2.2 [compile->runtime]
@@ -381,7 +381,7 @@
 [debug] == resolving dependencies ita-domain#ita-domain$sources_2.11;0.0.1->org.mongodb#mongo-java-driver;3.2.2 [compile->master]
 [debug] == resolving dependencies ita-domain#ita-domain$sources_2.11;0.0.1->org.slf4j#slf4j-api;1.6.0 [compile->default(compile)]
 [info] Resolving org.slf4j#slf4j-api;1.6.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@5d0c3a50
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6e9cab0d
 [debug] sbt-chain: module revision found in cache: org.slf4j#slf4j-api;1.6.0
 [debug] 	found org.slf4j#slf4j-api;1.6.0 in sbt-chain
 [debug] == resolving dependencies ita-domain#ita-domain$sources_2.11;0.0.1->org.slf4j#slf4j-api;1.6.0 [compile->runtime]
@@ -389,7 +389,7 @@
 [debug] == resolving dependencies ita-domain#ita-domain$sources_2.11;0.0.1->org.slf4j#slf4j-api;1.6.0 [compile->master]
 [debug] == resolving dependencies ita-domain#ita-domain$sources_2.11;0.0.1->org.mongodb#casbah-core_2.11;3.1.1 [compile->default(compile)]
 [info] Resolving org.mongodb#casbah-core_2.11;3.1.1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@a50ab23
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@59228862
 [debug] sbt-chain: module revision found in cache: org.mongodb#casbah-core_2.11;3.1.1
 [debug] 	found org.mongodb#casbah-core_2.11;3.1.1 in sbt-chain
 [debug] == resolving dependencies ita-domain#ita-domain$sources_2.11;0.0.1->org.mongodb#casbah-core_2.11;3.1.1 [compile->runtime]
@@ -397,7 +397,7 @@
 [debug] == resolving dependencies ita-domain#ita-domain$sources_2.11;0.0.1->org.mongodb#casbah-core_2.11;3.1.1 [compile->master]
 [debug] == resolving dependencies ita-domain#ita-domain$sources_2.11;0.0.1->org.mongodb#casbah-query_2.11;3.1.1 [compile->default(compile)]
 [info] Resolving org.mongodb#casbah-query_2.11;3.1.1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@52e2f523
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@56a0ca76
 [debug] sbt-chain: module revision found in cache: org.mongodb#casbah-query_2.11;3.1.1
 [debug] 	found org.mongodb#casbah-query_2.11;3.1.1 in sbt-chain
 [debug] == resolving dependencies ita-domain#ita-domain$sources_2.11;0.0.1->org.mongodb#casbah-query_2.11;3.1.1 [compile->runtime]
@@ -405,7 +405,7 @@
 [debug] == resolving dependencies ita-domain#ita-domain$sources_2.11;0.0.1->org.mongodb#casbah-query_2.11;3.1.1 [compile->master]
 [debug] == resolving dependencies ita-domain#ita-domain$sources_2.11;0.0.1->io.spray#spray-routing-shapeless2_2.11;1.3.2 [compile->default(compile)]
 [info] Resolving io.spray#spray-routing-shapeless2_2.11;1.3.2 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@133ad83d
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@d5ad19b
 [debug] sbt-chain: module revision found in cache: io.spray#spray-routing-shapeless2_2.11;1.3.2
 [debug] 	found io.spray#spray-routing-shapeless2_2.11;1.3.2 in sbt-chain
 [debug] == resolving dependencies ita-domain#ita-domain$sources_2.11;0.0.1->io.spray#spray-routing-shapeless2_2.11;1.3.2 [compile->runtime]
@@ -413,7 +413,7 @@
 [debug] == resolving dependencies ita-domain#ita-domain$sources_2.11;0.0.1->io.spray#spray-routing-shapeless2_2.11;1.3.2 [compile->master]
 [debug] == resolving dependencies ita-domain#ita-domain$sources_2.11;0.0.1->com.chuusai#shapeless_2.11;2.0.0 [compile->default(compile)]
 [info] Resolving com.chuusai#shapeless_2.11;2.0.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@68bbb76d
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3bdd79cb
 [debug] sbt-chain: module revision found in cache: com.chuusai#shapeless_2.11;2.0.0
 [debug] 	found com.chuusai#shapeless_2.11;2.0.0 in sbt-chain
 [debug] == resolving dependencies ita-domain#ita-domain$sources_2.11;0.0.1->com.chuusai#shapeless_2.11;2.0.0 [compile->runtime]
@@ -421,7 +421,7 @@
 [debug] == resolving dependencies ita-domain#ita-domain$sources_2.11;0.0.1->com.chuusai#shapeless_2.11;2.0.0 [compile->master]
 [debug] == resolving dependencies ita-domain#ita-domain$sources_2.11;0.0.1->com.typesafe.akka#akka-http-spray-json-experimental_2.11;2.4.4 [compile->default(compile)]
 [info] Resolving com.typesafe.akka#akka-http-spray-json-experimental_2.11;2.4.4 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@38ae89c
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@19d53d21
 [debug] sbt-chain: module revision found in cache: com.typesafe.akka#akka-http-spray-json-experimental_2.11;2.4.4
 [debug] 	found com.typesafe.akka#akka-http-spray-json-experimental_2.11;2.4.4 in sbt-chain
 [debug] == resolving dependencies ita-domain#ita-domain$sources_2.11;0.0.1->com.typesafe.akka#akka-http-spray-json-experimental_2.11;2.4.4 [compile->runtime]
@@ -429,7 +429,7 @@
 [debug] == resolving dependencies ita-domain#ita-domain$sources_2.11;0.0.1->com.typesafe.akka#akka-http-spray-json-experimental_2.11;2.4.4 [compile->master]
 [debug] == resolving dependencies ita-domain#ita-domain$sources_2.11;0.0.1->com.typesafe.akka#akka-http-experimental_2.11;2.4.4 [compile->default(compile)]
 [info] Resolving com.typesafe.akka#akka-http-experimental_2.11;2.4.4 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@5467e7f6
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@644ddd49
 [debug] sbt-chain: module revision found in cache: com.typesafe.akka#akka-http-experimental_2.11;2.4.4
 [debug] 	found com.typesafe.akka#akka-http-experimental_2.11;2.4.4 in sbt-chain
 [debug] == resolving dependencies ita-domain#ita-domain$sources_2.11;0.0.1->com.typesafe.akka#akka-http-experimental_2.11;2.4.4 [compile->runtime]
@@ -437,7 +437,7 @@
 [debug] == resolving dependencies ita-domain#ita-domain$sources_2.11;0.0.1->com.typesafe.akka#akka-http-experimental_2.11;2.4.4 [compile->master]
 [debug] == resolving dependencies ita-domain#ita-domain$sources_2.11;0.0.1->com.typesafe.akka#akka-http-core_2.11;2.4.4 [compile->default(compile)]
 [info] Resolving com.typesafe.akka#akka-http-core_2.11;2.4.4 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@107e23e3
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@217b89bf
 [debug] sbt-chain: module revision found in cache: com.typesafe.akka#akka-http-core_2.11;2.4.4
 [debug] 	found com.typesafe.akka#akka-http-core_2.11;2.4.4 in sbt-chain
 [debug] == resolving dependencies ita-domain#ita-domain$sources_2.11;0.0.1->com.typesafe.akka#akka-http-core_2.11;2.4.4 [compile->runtime]
@@ -445,7 +445,7 @@
 [debug] == resolving dependencies ita-domain#ita-domain$sources_2.11;0.0.1->com.typesafe.akka#akka-http-core_2.11;2.4.4 [compile->master]
 [debug] == resolving dependencies ita-domain#ita-domain$sources_2.11;0.0.1->com.typesafe.akka#akka-stream_2.11;2.4.4 [compile->default(compile)]
 [info] Resolving com.typesafe.akka#akka-stream_2.11;2.4.4 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@75a47afb
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@28bd9af
 [debug] sbt-chain: module revision found in cache: com.typesafe.akka#akka-stream_2.11;2.4.4
 [debug] 	found com.typesafe.akka#akka-stream_2.11;2.4.4 in sbt-chain
 [debug] == resolving dependencies ita-domain#ita-domain$sources_2.11;0.0.1->com.typesafe.akka#akka-stream_2.11;2.4.4 [compile->runtime]
@@ -453,7 +453,7 @@
 [debug] == resolving dependencies ita-domain#ita-domain$sources_2.11;0.0.1->com.typesafe.akka#akka-stream_2.11;2.4.4 [compile->master]
 [debug] == resolving dependencies ita-domain#ita-domain$sources_2.11;0.0.1->com.typesafe.akka#akka-actor_2.11;2.4.4 [compile->default(compile)]
 [info] Resolving com.typesafe.akka#akka-actor_2.11;2.4.4 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@42c3f8b
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@68903d9
 [debug] sbt-chain: module revision found in cache: com.typesafe.akka#akka-actor_2.11;2.4.4
 [debug] 	found com.typesafe.akka#akka-actor_2.11;2.4.4 in sbt-chain
 [debug] == resolving dependencies ita-domain#ita-domain$sources_2.11;0.0.1->com.typesafe.akka#akka-actor_2.11;2.4.4 [compile->runtime]
@@ -461,7 +461,7 @@
 [debug] == resolving dependencies ita-domain#ita-domain$sources_2.11;0.0.1->com.typesafe.akka#akka-actor_2.11;2.4.4 [compile->master]
 [debug] == resolving dependencies ita-domain#ita-domain$sources_2.11;0.0.1->org.scala-lang.modules#scala-java8-compat_2.11;0.7.0 [compile->default(compile)]
 [info] Resolving org.scala-lang.modules#scala-java8-compat_2.11;0.7.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3f3d1cd9
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@78ef7d8d
 [debug] sbt-chain: module revision found in cache: org.scala-lang.modules#scala-java8-compat_2.11;0.7.0
 [debug] 	found org.scala-lang.modules#scala-java8-compat_2.11;0.7.0 in sbt-chain
 [debug] == resolving dependencies ita-domain#ita-domain$sources_2.11;0.0.1->org.scala-lang.modules#scala-java8-compat_2.11;0.7.0 [compile->runtime]
@@ -469,7 +469,7 @@
 [debug] == resolving dependencies ita-domain#ita-domain$sources_2.11;0.0.1->org.scala-lang.modules#scala-java8-compat_2.11;0.7.0 [compile->master]
 [debug] == resolving dependencies ita-domain#ita-domain$sources_2.11;0.0.1->com.typesafe#ssl-config-akka_2.11;0.2.1 [compile->default(compile)]
 [info] Resolving com.typesafe#ssl-config-akka_2.11;0.2.1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@2e25ee4
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@4d226ed0
 [debug] sbt-chain: module revision found in cache: com.typesafe#ssl-config-akka_2.11;0.2.1
 [debug] 	found com.typesafe#ssl-config-akka_2.11;0.2.1 in sbt-chain
 [debug] == resolving dependencies ita-domain#ita-domain$sources_2.11;0.0.1->com.typesafe#ssl-config-akka_2.11;0.2.1 [compile->runtime]
@@ -477,7 +477,7 @@
 [debug] == resolving dependencies ita-domain#ita-domain$sources_2.11;0.0.1->com.typesafe#ssl-config-akka_2.11;0.2.1 [compile->master]
 [debug] == resolving dependencies ita-domain#ita-domain$sources_2.11;0.0.1->com.typesafe#ssl-config-core_2.11;0.2.1 [compile->default(compile)]
 [info] Resolving com.typesafe#ssl-config-core_2.11;0.2.1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@687af316
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3c88d7da
 [debug] sbt-chain: module revision found in cache: com.typesafe#ssl-config-core_2.11;0.2.1
 [debug] 	found com.typesafe#ssl-config-core_2.11;0.2.1 in sbt-chain
 [debug] == resolving dependencies ita-domain#ita-domain$sources_2.11;0.0.1->com.typesafe#ssl-config-core_2.11;0.2.1 [compile->runtime]
@@ -485,7 +485,7 @@
 [debug] == resolving dependencies ita-domain#ita-domain$sources_2.11;0.0.1->com.typesafe#ssl-config-core_2.11;0.2.1 [compile->master]
 [debug] == resolving dependencies ita-domain#ita-domain$sources_2.11;0.0.1->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.4 [compile->default(compile)]
 [info] Resolving org.scala-lang.modules#scala-parser-combinators_2.11;1.0.4 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3bc19c5f
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@62efc17d
 [debug] sbt-chain: module revision found in cache: org.scala-lang.modules#scala-parser-combinators_2.11;1.0.4
 [debug] 	found org.scala-lang.modules#scala-parser-combinators_2.11;1.0.4 in sbt-chain
 [debug] == resolving dependencies ita-domain#ita-domain$sources_2.11;0.0.1->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.4 [compile->runtime]
@@ -493,7 +493,7 @@
 [debug] == resolving dependencies ita-domain#ita-domain$sources_2.11;0.0.1->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.4 [compile->master]
 [debug] == resolving dependencies ita-domain#ita-domain$sources_2.11;0.0.1->org.reactivestreams#reactive-streams;1.0.0 [compile->default(compile)]
 [info] Resolving org.reactivestreams#reactive-streams;1.0.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6d32a6b4
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@69bf36c7
 [debug] sbt-chain: module revision found in cache: org.reactivestreams#reactive-streams;1.0.0
 [debug] 	found org.reactivestreams#reactive-streams;1.0.0 in sbt-chain
 [debug] == resolving dependencies ita-domain#ita-domain$sources_2.11;0.0.1->org.reactivestreams#reactive-streams;1.0.0 [compile->runtime]
@@ -501,7 +501,7 @@
 [debug] == resolving dependencies ita-domain#ita-domain$sources_2.11;0.0.1->org.reactivestreams#reactive-streams;1.0.0 [compile->master]
 [debug] == resolving dependencies ita-domain#ita-domain$sources_2.11;0.0.1->com.typesafe.akka#akka-parsing_2.11;2.4.4 [compile->default(compile)]
 [info] Resolving com.typesafe.akka#akka-parsing_2.11;2.4.4 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@68a8ef4c
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@2dc7e18c
 [debug] sbt-chain: module revision found in cache: com.typesafe.akka#akka-parsing_2.11;2.4.4
 [debug] 	found com.typesafe.akka#akka-parsing_2.11;2.4.4 in sbt-chain
 [debug] == resolving dependencies ita-domain#ita-domain$sources_2.11;0.0.1->com.typesafe.akka#akka-parsing_2.11;2.4.4 [compile->runtime]
@@ -509,7 +509,7 @@
 [debug] == resolving dependencies ita-domain#ita-domain$sources_2.11;0.0.1->com.typesafe.akka#akka-parsing_2.11;2.4.4 [compile->master]
 [debug] == resolving dependencies ita-domain#ita-domain$sources_2.11;0.0.1->io.spray#spray-json_2.11;1.3.2 [compile->default(compile)]
 [info] Resolving io.spray#spray-json_2.11;1.3.2 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@16d9f79c
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3b06b5d9
 [debug] sbt-chain: module revision found in cache: io.spray#spray-json_2.11;1.3.2
 [debug] 	found io.spray#spray-json_2.11;1.3.2 in sbt-chain
 [debug] == resolving dependencies ita-domain#ita-domain$sources_2.11;0.0.1->io.spray#spray-json_2.11;1.3.2 [compile->runtime]
@@ -4074,7 +4074,7 @@
 [debug] 	[NOT REQUIRED] org.scala-lang#scala-compiler;2.11.7!scala-compiler.jar(src)
 [debug] 	[NOT REQUIRED] org.scala-lang.modules#scala-xml_2.11;1.0.4!scala-xml_2.11.jar(src)
 [debug] 	[NOT REQUIRED] jline#jline;2.12.1!jline.jar(src)
-[debug] :: resolution report :: resolve 3435ms :: artifacts dl 222ms
+[debug] :: resolution report :: resolve 6421ms :: artifacts dl 103ms
 [debug] 	report for ita-domain#ita-domain$sources_2.11;0.0.1 compile produced in /Users/mikelwyred/tfm/ITA-Services/domain/target/resolution-cache/reports/ita-domain-ita-domain$sources_2.11-compile.xml
 [debug] 	report for ita-domain#ita-domain$sources_2.11;0.0.1 runtime produced in /Users/mikelwyred/tfm/ITA-Services/domain/target/resolution-cache/reports/ita-domain-ita-domain$sources_2.11-runtime.xml
 [debug] 	report for ita-domain#ita-domain$sources_2.11;0.0.1 test produced in /Users/mikelwyred/tfm/ITA-Services/domain/target/resolution-cache/reports/ita-domain-ita-domain$sources_2.11-test.xml
@@ -4088,4 +4088,4 @@
 [debug] 	report for ita-domain#ita-domain$sources_2.11;0.0.1 docs produced in /Users/mikelwyred/tfm/ITA-Services/domain/target/resolution-cache/reports/ita-domain-ita-domain$sources_2.11-docs.xml
 [debug] 	report for ita-domain#ita-domain$sources_2.11;0.0.1 pom produced in /Users/mikelwyred/tfm/ITA-Services/domain/target/resolution-cache/reports/ita-domain-ita-domain$sources_2.11-pom.xml
 [debug] 	report for ita-domain#ita-domain$sources_2.11;0.0.1 scala-tool produced in /Users/mikelwyred/tfm/ITA-Services/domain/target/resolution-cache/reports/ita-domain-ita-domain$sources_2.11-scala-tool.xml
-[debug] 	resolve done (3435ms resolve - 222ms download)
+[debug] 	resolve done (6421ms resolve - 103ms download)

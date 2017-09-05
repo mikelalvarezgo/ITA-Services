@@ -1,4 +1,4 @@
-package domain.exception
+package com.ita.domain.exception
 
 /**
   * Created by mikelalvarezgo on 14/4/17.

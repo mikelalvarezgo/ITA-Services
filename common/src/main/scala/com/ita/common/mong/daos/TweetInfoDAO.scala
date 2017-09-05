@@ -1,12 +1,11 @@
-package com.ita.common.mongo.daos.mongo.daos
+package com.ita.common.mong.daos
 
-import com.ita.common.mongo.daos.mongo.{DAO, DAOHelpers, MongoDbComponent}
+import com.ita.common.mong.{DAO, DAOHelpers, MongoDbComponent}
 import com.ita.domain.{Id, TweetInfo}
 import com.mongodb.casbah.commons.MongoDBObject
-import domain.TweetInfo
-import mongo.{DAO, DAOHelpers, MongoDbComponent}
-import domain.Model._
-import mongo.Converters._
+import com.ita.domain.Model._
+import com.ita.common.mong.Converters.{dbObject, to}
+import com.mongodb.casbah.commons.MongoDBObject
 
 import scala.util.Try
 

@@ -1,4 +1,4 @@
-package results
+package com.ita.classifier.results
 
 import com.ita.domain.Id
 

@@ -7,7 +7,7 @@
 		revision="0.0.1"
 		conf="compile-internal"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
-		date="20170905013920"/>
+		date="20170905192557"/>
 	<dependencies>
 		<module organisation="com.optimaize.languagedetector" name="language-detector">
 			<revision name="0.5" status="release" pubdate="20150405074628" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/optimaize/language-detector" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="63">
@@ -59,7 +59,7 @@
 		</module>
 		<module organisation="org.apache.tika" name="tika-core">
 			<revision name="1.10" status="release" pubdate="20150802080823" resolver="public" artresolver="public" homepage="http://tika.apache.org/" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="62">
-				<metadata-artifact status="successful" details="" size="6070" time="109" location="/Users/mikelwyred/.ivy2/cache/org.apache.tika/tika-core/ivy-1.10.xml" searched="true" original-local-location="/Users/mikelwyred/.ivy2/cache/org.apache.tika/tika-core/ivy-1.10.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/tika/tika-core/1.10/tika-core-1.10.pom"/>
+				<metadata-artifact status="successful" details="" size="6070" time="175" location="/Users/mikelwyred/.ivy2/cache/org.apache.tika/tika-core/ivy-1.10.xml" searched="true" original-local-location="/Users/mikelwyred/.ivy2/cache/org.apache.tika/tika-core/ivy-1.10.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/tika/tika-core/1.10/tika-core-1.10.pom"/>
 				<caller organisation="ita-search" name="ita-search_2.11" conf="compile-internal, compile, provided, optional" rev="1.10" rev-constraint-default="1.10" rev-constraint-dynamic="1.10" callerrev="0.0.1"/>
 				<artifacts>
 					<artifact name="tika-core" type="bundle" ext="jar" status="no" details="" size="573450" time="0" location="/Users/mikelwyred/.ivy2/cache/org.apache.tika/tika-core/bundles/tika-core-1.10.jar">
@@ -69,7 +69,7 @@
 			</revision>
 		</module>
 		<module organisation="ita-common" name="ita-common_2.11">
-			<revision name="0.0.1" status="integration" pubdate="20170905013918" resolver="inter-project" artresolver="inter-project" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="60">
+			<revision name="0.0.1" status="integration" pubdate="20170905192557" resolver="inter-project" artresolver="inter-project" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="60">
 				<metadata-artifact status="failed" details="" size="0" time="0" searched="false"/>
 				<caller organisation="ita-search" name="ita-search_2.11" conf="compile-internal, compile, provided, optional" rev="0.0.1" rev-constraint-default="0.0.1" rev-constraint-dynamic="0.0.1" callerrev="0.0.1"/>
 				<artifacts>
@@ -77,7 +77,7 @@
 			</revision>
 		</module>
 		<module organisation="ita-domain" name="ita-domain_2.11">
-			<revision name="0.0.1" status="integration" pubdate="20170905013905" resolver="inter-project" artresolver="inter-project" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="61">
+			<revision name="0.0.1" status="integration" pubdate="20170905192557" resolver="inter-project" artresolver="inter-project" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="61">
 				<metadata-artifact status="failed" details="" size="0" time="0" searched="false"/>
 				<caller organisation="ita-common" name="ita-common_2.11" conf="compile" rev="0.0.1" rev-constraint-default="0.0.1" rev-constraint-dynamic="0.0.1" callerrev="0.0.1"/>
 				<caller organisation="ita-search" name="ita-search_2.11" conf="compile-internal, compile, provided, optional" rev="0.0.1" rev-constraint-default="0.0.1" rev-constraint-dynamic="0.0.1" callerrev="0.0.1"/>
@@ -118,7 +118,7 @@
 			</revision>
 		</module>
 		<module organisation="ita-api" name="ita-api_2.11">
-			<revision name="0.0.1" status="integration" pubdate="20170905013918" resolver="inter-project" artresolver="inter-project" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="1">
+			<revision name="0.0.1" status="integration" pubdate="20170905192557" resolver="inter-project" artresolver="inter-project" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="1">
 				<metadata-artifact status="failed" details="" size="0" time="0" searched="false"/>
 				<caller organisation="ita-search" name="ita-search_2.11" conf="compile-internal, compile, provided, optional" rev="0.0.1" rev-constraint-default="0.0.1" rev-constraint-dynamic="0.0.1" callerrev="0.0.1"/>
 				<artifacts>
@@ -367,7 +367,7 @@
 				</artifacts>
 			</revision>
 			<revision name="1.7.6" status="release" pubdate="20140205233714" resolver="public" artresolver="public" homepage="http://www.slf4j.org" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="67">
-				<metadata-artifact status="successful" details="" size="2689" time="134" location="/Users/mikelwyred/.ivy2/cache/org.slf4j/slf4j-api/ivy-1.7.6.xml" searched="true" original-local-location="/Users/mikelwyred/.ivy2/cache/org.slf4j/slf4j-api/ivy-1.7.6.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.6/slf4j-api-1.7.6.pom"/>
+				<metadata-artifact status="successful" details="" size="2689" time="174" location="/Users/mikelwyred/.ivy2/cache/org.slf4j/slf4j-api/ivy-1.7.6.xml" searched="true" original-local-location="/Users/mikelwyred/.ivy2/cache/org.slf4j/slf4j-api/ivy-1.7.6.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.6/slf4j-api-1.7.6.pom"/>
 				<caller organisation="com.optimaize.languagedetector" name="language-detector" conf="default, compile, runtime, master" rev="1.7.6" rev-constraint-default="1.7.6" rev-constraint-dynamic="1.7.6" callerrev="0.5"/>
 				<caller organisation="org.mongodb" name="casbah-commons_2.11" conf="default, compile, runtime, master" rev="1.6.0" rev-constraint-default="1.6.0" rev-constraint-dynamic="1.6.0" callerrev="3.1.1"/>
 				<artifacts>
@@ -954,7 +954,7 @@
 		<module organisation="org.json" name="json">
 			<revision name="20140107" status="release" pubdate="20140107193602" resolver="public" artresolver="public" homepage="https://github.com/douglascrockford/JSON-java" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="3">
 				<license name="The JSON License" url="http://json.org/license.html"/>
-				<metadata-artifact status="successful" details="" size="4188" time="109" location="/Users/mikelwyred/.ivy2/cache/org.json/json/ivy-20140107.xml" searched="true" original-local-location="/Users/mikelwyred/.ivy2/cache/org.json/json/ivy-20140107.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/json/json/20140107/json-20140107.pom"/>
+				<metadata-artifact status="successful" details="" size="4188" time="206" location="/Users/mikelwyred/.ivy2/cache/org.json/json/ivy-20140107.xml" searched="true" original-local-location="/Users/mikelwyred/.ivy2/cache/org.json/json/ivy-20140107.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/json/json/20140107/json-20140107.pom"/>
 				<caller organisation="com.vdurmont" name="emoji-java" conf="default, compile, runtime, master" rev="20140107" rev-constraint-default="20140107" rev-constraint-dynamic="20140107" callerrev="3.2.0"/>
 				<artifacts>
 					<artifact name="json" type="jar" ext="jar" status="no" details="" size="64952" time="0" location="/Users/mikelwyred/.ivy2/cache/org.json/json/jars/json-20140107.jar">

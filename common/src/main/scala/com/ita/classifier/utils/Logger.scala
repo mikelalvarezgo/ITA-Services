@@ -1,4 +1,4 @@
-package com.ita.common.utils
+package com.ita.domain.utils
 
 import org.slf4j.LoggerFactory
 
