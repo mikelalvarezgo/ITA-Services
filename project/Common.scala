@@ -19,10 +19,9 @@ object Common {
   val settings: Seq[Def.Setting[_]] = Seq(
     version := appVersion,
     scalaVersion := "2.11.7",
-    scalacOptions += "-target:jvm-1.8",
+    scalacOptions += "-target:jvm-1.7",
     resolvers += Opts.resolver.mavenLocalFile,
-    copyDepTask,
-    scalacOptions += "-target:jvm-1.8",
+    scalacOptions += "-target:jvm-1.7",
     resolvers ++= Seq(
       "mvnrepository" at "http://mvnrepository.com/artifact/",
       "Sonatype OSS Snapshots" at "https://oss.sonatype.org/content/repositories/snapshots",

@@ -36,7 +36,7 @@ object Model {
 
   implicit val partitionConfJF:RootJsonFormat[PartitionConf]= jsonFormat3(PartitionConf.apply)
 
-  implicit val modelResultJF:RootJsonFormat[ModelResult] = jsonFormat10(ModelResult.apply)
+  implicit val modelResultJF:RootJsonFormat[ModelResult] = jsonFormat20(ModelResult.apply)
 
   implicit val executionJF:RootJsonFormat[ModelExecution] = new  RootJsonFormat[ModelExecution] {
     override def write(obj: ModelExecution): JsValue =

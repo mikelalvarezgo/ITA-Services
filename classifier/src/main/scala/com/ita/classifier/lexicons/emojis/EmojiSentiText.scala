@@ -25,7 +25,7 @@ object EmojiSentiText extends Config {
   val NEGATIVE_WORD_LEXICON_PATH = config.getString("lexicon.word_path.negative")
 
   val POSITIVE_EMOJI_LEXICON_PATH = config.getString("lexicon.emoji_path.positive")
-  val POSITIVE_WORD_LEXICON_PATH = config.getString("lexicon.word_path.positivr")
+  val POSITIVE_WORD_LEXICON_PATH = config.getString("lexicon.word_path.positive")
 
   def makeLexDict(lexiconFile: Seq[String],score:Int): Map[String, Int] = {
     var result = Map[String, Int]()

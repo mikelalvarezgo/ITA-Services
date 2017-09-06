@@ -27,7 +27,7 @@ trait PickUpController extends DAOHelpers
   import PickUpController.~>
   import akka.http.scaladsl.model.StatusCodes
   import akka.http.scaladsl.server.Directives._
-  import domain.Model.JFid
+  import com.ita.domain.Model.JFid
   implicit val dataContext: GathererDataContext
   //declare actors and timeout
 

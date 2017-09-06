@@ -13,3 +13,12 @@ run
 run last gatherer/compile:run 
 ls
 run last gatherer/compile:run 
+assembly
+sbt compile 
+compile
+run
+compile
+assembly
+run
+assembly
+project classifier

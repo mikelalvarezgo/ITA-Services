@@ -4,12 +4,12 @@ import akka.actor.ActorSystem
 import com.ita.classifier
 import com.ita.domain.TweetInfo
 import com.ita.domain.gatherer.TweetPickUp
-import com.ita.domain.utils.Config
+import com.ita.domain.utils.{Config,Logger}
 import com.ita.gatherer.restApi.controllers.TwitterCredentials._
 import com.ita.gatherer.utils.TweetsFilter
 import twitter4j._
 import twitter4j.conf.ConfigurationBuilder
-
+import scala.collection.JavaConversions._
 import scala.collection._
 
 final case class Author(handle: String)
@@ -43,6 +43,7 @@ with TwitterCredentials{
     twitterStream.addListener(simpleUserListener)
     twitterStream.filter(q)
   }
+  import scala.collection.JavaConverters._
   val idiomsFilter = config.getStringList("twitter.lenguages").asScala.toList
     .map{ leng => TweetsFilter(s"filter_$leng",Some(leng))}
 

@@ -6,8 +6,7 @@ import java.io.InputStream
  object ResourceUtils {
 
   def readFileAsList(path: String): Seq[String] = {
-    val stream: InputStream = getClass.getResourceAsStream(path)
-    val lines: Iterator[String] = scala.io.Source.fromInputStream(stream).getLines
+    val lines: Iterator[String] = scala.io.Source.fromFile(path).getLines
 
    lines.toList
   }

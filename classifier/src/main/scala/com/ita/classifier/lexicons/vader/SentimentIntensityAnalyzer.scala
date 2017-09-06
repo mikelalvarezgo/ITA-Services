@@ -10,7 +10,7 @@ import scala.util.control.Breaks._
 /**
   * An abstraction to represent the sentiment intensity analyzer.
   */
-class SentimentIntensityAnalyzer extends Config{
+class SentimentIntensityAnalyzer extends Config with Serializable{
   val VADER_LEXICON_PATH = config.getString("lexicon.vader_path")
 
   val ExclIncr: Double = 0.292

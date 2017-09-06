@@ -1,6 +1,7 @@
 import sbt._
 import Keys._
 import complete.DefaultParsers.spaceDelimited
+organization := "com.ita"
 
 name := MyBuild.NamePrefix + "root"
 
@@ -10,37 +11,35 @@ fork := true
 
 resolvers += "AkkaRepository" at "http://repo.akka.io/releases/"
 
-lazy val common = project.
-  dependsOn(domain).
-settings(Common.settings: _*).
-  settings(libraryDependencies ++= Dependencies.commonDependencies)
 
-lazy val api = project.
-  settings(Common.settings: _*).
-  settings(libraryDependencies ++= Dependencies.apiDependencies)
-
-lazy val client = project.
-  settings(Common.settings: _*).
-  settings(libraryDependencies ++= Dependencies.clientDependencies)
-
-excludeDependencies += "org.objectweb.asm" % "org.objectweb.asm"
-
-assemblyMergeStrategy in assembly := {
-  case PathList("META-INF", xs @ _*) => MergeStrategy.discard
-  case x => MergeStrategy.first
-}
-lazy val domain = project.
+lazy val domain = (project in file("domain")).
   dependsOn().
   settings(Common.settings: _*).
   settings(libraryDependencies ++= Dependencies.domainDependencies)
 
-lazy val gatherer = (project in file("./gatherer")).
-  dependsOn(api, common, domain).
+
+lazy val common = (project in file("common")).
+  dependsOn(domain).
+  settings(Common.settings: _*).
+  settings(libraryDependencies ++= Dependencies.commonDependencies)
+
+
+/*lazy val gatherer = (project in file("gatherer")).
+  dependsOn(common, domain).
   settings(Common.settings: _*).
   settings( name := "myapp-config",
     includeFilter in Compile := "application.conf").
   settings(libraryDependencies ++= Dependencies.gathererDependencies,
-    excludeDependencies += "org.objectweb.asm" % "org.objectweb.asm",
+    organization in ThisBuild := "com.ita.gatherer",
+    fullClasspath in assembly := (fullClasspath in Compile).value,
+      assemblyMergeStrategy in assembly := {
+      case PathList(xs @ _*) if xs.last == "UnusedStubClass.class" =>
+        MergeStrategy.first
+      case x =>
+        val oldStrategy = (assemblyMergeStrategy in assembly).value
+        oldStrategy(x)
+    },
+      excludeDependencies += "org.objectweb.asm" % "org.objectweb.asm",
     dependencyOverrides += "joda-time" % "joda-time" % "2.8.2",
     dependencyOverrides += "spark-streaming-twitter_2.11" % "spark-streaming-twitter_2.11" % "1.6.0"
 
@@ -49,9 +48,9 @@ lazy val gatherer = (project in file("./gatherer")).
       mainClass in assembly := Some("GatheringService"),
       assemblyJarName in assembly := "gatherer.jar"
       // more settings here ...
-  )
+  )*/
 
-lazy val classifier = project.
+lazy val classifier = (project in file("classifier")).
   dependsOn(common, domain).
   settings(Common.settings: _*).
   settings(libraryDependencies ++= Dependencies.classifierDependencies
@@ -62,7 +61,30 @@ lazy val classifier = project.
       // more settings here ...
   )
 
+lazy val gatherer = (project in file("gatherer")).
+  dependsOn(common, domain).
+  settings(Common.settings: _*).
+  settings(libraryDependencies ++= Dependencies.gathererDependencies
+  ).
+  settings(
+    mainClass in assembly := Some("com.ita.gatherer.GatheringService"),
+    assemblyJarName in assembly := "gatherer.jar",
+    organization in ThisBuild := "com.ita.gatherer",
+    fullClasspath in assembly := (fullClasspath in Compile).value,
+    assemblyMergeStrategy in assembly := {
+      case PathList(xs @ _*) if xs.last == "UnusedStubClass.class" =>
+        MergeStrategy.first
+      case x =>
+        val oldStrategy = (assemblyMergeStrategy in assembly).value
+        oldStrategy(x)
+    },
+    excludeDependencies += "org.objectweb.asm" % "org.objectweb.asm",
+    dependencyOverrides += "joda-time" % "joda-time" % "2.8.2",
+    dependencyOverrides += "spark-streaming-twitter_2.11" % "spark-streaming-twitter_2.11" % "1.6.0"
+
+    // more settings here ...
+  )
 lazy val root = (project in file(".")).
 
-  aggregate(common,client, domain,gatherer, classifier)
+  aggregate(common, domain,gatherer, classifier)
 

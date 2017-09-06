@@ -114,11 +114,10 @@ case class RandomForestClassifier
   def evaluateModel(
     partition: SetPartition)
     (implicit sc: SparkContext): ModelResult = {
-    val model = RandomForestModel.load(sc,
-      config.getString("models.path") +s"randomforest_${_id.value}")
     val trainSet = boostingRDD(tagRDD(partition.trainingSet))
     val validationSet = boostingRDD(tagRDD(partition.validationSet))
-
+    val model = RandomForestModel.load(sc,
+      config.getString("models.path") +s"randomforest_${_id.value}")
     var labelAndPredsTrain = trainSet.map { point =>
       val prediction = model.predict(point._1.features)
       Tuple2(point._1.label, prediction)
@@ -130,33 +129,55 @@ case class RandomForestClassifier
 
     //Since Spark has done the heavy lifting already, lets pull the results back to the driver machine.
     //Calling collect() will bring the results to a single machine (the driver) and will convert it to a Scala array.
-
+    def tagScore(score:Double):String = {
+      if (score > 0.6)
+        "pos"
+      else if ((score >= 0.4) && (score <=0.6))
+        "net"
+      else
+        "neg"
+    }
     //Start with the Training Set
     val result = labelAndPredsTrain.collect()
     var trainhappyTotal = 0
     var trainunhappyTotal = 0
     var trainhappyCorrect = 0
     var trainunhappyCorrect = 0
+    var trainneutralCorrect = 0
+    var trainnneutraltotal = 0
     result.foreach(
       r => {
-        if (r._1 == 1) {
-          trainhappyTotal += 1
-        } else if (r._1 == 0) {
-          trainunhappyTotal += 1
+        val predLabel = tagScore(r._2)
+        val valLabel = tagScore(r._1)
+        if (predLabel == valLabel){
+          valLabel match {
+            case v if (v == "pos") =>
+              trainhappyTotal += 1
+              trainhappyCorrect += 1
+            case v if (v == "net") =>
+              trainnneutraltotal += 1
+              trainneutralCorrect += 1
+            case v if (v == "neg") =>
+              trainunhappyTotal += 1
+              trainunhappyCorrect += 1
+          }
+        }else {
+          valLabel match {
+            case v if (v == "pos") =>
+              trainhappyTotal += 1
+            case v if (v == "net") =>
+              trainnneutraltotal += 1
+            case v if (v == "neg") =>
+              trainunhappyTotal += 1
+          }
         }
-        if (r._1 == 1 && r._2 == 1) {
-          trainhappyCorrect += 1
-        } else if (r._1 == 0 && r._2 == 0) {
-          trainunhappyCorrect += 1
-        }
-      }
-    )
-    logger.info(s"[GradientBoostingClassifier-$name]unhappy messages in Training Set: " + trainunhappyTotal + " happy messages: " + trainhappyTotal)
-    logger.info(s"[GradientBoostingClassifier-$name]happy % correct: " + trainhappyCorrect.toDouble / trainhappyTotal)
-    logger.info(s"[GradientBoostingClassifier-$name]unhappy % correct: " + trainunhappyCorrect.toDouble / trainunhappyTotal)
+      })
+    logger.info(s"[RandomForestClassifier-$name]unhappy messages in Training Set: " + trainunhappyTotal + " happy messages: " + trainhappyTotal)
+    logger.info(s"[RandomForestClassifier-$name]happy % correct: " + trainhappyCorrect.toDouble / trainhappyTotal)
+    logger.info(s"[RandomForestClassifier-$name]unhappy % correct: " + trainunhappyCorrect.toDouble / trainunhappyTotal)
 
     val traintestErr = labelAndPredsTrain.filter(r => r._1 != r._2).count.toDouble / trainSet.count()
-    logger.info(s"[GradientBoostingClassifier-$name]Test Error Training Set: " + traintestErr)
+    logger.info(s"[RandomForestClassifier-$name]Test Error Training Set: " + traintestErr)
 
     //Compute error for validation Set
     val resultsVal = labelAndPredsValid.collect()
@@ -165,39 +186,64 @@ case class RandomForestClassifier
     var unhappyTotal = 0
     var happyCorrect = 0
     var unhappyCorrect = 0
+    var neutralCorrect = 0
+    var nneutraltotal = 0
     resultsVal.foreach(
       r => {
-        if (r._1 == 1) {
-          happyTotal += 1
-        } else if (r._1 == 0) {
-          unhappyTotal += 1
+        val predLabel = tagScore(r._2)
+        val valLabel = tagScore(r._1)
+        if (predLabel == valLabel){
+          valLabel match {
+            case v if (v == "pos") =>
+              happyTotal += 1
+              happyCorrect += 1
+            case v if (v == "net") =>
+              nneutraltotal += 1
+              neutralCorrect += 1
+            case v if (v == "neg") =>
+              unhappyTotal += 1
+              unhappyCorrect += 1
+          }
+        }else {
+          valLabel match {
+            case v if (v == "pos") =>
+              happyTotal += 1
+            case v if (v == "net") =>
+              nneutraltotal += 1
+            case v if (v == "neg") =>
+              unhappyTotal += 1
+          }
         }
-        if (r._1 == 1 && r._2 == 1) {
-          happyCorrect += 1
-        } else if (r._1 == 0 && r._2 == 0) {
-          unhappyCorrect += 1
-        }
-      }
-    )
-    logger.info(s"[GradientBoostingClassifier-$name] unhappy messages in Validation Set: " + unhappyTotal + " happy messages: " + happyTotal)
-    logger.info(s"[GradientBoostingClassifier-$name]happy % correct: " + happyCorrect.toDouble / happyTotal)
-    logger.info(s"[GradientBoostingClassifier-$name]unhappy % correct: " + unhappyCorrect.toDouble / unhappyTotal)
+      })
+    logger.info(s"[RandomForestClassifier-$name] unhappy messages in Validation Set: " + unhappyTotal + " happy messages: " + happyTotal)
+    logger.info(s"[RandomForestClassifier-$name]happy % correct: " + happyCorrect.toDouble / happyTotal)
+    logger.info(s"[RandomForestClassifier-$name]unhappy % correct: " + unhappyCorrect.toDouble / unhappyTotal)
 
     val testErr = labelAndPredsValid.filter(r => r._1 != r._2).count.toDouble / validationSet.count()
-    println(s"[GradientBoostingClassifier-$name]Test Error Validation Set: " + testErr)
+    println(s"[RandomForestClassifier-$name]Test Error Validation Set: " + testErr)
     ModelResult(
       Id.generate,
       _id,
       trainhappyCorrect,
       trainhappyTotal - trainhappyCorrect,
+      trainhappyCorrect.toDouble/trainhappyTotal.toDouble,
       trainunhappyCorrect,
       trainunhappyTotal - trainunhappyCorrect,
+      trainunhappyCorrect.toDouble/trainunhappyTotal.toDouble,
+      trainneutralCorrect,
+      trainnneutraltotal - trainneutralCorrect,
+      trainneutralCorrect.toDouble/trainnneutraltotal.toDouble,
       happyCorrect,
       happyTotal - happyCorrect,
+      happyCorrect.toDouble/happyCorrect.toDouble,
       unhappyCorrect,
-      unhappyTotal - unhappyCorrect)
+      unhappyTotal - unhappyCorrect,
+      unhappyCorrect.toDouble/unhappyTotal.toDouble,
+      neutralCorrect,
+      nneutraltotal- neutralCorrect,
+      neutralCorrect.toDouble/nneutraltotal.toDouble
+    )
   }
-
 
   def runModel(
     idExecution: Id,
@@ -328,12 +374,12 @@ case class GradientBoostingClassifier
   }
 
   def evaluateModel(
-    model: GradientBoostedTreesModel,
     partition: SetPartition)
     (implicit sc: SparkContext): ModelResult = {
     val trainSet = boostingRDD(tagRDD(partition.trainingSet))
     val validationSet = boostingRDD(tagRDD(partition.validationSet))
-
+    val model = GradientBoostedTreesModel.load(sc,
+      config.getString("models.path") +s"gradient_${_id.value}")
     var labelAndPredsTrain = trainSet.map { point =>
       val prediction = model.predict(point._1.features)
       Tuple2(point._1.label, prediction)
@@ -345,27 +391,49 @@ case class GradientBoostingClassifier
 
     //Since Spark has done the heavy lifting already, lets pull the results back to the driver machine.
     //Calling collect() will bring the results to a single machine (the driver) and will convert it to a Scala array.
-
+    def tagScore(score:Double):String = {
+      if (score > 0.6)
+        "pos"
+      else if ((score >= 0.4) && (score <=0.6))
+        "net"
+      else
+        "neg"
+    }
     //Start with the Training Set
     val result = labelAndPredsTrain.collect()
     var trainhappyTotal = 0
     var trainunhappyTotal = 0
     var trainhappyCorrect = 0
     var trainunhappyCorrect = 0
+    var trainneutralCorrect = 0
+    var trainnneutraltotal = 0
     result.foreach(
       r => {
-        if (r._1 == 1) {
-          trainhappyTotal += 1
-        } else if (r._1 == 0) {
-          trainunhappyTotal += 1
+       val predLabel = tagScore(r._2)
+        val valLabel = tagScore(r._1)
+        if (predLabel == valLabel){
+          valLabel match {
+            case v if (v == "pos") =>
+              trainhappyTotal += 1
+              trainhappyCorrect += 1
+            case v if (v == "net") =>
+              trainnneutraltotal += 1
+              trainneutralCorrect += 1
+            case v if (v == "neg") =>
+              trainunhappyTotal += 1
+              trainunhappyCorrect += 1
+          }
+        }else {
+          valLabel match {
+            case v if (v == "pos") =>
+              trainhappyTotal += 1
+            case v if (v == "net") =>
+              trainnneutraltotal += 1
+            case v if (v == "neg") =>
+              trainunhappyTotal += 1
+          }
         }
-        if (r._1 == 1 && r._2 == 1) {
-          trainhappyCorrect += 1
-        } else if (r._1 == 0 && r._2 == 0) {
-          trainunhappyCorrect += 1
-        }
-      }
-    )
+      })
     logger.info(s"[GradientBoostingClassifier-$name]unhappy messages in Training Set: " + trainunhappyTotal + " happy messages: " + trainhappyTotal)
     logger.info(s"[GradientBoostingClassifier-$name]happy % correct: " + trainhappyCorrect.toDouble / trainhappyTotal)
     logger.info(s"[GradientBoostingClassifier-$name]unhappy % correct: " + trainunhappyCorrect.toDouble / trainunhappyTotal)
@@ -380,20 +448,35 @@ case class GradientBoostingClassifier
     var unhappyTotal = 0
     var happyCorrect = 0
     var unhappyCorrect = 0
+    var neutralCorrect = 0
+    var nneutraltotal = 0
     resultsVal.foreach(
       r => {
-        if (r._1 == 1) {
-          happyTotal += 1
-        } else if (r._1 == 0) {
-          unhappyTotal += 1
+        val predLabel = tagScore(r._2)
+        val valLabel = tagScore(r._1)
+        if (predLabel == valLabel){
+          valLabel match {
+            case v if (v == "pos") =>
+              happyTotal += 1
+              happyCorrect += 1
+            case v if (v == "net") =>
+              nneutraltotal += 1
+              neutralCorrect += 1
+            case v if (v == "neg") =>
+              unhappyTotal += 1
+              unhappyCorrect += 1
+          }
+        }else {
+          valLabel match {
+            case v if (v == "pos") =>
+              happyTotal += 1
+            case v if (v == "net") =>
+              nneutraltotal += 1
+            case v if (v == "neg") =>
+              unhappyTotal += 1
+          }
         }
-        if (r._1 == 1 && r._2 == 1) {
-          happyCorrect += 1
-        } else if (r._1 == 0 && r._2 == 0) {
-          unhappyCorrect += 1
-        }
-      }
-    )
+      })
     logger.info(s"[GradientBoostingClassifier-$name] unhappy messages in Validation Set: " + unhappyTotal + " happy messages: " + happyTotal)
     logger.info(s"[GradientBoostingClassifier-$name]happy % correct: " + happyCorrect.toDouble / happyTotal)
     logger.info(s"[GradientBoostingClassifier-$name]unhappy % correct: " + unhappyCorrect.toDouble / unhappyTotal)
@@ -405,12 +488,23 @@ case class GradientBoostingClassifier
       _id,
       trainhappyCorrect,
       trainhappyTotal - trainhappyCorrect,
+      trainhappyCorrect.toDouble/trainhappyTotal.toDouble,
       trainunhappyCorrect,
       trainunhappyTotal - trainunhappyCorrect,
+      trainunhappyCorrect.toDouble/trainunhappyTotal.toDouble,
+      trainneutralCorrect,
+      trainnneutraltotal - trainneutralCorrect,
+      trainneutralCorrect.toDouble/trainnneutraltotal.toDouble,
       happyCorrect,
       happyTotal - happyCorrect,
+      happyCorrect.toDouble/happyCorrect.toDouble,
       unhappyCorrect,
-      unhappyTotal - unhappyCorrect)
+      unhappyTotal - unhappyCorrect,
+      unhappyCorrect.toDouble/unhappyTotal.toDouble,
+      neutralCorrect,
+      nneutraltotal- neutralCorrect,
+      neutralCorrect.toDouble/nneutraltotal.toDouble
+    )
   }
 
 
@@ -462,10 +556,11 @@ case class GradientBoostingClassifier
             Try {
               val msg = EmojiParser.parseToAliases(tweet.tweetText.toString.toLowerCase())
               var score: Double = analyzer.polarityScores(msg).compound
-              val isPositive = if (score < 0) 0 else if (score> 1.0) 1.0 else score
+              val isPositive = (score +1)/2
               var msgSanitized = EmojiParser.removeAllEmojis(msg)
+
               //Return a tuple
-              (score, msgSanitized.split(" ").toSeq, tweet._id.get)
+              (isPositive, msgSanitized.split(" ").toSeq, tweet._id.get)
             }.recover{
               case e:Exception =>
                 logger.error("Error parsinf tweet", e)
@@ -592,71 +687,113 @@ case class ApiClassifier(
       labelAndPredsValid <- Future.sequence(flabelAndPredsTrain)
     } yield {
 
-      val result = labelAndPredsTrain
+      def tagScore(score: Double): String = {
+        if (score > 0.6)
+          "pos"
+        else if ((score >= 0.4) && (score <= 0.6))
+          "net"
+        else
+          "neg"
+      }
+
+      //Start with the Training Set
       var trainhappyTotal = 0
       var trainunhappyTotal = 0
       var trainhappyCorrect = 0
       var trainunhappyCorrect = 0
-      result.foreach(
+      var trainneutralCorrect = 0
+      var trainnneutraltotal = 0
+      labelAndPredsTrain.foreach(
         r => {
-          if (r._1 == 1) {
-            trainhappyTotal += 1
-          } else if (r._1 == 0) {
-            trainunhappyTotal += 1
+          val predLabel = tagScore(r._2)
+          val valLabel = tagScore(r._1)
+          if (predLabel == valLabel) {
+            valLabel match {
+              case v if (v == "pos") =>
+                trainhappyTotal += 1
+                trainhappyCorrect += 1
+              case v if (v == "net") =>
+                trainnneutraltotal += 1
+                trainneutralCorrect += 1
+              case v if (v == "neg") =>
+                trainunhappyTotal += 1
+                trainunhappyCorrect += 1
+            }
+          } else {
+            valLabel match {
+              case v if (v == "pos") =>
+                trainhappyTotal += 1
+              case v if (v == "net") =>
+                trainnneutraltotal += 1
+              case v if (v == "neg") =>
+                trainunhappyTotal += 1
+            }
           }
-          if (r._1 == 1 && r._2 == 1) {
-            trainhappyCorrect += 1
-          } else if (r._1 == 0 && r._2 == 0) {
-            trainunhappyCorrect += 1
-          }
-        }
-      )
-      logger.info(s"[NLP-$name]unhappy messages in Training Set: " + trainunhappyTotal + " happy messages: " + trainhappyTotal)
-      logger.info(s"[NLP-$name]happy % correct: " + trainhappyCorrect.toDouble / trainhappyTotal)
-      logger.info(s"[NLP-$name]unhappy % correct: " + trainunhappyCorrect.toDouble / trainunhappyTotal)
+        })
+      logger.info(s"[API-$name]unhappy messages in Training Set: " + trainunhappyTotal + " happy messages: " + trainhappyTotal)
+      logger.info(s"[API-$name]happy % correct: " + trainhappyCorrect.toDouble / trainhappyTotal)
+      logger.info(s"[API-$name]unhappy % correct: " + trainunhappyCorrect.toDouble / trainunhappyTotal)
 
-      val traintestErr = labelAndPredsTrain.filter(r => r._1 != r._2).size.toDouble / trainSet.count()
-      logger.info(s"[NLP-$name]Test Error Training Set: " + traintestErr)
-
-      //Compute error for validation Set
-      val resultsVal = labelAndPredsValid
 
       var happyTotal = 0
       var unhappyTotal = 0
       var happyCorrect = 0
       var unhappyCorrect = 0
-      resultsVal.foreach(
+      var neutralCorrect = 0
+      var nneutraltotal = 0
+      labelAndPredsValid.foreach(
         r => {
-          if (r._1 == 1) {
-            happyTotal += 1
-          } else if (r._1 == 0) {
-            unhappyTotal += 1
+          val predLabel = tagScore(r._2)
+          val valLabel = tagScore(r._1)
+          if (predLabel == valLabel) {
+            valLabel match {
+              case v if (v == "pos") =>
+                happyTotal += 1
+                happyCorrect += 1
+              case v if (v == "net") =>
+                nneutraltotal += 1
+                neutralCorrect += 1
+              case v if (v == "neg") =>
+                unhappyTotal += 1
+                unhappyCorrect += 1
+            }
+          } else {
+            valLabel match {
+              case v if (v == "pos") =>
+                happyTotal += 1
+              case v if (v == "net") =>
+                nneutraltotal += 1
+              case v if (v == "neg") =>
+                unhappyTotal += 1
+            }
           }
-          if (r._1 == 1 && r._2 == 1) {
-            happyCorrect += 1
-          } else if (r._1 == 0 && r._2 == 0) {
-            unhappyCorrect += 1
-          }
-        }
-      )
-      logger.info(s"[NLP-$name] unhappy messages in Validation Set: " + unhappyTotal + " happy messages: " + happyTotal)
-      logger.info(s"[NLP-$name]happy % correct: " + happyCorrect.toDouble / happyTotal)
-      logger.info(s"[NLP-$name]unhappy % correct: " + unhappyCorrect.toDouble / unhappyTotal)
+        })
+      logger.info(s"[API-$name] unhappy messages in Validation Set: " + unhappyTotal + " happy messages: " + happyTotal)
+      logger.info(s"[API-$name]happy % correct: " + happyCorrect.toDouble / happyTotal)
+      logger.info(s"[API-$name]unhappy % correct: " + unhappyCorrect.toDouble / unhappyTotal)
 
-      val testErr = labelAndPredsValid.filter(r => r._1 != r._2).size.toDouble / validationSet.count()
-      println(s"[NLP-$name]Test Error Validation Set: " + testErr)
       ModelResult(
         Id.generate,
         _id,
         trainhappyCorrect,
         trainhappyTotal - trainhappyCorrect,
+        trainhappyCorrect.toDouble / trainhappyTotal.toDouble,
         trainunhappyCorrect,
         trainunhappyTotal - trainunhappyCorrect,
+        trainunhappyCorrect.toDouble / trainunhappyTotal.toDouble,
+        trainneutralCorrect,
+        trainnneutraltotal - trainneutralCorrect,
+        trainneutralCorrect.toDouble / trainnneutraltotal.toDouble,
         happyCorrect,
         happyTotal - happyCorrect,
+        happyCorrect.toDouble / happyCorrect.toDouble,
         unhappyCorrect,
-        unhappyTotal - unhappyCorrect)
-
+        unhappyTotal - unhappyCorrect,
+        unhappyCorrect.toDouble / unhappyTotal.toDouble,
+        neutralCorrect,
+        nneutraltotal - neutralCorrect,
+        neutralCorrect.toDouble / nneutraltotal.toDouble
+      )
     }
   }
 
@@ -794,36 +931,55 @@ case class NLPStanfordClassifier(
       val aggScore = agregation_function(scores)
       Tuple2(point._1, aggScore.toDouble)
     }
-
-    //Since Spark has done the heavy lifting already, lets pull the results back to the driver machine.
-    //Calling collect() will bring the results to a single machine (the driver) and will convert it to a Scala array.
-
+    def tagScore(score:Double):String = {
+      if (score > 0.6)
+        "pos"
+      else if ((score >= 0.4) && (score <=0.6))
+        "net"
+      else
+        "neg"
+    }
     //Start with the Training Set
     val result = labelAndPredsTrain.collect()
     var trainhappyTotal = 0
     var trainunhappyTotal = 0
     var trainhappyCorrect = 0
     var trainunhappyCorrect = 0
+    var trainneutralCorrect = 0
+    var trainnneutraltotal = 0
     result.foreach(
       r => {
-        if (r._1 == 1) {
-          trainhappyTotal += 1
-        } else if (r._1 == 0) {
-          trainunhappyTotal += 1
+        val predLabel = tagScore(r._2)
+        val valLabel = tagScore(r._1)
+        if (predLabel == valLabel){
+          valLabel match {
+            case v if (v == "pos") =>
+              trainhappyTotal += 1
+              trainhappyCorrect += 1
+            case v if (v == "net") =>
+              trainnneutraltotal += 1
+              trainneutralCorrect += 1
+            case v if (v == "neg") =>
+              trainunhappyTotal += 1
+              trainunhappyCorrect += 1
+          }
+        }else {
+          valLabel match {
+            case v if (v == "pos") =>
+              trainhappyTotal += 1
+            case v if (v == "net") =>
+              trainnneutraltotal += 1
+            case v if (v == "neg") =>
+              trainunhappyTotal += 1
+          }
         }
-        if (r._1 == 1 && r._2 == 1) {
-          trainhappyCorrect += 1
-        } else if (r._1 == 0 && r._2 == 0) {
-          trainunhappyCorrect += 1
-        }
-      }
-    )
-    logger.info(s"[NLP-$name]unhappy messages in Training Set: " + trainunhappyTotal + " happy messages: " + trainhappyTotal)
-    logger.info(s"[NLP-$name]happy % correct: " + trainhappyCorrect.toDouble / trainhappyTotal)
-    logger.info(s"[NLP-$name]unhappy % correct: " + trainunhappyCorrect.toDouble / trainunhappyTotal)
+      })
+    logger.info(s"[NLPStandford-$name]unhappy messages in Training Set: " + trainunhappyTotal + " happy messages: " + trainhappyTotal)
+    logger.info(s"[NLPStandford-$name]happy % correct: " + trainhappyCorrect.toDouble / trainhappyTotal)
+    logger.info(s"[NLPStandford-$name]unhappy % correct: " + trainunhappyCorrect.toDouble / trainunhappyTotal)
 
     val traintestErr = labelAndPredsTrain.filter(r => r._1 != r._2).count.toDouble / trainSet.count()
-    logger.info(s"[NLP-$name]Test Error Training Set: " + traintestErr)
+    logger.info(s"[NLPStandford-$name]Test Error Training Set: " + traintestErr)
 
     //Compute error for validation Set
     val resultsVal = labelAndPredsValid.collect()
@@ -832,37 +988,63 @@ case class NLPStanfordClassifier(
     var unhappyTotal = 0
     var happyCorrect = 0
     var unhappyCorrect = 0
+    var neutralCorrect = 0
+    var nneutraltotal = 0
     resultsVal.foreach(
       r => {
-        if (r._1 == 1) {
-          happyTotal += 1
-        } else if (r._1 == 0) {
-          unhappyTotal += 1
+        val predLabel = tagScore(r._2)
+        val valLabel = tagScore(r._1)
+        if (predLabel == valLabel){
+          valLabel match {
+            case v if (v == "pos") =>
+              happyTotal += 1
+              happyCorrect += 1
+            case v if (v == "net") =>
+              nneutraltotal += 1
+              neutralCorrect += 1
+            case v if (v == "neg") =>
+              unhappyTotal += 1
+              unhappyCorrect += 1
+          }
+        }else {
+          valLabel match {
+            case v if (v == "pos") =>
+              happyTotal += 1
+            case v if (v == "net") =>
+              nneutraltotal += 1
+            case v if (v == "neg") =>
+              unhappyTotal += 1
+          }
         }
-        if (r._1 == 1 && r._2 == 1) {
-          happyCorrect += 1
-        } else if (r._1 == 0 && r._2 == 0) {
-          unhappyCorrect += 1
-        }
-      }
-    )
-    logger.info(s"[NLP-$name] unhappy messages in Validation Set: " + unhappyTotal + " happy messages: " + happyTotal)
-    logger.info(s"[NLP-$name]happy % correct: " + happyCorrect.toDouble / happyTotal)
-    logger.info(s"[NLP-$name]unhappy % correct: " + unhappyCorrect.toDouble / unhappyTotal)
+      })
+    logger.info(s"[NLPStandford-$name] unhappy messages in Validation Set: " + unhappyTotal + " happy messages: " + happyTotal)
+    logger.info(s"[NLPStandford-$name]happy % correct: " + happyCorrect.toDouble / happyTotal)
+    logger.info(s"[NLPStandford-$name]unhappy % correct: " + unhappyCorrect.toDouble / unhappyTotal)
 
     val testErr = labelAndPredsValid.filter(r => r._1 != r._2).count.toDouble / validationSet.count()
-    println(s"[NLP-$name]Test Error Validation Set: " + testErr)
+    println(s"[NLPStandford-$name]Test Error Validation Set: " + testErr)
     ModelResult(
       Id.generate,
       _id,
       trainhappyCorrect,
       trainhappyTotal - trainhappyCorrect,
+      trainhappyCorrect.toDouble/trainhappyTotal.toDouble,
       trainunhappyCorrect,
       trainunhappyTotal - trainunhappyCorrect,
+      trainunhappyCorrect.toDouble/trainunhappyTotal.toDouble,
+      trainneutralCorrect,
+      trainnneutraltotal - trainneutralCorrect,
+      trainneutralCorrect.toDouble/trainnneutraltotal.toDouble,
       happyCorrect,
       happyTotal - happyCorrect,
+      happyCorrect.toDouble/happyCorrect.toDouble,
       unhappyCorrect,
-      unhappyTotal - unhappyCorrect)
+      unhappyTotal - unhappyCorrect,
+      unhappyCorrect.toDouble/unhappyTotal.toDouble,
+      neutralCorrect,
+      nneutraltotal- neutralCorrect,
+      neutralCorrect.toDouble/nneutraltotal.toDouble
+    )
   }
 
 
@@ -956,12 +1138,12 @@ case class BayesClassifier(
   }
 
   def evaluateModel(
-    model: NaiveBayesModel,
     partition: SetPartition)
     (implicit sc: SparkContext): ModelResult = {
     val trainSet = boostingRDD(tagRDD(partition.trainingSet))
     val validationSet = boostingRDD(tagRDD(partition.validationSet))
-
+    val model = NaiveBayesModel.load(sc,
+      config.getString("models.path") +s"bayes_${_id.value}")
     var labelAndPredsTrain = trainSet.map { point =>
       val prediction = model.predict(point._1.features)
       Tuple2(point._1.label, prediction)
@@ -973,33 +1155,55 @@ case class BayesClassifier(
 
     //Since Spark has done the heavy lifting already, lets pull the results back to the driver machine.
     //Calling collect() will bring the results to a single machine (the driver) and will convert it to a Scala array.
-
+    def tagScore(score:Double):String = {
+      if (score > 0.6)
+        "pos"
+      else if ((score >= 0.4) && (score <=0.6))
+        "net"
+      else
+        "neg"
+    }
     //Start with the Training Set
     val result = labelAndPredsTrain.collect()
     var trainhappyTotal = 0
     var trainunhappyTotal = 0
     var trainhappyCorrect = 0
     var trainunhappyCorrect = 0
+    var trainneutralCorrect = 0
+    var trainnneutraltotal = 0
     result.foreach(
       r => {
-        if (r._1 == 1) {
-          trainhappyTotal += 1
-        } else if (r._1 == 0) {
-          trainunhappyTotal += 1
+        val predLabel = tagScore(r._2)
+        val valLabel = tagScore(r._1)
+        if (predLabel == valLabel){
+          valLabel match {
+            case v if (v == "pos") =>
+              trainhappyTotal += 1
+              trainhappyCorrect += 1
+            case v if (v == "net") =>
+              trainnneutraltotal += 1
+              trainneutralCorrect += 1
+            case v if (v == "neg") =>
+              trainunhappyTotal += 1
+              trainunhappyCorrect += 1
+          }
+        }else {
+          valLabel match {
+            case v if (v == "pos") =>
+              trainhappyTotal += 1
+            case v if (v == "net") =>
+              trainnneutraltotal += 1
+            case v if (v == "neg") =>
+              trainunhappyTotal += 1
+          }
         }
-        if (r._1 == 1 && r._2 == 1) {
-          trainhappyCorrect += 1
-        } else if (r._1 == 0 && r._2 == 0) {
-          trainunhappyCorrect += 1
-        }
-      }
-    )
-    logger.info(s"[NaiveBayesModel-$name]unhappy messages in Training Set: " + trainunhappyTotal + " happy messages: " + trainhappyTotal)
-    logger.info(s"[NaiveBayesModel-$name]happy % correct: " + trainhappyCorrect.toDouble / trainhappyTotal)
-    logger.info(s"[NaiveBayesModel-$name]unhappy % correct: " + trainunhappyCorrect.toDouble / trainunhappyTotal)
+      })
+    logger.info(s"[NaivesBayesClassifier-$name]unhappy messages in Training Set: " + trainunhappyTotal + " happy messages: " + trainhappyTotal)
+    logger.info(s"[NaivesBayesClassifier-$name]happy % correct: " + trainhappyCorrect.toDouble / trainhappyTotal)
+    logger.info(s"[NaivesBayesClassifier-$name]unhappy % correct: " + trainunhappyCorrect.toDouble / trainunhappyTotal)
 
     val traintestErr = labelAndPredsTrain.filter(r => r._1 != r._2).count.toDouble / trainSet.count()
-    logger.info(s"[NaiveBayesModel-$name]Test Error Training Set: " + traintestErr)
+    logger.info(s"[NaivesBayesClassifier-$name]Test Error Training Set: " + traintestErr)
 
     //Compute error for validation Set
     val resultsVal = labelAndPredsValid.collect()
@@ -1008,37 +1212,63 @@ case class BayesClassifier(
     var unhappyTotal = 0
     var happyCorrect = 0
     var unhappyCorrect = 0
+    var neutralCorrect = 0
+    var nneutraltotal = 0
     resultsVal.foreach(
       r => {
-        if (r._1 == 1) {
-          happyTotal += 1
-        } else if (r._1 == 0) {
-          unhappyTotal += 1
+        val predLabel = tagScore(r._2)
+        val valLabel = tagScore(r._1)
+        if (predLabel == valLabel){
+          valLabel match {
+            case v if (v == "pos") =>
+              happyTotal += 1
+              happyCorrect += 1
+            case v if (v == "net") =>
+              nneutraltotal += 1
+              neutralCorrect += 1
+            case v if (v == "neg") =>
+              unhappyTotal += 1
+              unhappyCorrect += 1
+          }
+        }else {
+          valLabel match {
+            case v if (v == "pos") =>
+              happyTotal += 1
+            case v if (v == "net") =>
+              nneutraltotal += 1
+            case v if (v == "neg") =>
+              unhappyTotal += 1
+          }
         }
-        if (r._1 == 1 && r._2 == 1) {
-          happyCorrect += 1
-        } else if (r._1 == 0 && r._2 == 0) {
-          unhappyCorrect += 1
-        }
-      }
-    )
-    logger.info(s"[NaiveBayesModel-$name] unhappy messages in Validation Set: " + unhappyTotal + " happy messages: " + happyTotal)
-    logger.info(s"[NaiveBayesModel-$name]happy % correct: " + happyCorrect.toDouble / happyTotal)
-    logger.info(s"[NaiveBayesModel-$name]unhappy % correct: " + unhappyCorrect.toDouble / unhappyTotal)
+      })
+    logger.info(s"[NaivesBayesClassifier-$name] unhappy messages in Validation Set: " + unhappyTotal + " happy messages: " + happyTotal)
+    logger.info(s"[NaivesBayesClassifier-$name]happy % correct: " + happyCorrect.toDouble / happyTotal)
+    logger.info(s"[NaivesBayesClassifier-$name]unhappy % correct: " + unhappyCorrect.toDouble / unhappyTotal)
 
     val testErr = labelAndPredsValid.filter(r => r._1 != r._2).count.toDouble / validationSet.count()
-    println(s"[NaiveBayesModel-$name]Test Error Validation Set: " + testErr)
+    println(s"[GradientBoostingClassifier-$name]Test Error Validation Set: " + testErr)
     ModelResult(
       Id.generate,
       _id,
       trainhappyCorrect,
       trainhappyTotal - trainhappyCorrect,
+      trainhappyCorrect.toDouble/trainhappyTotal.toDouble,
       trainunhappyCorrect,
       trainunhappyTotal - trainunhappyCorrect,
+      trainunhappyCorrect.toDouble/trainunhappyTotal.toDouble,
+      trainneutralCorrect,
+      trainnneutraltotal - trainneutralCorrect,
+      trainneutralCorrect.toDouble/trainnneutraltotal.toDouble,
       happyCorrect,
       happyTotal - happyCorrect,
+      happyCorrect.toDouble/happyCorrect.toDouble,
       unhappyCorrect,
-      unhappyTotal - unhappyCorrect)
+      unhappyTotal - unhappyCorrect,
+      unhappyCorrect.toDouble/unhappyTotal.toDouble,
+      neutralCorrect,
+      nneutraltotal- neutralCorrect,
+      neutralCorrect.toDouble/nneutraltotal.toDouble
+    )
   }
 
 

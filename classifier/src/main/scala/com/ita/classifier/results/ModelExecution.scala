@@ -87,7 +87,7 @@ case class ModelExecution(
         }
 
         val modelResult =
-          bayesClassifier.evaluateModel(modeltrained,partition)(sc)
+          bayesClassifier.evaluateModel(partition)(sc)
         dataContext.executionDAO.update(copy(status= "trained"))
         dataContext.modelResultDAO.create(modelResult)
         Future(modelResult)
@@ -101,7 +101,7 @@ case class ModelExecution(
           GradientBoostedTreesModel.load(sc, path)
         }
         val modelResult =
-          boostModel.evaluateModel(boostModel.trainModel(partition)(sc),partition)(sc)
+          boostModel.evaluateModel(partition)(sc)
         dataContext.executionDAO.update(copy(status= "trained"))
         dataContext.modelResultDAO.create(modelResult)
         Future(modelResult)

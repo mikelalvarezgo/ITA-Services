@@ -29,7 +29,8 @@ case class ModelExecutionPayload(
   model_id:String) {
   import org.joda.time.DateTime._
   def toExecution(id:Id):ModelExecution =
-    ModelExecution(Some(id),Id(topic_id),Id(model_id),org.joda.time.DateTime.now.getMillis,"created")
+    ModelExecution(
+      _id =Some(id), Id(model_id),Id(topic_id),org.joda.time.DateTime.now.getMillis,"created")
 
 }
 

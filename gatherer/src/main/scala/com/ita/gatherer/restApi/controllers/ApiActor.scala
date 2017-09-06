@@ -4,16 +4,18 @@ import akka.actor.Actor
 import akka.util.Timeout
 import com.ita.domain.Id
 import com.ita.domain.Model._
+import com.ita.domain.gatherer.TweetPickUp
+import com.ita.domain.gatherer.exception.GathererException
 import com.ita.domain.utils.Logger
 import spray.http.StatusCodes
 import spray.httpx.SprayJsonSupport._
 import spray.json.{JsBoolean, JsValue, RootJsonFormat}
 import spray.routing._
-
+import com.ita.domain.gatherer.Model._
 import scala.concurrent.ExecutionContext.Implicits.global
 import scala.concurrent.duration._
 import scala.util.Try
-
+import com.ita.gatherer.restApi.controllers.ApiHelper._
 class ApiActor(
   apiName: String,
   pickUpController: PickUpController) extends Actor

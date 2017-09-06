@@ -74,9 +74,8 @@ object Dependencies {
 
     "com.typesafe.akka" %% "akka-actor" % akkaV,
     "org.twitter4j" % "twitter4j-core" % "4.0.6",
-    "org.apache.tika" % "tika-core" % "1.10",
     "com.optimaize.languagedetector" % "language-detector" % "0.5"
-  ).map(_.exclude("org.objectweb.asm", "org.objectweb.asm"))
+  )
 
   val classifierDependencies: Seq[ModuleID] = commonDependencies ++ Seq(
     "org.mongodb.spark" %% "mongo-spark-connector" % "1.1.0",
@@ -97,7 +96,4 @@ object Dependencies {
     exclude("commons-collections", "commons-collections").
     exclude("com.esotericsoftware.minlog", "minlog"))*/
 
-
-  val sparkDependencies: Seq[ModuleID] = commonDependencies
-  val webDependencies: Seq[ModuleID] = commonDependencies
 }

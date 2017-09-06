@@ -7,7 +7,7 @@
 		revision="0.0.1"
 		conf="compile-internal"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
-		date="20170904224310"/>
+		date="20170906121454"/>
 	<dependencies>
 		<module organisation="com.typesafe.akka" name="akka-http-spray-json-experimental_2.11">
 			<revision name="2.4.4" status="release" pubdate="20160413080303" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://akka.io/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="48">
@@ -811,7 +811,7 @@
 		<module organisation="org.json" name="json">
 			<revision name="20140107" status="release" pubdate="20140107193602" resolver="public" artresolver="public" homepage="https://github.com/douglascrockford/JSON-java" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="2">
 				<license name="The JSON License" url="http://json.org/license.html"/>
-				<metadata-artifact status="successful" details="" size="4188" time="223" location="/Users/mikelwyred/.ivy2/cache/org.json/json/ivy-20140107.xml" searched="true" original-local-location="/Users/mikelwyred/.ivy2/cache/org.json/json/ivy-20140107.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/json/json/20140107/json-20140107.pom"/>
+				<metadata-artifact status="successful" details="" size="4188" time="163" location="/Users/mikelwyred/.ivy2/cache/org.json/json/ivy-20140107.xml" searched="true" original-local-location="/Users/mikelwyred/.ivy2/cache/org.json/json/ivy-20140107.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/json/json/20140107/json-20140107.pom"/>
 				<caller organisation="com.vdurmont" name="emoji-java" conf="default, compile, runtime, master" rev="20140107" rev-constraint-default="20140107" rev-constraint-dynamic="20140107" callerrev="3.2.0"/>
 				<artifacts>
 					<artifact name="json" type="jar" ext="jar" status="no" details="" size="64952" time="0" location="/Users/mikelwyred/.ivy2/cache/org.json/json/jars/json-20140107.jar">
