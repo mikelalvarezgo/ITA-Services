@@ -8,7 +8,8 @@ case class TweetPickUp(
   cuantity_warn: Long,
   nEmojis: Int,
   state: PickUpState,
-  nTweets: Int) {
+  nTweets: Int,
+  isRT: Boolean = false) {
 
   def canBeCreated:Boolean = ! List(Finished,InProcess,Ready).contains(state)
 

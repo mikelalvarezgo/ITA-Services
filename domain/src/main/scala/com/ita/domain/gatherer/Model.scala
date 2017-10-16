@@ -21,6 +21,6 @@ object Model {
     }
   }
 
- implicit val pickUpJF : RootJsonFormat[TweetPickUp] = jsonFormat6(TweetPickUp.apply)
+ implicit val pickUpJF : RootJsonFormat[TweetPickUp] = jsonFormat7(TweetPickUp.apply)
 
 }

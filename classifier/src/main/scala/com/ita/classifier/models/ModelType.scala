@@ -8,6 +8,8 @@ sealed abstract class ModelType{
 
 }
 case object NLP extends ModelType
+case object VADER extends ModelType
+case object EMOJI extends ModelType
 case object BOOSTING extends ModelType
 case object API extends ModelType
 case object BAYES extends ModelType

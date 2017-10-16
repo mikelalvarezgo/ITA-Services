@@ -9,4 +9,4 @@ case class ModelData(
   tag_tweets:String, //emoji or vader
   type_classifier:ModelType,
   parameters: Map[String,String],
-  partitionConf: PartitionConf)
+  partitionConf: Option[PartitionConf])

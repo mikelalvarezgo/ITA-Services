@@ -9,7 +9,7 @@
 		extra-sbtVersion="0.13"
 		conf="runtime"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
-		date="20170906220400"/>
+		date="20171002142425"/>
 	<dependencies>
 		<module organisation="com.eed3si9n" name="sbt-assembly">
 			<revision name="0.14.3" status="release" pubdate="20160407091705" resolver="sbt-chain" artresolver="sbt-chain" extra-scalaVersion="2.10" extra-sbtVersion="0.13" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="4">
@@ -137,7 +137,7 @@
 				<metadata-artifact status="no" details="" size="13641" time="0" location="/Users/mikelwyred/.ivy2/cache/org.apache.maven/maven-artifact/ivy-3.3.3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/maven/maven-artifact/3.3.3/maven-artifact-3.3.3.pom"/>
 				<caller organisation="org.apache.maven" name="maven-plugin-api" conf="compile, runtime" rev="3.3.3" rev-constraint-default="3.3.3" rev-constraint-dynamic="3.3.3" callerrev="3.3.3"/>
 				<artifacts>
-					<artifact name="maven-artifact" type="jar" ext="jar" status="no" details="" size="55090" time="0" location="/Users/mikelwyred/.ivy2/cache/org.apache.maven/maven-artifact/jars/maven-artifact-3.3.3.jar">
+					<artifact name="maven-artifact" type="jar" ext="jar" status="successful" details="" size="55090" time="58" location="/Users/mikelwyred/.ivy2/cache/org.apache.maven/maven-artifact/jars/maven-artifact-3.3.3.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/maven/maven-artifact/3.3.3/maven-artifact-3.3.3.jar"/>
 					</artifact>
 				</artifacts>
@@ -149,7 +149,7 @@
 				<metadata-artifact status="no" details="" size="13577" time="0" location="/Users/mikelwyred/.ivy2/cache/org.apache.maven/maven-model/ivy-3.3.3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/maven/maven-model/3.3.3/maven-model-3.3.3.pom"/>
 				<caller organisation="org.apache.maven" name="maven-plugin-api" conf="compile, runtime" rev="3.3.3" rev-constraint-default="3.3.3" rev-constraint-dynamic="3.3.3" callerrev="3.3.3"/>
 				<artifacts>
-					<artifact name="maven-model" type="jar" ext="jar" status="no" details="" size="160817" time="0" location="/Users/mikelwyred/.ivy2/cache/org.apache.maven/maven-model/jars/maven-model-3.3.3.jar">
+					<artifact name="maven-model" type="jar" ext="jar" status="successful" details="" size="160817" time="182" location="/Users/mikelwyred/.ivy2/cache/org.apache.maven/maven-model/jars/maven-model-3.3.3.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/maven/maven-model/3.3.3/maven-model-3.3.3.jar"/>
 					</artifact>
 				</artifacts>
@@ -163,7 +163,7 @@
 				<caller organisation="org.eclipse.sisu" name="org.eclipse.sisu.plexus" conf="compile, runtime" rev="3.0.17" rev-constraint-default="3.0.17" rev-constraint-dynamic="3.0.17" callerrev="0.3.0"/>
 				<caller organisation="org.apache.maven" name="maven-artifact" conf="compile, runtime" rev="3.0.20" rev-constraint-default="3.0.20" rev-constraint-dynamic="3.0.20" callerrev="3.3.3"/>
 				<artifacts>
-					<artifact name="plexus-utils" type="jar" ext="jar" status="no" details="" size="243128" time="0" location="/Users/mikelwyred/.ivy2/cache/org.codehaus.plexus/plexus-utils/jars/plexus-utils-3.0.20.jar">
+					<artifact name="plexus-utils" type="jar" ext="jar" status="successful" details="" size="243128" time="184" location="/Users/mikelwyred/.ivy2/cache/org.codehaus.plexus/plexus-utils/jars/plexus-utils-3.0.20.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/codehaus/plexus/plexus-utils/3.0.20/plexus-utils-3.0.20.jar"/>
 					</artifact>
 				</artifacts>
@@ -251,17 +251,17 @@
 		<module organisation="org.scala-lang" name="scala-reflect">
 			<revision name="2.10.4" status="release" pubdate="20140318224707" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" extra-info.apiURL="http://www.scala-lang.org/api/2.10.4/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="6">
 				<license name="BSD-like" url="http://www.scala-lang.org/downloads/license.html    "/>
-				<metadata-artifact status="no" details="" size="2647" time="0" location="/Users/mikelwyred/.ivy2/cache/org.scala-lang/scala-reflect/ivy-2.10.4.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.10.4/scala-reflect-2.10.4.pom"/>
+				<metadata-artifact status="no" details="" size="2835" time="0" location="/Users/mikelwyred/.ivy2/cache/org.scala-lang/scala-reflect/ivy-2.10.4.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.10.4/scala-reflect-2.10.4.pom"/>
 				<caller organisation="org.scalactic" name="scalactic_2.10" conf="default, compile, runtime, master" rev="2.10.4" rev-constraint-default="2.10.4" rev-constraint-dynamic="2.10.4" callerrev="2.2.1"/>
 				<artifacts>
 					<artifact name="scala-reflect" type="jar" ext="jar" status="no" details="" size="3203471" time="0" location="/Users/mikelwyred/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.10.4.jar">
-						<origin-location is-local="false" location="UNKNOWN"/>
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.10.4/scala-reflect-2.10.4.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="org.scala-sbt" name="global-plugins">
-			<revision name="0.0" status="integration" pubdate="20170906220357" resolver="inter-project" artresolver="inter-project" extra-scalaVersion="2.10" extra-sbtVersion="0.13" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="0">
+			<revision name="0.0" status="integration" pubdate="20171002142109" resolver="inter-project" artresolver="inter-project" extra-scalaVersion="2.10" extra-sbtVersion="0.13" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="0">
 				<metadata-artifact status="failed" details="" size="0" time="0" searched="false"/>
 				<caller organisation="default" name="ita-services-build" conf="compile, runtime" rev="0.0" rev-constraint-default="0.0" rev-constraint-dynamic="0.0" callerrev="0.1-SNAPSHOT" extra-scalaVersion="2.10" extra-sbtVersion="0.13"/>
 				<artifacts>
@@ -283,7 +283,7 @@
 		<module organisation="com.github.mdr" name="ascii-graphs_2.10">
 			<revision name="0.0.3" status="release" pubdate="20130509141044" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://github.com/mdr/ascii-graphs" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="2">
 				<license name="MIT License" url="http://www.opensource.org/licenses/mit-license.php"/>
-				<metadata-artifact status="no" details="" size="2666" time="0" location="/Users/mikelwyred/.ivy2/cache/com.github.mdr/ascii-graphs_2.10/ivy-0.0.3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/github/mdr/ascii-graphs_2.10/0.0.3/ascii-graphs_2.10-0.0.3.pom"/>
+				<metadata-artifact status="no" details="" size="2792" time="0" location="/Users/mikelwyred/.ivy2/cache/com.github.mdr/ascii-graphs_2.10/ivy-0.0.3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/github/mdr/ascii-graphs_2.10/0.0.3/ascii-graphs_2.10-0.0.3.pom"/>
 				<caller organisation="net.virtual-void" name="sbt-dependency-graph" conf="default, compile, runtime, master" rev="0.0.3" rev-constraint-default="0.0.3" rev-constraint-dynamic="0.0.3" callerrev="0.8.2"/>
 				<artifacts>
 					<artifact name="ascii-graphs_2.10" type="jar" ext="jar" status="no" details="" size="466397" time="0" location="/Users/mikelwyred/.ivy2/cache/com.github.mdr/ascii-graphs_2.10/jars/ascii-graphs_2.10-0.0.3.jar">
@@ -293,15 +293,15 @@
 			</revision>
 		</module>
 		<module organisation="org.scala-lang" name="scala-library">
-			<revision name="2.10.4" status="release" pubdate="20140318224629" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" extra-info.apiURL="http://www.scala-lang.org/api/2.10.4/" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), master(compile), runtime, compile(*), master" position="3">
+			<revision name="2.10.4" status="release" pubdate="20140318224629" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" extra-info.apiURL="http://www.scala-lang.org/api/2.10.4/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="3">
 				<license name="BSD-like" url="http://www.scala-lang.org/downloads/license.html          "/>
-				<metadata-artifact status="no" details="" size="2487" time="0" location="/Users/mikelwyred/.ivy2/cache/org.scala-lang/scala-library/ivy-2.10.4.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.10.4/scala-library-2.10.4.pom"/>
+				<metadata-artifact status="no" details="" size="2669" time="0" location="/Users/mikelwyred/.ivy2/cache/org.scala-lang/scala-library/ivy-2.10.4.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.10.4/scala-library-2.10.4.pom"/>
 				<caller organisation="com.github.mdr" name="ascii-graphs_2.10" conf="compile, runtime" rev="2.10.4" rev-constraint-default="2.10.4" rev-constraint-dynamic="2.10.1" callerrev="0.0.3"/>
 				<caller organisation="org.scala-lang" name="scala-reflect" conf="compile, runtime" rev="2.10.4" rev-constraint-default="2.10.4" rev-constraint-dynamic="2.10.4" callerrev="2.10.4"/>
 				<caller organisation="org.scalactic" name="scalactic_2.10" conf="default, compile, runtime, master" rev="2.10.4" rev-constraint-default="2.10.4" rev-constraint-dynamic="2.10.4" callerrev="2.2.1"/>
 				<artifacts>
 					<artifact name="scala-library" type="jar" ext="jar" status="no" details="" size="7126372" time="0" location="/Users/mikelwyred/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.10.4.jar">
-						<origin-location is-local="false" location="UNKNOWN"/>
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.10.4/scala-library-2.10.4.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>

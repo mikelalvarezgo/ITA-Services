@@ -71,6 +71,13 @@ class ApiActor(
           }
         }
       }~
+      path("evaluate"){
+        post {
+          entity(as[Id]) { id: Id =>
+            complete(classifierController.trainModelExecution(id))
+          }
+        }
+      }~
       path("execute") {
         post {
           entity(as[Id]) { id: Id =>

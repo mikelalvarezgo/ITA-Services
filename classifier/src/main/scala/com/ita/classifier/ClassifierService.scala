@@ -7,6 +7,7 @@ import akka.io.IO
 import akka.pattern.ask
 import akka.util.Timeout
 import com.ita.classifier.controllers.ClassifierController
+import com.ita.classifier.kafka.ConsumerTweets
 import com.ita.domain.utils.{Config, Logger}
 import org.apache.spark.{SparkConf, SparkContext}
 import routes.ApiActor
@@ -33,15 +34,20 @@ object ClassifierService  extends App
   implicit val system = ActorSystem("classifier-service")
   val execService: ExecutorService = Executors.newCachedThreadPool()
   // val sourceTweets  = Source.actorPublisher[TweetInfo](,TweetInfo))
-  implicit val conf = new SparkConf().setMaster("local[2]").setAppName(sparkAppNme)
+  implicit val conf = new SparkConf().setMaster("local[4]").setAppName(sparkAppNme)
   implicit val sc = new SparkContext("local", "sparkAppNme")
   implicit val dataContext:ClassifierDataContext =ClassifierDataContext.chargeFromConfig()
   implicit val executionContext = system.dispatcher
   implicit val timeout = Timeout(10.seconds)
-  val distData = sc.parallelize(data)
-  val n = distData.count()
-  val pickUpController =  ClassifierController()
 
+  val pickUpController =  ClassifierController()
   val apiActor = system.actorOf(Props(new ApiActor("api-classifier",pickUpController)),"api-actor")
   IO(Http) ? Http.Bind(apiActor, interface = hostApi, port = portApi)
+  val topic = config.getString("kafka.consumer.topic")
+  val groupId = config.getString("kafka.consumer.groupid")
+  val brokers = config.getString("kafka.consumer.brokers")
+
+  val kafkaCons:ConsumerTweets =  new ConsumerTweets(brokers,groupId,topic)
+  kafkaCons.run()
+
 }

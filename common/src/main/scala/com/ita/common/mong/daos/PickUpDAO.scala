@@ -33,22 +33,26 @@ case class PickUpDAO(mongo_Host: String, mongo_Port: Int, db_name: String) exten
 
     val bulk = pickups.initializeOrderedBulkOperation
     bulk.insert(dbObject[TweetPickUp].apply(t))
-    require(bulk.execute().isAcknowledged)
-  }
+  require(bulk.execute().isAcknowledged)
+}
 
-  override def update(t: TweetPickUp): Try[Unit] = {
-    for {
-      _ <- get(t._id.get)
-      _ <- remove(t._id.get)
-      _ <- create(t)
-    } yield {}
-  }
+override def update(t: TweetPickUp): Try[Unit] = {
+for {
+_ <- get(t._id.get)
+_ <- remove(t._id.get)
+_ <- create(t)
+} yield {}
+}
 
-  override def get(id: Id): Try[TweetPickUp] = Try {
+override def get(id: Id): Try[TweetPickUp] = Try {
+pickups.findOne(MongoDBObject(
+idPickUp -> new ObjectId(id.value))).toStream.map(to[TweetPickUp].apply).head
+}
+
+   def getRTDC(): Try[List[Id]] = Try {
     pickups.findOne(MongoDBObject(
-      idPickUp -> new ObjectId(id.value))).toStream.map(to[TweetPickUp].apply).head
+      rtdc -> true)).toStream.map(to[TweetPickUp].apply).map(_._id.get).toList
   }
-
   def find(query: MongoDBObject): Try[TweetPickUp] = Try {
     pickups.find(query).toStream.map(dbo => to[TweetPickUp].apply(dbo)).head
   }
@@ -82,5 +86,7 @@ trait AbsPickUpDAO extends DAO[TweetPickUp] {
 object PickUpDAO {
 
   val idPickUp = "_id"
+  val rtdc = "isRT"
+
 
 }

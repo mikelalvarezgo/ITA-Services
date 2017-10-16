@@ -7,16 +7,17 @@ object Dependencies {
   val slf4jNop = "org.slf4j" % "slf4j-nop" % slf4jVersion
   val casbahV = "3.1.1"
   val sprayVersion = "1.3.2"
-  val sparkVersion = "1.6.0"
+  val sparkVersion = "2.1.0"
   val AkkaHttpVersion = "10.0.6"
   val akkaV = "2.4.4"
 
   val commonDependencies: Seq[ModuleID] = Seq(
+    "org.apache.kafka" %% "kafka" % "0.10.1.0",
     "com.vdurmont"   % "emoji-java" % "3.2.0",
     "org.spire-math" %% "cats" % "0.3.0",
     "com.typesafe" % "config" % "1.3.1",
     "io.spray" %% "spray-client" % "1.3.3",
-    "org.apache.spark" %% "spark-streaming-twitter" %sparkVersion ,
+    "org.apache.spark" %% "spark-streaming-twitter" %"1.6.0" ,
     "org.mongodb" %% "casbah-commons" % casbahV,
     "org.mongodb" %% "casbah-core" % casbahV,
     "org.mongodb" %% "casbah-query" % casbahV,
@@ -76,12 +77,28 @@ object Dependencies {
     "org.twitter4j" % "twitter4j-core" % "4.0.6",
     "com.optimaize.languagedetector" % "language-detector" % "0.5"
   )
+  val coreNlpVersion = "3.6.0"
+  val jedisVersion = "2.9.0"
+  val jacksonVersion = "2.8.1"
+
+  val visualizerDependencies: Seq[ModuleID] = commonDependencies ++Seq(
+    "org.apache.spark" %% "spark-core" % sparkVersion ,
+    "org.apache.spark" %% "spark-mllib" % sparkVersion,
+    "com.databricks" %% "spark-csv" %  "1.4.0",
+    "edu.stanford.nlp" % "stanford-corenlp" % coreNlpVersion,
+    "edu.stanford.nlp" % "stanford-corenlp" % coreNlpVersion classifier "models",
+    "redis.clients" % "jedis" % jedisVersion,
+    "com.fasterxml.jackson.core" % "jackson-databind" % jacksonVersion
+  )
+
 
   val classifierDependencies: Seq[ModuleID] = commonDependencies ++ Seq(
-    "org.mongodb.spark" %% "mongo-spark-connector" % "1.1.0",
+    "org.mongodb.spark" %% "mongo-spark-connector" % "2.1.0",
     "org.apache.spark" %% "spark-mllib" % sparkVersion,
     "org.apache.spark" %% "spark-core" % sparkVersion,
     "edu.stanford.nlp" % "stanford-corenlp" % "3.6.0",
+    "edu.stanford.nlp" % "stanford-corenlp" % "3.6.0" classifier "models",
+
     "org.apache.opennlp" % "opennlp-tools" % "1.6.0",
     "org.apache.opennlp" % "opennlp-uima" % "1.6.0",
     "com.sksamuel.elastic4s" %% "elastic4s-core" % "1.7.0",

@@ -49,7 +49,7 @@ object StandfordParametersNames {
 
 object  RandomForestParametersNames {
 
-  val num_trees: String = num_trees
+  val num_trees: String = "num_trees"
   val depth:String = "depth"
   val nClassWords:String = "nClassWords"
   val max_bins:String = "max_bins"
@@ -77,7 +77,7 @@ object ModelConverter extends ModelToViewConverterDSL {
             apiModel.tag_tweets,
             API,
             parameters,
-            apiModel.setPartition.get)
+            apiModel.setPartition)
 
         case v if v == BOOSTING.toString =>
           val boostModel = m.asInstanceOf[GradientBoostingClassifier]
@@ -92,7 +92,7 @@ object ModelConverter extends ModelToViewConverterDSL {
             boostModel.tag_tweets,
             BOOSTING,
             parameters,
-            boostModel.setPartition.get)
+            boostModel.setPartition)
 
 
         case v if v == BAYES.toString =>
@@ -108,7 +108,7 @@ object ModelConverter extends ModelToViewConverterDSL {
             boostModel.tag_tweets,
             BOOSTING,
             parameters,
-            boostModel.setPartition.get)
+            boostModel.setPartition)
         case v if v == RR.toString =>
           val nlpModel = m.asInstanceOf[RandomForestClassifier]
           val parameters = Map(
@@ -126,7 +126,7 @@ object ModelConverter extends ModelToViewConverterDSL {
             nlpModel.tag_tweets,
             RR,
             parameters,
-            nlpModel.setPartition.get)
+            nlpModel.setPartition)
         case v if v == NLP.toString =>
           val nlpModel = m.asInstanceOf[NLPStanfordClassifier]
           val parameters = Map(
@@ -139,7 +139,31 @@ object ModelConverter extends ModelToViewConverterDSL {
             nlpModel.tag_tweets,
             NLP,
             parameters,
-            nlpModel.setPartition.get)
+            nlpModel.setPartition)
+
+        case v if v == VADER.toString =>
+          val nlpModel = m.asInstanceOf[VaderClassifier]
+          val parameters = Map[String,String]().empty
+
+          ModelData(
+            Some(nlpModel._id),
+            nlpModel.name,
+            nlpModel.tag_tweets,
+            VADER,
+            parameters,
+            nlpModel.setPartition)
+
+        case v if v == EMOJI.toString =>
+          val nlpModel = m.asInstanceOf[EmojiClassifier]
+          val parameters = Map[String,String]().empty
+
+          ModelData(
+            Some(nlpModel._id),
+            nlpModel.name,
+            nlpModel.tag_tweets,
+            EMOJI,
+            parameters,
+            nlpModel.setPartition)
       }
 
       def toModel(v: ModelData): ModelClassifier = {
@@ -152,7 +176,7 @@ object ModelConverter extends ModelToViewConverterDSL {
               v.name,
               TextProccesingApiClient("api_client"),
               v.tag_tweets,
-              Some(v.partitionConf))
+              (v.partitionConf))
           case l if l == BAYES.toString =>
             BayesClassifier(
               v._id.get,
@@ -161,7 +185,7 @@ object ModelConverter extends ModelToViewConverterDSL {
               v.parameters(BayesParametersNames.nClassWords).toInt,
               v.parameters(BayesParametersNames.type_model),
               v.parameters(BayesParametersNames.lambda).toDouble,
-              Some(v.partitionConf)
+              (v.partitionConf)
             )
 
           case l if l == RR.toString =>
@@ -170,7 +194,7 @@ object ModelConverter extends ModelToViewConverterDSL {
               v.name,
               v.parameters(RandomForestParametersNames.num_trees).toInt,
               v.tag_tweets,
-              Some(v.partitionConf),
+              (v.partitionConf),
               v.parameters(RandomForestParametersNames.depth).toInt,
               v.parameters(RandomForestParametersNames.max_bins).toInt,
               v.parameters(RandomForestParametersNames.subset_strategy),
@@ -183,7 +207,7 @@ object ModelConverter extends ModelToViewConverterDSL {
               v.name,
               v.parameters(BoostParametersNames.numIter).toInt,
               v.tag_tweets,
-              Some(v.partitionConf),
+              (v.partitionConf),
               v.parameters(BoostParametersNames.depth).toInt,
               v.parameters(BoostParametersNames.strategy_boosting),
               v.parameters(BoostParametersNames.nClassWords).toInt)
@@ -202,7 +226,23 @@ object ModelConverter extends ModelToViewConverterDSL {
               v.tag_tweets,
               aggFunction,
               aggFunction.toFunction,
-              Some(v.partitionConf))
+              (v.partitionConf))
+
+          case l if l == VADER.toString =>
+
+            VaderClassifier(
+              v._id.get,
+              v.name,
+              v.tag_tweets,
+              (v.partitionConf))
+
+          case l if l == EMOJI.toString =>
+
+            EmojiClassifier(
+              v._id.get,
+              v.name,
+              v.tag_tweets,
+              (v.partitionConf))
         }
       }
     }

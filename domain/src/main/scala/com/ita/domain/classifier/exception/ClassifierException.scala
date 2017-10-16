@@ -17,7 +17,6 @@ object ClassifierException {
 
   val classifierControllerUpdateModelNotFound = errorCode(1005)
   val classifierControllerUpdateModelInternalError = errorCode(1006)
-
   val classifierControllerGetModelNotFound = errorCode(1007)
 
   val classifierControllerCreateExecutionAlreadyCreate = errorCode(1011)
@@ -33,5 +32,6 @@ object ClassifierException {
   val classifierControllerTrainModelExecutionDoesNotExist = errorCode(1021)
   val classifierControllerTrainModelExecutionlErrorInternalError = errorCode(1022)
 
+  val classifierControllerTrainModelNotSupervisedModel = errorCode(1023)
 
 }

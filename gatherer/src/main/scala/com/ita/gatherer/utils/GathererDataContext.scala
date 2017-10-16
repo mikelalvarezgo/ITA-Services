@@ -3,9 +3,6 @@ package com.ita.gatherer.utils
 import com.ita.common.mong.daos.{PickUpDAO, TweetInfoDAO}
 import com.ita.domain.utils.Config
 
-/**
-  * Created by mikelalvarezgo on 17/6/17.
-  */
  case class GathererDataContext(
   pickupDAO: PickUpDAO,
   tweetsDAO: TweetInfoDAO)

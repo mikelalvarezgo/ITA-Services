@@ -1,5 +1,5 @@
 import sbt._
-import Keys._
+import Keys.{excludeDependencies, _}
 import complete.DefaultParsers.spaceDelimited
 organization := "com.ita"
 
@@ -54,12 +54,31 @@ lazy val classifier = (project in file("classifier")).
   dependsOn(common, domain).
   settings(Common.settings: _*).
   settings(libraryDependencies ++= Dependencies.classifierDependencies
-).
+    .map(_.exclude("org.objectweb.asm", "org.objectweb.asm"))).
   settings(
-      mainClass in assembly := Some("ClassifierService"),
-      assemblyJarName in assembly := "classifier.jar"
-      // more settings here ...
-  )
+      mainClass in assembly := Some("com.ita.classifier.ClassifierService"),
+      assemblyJarName in assembly := "classifier.jar",
+    assemblyMergeStrategy in assembly := {
+      case PathList("META-INF", xs @ _*) => MergeStrategy.discard
+      case PathList(xs @ _*) if xs.last == "UnusedStubClass.class" =>
+        MergeStrategy.first
+      case PathList(xs @ _*) if xs.last == "overview.html" =>
+        MergeStrategy.first
+      case PathList("org", "apache", xs @ _*) => MergeStrategy.last
+      case PathList("org", "objectweb", xs @ _*) => MergeStrategy.last
+      case PathList("javax", "xml", xs @ _*) => MergeStrategy.last
+      case PathList("org", "joda", xs @ _*) => MergeStrategy.last
+      case PathList("com", "google", xs @ _*) => MergeStrategy.last
+      case PathList("javax", "inject", xs @ _*) => MergeStrategy.last
+      case PathList("org", "aopalliance", xs @ _*) => MergeStrategy.last
+      case PathList("commons-beanutils", "commons-beanutils", xs @ _*) => MergeStrategy.last
+      case PathList("org.codehaus.janino", xs @ _*) => MergeStrategy.last
+
+      case PathList("com", "esotericsoftware", xs @ _*) => MergeStrategy.last
+      case x =>
+        val oldStrategy = (assemblyMergeStrategy in assembly).value
+        oldStrategy(x)
+    })
 
 lazy val gatherer = (project in file("gatherer")).
   dependsOn(common, domain).
@@ -79,12 +98,48 @@ lazy val gatherer = (project in file("gatherer")).
         oldStrategy(x)
     },
     excludeDependencies += "org.objectweb.asm" % "org.objectweb.asm",
-    dependencyOverrides += "joda-time" % "joda-time" % "2.8.2",
-    dependencyOverrides += "spark-streaming-twitter_2.11" % "spark-streaming-twitter_2.11" % "1.6.0"
+    dependencyOverrides += "joda-time" % "joda-time" % "2.8.2"
+
+    // more settings here ...
+  )
+
+lazy val visualizer = (project in file("visualizer")).
+  dependsOn(common, domain).
+  settings(Common.settings: _*).
+  settings(libraryDependencies ++= Dependencies.visualizerDependencies
+  ).
+  settings(
+    mainClass in assembly := Some("com.ita.gatherer.VisualizerService"),
+    assemblyJarName in assembly := "visualizer.jar",
+    organization in ThisBuild := "com.ita.visualizer",
+    fullClasspath in assembly := (fullClasspath in Compile).value,
+    assemblyMergeStrategy in assembly := {
+      case PathList("META-INF", xs @ _*) => MergeStrategy.discard
+      case PathList(xs @ _*) if xs.last == "UnusedStubClass.class" =>
+        MergeStrategy.first
+      case PathList(xs @ _*) if xs.last == "overview.html" =>
+        MergeStrategy.first
+      case PathList("org", "apache", xs @ _*) => MergeStrategy.last
+      case PathList("org", "objectweb", xs @ _*) => MergeStrategy.last
+      case PathList("javax", "xml", xs @ _*) => MergeStrategy.last
+      case PathList("org", "joda", xs @ _*) => MergeStrategy.last
+      case PathList("com", "google", xs @ _*) => MergeStrategy.last
+      case PathList("javax", "inject", xs @ _*) => MergeStrategy.last
+      case PathList("org", "aopalliance", xs @ _*) => MergeStrategy.last
+      case PathList("commons-beanutils", "commons-beanutils", xs @ _*) => MergeStrategy.last
+      case PathList("org.codehaus.janino", xs @ _*) => MergeStrategy.last
+
+      case PathList("com", "esotericsoftware", xs @ _*) => MergeStrategy.last
+      case x =>
+        val oldStrategy = (assemblyMergeStrategy in assembly).value
+        oldStrategy(x)
+    },
+    excludeDependencies += "org.objectweb.asm" % "org.objectweb.asm",
+    dependencyOverrides += "joda-time" % "joda-time" % "2.8.2"
 
     // more settings here ...
   )
 lazy val root = (project in file(".")).
 
-  aggregate(common, domain,gatherer, classifier)
+  aggregate(common, domain,gatherer, classifier, visualizer)
 

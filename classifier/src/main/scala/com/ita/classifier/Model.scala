@@ -1,7 +1,7 @@
 package com.ita.classifier
 
 import models._
-import results.{ModelExecution, ModelResult, TweetResult}
+import results.{ModelExecution, ModelResult, ResultsAggs, TweetResult}
 import spray.json.DefaultJsonProtocol._
 import client._
 import com.ita.domain.Id
@@ -20,6 +20,9 @@ object Model {
           case v if v == BOOSTING.toString => BOOSTING
           case v if v == NLP.toString => NLP
           case v if v == BAYES.toString => BAYES
+          case v if v == RR.toString => RR
+          case v if v == EMOJI.toString => EMOJI
+          case v if v == VADER.toString => VADER
 
         }
       }
@@ -36,7 +39,7 @@ object Model {
 
   implicit val partitionConfJF:RootJsonFormat[PartitionConf]= jsonFormat3(PartitionConf.apply)
 
-  implicit val modelResultJF:RootJsonFormat[ModelResult] = jsonFormat20(ModelResult.apply)
+  implicit val modelResultJF:RootJsonFormat[ModelResult] = jsonFormat5(ModelResult.apply)
 
   implicit val executionJF:RootJsonFormat[ModelExecution] = new  RootJsonFormat[ModelExecution] {
     override def write(obj: ModelExecution): JsValue =
@@ -65,7 +68,7 @@ object Model {
       ModelExecution(id, modelId, topicId, dateExecution.toLong, status,result)
     }
   }
-
   implicit val modelJF:RootJsonFormat[ModelData] =  jsonFormat6(ModelData.apply)
+  implicit val aggJF :RootJsonFormat[ResultsAggs] =  jsonFormat6(ResultsAggs.apply)
 
 }

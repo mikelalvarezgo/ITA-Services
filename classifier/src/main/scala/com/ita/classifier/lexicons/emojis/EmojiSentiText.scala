@@ -15,7 +15,7 @@ import scala.util.control.Breaks._
 /**
   * Created by mikelwyred on 05/07/2017.
   */
-object EmojiSentiText extends Config {
+class EmojiSentiText extends Config with Serializable {
 
 
   val ExclIncr: Double = 0.292

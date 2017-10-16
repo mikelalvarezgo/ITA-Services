@@ -55,7 +55,6 @@ with TwitterCredentials{
                 tweet,
                 filter.lenguage.get,
                 pickup._id.get).get
-              logger.info(s"??????????????${tweetInfo.toString}")
               actorSystem.eventStream.publish(tweetInfo)
           })
     }

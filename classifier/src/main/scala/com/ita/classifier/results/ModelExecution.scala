@@ -20,7 +20,8 @@ import com.ita.domain.Model._
 import com.ita.domain.utils.{Config, Logger}
 import com.ita.domain.{Id, TweetInfo}
 import org.apache.spark.mllib.classification.NaiveBayesModel
-import org.apache.spark.mllib.tree.model.GradientBoostedTreesModel
+import org.apache.spark.mllib.tree.model.{GradientBoostedTreesModel, RandomForestModel}
+import com.ita.classifier.ClassifierService.dataContext
 
 import scala.concurrent.Future
 import scala.util.Try
@@ -51,6 +52,17 @@ case class ModelExecution(
     val dataSet = extractData()
     val model = chargeModel(dataSet)
     evaluateModel(model)
+  }
+  def evaluateModel()(implicit dataContext:ClassifierDataContext, sc:SparkContext) : Future[ModelResult] = {
+    val dataSet = extractData()
+    val model = chargeModel(dataSet)
+    if( status != "trained"){
+      logger.warn(s"This  of Model ${model.type_classifier} is not trained !!")
+      throw ClassifierException("Trying to train no supervised model",classifierControllerTrainModelNotSupervisedModel)
+
+    }else {
+      evaluateModel(model)
+    }
   }
   def saveResult(tweets:List[TweetResult])(implicit dataContext:ClassifierDataContext, sc:SparkContext) :Future[Boolean] = {
     val saves = tweets.map{tweet =>
@@ -116,49 +128,111 @@ case class ModelExecution(
         dataContext.executionDAO.update(copy(status= "trained"))
         dataContext.modelResultDAO.create(modelResult)
         Future(modelResult)
-      case NLP =>
-        val nlp = model.asInstanceOf[NLPStanfordClassifier]
-        val partition = nlp.prepareModel()(sc)
-        val modelResult =
-          nlp.evaluateModel(partition)(sc)
-        dataContext.executionDAO.update(copy(status= "trained"))
-        dataContext.modelResultDAO.create(modelResult)
-        Future(modelResult)
-      case API =>
-        val nlp = model.asInstanceOf[ApiClassifier]
-        val partition = nlp.prepareModel()(sc)
-        val modelResult =
-          nlp.evaluateModel(partition)(sc)
-
-        modelResult
+      case _ =>
+        logger.warn(s"This kind of Model ${model.type_classifier} is not supervised !!")
+        throw ClassifierException("Trying to train no supervised model",classifierControllerTrainModelNotSupervisedModel)
     }
   }
+
 
   def runModel(tweets:RDD[TweetInfo], model:ModelClassifier)(implicit sc: SparkContext):Future[List[TweetResult]] = {
    /* tweets.map{tweet   =>
       logger.info(s"[EXECUTION] $modelId STARTING EXECUTION ")
 
     } */
-    model.type_classifier match {
+   val startTimeMillis = System.currentTimeMillis()
+
+   val result = model.type_classifier match {
       case BAYES =>
         val bayesClas = model.asInstanceOf[BayesClassifier]
         val partition = bayesClas.prepareModel()(sc)
         val modelResult =
           bayesClas.runModel(this._id.get,partition)(sc)
+        val (pos,neu,neg) =if (bayesClas.type_model == "bernoulli") {
+          val pos =modelResult.map(_.result == 1).count()
+          val neg =modelResult.map(_.result == 0).count()
+          (pos, 0L, neg)
+        }else {
+          val pos =modelResult.filter(_.result == 2.0).count()
+          val neg =modelResult.filter(_.result == 0.0).count()
+          val neu = modelResult.filter(_.result == 1.0).count()
+          (pos, neu, neg)
+        }
+        val nAggs = ResultsAggs(Id.generate, topicId,ModelConverter.modelConverter.toView(model),pos, neg,neu)
+        dataContext.aggsDAO.create(nAggs)
         Future(modelResult.collect().toList)
+
       case BOOSTING =>
         val boostModel = model.asInstanceOf[GradientBoostingClassifier]
         val partition = boostModel.prepareModel()(sc)
         val pathModels = config.getString("models.path") +s"gradient_${boostModel._id.value}"
         val modelTrained = GradientBoostedTreesModel.load(sc, pathModels)
+
         val modelResult =
           boostModel.runModel(_id.get,topicId,partition)(sc)
+        val (pos,neu,neg) = {
+          val pos =modelResult.filter(res =>(res.result > 1.0)).count()
+          val neg =modelResult.filter(res =>(res.result <= 1.0)).count()
+          (pos, 0L, neg)
+        }
+        val nAggs = ResultsAggs(Id.generate, topicId,ModelConverter.modelConverter.toView(model),pos, neg,neu)
+        dataContext.aggsDAO.create(nAggs)
         Future(modelResult.collect().toList)
       case NLP =>
         val nlp = model.asInstanceOf[NLPStanfordClassifier]
-        val partition = nlp.prepareModel()(sc)
         val modelResult =
           nlp.runModel(_id.get)(sc)
+        val (pos,neu,neg) = {
+          val pos =modelResult.filter(_.result >0.6).count()
+          val neg =modelResult.filter(_.result < 0.4).count()
+          val neu = modelResult.filter(dat => (dat.result <= 0.6 && dat.result >= 0.4)).count()
+          (pos, neu, neg)
+        }
+        val nAggs = ResultsAggs(Id.generate, topicId,ModelConverter.modelConverter.toView(model),pos, neg,neu)
+        dataContext.aggsDAO.create(nAggs)
+        Future(modelResult.collect().toList)
+      case VADER =>
+        val nlp = model.asInstanceOf[VaderClassifier]
+        val modelResult =
+          nlp.runModel(_id.get)(sc)
+        val (pos,neu,neg) = {
+          val pos =modelResult.filter(_.result >0.5).count()
+          val neg =modelResult.filter(_.result <= -0.5).count()
+          val neu = modelResult.filter(dat =>  ((dat.result  > -0.5) && (dat.result  < 0.5))).count()
+          (pos, neu, neg)
+        }
+        val nAggs = ResultsAggs(Id.generate, topicId,ModelConverter.modelConverter.toView(model),pos, neg,neu)
+        dataContext.aggsDAO.create(nAggs)
+        Future(modelResult.collect().toList)
+      case RR =>
+        val boostModel = model.asInstanceOf[RandomForestClassifier]
+        val partition = boostModel.prepareModel()(sc)
+        val pathModels = config.getString("models.path") +s"randomforest_${boostModel._id.value}"
+        val modelTrained = RandomForestModel.load(sc, pathModels)
+        val modelResult =
+          boostModel.runModel(_id.get,topicId,partition)(sc)
+        val (pos,neu,neg) = {
+          val pos =modelResult.filter(res =>(boostModel.scoreToClass(res.result)) == 2.0).count()
+          val neg =modelResult.filter(res =>(boostModel.scoreToClass(res.result)) == 0.0).count()
+          val neu =modelResult.filter(res =>(boostModel.scoreToClass(res.result)) == 1.0).count()
+          (pos, neu, neg)
+        }
+        val nAggs = ResultsAggs(Id.generate, topicId,ModelConverter.modelConverter.toView(model),pos, neg,neu)
+        dataContext.aggsDAO.create(nAggs)
+        Future(modelResult.collect().toList)
+
+      case EMOJI =>
+        val nlp = model.asInstanceOf[EmojiClassifier]
+        val modelResult =
+          nlp.runModel(_id.get)(sc)
+        val (pos,neu,neg) = {
+          val pos =modelResult.filter(_.result >0.6).count()
+          val neg =modelResult.filter(_.result < 0.4).count()
+          val neu = modelResult.filter(dat => (dat.result <= 0.6 && dat.result >= 0.4)).count()
+          (pos, neu, neg)
+        }
+        val nAggs = ResultsAggs(Id.generate, topicId,ModelConverter.modelConverter.toView(model),pos, neg,neu)
+        dataContext.aggsDAO.create(nAggs)
         Future(modelResult.collect().toList)
       case API =>
         val nlp = model.asInstanceOf[ApiClassifier]
@@ -167,6 +241,12 @@ case class ModelExecution(
           nlp.runModel(_id.get)(sc)
         modelResult
     }
+    val endTimeMillis = System.currentTimeMillis()
+    val durationSeconds = (endTimeMillis - startTimeMillis) / 1000
+    logger.info(s"[EXECUTION-MODEL] Time of " +
+      s"running of classifier ${model._id}  of type ${model.type_classifier}" +
+      s"is $durationSeconds seconds")
+    result
   }
 
 
@@ -198,7 +278,7 @@ case class ModelExecution(
     val rdd =MongoSpark.load(sc, readConfig)
         .filter(doc => doc.getObjectId("topic").toHexString == topicId.value)
       .map(doc => parseDocument(doc))// 2)
-    val a = rdd.take(1)
+    val count= rdd.count()
     rdd
   }
 

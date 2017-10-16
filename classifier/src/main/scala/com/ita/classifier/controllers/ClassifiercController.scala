@@ -143,6 +143,27 @@ trait ClassifierController extends DAOHelpers
           Some(e))
     }
   }
+  def evaluateModel(executionId: Id): Future[Boolean] = {
+    logger.info(s"Request for train execution $executionId arrived to controller")
+    (for {
+      execution <- Future(dataContext.executionDAO.get(executionId).getOrElse(
+        throw ClassifierException(
+          classifierControllerTrainModelExecutionDoesNotExist,
+          "Error execution not created!")))
+      data <- execution.evaluateModel()
+      _ <- Future(dataContext.executionDAO.update(execution.copy(resultModel = Some(data), status = "trained")))
+    } yield {
+      logger.info(s"${~>}Traines execution $execution")
+      true
+    }).recover {
+      case e: Throwable =>
+        logger.error(s"${~>}Error when training execution model $executionId", e)
+        throw ClassifierException(
+          classifierControllerCreateModelErrorInternalError,
+          "Unknown Error when creating execution",
+          Some(e))
+    }
+  }
 
   def executeModelExecution(executionId: Id): Future[Boolean] = {
     logger.info(s"Request for train execution $executionId arrived to controller")
@@ -151,11 +172,10 @@ trait ClassifierController extends DAOHelpers
         throw ClassifierException(
           classifierControllerTrainModelExecutionDoesNotExist,
           "Error execution already created!")))
-      data <- execution.getModelResult()
-      _ <- Future(dataContext.executionDAO.update(execution.copy(resultModel = Some(data), status = "trained")))
+      data <- execution.executeModel()
     } yield {
-      logger.info(s"${~>}Traines execution $execution")
-      true
+      logger.info(s"${~>}Run execution $execution")
+      data
     }).recover {
       case e: Throwable =>
         logger.error(s"${~>}Error when training execution model $executionId", e)

@@ -23,6 +23,8 @@ import org.apache.spark.SparkConf
 import org.apache.spark.SparkContext
 import com.vdurmont.emoji.EmojiParser
 import edu.stanford.nlp.pipeline.{Annotation, StanfordCoreNLP}
+import org.apache.spark.mllib.evaluation.MulticlassMetrics
+import org.apache.spark.ml.feature.StopWordsRemover
 import org.apache.spark.mllib.classification.{NaiveBayes, NaiveBayesModel}
 import org.apache.spark.mllib.tree.model.GradientBoostedTreesModel
 import org.apache.spark.mllib.tree.RandomForest
@@ -69,7 +71,6 @@ sealed trait ModelClassifier extends Logger with Config {
     this
   }
 
-  def prepareModel()(implicit sc: SparkContext): SetPartition
 
 
 }
@@ -81,7 +82,8 @@ case class RandomForestClassifier
   setPartition: Option[PartitionConf],
   depth: Int,
   max_bins: Int,
-  subset_strategy:String,
+  subset_strategy:String, //"auto", "all", ", "log2", "onethird".
+ // value: String, //class or cont
   impurity: String,
   seed:Int,
   nClassWords: Int,
@@ -114,135 +116,33 @@ case class RandomForestClassifier
   def evaluateModel(
     partition: SetPartition)
     (implicit sc: SparkContext): ModelResult = {
+
+    val startTimeMillis = System.currentTimeMillis()
+
+    // Select example rows to display.
+    // Select (prediction, true label) and compute test error
+
     val trainSet = boostingRDD(tagRDD(partition.trainingSet))
     val validationSet = boostingRDD(tagRDD(partition.validationSet))
+    val testSet = boostingRDD(tagRDD(partition.classifySet))
+
     val model = RandomForestModel.load(sc,
       config.getString("models.path") +s"randomforest_${_id.value}")
-    var labelAndPredsTrain = trainSet.map { point =>
-      val prediction = model.predict(point._1.features)
-      Tuple2(point._1.label, prediction)
-    }
-    var labelAndPredsValid = validationSet.map { point =>
-      val prediction = model.predict(point._1.features)
-      Tuple2(point._1.label, prediction)
-    }
 
-    //Since Spark has done the heavy lifting already, lets pull the results back to the driver machine.
-    //Calling collect() will bring the results to a single machine (the driver) and will convert it to a Scala array.
-    def tagScore(score:Double):String = {
-      if (score > 0.6)
-        "pos"
-      else if ((score >= 0.4) && (score <=0.6))
-        "net"
-      else
-        "neg"
-    }
-    //Start with the Training Set
-    val result = labelAndPredsTrain.collect()
-    var trainhappyTotal = 0
-    var trainunhappyTotal = 0
-    var trainhappyCorrect = 0
-    var trainunhappyCorrect = 0
-    var trainneutralCorrect = 0
-    var trainnneutraltotal = 0
-    result.foreach(
-      r => {
-        val predLabel = tagScore(r._2)
-        val valLabel = tagScore(r._1)
-        if (predLabel == valLabel){
-          valLabel match {
-            case v if (v == "pos") =>
-              trainhappyTotal += 1
-              trainhappyCorrect += 1
-            case v if (v == "net") =>
-              trainnneutraltotal += 1
-              trainneutralCorrect += 1
-            case v if (v == "neg") =>
-              trainunhappyTotal += 1
-              trainunhappyCorrect += 1
-          }
-        }else {
-          valLabel match {
-            case v if (v == "pos") =>
-              trainhappyTotal += 1
-            case v if (v == "net") =>
-              trainnneutraltotal += 1
-            case v if (v == "neg") =>
-              trainunhappyTotal += 1
-          }
-        }
-      })
-    logger.info(s"[RandomForestClassifier-$name]unhappy messages in Training Set: " + trainunhappyTotal + " happy messages: " + trainhappyTotal)
-    logger.info(s"[RandomForestClassifier-$name]happy % correct: " + trainhappyCorrect.toDouble / trainhappyTotal)
-    logger.info(s"[RandomForestClassifier-$name]unhappy % correct: " + trainunhappyCorrect.toDouble / trainunhappyTotal)
 
-    val traintestErr = labelAndPredsTrain.filter(r => r._1 != r._2).count.toDouble / trainSet.count()
-    logger.info(s"[RandomForestClassifier-$name]Test Error Training Set: " + traintestErr)
+    val trainpredictionAndLabel = trainSet.map(p => (model.predict(p._1.features), p._1.label))
+    val train_accuracy = 1.0 * trainpredictionAndLabel.filter(x => x._1 == x._2).count() / trainSet.count()
+    val valpredictionAndLabel = validationSet.map(p => (model.predict(p._1.features), p._1.label))
+    val valid_accuracy = 1.0 * valpredictionAndLabel.filter(x => x._1 == x._2).count() / validationSet.count()
+    val testpredictionAndLabel = testSet.map(p => (model.predict(p._1.features), p._1.label))
+    val test_accuracy = 1.0 * testpredictionAndLabel.filter(x => x._1 == x._2).count() / testSet.count()
+    val endTimeMillis = System.currentTimeMillis()
+    val durationSeconds = (endTimeMillis - startTimeMillis) / 1000
+    logger.info(s"[BOOSTING-MODEL] Time of " +
+      s"training of classifier ${_id.value} is $durationSeconds seconds")
+    ModelResult(Id.generate, _id, train_accuracy, valid_accuracy, test_accuracy)
 
-    //Compute error for validation Set
-    val resultsVal = labelAndPredsValid.collect()
 
-    var happyTotal = 0
-    var unhappyTotal = 0
-    var happyCorrect = 0
-    var unhappyCorrect = 0
-    var neutralCorrect = 0
-    var nneutraltotal = 0
-    resultsVal.foreach(
-      r => {
-        val predLabel = tagScore(r._2)
-        val valLabel = tagScore(r._1)
-        if (predLabel == valLabel){
-          valLabel match {
-            case v if (v == "pos") =>
-              happyTotal += 1
-              happyCorrect += 1
-            case v if (v == "net") =>
-              nneutraltotal += 1
-              neutralCorrect += 1
-            case v if (v == "neg") =>
-              unhappyTotal += 1
-              unhappyCorrect += 1
-          }
-        }else {
-          valLabel match {
-            case v if (v == "pos") =>
-              happyTotal += 1
-            case v if (v == "net") =>
-              nneutraltotal += 1
-            case v if (v == "neg") =>
-              unhappyTotal += 1
-          }
-        }
-      })
-    logger.info(s"[RandomForestClassifier-$name] unhappy messages in Validation Set: " + unhappyTotal + " happy messages: " + happyTotal)
-    logger.info(s"[RandomForestClassifier-$name]happy % correct: " + happyCorrect.toDouble / happyTotal)
-    logger.info(s"[RandomForestClassifier-$name]unhappy % correct: " + unhappyCorrect.toDouble / unhappyTotal)
-
-    val testErr = labelAndPredsValid.filter(r => r._1 != r._2).count.toDouble / validationSet.count()
-    println(s"[RandomForestClassifier-$name]Test Error Validation Set: " + testErr)
-    ModelResult(
-      Id.generate,
-      _id,
-      trainhappyCorrect,
-      trainhappyTotal - trainhappyCorrect,
-      trainhappyCorrect.toDouble/trainhappyTotal.toDouble,
-      trainunhappyCorrect,
-      trainunhappyTotal - trainunhappyCorrect,
-      trainunhappyCorrect.toDouble/trainunhappyTotal.toDouble,
-      trainneutralCorrect,
-      trainnneutraltotal - trainneutralCorrect,
-      trainneutralCorrect.toDouble/trainnneutraltotal.toDouble,
-      happyCorrect,
-      happyTotal - happyCorrect,
-      happyCorrect.toDouble/happyCorrect.toDouble,
-      unhappyCorrect,
-      unhappyTotal - unhappyCorrect,
-      unhappyCorrect.toDouble/unhappyTotal.toDouble,
-      neutralCorrect,
-      nneutraltotal- neutralCorrect,
-      neutralCorrect.toDouble/nneutraltotal.toDouble
-    )
   }
 
   def runModel(
@@ -265,24 +165,38 @@ case class RandomForestClassifier
     val emojiTweeta = filterTweetsWithEmojis
     val nTweets = dataSet.get.count()
     val nEmojisTweets = emojiTweeta.count()
-    if (nEmojisTweets / nTweets < setPartition.get.getNotClassifySet) {
-      logger.warn("[GradientBoostingClassifier] Dataset does not contain enough tweets for Partition required")
-      val relativeTrain = nTweets / nEmojisTweets * setPartition.get.train
-      val relativeValidation = nTweets / nEmojisTweets * setPartition.get.validation
-      val trainNum = relativeTrain / (relativeTrain + relativeValidation)
-      val Array(train, validation) = emojiTweeta.randomSplit(Array(trainNum, 1 - trainNum))
-      val classifySet = dataSet.get.subtract(emojiTweeta)
-      SetPartition(train, validation, classifySet)
-    } else {
-      val relativeTrain = nTweets / nEmojisTweets * setPartition.get.train
-      val relativeValidation = nTweets / nEmojisTweets * setPartition.get.validation
+    tag_tweets match {
 
-      val Array(train, validation, rest) = emojiTweeta.randomSplit(Array(relativeTrain, relativeValidation, 1 - (relativeTrain + relativeValidation)))
-      val classifySet = dataSet.get.subtract(emojiTweeta).union(rest)
-      SetPartition(train, validation, classifySet)
+      case v if (v == "emoji") =>
+        if (nEmojisTweets / nTweets < setPartition.get.getNotClassifySet) {
+          logger.warn("[GradientBoostingClassifier] Dataset does not contain enough tweets for Partition required")
+          val relativeTrain = nTweets / nEmojisTweets * setPartition.get.train
+          val relativeValidation = nTweets / nEmojisTweets * setPartition.get.validation
+          val trainNum = relativeTrain / (relativeTrain + relativeValidation)
+          val Array(train, validation) = emojiTweeta.randomSplit(Array(trainNum, 1 - trainNum))
+          val classifySet = dataSet.get.subtract(emojiTweeta)
+          SetPartition(train, validation, classifySet)
+        } else {
+          val Array(train, validation, rest) =  dataSet.get.randomSplit(Array(setPartition.get.train,setPartition.get.validation ,setPartition.get.classification ))
+          SetPartition(train, validation, rest)
+        }
+      case _=>
+        val relativeTrain = nTweets / nEmojisTweets * setPartition.get.train
+        val relativeValidation = nTweets / nEmojisTweets * setPartition.get.validation
+
+        val Array(train, validation, rest) = dataSet.get.randomSplit(Array(setPartition.get.train,setPartition.get.validation ,setPartition.get.classification ))
+        SetPartition(train, validation, rest)
     }
-  }
 
+  }
+  def scoreToClass(score:Double):Double = {
+    if (score >= 1.333)
+      2.0
+    else if (score <= 0.666)
+      0.0
+    else
+      1.0
+  }
   def tagRDD(tweetRDD: RDD[TweetInfo]): RDD[(Double, Seq[String], Id)] = {
     tag_tweets match {
 
@@ -292,8 +206,7 @@ case class RandomForestClassifier
           tweet => {
             Try {
               val msg = EmojiParser.parseToAliases(tweet.tweetText.toString.toLowerCase())
-              var score: Double = analyzer.polarityScores(msg).compound
-              val isPositive = if (score < 0) 0 else if (score> 1.0) 1.0 else score
+              var score: Double = analyzer.polarityScores(msg).to3Class
               var msgSanitized = EmojiParser.removeAllEmojis(msg)
               //Return a tuple
               (score, msgSanitized.split(" ").toSeq, tweet._id.get)
@@ -304,11 +217,13 @@ case class RandomForestClassifier
           })
         records.filter(_.isSuccess).map(_.get)
       case v if (v == "emoji") =>
+        val analyzer = new EmojiSentiText
+
         val records = tweetRDD.map(
           tweet => {
             Try {
               val msg = EmojiParser.parseToAliases(tweet.tweetText.toString.toLowerCase())
-              var score: Double = EmojiSentiText.totalPolarityScores(msg).compound
+              var score: Double = analyzer.totalPolarityScores(msg).compound
               var msgSanitized = EmojiParser.removeAllEmojis(msg)
               //Return a tuple
               (score, msgSanitized.split(" ").toSeq, tweet._id.get)
@@ -337,6 +252,7 @@ case class RandomForestClassifier
   }
 }
 
+
 case class GradientBoostingClassifier
 (_id: Id,
   name: String,
@@ -350,163 +266,69 @@ case class GradientBoostingClassifier
   extends ModelClassifier {
 
   def trainModel(partition: SetPartition)(implicit sc: SparkContext): GradientBoostedTreesModel = {
+    val startTimeMillis = System.currentTimeMillis()
     val labeledSet = tagRDD(partition.trainingSet)
     val nlabeledSet = labeledSet.count()
     val trainSet = boostingRDD(labeledSet)
-    val boostingStrategy = BoostingStrategy.defaultParams("Classification")
+    val boostingStrategy = BoostingStrategy.defaultParams("Regression")
     boostingStrategy.setNumIterations(num_iterations) //number of passes over our training data
-    boostingStrategy.treeStrategy.setNumClasses(2) //We have two output classes: happy and sad
+    boostingStrategy.treeStrategy.setNumClasses(3)
     boostingStrategy.treeStrategy.setMaxDepth(depth)
+
     //Depth of each tree. Higher numbers mean more parameters, which can cause overfitting.
     //Lower numbers create a simpler model, which can be more accurate.
     //In practice you have to tweak this number to find the best value.
-    val trainNumber = trainSet.count()
     val elem = trainSet.take(1).head
     val pathModels = config.getString("models.path") +s"gradient_${_id.value}"
-    val startTimeMillis = System.currentTimeMillis()
     val model = GradientBoostedTrees.train(trainSet.map(_._1), boostingStrategy)
     val endTimeMillis = System.currentTimeMillis()
     val durationSeconds = (endTimeMillis - startTimeMillis) / 1000
-    logger.info(s"[BOOSTIN-MODEL] Time of " +
+    logger.info(s"[BOOSTING-MODEL] Time of " +
       s"training of classifier ${_id.value} is $durationSeconds seconds")
     model.save(sc, pathModels)
     model
+  }
+  def scoreToClass(score:Double):Double = {
+    if (score >= 1.333)
+      2.0
+    else if (score <= 0.666)
+      0.0
+    else
+      1.0
   }
 
   def evaluateModel(
     partition: SetPartition)
     (implicit sc: SparkContext): ModelResult = {
+    val startTimeMillis = System.currentTimeMillis()
+
+
+    // Select example rows to display.
+    // Select (prediction, true label) and compute test error
+
     val trainSet = boostingRDD(tagRDD(partition.trainingSet))
     val validationSet = boostingRDD(tagRDD(partition.validationSet))
+    val testSet = boostingRDD(tagRDD(partition.classifySet))
+
     val model = GradientBoostedTreesModel.load(sc,
       config.getString("models.path") +s"gradient_${_id.value}")
-    var labelAndPredsTrain = trainSet.map { point =>
-      val prediction = model.predict(point._1.features)
-      Tuple2(point._1.label, prediction)
-    }
-    var labelAndPredsValid = validationSet.map { point =>
-      val prediction = model.predict(point._1.features)
-      Tuple2(point._1.label, prediction)
-    }
 
-    //Since Spark has done the heavy lifting already, lets pull the results back to the driver machine.
-    //Calling collect() will bring the results to a single machine (the driver) and will convert it to a Scala array.
-    def tagScore(score:Double):String = {
-      if (score > 0.6)
-        "pos"
-      else if ((score >= 0.4) && (score <=0.6))
-        "net"
-      else
-        "neg"
-    }
-    //Start with the Training Set
-    val result = labelAndPredsTrain.collect()
-    var trainhappyTotal = 0
-    var trainunhappyTotal = 0
-    var trainhappyCorrect = 0
-    var trainunhappyCorrect = 0
-    var trainneutralCorrect = 0
-    var trainnneutraltotal = 0
-    result.foreach(
-      r => {
-       val predLabel = tagScore(r._2)
-        val valLabel = tagScore(r._1)
-        if (predLabel == valLabel){
-          valLabel match {
-            case v if (v == "pos") =>
-              trainhappyTotal += 1
-              trainhappyCorrect += 1
-            case v if (v == "net") =>
-              trainnneutraltotal += 1
-              trainneutralCorrect += 1
-            case v if (v == "neg") =>
-              trainunhappyTotal += 1
-              trainunhappyCorrect += 1
-          }
-        }else {
-          valLabel match {
-            case v if (v == "pos") =>
-              trainhappyTotal += 1
-            case v if (v == "net") =>
-              trainnneutraltotal += 1
-            case v if (v == "neg") =>
-              trainunhappyTotal += 1
-          }
-        }
-      })
-    logger.info(s"[GradientBoostingClassifier-$name]unhappy messages in Training Set: " + trainunhappyTotal + " happy messages: " + trainhappyTotal)
-    logger.info(s"[GradientBoostingClassifier-$name]happy % correct: " + trainhappyCorrect.toDouble / trainhappyTotal)
-    logger.info(s"[GradientBoostingClassifier-$name]unhappy % correct: " + trainunhappyCorrect.toDouble / trainunhappyTotal)
 
-    val traintestErr = labelAndPredsTrain.filter(r => r._1 != r._2).count.toDouble / trainSet.count()
-    logger.info(s"[GradientBoostingClassifier-$name]Test Error Training Set: " + traintestErr)
+    val trainpredictionAndLabel = trainSet.map(p => (model.predict(p._1.features), p._1.label))
+    val train_accuracy = 1.0 * trainpredictionAndLabel.filter(x => x._1 == x._2).count() / trainSet.count()
+    val valpredictionAndLabel = validationSet.map(p => (model.predict(p._1.features), p._1.label))
+    val valid_accuracy = 1.0 * valpredictionAndLabel.filter(x => x._1 == x._2).count() / validationSet.count()
+    val testpredictionAndLabel = testSet.map(p => (model.predict(p._1.features), p._1.label))
+    val test_accuracy = 1.0 * testpredictionAndLabel.filter(x => x._1 == x._2).count() / testSet.count()
 
-    //Compute error for validation Set
-    val resultsVal = labelAndPredsValid.collect()
+    val endTimeMillis = System.currentTimeMillis()
+    val durationSeconds = (endTimeMillis - startTimeMillis) / 1000
+    logger.info(s"[GRADIENT-BOOSTING-MODEL] Time of " +
+      s"evaluation of classifier ${_id.value} is $durationSeconds seconds")
+    ModelResult(Id.generate, _id, train_accuracy, valid_accuracy, test_accuracy)
 
-    var happyTotal = 0
-    var unhappyTotal = 0
-    var happyCorrect = 0
-    var unhappyCorrect = 0
-    var neutralCorrect = 0
-    var nneutraltotal = 0
-    resultsVal.foreach(
-      r => {
-        val predLabel = tagScore(r._2)
-        val valLabel = tagScore(r._1)
-        if (predLabel == valLabel){
-          valLabel match {
-            case v if (v == "pos") =>
-              happyTotal += 1
-              happyCorrect += 1
-            case v if (v == "net") =>
-              nneutraltotal += 1
-              neutralCorrect += 1
-            case v if (v == "neg") =>
-              unhappyTotal += 1
-              unhappyCorrect += 1
-          }
-        }else {
-          valLabel match {
-            case v if (v == "pos") =>
-              happyTotal += 1
-            case v if (v == "net") =>
-              nneutraltotal += 1
-            case v if (v == "neg") =>
-              unhappyTotal += 1
-          }
-        }
-      })
-    logger.info(s"[GradientBoostingClassifier-$name] unhappy messages in Validation Set: " + unhappyTotal + " happy messages: " + happyTotal)
-    logger.info(s"[GradientBoostingClassifier-$name]happy % correct: " + happyCorrect.toDouble / happyTotal)
-    logger.info(s"[GradientBoostingClassifier-$name]unhappy % correct: " + unhappyCorrect.toDouble / unhappyTotal)
 
-    val testErr = labelAndPredsValid.filter(r => r._1 != r._2).count.toDouble / validationSet.count()
-    println(s"[GradientBoostingClassifier-$name]Test Error Validation Set: " + testErr)
-    ModelResult(
-      Id.generate,
-      _id,
-      trainhappyCorrect,
-      trainhappyTotal - trainhappyCorrect,
-      trainhappyCorrect.toDouble/trainhappyTotal.toDouble,
-      trainunhappyCorrect,
-      trainunhappyTotal - trainunhappyCorrect,
-      trainunhappyCorrect.toDouble/trainunhappyTotal.toDouble,
-      trainneutralCorrect,
-      trainnneutraltotal - trainneutralCorrect,
-      trainneutralCorrect.toDouble/trainnneutraltotal.toDouble,
-      happyCorrect,
-      happyTotal - happyCorrect,
-      happyCorrect.toDouble/happyCorrect.toDouble,
-      unhappyCorrect,
-      unhappyTotal - unhappyCorrect,
-      unhappyCorrect.toDouble/unhappyTotal.toDouble,
-      neutralCorrect,
-      nneutraltotal- neutralCorrect,
-      neutralCorrect.toDouble/nneutraltotal.toDouble
-    )
   }
-
 
   def runModel(
     idExecution: Id,
@@ -528,22 +350,31 @@ case class GradientBoostingClassifier
     val emojiTweeta = filterTweetsWithEmojis
     val nTweets = dataSet.get.count()
     val nEmojisTweets = emojiTweeta.count()
-    if (nEmojisTweets / nTweets < setPartition.get.getNotClassifySet) {
-      logger.warn("[GradientBoostingClassifier] Dataset does not contain enough tweets for Partition required")
-      val relativeTrain = nTweets / nEmojisTweets * setPartition.get.train
-      val relativeValidation = nTweets / nEmojisTweets * setPartition.get.validation
-      val trainNum = relativeTrain / (relativeTrain + relativeValidation)
-      val Array(train, validation) = emojiTweeta.randomSplit(Array(trainNum, 1 - trainNum))
-      val classifySet = dataSet.get.subtract(emojiTweeta)
-      SetPartition(train, validation, classifySet)
-    } else {
-      val relativeTrain = nTweets / nEmojisTweets * setPartition.get.train
-      val relativeValidation = nTweets / nEmojisTweets * setPartition.get.validation
+    tag_tweets match {
 
-      val Array(train, validation, rest) = emojiTweeta.randomSplit(Array(relativeTrain, relativeValidation, 1 - (relativeTrain + relativeValidation)))
-      val classifySet = dataSet.get.subtract(emojiTweeta).union(rest)
-      SetPartition(train, validation, classifySet)
+      case v if (v == "emoji") =>
+        if (nEmojisTweets / nTweets < setPartition.get.getNotClassifySet) {
+          logger.warn("[GradientBoostingClassifier] Dataset does not contain enough tweets for Partition required")
+          val relativeTrain = nTweets / nEmojisTweets * setPartition.get.train
+          val relativeValidation = nTweets / nEmojisTweets * setPartition.get.validation
+          val trainNum = relativeTrain / (relativeTrain + relativeValidation)
+          val Array(train, validation) = emojiTweeta.randomSplit(Array(trainNum, 1 - trainNum))
+          val classifySet = dataSet.get.subtract(emojiTweeta)
+          SetPartition(train, validation, classifySet)
+        } else {
+          val relativeTrain = nTweets / nEmojisTweets * setPartition.get.train
+          val relativeValidation = nTweets / nEmojisTweets * setPartition.get.validation
+
+          val Array(train, validation, rest) =  dataSet.get.randomSplit(Array(setPartition.get.train,setPartition.get.validation ,setPartition.get.classification ))
+          val classifySet = dataSet.get.subtract(emojiTweeta).union(rest)
+          SetPartition(train, validation, classifySet)
+        }
+      case _=>
+        val Array(train, validation, rest) = dataSet.get.randomSplit(Array(setPartition.get.train,setPartition.get.validation ,setPartition.get.classification ))
+        val classifySet = dataSet.get.subtract(emojiTweeta).union(rest)
+        SetPartition(train, validation, classifySet)
     }
+
   }
 
   def tagRDD(tweetRDD: RDD[TweetInfo]): RDD[(Double, Seq[String], Id)] = {
@@ -555,7 +386,7 @@ case class GradientBoostingClassifier
           tweet => {
             Try {
               val msg = EmojiParser.parseToAliases(tweet.tweetText.toString.toLowerCase())
-              var score: Double = analyzer.polarityScores(msg).compound
+              var score: Double = analyzer.polarityScores(msg).to3Class
               val isPositive = (score +1)/2
               var msgSanitized = EmojiParser.removeAllEmojis(msg)
 
@@ -568,11 +399,12 @@ case class GradientBoostingClassifier
           })
         records.filter(_.isSuccess).map(_.get)
       case v if (v == "emoji") =>
+        val analyzer = new EmojiSentiText
         val records = tweetRDD.map(
           tweet => {
             Try {
               val msg = EmojiParser.parseToAliases(tweet.tweetText.toString.toLowerCase())
-              var score: Double = EmojiSentiText.totalPolarityScores(msg).compound
+              var score: Double = analyzer.totalPolarityScores(msg).compound
               var msgSanitized = EmojiParser.removeAllEmojis(msg)
               //Return a tuple
               (score, msgSanitized.split(" ").toSeq, tweet._id.get)
@@ -631,11 +463,13 @@ case class ApiClassifier(
           })
         records.filter(_.isSuccess).map(_.get)
       case v if (v == "emoji") =>
+        val analyzer = new EmojiSentiText
+
         val records = tweetRDD.map(
           tweet => {
             Try {
               val msg = EmojiParser.parseToAliases(tweet.tweetText.toString.toLowerCase())
-              var score: Double = EmojiSentiText.totalPolarityScores(msg).compound
+              var score: Double = analyzer.totalPolarityScores(msg).compound
               var msgSanitized = EmojiParser.removeAllEmojis(msg)
               //Return a tuple
               (score, msgSanitized, tweet._id.get)
@@ -658,144 +492,6 @@ case class ApiClassifier(
     Future.sequence(fResult)
   }
 
-  def evaluateModel(partition: SetPartition)(implicit sc: SparkContext): Future[ModelResult] = {
-    val trainSet = (tagRDD(partition.trainingSet))
-    val validationSet = (tagRDD(partition.validationSet))
-    val sentimentText = List("Very Negative", "Negative", "Neutral", "Positive", "Very Positive")
-    val props = new Properties()
-    props.put("annotators", "tokenize, ssplit, parse, sentiment")
-    val pipeline = new StanfordCoreNLP(props)
-    val broadCastedPipeline = sc.broadcast(pipeline)
-    val broadCastedSentimentText = sc.broadcast(sentimentText)
-
-    var flabelAndPredsTrain = trainSet.toLocalIterator.toList.map { point =>
-      client.AnalizeText(point._2).map { resp => (Tuple2(point._1, resp.returnScore)) }
-      // Aggregate scores : Mean, Max, Min,
-
-    }
-    var flabelAndPredsValid = validationSet.toLocalIterator.toList.map { point =>
-      client.AnalizeText(point._2).map { resp => (Tuple2(point._1, resp.returnScore)) }
-      // Aggregate scores : Mean, Max, Min,
-    }
-
-    //Since Spark has done the heavy lifting already, lets pull the results back to the driver machine.
-    //Calling collect() will bring the results to a single machine (the driver) and will convert it to a Scala array.
-
-    //Start with the Training Set
-    for {
-      labelAndPredsTrain <- Future.sequence(flabelAndPredsTrain)
-      labelAndPredsValid <- Future.sequence(flabelAndPredsTrain)
-    } yield {
-
-      def tagScore(score: Double): String = {
-        if (score > 0.6)
-          "pos"
-        else if ((score >= 0.4) && (score <= 0.6))
-          "net"
-        else
-          "neg"
-      }
-
-      //Start with the Training Set
-      var trainhappyTotal = 0
-      var trainunhappyTotal = 0
-      var trainhappyCorrect = 0
-      var trainunhappyCorrect = 0
-      var trainneutralCorrect = 0
-      var trainnneutraltotal = 0
-      labelAndPredsTrain.foreach(
-        r => {
-          val predLabel = tagScore(r._2)
-          val valLabel = tagScore(r._1)
-          if (predLabel == valLabel) {
-            valLabel match {
-              case v if (v == "pos") =>
-                trainhappyTotal += 1
-                trainhappyCorrect += 1
-              case v if (v == "net") =>
-                trainnneutraltotal += 1
-                trainneutralCorrect += 1
-              case v if (v == "neg") =>
-                trainunhappyTotal += 1
-                trainunhappyCorrect += 1
-            }
-          } else {
-            valLabel match {
-              case v if (v == "pos") =>
-                trainhappyTotal += 1
-              case v if (v == "net") =>
-                trainnneutraltotal += 1
-              case v if (v == "neg") =>
-                trainunhappyTotal += 1
-            }
-          }
-        })
-      logger.info(s"[API-$name]unhappy messages in Training Set: " + trainunhappyTotal + " happy messages: " + trainhappyTotal)
-      logger.info(s"[API-$name]happy % correct: " + trainhappyCorrect.toDouble / trainhappyTotal)
-      logger.info(s"[API-$name]unhappy % correct: " + trainunhappyCorrect.toDouble / trainunhappyTotal)
-
-
-      var happyTotal = 0
-      var unhappyTotal = 0
-      var happyCorrect = 0
-      var unhappyCorrect = 0
-      var neutralCorrect = 0
-      var nneutraltotal = 0
-      labelAndPredsValid.foreach(
-        r => {
-          val predLabel = tagScore(r._2)
-          val valLabel = tagScore(r._1)
-          if (predLabel == valLabel) {
-            valLabel match {
-              case v if (v == "pos") =>
-                happyTotal += 1
-                happyCorrect += 1
-              case v if (v == "net") =>
-                nneutraltotal += 1
-                neutralCorrect += 1
-              case v if (v == "neg") =>
-                unhappyTotal += 1
-                unhappyCorrect += 1
-            }
-          } else {
-            valLabel match {
-              case v if (v == "pos") =>
-                happyTotal += 1
-              case v if (v == "net") =>
-                nneutraltotal += 1
-              case v if (v == "neg") =>
-                unhappyTotal += 1
-            }
-          }
-        })
-      logger.info(s"[API-$name] unhappy messages in Validation Set: " + unhappyTotal + " happy messages: " + happyTotal)
-      logger.info(s"[API-$name]happy % correct: " + happyCorrect.toDouble / happyTotal)
-      logger.info(s"[API-$name]unhappy % correct: " + unhappyCorrect.toDouble / unhappyTotal)
-
-      ModelResult(
-        Id.generate,
-        _id,
-        trainhappyCorrect,
-        trainhappyTotal - trainhappyCorrect,
-        trainhappyCorrect.toDouble / trainhappyTotal.toDouble,
-        trainunhappyCorrect,
-        trainunhappyTotal - trainunhappyCorrect,
-        trainunhappyCorrect.toDouble / trainunhappyTotal.toDouble,
-        trainneutralCorrect,
-        trainnneutraltotal - trainneutralCorrect,
-        trainneutralCorrect.toDouble / trainnneutraltotal.toDouble,
-        happyCorrect,
-        happyTotal - happyCorrect,
-        happyCorrect.toDouble / happyCorrect.toDouble,
-        unhappyCorrect,
-        unhappyTotal - unhappyCorrect,
-        unhappyCorrect.toDouble / unhappyTotal.toDouble,
-        neutralCorrect,
-        nneutraltotal - neutralCorrect,
-        neutralCorrect.toDouble / nneutraltotal.toDouble
-      )
-    }
-  }
 
   def prepareModel()(implicit sc: SparkContext): SetPartition = {
     //We will only use tweets with emojis and bad emojis for train and validation sets
@@ -824,14 +520,15 @@ case class ApiClassifier(
   }
 }
 
+// NO SUPERVISED
 case class NLPStanfordClassifier(
   _id: Id,
   name: String,
   num_iterations: Int,
   tag_tweets:String, //emoji or vader
-  agregation_function_name: AggFunction,
+  agregation_function_name: AggFunction, // MeanAgg
   agregation_function: (List[Int] => Double),
-  setPartition: Option[PartitionConf],
+  setPartition: Option[PartitionConf] = None,
   override val type_classifier: ModelType = NLP)
   extends ModelClassifier {
   def filterTweetsWithEmojis: RDD[TweetInfo] = {
@@ -859,11 +556,12 @@ case class NLPStanfordClassifier(
           })
         records.filter(_.isSuccess).map(_.get)
       case v if (v == "emoji") =>
+        val analyzer = new EmojiSentiText
         val records = tweetRDD.map(
           tweet => {
             Try {
               val msg = EmojiParser.parseToAliases(tweet.tweetText.toString.toLowerCase())
-              var score: Double = EmojiSentiText.totalPolarityScores(msg).compound
+              var score: Double = analyzer.totalPolarityScores(msg).compound
               var msgSanitized = EmojiParser.removeAllEmojis(msg)
               //Return a tuple
               (score, msgSanitized, tweet._id.get)
@@ -874,204 +572,70 @@ case class NLPStanfordClassifier(
           })
         records.filter(_.isSuccess).map(_.get)
     }
-  def prepareModel()(implicit sc: SparkContext): SetPartition = {
-    //We will only use tweets with emojis and bad emojis for train and validation sets
-    val emojiTweeta = filterTweetsWithEmojis
-    val nTweets = dataSet.get.count()
-    val nEmojisTweets = emojiTweeta.count()
-    if (emojiTweeta.count() / dataSet.get.count() < setPartition.get.getNotClassifySet) {
-      logger.warn("[GradientBoostingClassifier] Dataset does not contain enough tweets for Partition required")
-      val relativeTrain = nTweets / nEmojisTweets * setPartition.get.train
-      val relativeValidation = nTweets / nEmojisTweets * setPartition.get.validation
-      val Array(train, validation) = emojiTweeta.randomSplit(Array(relativeTrain, (1 - relativeValidation)))
-      val classifySet = dataSet.get.subtract(emojiTweeta)
-      SetPartition(train, validation, classifySet)
-    } else {
-      val relativeTrain = nTweets / nEmojisTweets * setPartition.get.train
-      val relativeValidation = nTweets / nEmojisTweets * setPartition.get.validation
 
-      val Array(train, validation, rest) = emojiTweeta.randomSplit(Array(relativeTrain, relativeValidation, 1 - (relativeTrain + relativeValidation)))
-      val classifySet = dataSet.get.subtract(emojiTweeta).union(rest)
-      SetPartition(train, validation, classifySet)
+  def runModel(idExecution: Id)(implicit sc: SparkContext): RDD[TweetResult] = {
+    val scoredSentiments = dataSet.get.map {
+      tweet =>
+       val  score = NLPAnalizer.extractSentiment(tweet.tweetText)
+        TweetResult(Id.generate, tweet._id.get, idExecution, this.type_classifier.toString, Sentiment.to3class(score))
     }
+    scoredSentiments
   }
+}
 
 
-  def evaluateModel(partition: SetPartition)(implicit sc: SparkContext): ModelResult = {
-    val trainSet = (tagRDD(partition.trainingSet))
-    val validationSet = (tagRDD(partition.validationSet))
-    val sentimentText = List("Very Negative", "Negative", "Neutral", "Positive", "Very Positive")
-    val props = new Properties()
-    props.put("annotators", "tokenize, ssplit, parse, sentiment")
-    val pipeline = new StanfordCoreNLP(props)
-    val broadCastedPipeline = sc.broadcast(pipeline)
-    val broadCastedSentimentText = sc.broadcast(sentimentText)
-
-    var labelAndPredsTrain = trainSet.map { point =>
-      val annotation = new Annotation(point._2)
-      pipeline.annotate(annotation)
-      val sentenceList = annotation.get(classOf[CoreAnnotations.SentencesAnnotation]).asScala.toList
-      val scores = sentenceList.map { sentence =>
-        val tree = sentence.get(classOf[SentimentCoreAnnotations.SentimentAnnotatedTree])
-        RNNCoreAnnotations.getPredictedClass(tree)
-      }
-      // Aggregate scores : Mean, Max, Min,
-      val aggScore = agregation_function(scores)
-      Tuple2(point._1, aggScore.toDouble)
-    }
-    var labelAndPredsValid = validationSet.map { point =>
-      val annotation = new Annotation(point._2)
-      pipeline.annotate(annotation)
-      val sentenceList = annotation.get(classOf[CoreAnnotations.SentencesAnnotation]).asScala.toList
-      val scores = sentenceList.map { sentence =>
-        val tree = sentence.get(classOf[SentimentCoreAnnotations.SentimentAnnotatedTree])
-        RNNCoreAnnotations.getPredictedClass(tree)
-      }
-      // Aggregate scores : Mean, Max, Min,
-      val aggScore = agregation_function(scores)
-      Tuple2(point._1, aggScore.toDouble)
-    }
-    def tagScore(score:Double):String = {
-      if (score > 0.6)
-        "pos"
-      else if ((score >= 0.4) && (score <=0.6))
-        "net"
-      else
-        "neg"
-    }
-    //Start with the Training Set
-    val result = labelAndPredsTrain.collect()
-    var trainhappyTotal = 0
-    var trainunhappyTotal = 0
-    var trainhappyCorrect = 0
-    var trainunhappyCorrect = 0
-    var trainneutralCorrect = 0
-    var trainnneutraltotal = 0
-    result.foreach(
-      r => {
-        val predLabel = tagScore(r._2)
-        val valLabel = tagScore(r._1)
-        if (predLabel == valLabel){
-          valLabel match {
-            case v if (v == "pos") =>
-              trainhappyTotal += 1
-              trainhappyCorrect += 1
-            case v if (v == "net") =>
-              trainnneutraltotal += 1
-              trainneutralCorrect += 1
-            case v if (v == "neg") =>
-              trainunhappyTotal += 1
-              trainunhappyCorrect += 1
-          }
-        }else {
-          valLabel match {
-            case v if (v == "pos") =>
-              trainhappyTotal += 1
-            case v if (v == "net") =>
-              trainnneutraltotal += 1
-            case v if (v == "neg") =>
-              trainunhappyTotal += 1
-          }
-        }
-      })
-    logger.info(s"[NLPStandford-$name]unhappy messages in Training Set: " + trainunhappyTotal + " happy messages: " + trainhappyTotal)
-    logger.info(s"[NLPStandford-$name]happy % correct: " + trainhappyCorrect.toDouble / trainhappyTotal)
-    logger.info(s"[NLPStandford-$name]unhappy % correct: " + trainunhappyCorrect.toDouble / trainunhappyTotal)
-
-    val traintestErr = labelAndPredsTrain.filter(r => r._1 != r._2).count.toDouble / trainSet.count()
-    logger.info(s"[NLPStandford-$name]Test Error Training Set: " + traintestErr)
-
-    //Compute error for validation Set
-    val resultsVal = labelAndPredsValid.collect()
-
-    var happyTotal = 0
-    var unhappyTotal = 0
-    var happyCorrect = 0
-    var unhappyCorrect = 0
-    var neutralCorrect = 0
-    var nneutraltotal = 0
-    resultsVal.foreach(
-      r => {
-        val predLabel = tagScore(r._2)
-        val valLabel = tagScore(r._1)
-        if (predLabel == valLabel){
-          valLabel match {
-            case v if (v == "pos") =>
-              happyTotal += 1
-              happyCorrect += 1
-            case v if (v == "net") =>
-              nneutraltotal += 1
-              neutralCorrect += 1
-            case v if (v == "neg") =>
-              unhappyTotal += 1
-              unhappyCorrect += 1
-          }
-        }else {
-          valLabel match {
-            case v if (v == "pos") =>
-              happyTotal += 1
-            case v if (v == "net") =>
-              nneutraltotal += 1
-            case v if (v == "neg") =>
-              unhappyTotal += 1
-          }
-        }
-      })
-    logger.info(s"[NLPStandford-$name] unhappy messages in Validation Set: " + unhappyTotal + " happy messages: " + happyTotal)
-    logger.info(s"[NLPStandford-$name]happy % correct: " + happyCorrect.toDouble / happyTotal)
-    logger.info(s"[NLPStandford-$name]unhappy % correct: " + unhappyCorrect.toDouble / unhappyTotal)
-
-    val testErr = labelAndPredsValid.filter(r => r._1 != r._2).count.toDouble / validationSet.count()
-    println(s"[NLPStandford-$name]Test Error Validation Set: " + testErr)
-    ModelResult(
-      Id.generate,
-      _id,
-      trainhappyCorrect,
-      trainhappyTotal - trainhappyCorrect,
-      trainhappyCorrect.toDouble/trainhappyTotal.toDouble,
-      trainunhappyCorrect,
-      trainunhappyTotal - trainunhappyCorrect,
-      trainunhappyCorrect.toDouble/trainunhappyTotal.toDouble,
-      trainneutralCorrect,
-      trainnneutraltotal - trainneutralCorrect,
-      trainneutralCorrect.toDouble/trainnneutraltotal.toDouble,
-      happyCorrect,
-      happyTotal - happyCorrect,
-      happyCorrect.toDouble/happyCorrect.toDouble,
-      unhappyCorrect,
-      unhappyTotal - unhappyCorrect,
-      unhappyCorrect.toDouble/unhappyTotal.toDouble,
-      neutralCorrect,
-      nneutraltotal- neutralCorrect,
-      neutralCorrect.toDouble/nneutraltotal.toDouble
-    )
+case class VaderClassifier(
+  _id: Id,
+  name: String,
+  tag_tweets:String, //emoji or vader
+  setPartition: Option[PartitionConf] = None,
+  override val type_classifier: ModelType = VADER)
+  extends ModelClassifier {
+  def filterTweetsWithEmojis: RDD[TweetInfo] = {
+    dataSet.get.filter(tweet => tweet.contain_emoji)
   }
 
 
   def runModel(idExecution: Id)(implicit sc: SparkContext): RDD[TweetResult] = {
-    val sentimentText = List("Very Negative", "Negative", "Neutral", "Positive", "Very Positive")
-    val props = new Properties()
-    props.put("annotators", "tokenize, ssplit, parse, sentiment")
-    val pipeline = new StanfordCoreNLP(props)
-    val broadCastedPipeline = sc.broadcast(pipeline)
-    val broadCastedSentimentText = sc.broadcast(sentimentText)
+    val analyzer = new SentimentIntensityAnalyzer
     val scoredSentiments = dataSet.get.map {
       tweet =>
-        val annotation = new Annotation(tweet.tweetText)
-        pipeline.annotate(annotation)
-        val sentenceList = annotation.get(classOf[CoreAnnotations.SentencesAnnotation]).asScala.toList
-        val scores = sentenceList.map { sentence =>
-          val tree = sentence.get(classOf[SentimentCoreAnnotations.SentimentAnnotatedTree])
-          RNNCoreAnnotations.getPredictedClass(tree)
-        }
+        val sanitizedText = EmojiParser.removeAllEmojis(tweet.tweetText)
+        var score: Double = analyzer.polarityScores(sanitizedText).compound
+
         // Aggregate scores : Mean, Max, Min,
-        val aggScore = agregation_function(scores)
-        TweetResult(Id.generate, tweet._id.get, idExecution, this.type_classifier.toString, aggScore.toDouble)
+        TweetResult(Id.generate, tweet._id.get, idExecution, this.type_classifier.toString, score.toDouble)
     }
     scoredSentiments
   }
 
 }
+
+
+case class EmojiClassifier(
+  _id: Id,
+  name: String,
+  tag_tweets:String, //emoji or vader
+  setPartition: Option[PartitionConf] = None,
+  override val type_classifier: ModelType = EMOJI)
+  extends ModelClassifier {
+  def filterTweetsWithEmojis: RDD[TweetInfo] = {
+    dataSet.get.filter(tweet => tweet.contain_emoji)
+  }
+
+
+  def runModel(idExecution: Id)(implicit sc: SparkContext): RDD[TweetResult] = {
+    val analyzer = new EmojiSentiText
+    val scoredSentiments = dataSet.get.map {
+      tweet =>
+        var score: Double = analyzer.totalPolarityScores(tweet.tweetText).compound
+        TweetResult(Id.generate, tweet._id.get, idExecution, this.type_classifier.toString, score.toDouble)
+    }
+    scoredSentiments
+  }
+
+}
+
 
 case class BayesClassifier(
   _id: Id,
@@ -1089,24 +653,23 @@ case class BayesClassifier(
 
   def boostingRDD(
     taggedRDD: RDD[(Double, Seq[String], Id)]): RDD[(LabeledPoint, String, Id)] = {
-    val hashingTF = new HashingTF(nClassWords)
-
+    val hashingTF = new HashingTF()
     //Map the input strings to a tuple of labeled point + input text
     taggedRDD.map(
       t => (t._1, hashingTF.transform(t._2), t._2, t._3))
-      .map(x => (new LabeledPoint((x._1).toDouble, x._2), x._3.fold("")((a, b) => a + " " + b), x._4))
+      .map(x => (new LabeledPoint((x._1), x._2), x._3.fold("")((a, b) => a + " " + b), x._4))
   }
 
   def trainModel(partition: SetPartition)(implicit sc: SparkContext): NaiveBayesModel = {
     val trainSet = boostingRDD(tagRDD(partition.trainingSet))
     val pathModels = config.getString("models.path") +s"bayes_${_id.value}"
-
-    //Depth of each tree. Higher numbers mean more parameters, which can cause overfitting.
-    //Lower numbers create a simpler model, which can be more accurate.
-    //In practice you have to tweak this number to find the best value.
-
     val startTimeMillis = System.currentTimeMillis()
-    val naiveBayesModel: NaiveBayesModel = NaiveBayes.train(trainSet.map(_._1), lambda = 1.0, modelType = "multinomial")
+    val trainSetExample = trainSet.take(10)
+    val trainTSet =  if (type_model =="bernoulli")
+      trainSet.map(elem => LabeledPoint(elem._1.label.toInt, elem._1.features))
+    else
+      trainSet.map(_._1)
+    val naiveBayesModel: NaiveBayesModel = NaiveBayes.train(trainTSet, lambda = lambda, modelType =type_model)
     naiveBayesModel.save(sc,pathModels)
     val endTimeMillis = System.currentTimeMillis()
     val durationSeconds = (endTimeMillis - startTimeMillis) / 1000
@@ -1120,170 +683,83 @@ case class BayesClassifier(
     val emojiTweeta = filterTweetsWithEmojis
     val nTweets = dataSet.get.count()
     val nEmojisTweets = emojiTweeta.count()
-    if (nEmojisTweets / nTweets < setPartition.get.getNotClassifySet) {
-      logger.warn("[GradientBoostingClassifier] Dataset does not contain enough tweets for Partition required")
-      val relativeTrain = nTweets / nEmojisTweets * setPartition.get.train
-      val relativeValidation = nTweets / nEmojisTweets * setPartition.get.validation
-      val trainNum = relativeTrain / (relativeTrain + relativeValidation)
-      val Array(train, validation) = emojiTweeta.randomSplit(Array(trainNum, 1 - trainNum))
-      val classifySet = dataSet.get.subtract(emojiTweeta)
-      SetPartition(train, validation, classifySet)
-    } else {
-      val relativeTrain = nTweets / nEmojisTweets * setPartition.get.train
-      val relativeValidation = nTweets / nEmojisTweets * setPartition.get.validation
-      val Array(train, validation, rest) = emojiTweeta.randomSplit(Array(relativeTrain, relativeValidation, 1 - (relativeTrain + relativeValidation)))
-      val classifySet = dataSet.get.subtract(emojiTweeta).union(rest)
-      SetPartition(train, validation, classifySet)
+    tag_tweets match {
+
+      case v if (v == "emoji") =>
+        if (nEmojisTweets / nTweets < setPartition.get.getNotClassifySet) {
+          logger.warn("[GradientBoostingClassifier] Dataset does not contain enough tweets for Partition required")
+          val relativeTrain = nTweets / nEmojisTweets * setPartition.get.train
+          val relativeValidation = nTweets / nEmojisTweets * setPartition.get.validation
+          val trainNum = relativeTrain / (relativeTrain + relativeValidation)
+          val Array(train, validation) = emojiTweeta.randomSplit(Array(trainNum, 1 - trainNum))
+          val classifySet = dataSet.get.subtract(emojiTweeta)
+          SetPartition(train, validation, classifySet)
+        } else {
+          val relativeTrain = nTweets / nEmojisTweets * setPartition.get.train
+          val relativeValidation = nTweets / nEmojisTweets * setPartition.get.validation
+
+          val Array(train, validation, rest) = emojiTweeta.randomSplit(Array(setPartition.get.train,setPartition.get.validation ,setPartition.get.classification ))
+          val classifySet = dataSet.get.subtract(emojiTweeta).union(rest)
+          SetPartition(train, validation, classifySet)
+        }
+      case _=>
+        val relativeTrain = nTweets / nEmojisTweets * setPartition.get.train
+        val relativeValidation = nTweets / nEmojisTweets * setPartition.get.validation
+
+        val Array(train, validation, rest) =  dataSet.get.randomSplit(Array(setPartition.get.train,setPartition.get.validation ,setPartition.get.classification ))
+        val classifySet = dataSet.get.subtract(emojiTweeta).union(rest)
+        SetPartition(train, validation, classifySet)
     }
+
   }
 
   def evaluateModel(
     partition: SetPartition)
     (implicit sc: SparkContext): ModelResult = {
+
+    val startTimeMillis = System.currentTimeMillis()
+
+    // Select example rows to display.
+    // Select (prediction, true label) and compute test error
+
     val trainSet = boostingRDD(tagRDD(partition.trainingSet))
     val validationSet = boostingRDD(tagRDD(partition.validationSet))
+    val testSet = boostingRDD(tagRDD(partition.classifySet))
+
     val model = NaiveBayesModel.load(sc,
       config.getString("models.path") +s"bayes_${_id.value}")
-    var labelAndPredsTrain = trainSet.map { point =>
-      val prediction = model.predict(point._1.features)
-      Tuple2(point._1.label, prediction)
-    }
-    var labelAndPredsValid = validationSet.map { point =>
-      val prediction = model.predict(point._1.features)
-      Tuple2(point._1.label, prediction)
-    }
 
-    //Since Spark has done the heavy lifting already, lets pull the results back to the driver machine.
-    //Calling collect() will bring the results to a single machine (the driver) and will convert it to a Scala array.
-    def tagScore(score:Double):String = {
-      if (score > 0.6)
-        "pos"
-      else if ((score >= 0.4) && (score <=0.6))
-        "net"
-      else
-        "neg"
-    }
-    //Start with the Training Set
-    val result = labelAndPredsTrain.collect()
-    var trainhappyTotal = 0
-    var trainunhappyTotal = 0
-    var trainhappyCorrect = 0
-    var trainunhappyCorrect = 0
-    var trainneutralCorrect = 0
-    var trainnneutraltotal = 0
-    result.foreach(
-      r => {
-        val predLabel = tagScore(r._2)
-        val valLabel = tagScore(r._1)
-        if (predLabel == valLabel){
-          valLabel match {
-            case v if (v == "pos") =>
-              trainhappyTotal += 1
-              trainhappyCorrect += 1
-            case v if (v == "net") =>
-              trainnneutraltotal += 1
-              trainneutralCorrect += 1
-            case v if (v == "neg") =>
-              trainunhappyTotal += 1
-              trainunhappyCorrect += 1
-          }
-        }else {
-          valLabel match {
-            case v if (v == "pos") =>
-              trainhappyTotal += 1
-            case v if (v == "net") =>
-              trainnneutraltotal += 1
-            case v if (v == "neg") =>
-              trainunhappyTotal += 1
-          }
-        }
-      })
-    logger.info(s"[NaivesBayesClassifier-$name]unhappy messages in Training Set: " + trainunhappyTotal + " happy messages: " + trainhappyTotal)
-    logger.info(s"[NaivesBayesClassifier-$name]happy % correct: " + trainhappyCorrect.toDouble / trainhappyTotal)
-    logger.info(s"[NaivesBayesClassifier-$name]unhappy % correct: " + trainunhappyCorrect.toDouble / trainunhappyTotal)
 
-    val traintestErr = labelAndPredsTrain.filter(r => r._1 != r._2).count.toDouble / trainSet.count()
-    logger.info(s"[NaivesBayesClassifier-$name]Test Error Training Set: " + traintestErr)
+    val trainpredictionAndLabel = trainSet.map(p => (model.predict(p._1.features), p._1.label))
+    val train_accuracy = 1.0 * trainpredictionAndLabel.filter(x => x._1 == x._2).count() / trainSet.count()
+    val valpredictionAndLabel = validationSet.map(p => (model.predict(p._1.features), p._1.label))
+    val valid_accuracy = 1.0 * valpredictionAndLabel.filter(x => x._1 == x._2).count() / validationSet.count()
+    val testpredictionAndLabel = testSet.map(p => (model.predict(p._1.features), p._1.label))
+    val test_accuracy = 1.0 * testpredictionAndLabel.filter(x => x._1 == x._2).count() / testSet.count()
 
-    //Compute error for validation Set
-    val resultsVal = labelAndPredsValid.collect()
+    val endTimeMillis = System.currentTimeMillis()
+    val durationSeconds = (endTimeMillis - startTimeMillis) / 1000
+    logger.info(s"[BAYES-MODEL] Time of " +
+      s"evaluation of classifier ${_id.value} is $durationSeconds seconds")
+    ModelResult(Id.generate, _id, train_accuracy, valid_accuracy, test_accuracy)
 
-    var happyTotal = 0
-    var unhappyTotal = 0
-    var happyCorrect = 0
-    var unhappyCorrect = 0
-    var neutralCorrect = 0
-    var nneutraltotal = 0
-    resultsVal.foreach(
-      r => {
-        val predLabel = tagScore(r._2)
-        val valLabel = tagScore(r._1)
-        if (predLabel == valLabel){
-          valLabel match {
-            case v if (v == "pos") =>
-              happyTotal += 1
-              happyCorrect += 1
-            case v if (v == "net") =>
-              nneutraltotal += 1
-              neutralCorrect += 1
-            case v if (v == "neg") =>
-              unhappyTotal += 1
-              unhappyCorrect += 1
-          }
-        }else {
-          valLabel match {
-            case v if (v == "pos") =>
-              happyTotal += 1
-            case v if (v == "net") =>
-              nneutraltotal += 1
-            case v if (v == "neg") =>
-              unhappyTotal += 1
-          }
-        }
-      })
-    logger.info(s"[NaivesBayesClassifier-$name] unhappy messages in Validation Set: " + unhappyTotal + " happy messages: " + happyTotal)
-    logger.info(s"[NaivesBayesClassifier-$name]happy % correct: " + happyCorrect.toDouble / happyTotal)
-    logger.info(s"[NaivesBayesClassifier-$name]unhappy % correct: " + unhappyCorrect.toDouble / unhappyTotal)
 
-    val testErr = labelAndPredsValid.filter(r => r._1 != r._2).count.toDouble / validationSet.count()
-    println(s"[GradientBoostingClassifier-$name]Test Error Validation Set: " + testErr)
-    ModelResult(
-      Id.generate,
-      _id,
-      trainhappyCorrect,
-      trainhappyTotal - trainhappyCorrect,
-      trainhappyCorrect.toDouble/trainhappyTotal.toDouble,
-      trainunhappyCorrect,
-      trainunhappyTotal - trainunhappyCorrect,
-      trainunhappyCorrect.toDouble/trainunhappyTotal.toDouble,
-      trainneutralCorrect,
-      trainnneutraltotal - trainneutralCorrect,
-      trainneutralCorrect.toDouble/trainnneutraltotal.toDouble,
-      happyCorrect,
-      happyTotal - happyCorrect,
-      happyCorrect.toDouble/happyCorrect.toDouble,
-      unhappyCorrect,
-      unhappyTotal - unhappyCorrect,
-      unhappyCorrect.toDouble/unhappyTotal.toDouble,
-      neutralCorrect,
-      nneutraltotal- neutralCorrect,
-      neutralCorrect.toDouble/nneutraltotal.toDouble
-    )
   }
 
 
   def tagRDD(tweetRDD: RDD[TweetInfo]): RDD[(Double, Seq[String], Id)] = tag_tweets match {
-
     case v if (v == "vader") =>
       val analyzer = new SentimentIntensityAnalyzer
+      val depurer = new  StopWordsRemover("depurer")
       val records = tweetRDD.map(
         tweet => {
           Try {
             val msg = EmojiParser.parseToAliases(tweet.tweetText.toString.toLowerCase())
-            var score: Double = analyzer.polarityScores(msg).compound
-            val isPositive = if (score < 0) 0 else if (score> 1.0) 1.0 else score
+            var score: Double =  if (type_model == "bernoulli"){
+              analyzer.polarityScores(msg).to2Class
+            }else analyzer.polarityScores(msg).to3Class
             var msgSanitized = EmojiParser.removeAllEmojis(msg)
-            //Return a tuple
+              .filter(s => !depurer.getStopWords.contains(s))
             (score, msgSanitized.split(" ").toSeq, tweet._id.get)
           }.recover{
             case e:Exception =>
@@ -1291,12 +767,28 @@ case class BayesClassifier(
               throw e}
         })
       records.filter(_.isSuccess).map(_.get)
-    case v if (v == "emoji") =>
+    case v if (v == "nlp") =>
+      val analyzer = new EmojiSentiText
       val records = tweetRDD.map(
         tweet => {
           Try {
             val msg = EmojiParser.parseToAliases(tweet.tweetText.toString.toLowerCase())
-            var score: Double = EmojiSentiText.totalPolarityScores(msg).compound
+            val  score = NLPAnalizer.extractSentiment(tweet.tweetText)
+            var msgSanitized = EmojiParser.removeAllEmojis(msg)
+            (Sentiment.to3class(score).toDouble/3,  msgSanitized.split(" ").toSeq, tweet._id.get)
+          }.recover{
+            case e:Exception =>
+              logger.error("Error parsinf tweet", e)
+              throw e}
+        })
+      records.filter(_.isSuccess).map(_.get)
+    case v if (v == "emoji") =>
+      val analyzer = new EmojiSentiText
+      val records = tweetRDD.map(
+        tweet => {
+          Try {
+            val msg = EmojiParser.parseToAliases(tweet.tweetText.toString.toLowerCase())
+            var score: Double = analyzer.totalPolarityScores(msg).compound
             var msgSanitized = EmojiParser.removeAllEmojis(msg)
             //Return a tuple
             (score,  msgSanitized.split(" ").toSeq, tweet._id.get)
@@ -1311,11 +803,11 @@ case class BayesClassifier(
   def runModel(idExecution: Id, partition: SetPartition)(implicit sc: SparkContext): RDD[TweetResult] = {
     val model = NaiveBayesModel.load(sc,config.getString("models.path") +s"bayes_${_id.value}"
     )
-    val dataBoost = boostingRDD(tagRDD(partition.classifySet))
+    var (posTweets,neutTweets, negTweets) = (0L,0L,0L)
+    var dataBoost = boostingRDD(tagRDD(partition.classifySet))
     val scoredSentiments = dataBoost.map {
       tweet =>
         val score = model.predict(tweet._1.features)
-
         TweetResult(
           Id.generate,
           tweet._3,
@@ -1323,8 +815,10 @@ case class BayesClassifier(
           this.type_classifier.toString,
           score.toDouble)
     }
+
     scoredSentiments
   }
+
 
 }
 
